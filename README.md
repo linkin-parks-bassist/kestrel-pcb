@@ -23,7 +23,7 @@ Note: the 5 V rail is currently generated using an external MPM3610 buck module.
 The board is powered from a standard ***Center negative*** **9 V pedal supply**. The external buck module generates a 5V rail, from which the remaining rails are derived:
 
 - 5 V (buck converter)
-- 3.3 V
+- 3.3 V 
 - 1.8 V
 
 ## Project status
