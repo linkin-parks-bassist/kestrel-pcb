@@ -1,0 +1,12 @@
+{
+  "status": "connectivity review, not operation or manufacturing qualification",
+  "physical_components": 349,
+  "local_input_bypasses": 16,
+  "remaining": [
+    "exact crystal/load capacitors, flash/part sourcing and supply margin",
+    "reset/brownout and boot/programming validation",
+    "RGB/I2C and two-footswitch firmware/timing qualification",
+    "SPI timing/sequencing, USB connector/protection and backfeed",
+    "v3 firmware/toolchain and PCB/assembly qualification"
+  ]
+}

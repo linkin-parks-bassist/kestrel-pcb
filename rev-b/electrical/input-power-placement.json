@@ -1,0 +1,59 @@
+{
+  "status": "Provisional input protection placement; rear-wall plug access, current/fault/thermal and assembly unqualified",
+  "coordinates": "CAD X right Y rear, origin PCB 100,100; KiCad rotation degrees",
+  "poses": {
+    "F401": [
+      -48.8,
+      41.5,
+      0
+    ],
+    "Q401": [
+      -61,
+      41,
+      0
+    ],
+    "R401": [
+      -50.5,
+      34.5,
+      0
+    ],
+    "D401": [
+      -62.5,
+      46,
+      0
+    ],
+    "C401": [
+      -64.2,
+      35.5,
+      0
+    ],
+    "C402": [
+      -54.7,
+      38.5,
+      0
+    ],
+    "TP401": [
+      -48,
+      48,
+      0
+    ],
+    "TP402": [
+      -64,
+      30.2,
+      0
+    ],
+    "TP403": [
+      -51,
+      32,
+      0
+    ]
+  },
+  "jack_pose_pcb_mm": [
+    46,
+    58,
+    0
+  ],
+  "jack_side": "B.Cu",
+  "jack_height_mm": 11,
+  "manufacturer_drawing": "mechanical/vendor/same-sky/pj-102ah.pdf"
+}

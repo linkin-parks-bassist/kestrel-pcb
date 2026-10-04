@@ -1,0 +1,31 @@
+{
+  "status": "PASS ten input-part poses, independent pad nets, underside jack drills/Fab front datum and filled-plane ground",
+  "placed_references": [
+    "C401",
+    "C402",
+    "D401",
+    "F401",
+    "Q401",
+    "R401",
+    "TP401",
+    "TP402",
+    "TP403",
+    "J401"
+  ],
+  "jack_pcb_mm": [
+    46,
+    58
+  ],
+  "jack_front_pcb_y_mm": 44.3,
+  "nominal_height_review": {
+    "pcb_top_z_mm": 23.6,
+    "reference_panel_bottom_z_mm": 32.62,
+    "topside_body_top_z_mm": 34.6,
+    "topside_overlap_mm": 1.98,
+    "underside_body_bottom_z_mm": 11
+  },
+  "limits": [
+    "Input copper and both buck feeds are checked by check_input_power_local.py; fault/current/thermal, lead fit and return performance remain unqualified.",
+    "Fab datum is not manufacturer 3D fit. Rear-wall plug insertion, opening/support, body tolerances, solder access and all-component assembly remain unqualified."
+  ]
+}

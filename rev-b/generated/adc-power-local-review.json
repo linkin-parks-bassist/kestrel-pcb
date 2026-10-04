@@ -1,0 +1,73 @@
+{
+  "status": "PASS complete seven-pad ADC analogue supply net and digital source/bypass branch; four bypass ground returns reach the filled plane",
+  "track_segments": 27,
+  "vias": 7,
+  "via_in_pad_sites": [
+    {
+      "pad": "U201.3",
+      "position": [
+        67.3,
+        111.35
+      ]
+    },
+    {
+      "pad": "U201.4",
+      "position": [
+        66.65,
+        112
+      ]
+    },
+    {
+      "pad": "C204.1",
+      "position": [
+        61.25,
+        113.8
+      ]
+    },
+    {
+      "pad": "C205.1",
+      "position": [
+        64.0,
+        111.275
+      ]
+    },
+    {
+      "pad": "C206.1",
+      "position": [
+        65.45,
+        118.8
+      ]
+    }
+  ],
+  "routed_planar_length_mm": {
+    "/Hardware ADC and DAC/+5V_A": 19.132230357969206,
+    "/+3V3_D": 57.94931269099669
+  },
+  "complete_local_nets": {
+    "/Hardware ADC and DAC/+5V_A": [
+      "C204.1",
+      "C205.1",
+      "C227.1",
+      "R215.1",
+      "U201.3",
+      "U204.1",
+      "U204.2"
+    ],
+    "/+3V3_D": [
+      "C206.1",
+      "C207.1",
+      "L102.2",
+      "U201.4"
+    ]
+  },
+  "ground_anchors": [
+    "C204.2",
+    "C205.2",
+    "C206.2",
+    "C207.2"
+  ],
+  "limits": [
+    "Analogue signal/bias, protected supply and ground continuity is checked by check_analogue_signal_local.py; other main digital supply loads are unfinished.",
+    "Physical topology only; effective supply bypassing, rail drop/current/thermal, coupling/noise, sequencing/backfeed and audio performance and via-in-pad fabrication/assembly remain unqualified."
+  ]
+}

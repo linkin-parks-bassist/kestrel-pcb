@@ -1,0 +1,5375 @@
+(kicad_sch
+	(version 20260101)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "6b1764c9-fdd9-5d3c-a9a5-3eb71d65c500")
+	(paper "A2")
+	(lib_symbols
+		(symbol "KestrelDisplay:TPS61169DCK"
+			(pin_names
+				(offset 0.508)
+			)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+				)
+			)
+			(property "Value" "TPS61169DCK"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:Texas_R-PDSO-G5_DCK-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps61169.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+				)
+			)
+			(symbol "TPS61169DCK_1_1"
+				(rectangle
+					(start -8.89 8.89)
+					(end 8.89 -8.89)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -11.43 6.35 0)
+					(length 2.54)
+					(name "SW"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -11.43 3.81 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -11.43 1.27 0)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -11.43 -1.27 0)
+					(length 2.54)
+					(name "CTRL"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -11.43 -3.81 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:L"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "L_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Diode:SS16"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SS16"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SMA"
+				(at 0 -4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "60V 1A Schottky Diode, SMA"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D*SMA*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SS16_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SS16_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "74xGxx:SN74LVC1G125DCK"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -10.16 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SN74LVC1G125DCK"
+				(at 2.54 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:Texas_R-PDSO-G5_DCK-5"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74lvc1g125.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Single Buffer Gate Tri-State, Low-Voltage CMOS, SOT-353"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Single Gate Buff Tri-State LVC CMOS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Texas?R?PDSO?G5?DCK*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SN74LVC1G125DCK_0_1"
+				(polyline
+					(pts
+						(xy -7.62 6.35) (xy -7.62 -6.35) (xy 5.08 0) (xy -7.62 6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SN74LVC1G125DCK_1_1"
+				(pin input inverted
+					(at 0 10.16 270)
+					(length 7.62)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 0 0)
+					(length 7.62)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 -10.16 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin tri_state line
+					(at 12.7 0 180)
+					(length 7.62)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 10.16 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Regulator_Linear:TLV76701DRVx"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TLV76701DRVx"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm_ThermalVias"
+				(at 0 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "www.ti.com/lit/gpn/TLV767"
+				(at -1.27 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "1A, 16V Precision Linear Voltage Regulator, with enable pin, Adjustable Output 0.8-13.6V, WSON-6"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "1A, 16V Precision Linear Voltage Regulator"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "WSON*1EP*2x2mm*P0.65*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TLV76701DRVx_0_1"
+				(rectangle
+					(start -5.08 -5.08)
+					(end 5.08 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TLV76701DRVx_1_1"
+				(pin power_out line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -7.62 90)
+					(length 2.54)
+					(name "PAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(symbol
+		(lib_id "KestrelDisplay:TPS61169DCK")
+		(at 80.01 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8ff2fc3c-98de-545d-9817-53081461ee49")
+		(property "Reference" "U901"
+			(at 67.01 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TPS61169DCKR"
+			(at 67.01 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:Texas_R-PDSO-G5_DCK-5"
+			(at 80.01 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps61169.pdf"
+			(at 80.01 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 80.01 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "337766ae-d16f-5605-8c35-537494eb0048")
+		)
+		(pin "2"
+			(uuid "631e8c23-a0eb-5306-b2fa-401d6e796f9a")
+		)
+		(pin "3"
+			(uuid "452bd1f9-2051-546d-bb5f-ba386c5d0623")
+		)
+		(pin "4"
+			(uuid "c0cb0454-478a-568c-ad02-1b410d0485c3")
+		)
+		(pin "5"
+			(uuid "5eadd0f2-42d2-5394-b218-e49dbacf8b4e")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "U901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 170.18 54.61 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9976e95a-3fb7-5e09-8187-93633b10e9df")
+		(property "Reference" "L901"
+			(at 167.18 46.61 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uH"
+			(at 167.18 48.61 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_Sunlord_MWSA0603S"
+			(at 170.18 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 170.18 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5fc28951-95fd-5087-89b3-52e883f13eb5")
+		)
+		(pin "2"
+			(uuid "21e5aa52-854e-517a-9892-82aea6f36bb6")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "L901")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "10uH / shielded / Isat >=3A / MPN and lands pending"
+			(at 170.18 54.61 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:SS16")
+		(at 265.43 54.61 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c9c4c40f-76cf-55ee-a7c8-1e9835c41695")
+		(property "Reference" "D901"
+			(at 262.43 46.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SS16-E3/61T"
+			(at 262.43 48.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 265.43 59.055 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+			(at 265.43 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "60V 1A Schottky Diode, SMA"
+			(at 265.43 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c69b18df-28b8-51d0-8b45-7cf433524ccf")
+		)
+		(pin "2"
+			(uuid "b55dc2ab-ffe1-5b61-ba20-9037ba68c111")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "D901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xGxx:SN74LVC1G125DCK")
+		(at 320.04 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "847eab60-af88-5e05-883a-12292b6897dc")
+		(property "Reference" "U902"
+			(at 307.04 80 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SN74LVC1G125DCKR"
+			(at 307.04 82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:Texas_R-PDSO-G5_DCK-5"
+			(at 320.04 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74lvc1g125.pdf"
+			(at 320.04 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single Buffer Gate Tri-State, Low-Voltage CMOS, SOT-353"
+			(at 320.04 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "92b8e16f-408b-56be-9731-e68cdd999c72")
+		)
+		(pin "2"
+			(uuid "58374e5b-f093-52bb-8ab0-67d87839efd9")
+		)
+		(pin "3"
+			(uuid "d3a0e246-9106-5138-b0ee-982bdceb29d6")
+		)
+		(pin "4"
+			(uuid "df6d112f-0437-508f-a8d5-9ea6dcf1f5ce")
+		)
+		(pin "5"
+			(uuid "52e282ce-5667-50fe-b2dc-22baf372f8ac")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "U902")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 69.85 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2427299e-c9a0-5e12-bdcd-4c95d0ddd36b")
+		(property "Reference" "R901"
+			(at 73.66 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5.62ohm"
+			(at 73.66 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 68.072 124.46 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ac8325c6-3189-56a8-884c-e537c835c24d")
+		)
+		(pin "2"
+			(uuid "a26f52b1-e81e-535b-8b07-f9f5246e0387")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "R901")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "5.62ohm / 1% / >=0.125W / Kelvin sense"
+			(at 69.85 124.46000000000001 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 170.18 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5fa1b290-a590-5f81-b86c-1cf8093e1708")
+		(property "Reference" "R902"
+			(at 173.99 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 173.99 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 168.402 124.46 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 170.18 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "afb2bbb6-8cfd-583e-83c8-583632a4a8cc")
+		)
+		(pin "2"
+			(uuid "19c3713a-7bb8-5b94-81d5-9f10e4cc2821")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "R902")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "10k / 1% / MCU PWM default off"
+			(at 170.18 124.46000000000001 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 265.43 165.1 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4635d9b4-ecb1-53a8-86aa-1f2d3ceaa9e3")
+		(property "Reference" "R903"
+			(at 262.43 157.1 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 262.43 159.1 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 265.43 166.878 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 265.43 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 265.43 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bb8d7d0c-96d9-5ffc-ae0f-ec7ddfd2008c")
+		)
+		(pin "2"
+			(uuid "759cd03a-9e57-5be8-9ce0-d26714ab1b0a")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "R903")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "1k / 1% / control series"
+			(at 265.43 165.1 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 170.18 180.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e64477fa-cd6b-5363-9f1b-e8310669d6c9")
+		(property "Reference" "R904"
+			(at 173.99 179.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1M"
+			(at 173.99 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 168.402 180.34 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 170.18 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a6093c61-f9c6-5e06-ba3c-11204d808883")
+		)
+		(pin "2"
+			(uuid "4cea75d2-ff32-5f56-b993-294a0e4a65ff")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "R904")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "1M / 1% / 1206 / output bleed"
+			(at 170.18 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 69.85 180.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "12e1e83c-7f75-5ae2-83c7-a1d6c102c65a")
+		(property "Reference" "R905"
+			(at 73.66 179.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 73.66 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 68.072 180.34 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 69.85 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1344519a-9d18-5d0a-9024-f8e694e12707")
+		)
+		(pin "2"
+			(uuid "db169945-4b78-5204-a12b-c480d17b4b84")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "R905")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "100k / 1% / CTRL default off"
+			(at 69.85 180.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 69.85 229.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "50270f49-5385-5bb6-80df-a579736465ab")
+		(property "Reference" "C901"
+			(at 73.66 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 73.66 231.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 70.815 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 69.85 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "63687de8-e6e6-5952-a92f-05308a8bb1fc")
+		)
+		(pin "2"
+			(uuid "477d6f0f-bd77-55a6-9308-575a650d9747")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "C901")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "4.7uF / 25V X7R / input local"
+			(at 69.85 229.87 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 149.86 229.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7c3d5558-84da-5799-9477-83a02db8368a")
+		(property "Reference" "C902"
+			(at 153.67 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 153.67 231.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 150.825 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 149.86 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "477bc6a8-c37f-5c96-bf50-0be5e1dcefdd")
+		)
+		(pin "2"
+			(uuid "66c7b1d3-f668-5612-b684-ce1e3d37a7f1")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "C902")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "100nF / 16V X7R / VIN bypass"
+			(at 149.86 229.87 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 240.03 229.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e926f66f-1722-5b7c-a791-4267ff2f2824")
+		(property "Reference" "C903"
+			(at 243.84 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 243.84 231.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 240.995 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 240.03 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "573f0488-2815-5946-9b71-a10d5a7210b7")
+		)
+		(pin "2"
+			(uuid "cbed9ccb-2367-5e93-9802-b35d969a51ef")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "C903")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "2.2uF / 50V X7R / effective >=1uF at 39V"
+			(at 240.03 229.87 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 330.2 229.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4a9c3439-75b5-5acd-a955-d725d3bda939")
+		(property "Reference" "C904"
+			(at 334.01 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 334.01 231.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 331.165 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 330.2 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dfb52cae-73d6-5ef2-8185-294ff60ba585")
+		)
+		(pin "2"
+			(uuid "ca2bd8cf-422b-52e6-8a90-6d88f01162f8")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "C904")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "100nF / 16V X7R / buffer bypass"
+			(at 330.2 229.87 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 265.43 180.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "577e69ce-3d65-535c-aed0-153dfc075657")
+		(property "Reference" "TP901"
+			(at 269.24 179.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BL_LED_A"
+			(at 269.24 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 270.51 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 270.51 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 265.43 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "17f7dcc4-883a-5cbc-b218-96f9255676bb")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "TP901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 330.2 180.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a86a9b02-5a45-54d3-89ed-c62211d141cb")
+		(property "Reference" "TP902"
+			(at 334.01 179.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BL_LED_K"
+			(at 334.01 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 335.28 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 335.28 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 330.2 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "73da9131-a7cf-57b1-95a4-eb7af4ee2b5a")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "TP902")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:TLV76701DRVx")
+		(at 464.82 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d97e63fc-4836-54e5-9f91-5c33fafe4827")
+		(property "Reference" "U903"
+			(at 451.82 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TLV76701DRVR"
+			(at 451.82 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm_ThermalVias"
+			(at 464.82 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "www.ti.com/lit/gpn/TLV767"
+			(at 463.55 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1A, 16V Precision Linear Voltage Regulator, with enable pin, Adjustable Output 0.8-13.6V, WSON-6"
+			(at 464.82 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f2ebff8a-c90d-5898-921e-a8a104248239")
+		)
+		(pin "2"
+			(uuid "e667bb81-12cc-559b-ac82-d346b6817f82")
+		)
+		(pin "3"
+			(uuid "24f3441a-b4ca-5bfc-a856-bd7368dc1e55")
+		)
+		(pin "4"
+			(uuid "78b791c0-1b33-55e3-bbe3-35f58132af5f")
+		)
+		(pin "5"
+			(uuid "562556bb-34df-58d8-b404-35521e6f3d4f")
+		)
+		(pin "6"
+			(uuid "987d26f9-c326-5853-b479-7db4844cc427")
+		)
+		(pin "7"
+			(uuid "bbb1bea5-cd1a-5975-851e-ebca786cd100")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "U903")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 435.61 229.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "74f39a72-c9cd-5981-8b2d-d6b4c0690567")
+		(property "Reference" "R906"
+			(at 439.42 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33.2k"
+			(at 439.42 231.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 433.832 229.87 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 435.61 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 435.61 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4bb8cfaa-7079-54bd-be1c-cdf909dde2c2")
+		)
+		(pin "2"
+			(uuid "1df943ed-1675-5a71-aefb-4434044b56d0")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "R906")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "33.2k / 0.1% / LCD upper feedback"
+			(at 435.61 229.87 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 515.62 229.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b7c9f737-e252-5a42-880b-ce4d5428105e")
+		(property "Reference" "R907"
+			(at 519.43 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 519.43 231.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 513.842 229.87 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 515.62 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 515.62 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7c87a26e-11a1-5932-95c2-d88160837966")
+		)
+		(pin "2"
+			(uuid "3536b59c-2d8d-5539-9c01-b56e4b3df467")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "R907")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "10k / 0.1% / LCD lower feedback"
+			(at 515.62 229.87 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 435.61 170.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9ff52684-6d46-573a-8bdc-0ef9a8f4e610")
+		(property "Reference" "C905"
+			(at 439.42 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 439.42 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 436.575 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 435.61 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 435.61 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "719f3108-aaa9-50bd-907f-76064b8f19d4")
+		)
+		(pin "2"
+			(uuid "db360e3e-c48a-5883-806c-a69131df149d")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "C905")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "4.7uF / 16V X7R / effective >=1uF / LCD input"
+			(at 435.61 170.18 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 515.62 170.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7f33dd05-4e1c-55b5-8033-cde09babef91")
+		(property "Reference" "C906"
+			(at 519.43 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 519.43 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 516.585 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 515.62 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 515.62 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6b93bd2c-5709-5a9b-a2db-345137a227c0")
+		)
+		(pin "2"
+			(uuid "7a5c8f54-b43c-50b8-8681-368be36542af")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "C906")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "4.7uF / 16V X7R / effective >=1uF / LCD output"
+			(at 515.62 170.18 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 474.98 279.4 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0d2b97de-5c44-5d51-beb3-3c60a810c63c")
+		(property "Reference" "C907"
+			(at 471.98 271.4 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10pF"
+			(at 471.98 273.4 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 471.17 278.435 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 474.98 279.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 474.98 279.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6871b3c9-34da-5c22-bef3-50b1b27f3767")
+		)
+		(pin "2"
+			(uuid "70e30f4d-4515-5e14-bab8-d8ceefccd75a")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "C907")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "10pF / 25V C0G / LCD feedforward"
+			(at 474.98 279.4 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 515.62 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "299246aa-76bc-5cb3-9bef-d338d939aaf5")
+		(property "Reference" "TP903"
+			(at 519.43 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LCD_VDD"
+			(at 519.43 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 520.7 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 520.7 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 515.62 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "136cb358-42e0-58e3-bfd1-f0460cbc5b0d")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "TP903")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:TLV76701DRVx")
+		(at 464.82 355.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "665b4b27-21e4-5185-8655-f36153e8e559")
+		(property "Reference" "U904"
+			(at 451.82 337.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TLV76701DRVR"
+			(at 451.82 340.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm_ThermalVias"
+			(at 464.82 367.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "www.ti.com/lit/gpn/TLV767"
+			(at 463.55 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1A, 16V Precision Linear Voltage Regulator, with enable pin, Adjustable Output 0.8-13.6V, WSON-6"
+			(at 464.82 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d327400f-4c95-5ab1-9300-61d27e1ab78a")
+		)
+		(pin "2"
+			(uuid "84d51f6d-53fa-5874-bd1b-aa4c1bea4a32")
+		)
+		(pin "3"
+			(uuid "2ee3a3f7-f97b-5e2f-889a-0f687919ec0c")
+		)
+		(pin "4"
+			(uuid "42b29d72-241c-536c-88d0-85c7692f0705")
+		)
+		(pin "5"
+			(uuid "ea897dca-2637-58be-8b22-a3f32d1bc64e")
+		)
+		(pin "6"
+			(uuid "49772804-5e42-54a4-9657-6d7a36d795f6")
+		)
+		(pin "7"
+			(uuid "e0918664-c372-5e0f-be57-ef93e18f2f44")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "U904")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 350.52 355.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "44b4e62d-5c31-52c3-804d-5acb2abe0c9b")
+		(property "Reference" "R908"
+			(at 354.33 354.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "30k"
+			(at 354.33 356.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 348.742 355.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 350.52 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 350.52 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "15382926-db79-573c-b7dd-0cb34ce639ba")
+		)
+		(pin "2"
+			(uuid "ccb7bd99-e96b-5289-81a3-f6d44a60dd0f")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "R908")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "30k / 0.1% / touch upper feedback"
+			(at 350.52 355.6 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 389.89 355.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3bbf1d78-b181-5b5b-86cf-665ae63d9e28")
+		(property "Reference" "R909"
+			(at 393.7 354.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 393.7 356.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 388.112 355.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 389.89 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 389.89 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b407992f-e7fb-52dc-9290-a16455fe1725")
+		)
+		(pin "2"
+			(uuid "a197e2a1-2236-5bfa-b803-2ab5ab760cd1")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "R909")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "10k / 0.1% / touch lower feedback"
+			(at 389.89 355.6 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 35.56 355.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "570aba0c-fd83-517f-bd29-3bf55e60c3cd")
+		(property "Reference" "C908"
+			(at 39.37 354.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 39.37 356.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 36.525 351.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 35.56 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f9abc023-da23-5d7b-b21d-b7dd3e2875f0")
+		)
+		(pin "2"
+			(uuid "1dcaedd8-618d-5ab1-bf2c-b179735e19a1")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "C908")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "4.7uF / 16V X7R / effective >=1uF / touch input"
+			(at 35.56 355.6 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 124.46 355.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "09bcda03-41bd-507c-9c62-55cb37975a7b")
+		(property "Reference" "C909"
+			(at 128.27 354.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 128.27 356.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 125.425 351.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 124.46 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "85c46415-3543-5466-bc99-29fc7bfb0aac")
+		)
+		(pin "2"
+			(uuid "470b03da-1ccd-59ac-adc6-a6357208bc10")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "C909")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "4.7uF / 16V X7R / effective >=1uF / touch output"
+			(at 124.46000000000001 355.6 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 224.79 355.6 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b286a63c-9000-5d3d-8b07-bfd3d694a241")
+		(property "Reference" "C910"
+			(at 221.79 347.6 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10pF"
+			(at 221.79 349.6 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 220.98 354.635 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 224.79 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f04e376b-89ae-500c-9fc8-20397c65af0f")
+		)
+		(pin "2"
+			(uuid "9bd14a8c-bf00-53a1-a698-aea0ef01cc68")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "C910")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "10pF / 25V C0G / touch feedforward"
+			(at 224.79 355.6 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 539.75 355.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2d40c1a3-96be-5de6-87eb-aacaadb0e665")
+		(property "Reference" "TP904"
+			(at 543.56 354.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TOUCH_VDD"
+			(at 543.56 356.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 544.83 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 544.83 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 539.75 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c2b81e3f-4c79-5938-a97f-f852604695c7")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78"
+					(reference "TP904")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(wire
+		(pts
+			(xy 68.58 58.42) (xy 63.5 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19c5127f-3bfb-5d54-a647-4d5a9bc7eaef")
+	)
+	(label "BL_SW"
+		(at 63.5 58.42 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "6e103272-6590-52f0-b4eb-fc1bd22f4b21")
+	)
+	(wire
+		(pts
+			(xy 68.58 60.96) (xy 63.5 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1089fda6-11a8-59cb-bcd4-e76c903d7d69")
+	)
+	(hierarchical_label "GND"
+		(shape bidirectional)
+		(at 63.5 60.96 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "a48629ae-76ea-574e-b30b-7ea5ba5ba534")
+	)
+	(wire
+		(pts
+			(xy 68.58 63.5) (xy 63.5 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a54324b-40cb-5243-ba1e-44e17b4440be")
+	)
+	(hierarchical_label "BL_LED_K"
+		(shape bidirectional)
+		(at 63.5 63.5 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "dc60728c-a20a-5c7e-a759-3e7fcb00ce81")
+	)
+	(wire
+		(pts
+			(xy 68.58 66.04) (xy 63.5 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32c24ae6-e6ea-5eb1-a1dd-d844ac5ba292")
+	)
+	(label "BL_CTRL"
+		(at 63.5 66.04 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "256290e5-9443-5f42-a879-569cfa5fb9d9")
+	)
+	(wire
+		(pts
+			(xy 68.58 68.58) (xy 63.5 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ab0ece0-1247-5731-b56a-3eb5a11eb622")
+	)
+	(hierarchical_label "+5V_DIG"
+		(shape input)
+		(at 63.5 68.58 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "7e856e19-f940-51f8-810d-6f9d3af498b4")
+	)
+	(wire
+		(pts
+			(xy 166.37 54.61) (xy 161.29 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "547b5c68-3731-5c13-8d73-a257e3faae07")
+	)
+	(label "+5V_DIG"
+		(at 161.29 54.61 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "658e2756-23d3-5fa1-b8c5-b974d9c919c3")
+	)
+	(wire
+		(pts
+			(xy 173.99 54.61) (xy 179.07 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf2271e6-ce81-5417-9bdb-a7540c3f9487")
+	)
+	(label "BL_SW"
+		(at 179.07 54.61 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "91880d80-9b56-5aff-9e04-1fd66aa635a3")
+	)
+	(wire
+		(pts
+			(xy 269.24 54.61) (xy 274.32 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7b41d40-e610-5365-9657-57c5883f1857")
+	)
+	(hierarchical_label "BL_LED_A"
+		(shape output)
+		(at 274.32 54.61 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "97f33a3d-23f4-5c9c-95dc-1c6d2a416a40")
+	)
+	(wire
+		(pts
+			(xy 261.62 54.61) (xy 256.54 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "638f35bb-b2f1-5f55-812f-5629e3a717c1")
+	)
+	(label "BL_SW"
+		(at 256.54 54.61 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "836f847f-a862-5257-8cb8-884be282b9a1")
+	)
+	(wire
+		(pts
+			(xy 320.04 100.33) (xy 320.04 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "445957d0-c8c4-5d2f-a545-4afb6e018ea4")
+	)
+	(label "GND"
+		(at 320.04 95.25 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "105a2d3f-f6cc-57d9-bdfe-04baaaea279a")
+	)
+	(wire
+		(pts
+			(xy 304.8 110.49) (xy 299.72 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1522b63-1dc3-5e7a-8327-54e8818765ee")
+	)
+	(hierarchical_label "MCU_BL_PWM"
+		(shape input)
+		(at 299.72 110.49 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "6a5d70a4-96e5-506a-a707-189ba49b95c1")
+	)
+	(wire
+		(pts
+			(xy 314.96 120.65) (xy 314.96 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "168cabb7-8be2-5cbc-bae0-6c24f72f70a8")
+	)
+	(label "GND"
+		(at 314.96 125.73 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "3db0a5d4-15e7-5b63-8bf7-d2241fdbdeb6")
+	)
+	(wire
+		(pts
+			(xy 332.74 110.49) (xy 337.82 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82dc623a-5c47-5cc3-b801-0c74b9442847")
+	)
+	(label "BL_CTRL_BUFFER"
+		(at 337.82 110.49 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "6cd183ee-7200-5e47-b5b4-5ac09fd3dbbf")
+	)
+	(wire
+		(pts
+			(xy 314.96 100.33) (xy 314.96 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40423f1a-95f1-5cdc-9062-b9064e985610")
+	)
+	(label "+5V_DIG"
+		(at 314.96 95.25 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "838415c9-ba2d-5a93-8b08-e30fe0593daf")
+	)
+	(wire
+		(pts
+			(xy 69.85 120.65) (xy 69.85 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb5e74c1-fef1-5e8b-927f-5ff68fe4c548")
+	)
+	(label "BL_LED_K"
+		(at 69.85 115.57 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "0470ddee-1813-5bc5-b5a1-b4c281d0c25b")
+	)
+	(wire
+		(pts
+			(xy 69.85 128.27) (xy 69.85 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "654ecc1b-a0e0-511b-b0f8-38e8bc0d6d82")
+	)
+	(label "GND"
+		(at 69.85 133.35 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "2c1dfa59-65df-53dc-b012-6a22cff0a586")
+	)
+	(wire
+		(pts
+			(xy 170.18 120.65) (xy 170.18 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b503dd5-9bcc-5012-8be6-13923d42659a")
+	)
+	(label "MCU_BL_PWM"
+		(at 170.18 115.57 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "eaa61c7e-e40c-5787-9e43-ceb6b512923e")
+	)
+	(wire
+		(pts
+			(xy 170.18 128.27) (xy 170.18 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9b0f42c-d31c-519d-b498-872c7183e839")
+	)
+	(label "GND"
+		(at 170.18 133.35 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "86368318-ab56-512e-817d-b0dd5b2849ca")
+	)
+	(wire
+		(pts
+			(xy 261.62 165.1) (xy 256.54 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ddc1751-d419-59f4-b197-0355b34cace7")
+	)
+	(label "BL_CTRL_BUFFER"
+		(at 256.54 165.1 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "754b33c7-9a1f-55a1-9869-41f8e360d44c")
+	)
+	(wire
+		(pts
+			(xy 269.24 165.1) (xy 274.32 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8eef544b-02f8-5efb-8a74-6ba6b10c4231")
+	)
+	(label "BL_CTRL"
+		(at 274.32 165.1 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "8e56bae0-86d5-52c1-a487-c5768bde40eb")
+	)
+	(wire
+		(pts
+			(xy 170.18 176.53) (xy 170.18 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "755d0eb1-db7e-59cb-afce-ddea66297370")
+	)
+	(label "BL_LED_A"
+		(at 170.18 171.45 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "cffc64b5-11e7-505b-ab26-ddc8fbb5a0c9")
+	)
+	(wire
+		(pts
+			(xy 170.18 184.15) (xy 170.18 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93e39874-17a0-5be6-bef2-8676223da8e5")
+	)
+	(label "GND"
+		(at 170.18 189.23 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "6ec2fe76-8858-5d1c-ba6c-69133811b44c")
+	)
+	(wire
+		(pts
+			(xy 69.85 176.53) (xy 69.85 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99956b9f-1dd4-50b4-8c5d-c1ad93719a58")
+	)
+	(label "BL_CTRL"
+		(at 69.85 171.45 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "00f70389-3172-517e-8f68-9041200bd098")
+	)
+	(wire
+		(pts
+			(xy 69.85 184.15) (xy 69.85 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01ac0e4c-f6a8-55d4-9415-89389232ecd8")
+	)
+	(label "GND"
+		(at 69.85 189.23 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "7cc36ed6-8754-585c-9500-60813964e1bc")
+	)
+	(wire
+		(pts
+			(xy 69.85 226.06) (xy 69.85 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f74dfbd6-9a78-5464-8d4e-c9cd2114fc13")
+	)
+	(label "+5V_DIG"
+		(at 69.85 220.98 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "c68beec5-e939-506d-8875-ae73fbfc5fd9")
+	)
+	(wire
+		(pts
+			(xy 69.85 233.68) (xy 69.85 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "379f8074-17a0-500a-9d92-5da8f3868bf2")
+	)
+	(label "GND"
+		(at 69.85 238.76 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "4af9b0fa-f731-50c2-b830-97a660b1ab52")
+	)
+	(wire
+		(pts
+			(xy 149.86 226.06) (xy 149.86 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3a8f5f7-8adc-597c-98e1-47d84e99bc27")
+	)
+	(label "+5V_DIG"
+		(at 149.86 220.98 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f4e18c1-f7bb-5db3-b71a-a4fdf9aea203")
+	)
+	(wire
+		(pts
+			(xy 149.86 233.68) (xy 149.86 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efc888aa-1297-543d-bc42-3a5bf7c1f5a1")
+	)
+	(label "GND"
+		(at 149.86 238.76 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "8e05aeb8-3e24-560f-ac8f-69e0a71be8a8")
+	)
+	(wire
+		(pts
+			(xy 240.03 226.06) (xy 240.03 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eec056d7-93ac-5101-8525-1a49d74389a3")
+	)
+	(label "BL_LED_A"
+		(at 240.03 220.98 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "de1aeaaa-6d84-5f07-99f6-a854d40ad995")
+	)
+	(wire
+		(pts
+			(xy 240.03 233.68) (xy 240.03 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a118377-bbbb-52a0-bdee-c9f101b350b1")
+	)
+	(label "GND"
+		(at 240.03 238.76 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "5263012a-68c5-537f-918b-7a7b248789c8")
+	)
+	(wire
+		(pts
+			(xy 330.2 226.06) (xy 330.2 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40f20246-17dd-5011-826e-ff5f8c59c40b")
+	)
+	(label "+5V_DIG"
+		(at 330.2 220.98 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "c61a9c58-0673-59bf-b95c-e1562f9feefd")
+	)
+	(wire
+		(pts
+			(xy 330.2 233.68) (xy 330.2 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a5f7b3b-49cd-5c4c-b4c0-36b7f48b7f21")
+	)
+	(label "GND"
+		(at 330.2 238.76 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "71897857-0cb1-569c-ac3b-83537ffb8e9f")
+	)
+	(wire
+		(pts
+			(xy 265.43 180.34) (xy 265.43 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d82b8b71-313f-5174-8559-ae414e08a25b")
+	)
+	(label "BL_LED_A"
+		(at 265.43 185.42 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae038ded-ea55-5865-84c2-ad21753ba6e4")
+	)
+	(wire
+		(pts
+			(xy 330.2 180.34) (xy 330.2 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1d27cc6-cb0d-5a42-91eb-c499c156b2a0")
+	)
+	(label "BL_LED_K"
+		(at 330.2 185.42 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "9a629172-6dc7-55e2-a5b4-7422fd8d7a6e")
+	)
+	(wire
+		(pts
+			(xy 472.44 62.23) (xy 477.52 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed94be5a-5f84-5580-a17a-cad690317d4e")
+	)
+	(hierarchical_label "LCD_VDD"
+		(shape output)
+		(at 477.52 62.23 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "227472fe-bd9a-5976-87ca-afc7a878ac27")
+	)
+	(wire
+		(pts
+			(xy 472.44 64.77) (xy 477.52 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1db57e9b-03f4-56df-92fc-402cdded2697")
+	)
+	(label "LCD_FB"
+		(at 477.52 64.77 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "5cfed8c1-2c2c-56f4-bed6-906a44f8f248")
+	)
+	(wire
+		(pts
+			(xy 464.82 72.39) (xy 464.82 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7b58f80-2b1e-5d85-90c5-69a00c240909")
+	)
+	(label "GND"
+		(at 464.82 77.47 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "52805aa9-a843-5539-b769-84d9a448aecc")
+	)
+	(wire
+		(pts
+			(xy 457.2 64.77) (xy 452.12 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14f108f2-36f1-5bf9-8ea9-5a51b62f5647")
+	)
+	(label "+5V_DIG"
+		(at 452.12 64.77 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "79f40e0f-2247-5518-89ac-b8695ad2800e")
+	)
+	(wire
+		(pts
+			(xy 457.2 62.23) (xy 452.12 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "537ff410-66a1-5253-8d61-3288635ba52f")
+	)
+	(label "+5V_DIG"
+		(at 452.12 62.23 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "c4ccd192-d5a5-5e83-8e5a-9be9240fafa4")
+	)
+	(wire
+		(pts
+			(xy 462.28 72.39) (xy 462.28 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a5d19d0-9f7a-5cae-8550-ae0336bea01a")
+	)
+	(wire
+		(pts
+			(xy 462.28 77.47) (xy 464.82 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f708b13-84b9-5508-a90d-a1d7965f4578")
+	)
+	(wire
+		(pts
+			(xy 435.61 226.06) (xy 435.61 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46864312-65d7-5d92-b23e-f6dcd54f5a40")
+	)
+	(label "LCD_VDD"
+		(at 435.61 220.98 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "7989b332-3060-52c2-961e-e0b99f691eaa")
+	)
+	(wire
+		(pts
+			(xy 435.61 233.68) (xy 435.61 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4830291-d980-5f8a-a60b-0ea25d2e00d9")
+	)
+	(label "LCD_FB"
+		(at 435.61 238.76 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "68507fe4-3142-5357-94b7-64b1510ff96c")
+	)
+	(wire
+		(pts
+			(xy 515.62 226.06) (xy 515.62 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "926e2ddc-c21d-51cc-a63e-d51a9197d521")
+	)
+	(label "LCD_FB"
+		(at 515.62 220.98 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "8b3f6aa0-08be-511f-bb09-96015484a181")
+	)
+	(wire
+		(pts
+			(xy 515.62 233.68) (xy 515.62 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b148c45-6254-5fa9-945e-8b262173e29d")
+	)
+	(label "GND"
+		(at 515.62 238.76 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "834a834d-a704-5370-8c53-9c0e8eb1fa62")
+	)
+	(wire
+		(pts
+			(xy 435.61 166.37) (xy 435.61 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bee89ed-3250-58eb-a568-dc5a67490362")
+	)
+	(label "+5V_DIG"
+		(at 435.61 161.29 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "a3509c13-10b6-57d6-8f5e-9b7733e75159")
+	)
+	(wire
+		(pts
+			(xy 435.61 173.99) (xy 435.61 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc038909-8729-5d54-9b01-fa13d9020359")
+	)
+	(label "GND"
+		(at 435.61 179.07 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "ffc7bf17-4fab-50ee-9a79-ea57b19fb0dc")
+	)
+	(wire
+		(pts
+			(xy 515.62 166.37) (xy 515.62 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac98d4c4-c563-540e-b15d-83a8d350d5b5")
+	)
+	(label "LCD_VDD"
+		(at 515.62 161.29 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "32cf2918-c59b-5ec9-90ee-c48151b6a412")
+	)
+	(wire
+		(pts
+			(xy 515.62 173.99) (xy 515.62 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ceb0ab4e-342f-5afc-a240-dc39a83d8124")
+	)
+	(label "GND"
+		(at 515.62 179.07 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "79b527cf-f4d2-5ba5-a2bb-e7948a58899f")
+	)
+	(wire
+		(pts
+			(xy 471.17 279.4) (xy 466.09 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fca8674f-fce1-5930-811f-8e17e8058a61")
+	)
+	(label "LCD_VDD"
+		(at 466.09 279.4 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "f19aace9-d75e-5a50-a2a0-6045ac923d24")
+	)
+	(wire
+		(pts
+			(xy 478.79 279.4) (xy 483.87 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fa9ef06-b047-54ae-9b44-453d5d6df3d9")
+	)
+	(label "LCD_FB"
+		(at 483.87 279.4 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c4cf1c7-0bf8-5787-bcd1-35e58649f5c4")
+	)
+	(wire
+		(pts
+			(xy 515.62 119.38) (xy 515.62 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64a0aefe-344e-5277-ba88-95b13dea182c")
+	)
+	(label "LCD_VDD"
+		(at 515.62 124.46 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "135941c1-a3be-53b1-b65a-17e23ae97850")
+	)
+	(wire
+		(pts
+			(xy 472.44 353.06) (xy 477.52 353.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d932131-551d-59b9-9925-be13a5de9239")
+	)
+	(hierarchical_label "TOUCH_VDD"
+		(shape output)
+		(at 477.52 353.06 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "35ee732c-95fe-5d53-a6a0-5fd721647253")
+	)
+	(wire
+		(pts
+			(xy 472.44 355.6) (xy 477.52 355.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81947dbc-946e-521c-9446-de2a92c06e5d")
+	)
+	(label "TOUCH_FB"
+		(at 477.52 355.6 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "638b4355-bae8-56e4-8589-647922295436")
+	)
+	(wire
+		(pts
+			(xy 464.82 363.22) (xy 464.82 368.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c17adf00-33b9-5aed-8d39-74999798ab28")
+	)
+	(label "GND"
+		(at 464.82 368.3 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "46a889f3-9864-5003-9442-1581f846be6d")
+	)
+	(wire
+		(pts
+			(xy 457.2 355.6) (xy 452.12 355.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1050236e-ed41-51ce-a0f2-bbfce56cf1a3")
+	)
+	(label "+5V_DIG"
+		(at 452.12 355.6 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "d007bf56-4e67-556f-9f26-f671a8c7e243")
+	)
+	(wire
+		(pts
+			(xy 457.2 353.06) (xy 452.12 353.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1b434d4-f185-5639-b9af-c1d3749ed025")
+	)
+	(label "+5V_DIG"
+		(at 452.12 353.06 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "1e18dd32-5a51-55c4-8b5c-5fd9709862b6")
+	)
+	(wire
+		(pts
+			(xy 462.28 363.22) (xy 462.28 368.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "889cd39a-b0c9-5319-a7ea-7a9d83c92927")
+	)
+	(wire
+		(pts
+			(xy 462.28 368.3) (xy 464.82 368.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa6f0fe0-d6b8-54f1-81a7-c7edfb9d214e")
+	)
+	(wire
+		(pts
+			(xy 350.52 351.79) (xy 350.52 346.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e435498a-12ac-5757-a5ef-eab7c6df76f6")
+	)
+	(label "TOUCH_VDD"
+		(at 350.52 346.71 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "5d2ce147-c6c0-52f8-94e6-2870fa063858")
+	)
+	(wire
+		(pts
+			(xy 350.52 359.41) (xy 350.52 364.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dc38b21-3435-5fd9-8568-c9aee47ddc7e")
+	)
+	(label "TOUCH_FB"
+		(at 350.52 364.49 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "c8894df4-e0c2-579b-b88a-6c8454b4b790")
+	)
+	(wire
+		(pts
+			(xy 389.89 351.79) (xy 389.89 346.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dfa2be2-77a8-5762-b704-f829170e67bd")
+	)
+	(label "TOUCH_FB"
+		(at 389.89 346.71 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "59b2b6dc-32fd-55be-bdcb-b55771ae9e21")
+	)
+	(wire
+		(pts
+			(xy 389.89 359.41) (xy 389.89 364.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2b5117c-c00d-5e55-814f-268b0263746d")
+	)
+	(label "GND"
+		(at 389.89 364.49 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "4478723c-df51-54ad-ba92-305e2780b674")
+	)
+	(wire
+		(pts
+			(xy 35.56 351.79) (xy 35.56 346.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd980ca3-515e-5261-a985-948f13bb927c")
+	)
+	(label "+5V_DIG"
+		(at 35.56 346.71 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "30b103f5-ac36-58a2-8ecc-bc4255d182f7")
+	)
+	(wire
+		(pts
+			(xy 35.56 359.41) (xy 35.56 364.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43366293-f0a5-554e-b5d8-4dd221d9a4b5")
+	)
+	(label "GND"
+		(at 35.56 364.49 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "b4042a9f-e18f-5408-b710-bf031dd3dd6f")
+	)
+	(wire
+		(pts
+			(xy 124.46 351.79) (xy 124.46 346.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adaa9b25-80b3-5a9b-99b7-ef07ecb0bf09")
+	)
+	(label "TOUCH_VDD"
+		(at 124.46 346.71 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "346fca13-4c79-5150-997b-3a46a4fccce5")
+	)
+	(wire
+		(pts
+			(xy 124.46 359.41) (xy 124.46 364.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ea32b39-5c60-513b-97f6-c51d3e25c6d6")
+	)
+	(label "GND"
+		(at 124.46 364.49 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "6038859f-f7da-58ca-9773-b6843edcd525")
+	)
+	(wire
+		(pts
+			(xy 220.98 355.6) (xy 215.9 355.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82c199c4-fe90-5c6d-a352-faa6cb6ea28c")
+	)
+	(label "TOUCH_VDD"
+		(at 215.9 355.6 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "c6aca895-63bb-54e9-b6b8-7b0a99a626b2")
+	)
+	(wire
+		(pts
+			(xy 228.6 355.6) (xy 233.68 355.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a508e6d0-4bc7-5798-bb21-f5168153dfdc")
+	)
+	(label "TOUCH_FB"
+		(at 233.68 355.6 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "2ff58738-ebcd-59d1-a03d-68a1c86778a1")
+	)
+	(wire
+		(pts
+			(xy 539.75 355.6) (xy 539.75 360.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a8b674c-dfc8-5027-83b6-91e8d6badb6d")
+	)
+	(label "TOUCH_VDD"
+		(at 539.75 360.68 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "d86b83e4-2fbf-5e04-b716-b074642f2365")
+	)
+	(text "ONBOARD BACKLIGHT BOOST - REFERENCE PANEL - ENGINEERING DRAFT"
+		(at 20 15 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "7d60e791-cd15-53bb-b589-c59f9bb84478")
+	)
+	(text "GPIO8 PWM defaults low. Use 5-100kHz; buffered on 5V domain with Ioff; controlled by firmware."
+		(at 20 255 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "45c02502-30ca-5ed5-adc9-fce358c00133")
+	)
+	(text "5.62ohm sets 36.30mA nominal / <=39.55mA conditional TA>=25C limits. Cold-temperature regulation remains to qualify."
+		(at 20 262 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "30fc94b5-1c56-54df-afbc-79d29bb83881")
+	)
+	(text "J1001: pin2 anode / pin1 cathode. Never ground LED cathode; Kelvin route to FB and R901."
+		(at 20 269 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "599cd6d0-d731-52f1-80ba-5151dbd5e9bd")
+	)
+	(text "Disabled boost retains VIN-to-output passive path. Panel Vf must exceed VIN; no hard output disconnect or hot-plug claim."
+		(at 20 276 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "7a0e1087-b510-5faa-a1df-3716d9a01abd")
+	)
+	(text "LCD and touch supplies onboard. Panel contact orientation, exact parts/effective capacitance and qualification pending."
+		(at 20 248 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "4f936a4f-8479-544e-97b2-5fd81fd8c9a7")
+	)
+	(text "LCD LOGIC: TLV76701 / 33.2k:10k 0.1% / 3.456V nominal. Conditional DC corners 3.414..3.498V; not touch VDD."
+		(at 20 310 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "c837c93a-7b4b-5821-9747-66a8317e45bd")
+	)
+	(text "Panel VDD 3.3..3.6V. 5V source headroom, load/thermal, effective capacitors, bus levels and ramp/backfeed require qualification."
+		(at 20 317 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "47afb286-af29-5350-907e-88bd7f1f327f")
+	)
+	(text "TI adjustable DRV pins: 1 OUT, 2 FB, 3/5/EP GND, 4 EN, 6 IN. TP903 probes LCD power; J1001 is the LCD connector."
+		(at 20 324 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "ea758489-1ac9-57e2-922d-314bcd63adcf")
+	)
+	(text "TOUCH: 30k:10k 0.1% / 3.2V nominal. GT911 recommended supply max3.3V, absolute max3.47V. Do not use LCD_VDD."
+		(at 20 385 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "89c0e4ff-2a0f-5c22-9ac6-ad6a58a6cb53")
+	)
+	(text "Touch load, exact capacitors, reset/address timing, rail-ramp/backfeed and GPIO/I2C behavior require qualification."
+		(at 20 392 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "1bf99bb1-e4f4-561d-ac7e-e280555995ec")
+	)
+)
+

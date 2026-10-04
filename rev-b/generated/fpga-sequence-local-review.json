@@ -1,0 +1,8 @@
+{
+  "status": "PASS nine local sequencing net groups physically connected; all twelve ground pads reach filled plane through eleven ground vias",
+  "track_segments": 93,
+  "vias": 30,
+  "limits": [
+    "Main feed continuity is checked by check_fpga_main_feeds.py; FPGA I/O pin/bulk and assigned support distribution are checked separately by check_fpga_io_distribution.py; remaining switched support supplies are checked separately by check_fpga_support_supply.py; SPI supply continuity is checked separately by check_spi_support_supply.py; local held-DAC buffer supply continuity is checked separately by check_fpga_audio_local.py; DAC supply/pump and full held-rail continuity is checked by check_dac_support_local.py; ADC supply/bypass continuity is checked by check_adc_power_local.py; Analogue signal/bias, protected supply and ground continuity is checked by check_analogue_signal_local.py; effective capacitance, loop, current/thermal and assembly remain unqualified."
+  ]
+}

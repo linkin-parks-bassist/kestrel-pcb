@@ -1,0 +1,563 @@
+{
+  "status": "provisional-placement-checked-not-routed-or-qualified",
+  "placed_references": [
+    "D901",
+    "C901",
+    "C902",
+    "C903",
+    "C904",
+    "R901",
+    "R902",
+    "R903",
+    "R904",
+    "R905",
+    "TP901",
+    "TP902",
+    "C905",
+    "C906",
+    "R906",
+    "R907",
+    "C907",
+    "TP903",
+    "C908",
+    "C909",
+    "R908",
+    "R909",
+    "C910",
+    "TP904"
+  ],
+  "major_relocations": {
+    "L901": [
+      -41,
+      44.3,
+      -90
+    ],
+    "U901": [
+      -45,
+      37.7,
+      180
+    ]
+  },
+  "pad_net_inventory": {
+    "D901": [
+      {
+        "number": "1",
+        "net": "/BL_LED_A",
+        "position_mm": [
+          62.5,
+          62.5
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/Backlight and display supplies/BL_SW",
+        "position_mm": [
+          58.5,
+          62.5
+        ]
+      }
+    ],
+    "C901": [
+      {
+        "number": "1",
+        "net": "/+5V_DIG",
+        "position_mm": [
+          59.0,
+          50.45
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/GND",
+        "position_mm": [
+          59.0,
+          48.55
+        ]
+      }
+    ],
+    "C902": [
+      {
+        "number": "1",
+        "net": "/+5V_DIG",
+        "position_mm": [
+          52.3,
+          63.675
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/GND",
+        "position_mm": [
+          52.3,
+          62.125
+        ]
+      }
+    ],
+    "C903": [
+      {
+        "number": "1",
+        "net": "/BL_LED_A",
+        "position_mm": [
+          66.5,
+          63.975
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/GND",
+        "position_mm": [
+          66.5,
+          61.025
+        ]
+      }
+    ],
+    "C904": [
+      {
+        "number": "1",
+        "net": "/+5V_DIG",
+        "position_mm": [
+          52.5,
+          66.725
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/GND",
+        "position_mm": [
+          52.5,
+          65.175
+        ]
+      }
+    ],
+    "R901": [
+      {
+        "number": "1",
+        "net": "/BL_LED_K",
+        "position_mm": [
+          58.9125,
+          65.25
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/GND",
+        "position_mm": [
+          57.0875,
+          65.25
+        ]
+      }
+    ],
+    "R902": [
+      {
+        "number": "1",
+        "net": "/MCU_BL_PWM",
+        "position_mm": [
+          46.575,
+          70.0
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/GND",
+        "position_mm": [
+          48.225,
+          70.0
+        ]
+      }
+    ],
+    "R903": [
+      {
+        "number": "1",
+        "net": "/Backlight and display supplies/BL_CTRL_BUFFER",
+        "position_mm": [
+          54.7,
+          66.025
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/Backlight and display supplies/BL_CTRL",
+        "position_mm": [
+          54.7,
+          64.375
+        ]
+      }
+    ],
+    "R904": [
+      {
+        "number": "1",
+        "net": "/BL_LED_A",
+        "position_mm": [
+          64.0,
+          58.9625
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/GND",
+        "position_mm": [
+          64.0,
+          56.0375
+        ]
+      }
+    ],
+    "R905": [
+      {
+        "number": "1",
+        "net": "/Backlight and display supplies/BL_CTRL",
+        "position_mm": [
+          50.325,
+          62.9
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/GND",
+        "position_mm": [
+          48.675,
+          62.9
+        ]
+      }
+    ],
+    "TP901": [
+      {
+        "number": "1",
+        "net": "/BL_LED_A",
+        "position_mm": [
+          66.8,
+          58.2
+        ]
+      }
+    ],
+    "TP902": [
+      {
+        "number": "1",
+        "net": "/BL_LED_K",
+        "position_mm": [
+          64.5,
+          53.5
+        ]
+      }
+    ],
+    "C905": [
+      {
+        "number": "1",
+        "net": "/+5V_DIG",
+        "position_mm": [
+          101.25,
+          62.0
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/GND",
+        "position_mm": [
+          99.35,
+          62.0
+        ]
+      }
+    ],
+    "C906": [
+      {
+        "number": "1",
+        "net": "/LCD_VDD",
+        "position_mm": [
+          92.55,
+          59.0
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/GND",
+        "position_mm": [
+          94.45,
+          59.0
+        ]
+      }
+    ],
+    "R906": [
+      {
+        "number": "1",
+        "net": "/LCD_VDD",
+        "position_mm": [
+          94.825,
+          64.8
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/Backlight and display supplies/LCD_FB",
+        "position_mm": [
+          93.175,
+          64.8
+        ]
+      }
+    ],
+    "R907": [
+      {
+        "number": "1",
+        "net": "/Backlight and display supplies/LCD_FB",
+        "position_mm": [
+          94.825,
+          67.0
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/GND",
+        "position_mm": [
+          93.175,
+          67.0
+        ]
+      }
+    ],
+    "C907": [
+      {
+        "number": "1",
+        "net": "/LCD_VDD",
+        "position_mm": [
+          97.5,
+          66.575
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/Backlight and display supplies/LCD_FB",
+        "position_mm": [
+          97.5,
+          65.025
+        ]
+      }
+    ],
+    "TP903": [
+      {
+        "number": "1",
+        "net": "/LCD_VDD",
+        "position_mm": [
+          95.0,
+          69.5
+        ]
+      }
+    ],
+    "C908": [
+      {
+        "number": "1",
+        "net": "/+5V_DIG",
+        "position_mm": [
+          150.45,
+          66.4
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/GND",
+        "position_mm": [
+          148.55,
+          66.4
+        ]
+      }
+    ],
+    "C909": [
+      {
+        "number": "1",
+        "net": "/TOUCH_VDD",
+        "position_mm": [
+          141.55,
+          65.0
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/GND",
+        "position_mm": [
+          143.45,
+          65.0
+        ]
+      }
+    ],
+    "R908": [
+      {
+        "number": "1",
+        "net": "/TOUCH_VDD",
+        "position_mm": [
+          144.025,
+          69.5
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/Backlight and display supplies/TOUCH_FB",
+        "position_mm": [
+          142.375,
+          69.5
+        ]
+      }
+    ],
+    "R909": [
+      {
+        "number": "1",
+        "net": "/Backlight and display supplies/TOUCH_FB",
+        "position_mm": [
+          144.025,
+          71.5
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/GND",
+        "position_mm": [
+          142.375,
+          71.5
+        ]
+      }
+    ],
+    "C910": [
+      {
+        "number": "1",
+        "net": "/TOUCH_VDD",
+        "position_mm": [
+          143.975,
+          73.5
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/Backlight and display supplies/TOUCH_FB",
+        "position_mm": [
+          142.425,
+          73.5
+        ]
+      }
+    ],
+    "TP904": [
+      {
+        "number": "1",
+        "net": "/TOUCH_VDD",
+        "position_mm": [
+          147.0,
+          70.5
+        ]
+      }
+    ],
+    "L901": [
+      {
+        "number": "1",
+        "net": "/+5V_DIG",
+        "position_mm": [
+          59.0,
+          52.675
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/Backlight and display supplies/BL_SW",
+        "position_mm": [
+          59.0,
+          58.725
+        ]
+      }
+    ],
+    "U901": [
+      {
+        "number": "1",
+        "net": "/Backlight and display supplies/BL_SW",
+        "position_mm": [
+          56.1,
+          62.95
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/GND",
+        "position_mm": [
+          56.1,
+          62.3
+        ]
+      },
+      {
+        "number": "3",
+        "net": "/BL_LED_K",
+        "position_mm": [
+          56.1,
+          61.65
+        ]
+      },
+      {
+        "number": "4",
+        "net": "/Backlight and display supplies/BL_CTRL",
+        "position_mm": [
+          53.9,
+          61.65
+        ]
+      },
+      {
+        "number": "5",
+        "net": "/+5V_DIG",
+        "position_mm": [
+          53.9,
+          62.95
+        ]
+      }
+    ]
+  },
+  "electrical_parts_placed": 309,
+  "electrical_parts_staged": 38,
+  "native_drc": {
+    "drill_out_of_range": 6,
+    "silk_overlap": 199,
+    "silk_over_copper": 199,
+    "silk_edge_clearance": 9
+  },
+  "reported_unconnected": 234,
+  "preservation": {
+    "all_existing_copper": true,
+    "unrelated_poses_and_pads": true,
+    "identities_paths_sides_pad_nets_sizes_drills": true,
+    "net_table_zone_identity_prior_report_inventories": true
+  },
+  "regressions": [
+    {
+      "check": "check_pcb_import",
+      "returncode": 0
+    },
+    {
+      "check": "check_backlight",
+      "returncode": 0
+    },
+    {
+      "check": "check_display_supply",
+      "returncode": 0
+    },
+    {
+      "check": "check_display",
+      "returncode": 0
+    },
+    {
+      "check": "check_footswitch_local",
+      "returncode": 0
+    },
+    {
+      "check": "check_analogue_signal_local",
+      "returncode": 0
+    },
+    {
+      "check": "check_adc_power_local",
+      "returncode": 0
+    },
+    {
+      "check": "check_fpga_service_local",
+      "returncode": 0
+    },
+    {
+      "check": "check_mcu_bypass_layout",
+      "returncode": 0
+    },
+    {
+      "check": "check_mcu_hp_controls",
+      "returncode": 0
+    }
+  ],
+  "limits": [
+    "Provisional backlight/LCD/touch supply placement. Local switching, Kelvin feedback, bypass and return routing, powered stability/noise/thermal behavior and fabrication/assembly remain unqualified."
+  ]
+}

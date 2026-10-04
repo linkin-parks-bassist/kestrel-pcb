@@ -1,0 +1,210 @@
+{
+  "status": "PASS LCD/touch local regulator groups and all regulator/passive ground returns reach the filled plane",
+  "track_segments": 47,
+  "vias": 30,
+  "via_in_pad_sites": [
+    {
+      "pad": "C906.1",
+      "position": [
+        92.55,
+        59.0
+      ]
+    },
+    {
+      "pad": "R906.1",
+      "position": [
+        94.825,
+        64.8
+      ]
+    },
+    {
+      "pad": "C907.1",
+      "position": [
+        97.5,
+        66.575
+      ]
+    },
+    {
+      "pad": "R906.2",
+      "position": [
+        93.175,
+        64.8
+      ]
+    },
+    {
+      "pad": "R907.1",
+      "position": [
+        94.825,
+        67.0
+      ]
+    },
+    {
+      "pad": "C907.2",
+      "position": [
+        97.5,
+        65.025
+      ]
+    },
+    {
+      "pad": "C905.1",
+      "position": [
+        101.25,
+        62.0
+      ]
+    },
+    {
+      "pad": "C905.2",
+      "position": [
+        99.35,
+        62.0
+      ]
+    },
+    {
+      "pad": "C906.2",
+      "position": [
+        94.45,
+        59.0
+      ]
+    },
+    {
+      "pad": "C909.1",
+      "position": [
+        141.55,
+        65.0
+      ]
+    },
+    {
+      "pad": "R908.1",
+      "position": [
+        144.025,
+        69.5
+      ]
+    },
+    {
+      "pad": "C910.1",
+      "position": [
+        143.975,
+        73.5
+      ]
+    },
+    {
+      "pad": "TP904.1",
+      "position": [
+        147.0,
+        70.5
+      ]
+    },
+    {
+      "pad": "R908.2",
+      "position": [
+        142.375,
+        69.5
+      ]
+    },
+    {
+      "pad": "R909.1",
+      "position": [
+        144.025,
+        71.5
+      ]
+    },
+    {
+      "pad": "C910.2",
+      "position": [
+        142.425,
+        73.5
+      ]
+    },
+    {
+      "pad": "C908.1",
+      "position": [
+        150.45,
+        66.4
+      ]
+    },
+    {
+      "pad": "C908.2",
+      "position": [
+        148.55,
+        66.4
+      ]
+    },
+    {
+      "pad": "C909.2",
+      "position": [
+        143.45,
+        65.0
+      ]
+    },
+    {
+      "pad": "R909.2",
+      "position": [
+        142.375,
+        71.5
+      ]
+    }
+  ],
+  "routed_planar_length_mm": {
+    "/LCD_VDD": 18.247297595479367,
+    "/Backlight and display supplies/LCD_FB": 10.223570592888706,
+    "/+5V_DIG": 18.675141719052625,
+    "/TOUCH_VDD": 19.425582905658434,
+    "/Backlight and display supplies/TOUCH_FB": 9.121781683045937
+  },
+  "complete_local_nets": {
+    "/LCD_VDD:U903": [
+      "C906.1",
+      "C907.1",
+      "R906.1",
+      "TP903.1",
+      "U903.1"
+    ],
+    "/Backlight and display supplies/LCD_FB:U903": [
+      "C907.2",
+      "R906.2",
+      "R907.1",
+      "U903.2"
+    ],
+    "/+5V_DIG:U903": [
+      "C905.1",
+      "U903.4",
+      "U903.6"
+    ],
+    "/TOUCH_VDD:U904": [
+      "C909.1",
+      "C910.1",
+      "R908.1",
+      "TP904.1",
+      "U904.1"
+    ],
+    "/Backlight and display supplies/TOUCH_FB:U904": [
+      "C910.2",
+      "R908.2",
+      "R909.1",
+      "U904.2"
+    ],
+    "/+5V_DIG:U904": [
+      "C908.1",
+      "U904.4",
+      "U904.6"
+    ]
+  },
+  "ground_anchors": [
+    "C905.2",
+    "C906.2",
+    "R907.2",
+    "U903.7",
+    "U903.3",
+    "U903.5",
+    "C908.2",
+    "C909.2",
+    "R909.2",
+    "U904.7",
+    "U904.3",
+    "U904.5"
+  ],
+  "limits": [
+    "Main 5 V source and FPC supply distribution remain unfinished.",
+    "Physical topology only; effective reference bypassing, rail drop, coupling/noise, regulator operation and via-in-pad fabrication/assembly remain unqualified."
+  ]
+}

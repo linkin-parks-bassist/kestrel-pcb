@@ -1,0 +1,15 @@
+{
+  "status": "connectivity review; not hardware validation",
+  "physical_components": 349,
+  "fpga_supplies_and_14_local_bypasses_checked": true,
+  "mspi_flash_checked": true,
+  "audio_source_pins_checked": true,
+  "audio_power_domain_buffers_checked": true,
+  "remaining": [
+    "Exact oscillator/bead/passive selection and Sydney sourcing",
+    "PLL/RTL 48kHz and AUDIO_ENABLE migration",
+    "MCU SPI bridge timing/sequencing and intermediate-rail/backfeed qualification",
+    "JTAG/flash programming and startup timing validation",
+    "Layout/stencil/thermal and bench validation"
+  ]
+}

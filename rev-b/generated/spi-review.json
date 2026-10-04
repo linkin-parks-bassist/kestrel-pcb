@@ -1,0 +1,21 @@
+{
+  "status": "connectivity and conditional calculation; no hardware qualification",
+  "physical_components": 349,
+  "falling_trip_nominal_v": 2.9727,
+  "falling_trip_corners_v": [
+    2.9066349206643367,
+    3.038983936351351
+  ],
+  "release_delay_ms": [
+    12,
+    28
+  ],
+  "enable_logic": "OE_N = NOT(GPIO7_enable AND supervised_IO_release)",
+  "qualification_pending": [
+    "rail ramp/fall and supervisor filter/delay behavior",
+    "guard is not FPGA minimum-voltage guarantee",
+    "GPIO7 firmware startup and disable sequence",
+    "10MHz SPI round-trip timing including FPGA CDC/IO and PCB loads",
+    "Sydney sourcing, routing and physical assembly/placement qualification"
+  ]
+}

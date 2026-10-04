@@ -1,0 +1,30 @@
+{
+  "status": "topology and conditional static allocation; not hardware qualification",
+  "nominal_v": 3.4560000000000004,
+  "conditional_dc_bounds_v": [
+    3.4145247136263746,
+    3.49759215049049
+  ],
+  "static_high_margin_v": 0.11648549465665736,
+  "static_low_margin_v": 0.6860974140879124,
+  "touch_nominal_v": 3.2,
+  "touch_conditional_dc_bounds_v": [
+    3.161751247252748,
+    3.2383543528528524
+  ],
+  "touch_static_margins_v": {
+    "mcu_to_touch_high": 0.13603423536036052,
+    "mcu_to_touch_low": 0.45217781181318695,
+    "touch_to_mcu_high": 0.15053856016483547,
+    "touch_to_mcu_low": 0.3157468470720721,
+    "mcu_high_vs_touch_input_ceiling": 0.07915124725274758
+  },
+  "conditions": "TI reference +/-1%, divider +/-0.1%, feedback current magnitude <=50nA; regulated operation and sufficient input headroom assumed",
+  "remaining": [
+    "effective capacitance and exact parts",
+    "panel maximum load and thermal budget",
+    "5V headroom/load-line qualification",
+    "FPC contact fit and touch reset/address firmware",
+    "loaded GPIO timing and power-off/backfeed qualification"
+  ]
+}

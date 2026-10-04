@@ -1,0 +1,17 @@
+{
+  "status": "PASS four translator-to-series branches and MCU-side CS pullup stub have physical continuity; resistor halves remain separate",
+  "track_segments": 24,
+  "vias": 4,
+  "minimum_owned_via_annulus_to_front_pad_bbox_mm": 0.2197073557013984,
+  "routed_planar_length_mm": {
+    "/Power-domain SPI isolation/SPI_CS_B": 13.58062408671319,
+    "/Power-domain SPI isolation/SPI_CLK_B": 10.110165940288702,
+    "/Power-domain SPI isolation/SPI_MOSI_B": 8.061028137423857,
+    "/Power-domain SPI isolation/SPI_MISO_A": 2.1125,
+    "/MCU_RAW_CS": 3.205698051533947
+  },
+  "limits": [
+    "Lengths exclude via depth and are observations, not SI limits; CS/clock detours require qualification.",
+    "FPGA CS/pullup, MISO, clock and MOSI continuity are checked separately by check_spi_fpga_endpoints.py; MCU signal continuity is checked separately by check_spi_mcu_endpoints.py; firmware, SI/damping, timing, loaded coupling, backfeed and assembly remain unqualified."
+  ]
+}

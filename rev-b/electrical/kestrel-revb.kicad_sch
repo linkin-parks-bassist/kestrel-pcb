@@ -1,0 +1,4280 @@
+(kicad_sch
+	(version 20260101)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "8e561a41-e54b-5aad-ad97-4817937535b7")
+	(paper "A2")
+	(lib_symbols)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(wire
+		(pts
+			(xy 110.49 60.96) (xy 125.73 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72dea258-903f-5526-8a2c-e9198fcd9485")
+	)
+	(label "9V_PROTECTED"
+		(at 125.73 60.96 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "c88262f5-505c-513c-bf9a-a7bca1202c25")
+	)
+	(wire
+		(pts
+			(xy 35.56 66.04) (xy 20.32 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef77feb7-8818-507c-bfdb-8c6f9e4b5cde")
+	)
+	(label "GND"
+		(at 20.32 66.04 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "657a659e-3e89-5a4c-a5b0-635c5dc1b152")
+	)
+	(sheet
+		(at 35.56 54.61)
+		(size 74.93 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5db298c9-20bf-5f31-bcff-5991ca6b033e")
+		(property "Sheetname" "Centre-negative 9 V input"
+			(at 35.56 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "kestrel-revb-input-power.kicad_sch"
+			(at 35.56 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "9V_PROTECTED" output
+			(at 110.49 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "3f4531ef-ba7d-5bc6-9f9e-462e96d379b1")
+		)
+		(pin "GND" bidirectional
+			(at 35.56 66.04 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "022fa231-868c-59ce-9b7c-0956065bbebe")
+		)
+	)
+	(wire
+		(pts
+			(xy 149.86 55.88) (xy 134.62 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42a2b36d-7b20-583b-8576-44a3f32aaf5d")
+	)
+	(label "9V_PROTECTED"
+		(at 134.62 55.88 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "5af318b8-2dae-5d0a-8b5e-923b63b277a1")
+	)
+	(wire
+		(pts
+			(xy 240.03 60.96) (xy 255.27 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9741929-8d3d-5fe6-8f03-0fa9d1f455a8")
+	)
+	(label "+5V_DIG"
+		(at 255.27 60.96 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "24bbf45c-f769-5c3a-aa94-1249c0349b7f")
+	)
+	(wire
+		(pts
+			(xy 240.03 66.04) (xy 255.27 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fe8fcf9-f0f3-5f60-8cb9-72af52281ee3")
+	)
+	(label "+3V3_D"
+		(at 255.27 66.04 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "9d922bbc-acbd-58e3-90d0-205011607458")
+	)
+	(wire
+		(pts
+			(xy 149.86 71.12) (xy 134.62 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71a3c72a-0484-5852-9490-6fc736f6039e")
+	)
+	(label "GND"
+		(at 134.62 71.12 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "0caab122-6740-58ef-8926-d3e8615312e5")
+	)
+	(sheet
+		(at 149.86 49.53)
+		(size 90.17 35.56)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d296acdf-b54c-504d-9252-ea6eba5fcc2b")
+		(property "Sheetname" "Onboard 5 V and 3.3 V bucks"
+			(at 149.86 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "kestrel-revb-power.kicad_sch"
+			(at 149.86 87.63000000000001 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "9V_PROTECTED" input
+			(at 149.86 55.88 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "75c9579b-a882-5cc3-be0c-e5a44c473785")
+		)
+		(pin "+5V_DIG" output
+			(at 240.03 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "616dc41d-b936-5f8c-90f0-c2fcedc5961a")
+		)
+		(pin "+3V3_D" output
+			(at 240.03 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "d80beb71-43a1-5ed6-b9fc-86e26a29ae6e")
+		)
+		(pin "GND" bidirectional
+			(at 149.86 71.12 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "cedb7ccc-3bbf-5313-a850-800dfc782e2d")
+		)
+	)
+	(wire
+		(pts
+			(xy 149.86 135.89) (xy 134.62 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b16aca7-6301-5edf-bca3-cb019d0976b4")
+	)
+	(label "AUDIO_MCLK"
+		(at 134.62 135.89 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "83a5f756-3f12-58ca-b005-7e36fbeff124")
+	)
+	(wire
+		(pts
+			(xy 149.86 140.97) (xy 134.62 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08d85117-ffcf-5d80-bd81-42058caa7173")
+	)
+	(label "AUDIO_BCLK"
+		(at 134.62 140.97 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "c5dca7b2-aee9-5806-a801-354ba262f044")
+	)
+	(wire
+		(pts
+			(xy 149.86 146.05) (xy 134.62 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5957aa24-8bb1-575d-bfc6-e54d632aa4ee")
+	)
+	(label "AUDIO_LRCLK"
+		(at 134.62 146.05 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "3d787dc7-44b4-58a7-9999-8561271c9e5d")
+	)
+	(wire
+		(pts
+			(xy 149.86 151.13) (xy 134.62 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eabcd94c-a3c5-5ab9-a91a-d6c3bf6ed416")
+	)
+	(label "DAC_DIN"
+		(at 134.62 151.13 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "d054c441-de77-51e3-aff8-76f8fbb5fc47")
+	)
+	(wire
+		(pts
+			(xy 149.86 156.21) (xy 134.62 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "572b7ca6-23a5-51c8-b245-d3b8a9066adf")
+	)
+	(label "AUDIO_ENABLE"
+		(at 134.62 156.21 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "e050b6ff-615c-5464-a466-b25edaad9693")
+	)
+	(wire
+		(pts
+			(xy 240.03 161.29) (xy 255.27 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f6fac8b-389d-5cd4-a1d8-a29e92aa3fb8")
+	)
+	(label "ADC_DOUT"
+		(at 255.27 161.29 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "b51d0899-f435-581e-a063-3ff7b5c7132b")
+	)
+	(wire
+		(pts
+			(xy 149.86 166.37) (xy 134.62 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d253a4f-0c72-5a17-bed2-02422c9bc223")
+	)
+	(label "9V_PROTECTED"
+		(at 134.62 166.37 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "798fd21b-fcc2-5477-9416-14c3426b7192")
+	)
+	(wire
+		(pts
+			(xy 149.86 171.45) (xy 134.62 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64143a91-2776-5648-9659-db8421746f9d")
+	)
+	(label "+3V3_D"
+		(at 134.62 171.45 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "7ab9d586-ef33-5fd8-afd2-a111489f5dde")
+	)
+	(wire
+		(pts
+			(xy 149.86 176.53) (xy 134.62 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "beeaf33d-3f7d-5303-a6e6-3453ea3e56cd")
+	)
+	(label "+5V_DIG"
+		(at 134.62 176.53 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "2dbf410b-4b64-5619-8079-78257ac07675")
+	)
+	(wire
+		(pts
+			(xy 149.86 181.61) (xy 134.62 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02499300-b016-5df7-a815-20ad504e4a0d")
+	)
+	(label "GND"
+		(at 134.62 181.61 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "9a47838a-a068-55df-a6ff-94fa8f69da7a")
+	)
+	(wire
+		(pts
+			(xy 240.03 186.69) (xy 255.27 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efc8364c-9380-55a4-a7c7-5776affde9ed")
+	)
+	(label "+3V3_A"
+		(at 255.27 186.69 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "03ea0a8b-e6d1-56be-add5-a64f8989ab03")
+	)
+	(sheet
+		(at 149.86 129.54)
+		(size 90.17 64.77)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b7cc1393-5690-5821-b322-99ad8ca0433a")
+		(property "Sheetname" "Hardware ADC and DAC"
+			(at 149.86 126.99999999999999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "kestrel-revb-audio.kicad_sch"
+			(at 149.86 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "AUDIO_MCLK" input
+			(at 149.86 135.89 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "7e18cdb4-f994-5683-a2d6-2a1934921d52")
+		)
+		(pin "AUDIO_BCLK" input
+			(at 149.86 140.97 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "b6db5dcc-7fee-519a-baac-71dfda56d1c9")
+		)
+		(pin "AUDIO_LRCLK" input
+			(at 149.86 146.05 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "bbf590f1-1b24-548a-83b9-42755e2f2805")
+		)
+		(pin "DAC_DIN" input
+			(at 149.86 151.13 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "e6de42e7-22b8-59a5-a4d3-26d6f62e8964")
+		)
+		(pin "AUDIO_ENABLE" input
+			(at 149.86 156.21 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "56cb2b4d-e946-587e-bf20-76b2c621aaad")
+		)
+		(pin "ADC_DOUT" output
+			(at 240.03 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "304e458e-77f1-5a9c-a745-fffd7806a0fc")
+		)
+		(pin "9V_PROTECTED" input
+			(at 149.86 166.37 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "186b90c7-5fd3-5cf5-97ce-915376cb82bf")
+		)
+		(pin "+3V3_D" input
+			(at 149.86 171.45 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "b1a10f17-6403-524f-b4e9-e3b8991cedcb")
+		)
+		(pin "+5V_DIG" input
+			(at 149.86 176.53 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "edf27b18-a3c3-5879-83ff-8e49d25f1260")
+		)
+		(pin "GND" bidirectional
+			(at 149.86 181.61 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "57dbc3dd-f25a-50a8-ba6b-f22e2eff933f")
+		)
+		(pin "+3V3_A" output
+			(at 240.03 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "789f250c-7a61-5620-a4a0-8cb6319386f1")
+		)
+	)
+	(wire
+		(pts
+			(xy 35.56 106.68) (xy 20.32 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0a8f370-2b0b-5550-b42b-f4d47101057c")
+	)
+	(label "+5V_DIG"
+		(at 20.32 106.68 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "ec3047d7-d983-589e-bb65-9fead79b21bc")
+	)
+	(wire
+		(pts
+			(xy 35.56 111.76) (xy 20.32 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d29d2c8f-ae1e-5c6e-bbbe-7621df0f3609")
+	)
+	(label "+3V3_D"
+		(at 20.32 111.76 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "4177ce4d-dffc-5f43-8f5c-3225ceca21f9")
+	)
+	(wire
+		(pts
+			(xy 35.56 116.84) (xy 20.32 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea9a459b-9206-5ff7-a2e1-c092b7d65792")
+	)
+	(label "GND"
+		(at 20.32 116.84 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "e16f2786-dedf-5e86-9c0d-10bbebba618d")
+	)
+	(wire
+		(pts
+			(xy 115.57 121.92) (xy 130.81 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6d26a56-7bfa-5298-9da1-953141441690")
+	)
+	(label "+1V0_FPGA"
+		(at 130.81 121.92 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "d8504370-e98c-5eb9-9424-2567fcd939c7")
+	)
+	(wire
+		(pts
+			(xy 115.57 127.0) (xy 130.81 127.0)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fdca8d5-74ed-5957-b59b-5ff66e5ba7d0")
+	)
+	(label "+3V3_FPGA"
+		(at 130.81 127.0 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "f28d6355-b942-591f-9684-5d4f3c9bec31")
+	)
+	(sheet
+		(at 35.56 100.33)
+		(size 80.01 39.37)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "6812370b-be17-52e1-96b1-e16be3fac3e0")
+		(property "Sheetname" "FPGA core and I/O sequencing"
+			(at 35.56 97.78999999999999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "kestrel-revb-fpga-power.kicad_sch"
+			(at 35.56 142.23999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V_DIG" input
+			(at 35.56 106.68 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "81385255-9815-5338-9892-f07424de4261")
+		)
+		(pin "+3V3_D" input
+			(at 35.56 111.76 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "b8f6179b-2cb7-5c4b-935d-2cda6780597c")
+		)
+		(pin "GND" bidirectional
+			(at 35.56 116.84 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "0fcd0a57-a67f-545e-a2c4-d2ee4844cee0")
+		)
+		(pin "+1V0_FPGA" output
+			(at 115.57 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "22cbc11f-54fb-566f-aab4-b99cbe4940df")
+		)
+		(pin "+3V3_FPGA" output
+			(at 115.57 127.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "765d87f4-c4ff-511f-9da6-706eab4c1bed")
+		)
+	)
+	(wire
+		(pts
+			(xy 35.56 181.61) (xy 20.32 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1ecf389-e421-5510-b0f2-02b07606367f")
+	)
+	(label "+3V3_D"
+		(at 20.32 181.61 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "adaac628-621a-5a36-bec9-439d8625976b")
+	)
+	(wire
+		(pts
+			(xy 35.56 186.69) (xy 20.32 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83a86ea4-9b97-546c-ac24-3b27b5e0b148")
+	)
+	(label "GND"
+		(at 20.32 186.69 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "c58543a2-7e97-5834-9543-a7388c6b4c01")
+	)
+	(wire
+		(pts
+			(xy 115.57 191.77) (xy 130.81 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bb41c7f-1b13-55b2-97cb-151614963a0d")
+	)
+	(label "ESP_VDD_HP"
+		(at 130.81 191.77 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "89e4e8af-9c01-5d6b-b9fb-6d19ee272efc")
+	)
+	(wire
+		(pts
+			(xy 35.56 196.85) (xy 20.32 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bc7d1c2-4c16-5d9b-b2a0-a463c05aa5e6")
+	)
+	(label "MCU_EN_DCDC"
+		(at 20.32 196.85 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "e46f173f-741c-57b0-aea0-b52b5f7c3727")
+	)
+	(wire
+		(pts
+			(xy 35.56 201.93) (xy 20.32 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf24b307-cec3-5f63-8c85-4d05ab65788b")
+	)
+	(label "MCU_FB_DCDC"
+		(at 20.32 201.93 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "49db9633-2aee-5aeb-b01a-8716f480320d")
+	)
+	(sheet
+		(at 35.56 175.26)
+		(size 80.01 30.48)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "8b062b49-0171-5339-a2cb-eaa8f8cfd6cb")
+		(property "Sheetname" "P4 controlled HP regulator"
+			(at 35.56 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "kestrel-revb-mcu-power.kicad_sch"
+			(at 35.56 208.27999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+3V3_D" input
+			(at 35.56 181.61 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "bd8f359d-f634-590c-b0b7-b0357c98afc3")
+		)
+		(pin "GND" bidirectional
+			(at 35.56 186.69 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "63ba899d-9686-5132-97ec-c3898da112c8")
+		)
+		(pin "ESP_VDD_HP" output
+			(at 115.57 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "09518271-a536-5f92-b7f2-6af878b8f19b")
+		)
+		(pin "MCU_EN_DCDC" input
+			(at 35.56 196.85 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "ebd55219-b77e-5771-bd2d-0cdad2576eca")
+		)
+		(pin "MCU_FB_DCDC" bidirectional
+			(at 35.56 201.93 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "372e9671-9ba1-5561-8878-d8729f61eb31")
+		)
+	)
+	(wire
+		(pts
+			(xy 449.58 55.88) (xy 434.34 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca59ee55-cb9e-557b-b534-d1aa34d5b453")
+	)
+	(label "+3V3_D"
+		(at 434.34 55.88 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "b6cc9ed4-4ec2-54da-a3df-3d260bbfa6c8")
+	)
+	(wire
+		(pts
+			(xy 449.58 60.96) (xy 434.34 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d957c5a-cb11-5d20-8d8b-45e1c48e54b9")
+	)
+	(label "GND"
+		(at 434.34 60.96 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "3a30a68b-67c2-56a8-aa3a-e2663ad65dba")
+	)
+	(wire
+		(pts
+			(xy 449.58 66.04) (xy 434.34 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05b09e4a-6e38-58d6-8680-9134c2535203")
+	)
+	(label "ESP_VDD_HP"
+		(at 434.34 66.04 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "9453c436-2b9b-5fef-b977-0ac833faaac1")
+	)
+	(wire
+		(pts
+			(xy 539.75 71.12) (xy 554.99 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc39d535-1dc3-5376-9e26-b74ed43a9ac0")
+	)
+	(label "MCU_EN_DCDC"
+		(at 554.99 71.12 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "f3b5e601-045f-527b-ae5c-cc8a1f0db2bd")
+	)
+	(wire
+		(pts
+			(xy 449.58 76.2) (xy 434.34 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f01e2b9-2cb5-5a6e-a046-7afb03fba8e7")
+	)
+	(label "MCU_FB_DCDC"
+		(at 434.34 76.2 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "a34136da-ea95-5ade-aa0b-aa96bbaa21fb")
+	)
+	(wire
+		(pts
+			(xy 539.75 81.28) (xy 554.99 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8becf31-e568-5910-adc0-78081c62f238")
+	)
+	(label "MCU_BL_PWM"
+		(at 554.99 81.28 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "becbf966-8c9a-50da-8434-0ea262e05c91")
+	)
+	(wire
+		(pts
+			(xy 539.75 86.36) (xy 554.99 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4d08d35-1744-56e2-be48-9eb768449ac7")
+	)
+	(label "MCU_SPI_ENABLE"
+		(at 554.99 86.36 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "c8d153a8-2889-54ee-a386-2f45c7273675")
+	)
+	(wire
+		(pts
+			(xy 539.75 91.44) (xy 554.99 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a124a9ac-11de-5ad6-8122-7499b0476c61")
+	)
+	(label "MCU_RESET_N"
+		(at 554.99 91.44 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "cdc8b3c4-a9e3-532e-bb41-70a0118e8f11")
+	)
+	(wire
+		(pts
+			(xy 539.75 96.52) (xy 554.99 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0597b610-c2a0-509c-b92a-da62a35e1bd9")
+	)
+	(label "MCU_RAW_CS"
+		(at 554.99 96.52 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "28b8ae25-80f2-5b9a-9203-19ebf1f794d3")
+	)
+	(wire
+		(pts
+			(xy 539.75 101.6) (xy 554.99 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "050aa8d1-620a-5cf9-b28f-74e3a7cfc487")
+	)
+	(label "MCU_RAW_CLK"
+		(at 554.99 101.6 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "12b5bbed-d74a-5f4b-aa6a-faa75bd00e54")
+	)
+	(wire
+		(pts
+			(xy 539.75 106.68) (xy 554.99 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d01837b-cd47-5b51-8ba9-32ea7bd83545")
+	)
+	(label "MCU_RAW_MOSI"
+		(at 554.99 106.68 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "42a8f1b3-d391-5ce2-8f3d-fcd883fb6d65")
+	)
+	(wire
+		(pts
+			(xy 449.58 111.76) (xy 434.34 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff7d2661-e635-55b0-a7d6-f67c4cfc0eb6")
+	)
+	(label "MCU_RAW_MISO"
+		(at 434.34 111.76 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "a9d8fc77-be07-5123-bb64-87fe4d62689a")
+	)
+	(wire
+		(pts
+			(xy 539.75 116.84) (xy 554.99 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02a9d71e-0b5f-5ed4-a01c-f471ebdb0468")
+	)
+	(label "MCU_LCD_B3"
+		(at 554.99 116.84 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "ee8e543a-3d21-5554-aef4-45c7a1d20833")
+	)
+	(wire
+		(pts
+			(xy 539.75 121.92) (xy 554.99 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "974b71b3-3a80-5b67-b23e-2a5610d131b4")
+	)
+	(label "MCU_LCD_B4"
+		(at 554.99 121.92 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "2ba322dd-b077-5b37-9af2-e236d88a75b8")
+	)
+	(wire
+		(pts
+			(xy 539.75 127.0) (xy 554.99 127.0)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2defd9b9-cafa-5c90-9499-220b544f4b0f")
+	)
+	(label "MCU_LCD_B5"
+		(at 554.99 127.0 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "b50f8465-b36f-59f9-a13c-8421cb6547b2")
+	)
+	(wire
+		(pts
+			(xy 539.75 132.08) (xy 554.99 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbfb73d5-f105-5a7b-87ec-20c776717772")
+	)
+	(label "MCU_LCD_B6"
+		(at 554.99 132.08 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "26552644-fddd-561e-828c-c26a15f5622f")
+	)
+	(wire
+		(pts
+			(xy 539.75 137.16) (xy 554.99 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b18ce223-8090-532c-8413-6764f9874bec")
+	)
+	(label "MCU_LCD_B7"
+		(at 554.99 137.16 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "e619a4d0-4761-5e7d-869c-2bc727f20451")
+	)
+	(wire
+		(pts
+			(xy 539.75 142.24) (xy 554.99 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c321c8e2-4c48-5292-bbc5-cedb242cce4c")
+	)
+	(label "MCU_LCD_G2"
+		(at 554.99 142.24 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "7bac93ba-23d5-51ff-a7f7-be7a920c8391")
+	)
+	(wire
+		(pts
+			(xy 539.75 147.32) (xy 554.99 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac69ced5-ad43-51f6-97c2-754f5c7fcb86")
+	)
+	(label "MCU_LCD_G3"
+		(at 554.99 147.32 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "9868667b-c0e8-54af-94c7-a753b2354aad")
+	)
+	(wire
+		(pts
+			(xy 539.75 152.4) (xy 554.99 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a17a6e25-a19e-5206-925b-3d89c501f9bc")
+	)
+	(label "MCU_LCD_G4"
+		(at 554.99 152.4 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "62878b77-05cf-50de-af4f-c1d376692c08")
+	)
+	(wire
+		(pts
+			(xy 539.75 157.48) (xy 554.99 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "212fc144-1e3a-5e1d-9012-08f6958a2345")
+	)
+	(label "MCU_LCD_G5"
+		(at 554.99 157.48 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "32bb72ed-8c34-55d3-9f56-3b937afb2413")
+	)
+	(wire
+		(pts
+			(xy 539.75 162.56) (xy 554.99 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7e47b63-2c37-50b0-88e7-32b9eb667246")
+	)
+	(label "MCU_LCD_G6"
+		(at 554.99 162.56 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f7f5532-059b-5f23-954e-a2e02bff4e5f")
+	)
+	(wire
+		(pts
+			(xy 539.75 167.64) (xy 554.99 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b7b3965-130f-5e9c-8053-8083bcbe8366")
+	)
+	(label "MCU_LCD_G7"
+		(at 554.99 167.64 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "52ea5cf0-be7d-5c59-b1a6-61a57f71cca1")
+	)
+	(wire
+		(pts
+			(xy 539.75 172.72) (xy 554.99 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab687783-0496-5832-9051-89319c43742f")
+	)
+	(label "MCU_LCD_R3"
+		(at 554.99 172.72 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "85c99171-03fa-5769-bae0-4bd6661fc812")
+	)
+	(wire
+		(pts
+			(xy 539.75 177.8) (xy 554.99 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2fb01a0-ca5d-5e8f-80bd-d25f94e4610e")
+	)
+	(label "MCU_LCD_R4"
+		(at 554.99 177.8 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "b8a6e782-66b0-561d-a5ee-e1f40062212c")
+	)
+	(wire
+		(pts
+			(xy 539.75 182.88) (xy 554.99 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b096679a-dda4-529f-a126-1d9137b7faa7")
+	)
+	(label "MCU_LCD_R5"
+		(at 554.99 182.88 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "211050a2-cfbe-5e35-a529-be680eabf4d8")
+	)
+	(wire
+		(pts
+			(xy 539.75 187.96) (xy 554.99 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37eb3e57-e3bc-5a2f-a84f-e1d758114499")
+	)
+	(label "MCU_LCD_R6"
+		(at 554.99 187.96 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "587d5ada-3c93-5f9d-8cde-9ae95672d127")
+	)
+	(wire
+		(pts
+			(xy 539.75 193.04) (xy 554.99 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddd881fa-e4c9-57c9-90a9-6ea9ab89ea0a")
+	)
+	(label "MCU_LCD_R7"
+		(at 554.99 193.04 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "a222b3d1-7549-54d0-9afc-15be036eb9a0")
+	)
+	(wire
+		(pts
+			(xy 539.75 198.12) (xy 554.99 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdc4030b-923e-587a-9bbd-60bcce002b4d")
+	)
+	(label "MCU_LCD_PCLK"
+		(at 554.99 198.12 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b2b5c46-c19e-522f-bd77-fdbfe133d7d5")
+	)
+	(wire
+		(pts
+			(xy 539.75 203.2) (xy 554.99 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70563579-76ce-5ec7-b4bb-6ff31f67e052")
+	)
+	(label "MCU_LCD_HSYNC"
+		(at 554.99 203.2 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "cc5ad441-2665-5ebf-8eb5-03c85a82cdb5")
+	)
+	(wire
+		(pts
+			(xy 539.75 208.28) (xy 554.99 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2e5d807-d36d-5403-ba0e-85048cb18734")
+	)
+	(label "MCU_LCD_VSYNC"
+		(at 554.99 208.28 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "2974273a-0ce4-58cf-9a33-622cff1a7238")
+	)
+	(wire
+		(pts
+			(xy 539.75 213.36) (xy 554.99 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55b9dfd7-eafb-59bf-9e33-3a7e39f69346")
+	)
+	(label "MCU_LCD_DE"
+		(at 554.99 213.36 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "d5a52b19-175c-5a26-ab32-8166fef0e9bd")
+	)
+	(wire
+		(pts
+			(xy 539.75 218.44) (xy 554.99 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e02af90b-0a44-5c8b-bc0c-49d8c51e6e47")
+	)
+	(label "MCU_LCD_DISP"
+		(at 554.99 218.44 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f079a55-114a-5776-b407-41a6f90ec61e")
+	)
+	(wire
+		(pts
+			(xy 449.58 223.52) (xy 434.34 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "393735ea-2a2d-5744-b3c4-9ceac1efc414")
+	)
+	(label "MCU_TOUCH_SCL"
+		(at 434.34 223.52 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "b676c2ce-52e7-5aec-84d8-d8a16dac1d24")
+	)
+	(wire
+		(pts
+			(xy 449.58 228.6) (xy 434.34 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24be636a-b88d-5852-9595-51d9bfdf6307")
+	)
+	(label "MCU_TOUCH_SDA"
+		(at 434.34 228.6 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "46fba9fa-c74d-5092-a5a5-c5a923822ccb")
+	)
+	(wire
+		(pts
+			(xy 449.58 233.68) (xy 434.34 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbf69942-87bc-5f49-bcff-c436fe804f53")
+	)
+	(label "MCU_TOUCH_INT"
+		(at 434.34 233.68 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "62b4042c-945f-5199-9c66-994a9e945ce9")
+	)
+	(wire
+		(pts
+			(xy 539.75 238.76) (xy 554.99 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d628ddae-d5c4-5976-81b4-9cff382c9c7b")
+	)
+	(label "MCU_TOUCH_RST_N"
+		(at 554.99 238.76 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "e4c1b130-9429-5efa-9ad7-98127e849a0d")
+	)
+	(wire
+		(pts
+			(xy 449.58 243.84) (xy 434.34 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa67bdea-a802-59b5-95bf-032139166d9f")
+	)
+	(label "MCU_FOOT0_N"
+		(at 434.34 243.84 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "f9800bf7-458e-5b11-a5d7-b558b8e7c979")
+	)
+	(wire
+		(pts
+			(xy 449.58 248.92) (xy 434.34 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cda19d4-09cf-50af-a2d5-d0104291578f")
+	)
+	(label "MCU_FOOT1_N"
+		(at 434.34 248.92 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "3a1db4ec-97f8-594d-98df-9a7b41b59304")
+	)
+	(sheet
+		(at 449.58 49.53)
+		(size 90.17 209.55)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "9e0e9646-7e11-5104-b685-21456547dc89")
+		(property "Sheetname" "Bare ESP32-P4 support"
+			(at 449.58 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "kestrel-revb-mcu.kicad_sch"
+			(at 449.58 261.62000000000006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+3V3_D" input
+			(at 449.58 55.88 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "52d270ce-7de9-59d7-b15d-f3d40f4124da")
+		)
+		(pin "GND" bidirectional
+			(at 449.58 60.96 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "59f6d1d6-1151-5bd4-bbf9-712679c8e0d6")
+		)
+		(pin "ESP_VDD_HP" input
+			(at 449.58 66.04 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "2c73a073-49be-5664-ba11-c5e21636bca7")
+		)
+		(pin "MCU_EN_DCDC" output
+			(at 539.75 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "f20ba351-4608-5097-98c4-f06b4a6fcb64")
+		)
+		(pin "MCU_FB_DCDC" bidirectional
+			(at 449.58 76.2 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "dd5b0602-98f4-5e95-b626-5f9c1719ad10")
+		)
+		(pin "MCU_BL_PWM" output
+			(at 539.75 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "c36e1708-850b-5d8f-a45f-9c09b93c33e3")
+		)
+		(pin "MCU_SPI_ENABLE" output
+			(at 539.75 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "a11aee59-9c3a-52ee-9175-c3a72248b9de")
+		)
+		(pin "MCU_RESET_N" output
+			(at 539.75 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "8924bab4-7e62-508b-9a91-d629ddbbf1d1")
+		)
+		(pin "MCU_RAW_CS" output
+			(at 539.75 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "96c7f9ed-9cfc-549c-b6a3-c3776f6b785a")
+		)
+		(pin "MCU_RAW_CLK" output
+			(at 539.75 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "17b978a4-4c7b-5454-ba28-19f7f1487f5a")
+		)
+		(pin "MCU_RAW_MOSI" output
+			(at 539.75 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "820890cd-6b73-516f-9612-32c4a28d983a")
+		)
+		(pin "MCU_RAW_MISO" input
+			(at 449.58 111.76 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "42340b20-71c8-522d-8912-f06f4a939bb7")
+		)
+		(pin "MCU_LCD_B3" output
+			(at 539.75 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "3c675970-2534-5938-8eef-934602f21d52")
+		)
+		(pin "MCU_LCD_B4" output
+			(at 539.75 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "1967a3de-4224-5b8b-b2be-b61377804b7d")
+		)
+		(pin "MCU_LCD_B5" output
+			(at 539.75 127.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "56acdec6-d735-50bb-8ee6-5427ab8fa6b6")
+		)
+		(pin "MCU_LCD_B6" output
+			(at 539.75 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "b3a9a46e-4e68-5b32-a521-a3d9358c6686")
+		)
+		(pin "MCU_LCD_B7" output
+			(at 539.75 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "588c75ee-6dc8-5176-9c8d-3cbb7c63422d")
+		)
+		(pin "MCU_LCD_G2" output
+			(at 539.75 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "d20c9d8a-9983-555d-b307-c377c264ddbe")
+		)
+		(pin "MCU_LCD_G3" output
+			(at 539.75 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "4d702a5b-a4d8-5b48-b700-9edb4fe6749a")
+		)
+		(pin "MCU_LCD_G4" output
+			(at 539.75 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "d68c5c73-cfe6-5791-9bed-b10b1bdec4a1")
+		)
+		(pin "MCU_LCD_G5" output
+			(at 539.75 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "08c21fed-331d-5d2b-8583-9543bffbb3b0")
+		)
+		(pin "MCU_LCD_G6" output
+			(at 539.75 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "3074500a-8d46-5d76-8f2a-4f2137cd38f0")
+		)
+		(pin "MCU_LCD_G7" output
+			(at 539.75 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "5fc56b1a-70f8-520b-8f48-6d3a21fe209a")
+		)
+		(pin "MCU_LCD_R3" output
+			(at 539.75 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "321ee88d-9262-5c4a-875d-339c589834e1")
+		)
+		(pin "MCU_LCD_R4" output
+			(at 539.75 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "0c3f703c-541c-59ed-a97e-d2a2ffc94030")
+		)
+		(pin "MCU_LCD_R5" output
+			(at 539.75 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "186ea38f-70fe-5cde-b022-80846328954f")
+		)
+		(pin "MCU_LCD_R6" output
+			(at 539.75 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "b7ce400d-2ed5-54bd-b942-a1edd6f64d74")
+		)
+		(pin "MCU_LCD_R7" output
+			(at 539.75 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "cd6a04ce-87f2-5772-a17c-9b7c1b1c734e")
+		)
+		(pin "MCU_LCD_PCLK" output
+			(at 539.75 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "117a2b04-b096-590d-aac2-d150b0575f93")
+		)
+		(pin "MCU_LCD_HSYNC" output
+			(at 539.75 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "0777309d-3fe4-59d7-989b-2c10d28df3b7")
+		)
+		(pin "MCU_LCD_VSYNC" output
+			(at 539.75 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "44cc0f8a-01ce-5d00-a7ef-c6170fdc0741")
+		)
+		(pin "MCU_LCD_DE" output
+			(at 539.75 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "278fc6b2-e695-511f-a935-8a23b1a5e902")
+		)
+		(pin "MCU_LCD_DISP" output
+			(at 539.75 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "b0dad3a8-e34c-5f27-9c8e-fd69fa8bc9f4")
+		)
+		(pin "MCU_TOUCH_SCL" bidirectional
+			(at 449.58 223.52 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "8f23bad2-434f-5893-8d36-7f7a45c3bb10")
+		)
+		(pin "MCU_TOUCH_SDA" bidirectional
+			(at 449.58 228.6 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "d5b3c83b-e986-56ac-8d87-c167b91afc59")
+		)
+		(pin "MCU_TOUCH_INT" bidirectional
+			(at 449.58 233.68 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "1ef37823-bbce-57eb-99de-380f96d91f7d")
+		)
+		(pin "MCU_TOUCH_RST_N" output
+			(at 539.75 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "363c631f-be64-5cce-86a1-2bc131929400")
+		)
+		(pin "MCU_FOOT0_N" input
+			(at 449.58 243.84 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "321ce97b-0571-557d-b95b-74551278ec58")
+		)
+		(pin "MCU_FOOT1_N" input
+			(at 449.58 248.92 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "d4365b0a-b6d1-5195-827c-d8ffe42587f0")
+		)
+	)
+	(wire
+		(pts
+			(xy 299.72 121.92) (xy 284.48 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cb4d8b3-95a3-5e5c-867b-c22a6d2ac039")
+	)
+	(label "+1V0_FPGA"
+		(at 284.48 121.92 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "2827a6a8-5dcd-5c2a-bd51-9937d501d2dd")
+	)
+	(wire
+		(pts
+			(xy 299.72 127.0) (xy 284.48 127.0)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4728898f-bfe9-522c-b564-bb79b104d875")
+	)
+	(label "+3V3_FPGA"
+		(at 284.48 127.0 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "ea6a05b9-cd87-5e9d-bd59-5d82c94ebe0a")
+	)
+	(wire
+		(pts
+			(xy 299.72 132.08) (xy 284.48 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b1a0659-3b42-5f0e-8583-f8aa0a02ea00")
+	)
+	(label "+3V3_A"
+		(at 284.48 132.08 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "4adc7f90-7799-5848-908d-9d07e9c7f8b2")
+	)
+	(wire
+		(pts
+			(xy 299.72 137.16) (xy 284.48 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4de972a4-fe54-535e-ac8e-df8fecd47030")
+	)
+	(label "GND"
+		(at 284.48 137.16 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "830ec076-9562-5313-8821-ba966b48c943")
+	)
+	(wire
+		(pts
+			(xy 374.65 142.24) (xy 389.89 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcd2c8fc-5ade-5560-95d1-ca27663250fd")
+	)
+	(label "AUDIO_MCLK"
+		(at 389.89 142.24 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "b48b53b1-1afe-547f-89e8-a7106543e36f")
+	)
+	(wire
+		(pts
+			(xy 374.65 147.32) (xy 389.89 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b080fb61-6997-5b9c-88c1-1f64fa84da5e")
+	)
+	(label "AUDIO_BCLK"
+		(at 389.89 147.32 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "95f898b3-114d-5a6d-982f-7d6ea9a498b8")
+	)
+	(wire
+		(pts
+			(xy 374.65 152.4) (xy 389.89 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "982fd126-c333-5d7f-a351-3de4cc93f013")
+	)
+	(label "AUDIO_LRCLK"
+		(at 389.89 152.4 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "88ac96ca-fe72-5db7-bd96-58887ca03eee")
+	)
+	(wire
+		(pts
+			(xy 374.65 157.48) (xy 389.89 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45613159-8c47-557c-a69b-0890799fc9c6")
+	)
+	(label "DAC_DIN"
+		(at 389.89 157.48 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "59f8a1ee-0ecd-5c14-9ce1-79ecaf0c3d8d")
+	)
+	(wire
+		(pts
+			(xy 374.65 162.56) (xy 389.89 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab78cc1e-ca25-598b-8aec-26dedbf2153f")
+	)
+	(label "AUDIO_ENABLE"
+		(at 389.89 162.56 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "24605284-2527-59a1-a29c-fa5996c1d3f2")
+	)
+	(wire
+		(pts
+			(xy 299.72 167.64) (xy 284.48 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6483df85-bafb-5743-bfd4-67d8ab93c012")
+	)
+	(label "ADC_DOUT"
+		(at 284.48 167.64 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "8056fb1c-5100-5f29-ac08-3f2f9c97ef8a")
+	)
+	(wire
+		(pts
+			(xy 299.72 172.72) (xy 284.48 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f87a1e46-5e6b-5199-8fce-17d92981ae80")
+	)
+	(label "MCU_SPI_MOSI"
+		(at 284.48 172.72 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "bea9a497-f4bb-5a11-934b-7f797dc3e8a0")
+	)
+	(wire
+		(pts
+			(xy 299.72 177.8) (xy 284.48 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb5bcf16-b944-5b0c-9824-af30967e1fb2")
+	)
+	(label "MCU_SPI_CS"
+		(at 284.48 177.8 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "8b02630e-e4e6-50ba-8105-d5aeb449a601")
+	)
+	(wire
+		(pts
+			(xy 299.72 182.88) (xy 284.48 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5f3f5c4-3c97-528c-9bb1-dca0d113c4c2")
+	)
+	(label "MCU_SPI_CLK"
+		(at 284.48 182.88 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "5c8fb77d-4e9a-5b34-a01d-49e7da7c4af7")
+	)
+	(wire
+		(pts
+			(xy 374.65 187.96) (xy 389.89 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f690bc1-fc4f-55f5-b811-2762c657bd89")
+	)
+	(label "MCU_SPI_MISO"
+		(at 389.89 187.96 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "415a2c06-bf1b-5f25-9cd9-3bf6bae65cb5")
+	)
+	(sheet
+		(at 299.72 115.57)
+		(size 74.93 95.25)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "bde24fbf-039d-592b-9def-3a33fee000d9")
+		(property "Sheetname" "Bare GW2AR-18 support"
+			(at 299.72 113.02999999999999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "kestrel-revb-fpga.kicad_sch"
+			(at 299.72 213.35999999999999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+1V0_FPGA" input
+			(at 299.72 121.92 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "986a9e4d-0577-51ca-b81e-4aa425fd114b")
+		)
+		(pin "+3V3_FPGA" input
+			(at 299.72 127.0 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "692475e8-1310-5f2e-a2f8-e8a7d111dc69")
+		)
+		(pin "+3V3_A" input
+			(at 299.72 132.08 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "5c7f21c3-6e55-5b3e-84fd-a91f52c1f0f1")
+		)
+		(pin "GND" bidirectional
+			(at 299.72 137.16 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "22d4f0dc-30b8-55c3-a9ee-48c6ff58b32c")
+		)
+		(pin "AUDIO_MCLK" output
+			(at 374.65 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "5b5e2445-3813-53dd-9415-c3a2a3bfa796")
+		)
+		(pin "AUDIO_BCLK" output
+			(at 374.65 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "486e8d91-f010-5fde-812d-4187c323dfa6")
+		)
+		(pin "AUDIO_LRCLK" output
+			(at 374.65 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "6c0de54c-02cc-52cf-b958-55628986ca9e")
+		)
+		(pin "DAC_DIN" output
+			(at 374.65 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "b5e97819-c84a-55bc-aeac-3b38e8076ea8")
+		)
+		(pin "AUDIO_ENABLE" output
+			(at 374.65 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "e5585651-44ce-52f4-a6a6-b5b89a134568")
+		)
+		(pin "ADC_DOUT" input
+			(at 299.72 167.64 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "470821a2-a13e-5d45-a546-823f5cde50aa")
+		)
+		(pin "MCU_SPI_MOSI" input
+			(at 299.72 172.72 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "19c29cc5-872c-5c27-9f30-43c4515d4dc4")
+		)
+		(pin "MCU_SPI_CS" input
+			(at 299.72 177.8 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "85c3a3f9-4967-5e9c-8fab-c92d99a58c0d")
+		)
+		(pin "MCU_SPI_CLK" input
+			(at 299.72 182.88 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "09531738-ad0c-5986-b12c-c9638abc5301")
+		)
+		(pin "MCU_SPI_MISO" output
+			(at 374.65 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "c318630b-8815-5fe2-b460-c6330d00b387")
+		)
+	)
+	(wire
+		(pts
+			(xy 449.58 285.75) (xy 434.34 285.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d669793-b8b5-52fc-b038-4245655c608c")
+	)
+	(label "+3V3_D"
+		(at 434.34 285.75 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "1d247d5f-d192-5cd8-b6f3-244e50bd3cfc")
+	)
+	(wire
+		(pts
+			(xy 449.58 290.83) (xy 434.34 290.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03c93834-2b97-520d-8435-fc29250ccefa")
+	)
+	(label "+3V3_FPGA"
+		(at 434.34 290.83 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "c6115e98-0129-50bf-9eab-4abb8ad22a39")
+	)
+	(wire
+		(pts
+			(xy 449.58 295.91) (xy 434.34 295.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81ac34a1-36c3-5e27-87e6-b0fc983faebb")
+	)
+	(label "GND"
+		(at 434.34 295.91 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "133d608e-0032-565b-9a2c-08a9aa51d35f")
+	)
+	(wire
+		(pts
+			(xy 449.58 300.99) (xy 434.34 300.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed7e6e3b-368c-5ebb-b687-99a54417e000")
+	)
+	(label "MCU_SPI_ENABLE"
+		(at 434.34 300.99 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "5ab7f9e8-0c9a-58cb-ac0a-11ba23bde4c7")
+	)
+	(wire
+		(pts
+			(xy 449.58 306.07) (xy 434.34 306.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14ae0ade-bba2-5449-8452-cb3105ee0357")
+	)
+	(label "MCU_RESET_N"
+		(at 434.34 306.07 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "7f970ef2-7a49-563c-b254-1e925cfc4a00")
+	)
+	(wire
+		(pts
+			(xy 449.58 311.15) (xy 434.34 311.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92ad5cae-66e9-5aa4-8cfc-693e68e6f470")
+	)
+	(label "MCU_RAW_CS"
+		(at 434.34 311.15 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "fea5eed1-c489-523b-a38f-d426e1b0b1bf")
+	)
+	(wire
+		(pts
+			(xy 449.58 316.23) (xy 434.34 316.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af94efe0-ac1b-5146-b7ea-f22e9a5cf673")
+	)
+	(label "MCU_RAW_CLK"
+		(at 434.34 316.23 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "e3ccccec-897a-5216-bd0b-2954456f2d5b")
+	)
+	(wire
+		(pts
+			(xy 449.58 321.31) (xy 434.34 321.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fcc22f6-af91-5ba3-85d5-6409b9b7171e")
+	)
+	(label "MCU_RAW_MOSI"
+		(at 434.34 321.31 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "8847a2b6-be35-5742-a5d7-75dbfb3c110c")
+	)
+	(wire
+		(pts
+			(xy 539.75 326.39) (xy 554.99 326.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c30a524-b8fb-59ea-a52c-97a8efae5ea5")
+	)
+	(label "MCU_RAW_MISO"
+		(at 554.99 326.39 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "f9b8b721-17f2-5bc1-920a-74b0dee17a97")
+	)
+	(wire
+		(pts
+			(xy 539.75 331.47) (xy 554.99 331.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d23d52e5-d20c-526e-a6f7-66ca224411a4")
+	)
+	(label "MCU_SPI_CS"
+		(at 554.99 331.47 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "bb844204-2b34-55d2-9be3-7e99585e1df3")
+	)
+	(wire
+		(pts
+			(xy 539.75 336.55) (xy 554.99 336.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18ac4e86-2a5a-59f7-a84f-0366b71e5ec2")
+	)
+	(label "MCU_SPI_CLK"
+		(at 554.99 336.55 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "42579365-06d6-5228-926f-43f9cc0a8e61")
+	)
+	(wire
+		(pts
+			(xy 539.75 341.63) (xy 554.99 341.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c2b96ef-2d16-5b08-8f2a-a341e5101ba6")
+	)
+	(label "MCU_SPI_MOSI"
+		(at 554.99 341.63 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "ec4f8744-00f1-542d-8638-e25602c4580a")
+	)
+	(wire
+		(pts
+			(xy 449.58 346.71) (xy 434.34 346.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f15261ed-9c77-5286-8aae-569871b7ce94")
+	)
+	(label "MCU_SPI_MISO"
+		(at 434.34 346.71 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "cded5320-e9c3-53ba-ae2a-24693060ae19")
+	)
+	(sheet
+		(at 449.58 279.4)
+		(size 90.17 80.01)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e30931ca-9274-582c-ad53-77515cc6c5e4")
+		(property "Sheetname" "Power-domain SPI isolation"
+			(at 449.58 276.85999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "kestrel-revb-spi.kicad_sch"
+			(at 449.58 361.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+3V3_D" input
+			(at 449.58 285.75 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "ed1e0fd2-cb08-5634-a61d-7b4be05eef47")
+		)
+		(pin "+3V3_FPGA" input
+			(at 449.58 290.83 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "153c5c91-6f48-5b17-8468-4ec7bc7b0fbe")
+		)
+		(pin "GND" bidirectional
+			(at 449.58 295.91 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "c765f10b-32a6-52e6-b9c1-375f9a3fa016")
+		)
+		(pin "MCU_SPI_ENABLE" input
+			(at 449.58 300.99 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "5969c911-d287-5d40-9cb6-2a80df47e331")
+		)
+		(pin "MCU_RESET_N" input
+			(at 449.58 306.07 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "28d14716-3bdc-5f5b-996d-96ca91f498ba")
+		)
+		(pin "MCU_RAW_CS" input
+			(at 449.58 311.15 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "9799b600-7d5c-5626-ac8f-b65152eb8efb")
+		)
+		(pin "MCU_RAW_CLK" input
+			(at 449.58 316.23 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "5e9c37d3-a5ee-58e3-beb6-1c8134fb0cdf")
+		)
+		(pin "MCU_RAW_MOSI" input
+			(at 449.58 321.31 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "56f9167b-a6c1-5988-a60d-4f82988f6782")
+		)
+		(pin "MCU_RAW_MISO" output
+			(at 539.75 326.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "22a3afd0-a258-5df4-ae1f-e4b0c4fc08b8")
+		)
+		(pin "MCU_SPI_CS" output
+			(at 539.75 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "67ee9573-b220-52fa-a75d-3c2a78090a59")
+		)
+		(pin "MCU_SPI_CLK" output
+			(at 539.75 336.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "a8091ba2-0927-52ee-a96f-80303ff16365")
+		)
+		(pin "MCU_SPI_MOSI" output
+			(at 539.75 341.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "e85c3f3b-3713-5c6a-a180-e79ebc76786c")
+		)
+		(pin "MCU_SPI_MISO" input
+			(at 449.58 346.71 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "a2cf178f-04df-5452-988a-652179412b6c")
+		)
+	)
+	(wire
+		(pts
+			(xy 299.72 266.7) (xy 284.48 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db44f918-6283-59d3-b567-1ce965d6b516")
+	)
+	(label "+5V_DIG"
+		(at 284.48 266.7 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "d0415863-3374-557b-953e-d90da90462af")
+	)
+	(wire
+		(pts
+			(xy 299.72 271.78) (xy 284.48 271.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09a8494b-a244-5d5d-ab6c-8181b92f7e1f")
+	)
+	(label "GND"
+		(at 284.48 271.78 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "4fe3014e-f8fb-5783-a4fb-4f71dd2733c8")
+	)
+	(wire
+		(pts
+			(xy 299.72 276.86) (xy 284.48 276.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "643a1d21-6b80-573d-81a9-e4f1359d9cce")
+	)
+	(label "MCU_BL_PWM"
+		(at 284.48 276.86 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "eb5d7986-5a2d-5f13-98d5-10f83dca6c3e")
+	)
+	(wire
+		(pts
+			(xy 384.81 281.94) (xy 400.05 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2950d4b2-8cf3-58db-a261-8614e326b9df")
+	)
+	(label "LCD_VDD"
+		(at 400.05 281.94 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "15f3b927-4c8e-5e38-b5d0-225242a4c0d8")
+	)
+	(wire
+		(pts
+			(xy 384.81 287.02) (xy 400.05 287.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "971a2483-f72e-5002-82e2-239c039593f1")
+	)
+	(label "TOUCH_VDD"
+		(at 400.05 287.02 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "a5723476-4b85-5226-9ce8-240cd54e044d")
+	)
+	(wire
+		(pts
+			(xy 384.81 292.1) (xy 400.05 292.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54785362-3a25-5d82-8218-03c8c96a5432")
+	)
+	(label "BL_LED_A"
+		(at 400.05 292.1 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "368340af-703d-5c2d-92c0-fdc635dd975a")
+	)
+	(wire
+		(pts
+			(xy 299.72 297.18) (xy 284.48 297.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d9a9328-2235-5519-a4c0-05a798cd3a81")
+	)
+	(label "BL_LED_K"
+		(at 284.48 297.18 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "d8ff7e5c-cffa-5aba-b3e4-17c4b7fe4906")
+	)
+	(sheet
+		(at 299.72 260.35)
+		(size 85.09 49.53)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f7fb3e4e-5099-573e-ba36-abf7ba359f78")
+		(property "Sheetname" "Backlight and display supplies"
+			(at 299.72 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "kestrel-revb-backlight.kicad_sch"
+			(at 299.72 312.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V_DIG" input
+			(at 299.72 266.7 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "7d897be4-9e6d-5229-ad2e-0b20a56ab1cf")
+		)
+		(pin "GND" bidirectional
+			(at 299.72 271.78 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "e3a15b3f-0785-50aa-bc31-70d1c7386f80")
+		)
+		(pin "MCU_BL_PWM" input
+			(at 299.72 276.86 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "ea33fed8-7da9-5363-951c-9479dc4ba7f3")
+		)
+		(pin "LCD_VDD" output
+			(at 384.81 281.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "757a092d-a58e-5b35-bfae-a77cbdf0f007")
+		)
+		(pin "TOUCH_VDD" output
+			(at 384.81 287.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "78868538-4380-528b-a840-71c59e24c011")
+		)
+		(pin "BL_LED_A" output
+			(at 384.81 292.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "b5a1311e-c298-56c6-bb0e-f42f39dd59a0")
+		)
+		(pin "BL_LED_K" bidirectional
+			(at 299.72 297.18 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "9e74f5ce-c472-50c5-9432-be3f4bd4f8c2")
+		)
+	)
+	(wire
+		(pts
+			(xy 149.86 251.46) (xy 134.62 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ab3b3a5-0fa8-5681-8162-e43cd62c2c69")
+	)
+	(label "LCD_VDD"
+		(at 134.62 251.46 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "5fa1a124-d9de-53ec-ae89-93dc2d2a3744")
+	)
+	(wire
+		(pts
+			(xy 149.86 256.54) (xy 134.62 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c08f950c-5465-5a8c-816c-4fb1705ed9bd")
+	)
+	(label "TOUCH_VDD"
+		(at 134.62 256.54 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "690c1000-efac-5ab5-9909-e806433394e1")
+	)
+	(wire
+		(pts
+			(xy 149.86 261.62) (xy 134.62 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfa47f6c-3eeb-5da6-8cb0-052573d63d85")
+	)
+	(label "BL_LED_A"
+		(at 134.62 261.62 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "ddf36e72-331a-5b11-bcf3-637c9bf9908c")
+	)
+	(wire
+		(pts
+			(xy 149.86 266.7) (xy 134.62 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e55280e3-8267-5200-8002-52b2ddd8bd30")
+	)
+	(label "BL_LED_K"
+		(at 134.62 266.7 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "c21c5e03-d74a-566f-b1a7-061fdb0f23f8")
+	)
+	(wire
+		(pts
+			(xy 149.86 271.78) (xy 134.62 271.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa1e1862-87ef-59ec-a142-699c1326141f")
+	)
+	(label "GND"
+		(at 134.62 271.78 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "ed67bfa9-f18a-5a85-9edc-076001962f21")
+	)
+	(wire
+		(pts
+			(xy 149.86 276.86) (xy 134.62 276.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "139d8806-2fe1-541a-8528-9e6f9ab70887")
+	)
+	(label "MCU_LCD_B3"
+		(at 134.62 276.86 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "1d1557da-b2b1-57fa-880f-c74e50c94d8d")
+	)
+	(wire
+		(pts
+			(xy 149.86 281.94) (xy 134.62 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "905087f7-f1b5-5724-92f3-579050ad69b5")
+	)
+	(label "MCU_LCD_B4"
+		(at 134.62 281.94 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "876ef404-8000-5e4b-9fe1-cd6af45a82e0")
+	)
+	(wire
+		(pts
+			(xy 149.86 287.02) (xy 134.62 287.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21b5cdcf-4480-5465-9fe9-a48a26798061")
+	)
+	(label "MCU_LCD_B5"
+		(at 134.62 287.02 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "e332a6ee-c5b4-5672-9623-6766fad0a08c")
+	)
+	(wire
+		(pts
+			(xy 149.86 292.1) (xy 134.62 292.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7795c7a7-676e-5bbb-8200-018c5b7cb383")
+	)
+	(label "MCU_LCD_B6"
+		(at 134.62 292.1 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "a1be3f42-b892-5b52-9bd5-2f2d9d7a053d")
+	)
+	(wire
+		(pts
+			(xy 149.86 297.18) (xy 134.62 297.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b16e3b5d-9fce-5559-abeb-14c9c9d4d43d")
+	)
+	(label "MCU_LCD_B7"
+		(at 134.62 297.18 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "2ac6c76f-a247-55bb-befb-8a3638d8bcd3")
+	)
+	(wire
+		(pts
+			(xy 149.86 302.26) (xy 134.62 302.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05024716-35ea-5854-96fa-400748084aa7")
+	)
+	(label "MCU_LCD_G2"
+		(at 134.62 302.26 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "ba9663ed-cd6c-5ca1-a74b-0a01973399fa")
+	)
+	(wire
+		(pts
+			(xy 149.86 307.34) (xy 134.62 307.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bec28ce1-d366-52e2-bcc1-44b5a4b84c1a")
+	)
+	(label "MCU_LCD_G3"
+		(at 134.62 307.34 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "ef3e7d7f-81b7-5a17-a7e9-433134dfa2ae")
+	)
+	(wire
+		(pts
+			(xy 149.86 312.42) (xy 134.62 312.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bc18c88-e39a-5e6d-bd80-f415fc3fea01")
+	)
+	(label "MCU_LCD_G4"
+		(at 134.62 312.42 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "5025c5e0-b112-5ae1-8923-015f9d55f358")
+	)
+	(wire
+		(pts
+			(xy 149.86 317.5) (xy 134.62 317.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8df72976-0123-53a9-a35f-85a4a8c2b229")
+	)
+	(label "MCU_LCD_G5"
+		(at 134.62 317.5 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "86b23ce2-7af0-57b4-afb8-f06f4ab2bb3c")
+	)
+	(wire
+		(pts
+			(xy 149.86 322.58) (xy 134.62 322.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f15def30-e08d-5405-ba3f-389dd450050e")
+	)
+	(label "MCU_LCD_G6"
+		(at 134.62 322.58 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "47c106c5-5c2b-5411-b733-79f85ca6d1d5")
+	)
+	(wire
+		(pts
+			(xy 149.86 327.66) (xy 134.62 327.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "763fe8c9-48fd-5b84-8dd3-f2502cf9a11c")
+	)
+	(label "MCU_LCD_G7"
+		(at 134.62 327.66 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "3a6930f8-e602-57e3-8466-e6b57e853285")
+	)
+	(wire
+		(pts
+			(xy 149.86 332.74) (xy 134.62 332.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d883fae0-4b08-5004-bd9c-264bc135ce2b")
+	)
+	(label "MCU_LCD_R3"
+		(at 134.62 332.74 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "0ffcbe3f-6fd8-5fc0-9b1c-4b0cebbe8e6f")
+	)
+	(wire
+		(pts
+			(xy 149.86 337.82) (xy 134.62 337.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5d2b3c5-3f1e-5bb9-9087-bc34bb6dbd34")
+	)
+	(label "MCU_LCD_R4"
+		(at 134.62 337.82 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "54ef0863-96ca-5293-8b29-c2896c5eb120")
+	)
+	(wire
+		(pts
+			(xy 149.86 342.9) (xy 134.62 342.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8045d73-70c1-5e24-97d8-1ca35232a793")
+	)
+	(label "MCU_LCD_R5"
+		(at 134.62 342.9 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "ffac0232-2823-578e-b054-b396bb57950b")
+	)
+	(wire
+		(pts
+			(xy 149.86 347.98) (xy 134.62 347.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c882df61-a407-51c5-8d03-2a7d0ec9155c")
+	)
+	(label "MCU_LCD_R6"
+		(at 134.62 347.98 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "3310f81a-544d-5a8e-a772-a8b683d549be")
+	)
+	(wire
+		(pts
+			(xy 149.86 353.06) (xy 134.62 353.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1494e6f8-96d1-58eb-86f7-f33a3ec0ab35")
+	)
+	(label "MCU_LCD_R7"
+		(at 134.62 353.06 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "8a05f169-af24-52b8-9bc8-e0562af88eb1")
+	)
+	(wire
+		(pts
+			(xy 149.86 358.14) (xy 134.62 358.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca901fdb-4f22-5671-b115-e5ac4980c763")
+	)
+	(label "MCU_LCD_PCLK"
+		(at 134.62 358.14 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "eaedc42c-ecea-5cb5-96c8-7ca345768c82")
+	)
+	(wire
+		(pts
+			(xy 149.86 363.22) (xy 134.62 363.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55cffe05-eb42-5502-bb33-df31d0d48e08")
+	)
+	(label "MCU_LCD_HSYNC"
+		(at 134.62 363.22 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "90552247-eb69-5e0d-a3fb-36e1a68510cf")
+	)
+	(wire
+		(pts
+			(xy 149.86 368.3) (xy 134.62 368.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea7f922f-3c14-5825-b347-d7751d39be8a")
+	)
+	(label "MCU_LCD_VSYNC"
+		(at 134.62 368.3 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "a9cc84fc-e4fe-5906-9702-fb192ba74e51")
+	)
+	(wire
+		(pts
+			(xy 149.86 373.38) (xy 134.62 373.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ad66cb3-c381-55fc-b994-4cf384b73795")
+	)
+	(label "MCU_LCD_DE"
+		(at 134.62 373.38 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "2e08260f-6978-59a3-8ebb-002f12347f41")
+	)
+	(wire
+		(pts
+			(xy 149.86 378.46) (xy 134.62 378.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2006a31c-d0e9-5441-a6ba-d627ebb92b2d")
+	)
+	(label "MCU_LCD_DISP"
+		(at 134.62 378.46 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "0abf62ec-0b41-52b5-85df-9820f5aebfed")
+	)
+	(wire
+		(pts
+			(xy 149.86 383.54) (xy 134.62 383.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76b1166e-7cd2-520c-b14e-00cc69cb3d11")
+	)
+	(label "MCU_TOUCH_SCL"
+		(at 134.62 383.54 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "f8a135c9-4c62-56fb-99af-efde2a84bc72")
+	)
+	(wire
+		(pts
+			(xy 149.86 388.62) (xy 134.62 388.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54b04967-1e17-5348-aa68-2b4162b634fb")
+	)
+	(label "MCU_TOUCH_SDA"
+		(at 134.62 388.62 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "9ea4f8a6-8065-55a9-9475-4492105845f5")
+	)
+	(wire
+		(pts
+			(xy 149.86 393.7) (xy 134.62 393.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc987b29-2524-5543-803d-c8f84334bb3d")
+	)
+	(label "MCU_TOUCH_INT"
+		(at 134.62 393.7 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "96da9515-44e9-5cab-ae3b-ad9992aa618f")
+	)
+	(wire
+		(pts
+			(xy 149.86 398.78) (xy 134.62 398.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e99b22c-89ea-5146-8592-678f851951c2")
+	)
+	(label "MCU_TOUCH_RST_N"
+		(at 134.62 398.78 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "dd460047-9f2c-5307-bb37-9c759e1103c3")
+	)
+	(sheet
+		(at 149.86 245.11)
+		(size 110.49 160.02)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "266df24d-5871-5e15-ad19-c96664ba9c26")
+		(property "Sheetname" "RGB565 and capacitive touch"
+			(at 149.86 242.57000000000002 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "kestrel-revb-display.kicad_sch"
+			(at 149.86 407.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LCD_VDD" input
+			(at 149.86 251.46 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "4da93854-459c-5143-b03d-1c554f8fef93")
+		)
+		(pin "TOUCH_VDD" input
+			(at 149.86 256.54 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "f44a4599-74ed-5563-85e2-674706982ab8")
+		)
+		(pin "BL_LED_A" input
+			(at 149.86 261.62 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "6cbd20b4-5362-5dda-bdd3-e83309e3bea2")
+		)
+		(pin "BL_LED_K" bidirectional
+			(at 149.86 266.7 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "22556682-f61d-5f65-8361-96bbb3372da3")
+		)
+		(pin "GND" bidirectional
+			(at 149.86 271.78 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "07ada9db-8baf-5eb9-8a47-4f47fbbcd40b")
+		)
+		(pin "MCU_LCD_B3" input
+			(at 149.86 276.86 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "062f18f1-7891-5e44-ad1b-c665daec2453")
+		)
+		(pin "MCU_LCD_B4" input
+			(at 149.86 281.94 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "966a06e3-a838-5760-9ba7-777ce9949db7")
+		)
+		(pin "MCU_LCD_B5" input
+			(at 149.86 287.02 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "fada0700-543b-5322-a8ce-a7275cb6e186")
+		)
+		(pin "MCU_LCD_B6" input
+			(at 149.86 292.1 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "f86c13a1-3dc6-5ae7-a463-575101df37b8")
+		)
+		(pin "MCU_LCD_B7" input
+			(at 149.86 297.18 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "98b2a3ba-fab4-573a-aa9e-d4d75391b419")
+		)
+		(pin "MCU_LCD_G2" input
+			(at 149.86 302.26 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "b4cc0518-1182-5236-8e84-b22f0f1dafbb")
+		)
+		(pin "MCU_LCD_G3" input
+			(at 149.86 307.34 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "6216c4f8-bb43-5b38-abb8-32c4552a6421")
+		)
+		(pin "MCU_LCD_G4" input
+			(at 149.86 312.42 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "8901c2df-e0a9-51e5-bbd8-af114e9cddea")
+		)
+		(pin "MCU_LCD_G5" input
+			(at 149.86 317.5 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "0b80d380-0d67-569f-9b17-5c5f8ac853a1")
+		)
+		(pin "MCU_LCD_G6" input
+			(at 149.86 322.58 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "83c98609-8da6-5d2e-a4fd-d85654dd8288")
+		)
+		(pin "MCU_LCD_G7" input
+			(at 149.86 327.66 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "277b2151-6a81-59b9-b1c9-b8cdebd28d76")
+		)
+		(pin "MCU_LCD_R3" input
+			(at 149.86 332.74 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "7424f1a4-0aab-5985-b9e7-15a5acce4d41")
+		)
+		(pin "MCU_LCD_R4" input
+			(at 149.86 337.82 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "f80a41ed-9ec7-572e-a164-1db499f85f70")
+		)
+		(pin "MCU_LCD_R5" input
+			(at 149.86 342.9 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "e37f763a-21c7-531a-bbca-c906639239fc")
+		)
+		(pin "MCU_LCD_R6" input
+			(at 149.86 347.98 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "cf7e1b9d-6320-5f72-ab76-3c12ec56b8ed")
+		)
+		(pin "MCU_LCD_R7" input
+			(at 149.86 353.06 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "2b9be5a7-479e-5fde-885a-34de8d959ee5")
+		)
+		(pin "MCU_LCD_PCLK" input
+			(at 149.86 358.14 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "d352fc6d-f69b-594c-bfa9-c902ed83bd26")
+		)
+		(pin "MCU_LCD_HSYNC" input
+			(at 149.86 363.22 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "655eddd7-5dc9-5513-9154-7ef3576794e1")
+		)
+		(pin "MCU_LCD_VSYNC" input
+			(at 149.86 368.3 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "7d57705d-200d-5ee2-9af9-ca0058f14a08")
+		)
+		(pin "MCU_LCD_DE" input
+			(at 149.86 373.38 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "b6a72688-1eb1-5737-a9c3-be929f8856ff")
+		)
+		(pin "MCU_LCD_DISP" input
+			(at 149.86 378.46 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "3470e06f-8645-5a43-a7bd-dbc9d309bae4")
+		)
+		(pin "MCU_TOUCH_SCL" bidirectional
+			(at 149.86 383.54 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "80b26c6a-32be-5e55-8319-c402a2713233")
+		)
+		(pin "MCU_TOUCH_SDA" bidirectional
+			(at 149.86 388.62 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "f8c821bf-229d-5f11-b9b6-1835b1186315")
+		)
+		(pin "MCU_TOUCH_INT" bidirectional
+			(at 149.86 393.7 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "eebabbd8-35f1-5f17-9e36-78649a28cd1a")
+		)
+		(pin "MCU_TOUCH_RST_N" input
+			(at 149.86 398.78 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "1b9d6f9f-3d52-512f-a1e6-642c41aa1708")
+		)
+	)
+	(wire
+		(pts
+			(xy 299.72 346.71) (xy 284.48 346.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ebb7f53-5b3a-5717-8fd5-af45d57ec940")
+	)
+	(label "+3V3_D"
+		(at 284.48 346.71 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "8d7e0cd7-ddb0-59fb-b263-dbcdf92a5270")
+	)
+	(wire
+		(pts
+			(xy 299.72 351.79) (xy 284.48 351.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2bc8448-3f92-54af-ad44-838db6a88d5d")
+	)
+	(label "GND"
+		(at 284.48 351.79 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify right bottom)
+		)
+		(uuid "4348ebba-6843-52df-a1c5-74899f0dee69")
+	)
+	(wire
+		(pts
+			(xy 384.81 356.87) (xy 400.05 356.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9a12dde-3769-5598-aaeb-72ca0cf7de5d")
+	)
+	(label "MCU_FOOT0_N"
+		(at 400.05 356.87 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "82b99315-109f-591b-92b2-3446adc4ed6a")
+	)
+	(wire
+		(pts
+			(xy 384.81 361.95) (xy 400.05 361.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "937c2e0f-02a2-5a52-8a7a-418ca053ccb1")
+	)
+	(label "MCU_FOOT1_N"
+		(at 400.05 361.95 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left bottom)
+		)
+		(uuid "5450707a-9468-5481-915d-f9a9e58d4f5e")
+	)
+	(sheet
+		(at 299.72 340.36)
+		(size 85.09 30.48)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f3d2777d-8409-5f35-aad1-de6e4fc90745")
+		(property "Sheetname" "Two momentary footswitch inputs"
+			(at 299.72 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "kestrel-revb-footswitch.kicad_sch"
+			(at 299.72 373.38000000000005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+3V3_D" input
+			(at 299.72 346.71 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "90d74f6e-e0a1-55ce-9f28-d22371df45b5")
+		)
+		(pin "GND" bidirectional
+			(at 299.72 351.79 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "70b2b144-c78e-5425-b86d-278afd27ab7b")
+		)
+		(pin "MCU_FOOT0_N" output
+			(at 384.81 356.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "82e77fd4-8374-5b52-a238-7cbc5ec6d401")
+		)
+		(pin "MCU_FOOT1_N" output
+			(at 384.81 361.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "51e74bf2-f857-592f-8821-0ab2279876ad")
+		)
+	)
+	(text "KESTREL REV B - INTEGRATED BOARD - ENGINEERING DRAFT"
+		(at 20 20 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5356454e-5262-5743-8cd0-79aee6a882d8")
+	)
+	(text "Implemented: input/bucks, bare FPGA/P4, HP, ADC/DAC/mute, SPI, backlight, LCD/touch supplies, RGB565/I2C and two footswitches."
+		(at 20 27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a9aba404-c5a0-516b-9223-83a907907f39")
+	)
+	(text "Remaining: protection/power validation, panel contact/part qualification, physical placement and analogue validation."
+		(at 20 220 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "750d1389-ed84-5acb-8a9a-a30380031ba6")
+	)
+	(text "Remaining: MCU crystal/parts, SPI/display timing/sequencing, panel procurement, oscillator and clock/enable RTL migration."
+		(at 20 227 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "30bd0123-32a3-5b42-922f-3033468387aa")
+	)
+	(text "ERC checks connectivity; pending firmware, qualification and physical design prevent fabrication release."
+		(at 20 234 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7dffd770-43a0-5b09-8272-77c2751ed701")
+	)
+)
+

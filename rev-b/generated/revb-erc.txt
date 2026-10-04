@@ -1,0 +1,34 @@
+ERC report (2026-10-01T16:54:38, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+
+***** Sheet /Centre-negative 9 V input/
+
+***** Sheet /FPGA core and I/O sequencing/
+
+***** Sheet /P4 controlled HP regulator/
+
+***** Sheet /Onboard 5 V and 3.3 V bucks/
+
+***** Sheet /Hardware ADC and DAC/
+
+***** Sheet /RGB565 and capacitive touch/
+
+***** Sheet /Bare GW2AR-18 support/
+
+***** Sheet /Backlight and display supplies/
+
+***** Sheet /Two momentary footswitch inputs/
+
+***** Sheet /Bare ESP32-P4 support/
+
+***** Sheet /Power-domain SPI isolation/
+
+ ** ERC messages: 0  Errors 0  Warnings 0
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

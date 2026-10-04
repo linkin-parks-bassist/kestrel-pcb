@@ -1,0 +1,106 @@
+{
+  "status": "PASS sixteen SPI support poses, translator orientation and sixteen bounded net/proximity allocations",
+  "placed_references": [
+    "C801",
+    "C802",
+    "C803",
+    "C804",
+    "C805",
+    "R801",
+    "R802",
+    "R803",
+    "R804",
+    "R805",
+    "R806",
+    "R807",
+    "R808",
+    "R809",
+    "R810",
+    "R811"
+  ],
+  "local_allocations": {
+    "C801.1": {
+      "assigned_pad": "U801.16",
+      "pad_centre_distance_mm": 2.3573,
+      "engineering_target_mm": 2.5
+    },
+    "C802.1": {
+      "assigned_pad": "U801.15",
+      "pad_centre_distance_mm": 2.1973,
+      "engineering_target_mm": 2.5
+    },
+    "C803.1": {
+      "assigned_pad": "U802.6",
+      "pad_centre_distance_mm": 1.8875,
+      "engineering_target_mm": 2.5
+    },
+    "C804.1": {
+      "assigned_pad": "U803.5",
+      "pad_centre_distance_mm": 2.3512,
+      "engineering_target_mm": 2.5
+    },
+    "C805.1": {
+      "assigned_pad": "U802.5",
+      "pad_centre_distance_mm": 2.49,
+      "engineering_target_mm": 4
+    },
+    "R801.1": {
+      "assigned_pad": "U801.14",
+      "pad_centre_distance_mm": 4.3071,
+      "engineering_target_mm": 4.5
+    },
+    "R802.1": {
+      "assigned_pad": "U801.13",
+      "pad_centre_distance_mm": 3.9146,
+      "engineering_target_mm": 4.5
+    },
+    "R803.1": {
+      "assigned_pad": "U801.12",
+      "pad_centre_distance_mm": 3.7966,
+      "engineering_target_mm": 4.5
+    },
+    "R804.1": {
+      "assigned_pad": "U801.6",
+      "pad_centre_distance_mm": 2.1125,
+      "engineering_target_mm": 3
+    },
+    "R805.2": {
+      "assigned_pad": "R801.2",
+      "pad_centre_distance_mm": 3.2,
+      "engineering_target_mm": 4.5
+    },
+    "R806.2": {
+      "assigned_pad": "U801.3",
+      "pad_centre_distance_mm": 3.1206,
+      "engineering_target_mm": 4.5
+    },
+    "R807.2": {
+      "assigned_pad": "U803.4",
+      "pad_centre_distance_mm": 2.9288,
+      "engineering_target_mm": 4.5
+    },
+    "R808.1": {
+      "assigned_pad": "U803.1",
+      "pad_centre_distance_mm": 4.3305,
+      "engineering_target_mm": 5
+    },
+    "R809.2": {
+      "assigned_pad": "U802.1",
+      "pad_centre_distance_mm": 3.8159,
+      "engineering_target_mm": 5
+    },
+    "R810.2": {
+      "assigned_pad": "U802.5",
+      "pad_centre_distance_mm": 5.4104,
+      "engineering_target_mm": 6
+    },
+    "R811.1": {
+      "assigned_pad": "U802.5",
+      "pad_centre_distance_mm": 5.3494,
+      "engineering_target_mm": 6
+    }
+  },
+  "limits": [
+    "These distances are engineering placement allocations, not vendor loop/damping guarantees; local supply/control/ground/SPI routing, SI/timing, rail shutdown/backfeed, current/thermal and assembly remain unfinished or unqualified."
+  ]
+}

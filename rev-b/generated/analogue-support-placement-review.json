@@ -1,0 +1,110 @@
+{
+  "status": "PASS provisional eighteen analogue support poses; copper, unrelated poses and all pads/nets preserved",
+  "placed_references": [
+    "C220",
+    "C221",
+    "C222",
+    "C223",
+    "C224",
+    "C225",
+    "D201",
+    "D202",
+    "D203",
+    "R206",
+    "R207",
+    "R208",
+    "R209",
+    "R210",
+    "R211",
+    "R212",
+    "R213",
+    "R214"
+  ],
+  "placed_electrical_parts": 309,
+  "staged_electrical_parts": 38,
+  "pad_nets": {
+    "C221": {
+      "1": "/Hardware ADC and DAC/AUDIO_IN",
+      "2": "/Hardware ADC and DAC/INPUT_AC"
+    },
+    "R208": {
+      "1": "/Hardware ADC and DAC/INPUT_AC",
+      "2": "/Hardware ADC and DAC/IN_BIAS"
+    },
+    "R207": {
+      "1": "/Hardware ADC and DAC/AUDIO_IN",
+      "2": "/GND"
+    },
+    "D201": {
+      "1": "/Hardware ADC and DAC/AUDIO_IN",
+      "2": "/GND"
+    },
+    "D202": {
+      "1": "/GND",
+      "2": "/9V_PROTECTED",
+      "3": "/Hardware ADC and DAC/IN_BIAS"
+    },
+    "R209": {
+      "1": "/Hardware ADC and DAC/IN_BIAS",
+      "2": "/Hardware ADC and DAC/VMID"
+    },
+    "R210": {
+      "1": "/Hardware ADC and DAC/IN_BUF",
+      "2": "/Hardware ADC and DAC/AFE_OUT"
+    },
+    "R211": {
+      "1": "/Hardware ADC and DAC/AFE_OUT",
+      "2": "/Hardware ADC and DAC/VMID"
+    },
+    "R212": {
+      "1": "/9V_PROTECTED",
+      "2": "/Hardware ADC and DAC/BIAS_RAW"
+    },
+    "R213": {
+      "1": "/Hardware ADC and DAC/BIAS_RAW",
+      "2": "/GND"
+    },
+    "C222": {
+      "1": "/Hardware ADC and DAC/BIAS_RAW",
+      "2": "/GND"
+    },
+    "R214": {
+      "1": "/Hardware ADC and DAC/BIAS_BUF",
+      "2": "/Hardware ADC and DAC/VMID"
+    },
+    "C223": {
+      "1": "/Hardware ADC and DAC/VMID",
+      "2": "/GND"
+    },
+    "C224": {
+      "1": "/9V_PROTECTED",
+      "2": "/GND"
+    },
+    "C225": {
+      "1": "/9V_PROTECTED",
+      "2": "/GND"
+    },
+    "R206": {
+      "1": "/Hardware ADC and DAC/DAC_OUT_L",
+      "2": "/Hardware ADC and DAC/AUDIO_OUT"
+    },
+    "C220": {
+      "1": "/Hardware ADC and DAC/AUDIO_OUT",
+      "2": "/GND"
+    },
+    "D203": {
+      "1": "/Hardware ADC and DAC/AUDIO_OUT",
+      "2": "/GND"
+    }
+  },
+  "drc_violation_types": {
+    "drill_out_of_range": 6,
+    "silk_overlap": 199,
+    "silk_over_copper": 199,
+    "silk_edge_clearance": 9
+  },
+  "reported_unconnected": 264,
+  "limits": [
+    "Provisional analogue front-end/output/protection placement; short signal/feedback/return loops, electrical operation, noise, protection and fabrication/assembly remain unqualified."
+  ]
+}

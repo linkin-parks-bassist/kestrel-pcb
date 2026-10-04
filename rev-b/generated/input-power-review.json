@@ -1,0 +1,63 @@
+{
+  "status": "conditional schematic engineering review; not system protection validation",
+  "connectivity_and_polarity_checked": true,
+  "nominal_supply_v": 9,
+  "polarity": "centre negative",
+  "pmos_body_diode_direction": "fused input drain to protected output source",
+  "ptc_20c_hold_a": 2,
+  "ptc_20c_trip_a": 3.5,
+  "ptc_voltage_rating_v": 16,
+  "ptc_trip_example": "2 s maximum at 8 A in datasheet; not at 3.5 A",
+  "conditional_room_temperature_loss_cases": [
+    {
+      "input_current_a": 0.5,
+      "fet_drop_v": 0.0085,
+      "fet_loss_w": 0.00425,
+      "ptc_drop_v": 0.035,
+      "ptc_loss_w": 0.0175,
+      "total_series_drop_v": 0.043500000000000004
+    },
+    {
+      "input_current_a": 1,
+      "fet_drop_v": 0.017,
+      "fet_loss_w": 0.017,
+      "ptc_drop_v": 0.07,
+      "ptc_loss_w": 0.07,
+      "total_series_drop_v": 0.08700000000000001
+    },
+    {
+      "input_current_a": 1.5,
+      "fet_drop_v": 0.025500000000000002,
+      "fet_loss_w": 0.038250000000000006,
+      "ptc_drop_v": 0.10500000000000001,
+      "ptc_loss_w": 0.15750000000000003,
+      "total_series_drop_v": 0.1305
+    },
+    {
+      "input_current_a": 2,
+      "fet_drop_v": 0.034,
+      "fet_loss_w": 0.068,
+      "ptc_drop_v": 0.14,
+      "ptc_loss_w": 0.28,
+      "total_series_drop_v": 0.17400000000000002
+    }
+  ],
+  "protected_min_at_2a_v_excluding_connector_and_copper": 8.376,
+  "tvs_25c_standoff_v": 9,
+  "tvs_breakdown_at_1ma_v": [
+    10,
+    11.1
+  ],
+  "tvs_table_clamp_v": 15.4,
+  "tvs_clamp_test_current_a": 26,
+  "tvs_clamp_waveform": "10/1000 us; pulse derating/layout limitations apply",
+  "continuous_overvoltage_protection_established": false,
+  "reverse_current_isolation_present": false,
+  "remaining_checks": [
+    "Complete actual load budget and source/cable requirements; apply PTC hot derating",
+    "Qualify TVS residual overshoot/leakage/temperature and PTC/MOSFET fault coordination",
+    "Verify reverse-polarity hot-plug, body-diode inrush and reservoir charging",
+    "Resolve USB/JTAG/other-source backfeed and negative input leakage",
+    "Verify connector mating, retention, case placement and all footprints/stencil"
+  ]
+}

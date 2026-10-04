@@ -1,0 +1,15 @@
+{
+  "status": "PASS complete FPGA CS net including pullup, FPGA-to-translator MISO net and damping-to-FPGA clock/MOSI nets have physical continuity",
+  "track_segments": 45,
+  "vias": 9,
+  "routed_planar_length_mm": {
+    "/MCU_SPI_CS": 22.642117556998564,
+    "/MCU_SPI_MISO": 13.045717802685116,
+    "/MCU_SPI_CLK": 20.95517418439941,
+    "/MCU_SPI_MOSI": 21.966168824543143
+  },
+  "limits": [
+    "Planar lengths exclude via depth and branch loading; MISO bottom-layer bridge, clock/MOSI detours, plane returns and clearances require SI/timing and fabrication qualification.",
+    "MCU signal continuity is checked separately by check_spi_mcu_endpoints.py; firmware, damping, loaded timing/coupling, backfeed and assembly remain unqualified."
+  ]
+}

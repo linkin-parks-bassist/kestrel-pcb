@@ -1,0 +1,15 @@
+{
+  "status": "PASS five SPI control groups reach their required pads, including MCU enable/reset; supervisor CT remains open",
+  "track_segments": 45,
+  "vias": 9,
+  "physical_groups": {
+    "/Power-domain SPI isolation/SPI_SENSE": 4,
+    "/Power-domain SPI isolation/SPI_RAIL_RELEASE": 3,
+    "/MCU_SPI_ENABLE": 3,
+    "/MCU_RESET_N": 3,
+    "/Power-domain SPI isolation/SPI_OE_N": 3
+  },
+  "limits": [
+    "SPI data/clock/CS paths remain unfinished; firmware, loaded timing, noise/coupling, intermediate rails/backfeed and assembly remain unqualified."
+  ]
+}

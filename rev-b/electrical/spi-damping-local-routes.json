@@ -1,0 +1,306 @@
+{
+  "status": "Provisional translator-to-damping branches and MCU-side CS pullup stub; complete endpoint continuity checked separately; firmware and SI/timing unqualified",
+  "net": "/Power-domain SPI isolation/SPI_CS_B",
+  "anchors": {
+    "U801.14": [
+      102.1375,
+      95.975
+    ],
+    "R801.1": [
+      99.2,
+      92.825
+    ],
+    "U801.13": [
+      102.1375,
+      95.325
+    ],
+    "R802.1": [
+      101.8,
+      91.425
+    ],
+    "U801.12": [
+      102.1375,
+      94.675
+    ],
+    "R803.1": [
+      104.1,
+      91.425
+    ],
+    "U801.6": [
+      107.8625,
+      94.025
+    ],
+    "R804.1": [
+      109.975,
+      94.025
+    ],
+    "U801.3": [
+      107.8625,
+      95.975
+    ],
+    "R806.2": [
+      110.975,
+      95.75
+    ]
+  },
+  "anchor_nets": {
+    "U801.14": "/Power-domain SPI isolation/SPI_CS_B",
+    "R801.1": "/Power-domain SPI isolation/SPI_CS_B",
+    "U801.13": "/Power-domain SPI isolation/SPI_CLK_B",
+    "R802.1": "/Power-domain SPI isolation/SPI_CLK_B",
+    "U801.12": "/Power-domain SPI isolation/SPI_MOSI_B",
+    "R803.1": "/Power-domain SPI isolation/SPI_MOSI_B",
+    "U801.6": "/Power-domain SPI isolation/SPI_MISO_A",
+    "R804.1": "/Power-domain SPI isolation/SPI_MISO_A",
+    "U801.3": "/MCU_RAW_CS",
+    "R806.2": "/MCU_RAW_CS"
+  },
+  "additional_anchors": [],
+  "paths": [
+    {
+      "net": "/Power-domain SPI isolation/SPI_MOSI_B",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          102.1375,
+          94.675
+        ],
+        [
+          105.3,
+          94.675
+        ]
+      ]
+    },
+    {
+      "net": "/Power-domain SPI isolation/SPI_MOSI_B",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          104.1,
+          91.425
+        ],
+        [
+          104.6,
+          91.425
+        ],
+        [
+          105.2,
+          92.025
+        ]
+      ]
+    },
+    {
+      "net": "/Power-domain SPI isolation/SPI_MOSI_B",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          105.3,
+          94.675
+        ],
+        [
+          105.7,
+          94.675
+        ],
+        [
+          105.7,
+          92.025
+        ],
+        [
+          105.2,
+          92.025
+        ]
+      ]
+    },
+    {
+      "net": "/Power-domain SPI isolation/SPI_MISO_A",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          107.8625,
+          94.025
+        ],
+        [
+          109.975,
+          94.025
+        ]
+      ]
+    },
+    {
+      "net": "/MCU_RAW_CS",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          107.8625,
+          95.975
+        ],
+        [
+          110.75,
+          95.975
+        ],
+        [
+          110.975,
+          95.75
+        ]
+      ]
+    },
+    {
+      "net": "/Power-domain SPI isolation/SPI_CLK_B",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          102.1375,
+          95.325
+        ],
+        [
+          105.4,
+          95.325
+        ],
+        [
+          105.85,
+          94.875
+        ],
+        [
+          105.85,
+          93.625
+        ],
+        [
+          104.4,
+          92.175
+        ],
+        [
+          102.55,
+          92.175
+        ],
+        [
+          101.8,
+          91.425
+        ]
+      ]
+    },
+    {
+      "net": "/Power-domain SPI isolation/SPI_CS_B",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          102.1375,
+          95.975
+        ],
+        [
+          103.6,
+          95.975
+        ],
+        [
+          104.25,
+          96.625
+        ]
+      ]
+    },
+    {
+      "net": "/Power-domain SPI isolation/SPI_CS_B",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          104.25,
+          96.625
+        ],
+        [
+          104.25,
+          97.825
+        ],
+        [
+          103.55,
+          98.525
+        ],
+        [
+          102.55,
+          98.525
+        ],
+        [
+          98.3,
+          94.275
+        ],
+        [
+          98.3,
+          93.425
+        ]
+      ]
+    },
+    {
+      "net": "/Power-domain SPI isolation/SPI_CS_B",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          98.3,
+          93.425
+        ],
+        [
+          98.9,
+          92.825
+        ],
+        [
+          99.2,
+          92.825
+        ]
+      ]
+    }
+  ],
+  "via_positions": [
+    [
+      105.3,
+      94.675
+    ],
+    [
+      105.2,
+      92.025
+    ],
+    [
+      104.25,
+      96.625
+    ],
+    [
+      98.3,
+      93.425
+    ]
+  ],
+  "via_net_names": [
+    "/Power-domain SPI isolation/SPI_MOSI_B",
+    "/Power-domain SPI isolation/SPI_MOSI_B",
+    "/Power-domain SPI isolation/SPI_CS_B",
+    "/Power-domain SPI isolation/SPI_CS_B"
+  ],
+  "via_diameters_mm": [
+    0.5,
+    0.5,
+    0.5,
+    0.5
+  ],
+  "via_diameter_mm": 0.5,
+  "via_drill_mm": 0.3,
+  "via_returns": [
+    {
+      "anchor": "U801.12",
+      "via_index": 0
+    },
+    {
+      "anchor": "R803.1",
+      "via_index": 1
+    },
+    {
+      "anchor": "U801.14",
+      "via_index": 2
+    },
+    {
+      "anchor": "R801.1",
+      "via_index": 3
+    }
+  ]
+}

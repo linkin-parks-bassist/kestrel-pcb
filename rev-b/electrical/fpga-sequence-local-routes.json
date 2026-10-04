@@ -1,0 +1,1304 @@
+{
+  "status": "Provisional FPGA sequencing local copper and core sense source; main feed continuity checked separately; FPGA distribution and qualification unfinished",
+  "net": "/+3V3_FPGA",
+  "anchors": {
+    "C304.1": [
+      75.725,
+      101.4
+    ],
+    "C304.2": [
+      77.275,
+      101.4
+    ],
+    "U303.1": [
+      59.05,
+      86.25
+    ],
+    "U303.2": [
+      59.05,
+      86.75
+    ],
+    "U303.3": [
+      59.05,
+      87.25
+    ],
+    "U303.4": [
+      59.05,
+      87.75
+    ],
+    "U303.5": [
+      60.95,
+      87.75
+    ],
+    "U303.6": [
+      60.95,
+      87.25
+    ],
+    "U303.7": [
+      60.95,
+      86.75
+    ],
+    "U303.8": [
+      60.95,
+      86.25
+    ],
+    "U303.9": [
+      60.0,
+      87.0
+    ],
+    "R304.1": [
+      69.175,
+      92.0
+    ],
+    "R304.2": [
+      70.825,
+      92.0
+    ],
+    "C307.1": [
+      56.025,
+      83.5
+    ],
+    "C307.2": [
+      58.975,
+      83.5
+    ],
+    "C306.1": [
+      63.725,
+      83.2
+    ],
+    "C306.2": [
+      65.275,
+      83.2
+    ],
+    "C305.1": [
+      65.225,
+      90.0
+    ],
+    "C305.2": [
+      66.775,
+      90.0
+    ],
+    "C311.1": [
+      62.9,
+      86.875
+    ],
+    "C311.2": [
+      62.9,
+      85.325
+    ],
+    "C308.1": [
+      56.9,
+      87.775
+    ],
+    "C308.2": [
+      56.9,
+      86.225
+    ],
+    "C309.1": [
+      54.725,
+      90.0
+    ],
+    "C309.2": [
+      56.275,
+      90.0
+    ],
+    "R303.1": [
+      68.175,
+      90.0
+    ],
+    "R303.2": [
+      69.825,
+      90.0
+    ],
+    "C310.1": [
+      58.325,
+      91.0
+    ],
+    "C310.2": [
+      61.275,
+      91.0
+    ],
+    "R306.1": [
+      63.1,
+      91.025
+    ],
+    "R306.2": [
+      63.1,
+      89.375
+    ],
+    "U302.1": [
+      64.725,
+      86.5
+    ],
+    "U302.2": [
+      64.7,
+      87.0
+    ],
+    "U302.3": [
+      64.7,
+      87.5
+    ],
+    "U302.4": [
+      65.3,
+      87.5
+    ],
+    "U302.5": [
+      65.3,
+      87.0
+    ],
+    "U302.6": [
+      65.3,
+      86.5
+    ],
+    "R305.1": [
+      60.675,
+      83.7
+    ],
+    "R305.2": [
+      62.325,
+      83.7
+    ]
+  },
+  "anchor_nets": {
+    "C304.1": "/+1V0_FPGA",
+    "C304.2": "/FPGA core and I/O sequencing/CORE_FB",
+    "U303.1": "/+3V3_D",
+    "U303.2": "/+3V3_D",
+    "U303.3": "/FPGA core and I/O sequencing/FPGA_IO_EN",
+    "U303.4": "/+5V_DIG",
+    "U303.5": "/GND",
+    "U303.6": "/FPGA core and I/O sequencing/IO_RAMP",
+    "U303.7": "/+3V3_FPGA",
+    "U303.8": "/+3V3_FPGA",
+    "U303.9": "/GND",
+    "R304.1": "/FPGA core and I/O sequencing/CORE_SENSE",
+    "R304.2": "/GND",
+    "C307.1": "/+3V3_D",
+    "C307.2": "/GND",
+    "C306.1": "/+3V3_D",
+    "C306.2": "/GND",
+    "C305.1": "/FPGA core and I/O sequencing/CORE_SENSE",
+    "C305.2": "/GND",
+    "C311.1": "/FPGA core and I/O sequencing/CORE_DELAY",
+    "C311.2": "/GND",
+    "C308.1": "/+5V_DIG",
+    "C308.2": "/GND",
+    "C309.1": "/FPGA core and I/O sequencing/IO_RAMP",
+    "C309.2": "/GND",
+    "R303.1": "/+1V0_FPGA",
+    "R303.2": "/FPGA core and I/O sequencing/CORE_SENSE",
+    "C310.1": "/+3V3_FPGA",
+    "C310.2": "/GND",
+    "R306.1": "/FPGA core and I/O sequencing/FPGA_IO_EN",
+    "R306.2": "/GND",
+    "U302.1": "/+3V3_D",
+    "U302.2": "/GND",
+    "U302.3": "/FPGA core and I/O sequencing/CORE_SENSE",
+    "U302.4": "/FPGA core and I/O sequencing/FPGA_IO_EN",
+    "U302.5": "/FPGA core and I/O sequencing/CORE_DELAY",
+    "U302.6": "/+3V3_D",
+    "R305.1": "/+3V3_D",
+    "R305.2": "/FPGA core and I/O sequencing/FPGA_IO_EN"
+  },
+  "paths": [
+    {
+      "net": "/+3V3_D",
+      "layer": "F.Cu",
+      "width_mm": 1,
+      "points": [
+        [
+          56.025,
+          83.5
+        ],
+        [
+          54.6,
+          83.5
+        ]
+      ]
+    },
+    {
+      "net": "/+3V3_D",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          58.4,
+          85.55
+        ],
+        [
+          58.4,
+          86.75
+        ],
+        [
+          59.05,
+          86.75
+        ]
+      ]
+    },
+    {
+      "net": "/+3V3_D",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          58.4,
+          86.25
+        ],
+        [
+          59.05,
+          86.25
+        ]
+      ]
+    },
+    {
+      "net": "/+3V3_D",
+      "layer": "B.Cu",
+      "width_mm": 1,
+      "points": [
+        [
+          54.6,
+          83.5
+        ],
+        [
+          54.6,
+          84.8
+        ],
+        [
+          55.35,
+          85.55
+        ],
+        [
+          58.4,
+          85.55
+        ]
+      ]
+    },
+    {
+      "net": "/+3V3_D",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          63.725,
+          83.2
+        ],
+        [
+          63.725,
+          82.2
+        ]
+      ]
+    },
+    {
+      "net": "/+3V3_D",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          60.675,
+          83.7
+        ],
+        [
+          60.675,
+          84.7
+        ]
+      ]
+    },
+    {
+      "net": "/+3V3_D",
+      "layer": "B.Cu",
+      "width_mm": 0.508,
+      "points": [
+        [
+          58.4,
+          85.55
+        ],
+        [
+          59.525,
+          84.425
+        ],
+        [
+          60.4,
+          84.425
+        ],
+        [
+          60.675,
+          84.7
+        ]
+      ]
+    },
+    {
+      "net": "/+3V3_D",
+      "layer": "B.Cu",
+      "width_mm": 0.508,
+      "points": [
+        [
+          58.4,
+          85.55
+        ],
+        [
+          60.5,
+          85.55
+        ],
+        [
+          63.725,
+          82.325
+        ],
+        [
+          63.725,
+          82.2
+        ]
+      ]
+    },
+    {
+      "net": "/+3V3_D",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          63.725,
+          83.2
+        ],
+        [
+          63.725,
+          84.4
+        ],
+        [
+          64.725,
+          85.4
+        ],
+        [
+          64.725,
+          86.5
+        ]
+      ]
+    },
+    {
+      "net": "/+3V3_D",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          64.725,
+          86.5
+        ],
+        [
+          64.725,
+          85.8
+        ],
+        [
+          65.3,
+          85.8
+        ],
+        [
+          65.3,
+          86.5
+        ]
+      ]
+    },
+    {
+      "net": "/+5V_DIG",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          59.05,
+          87.75
+        ],
+        [
+          59,
+          87.8
+        ],
+        [
+          56.9,
+          87.8
+        ],
+        [
+          56.9,
+          87.775
+        ]
+      ]
+    },
+    {
+      "net": "/+3V3_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          60.95,
+          86.25
+        ],
+        [
+          61.8,
+          86.25
+        ]
+      ]
+    },
+    {
+      "net": "/+3V3_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          60.95,
+          86.75
+        ],
+        [
+          61.45,
+          86.75
+        ],
+        [
+          61.45,
+          86.25
+        ]
+      ]
+    },
+    {
+      "net": "/+3V3_FPGA",
+      "layer": "In2.Cu",
+      "width_mm": 0.508,
+      "points": [
+        [
+          61.8,
+          86.25
+        ],
+        [
+          62,
+          86.45
+        ],
+        [
+          62,
+          88.9
+        ]
+      ]
+    },
+    {
+      "net": "/+3V3_FPGA",
+      "layer": "B.Cu",
+      "width_mm": 1,
+      "points": [
+        [
+          62,
+          88.9
+        ],
+        [
+          58.325,
+          92.575
+        ],
+        [
+          58.325,
+          93.1
+        ]
+      ]
+    },
+    {
+      "net": "/+3V3_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 1,
+      "points": [
+        [
+          58.325,
+          91
+        ],
+        [
+          58.325,
+          93.1
+        ]
+      ]
+    },
+    {
+      "net": "/+1V0_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          68.175,
+          90
+        ],
+        [
+          68.175,
+          89
+        ]
+      ]
+    },
+    {
+      "net": "/+1V0_FPGA",
+      "layer": "In2.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          75.725,
+          100.6
+        ],
+        [
+          75.725,
+          96.4
+        ],
+        [
+          68.175,
+          88.85
+        ],
+        [
+          68.175,
+          89
+        ]
+      ]
+    },
+    {
+      "net": "/FPGA core and I/O sequencing/CORE_SENSE",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          64.7,
+          87.5
+        ],
+        [
+          64,
+          87.5
+        ],
+        [
+          64,
+          88.775
+        ],
+        [
+          65.225,
+          90
+        ]
+      ]
+    },
+    {
+      "net": "/FPGA core and I/O sequencing/CORE_SENSE",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          65.225,
+          90
+        ],
+        [
+          64.2,
+          90
+        ]
+      ]
+    },
+    {
+      "net": "/FPGA core and I/O sequencing/CORE_SENSE",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          69.825,
+          90
+        ],
+        [
+          70.8,
+          90
+        ]
+      ]
+    },
+    {
+      "net": "/FPGA core and I/O sequencing/CORE_SENSE",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          69.175,
+          92
+        ],
+        [
+          68,
+          92
+        ]
+      ]
+    },
+    {
+      "net": "/FPGA core and I/O sequencing/CORE_SENSE",
+      "layer": "B.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          64.2,
+          90
+        ],
+        [
+          66,
+          88.2
+        ],
+        [
+          69,
+          88.2
+        ],
+        [
+          70.8,
+          90
+        ]
+      ]
+    },
+    {
+      "net": "/FPGA core and I/O sequencing/CORE_SENSE",
+      "layer": "B.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          70.8,
+          90
+        ],
+        [
+          70.8,
+          91
+        ],
+        [
+          68.8,
+          91
+        ],
+        [
+          68,
+          92
+        ]
+      ]
+    },
+    {
+      "net": "/FPGA core and I/O sequencing/FPGA_IO_EN",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          65.3,
+          87.5
+        ],
+        [
+          66,
+          87.5
+        ]
+      ]
+    },
+    {
+      "net": "/FPGA core and I/O sequencing/FPGA_IO_EN",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          59.05,
+          87.25
+        ],
+        [
+          58,
+          87.25
+        ]
+      ]
+    },
+    {
+      "net": "/FPGA core and I/O sequencing/FPGA_IO_EN",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          62.325,
+          83.7
+        ],
+        [
+          62.325,
+          82.7
+        ]
+      ]
+    },
+    {
+      "net": "/FPGA core and I/O sequencing/FPGA_IO_EN",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          63.1,
+          91.025
+        ],
+        [
+          63.1,
+          92.1
+        ]
+      ]
+    },
+    {
+      "net": "/FPGA core and I/O sequencing/FPGA_IO_EN",
+      "layer": "In2.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          58,
+          87.25
+        ],
+        [
+          58,
+          88.5
+        ],
+        [
+          60.4,
+          88.5
+        ],
+        [
+          63.1,
+          91.2
+        ],
+        [
+          63.1,
+          92.1
+        ]
+      ]
+    },
+    {
+      "net": "/FPGA core and I/O sequencing/FPGA_IO_EN",
+      "layer": "In2.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          66,
+          87.5
+        ],
+        [
+          66,
+          89.2
+        ],
+        [
+          63.1,
+          92.1
+        ]
+      ]
+    },
+    {
+      "net": "/FPGA core and I/O sequencing/FPGA_IO_EN",
+      "layer": "In2.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          62.325,
+          82.7
+        ],
+        [
+          62.325,
+          81.2
+        ],
+        [
+          67.2,
+          81.2
+        ],
+        [
+          67.2,
+          87.5
+        ],
+        [
+          66,
+          87.5
+        ]
+      ]
+    },
+    {
+      "net": "/FPGA core and I/O sequencing/CORE_DELAY",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          65.3,
+          87
+        ],
+        [
+          65.8,
+          87
+        ],
+        [
+          66.1,
+          86.7
+        ]
+      ]
+    },
+    {
+      "net": "/FPGA core and I/O sequencing/CORE_DELAY",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          62.9,
+          86.875
+        ],
+        [
+          62.9,
+          87.8
+        ]
+      ]
+    },
+    {
+      "net": "/FPGA core and I/O sequencing/CORE_DELAY",
+      "layer": "B.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          66.1,
+          86.7
+        ],
+        [
+          66.1,
+          86
+        ],
+        [
+          64.9,
+          84.8
+        ],
+        [
+          64.1,
+          84.8
+        ],
+        [
+          62.9,
+          86
+        ],
+        [
+          62.9,
+          87.8
+        ]
+      ]
+    },
+    {
+      "net": "/FPGA core and I/O sequencing/IO_RAMP",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          60.95,
+          87.25
+        ],
+        [
+          61.5,
+          87.25
+        ],
+        [
+          61.5,
+          87.95
+        ],
+        [
+          61.1,
+          88.35
+        ]
+      ]
+    },
+    {
+      "net": "/FPGA core and I/O sequencing/IO_RAMP",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          54.725,
+          90
+        ],
+        [
+          53.6,
+          90
+        ]
+      ]
+    },
+    {
+      "net": "/FPGA core and I/O sequencing/IO_RAMP",
+      "layer": "B.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          61.1,
+          88.35
+        ],
+        [
+          60.7,
+          87.95
+        ],
+        [
+          55.65,
+          87.95
+        ],
+        [
+          53.6,
+          90
+        ]
+      ]
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "width_mm": 0.4,
+      "points": [
+        [
+          58.975,
+          83.5
+        ],
+        [
+          58.975,
+          81.6
+        ]
+      ]
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          65.275,
+          83.2
+        ],
+        [
+          65.275,
+          82.2
+        ]
+      ]
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          64.7,
+          87
+        ],
+        [
+          63.85,
+          86.9
+        ]
+      ]
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          56.9,
+          86.225
+        ],
+        [
+          55.875,
+          86.225
+        ],
+        [
+          55.5,
+          86.6
+        ]
+      ]
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          56.275,
+          90
+        ],
+        [
+          56.275,
+          91.2
+        ]
+      ]
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "width_mm": 0.4,
+      "points": [
+        [
+          61.275,
+          91
+        ],
+        [
+          61.275,
+          92.6
+        ]
+      ]
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          62.9,
+          85.325
+        ],
+        [
+          62.9,
+          84.7
+        ]
+      ]
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          63.1,
+          89.375
+        ],
+        [
+          63.1,
+          88.7
+        ]
+      ]
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          66.775,
+          90
+        ],
+        [
+          66.775,
+          91.2
+        ]
+      ]
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          70.825,
+          92
+        ],
+        [
+          70.825,
+          93.2
+        ]
+      ]
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "width_mm": 0.4,
+      "points": [
+        [
+          60,
+          87
+        ],
+        [
+          60,
+          88.7
+        ],
+        [
+          59.7,
+          89
+        ],
+        [
+          59.7,
+          89.35
+        ]
+      ]
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          60.95,
+          87.75
+        ],
+        [
+          60.5,
+          88.2
+        ],
+        [
+          60,
+          88.2
+        ]
+      ]
+    }
+  ],
+  "via_positions": [
+    [
+      54.6,
+      83.5
+    ],
+    [
+      58.4,
+      85.55
+    ],
+    [
+      63.725,
+      82.2
+    ],
+    [
+      60.675,
+      84.7
+    ],
+    [
+      61.8,
+      86.25
+    ],
+    [
+      58.325,
+      93.1
+    ],
+    [
+      68.175,
+      89
+    ],
+    [
+      64.2,
+      90
+    ],
+    [
+      70.8,
+      90
+    ],
+    [
+      68,
+      92
+    ],
+    [
+      66,
+      87.5
+    ],
+    [
+      58,
+      87.25
+    ],
+    [
+      62.325,
+      82.7
+    ],
+    [
+      63.1,
+      92.1
+    ],
+    [
+      66.1,
+      86.7
+    ],
+    [
+      62.9,
+      87.8
+    ],
+    [
+      61.1,
+      88.35
+    ],
+    [
+      53.6,
+      90
+    ],
+    [
+      58.975,
+      81.6
+    ],
+    [
+      65.275,
+      82.2
+    ],
+    [
+      63.85,
+      86.9
+    ],
+    [
+      55.5,
+      86.6
+    ],
+    [
+      56.275,
+      91.2
+    ],
+    [
+      61.275,
+      92.6
+    ],
+    [
+      62.9,
+      84.7
+    ],
+    [
+      63.1,
+      88.7
+    ],
+    [
+      66.775,
+      91.2
+    ],
+    [
+      70.825,
+      93.2
+    ],
+    [
+      59.7,
+      89.35
+    ],
+    [
+      62,
+      88.9
+    ]
+  ],
+  "via_net_names": [
+    "/+3V3_D",
+    "/+3V3_D",
+    "/+3V3_D",
+    "/+3V3_D",
+    "/+3V3_FPGA",
+    "/+3V3_FPGA",
+    "/+1V0_FPGA",
+    "/FPGA core and I/O sequencing/CORE_SENSE",
+    "/FPGA core and I/O sequencing/CORE_SENSE",
+    "/FPGA core and I/O sequencing/CORE_SENSE",
+    "/FPGA core and I/O sequencing/FPGA_IO_EN",
+    "/FPGA core and I/O sequencing/FPGA_IO_EN",
+    "/FPGA core and I/O sequencing/FPGA_IO_EN",
+    "/FPGA core and I/O sequencing/FPGA_IO_EN",
+    "/FPGA core and I/O sequencing/CORE_DELAY",
+    "/FPGA core and I/O sequencing/CORE_DELAY",
+    "/FPGA core and I/O sequencing/IO_RAMP",
+    "/FPGA core and I/O sequencing/IO_RAMP",
+    "/GND",
+    "/GND",
+    "/GND",
+    "/GND",
+    "/GND",
+    "/GND",
+    "/GND",
+    "/GND",
+    "/GND",
+    "/GND",
+    "/GND",
+    "/+3V3_FPGA"
+  ],
+  "via_diameters_mm": [
+    0.9,
+    0.7,
+    0.5,
+    0.5,
+    0.7,
+    0.9,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.7,
+    0.5,
+    0.5,
+    0.5,
+    0.7,
+    0.7,
+    0.5,
+    0.5,
+    0.5,
+    0.7,
+    0.7,
+    0.9
+  ],
+  "via_diameter_mm": 0.7,
+  "via_drill_mm": 0.3
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS EP directly connected to 25 thermal vias and filled In1.Cu ground; coordinated paste/drill geometry and bottom tenting serialized",
+  "via_count": 25,
+  "via_diameter_mm": 0.6,
+  "via_drill_mm": 0.3,
+  "paste_windows": 36,
+  "paste_coverage_percent": 51.84,
+  "minimum_paste_to_drill_edge_mm": 0.062132,
+  "bottom_tented": true,
+  "limits": [
+    "Tenting is a fabrication request, not guaranteed hole sealing; solder wicking/voiding, stencil/reflow, finished holes and tolerances require assembler review.",
+    "No thermal/impedance performance or main rail continuity is established."
+  ]
+}

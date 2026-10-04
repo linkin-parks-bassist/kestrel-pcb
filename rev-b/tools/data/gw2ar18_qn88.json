@@ -1,0 +1,578 @@
+{
+  "part": "GW2AR-LV18QN88C8/I7",
+  "package": "QN88 SDRAM; not QN88P/PF",
+  "sources": [
+    {
+      "url": "https://cdn.gowinsemi.com.cn/UG115E.pdf",
+      "edition": "UG115-1.7.2E",
+      "sha256": "a67ba07252a64efcdffec5005f3b58cf02903c26ee2b179998b8388bc00ce217",
+      "numbered_pages": "6\u201322, 29"
+    },
+    {
+      "url": "https://cdn.gowinsemi.com.cn/UG229E.pdf",
+      "edition": "UG229-1.6.5E",
+      "sha256": "d8eb36a71f2f799748b80f1bb89997134893496716b0c996b585e9901a9db4ad",
+      "numbered_pages": "7\u20138, 15\u201316"
+    }
+  ],
+  "pins": [
+    {
+      "number": 1,
+      "name": "VCC",
+      "function": "Power",
+      "bank": null
+    },
+    {
+      "number": 2,
+      "name": "VSS",
+      "function": "Ground",
+      "bank": null
+    },
+    {
+      "number": 3,
+      "name": "VCCX/VCCIO2/VCCIO6/VCCIO7",
+      "function": "Power",
+      "bank": null
+    },
+    {
+      "number": 4,
+      "name": "IOL7A/LPLL1_T_in",
+      "function": "I/O",
+      "bank": 7
+    },
+    {
+      "number": 5,
+      "name": "IOR25B/TMS",
+      "function": "I/O",
+      "bank": 2
+    },
+    {
+      "number": 6,
+      "name": "IOR26A/TCK",
+      "function": "I/O",
+      "bank": 2
+    },
+    {
+      "number": 7,
+      "name": "IOR26B/TDI",
+      "function": "I/O",
+      "bank": 2
+    },
+    {
+      "number": 8,
+      "name": "IOR25A/TDO",
+      "function": "I/O",
+      "bank": 2
+    },
+    {
+      "number": 9,
+      "name": "IOR31B/RECONFIG_N",
+      "function": "I/O",
+      "bank": 3
+    },
+    {
+      "number": 10,
+      "name": "IOL29A/GCLKT_6",
+      "function": "I/O",
+      "bank": 6
+    },
+    {
+      "number": 11,
+      "name": "IOL29B/GCLKC_6",
+      "function": "I/O",
+      "bank": 6
+    },
+    {
+      "number": 12,
+      "name": "VCCX/VCCIO2/VCCIO6/VCCIO7",
+      "function": "Power",
+      "bank": null
+    },
+    {
+      "number": 13,
+      "name": "IOL45A/LPLL2_T_in",
+      "function": "I/O",
+      "bank": 6
+    },
+    {
+      "number": 14,
+      "name": "VCCPLLL1",
+      "function": "Power",
+      "bank": null
+    },
+    {
+      "number": 15,
+      "name": "IOL47A/LPLL2_T_fb",
+      "function": "I/O",
+      "bank": 6
+    },
+    {
+      "number": 16,
+      "name": "IOL47B/LPLL2_C_fb",
+      "function": "I/O",
+      "bank": 6
+    },
+    {
+      "number": 17,
+      "name": "IOL49A",
+      "function": "I/O",
+      "bank": 6
+    },
+    {
+      "number": 18,
+      "name": "IOL49B",
+      "function": "I/O",
+      "bank": 6
+    },
+    {
+      "number": 19,
+      "name": "IOL51A",
+      "function": "I/O",
+      "bank": 6
+    },
+    {
+      "number": 20,
+      "name": "IOL51B",
+      "function": "I/O",
+      "bank": 6
+    },
+    {
+      "number": 21,
+      "name": "VSS",
+      "function": "Ground",
+      "bank": null
+    },
+    {
+      "number": 22,
+      "name": "VCC",
+      "function": "Power",
+      "bank": null
+    },
+    {
+      "number": 23,
+      "name": "VCCIO5",
+      "function": "Power",
+      "bank": null
+    },
+    {
+      "number": 24,
+      "name": "VSS",
+      "function": "Ground",
+      "bank": null
+    },
+    {
+      "number": 25,
+      "name": "IOB6A",
+      "function": "I/O",
+      "bank": 5
+    },
+    {
+      "number": 26,
+      "name": "IOB6B",
+      "function": "I/O",
+      "bank": 5
+    },
+    {
+      "number": 27,
+      "name": "IOB8A",
+      "function": "I/O",
+      "bank": 5
+    },
+    {
+      "number": 28,
+      "name": "IOB8B",
+      "function": "I/O",
+      "bank": 5
+    },
+    {
+      "number": 29,
+      "name": "IOB14A",
+      "function": "I/O",
+      "bank": 5
+    },
+    {
+      "number": 30,
+      "name": "IOB14B",
+      "function": "I/O",
+      "bank": 5
+    },
+    {
+      "number": 31,
+      "name": "IOB18A",
+      "function": "I/O",
+      "bank": 5
+    },
+    {
+      "number": 32,
+      "name": "IOB18B",
+      "function": "I/O",
+      "bank": 5
+    },
+    {
+      "number": 33,
+      "name": "IOB24A",
+      "function": "I/O",
+      "bank": 5
+    },
+    {
+      "number": 34,
+      "name": "IOB24B",
+      "function": "I/O",
+      "bank": 5
+    },
+    {
+      "number": 35,
+      "name": "IOB30A/GCLKT_4",
+      "function": "I/O",
+      "bank": 4
+    },
+    {
+      "number": 36,
+      "name": "IOB30B/GCLKC_4",
+      "function": "I/O",
+      "bank": 4
+    },
+    {
+      "number": 37,
+      "name": "IOB34A",
+      "function": "I/O",
+      "bank": 4
+    },
+    {
+      "number": 38,
+      "name": "IOB34B",
+      "function": "I/O",
+      "bank": 4
+    },
+    {
+      "number": 39,
+      "name": "IOB40A",
+      "function": "I/O",
+      "bank": 4
+    },
+    {
+      "number": 40,
+      "name": "IOB40B",
+      "function": "I/O",
+      "bank": 4
+    },
+    {
+      "number": 41,
+      "name": "IOB43A",
+      "function": "I/O",
+      "bank": 4
+    },
+    {
+      "number": 42,
+      "name": "IOB42B",
+      "function": "I/O",
+      "bank": 4
+    },
+    {
+      "number": 43,
+      "name": "VSS",
+      "function": "Ground",
+      "bank": null
+    },
+    {
+      "number": 44,
+      "name": "VCCIO4",
+      "function": "Power",
+      "bank": null
+    },
+    {
+      "number": 45,
+      "name": "VCC",
+      "function": "Power",
+      "bank": null
+    },
+    {
+      "number": 46,
+      "name": "VSS",
+      "function": "Ground",
+      "bank": null
+    },
+    {
+      "number": 47,
+      "name": "EXTR",
+      "function": "Ground",
+      "bank": null
+    },
+    {
+      "number": 48,
+      "name": "IOR49B",
+      "function": "I/O",
+      "bank": 3
+    },
+    {
+      "number": 49,
+      "name": "IOR49A",
+      "function": "I/O",
+      "bank": 3
+    },
+    {
+      "number": 50,
+      "name": "VCCPLLR1",
+      "function": "Power",
+      "bank": null
+    },
+    {
+      "number": 51,
+      "name": "IOR45A/RPLL2_T_in",
+      "function": "I/O",
+      "bank": 3
+    },
+    {
+      "number": 52,
+      "name": "IOR39A/SCLK",
+      "function": "I/O",
+      "bank": 3
+    },
+    {
+      "number": 53,
+      "name": "IOR38B/DOUT/WE_N",
+      "function": "I/O",
+      "bank": 3
+    },
+    {
+      "number": 54,
+      "name": "IOR38A/DIN/CLKHOLD_N",
+      "function": "I/O",
+      "bank": 3
+    },
+    {
+      "number": 55,
+      "name": "IOR36B/SSPI_CS_N/D0",
+      "function": "I/O",
+      "bank": 3
+    },
+    {
+      "number": 56,
+      "name": "IOR36A/SO/D1",
+      "function": "I/O",
+      "bank": 3
+    },
+    {
+      "number": 57,
+      "name": "IOR35A/FASTRD_N/D3",
+      "function": "I/O",
+      "bank": 3
+    },
+    {
+      "number": 58,
+      "name": "VCCIO3",
+      "function": "Power",
+      "bank": null
+    },
+    {
+      "number": 59,
+      "name": "IOR34B/MCLK/D4",
+      "function": "I/O",
+      "bank": 3
+    },
+    {
+      "number": 60,
+      "name": "IOR34A/MCS_N/D5",
+      "function": "I/O",
+      "bank": 3
+    },
+    {
+      "number": 61,
+      "name": "IOR33B/MO/D6",
+      "function": "I/O",
+      "bank": 3
+    },
+    {
+      "number": 62,
+      "name": "IOR33A/MI/D7",
+      "function": "I/O",
+      "bank": 3
+    },
+    {
+      "number": 63,
+      "name": "IOR29A/GCLKT_3",
+      "function": "I/O",
+      "bank": 3
+    },
+    {
+      "number": 64,
+      "name": "VCCX/VCCIO2/VCCIO6/VCCIO7",
+      "function": "Power",
+      "bank": null
+    },
+    {
+      "number": 65,
+      "name": "VSS",
+      "function": "Ground",
+      "bank": null
+    },
+    {
+      "number": 66,
+      "name": "VCC",
+      "function": "Power",
+      "bank": null
+    },
+    {
+      "number": 67,
+      "name": "VCCIO1",
+      "function": "Power",
+      "bank": null
+    },
+    {
+      "number": 68,
+      "name": "VSS",
+      "function": "Ground",
+      "bank": null
+    },
+    {
+      "number": 69,
+      "name": "IOT50A",
+      "function": "I/O",
+      "bank": 1
+    },
+    {
+      "number": 70,
+      "name": "IOT44B",
+      "function": "I/O",
+      "bank": 1
+    },
+    {
+      "number": 71,
+      "name": "IOT44A",
+      "function": "I/O",
+      "bank": 1
+    },
+    {
+      "number": 72,
+      "name": "IOT40B",
+      "function": "I/O",
+      "bank": 1
+    },
+    {
+      "number": 73,
+      "name": "IOT40A",
+      "function": "I/O",
+      "bank": 1
+    },
+    {
+      "number": 74,
+      "name": "IOT34B",
+      "function": "I/O",
+      "bank": 1
+    },
+    {
+      "number": 75,
+      "name": "IOT34A",
+      "function": "I/O",
+      "bank": 1
+    },
+    {
+      "number": 76,
+      "name": "IOT30B/GCLKC_1",
+      "function": "I/O",
+      "bank": 1
+    },
+    {
+      "number": 77,
+      "name": "IOT30A/GCLKT_1",
+      "function": "I/O",
+      "bank": 1
+    },
+    {
+      "number": 78,
+      "name": "VCCIO0",
+      "function": "Power",
+      "bank": null
+    },
+    {
+      "number": 79,
+      "name": "IOT27B/GCLKC_0",
+      "function": "I/O",
+      "bank": 0
+    },
+    {
+      "number": 80,
+      "name": "IOT27A/GCLKT_0",
+      "function": "I/O",
+      "bank": 0
+    },
+    {
+      "number": 81,
+      "name": "IOT17B",
+      "function": "I/O",
+      "bank": 0
+    },
+    {
+      "number": 82,
+      "name": "IOT17A",
+      "function": "I/O",
+      "bank": 0
+    },
+    {
+      "number": 83,
+      "name": "IOT6B",
+      "function": "I/O",
+      "bank": 0
+    },
+    {
+      "number": 84,
+      "name": "IOT6A",
+      "function": "I/O",
+      "bank": 0
+    },
+    {
+      "number": 85,
+      "name": "IOT4B",
+      "function": "I/O",
+      "bank": 0
+    },
+    {
+      "number": 86,
+      "name": "IOT4A",
+      "function": "I/O",
+      "bank": 0
+    },
+    {
+      "number": 87,
+      "name": "IOR30B/MODE1",
+      "function": "I/O",
+      "bank": 3
+    },
+    {
+      "number": 88,
+      "name": "IOR30A/MODE0",
+      "function": "I/O",
+      "bank": 3
+    },
+    {
+      "number": 89,
+      "name": "EPAD",
+      "function": "Ground",
+      "bank": null
+    }
+  ],
+  "unbonded": {
+    "MODE2": "internally GND",
+    "READY": true,
+    "DONE": true,
+    "JTAGSEL_N": true
+  },
+  "land_pattern_mm": {
+    "body": [
+      10,
+      10
+    ],
+    "pitch": 0.4,
+    "opposite_pad_centres": 9.9,
+    "pad_size": [
+      0.85,
+      0.2
+    ],
+    "exposed_pad": [
+      6.8,
+      6.8
+    ],
+    "nominal_height": 0.9
+  },
+  "review_status": "Pin list extracted from QN88 column; wrapped power/I/O names checked manually; power pin groups cross-checked with UG229 Table 3-1. Layout/stencil/thermal review pending."
+}

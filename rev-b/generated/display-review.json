@@ -1,0 +1,14 @@
+{
+  "status": "reference pinout/connectivity review, not display operation or contact qualification",
+  "rgb565_data_bits": 16,
+  "lcd_timing_control_lines": 5,
+  "touch_lines": 4,
+  "physical_components": 349,
+  "remaining": [
+    "panel procurement/Sydney cost",
+    "FPC contact side/numbering/thickness and actual tail bends",
+    "bus timing/source damping and capacitive load",
+    "I2C rise/sink and GT911 reset/address firmware",
+    "rail ramps, unpowered input backfeed and EMI/physical qualification"
+  ]
+}

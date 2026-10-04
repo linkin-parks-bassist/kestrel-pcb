@@ -1,0 +1,56 @@
+{
+  "status": "PASS eleven buck support poses and seven bounded local net/proximity allocations",
+  "placed_references": [
+    "C101",
+    "C102",
+    "C103",
+    "C104",
+    "C105",
+    "C106",
+    "R101",
+    "R102",
+    "R103",
+    "R104",
+    "R105"
+  ],
+  "local_allocations": {
+    "C102": {
+      "assigned_pad": "U101.3",
+      "distance_mm": 1.9221,
+      "provisional_bound_mm": 2
+    },
+    "C101": {
+      "assigned_pad": "U101.3",
+      "distance_mm": 4.6132,
+      "provisional_bound_mm": 6
+    },
+    "C103": {
+      "assigned_pad": "U101.6",
+      "distance_mm": 1.6504,
+      "provisional_bound_mm": 2
+    },
+    "C104": {
+      "assigned_pad": "L101.2",
+      "distance_mm": 2.9155,
+      "provisional_bound_mm": 3
+    },
+    "C105": {
+      "assigned_pad": "L101.2",
+      "distance_mm": 9.6177,
+      "provisional_bound_mm": 10
+    },
+    "R103": {
+      "assigned_pad": "U101.4",
+      "distance_mm": 3.6146,
+      "provisional_bound_mm": 5
+    },
+    "R104": {
+      "assigned_pad": "U101.5",
+      "distance_mm": 4.1595,
+      "provisional_bound_mm": 5
+    }
+  },
+  "limits": [
+    "Local copper continuity is checked separately by check_buck5v_local.py; protected-input feed continuity is checked by check_input_power_local.py; output distribution remains unfinished; capacitor effective values, loop/noise, current/thermal and operation remain unqualified."
+  ]
+}

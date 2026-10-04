@@ -1,0 +1,12 @@
+{
+  "status": "PASS all 12 main and four switched SPI-sheet supply pads physically reach their proper sources",
+  "track_segments": 51,
+  "vias": 11,
+  "sheet_supply_pads": {
+    "/+3V3_D": 12,
+    "/+3V3_FPGA": 4
+  },
+  "limits": [
+    "Control routing is checked separately by check_spi_control_local.py; SPI data/clock/CS routes remain unfinished; voltage drop, PDN/noise, effective bypass, intermediate-rail/backfeed, SI/timing and assembly remain unqualified."
+  ]
+}

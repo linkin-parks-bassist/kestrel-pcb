@@ -1,0 +1,164 @@
+{
+  "status": "Provisional local HP supply copper; return vias and inner plane implemented separately; P4/main rails and electrical qualification unfinished",
+  "coordinates": "Absolute KiCad PCB mm, F.Cu; not CAD coordinates",
+  "paths": [
+    {
+      "net": "/+3V3_D",
+      "width_mm": 0.6,
+      "points": [
+        [
+          137.325,
+          67.8625
+        ],
+        [
+          135.45,
+          67.8625
+        ]
+      ]
+    },
+    {
+      "net": "/+3V3_D",
+      "width_mm": 0.3,
+      "points": [
+        [
+          134.5,
+          66.125
+        ],
+        [
+          134.5,
+          66.9125
+        ],
+        [
+          135.45,
+          67.8625
+        ]
+      ]
+    },
+    {
+      "net": "/P4 controlled HP regulator/MCU_HP_SW",
+      "width_mm": 0.6,
+      "points": [
+        [
+          135.45,
+          70.1375
+        ],
+        [
+          135.9875,
+          70.1375
+        ],
+        [
+          138,
+          72.15
+        ]
+      ]
+    },
+    {
+      "net": "/ESP_VDD_HP",
+      "width_mm": 0.8,
+      "points": [
+        [
+          138,
+          75.85
+        ],
+        [
+          138,
+          77.925
+        ],
+        [
+          142.4,
+          77.925
+        ]
+      ]
+    },
+    {
+      "net": "/MCU_FB_DCDC",
+      "width_mm": 0.2,
+      "points": [
+        [
+          132.025,
+          65.9
+        ],
+        [
+          133.55,
+          67.425
+        ],
+        [
+          133.55,
+          67.8625
+        ]
+      ]
+    },
+    {
+      "net": "/MCU_FB_DCDC",
+      "width_mm": 0.2,
+      "points": [
+        [
+          132.025,
+          67.9
+        ],
+        [
+          133.55,
+          67.8625
+        ]
+      ]
+    },
+    {
+      "net": "/MCU_FB_DCDC",
+      "width_mm": 0.2,
+      "points": [
+        [
+          131.975,
+          63.9
+        ],
+        [
+          132.025,
+          63.95
+        ],
+        [
+          132.025,
+          65.9
+        ]
+      ]
+    },
+    {
+      "net": "/ESP_VDD_HP",
+      "width_mm": 0.2,
+      "points": [
+        [
+          130.425,
+          63.9
+        ],
+        [
+          130.375,
+          63.95
+        ],
+        [
+          130.375,
+          65.9
+        ]
+      ]
+    },
+    {
+      "net": "/ESP_VDD_HP",
+      "width_mm": 0.2,
+      "points": [
+        [
+          138,
+          77.925
+        ],
+        [
+          129,
+          77.925
+        ],
+        [
+          129,
+          65.9
+        ],
+        [
+          130.375,
+          65.9
+        ]
+      ]
+    }
+  ]
+}

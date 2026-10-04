@@ -1,0 +1,61 @@
+{
+  "status": "Provisional 5 V buck support placement; ceramics, routing and qualification pending",
+  "coordinates": "CAD mm: X right, Y rear; origin 100,100; KiCad rotation degrees",
+  "poses": {
+    "C101": [
+      -43.7,
+      28.5,
+      90
+    ],
+    "C102": [
+      -46.6,
+      25.5,
+      90
+    ],
+    "C103": [
+      -47.4,
+      19.4,
+      0
+    ],
+    "C104": [
+      -33,
+      23.5,
+      0
+    ],
+    "C105": [
+      -31,
+      13.5,
+      0
+    ],
+    "C106": [
+      -50.8,
+      27.9,
+      180
+    ],
+    "R101": [
+      -48.5,
+      27.9,
+      -90
+    ],
+    "R102": [
+      -50.8,
+      25.9,
+      180
+    ],
+    "R103": [
+      -50.8,
+      23.9,
+      0
+    ],
+    "R104": [
+      -53,
+      21,
+      0
+    ],
+    "R105": [
+      -53,
+      19,
+      180
+    ]
+  }
+}

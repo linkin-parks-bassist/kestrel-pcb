@@ -1,0 +1,8 @@
+{
+  "status": "PASS U303 switched output physically reaches all eight FPGA I/O pins/bypasses, C522 bulk, C525, oscillator, ADC buffer and JTAG VREF",
+  "track_segments": 61,
+  "vias": 12,
+  "limits": [
+    "Flash/pullup continuity is checked separately by check_fpga_support_supply.py; SPI supply continuity is checked separately by check_spi_support_supply.py; local held-DAC buffer supply and audio signals are checked separately by check_fpga_audio_local.py; Mute-control/sense-net and supervisor-supply continuity is checked by check_audio_mute_local.py; LDO/held-supply and sensed-rail source continuity is checked by check_analogue_power_local.py; DAC supply/pump and full held-rail continuity is checked by check_dac_support_local.py; ADC supply/bypass continuity is checked by check_adc_power_local.py; Analogue signal/bias, protected supply and ground continuity is checked by check_analogue_signal_local.py; rail drop, transient PDN/noise, effective capacitance, current/thermal, power-off/backfeed and assembly remain unqualified."
+  ]
+}

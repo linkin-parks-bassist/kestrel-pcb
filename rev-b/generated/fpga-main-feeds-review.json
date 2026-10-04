@@ -1,0 +1,8 @@
+{
+  "status": "PASS main-buck source-to-FPGA core/bias and supervisor/I-O supply groups physically connected",
+  "track_segments": 19,
+  "vias": 2,
+  "limits": [
+    "Local core/sequencing continuity is checked separately; FPGA core distribution is checked separately by check_fpga_core_distribution.py; FPGA I/O pin/bulk and assigned support continuity are checked separately by check_fpga_io_distribution.py; remaining switched support supplies are checked separately by check_fpga_support_supply.py; SPI supply continuity is checked separately by check_spi_support_supply.py; local held-DAC buffer supply continuity is checked separately by check_fpga_audio_local.py; other main loads remain unfinished; voltage drop, source/load budget, return impedance, current/thermal, sequence and assembly remain unqualified."
+  ]
+}

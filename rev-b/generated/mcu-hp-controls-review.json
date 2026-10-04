@@ -1,0 +1,8 @@
+{
+  "status": "PASS MCU enable and feedback pads physically connected to HP regulator and feedback divider",
+  "track_segments": 15,
+  "vias": 4,
+  "limits": [
+    "Regulator input and controlled-loop/noise/assembly qualification remain incomplete."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "status": "PASS twelve FPGA/converter audio signal nets and local held-DAC buffer supply have physical continuity",
+  "track_segments": 92,
+  "vias": 20,
+  "via_in_pad_sites": [
+    {
+      "pad": "U205.5",
+      "position": [
+        113.1375,
+        126.05
+      ]
+    },
+    {
+      "pad": "C527.1",
+      "position": [
+        107.0,
+        125.275
+      ]
+    },
+    {
+      "pad": "R518.1",
+      "position": [
+        81.025,
+        109.0
+      ]
+    },
+    {
+      "pad": "U503.2",
+      "position": [
+        83.1625,
+        109
+      ]
+    },
+    {
+      "pad": "R513.2",
+      "position": [
+        85.4,
+        104.6
+      ]
+    },
+    {
+      "pad": "R514.2",
+      "position": [
+        88.8,
+        104.6
+      ]
+    },
+    {
+      "pad": "R515.2",
+      "position": [
+        87.4,
+        104.6
+      ]
+    },
+    {
+      "pad": "R516.2",
+      "position": [
+        90.5,
+        104.6
+      ]
+    }
+  ],
+  "routed_planar_length_mm": {
+    "/Bare GW2AR-18 support/MCLK_FPGA": 2.5563708498984763,
+    "/Bare GW2AR-18 support/LRCLK_FPGA": 3.3730970388562795,
+    "/Bare GW2AR-18 support/BCLK_FPGA": 3.93167568261897,
+    "/Bare GW2AR-18 support/DAC_FPGA": 4.83167568261897,
+    "/Bare GW2AR-18 support/ADC_BUF_RAW": 2.1274494936611665,
+    "/Bare GW2AR-18 support/ADC_BUF": 13.778300858899108,
+    "/Bare GW2AR-18 support/ENABLE_FPGA": 47.310005178749975,
+    "/ADC_DOUT": 12.081118318204311,
+    "/AUDIO_MCLK": 22.55905121145938,
+    "/AUDIO_BCLK": 70.00205615689194,
+    "/AUDIO_LRCLK": 75.52974764324331,
+    "/DAC_DIN": 49.84556987304361,
+    "/+3V3_A local U504 branch": 8.600825214724777
+  },
+  "limits": [
+    "Planar branch lengths exclude via depth and do not establish timing, source damping or return behavior.",
+    "Mute-control/sense-net and supervisor-supply continuity is checked by check_audio_mute_local.py; LDO/held-supply and sensed-rail source continuity is checked by check_analogue_power_local.py; DAC supply/pump and full held-rail continuity is checked by check_dac_support_local.py; ADC supply/bypass continuity is checked by check_adc_power_local.py; Analogue signal/bias, protected supply and ground continuity is checked by check_analogue_signal_local.py. Powered source/LDO behavior remains unqualified. Clock/backend RTL migration, converter mode setup, audio quality/latency, power sequencing/backfeed, loaded timing/noise/returns and via-in-pad fabrication/assembly remain unqualified."
+  ]
+}

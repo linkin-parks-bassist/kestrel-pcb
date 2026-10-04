@@ -1,0 +1,220 @@
+{
+  "status": "PASS complete enable, mute and two sense nets; supervisor held supplies and declared ground returns",
+  "track_segments": 69,
+  "vias": 30,
+  "via_in_pad_sites": [
+    {
+      "pad": "U504.4",
+      "position": [
+        106.8375,
+        128.65
+      ]
+    },
+    {
+      "pad": "U206.3",
+      "position": [
+        92.8625,
+        129.95
+      ]
+    },
+    {
+      "pad": "U207.3",
+      "position": [
+        99.8625,
+        129.95
+      ]
+    },
+    {
+      "pad": "R219.1",
+      "position": [
+        105.175,
+        132.0
+      ]
+    },
+    {
+      "pad": "U206.1",
+      "position": [
+        92.8625,
+        128.05
+      ]
+    },
+    {
+      "pad": "U207.1",
+      "position": [
+        99.8625,
+        128.05
+      ]
+    },
+    {
+      "pad": "R205.1",
+      "position": [
+        91.175,
+        132.8
+      ]
+    },
+    {
+      "pad": "R220.2",
+      "position": [
+        99.5,
+        131.675
+      ]
+    },
+    {
+      "pad": "U206.2",
+      "position": [
+        92.8625,
+        129.0
+      ]
+    },
+    {
+      "pad": "U207.2",
+      "position": [
+        99.8625,
+        129.0
+      ]
+    },
+    {
+      "pad": "R205.2",
+      "position": [
+        92.825,
+        132.8
+      ]
+    },
+    {
+      "pad": "R216.2",
+      "position": [
+        96.325,
+        132.8
+      ]
+    },
+    {
+      "pad": "R218.2",
+      "position": [
+        100.825,
+        135.4
+      ]
+    },
+    {
+      "pad": "R219.2",
+      "position": [
+        106.825,
+        132.0
+      ]
+    },
+    {
+      "pad": "C231.2",
+      "position": [
+        96.525,
+        125.9
+      ]
+    },
+    {
+      "pad": "C232.2",
+      "position": [
+        100.225,
+        120.6
+      ]
+    },
+    {
+      "pad": "C233.2",
+      "position": [
+        96.225,
+        123.5
+      ]
+    },
+    {
+      "pad": "C234.2",
+      "position": [
+        101.225,
+        123.0
+      ]
+    },
+    {
+      "pad": "U206.6",
+      "position": [
+        95.1375,
+        128.05
+      ]
+    },
+    {
+      "pad": "U207.6",
+      "position": [
+        102.1375,
+        128.05
+      ]
+    },
+    {
+      "pad": "C233.1",
+      "position": [
+        97.775,
+        123.5
+      ]
+    },
+    {
+      "pad": "C234.1",
+      "position": [
+        102.775,
+        123.0
+      ]
+    },
+    {
+      "pad": "R220.1",
+      "position": [
+        99.5,
+        133.325
+      ]
+    },
+    {
+      "pad": "R217.2",
+      "position": [
+        114.825,
+        132.0
+      ]
+    },
+    {
+      "pad": "R218.1",
+      "position": [
+        99.175,
+        135.4
+      ]
+    },
+    {
+      "pad": "C232.1",
+      "position": [
+        101.775,
+        120.6
+      ]
+    }
+  ],
+  "routed_planar_length_mm": {
+    "/AUDIO_ENABLE": 22.118531156088913,
+    "/Hardware ADC and DAC/AUDIO_RUN": 69.43116427405215,
+    "/Hardware ADC and DAC/SENSE_ADC_5V": 10.684734841721125,
+    "/Hardware ADC and DAC/SENSE_BUCK_5V": 51.99477451616274
+  },
+  "held_supply_anchors": [
+    "C233.1",
+    "C234.1",
+    "C527.1",
+    "R220.1",
+    "U206.6",
+    "U207.6"
+  ],
+  "ground_anchors": [
+    "U206.2",
+    "U207.2",
+    "U504.3",
+    "R205.2",
+    "R216.2",
+    "R218.2",
+    "R219.2",
+    "C231.2",
+    "C232.2",
+    "C233.2",
+    "C234.2"
+  ],
+  "limits": [
+    "Physical continuity only; LDO/held-supply and ADC/buck divider source-feed continuity is checked separately by check_analogue_power_local.py; DAC supply/pump and complete held-rail continuity is checked separately by check_dac_support_local.py; ADC supply/bypass continuity is checked by check_adc_power_local.py; Analogue signal/bias, protected supply and ground continuity is checked by check_analogue_signal_local.py.",
+    "No powered mute, brownout timing, hold-up, noise/coupling or via-in-pad fabrication/assembly qualification."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "status": "connectivity and conditional engineering allocation; not hardware qualification",
+  "current_nominal_a": 0.036298932384341634,
+  "current_conditional_corners_a": [
+    0.033120749797399665,
+    0.039541320680110716
+  ],
+  "current_limit_conditions": "TI VIN=3.6V/100% duty/TA>=25C; cold temperature and bias still unverified",
+  "inductor_peak_allocated_a": 0.7774481074481074,
+  "input_window_allocated_v": [
+    4.8,
+    5.2
+  ],
+  "output_voltage_allocated_v": 30,
+  "efficiency_assumed": 0.7,
+  "retained_inductance_assumed_h": 6.400000000000001e-06,
+  "remaining": [
+    "final panel/LED limits and Sydney landed cost",
+    "LCD/touch supply qualification and FPC contact fit",
+    "inductor/ceramic MPNs, DC bias and fault/startup limits",
+    "GPIO8 PWM firmware",
+    "cold-temperature regulation, EMI/audio noise and thermal/bench validation"
+  ]
+}

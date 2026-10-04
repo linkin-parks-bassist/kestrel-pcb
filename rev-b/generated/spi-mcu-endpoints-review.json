@@ -1,0 +1,15 @@
+{
+  "status": "PASS complete MCU-domain CS/pullup, clock, MOSI and MISO nets have physical continuity",
+  "track_segments": 54,
+  "vias": 4,
+  "routed_planar_length_mm": {
+    "/MCU_RAW_CS": 19.332768747653862,
+    "/MCU_RAW_CLK": 26.105497820866105,
+    "/MCU_RAW_MOSI": 19.637730867899737,
+    "/MCU_RAW_MISO": 11.108809511662427
+  },
+  "limits": [
+    "Planar lengths cover owned MCU branches, exclude via depth/branch loading, and do not establish loaded timing or return behavior.",
+    "Physical SPI signal connectivity is complete; firmware, damping, loaded timing/coupling, backfeed and assembly remain unqualified."
+  ]
+}

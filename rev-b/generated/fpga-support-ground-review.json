@@ -1,0 +1,10 @@
+{
+  "status": "PASS all 51 FPGA support-sheet ground pads reach the filled plane, including both duplicated switch ground pads and JTAG PTH pads",
+  "track_segments": 22,
+  "vias": 19,
+  "new_ground_pad_returns": 19,
+  "all_sheet_ground_pads": 51,
+  "limits": [
+    "Supply and signal routing remain unfinished; return impedance, effective decoupling, current/thermal and assembly remain unqualified."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "status": "Provisional probe pads; connector/protection, USB routing and backfeed unqualified",
+  "coordinates": "CAD mm: X right, Y rear, board origin 100,100; KiCad rotation degrees",
+  "poses": {
+    "TP701": [
+      32.5,
+      3.5,
+      0
+    ],
+    "TP702": [
+      34.5,
+      3.5,
+      0
+    ]
+  },
+  "reference_positions_pcb_mm": {
+    "TP701": [
+      132.5,
+      98.2
+    ],
+    "TP702": [
+      134.5,
+      95.052
+    ]
+  }
+}

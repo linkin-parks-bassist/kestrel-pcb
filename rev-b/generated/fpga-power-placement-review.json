@@ -1,0 +1,131 @@
+{
+  "status": "PASS seventeen FPGA power support poses, four major poses, 34 passive pad nets and seventeen bounded allocations",
+  "placed_references": [
+    "C301",
+    "C302",
+    "C303",
+    "C304",
+    "C305",
+    "C306",
+    "C307",
+    "C308",
+    "C309",
+    "C310",
+    "C311",
+    "R301",
+    "R302",
+    "R303",
+    "R304",
+    "R305",
+    "R306"
+  ],
+  "local_allocations": [
+    {
+      "pad": "C301.1",
+      "assigned_pad": "U301.1",
+      "distance_mm": 3.3074,
+      "provisional_bound_mm": 5
+    },
+    {
+      "pad": "C302.1",
+      "assigned_pad": "L301.2",
+      "distance_mm": 2.075,
+      "provisional_bound_mm": 3
+    },
+    {
+      "pad": "C303.1",
+      "assigned_pad": "L301.2",
+      "distance_mm": 6.7289,
+      "provisional_bound_mm": 7
+    },
+    {
+      "pad": "R301.2",
+      "assigned_pad": "U301.5",
+      "distance_mm": 3.6824,
+      "provisional_bound_mm": 4
+    },
+    {
+      "pad": "R302.1",
+      "assigned_pad": "U301.5",
+      "distance_mm": 9.0392,
+      "provisional_bound_mm": 10
+    },
+    {
+      "pad": "C304.2",
+      "assigned_pad": "U301.5",
+      "distance_mm": 4.9451,
+      "provisional_bound_mm": 5
+    },
+    {
+      "pad": "R303.2",
+      "assigned_pad": "U302.3",
+      "distance_mm": 5.7022,
+      "provisional_bound_mm": 6
+    },
+    {
+      "pad": "R304.1",
+      "assigned_pad": "U302.3",
+      "distance_mm": 6.3463,
+      "provisional_bound_mm": 7
+    },
+    {
+      "pad": "C305.1",
+      "assigned_pad": "U302.3",
+      "distance_mm": 2.5545,
+      "provisional_bound_mm": 4
+    },
+    {
+      "pad": "C306.1",
+      "assigned_pad": "U302.6",
+      "distance_mm": 3.6566,
+      "provisional_bound_mm": 5
+    },
+    {
+      "pad": "C311.1",
+      "assigned_pad": "U302.5",
+      "distance_mm": 2.4033,
+      "provisional_bound_mm": 4
+    },
+    {
+      "pad": "R305.2",
+      "assigned_pad": "U303.3",
+      "distance_mm": 4.8299,
+      "provisional_bound_mm": 5
+    },
+    {
+      "pad": "R306.1",
+      "assigned_pad": "U303.3",
+      "distance_mm": 5.5365,
+      "provisional_bound_mm": 6
+    },
+    {
+      "pad": "C307.1",
+      "assigned_pad": "U303.1",
+      "distance_mm": 4.0882,
+      "provisional_bound_mm": 5
+    },
+    {
+      "pad": "C308.1",
+      "assigned_pad": "U303.4",
+      "distance_mm": 2.1501,
+      "provisional_bound_mm": 5
+    },
+    {
+      "pad": "C309.1",
+      "assigned_pad": "U303.6",
+      "distance_mm": 6.8054,
+      "provisional_bound_mm": 8
+    },
+    {
+      "pad": "C310.1",
+      "assigned_pad": "U303.7",
+      "distance_mm": 4.9953,
+      "provisional_bound_mm": 6
+    }
+  ],
+  "limits": [
+    "Pad-centre bounds are provisional placement allocations, not vendor loop limits; core and sequencing local continuity are checked separately by check_fpga_core_local.py and check_fpga_sequence_local.py; main rail feeds are checked by check_fpga_main_feeds.py; FPGA core distribution is checked separately by check_fpga_core_distribution.py; FPGA I/O pin/bulk and assigned support continuity are checked separately by check_fpga_io_distribution.py; remaining switched support supplies are checked separately by check_fpga_support_supply.py; SPI supply continuity is checked separately by check_spi_support_supply.py; local held-DAC buffer supply continuity is checked separately by check_fpga_audio_local.py; DAC supply/pump and full held-rail continuity is checked by check_dac_support_local.py; ADC supply/bypass continuity is checked by check_adc_power_local.py; Analogue signal/bias, protected supply and ground continuity is checked by check_analogue_signal_local.py.",
+    "Sequencing circuit relocated into open space left of FPGA to avoid placed flash/bypass parts; qualify actual return paths and distribution.",
+    "Effective ceramics, feedback noise, loop stability, current/thermal, ramp/sequence and hardware operation remain unqualified."
+  ]
+}

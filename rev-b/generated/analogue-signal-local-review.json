@@ -1,0 +1,263 @@
+{
+  "status": "PASS thirteen complete analogue signal/bias nets, protected supply branch and sixteen ground returns",
+  "track_segments": 136,
+  "vias": 24,
+  "via_in_pad_sites": [
+    {
+      "pad": "U203.4",
+      "position": [
+        54.525,
+        111.905
+      ]
+    },
+    {
+      "pad": "C223.2",
+      "position": [
+        49.55,
+        117.5
+      ]
+    },
+    {
+      "pad": "C203.1",
+      "position": [
+        78.95,
+        120.5
+      ]
+    },
+    {
+      "pad": "R213.2",
+      "position": [
+        60.0,
+        118.675
+      ]
+    },
+    {
+      "pad": "C224.2",
+      "position": [
+        59.225,
+        106.0
+      ]
+    },
+    {
+      "pad": "D203.2",
+      "position": [
+        152.0,
+        120.45
+      ]
+    },
+    {
+      "pad": "R207.2",
+      "position": [
+        41.0,
+        103.675
+      ]
+    },
+    {
+      "pad": "D202.2",
+      "position": [
+        49.0625,
+        110.95
+      ]
+    },
+    {
+      "pad": "D201.2",
+      "position": [
+        44.05,
+        100.0
+      ]
+    },
+    {
+      "pad": "C202.2",
+      "position": [
+        78.775,
+        123.0
+      ]
+    },
+    {
+      "pad": "C220.2",
+      "position": [
+        134.775,
+        122.5
+      ]
+    }
+  ],
+  "routed_planar_length_mm": {
+    "/Hardware ADC and DAC/ADC_AC_L": 3.5084523779156065,
+    "/Hardware ADC and DAC/ADC_IN_L": 18.06003967444162,
+    "/Hardware ADC and DAC/ADC_IN_R": 14.108441546018392,
+    "/Hardware ADC and DAC/AFE_OUT": 35.83586937588513,
+    "/Hardware ADC and DAC/AUDIO_IN": 14.119570696119917,
+    "/Hardware ADC and DAC/AUDIO_OUT": 30.411221037988955,
+    "/Hardware ADC and DAC/BIAS_BUF": 5.5469469656100125,
+    "/Hardware ADC and DAC/BIAS_RAW": 10.690192059534963,
+    "/Hardware ADC and DAC/DAC_OUT_L": 11.701226609783568,
+    "/Hardware ADC and DAC/INPUT_AC": 2.5625,
+    "/Hardware ADC and DAC/IN_BIAS": 13.281110021644274,
+    "/Hardware ADC and DAC/IN_BUF": 8.643896969144738,
+    "/Hardware ADC and DAC/VMID": 31.76713562373095,
+    "/9V_PROTECTED": 30.94605871212195
+  },
+  "complete_local_nets": {
+    "/Hardware ADC and DAC/ADC_AC_L": [
+      "C201.2",
+      "R201.1"
+    ],
+    "/Hardware ADC and DAC/ADC_IN_L": [
+      "C202.1",
+      "R201.2",
+      "U201.13"
+    ],
+    "/Hardware ADC and DAC/ADC_IN_R": [
+      "C203.2",
+      "U201.14"
+    ],
+    "/Hardware ADC and DAC/AFE_OUT": [
+      "C201.1",
+      "R210.2",
+      "R211.1"
+    ],
+    "/Hardware ADC and DAC/AUDIO_IN": [
+      "C221.1",
+      "D201.1",
+      "J201.T",
+      "R207.1"
+    ],
+    "/Hardware ADC and DAC/AUDIO_OUT": [
+      "C220.1",
+      "D203.1",
+      "J202.T",
+      "R206.2"
+    ],
+    "/Hardware ADC and DAC/BIAS_BUF": [
+      "R214.1",
+      "U203.6",
+      "U203.7"
+    ],
+    "/Hardware ADC and DAC/BIAS_RAW": [
+      "C222.1",
+      "R212.2",
+      "R213.1",
+      "U203.5"
+    ],
+    "/Hardware ADC and DAC/DAC_OUT_L": [
+      "R206.1",
+      "U202.6"
+    ],
+    "/Hardware ADC and DAC/INPUT_AC": [
+      "C221.2",
+      "R208.1"
+    ],
+    "/Hardware ADC and DAC/IN_BIAS": [
+      "D202.3",
+      "R208.2",
+      "R209.1",
+      "U203.3"
+    ],
+    "/Hardware ADC and DAC/IN_BUF": [
+      "R210.1",
+      "U203.1",
+      "U203.2"
+    ],
+    "/Hardware ADC and DAC/VMID": [
+      "C223.1",
+      "R209.2",
+      "R211.2",
+      "R214.2"
+    ],
+    "/9V_PROTECTED": [
+      "C224.1",
+      "C225.1",
+      "C226.1",
+      "D202.2",
+      "R212.1",
+      "U203.8"
+    ]
+  },
+  "ground_anchors": [
+    "U203.4",
+    "C223.2",
+    "C203.1",
+    "R213.2",
+    "J201.S",
+    "C224.2",
+    "D203.2",
+    "R207.2",
+    "C222.2",
+    "J201.TN",
+    "C225.2",
+    "J202.S",
+    "D201.2",
+    "C202.2",
+    "C220.2",
+    "D202.1"
+  ],
+  "complete_audio_sheet_ground_copper_shapes": 65,
+  "complete_audio_sheet_ground_pads": [
+    "C202.2",
+    "C203.1",
+    "C204.2",
+    "C205.2",
+    "C206.2",
+    "C207.2",
+    "C208.2",
+    "C209.2",
+    "C210.2",
+    "C211.2",
+    "C212.2",
+    "C213.2",
+    "C214.2",
+    "C215.2",
+    "C216.2",
+    "C217.2",
+    "C219.1",
+    "C220.2",
+    "C222.2",
+    "C223.2",
+    "C224.2",
+    "C225.2",
+    "C226.2",
+    "C227.2",
+    "C228.2",
+    "C229.2",
+    "C230.2",
+    "C231.2",
+    "C232.2",
+    "C233.2",
+    "C234.2",
+    "C235.2",
+    "D201.2",
+    "D202.1",
+    "D203.2",
+    "J201.S",
+    "J201.TN",
+    "J202.S",
+    "R202.2",
+    "R203.2",
+    "R204.2",
+    "R205.2",
+    "R207.2",
+    "R213.2",
+    "R216.2",
+    "R218.2",
+    "R219.2",
+    "U201.2",
+    "U201.5",
+    "U202.10",
+    "U202.12",
+    "U202.16",
+    "U202.19",
+    "U202.3",
+    "U202.9",
+    "U203.4",
+    "U204.3",
+    "U204.5",
+    "U204.7",
+    "U205.2",
+    "U206.2",
+    "U207.2"
+  ],
+  "limits": [
+    "Other main power and remaining board placement/routing are unfinished.",
+    "Physical topology only; analogue feedback/bias stability, effective bypass/return impedance, rail drop/current/thermal, protection/transients, coupling/noise, sequencing/backfeed and audio performance and via-in-pad fabrication/assembly remain unqualified."
+  ]
+}

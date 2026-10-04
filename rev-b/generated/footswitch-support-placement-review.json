@@ -1,0 +1,33 @@
+{
+  "targets": [
+    "C1101",
+    "C1102",
+    "C1103",
+    "C1104",
+    "D1101",
+    "D1102",
+    "J1101",
+    "J1102",
+    "R1101",
+    "R1102",
+    "R1103",
+    "R1104",
+    "R1105",
+    "R1106"
+  ],
+  "placed_electrical_parts": 309,
+  "staged_electrical_parts": 38,
+  "prior_copper_preserved": true,
+  "unrelated_poses_and_pad_geometry_preserved": true,
+  "all_pad_uuids_nets_and_hierarchy_preserved": true,
+  "native_clearance_hole_mask_courtyard_edge_checks_clear": true,
+  "drc_types": {
+    "drill_out_of_range": 6,
+    "silk_overlap": 199,
+    "silk_over_copper": 199,
+    "silk_edge_clearance": 9
+  },
+  "limits": [
+    "Provisional wire routing, actual conductor/insulation/strain-relief fit, ESD/RC/noise, loaded timing and fabrication/assembly remain unqualified."
+  ]
+}

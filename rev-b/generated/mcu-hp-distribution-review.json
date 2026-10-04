@@ -1,0 +1,27 @@
+{
+  "status": "PASS HP regulator output physically reaches all four MCU HP inputs, local bypasses and C721; C721 ground reaches inner plane",
+  "connected_hp_pads": [
+    "C603.1",
+    "C604.1",
+    "C605.1",
+    "C710.1",
+    "C711.1",
+    "C712.1",
+    "C713.1",
+    "C721.1",
+    "R601.1",
+    "U701.26",
+    "U701.54",
+    "U701.76",
+    "U701.91"
+  ],
+  "added_track_segments": 26,
+  "added_hp_vias": 7,
+  "added_bulk_ground_vias": 1,
+  "inner_power_layer": "In2.Cu",
+  "inner_branch_minimum_width_mm": 0.508,
+  "limits": [
+    "HP regulator input remains incomplete; EN/FB continuity is checked separately by check_mcu_hp_controls.py; current silicon startup/controlled loop behavior is unverified.",
+    "Existing 0.127-mm terminal/bypass escapes remain provisional; wider distribution alone does not qualify current, voltage drop, transient/decoupling, stackup or assembly."
+  ]
+}

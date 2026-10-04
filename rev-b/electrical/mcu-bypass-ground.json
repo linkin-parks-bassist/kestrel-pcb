@@ -1,0 +1,200 @@
+{
+  "status": "Provisional P4 per-pin bypass returns; exposed-pad vias, main rails and electrical/assembly qualification unfinished",
+  "coordinates": "Absolute KiCad PCB mm",
+  "via_diameter_mm": 0.6,
+  "via_drill_mm": 0.3,
+  "returns": [
+    {
+      "pad": "C701.2",
+      "pad_position": [
+        116.32,
+        85.0
+      ],
+      "via_position": [
+        115.5,
+        85
+      ],
+      "track_width_mm": 0.2
+    },
+    {
+      "pad": "C702.2",
+      "pad_position": [
+        116.32,
+        88.4
+      ],
+      "via_position": [
+        115.5,
+        88.4
+      ],
+      "track_width_mm": 0.2
+    },
+    {
+      "pad": "C703.2",
+      "pad_position": [
+        130.88,
+        87.2
+      ],
+      "via_position": [
+        131.7,
+        87.2
+      ],
+      "track_width_mm": 0.2
+    },
+    {
+      "pad": "C704.2",
+      "pad_position": [
+        126.3,
+        78.52
+      ],
+      "via_position": [
+        126.3,
+        77.7
+      ],
+      "track_width_mm": 0.2
+    },
+    {
+      "pad": "C705.2",
+      "pad_position": [
+        122.9,
+        77.92
+      ],
+      "via_position": [
+        122.9,
+        77.1
+      ],
+      "track_width_mm": 0.2
+    },
+    {
+      "pad": "C706.2",
+      "pad_position": [
+        120.18,
+        80.03
+      ],
+      "via_position": [
+        119.9,
+        79.4
+      ],
+      "track_width_mm": 0.2
+    },
+    {
+      "pad": "C707.2",
+      "pad_position": [
+        122.18,
+        80.03
+      ],
+      "via_position": [
+        122.18,
+        79.5
+      ],
+      "track_width_mm": 0.2
+    },
+    {
+      "pad": "C708.2",
+      "pad_position": [
+        131.48,
+        84.0
+      ],
+      "via_position": [
+        132.3,
+        84
+      ],
+      "track_width_mm": 0.2
+    },
+    {
+      "pad": "C709.2",
+      "pad_position": [
+        130.88,
+        80.1
+      ],
+      "via_position": [
+        131.7,
+        80.1
+      ],
+      "track_width_mm": 0.2
+    },
+    {
+      "pad": "C710.2",
+      "pad_position": [
+        116.32,
+        90.4
+      ],
+      "via_position": [
+        115.5,
+        90.4
+      ],
+      "track_width_mm": 0.2
+    },
+    {
+      "pad": "C711.2",
+      "pad_position": [
+        130.25,
+        90.32
+      ],
+      "via_position": [
+        130.25,
+        89.6
+      ],
+      "track_width_mm": 0.2
+    },
+    {
+      "pad": "C712.2",
+      "pad_position": [
+        130.98,
+        82.75
+      ],
+      "via_position": [
+        131.8,
+        82.75
+      ],
+      "track_width_mm": 0.2
+    },
+    {
+      "pad": "C713.2",
+      "pad_position": [
+        124.58,
+        80.03
+      ],
+      "via_position": [
+        124.58,
+        79.3
+      ],
+      "track_width_mm": 0.2
+    },
+    {
+      "pad": "C714.2",
+      "pad_position": [
+        121.18,
+        92.0
+      ],
+      "via_position": [
+        121.8,
+        91.9
+      ],
+      "track_width_mm": 0.2
+    },
+    {
+      "pad": "C715.2",
+      "pad_position": [
+        130.88,
+        88.3
+      ],
+      "via_position": [
+        131.7,
+        88.3
+      ],
+      "track_width_mm": 0.2
+    },
+    {
+      "pad": "C716.2",
+      "pad_position": [
+        130.88,
+        85.0
+      ],
+      "via_position": [
+        131.7,
+        85
+      ],
+      "track_width_mm": 0.2
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS complete EXTR and MODE0/1 nets have physical continuity",
+  "track_segments": 20,
+  "vias": 4,
+  "routed_planar_length_mm": {
+    "/Bare GW2AR-18 support/EXTR": 9.22977272147525,
+    "/Bare GW2AR-18 support/MODE0": 2.70992424049175,
+    "/Bare GW2AR-18 support/MODE1": 10.722056274847715
+  },
+  "limits": [
+    "Planar lengths cover owned configuration branches, exclude via depth and do not establish boot timing or return behavior.",
+    "EXTR/mode topology checked; flash continuity is checked separately by check_fpga_flash_local.py; JTAG/reset/oscillator continuity is checked separately by check_fpga_service_local.py; audio signal continuity is checked separately by check_fpga_audio_local.py; Mute-control/sense-net and supervisor-supply continuity is checked by check_audio_mute_local.py; LDO/held-supply and sensed-rail source continuity is checked by check_analogue_power_local.py; DAC supply/pump and full held-rail continuity is checked by check_dac_support_local.py; ADC supply/bypass continuity is checked by check_adc_power_local.py; boot, bias-resistor function, noise, return and assembly remain unqualified."
+  ]
+}

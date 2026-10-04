@@ -1,0 +1,31 @@
+{
+  "status": "PASS bounded local pose/copper check; incomplete power circuit",
+  "track_count": 17,
+  "connected_local_groups": {
+    "/+3V3_D": [
+      "C601.1",
+      "C602.1",
+      "U601.4"
+    ],
+    "/P4 controlled HP regulator/MCU_HP_SW": [
+      "L601.1",
+      "U601.3"
+    ],
+    "/ESP_VDD_HP": [
+      "C603.1",
+      "C604.1",
+      "C605.1",
+      "L601.2",
+      "R601.1"
+    ],
+    "/MCU_FB_DCDC": [
+      "C605.2",
+      "R601.2",
+      "R602.1",
+      "U601.5"
+    ]
+  },
+  "limits": [
+    "Ground returns, planes, P4 connections, current/thermal/stability and assembly remain unqualified."
+  ]
+}

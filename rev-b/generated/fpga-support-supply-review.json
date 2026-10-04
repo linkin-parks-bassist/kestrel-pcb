@@ -1,0 +1,9 @@
+{
+  "status": "PASS all 32 switched-supply pads on the FPGA support sheet physically reach U303 output",
+  "track_segments": 18,
+  "vias": 6,
+  "all_sheet_switched_supply_pads": 32,
+  "limits": [
+    "SPI-sheet supply continuity is checked separately by check_spi_support_supply.py; Configuration/JTAG/clock and audio signal continuity are checked by their endpoint checkers; Mute-control/sense-net and supervisor-supply continuity is checked by check_audio_mute_local.py; LDO/held-supply and sensed-rail source continuity is checked by check_analogue_power_local.py; DAC supply/pump and full held-rail continuity is checked by check_dac_support_local.py; ADC supply/bypass continuity is checked by check_adc_power_local.py; voltage drop, PDN/noise, effective bypass, current/thermal, intermediate-rail/backfeed and assembly remain unqualified."
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "status": "PASS complete held-3.3-V rail and DAC pump/LDO nets; all fifteen DAC ground returns reach the filled plane",
+  "track_segments": 62,
+  "vias": 31,
+  "via_in_pad_sites": [
+    {
+      "pad": "C210.1",
+      "position": [
+        122.25,
+        108.2
+      ]
+    },
+    {
+      "pad": "C210.2",
+      "position": [
+        120.35,
+        108.2
+      ]
+    },
+    {
+      "pad": "C211.1",
+      "position": [
+        125.875,
+        108.8
+      ]
+    },
+    {
+      "pad": "C211.2",
+      "position": [
+        124.325,
+        108.8
+      ]
+    },
+    {
+      "pad": "C212.1",
+      "position": [
+        122.25,
+        119.5
+      ]
+    },
+    {
+      "pad": "C212.2",
+      "position": [
+        120.35,
+        119.5
+      ]
+    },
+    {
+      "pad": "C213.1",
+      "position": [
+        126.075,
+        119.5
+      ]
+    },
+    {
+      "pad": "C213.2",
+      "position": [
+        124.525,
+        119.5
+      ]
+    },
+    {
+      "pad": "C214.1",
+      "position": [
+        139.05,
+        117.2
+      ]
+    },
+    {
+      "pad": "C214.2",
+      "position": [
+        140.95,
+        117.2
+      ]
+    },
+    {
+      "pad": "C215.1",
+      "position": [
+        136.025,
+        117.2
+      ]
+    },
+    {
+      "pad": "C215.2",
+      "position": [
+        137.575,
+        117.2
+      ]
+    },
+    {
+      "pad": "C216.1",
+      "position": [
+        139.05,
+        110.8
+      ]
+    },
+    {
+      "pad": "C216.2",
+      "position": [
+        140.95,
+        110.8
+      ]
+    },
+    {
+      "pad": "C217.1",
+      "position": [
+        136.025,
+        110.8
+      ]
+    },
+    {
+      "pad": "C217.2",
+      "position": [
+        137.575,
+        110.8
+      ]
+    },
+    {
+      "pad": "C219.1",
+      "position": [
+        121.55,
+        112.0
+      ]
+    },
+    {
+      "pad": "C219.2",
+      "position": [
+        123.45,
+        112.0
+      ]
+    }
+  ],
+  "routed_planar_length_mm": {
+    "/Hardware ADC and DAC/DAC_CAPP": 3.1549611202458747,
+    "/Hardware ADC and DAC/DAC_CAPM": 3.403489257669732,
+    "/Hardware ADC and DAC/DAC_VNEG": 5.122542485993288,
+    "/Hardware ADC and DAC/DAC_LDOO": 8.476290082272152,
+    "/+3V3_A": 90.64595546973156
+  },
+  "complete_held_supply_pads": [
+    "C210.1",
+    "C211.1",
+    "C212.1",
+    "C213.1",
+    "C214.1",
+    "C215.1",
+    "C229.1",
+    "C233.1",
+    "C234.1",
+    "C527.1",
+    "R220.1",
+    "U202.1",
+    "U202.11",
+    "U202.20",
+    "U202.8",
+    "U205.5",
+    "U206.6",
+    "U207.6",
+    "U504.5"
+  ],
+  "ground_anchors": [
+    "U202.3",
+    "U202.9",
+    "U202.10",
+    "U202.12",
+    "U202.16",
+    "U202.19",
+    "C210.2",
+    "C211.2",
+    "C212.2",
+    "C213.2",
+    "C214.2",
+    "C215.2",
+    "C216.2",
+    "C217.2",
+    "C219.1"
+  ],
+  "limits": [
+    "ADC reference/mode/ground continuity is checked by check_adc_support_local.py; ADC supply/bypass continuity is checked by check_adc_power_local.py; Analogue signal/bias, protected supply and ground continuity is checked by check_analogue_signal_local.py.",
+    "Physical topology only; effective bypass/pump loop stability/noise, rail drop, sequencing/hold-up/backfeed, audio performance and via-in-pad fabrication/assembly remain unqualified."
+  ]
+}

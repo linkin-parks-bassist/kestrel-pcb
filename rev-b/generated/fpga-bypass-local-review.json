@@ -1,0 +1,8 @@
+{
+  "status": "PASS fourteen supply-pin bypass branches and 22 ground pads physically connected; 25 returns reach filled plane",
+  "track_segments": 58,
+  "vias": 25,
+  "limits": [
+    "PLL filter local continuity is checked separately by check_fpga_pll_local.py; all support grounds and core distribution are checked separately by check_fpga_support_ground.py and check_fpga_core_distribution.py; I/O pin/bulk and assigned support supply continuity are checked separately by check_fpga_io_distribution.py; flash/pullup continuity is checked separately by check_fpga_support_supply.py; SPI supply continuity is checked separately by check_spi_support_supply.py; local held-DAC buffer supply and audio signal continuity are checked separately by check_fpga_audio_local.py; Mute-control/sense-net and supervisor-supply continuity is checked by check_audio_mute_local.py; LDO/held-supply and sensed-rail source continuity is checked by check_analogue_power_local.py; DAC supply/pump and full held-rail continuity is checked by check_dac_support_local.py; ADC supply/bypass continuity is checked by check_adc_power_local.py; return impedance, effective decoupling, load/current/thermal, stencil/assembly and operation remain unqualified."
+  ]
+}

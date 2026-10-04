@@ -1,0 +1,182 @@
+{
+  "status": "PASS isolated DAC held net, both LDO source/output subsets, divider source feeds and declared plane grounds",
+  "track_segments": 59,
+  "vias": 23,
+  "via_in_pad_sites": [
+    {
+      "pad": "U204.7",
+      "position": [
+        58,
+        124
+      ]
+    },
+    {
+      "pad": "U205.2",
+      "position": [
+        110.8625,
+        127.0
+      ]
+    },
+    {
+      "pad": "U205.3",
+      "position": [
+        110.8625,
+        127.95
+      ]
+    },
+    {
+      "pad": "R215.1",
+      "position": [
+        97.4,
+        131.075
+      ]
+    },
+    {
+      "pad": "R217.1",
+      "position": [
+        113.175,
+        132.0
+      ]
+    },
+    {
+      "pad": "C226.1",
+      "position": [
+        60.55,
+        123.0
+      ]
+    },
+    {
+      "pad": "C226.2",
+      "position": [
+        62.45,
+        123.0
+      ]
+    },
+    {
+      "pad": "C227.1",
+      "position": [
+        55.45,
+        123.0
+      ]
+    },
+    {
+      "pad": "C227.2",
+      "position": [
+        53.55,
+        123.0
+      ]
+    },
+    {
+      "pad": "C228.1",
+      "position": [
+        109.0,
+        130.249999
+      ]
+    },
+    {
+      "pad": "C228.2",
+      "position": [
+        109.0,
+        132.149999
+      ]
+    },
+    {
+      "pad": "C229.2",
+      "position": [
+        117.25,
+        125.8
+      ]
+    },
+    {
+      "pad": "C230.1",
+      "position": [
+        85.65,
+        140.0
+      ]
+    },
+    {
+      "pad": "C230.2",
+      "position": [
+        94.35,
+        140.0
+      ]
+    },
+    {
+      "pad": "C235.1",
+      "position": [
+        105.65,
+        140.0
+      ]
+    },
+    {
+      "pad": "C235.2",
+      "position": [
+        114.35,
+        140.0
+      ]
+    },
+    {
+      "pad": "D204.1",
+      "position": [
+        117.0,
+        136.0
+      ]
+    },
+    {
+      "pad": "D204.2",
+      "position": [
+        121.0,
+        136.0
+      ]
+    }
+  ],
+  "routed_planar_length_mm": {
+    "/Hardware ADC and DAC/+5V_DAC_HOLD": 62.03219849656409,
+    "/9V_PROTECTED": 72.08361595915717,
+    "/+5V_DIG": 101.98298663230347,
+    "/Hardware ADC and DAC/+5V_A": 52.91471146751637,
+    "/+3V3_A": 2.316053390593274
+  },
+  "source_load_subsets": {
+    "/9V_PROTECTED": [
+      "C226.1",
+      "Q401.1",
+      "U204.4",
+      "U204.6"
+    ],
+    "/+5V_DIG": [
+      "D204.2",
+      "L101.2",
+      "R217.1"
+    ],
+    "/Hardware ADC and DAC/+5V_A": [
+      "C227.1",
+      "R215.1",
+      "U204.1",
+      "U204.2"
+    ],
+    "/+3V3_A": [
+      "C229.1",
+      "C527.1",
+      "U205.5",
+      "U504.5"
+    ]
+  },
+  "ground_anchors": [
+    "U204.3",
+    "U204.5",
+    "U204.7",
+    "U205.2",
+    "C226.2",
+    "C227.2",
+    "C228.2",
+    "C229.2",
+    "C230.2",
+    "C235.2"
+  ],
+  "actual_ground_lands": 13,
+  "limits": [
+    "DAC supply/pump and complete held-rail continuity is checked separately by check_dac_support_local.py; ADC reference/mode/ground continuity is checked by check_adc_support_local.py; ADC supply/bypass continuity is checked by check_adc_power_local.py; Analogue signal/bias, protected supply and ground continuity is checked by check_analogue_signal_local.py. Physical topology is not powered LDO, converter or mute qualification.",
+    "Rail drop/current/thermal, effective ceramics/stability, sense noise/transient response, reservoir inrush/hold-up/backfeed and via-in-pad/EP fabrication/assembly are unqualified."
+  ]
+}

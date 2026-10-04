@@ -1,0 +1,564 @@
+{
+  "part": "ESP32-P4NRW16X",
+  "variant_option": "ESP32-P4NRW32X",
+  "revision": "v3.x",
+  "source": "https://www.espressif.com/sites/default/files/documentation/esp32-p4_datasheet_en.pdf",
+  "source_version": "v0.7",
+  "source_pdf_sha256": "fb4f3e91cc2ac519ec08cdec3dac9cb62b546cf5402ead1c5b83595a21bb6bc6",
+  "source_table": "2-1, pages 14-16",
+  "pins": [
+    {
+      "number": 1,
+      "name": "GPIO1",
+      "type": "IO"
+    },
+    {
+      "number": 2,
+      "name": "GPIO2",
+      "type": "IO"
+    },
+    {
+      "number": 3,
+      "name": "GPIO3",
+      "type": "IO"
+    },
+    {
+      "number": 4,
+      "name": "GPIO4",
+      "type": "IO"
+    },
+    {
+      "number": 5,
+      "name": "GPIO5",
+      "type": "IO"
+    },
+    {
+      "number": 6,
+      "name": "GPIO6",
+      "type": "IO"
+    },
+    {
+      "number": 7,
+      "name": "GPIO7",
+      "type": "IO"
+    },
+    {
+      "number": 8,
+      "name": "GPIO8",
+      "type": "IO"
+    },
+    {
+      "number": 9,
+      "name": "VDD_LP",
+      "type": "Power"
+    },
+    {
+      "number": 10,
+      "name": "GPIO9",
+      "type": "IO"
+    },
+    {
+      "number": 11,
+      "name": "GPIO10",
+      "type": "IO"
+    },
+    {
+      "number": 12,
+      "name": "GPIO11",
+      "type": "IO"
+    },
+    {
+      "number": 13,
+      "name": "GPIO12",
+      "type": "IO"
+    },
+    {
+      "number": 14,
+      "name": "GPIO13",
+      "type": "IO"
+    },
+    {
+      "number": 15,
+      "name": "GPIO14",
+      "type": "IO"
+    },
+    {
+      "number": 16,
+      "name": "GPIO15",
+      "type": "IO"
+    },
+    {
+      "number": 17,
+      "name": "GPIO16",
+      "type": "IO"
+    },
+    {
+      "number": 18,
+      "name": "GPIO17",
+      "type": "IO"
+    },
+    {
+      "number": 19,
+      "name": "GPIO18",
+      "type": "IO"
+    },
+    {
+      "number": 20,
+      "name": "GPIO19",
+      "type": "IO"
+    },
+    {
+      "number": 21,
+      "name": "VDD_IO_0",
+      "type": "Power"
+    },
+    {
+      "number": 22,
+      "name": "GPIO20",
+      "type": "IO"
+    },
+    {
+      "number": 23,
+      "name": "GPIO21",
+      "type": "IO"
+    },
+    {
+      "number": 24,
+      "name": "GPIO22",
+      "type": "IO"
+    },
+    {
+      "number": 25,
+      "name": "GPIO23",
+      "type": "IO"
+    },
+    {
+      "number": 26,
+      "name": "VDD_HP_0",
+      "type": "Power"
+    },
+    {
+      "number": 27,
+      "name": "FLASH_CS",
+      "type": "Dedicated Output"
+    },
+    {
+      "number": 28,
+      "name": "FLASH_Q",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 29,
+      "name": "FLASH_WP",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 30,
+      "name": "VDD_FLASHIO",
+      "type": "Power"
+    },
+    {
+      "number": 31,
+      "name": "FLASH_HOLD",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 32,
+      "name": "FLASH_CK",
+      "type": "Dedicated Output"
+    },
+    {
+      "number": 33,
+      "name": "FLASH_D",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 34,
+      "name": "DSI_REXT",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 35,
+      "name": "DSI_DATAP1",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 36,
+      "name": "DSI_DATAN1",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 37,
+      "name": "DSI_CLKN",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 38,
+      "name": "DSI_CLKP",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 39,
+      "name": "DSI_DATAP0",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 40,
+      "name": "DSI_DATAN0",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 41,
+      "name": "VDD_MIPI_DPHY",
+      "type": "Power"
+    },
+    {
+      "number": 42,
+      "name": "CSI_DATAN0",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 43,
+      "name": "CSI_DATAP0",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 44,
+      "name": "CSI_CLKP",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 45,
+      "name": "CSI_CLKN",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 46,
+      "name": "CSI_DATAN1",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 47,
+      "name": "CSI_DATAP1",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 48,
+      "name": "CSI_REXT",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 49,
+      "name": "USB_DM",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 50,
+      "name": "USB_DP",
+      "type": "Dedicated IO"
+    },
+    {
+      "number": 51,
+      "name": "VDD_USBPHY",
+      "type": "Power"
+    },
+    {
+      "number": 52,
+      "name": "GPIO24",
+      "type": "IO"
+    },
+    {
+      "number": 53,
+      "name": "GPIO25",
+      "type": "IO"
+    },
+    {
+      "number": 54,
+      "name": "VDD_HP_1",
+      "type": "Power"
+    },
+    {
+      "number": 55,
+      "name": "GPIO26",
+      "type": "IO"
+    },
+    {
+      "number": 56,
+      "name": "GPIO27",
+      "type": "IO"
+    },
+    {
+      "number": 57,
+      "name": "GPIO28",
+      "type": "IO"
+    },
+    {
+      "number": 58,
+      "name": "GPIO29",
+      "type": "IO"
+    },
+    {
+      "number": 59,
+      "name": "VDD_PSRAM_0",
+      "type": "Power"
+    },
+    {
+      "number": 60,
+      "name": "GPIO30",
+      "type": "IO"
+    },
+    {
+      "number": 61,
+      "name": "GPIO31",
+      "type": "IO"
+    },
+    {
+      "number": 62,
+      "name": "VDD_IO_4",
+      "type": "Power"
+    },
+    {
+      "number": 63,
+      "name": "GPIO32",
+      "type": "IO"
+    },
+    {
+      "number": 64,
+      "name": "GPIO33",
+      "type": "IO"
+    },
+    {
+      "number": 65,
+      "name": "GPIO34",
+      "type": "IO"
+    },
+    {
+      "number": 66,
+      "name": "GPIO35",
+      "type": "IO"
+    },
+    {
+      "number": 67,
+      "name": "VDD_PSRAM_1",
+      "type": "Power"
+    },
+    {
+      "number": 68,
+      "name": "GPIO36",
+      "type": "IO"
+    },
+    {
+      "number": 69,
+      "name": "GPIO37",
+      "type": "IO"
+    },
+    {
+      "number": 70,
+      "name": "GPIO38",
+      "type": "IO"
+    },
+    {
+      "number": 71,
+      "name": "VDDO_FLASH",
+      "type": "Power"
+    },
+    {
+      "number": 72,
+      "name": "VDDO_PSRAM",
+      "type": "Power"
+    },
+    {
+      "number": 73,
+      "name": "VDDO_3",
+      "type": "Power"
+    },
+    {
+      "number": 74,
+      "name": "VDDO_4",
+      "type": "Power"
+    },
+    {
+      "number": 75,
+      "name": "VDD_LDO",
+      "type": "Power"
+    },
+    {
+      "number": 76,
+      "name": "VDD_HP_2",
+      "type": "Power"
+    },
+    {
+      "number": 77,
+      "name": "VDD_DCDCC",
+      "type": "Power"
+    },
+    {
+      "number": 78,
+      "name": "FB_DCDC",
+      "type": "Analog"
+    },
+    {
+      "number": 79,
+      "name": "EN_DCDC",
+      "type": "Analog"
+    },
+    {
+      "number": 80,
+      "name": "GPIO39",
+      "type": "IO"
+    },
+    {
+      "number": 81,
+      "name": "GPIO40",
+      "type": "IO"
+    },
+    {
+      "number": 82,
+      "name": "GPIO41",
+      "type": "IO"
+    },
+    {
+      "number": 83,
+      "name": "GPIO42",
+      "type": "IO"
+    },
+    {
+      "number": 84,
+      "name": "GPIO43",
+      "type": "IO"
+    },
+    {
+      "number": 85,
+      "name": "VDD_IO_5",
+      "type": "Power"
+    },
+    {
+      "number": 86,
+      "name": "GPIO44",
+      "type": "IO"
+    },
+    {
+      "number": 87,
+      "name": "GPIO45",
+      "type": "IO"
+    },
+    {
+      "number": 88,
+      "name": "GPIO46",
+      "type": "IO"
+    },
+    {
+      "number": 89,
+      "name": "GPIO47",
+      "type": "IO"
+    },
+    {
+      "number": 90,
+      "name": "GPIO48",
+      "type": "IO"
+    },
+    {
+      "number": 91,
+      "name": "VDD_HP_3",
+      "type": "Power"
+    },
+    {
+      "number": 92,
+      "name": "GPIO49",
+      "type": "IO"
+    },
+    {
+      "number": 93,
+      "name": "GPIO50",
+      "type": "IO"
+    },
+    {
+      "number": 94,
+      "name": "GPIO51",
+      "type": "IO"
+    },
+    {
+      "number": 95,
+      "name": "GPIO52",
+      "type": "IO"
+    },
+    {
+      "number": 96,
+      "name": "VDD_IO_6",
+      "type": "Power"
+    },
+    {
+      "number": 97,
+      "name": "GPIO53",
+      "type": "IO"
+    },
+    {
+      "number": 98,
+      "name": "GPIO54",
+      "type": "IO"
+    },
+    {
+      "number": 99,
+      "name": "XTAL_N",
+      "type": "Analog"
+    },
+    {
+      "number": 100,
+      "name": "XTAL_P",
+      "type": "Analog"
+    },
+    {
+      "number": 101,
+      "name": "VDD_ANA",
+      "type": "Power"
+    },
+    {
+      "number": 102,
+      "name": "VDD_BAT",
+      "type": "Power"
+    },
+    {
+      "number": 103,
+      "name": "CHIP_PU",
+      "type": "Analog"
+    },
+    {
+      "number": 104,
+      "name": "GPIO0",
+      "type": "IO"
+    },
+    {
+      "number": 105,
+      "name": "GND",
+      "type": "Power"
+    }
+  ],
+  "footprint_status": "Engineering lands assigned by build_mcu_library.py; manufacturer package Fig 6-1 checked; assembly/stencil qualification pending",
+  "package": {
+    "source_figure": "6-1, page 93",
+    "body_mm": [
+      10,
+      10
+    ],
+    "pitch_mm": 0.35,
+    "ep_mm": [
+      7.5,
+      7.5
+    ],
+    "lead_width_mm": {
+      "min": 0.13,
+      "nom": 0.18,
+      "max": 0.23
+    },
+    "lead_length_mm": {
+      "min": 0.3,
+      "nom": 0.4,
+      "max": 0.5
+    },
+    "height_mm": {
+      "min": 0.8,
+      "nom": 0.85,
+      "max": 0.9
+    }
+  }
+}

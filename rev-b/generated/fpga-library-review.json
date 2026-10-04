@@ -1,0 +1,18 @@
+{
+  "status": "library structure and primary-power-list cross-check; not hardware validation",
+  "symbol_pins": 89,
+  "footprint_numbered_pads": 89,
+  "existing_audio_bank": 5,
+  "unbonded_configuration_pins": {
+    "MODE2": "internally GND",
+    "READY": true,
+    "DONE": true,
+    "JTAGSEL_N": true
+  },
+  "remaining": [
+    "Instantiate bare FPGA support sheet",
+    "Flash/JTAG/clock and GPIO power-domain review",
+    "Assembly stencil and thermal via review",
+    "PCB placement/routing and hardware validation"
+  ]
+}

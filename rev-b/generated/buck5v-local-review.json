@@ -1,0 +1,8 @@
+{
+  "status": "PASS eight local buck net groups physically connected; all seven ground returns reach filled plane",
+  "track_segments": 46,
+  "vias": 13,
+  "limits": [
+    "Protected-input feed continuity is checked by check_input_power_local.py; FPGA feed continuity is checked by check_fpga_main_feeds.py; other output distribution is unfinished; effective capacitance, loop, current/thermal and assembly remain unqualified."
+  ]
+}

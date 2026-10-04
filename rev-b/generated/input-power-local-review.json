@@ -1,0 +1,8 @@
+{
+  "status": "PASS five local input net groups physically connected; five new ground returns and jack ground reach filled plane",
+  "track_segments": 42,
+  "vias": 9,
+  "limits": [
+    "Other protected loads and main output distribution remain unfinished; effective capacitance, source/load/current/fault/thermal and assembly remain unqualified."
+  ]
+}

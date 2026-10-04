@@ -1,0 +1,10 @@
+{
+  "status": "PASS two provisional USB probe poses and GPIO24/25 net assignments",
+  "placed_references": [
+    "TP701",
+    "TP702"
+  ],
+  "limits": [
+    "Pads remain unrouted; connector/protection, controlled impedance, fixture access, assembly and backfeed remain unqualified."
+  ]
+}

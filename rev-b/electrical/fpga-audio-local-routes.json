@@ -1,0 +1,1686 @@
+{
+  "net": "/+3V3_A",
+  "anchors": {
+    "U501.25": [
+      84.6,
+      100.95
+    ],
+    "R513.1": [
+      85.4,
+      103.175
+    ],
+    "U501.26": [
+      85.0,
+      100.95
+    ],
+    "R515.1": [
+      87.1,
+      103.175
+    ],
+    "U501.29": [
+      86.2,
+      100.95
+    ],
+    "R514.1": [
+      88.8,
+      103.175
+    ],
+    "U501.31": [
+      87.0,
+      100.95
+    ],
+    "R516.1": [
+      90.5,
+      103.175
+    ],
+    "U503.4": [
+      84.8375,
+      109.65
+    ],
+    "R519.1": [
+      86.675,
+      110.35
+    ],
+    "R517.1": [
+      103.825,
+      132.199999
+    ],
+    "U504.2": [
+      105.1625,
+      128.0
+    ],
+    "R518.1": [
+      81.025,
+      109.0
+    ],
+    "U503.2": [
+      83.1625,
+      109.0
+    ],
+    "U501.30": [
+      86.6,
+      100.95
+    ],
+    "U501.20": [
+      83.05,
+      99.4
+    ],
+    "U201.9": [
+      72.8625,
+      113.3
+    ],
+    "R519.2": [
+      88.325,
+      110.35
+    ],
+    "U205.5": [
+      113.1375,
+      126.05
+    ],
+    "C527.1": [
+      107.0,
+      125.275
+    ],
+    "U504.5": [
+      106.8375,
+      127.35
+    ],
+    "R513.2": [
+      85.4,
+      104.825
+    ],
+    "R514.2": [
+      88.8,
+      104.825
+    ],
+    "R515.2": [
+      87.1,
+      104.825
+    ],
+    "R516.2": [
+      90.5,
+      104.825
+    ],
+    "U201.6": [
+      67.1375,
+      113.3
+    ],
+    "U201.7": [
+      67.1375,
+      113.95
+    ],
+    "U201.8": [
+      72.8625,
+      113.95
+    ],
+    "U202.13": [
+      133.8625,
+      114.625
+    ],
+    "U202.14": [
+      133.8625,
+      113.975
+    ],
+    "U202.15": [
+      133.8625,
+      113.325
+    ]
+  },
+  "anchor_nets": {
+    "U501.25": "/Bare GW2AR-18 support/MCLK_FPGA",
+    "R513.1": "/Bare GW2AR-18 support/MCLK_FPGA",
+    "U501.26": "/Bare GW2AR-18 support/LRCLK_FPGA",
+    "R515.1": "/Bare GW2AR-18 support/LRCLK_FPGA",
+    "U501.29": "/Bare GW2AR-18 support/BCLK_FPGA",
+    "R514.1": "/Bare GW2AR-18 support/BCLK_FPGA",
+    "U501.31": "/Bare GW2AR-18 support/DAC_FPGA",
+    "R516.1": "/Bare GW2AR-18 support/DAC_FPGA",
+    "U503.4": "/Bare GW2AR-18 support/ADC_BUF_RAW",
+    "R519.1": "/Bare GW2AR-18 support/ADC_BUF_RAW",
+    "R517.1": "/Bare GW2AR-18 support/ENABLE_FPGA",
+    "U504.2": "/Bare GW2AR-18 support/ENABLE_FPGA",
+    "R518.1": "/ADC_DOUT",
+    "U503.2": "/ADC_DOUT",
+    "U501.30": "/Bare GW2AR-18 support/ADC_BUF",
+    "U501.20": "/Bare GW2AR-18 support/ENABLE_FPGA",
+    "U201.9": "/ADC_DOUT",
+    "R519.2": "/Bare GW2AR-18 support/ADC_BUF",
+    "U205.5": "/+3V3_A",
+    "C527.1": "/+3V3_A",
+    "U504.5": "/+3V3_A",
+    "R513.2": "/AUDIO_MCLK",
+    "R514.2": "/AUDIO_BCLK",
+    "R515.2": "/AUDIO_LRCLK",
+    "R516.2": "/DAC_DIN",
+    "U201.6": "/AUDIO_MCLK",
+    "U201.7": "/AUDIO_LRCLK",
+    "U201.8": "/AUDIO_BCLK",
+    "U202.13": "/AUDIO_BCLK",
+    "U202.14": "/DAC_DIN",
+    "U202.15": "/AUDIO_LRCLK"
+  },
+  "paths": [
+    {
+      "net": "/Bare GW2AR-18 support/MCLK_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          84.6,
+          100.95
+        ],
+        [
+          84.6,
+          102.1
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/MCLK_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          84.6,
+          102.1
+        ],
+        [
+          85.4,
+          102.9
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/MCLK_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          85.4,
+          102.9
+        ],
+        [
+          85.4,
+          103.175
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/LRCLK_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          85,
+          100.95
+        ],
+        [
+          85,
+          101.55
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/LRCLK_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          85,
+          101.55
+        ],
+        [
+          86.625,
+          103.175
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/LRCLK_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          86.625,
+          103.175
+        ],
+        [
+          87.1,
+          103.175
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/BCLK_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          86.2,
+          100.95
+        ],
+        [
+          86.2,
+          101.65
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/BCLK_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          86.2,
+          101.65
+        ],
+        [
+          87.05,
+          102.5
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/BCLK_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          87.05,
+          102.5
+        ],
+        [
+          88.125,
+          102.5
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/BCLK_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          88.125,
+          102.5
+        ],
+        [
+          88.8,
+          103.175
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/DAC_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          87,
+          100.95
+        ],
+        [
+          87,
+          101.65
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/DAC_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          87,
+          101.65
+        ],
+        [
+          87.5,
+          102.15
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/DAC_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          87.5,
+          102.15
+        ],
+        [
+          89.475,
+          102.15
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/DAC_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          89.475,
+          102.15
+        ],
+        [
+          90.5,
+          103.175
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ADC_BUF_RAW",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          84.8375,
+          109.65
+        ],
+        [
+          85.975,
+          109.65
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ADC_BUF_RAW",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          85.975,
+          109.65
+        ],
+        [
+          86.675,
+          110.35
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ENABLE_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          103.825,
+          132.199999
+        ],
+        [
+          103.825,
+          128
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ENABLE_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          103.825,
+          128
+        ],
+        [
+          105.1625,
+          128
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ADC_BUF",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          86.6,
+          100.95
+        ],
+        [
+          86.6,
+          100.15
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ADC_BUF",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          86.6,
+          100.15
+        ],
+        [
+          86.4,
+          99.95
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ADC_BUF",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          86.4,
+          99.95
+        ],
+        [
+          85.6,
+          99.95
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ENABLE_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          83.05,
+          99.4
+        ],
+        [
+          82.15,
+          99.4
+        ]
+      ]
+    },
+    {
+      "net": "/+3V3_A",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          106.8375,
+          127.35
+        ],
+        [
+          106.8375,
+          125.4375
+        ]
+      ]
+    },
+    {
+      "net": "/+3V3_A",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          106.8375,
+          125.4375
+        ],
+        [
+          107.0,
+          125.275
+        ]
+      ]
+    },
+    {
+      "net": "/+3V3_A",
+      "layer": "B.Cu",
+      "width_mm": 0.508,
+      "points": [
+        [
+          113.1375,
+          126.05
+        ],
+        [
+          112.3625,
+          125.275
+        ]
+      ]
+    },
+    {
+      "net": "/+3V3_A",
+      "layer": "B.Cu",
+      "width_mm": 0.508,
+      "points": [
+        [
+          112.3625,
+          125.275
+        ],
+        [
+          107.0,
+          125.275
+        ]
+      ]
+    },
+    {
+      "net": "/ADC_DOUT",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          81.025,
+          109
+        ],
+        [
+          83.1625,
+          109
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ADC_BUF",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          85.6,
+          99.95
+        ],
+        [
+          87.95,
+          102.3
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ADC_BUF",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          87.95,
+          102.3
+        ],
+        [
+          87.95,
+          104.15
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ADC_BUF",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          87.95,
+          104.15
+        ],
+        [
+          87.95,
+          107.35
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ADC_BUF",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          87.95,
+          107.35
+        ],
+        [
+          87.55,
+          107.75
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ADC_BUF",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          87.55,
+          107.75
+        ],
+        [
+          87.55,
+          109.55
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ADC_BUF",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          87.55,
+          109.55
+        ],
+        [
+          88.35,
+          110.35
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ADC_BUF",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          88.35,
+          110.35
+        ],
+        [
+          88.325,
+          110.35
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ENABLE_FPGA",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          82.15,
+          99.4
+        ],
+        [
+          82.55,
+          99.0
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ENABLE_FPGA",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          82.55,
+          99.0
+        ],
+        [
+          85.4,
+          99.0
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ENABLE_FPGA",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          85.4,
+          99.0
+        ],
+        [
+          89.75,
+          103.35
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ENABLE_FPGA",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          89.75,
+          103.35
+        ],
+        [
+          89.75,
+          104.05
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ENABLE_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          89.75,
+          104.05
+        ],
+        [
+          89.75,
+          105.35
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ENABLE_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          89.75,
+          105.35
+        ],
+        [
+          104.35,
+          119.95
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ENABLE_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          104.35,
+          119.95
+        ],
+        [
+          104.35,
+          127.65
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ENABLE_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          104.35,
+          127.65
+        ],
+        [
+          104.7,
+          128.0
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/ENABLE_FPGA",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          104.7,
+          128.0
+        ],
+        [
+          105.1625,
+          128.0
+        ]
+      ]
+    },
+    {
+      "net": "/ADC_DOUT",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          81.025,
+          109.0
+        ],
+        [
+          78.65,
+          109.0
+        ]
+      ]
+    },
+    {
+      "net": "/ADC_DOUT",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          78.65,
+          109.0
+        ],
+        [
+          74.9,
+          112.75
+        ]
+      ]
+    },
+    {
+      "net": "/ADC_DOUT",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          74.9,
+          112.75
+        ],
+        [
+          74.35,
+          113.3
+        ]
+      ]
+    },
+    {
+      "net": "/ADC_DOUT",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          74.35,
+          113.3
+        ],
+        [
+          72.8625,
+          113.3
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_MCLK",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          85.4,
+          104.6
+        ],
+        [
+          85.4,
+          104.85
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_MCLK",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          85.4,
+          104.85
+        ],
+        [
+          84.75,
+          104.85
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_MCLK",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          84.75,
+          104.85
+        ],
+        [
+          81.95,
+          107.65
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_MCLK",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          81.95,
+          107.65
+        ],
+        [
+          81.6,
+          107.65
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_MCLK",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          81.6,
+          107.65
+        ],
+        [
+          80.15,
+          109.1
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_MCLK",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          80.15,
+          109.1
+        ],
+        [
+          80.15,
+          109.75
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_MCLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          80.15,
+          109.75
+        ],
+        [
+          73.9,
+          109.75
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_MCLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          73.9,
+          109.75
+        ],
+        [
+          73.7,
+          109.55
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_MCLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          73.7,
+          109.55
+        ],
+        [
+          71.6,
+          109.55
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_MCLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          71.6,
+          109.55
+        ],
+        [
+          67.85,
+          113.3
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_MCLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          67.85,
+          113.3
+        ],
+        [
+          67.1375,
+          113.3
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_LRCLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          87.4,
+          104.6
+        ],
+        [
+          84.3,
+          107.7
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_LRCLK",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          84.3,
+          107.7
+        ],
+        [
+          83.55,
+          108.45
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_LRCLK",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          83.55,
+          108.45
+        ],
+        [
+          80.65,
+          108.45
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_LRCLK",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          80.65,
+          108.45
+        ],
+        [
+          80.45,
+          108.65
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_LRCLK",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          80.45,
+          108.65
+        ],
+        [
+          75.1,
+          108.65
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_LRCLK",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          75.1,
+          108.65
+        ],
+        [
+          69.8,
+          113.95
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_LRCLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          69.8,
+          113.95
+        ],
+        [
+          67.1375,
+          113.95
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_BCLK",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          88.8,
+          104.6
+        ],
+        [
+          88.8,
+          104.85
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_BCLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          88.8,
+          104.85
+        ],
+        [
+          88.5,
+          105.15
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_BCLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          88.5,
+          105.15
+        ],
+        [
+          88.5,
+          106.7
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_BCLK",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          88.5,
+          106.7
+        ],
+        [
+          82.9,
+          112.3
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_BCLK",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          82.9,
+          112.3
+        ],
+        [
+          78.1,
+          112.3
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_BCLK",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          78.1,
+          112.3
+        ],
+        [
+          76.45,
+          113.95
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_BCLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          76.45,
+          113.95
+        ],
+        [
+          72.8625,
+          113.95
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_LRCLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          94.0,
+          104.7
+        ],
+        [
+          124.55,
+          104.7
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_LRCLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          124.55,
+          104.7
+        ],
+        [
+          133.2,
+          113.35
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_LRCLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          133.2,
+          113.35
+        ],
+        [
+          133.85,
+          113.35
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_LRCLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          133.85,
+          113.35
+        ],
+        [
+          133.8625,
+          113.325
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_BCLK",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          88.8,
+          104.85
+        ],
+        [
+          98.6,
+          114.65
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_BCLK",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          98.6,
+          114.65
+        ],
+        [
+          132.65,
+          114.65
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_BCLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          132.65,
+          114.65
+        ],
+        [
+          133.85,
+          114.65
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_BCLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          133.85,
+          114.65
+        ],
+        [
+          133.8625,
+          114.625
+        ]
+      ]
+    },
+    {
+      "net": "/DAC_DIN",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          90.5,
+          104.6
+        ],
+        [
+          90.5,
+          104.85
+        ]
+      ]
+    },
+    {
+      "net": "/DAC_DIN",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          90.5,
+          104.85
+        ],
+        [
+          90.5,
+          105.6
+        ]
+      ]
+    },
+    {
+      "net": "/DAC_DIN",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          90.5,
+          105.6
+        ],
+        [
+          101.3,
+          116.4
+        ]
+      ]
+    },
+    {
+      "net": "/DAC_DIN",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          101.3,
+          116.4
+        ],
+        [
+          130.15,
+          116.4
+        ]
+      ]
+    },
+    {
+      "net": "/DAC_DIN",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          130.15,
+          116.4
+        ],
+        [
+          132.55,
+          114.0
+        ]
+      ]
+    },
+    {
+      "net": "/DAC_DIN",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          132.55,
+          114.0
+        ],
+        [
+          133.85,
+          114.0
+        ]
+      ]
+    },
+    {
+      "net": "/DAC_DIN",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          133.85,
+          114.0
+        ],
+        [
+          133.8625,
+          113.975
+        ]
+      ]
+    },
+    {
+      "net": "/AUDIO_LRCLK",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          87.4,
+          104.6
+        ],
+        [
+          87.4,
+          103.95
+        ],
+        [
+          87.85,
+          103.5
+        ],
+        [
+          91.9,
+          103.5
+        ],
+        [
+          93.1,
+          104.7
+        ],
+        [
+          94.0,
+          104.7
+        ]
+      ]
+    }
+  ],
+  "via_positions": [
+    [
+      85.6,
+      99.95
+    ],
+    [
+      82.15,
+      99.4
+    ],
+    [
+      113.1375,
+      126.05
+    ],
+    [
+      107.0,
+      125.275
+    ],
+    [
+      81.025,
+      109.0
+    ],
+    [
+      83.1625,
+      109
+    ],
+    [
+      85.4,
+      104.6
+    ],
+    [
+      88.8,
+      104.6
+    ],
+    [
+      87.4,
+      104.6
+    ],
+    [
+      90.5,
+      104.6
+    ],
+    [
+      87.95,
+      104.15
+    ],
+    [
+      89.75,
+      104.05
+    ],
+    [
+      74.9,
+      112.75
+    ],
+    [
+      80.15,
+      109.75
+    ],
+    [
+      84.3,
+      107.7
+    ],
+    [
+      69.8,
+      113.95
+    ],
+    [
+      88.5,
+      106.7
+    ],
+    [
+      76.45,
+      113.95
+    ],
+    [
+      94.0,
+      104.7
+    ],
+    [
+      132.65,
+      114.65
+    ]
+  ],
+  "via_net_names": [
+    "/Bare GW2AR-18 support/ADC_BUF",
+    "/Bare GW2AR-18 support/ENABLE_FPGA",
+    "/+3V3_A",
+    "/+3V3_A",
+    "/ADC_DOUT",
+    "/ADC_DOUT",
+    "/AUDIO_MCLK",
+    "/AUDIO_BCLK",
+    "/AUDIO_LRCLK",
+    "/DAC_DIN",
+    "/Bare GW2AR-18 support/ADC_BUF",
+    "/Bare GW2AR-18 support/ENABLE_FPGA",
+    "/ADC_DOUT",
+    "/AUDIO_MCLK",
+    "/AUDIO_LRCLK",
+    "/AUDIO_LRCLK",
+    "/AUDIO_BCLK",
+    "/AUDIO_BCLK",
+    "/AUDIO_LRCLK",
+    "/AUDIO_BCLK"
+  ],
+  "via_diameters_mm": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+  ],
+  "via_diameter_mm": 0.5,
+  "via_drill_mm": 0.3,
+  "via_in_pad_anchors": [
+    {
+      "pad": "U205.5",
+      "position": [
+        113.1375,
+        126.05
+      ]
+    },
+    {
+      "pad": "C527.1",
+      "position": [
+        107.0,
+        125.275
+      ]
+    },
+    {
+      "pad": "R518.1",
+      "position": [
+        81.025,
+        109.0
+      ]
+    },
+    {
+      "pad": "U503.2",
+      "position": [
+        83.1625,
+        109
+      ]
+    },
+    {
+      "pad": "R513.2",
+      "position": [
+        85.4,
+        104.6
+      ]
+    },
+    {
+      "pad": "R514.2",
+      "position": [
+        88.8,
+        104.6
+      ]
+    },
+    {
+      "pad": "R515.2",
+      "position": [
+        87.4,
+        104.6
+      ]
+    },
+    {
+      "pad": "R516.2",
+      "position": [
+        90.5,
+        104.6
+      ]
+    }
+  ]
+}

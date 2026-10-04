@@ -1,0 +1,27 @@
+{
+  "status": "PASS all four JTAG nets, reset and both oscillator nets have physical continuity",
+  "track_segments": 84,
+  "vias": 14,
+  "via_in_pad_sites": [
+    {
+      "pad": "SW501.1",
+      "position": [
+        60.85,
+        67.1
+      ]
+    }
+  ],
+  "routed_planar_length_mm": {
+    "/Bare GW2AR-18 support/FPGA_CLK": 25.82039639996806,
+    "/Bare GW2AR-18 support/XO_CLK": 2.65,
+    "/Bare GW2AR-18 support/JTAG_TCK": 30.16059678722066,
+    "/Bare GW2AR-18 support/JTAG_TDI": 29.133225099390856,
+    "/Bare GW2AR-18 support/JTAG_TDO": 28.775347424145483,
+    "/Bare GW2AR-18 support/JTAG_TMS": 27.970840533340727,
+    "/Bare GW2AR-18 support/RECONFIG_N": 51.134967803195785
+  },
+  "limits": [
+    "Planar lengths cover owned service branches, exclude via depth and do not establish programming or clock timing or return behavior.",
+    "JTAG/reset topology checked, with a named via-in-pad on SW501 signal land; audio signal continuity is checked separately by check_fpga_audio_local.py; Mute-control/sense-net and supervisor-supply continuity is checked by check_audio_mute_local.py; LDO/held-supply and sensed-rail source continuity is checked by check_analogue_power_local.py; DAC supply/pump and full held-rail continuity is checked by check_dac_support_local.py; ADC supply/bypass continuity is checked by check_adc_power_local.py; via-in-pad fabrication/assembly, oscillator selection/clock quality, programming, reset behavior, loaded timing, noise, return and assembly remain unqualified."
+  ]
+}

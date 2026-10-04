@@ -1,0 +1,800 @@
+{
+  "net": "/Bare GW2AR-18 support/RECONFIG_N",
+  "anchors": {
+    "R509.1": [
+      61.125,
+      94.0
+    ],
+    "J501.1": [
+      64.0,
+      94.0
+    ],
+    "R511.2": [
+      61.125,
+      96.6
+    ],
+    "J501.3": [
+      64.0,
+      96.54
+    ],
+    "R510.2": [
+      61.125,
+      104.2
+    ],
+    "J501.9": [
+      64.0,
+      104.16
+    ],
+    "R508.2": [
+      58.325,
+      67.099999
+    ],
+    "SW501.1": [
+      60.85,
+      67.1
+    ],
+    "U501.8": [
+      83.05,
+      94.6
+    ],
+    "J501.5": [
+      64.0,
+      99.08
+    ],
+    "U501.4": [
+      83.05,
+      93.0
+    ],
+    "U501.5": [
+      83.05,
+      93.4
+    ],
+    "U501.6": [
+      83.05,
+      93.8
+    ],
+    "U501.7": [
+      83.05,
+      94.2
+    ],
+    "U501.9": [
+      83.05,
+      95.0
+    ],
+    "R512.2": [
+      85.325,
+      114.2
+    ],
+    "R512.1": [
+      83.675,
+      114.2
+    ],
+    "Y501.3": [
+      81.05,
+      114.175
+    ]
+  },
+  "anchor_nets": {
+    "R509.1": "/Bare GW2AR-18 support/JTAG_TCK",
+    "J501.1": "/Bare GW2AR-18 support/JTAG_TCK",
+    "R511.2": "/Bare GW2AR-18 support/JTAG_TDI",
+    "J501.3": "/Bare GW2AR-18 support/JTAG_TDI",
+    "R510.2": "/Bare GW2AR-18 support/JTAG_TMS",
+    "J501.9": "/Bare GW2AR-18 support/JTAG_TMS",
+    "R508.2": "/Bare GW2AR-18 support/RECONFIG_N",
+    "SW501.1": "/Bare GW2AR-18 support/RECONFIG_N",
+    "U501.8": "/Bare GW2AR-18 support/JTAG_TDO",
+    "J501.5": "/Bare GW2AR-18 support/JTAG_TDO",
+    "U501.4": "/Bare GW2AR-18 support/FPGA_CLK",
+    "U501.5": "/Bare GW2AR-18 support/JTAG_TMS",
+    "U501.6": "/Bare GW2AR-18 support/JTAG_TCK",
+    "U501.7": "/Bare GW2AR-18 support/JTAG_TDI",
+    "U501.9": "/Bare GW2AR-18 support/RECONFIG_N",
+    "R512.2": "/Bare GW2AR-18 support/FPGA_CLK",
+    "R512.1": "/Bare GW2AR-18 support/XO_CLK",
+    "Y501.3": "/Bare GW2AR-18 support/XO_CLK"
+  },
+  "paths": [
+    {
+      "net": "/Bare GW2AR-18 support/JTAG_TCK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          61.125,
+          94.0
+        ],
+        [
+          64.0,
+          94.0
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/JTAG_TDI",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          61.125,
+          96.6
+        ],
+        [
+          63.95,
+          96.6
+        ],
+        [
+          64.0,
+          96.55
+        ],
+        [
+          64.0,
+          96.54
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/JTAG_TMS",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          61.125,
+          104.2
+        ],
+        [
+          63.95,
+          104.2
+        ],
+        [
+          64.0,
+          104.15
+        ],
+        [
+          64.0,
+          104.16
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/RECONFIG_N",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          58.325,
+          67.099999
+        ],
+        [
+          58.35,
+          67.1
+        ],
+        [
+          67.15,
+          67.1
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/FPGA_CLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          83.05,
+          93
+        ],
+        [
+          83.6,
+          93
+        ],
+        [
+          83.95,
+          93.3
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/JTAG_TMS",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          83.05,
+          93.4
+        ],
+        [
+          82.15,
+          93.4
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/JTAG_TCK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          83.05,
+          93.8
+        ],
+        [
+          83.6,
+          93.8
+        ],
+        [
+          84.05,
+          94.05
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/JTAG_TDI",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          83.05,
+          94.2
+        ],
+        [
+          82.15,
+          94.2
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/JTAG_TDO",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          83.05,
+          94.6
+        ],
+        [
+          83.6,
+          94.6
+        ],
+        [
+          83.95,
+          94.85
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/RECONFIG_N",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          83.05,
+          95
+        ],
+        [
+          82.5,
+          95
+        ],
+        [
+          82.15,
+          95.3
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/JTAG_TDO",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          83.95,
+          94.85
+        ],
+        [
+          82.7,
+          93.6
+        ],
+        [
+          82.7,
+          93.2
+        ],
+        [
+          80.6,
+          91.1
+        ],
+        [
+          79.25,
+          91.1
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/JTAG_TDO",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          79.25,
+          91.1
+        ],
+        [
+          73.1,
+          91.1
+        ],
+        [
+          72.95,
+          91.25
+        ],
+        [
+          67.5,
+          91.25
+        ],
+        [
+          65.9,
+          92.85
+        ],
+        [
+          65.6,
+          92.85
+        ],
+        [
+          65.15,
+          93.3
+        ],
+        [
+          65.15,
+          97.95
+        ],
+        [
+          64.0,
+          99.1
+        ],
+        [
+          64.0,
+          99.08
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/FPGA_CLK",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          83.95,
+          93.3
+        ],
+        [
+          82.5,
+          94.75
+        ],
+        [
+          81.95,
+          94.75
+        ],
+        [
+          80.65,
+          96.05
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/FPGA_CLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          80.65,
+          96.05
+        ],
+        [
+          80.35,
+          96.35
+        ],
+        [
+          80.35,
+          107.05
+        ],
+        [
+          82.35,
+          109.05
+        ],
+        [
+          82.35,
+          111.2
+        ],
+        [
+          85.35,
+          114.2
+        ],
+        [
+          85.325,
+          114.2
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/JTAG_TMS",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          82.15,
+          93.4
+        ],
+        [
+          80.55,
+          95.0
+        ],
+        [
+          77.8,
+          95.0
+        ],
+        [
+          75.35,
+          97.45
+        ],
+        [
+          75.35,
+          100.1
+        ],
+        [
+          73.5,
+          101.95
+        ],
+        [
+          70.9,
+          101.95
+        ],
+        [
+          69.85,
+          103.0
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/JTAG_TMS",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          69.85,
+          103.0
+        ],
+        [
+          65.15,
+          103.0
+        ],
+        [
+          64.0,
+          104.15
+        ],
+        [
+          64.0,
+          104.16
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/JTAG_TCK",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          84.05,
+          94.05
+        ],
+        [
+          83.95,
+          94.05
+        ],
+        [
+          83.05,
+          93.15
+        ],
+        [
+          83.05,
+          93.05
+        ],
+        [
+          80.55,
+          90.55
+        ],
+        [
+          79.8,
+          90.55
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/JTAG_TCK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          79.8,
+          90.55
+        ],
+        [
+          78.4,
+          89.15
+        ],
+        [
+          69.1,
+          89.15
+        ],
+        [
+          68.4,
+          88.45
+        ],
+        [
+          67.0,
+          88.45
+        ],
+        [
+          65.95,
+          89.5
+        ],
+        [
+          65.95,
+          92.0
+        ],
+        [
+          64.0,
+          93.95
+        ],
+        [
+          64.0,
+          94.0
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/JTAG_TDI",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          82.15,
+          94.2
+        ],
+        [
+          82.1,
+          94.15
+        ],
+        [
+          80.35,
+          94.15
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/JTAG_TDI",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          80.35,
+          94.15
+        ],
+        [
+          79.9,
+          94.6
+        ],
+        [
+          75.2,
+          94.6
+        ],
+        [
+          73.6,
+          96.2
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/JTAG_TDI",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          73.6,
+          96.2
+        ],
+        [
+          69.0,
+          96.2
+        ],
+        [
+          67.5,
+          97.7
+        ],
+        [
+          61.4,
+          97.7
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/JTAG_TDI",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          61.4,
+          97.7
+        ],
+        [
+          62.85,
+          97.7
+        ],
+        [
+          64.0,
+          96.55
+        ],
+        [
+          64.0,
+          96.54
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/XO_CLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          83.675,
+          114.2
+        ],
+        [
+          81.05,
+          114.2
+        ],
+        [
+          81.05,
+          114.175
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/RECONFIG_N",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          82.15,
+          95.3
+        ],
+        [
+          78.4,
+          95.3
+        ],
+        [
+          73.3,
+          90.2
+        ],
+        [
+          73.3,
+          84.2
+        ],
+        [
+          65.1,
+          76.0
+        ],
+        [
+          65.1,
+          67.8
+        ],
+        [
+          64.4,
+          67.1
+        ],
+        [
+          60.85,
+          67.1
+        ]
+      ]
+    }
+  ],
+  "via_positions": [
+    [
+      83.95,
+      93.3
+    ],
+    [
+      82.15,
+      93.4
+    ],
+    [
+      84.05,
+      94.05
+    ],
+    [
+      82.15,
+      94.2
+    ],
+    [
+      83.95,
+      94.85
+    ],
+    [
+      82.15,
+      95.3
+    ],
+    [
+      79.25,
+      91.1
+    ],
+    [
+      60.85,
+      67.1
+    ],
+    [
+      80.65,
+      96.05
+    ],
+    [
+      69.85,
+      103.0
+    ],
+    [
+      79.8,
+      90.55
+    ],
+    [
+      80.35,
+      94.15
+    ],
+    [
+      73.6,
+      96.2
+    ],
+    [
+      61.4,
+      97.7
+    ]
+  ],
+  "via_net_names": [
+    "/Bare GW2AR-18 support/FPGA_CLK",
+    "/Bare GW2AR-18 support/JTAG_TMS",
+    "/Bare GW2AR-18 support/JTAG_TCK",
+    "/Bare GW2AR-18 support/JTAG_TDI",
+    "/Bare GW2AR-18 support/JTAG_TDO",
+    "/Bare GW2AR-18 support/RECONFIG_N",
+    "/Bare GW2AR-18 support/JTAG_TDO",
+    "/Bare GW2AR-18 support/RECONFIG_N",
+    "/Bare GW2AR-18 support/FPGA_CLK",
+    "/Bare GW2AR-18 support/JTAG_TMS",
+    "/Bare GW2AR-18 support/JTAG_TCK",
+    "/Bare GW2AR-18 support/JTAG_TDI",
+    "/Bare GW2AR-18 support/JTAG_TDI",
+    "/Bare GW2AR-18 support/JTAG_TDI"
+  ],
+  "via_diameters_mm": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+  ],
+  "via_diameter_mm": 0.5,
+  "via_drill_mm": 0.3,
+  "via_in_pad_anchors": [
+    {
+      "pad": "SW501.1",
+      "position": [
+        60.85,
+        67.1
+      ]
+    }
+  ]
+}

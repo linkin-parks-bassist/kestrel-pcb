@@ -1,0 +1,290 @@
+{
+  "status": "Hammond 1590XX fit experiment; no manufacturing approval",
+  "vendor_step_sha256": "edf58d8bd0b7a13ad869e63b3bf091f7efdedbb21101aa75d3520859d8028155",
+  "jack_step_sha256": "943ff18cc7cb015543394d9e94d0c84029db2cd7c09c7987d250385704539f5a",
+  "jack_axis_z": 13.86,
+  "solids_valid": true,
+  "intersections": [
+    {
+      "a": "casting",
+      "b": "lid",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "casting",
+      "b": "reference_display",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "casting",
+      "b": "switch_1_conservative_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "casting",
+      "b": "switch_2_conservative_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "casting",
+      "b": "candidate_notched_pcb",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "casting",
+      "b": "input_vendor_jack_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "casting",
+      "b": "output_vendor_jack_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "casting",
+      "b": "C230_maximum_body_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "casting",
+      "b": "C235_maximum_body_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "lid",
+      "b": "reference_display",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "lid",
+      "b": "switch_1_conservative_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "lid",
+      "b": "switch_2_conservative_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "lid",
+      "b": "candidate_notched_pcb",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "lid",
+      "b": "input_vendor_jack_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "lid",
+      "b": "output_vendor_jack_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "lid",
+      "b": "C230_maximum_body_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "lid",
+      "b": "C235_maximum_body_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "reference_display",
+      "b": "switch_1_conservative_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "reference_display",
+      "b": "switch_2_conservative_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "reference_display",
+      "b": "candidate_notched_pcb",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "reference_display",
+      "b": "input_vendor_jack_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "reference_display",
+      "b": "output_vendor_jack_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "reference_display",
+      "b": "C230_maximum_body_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "reference_display",
+      "b": "C235_maximum_body_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "switch_1_conservative_envelope",
+      "b": "switch_2_conservative_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "switch_1_conservative_envelope",
+      "b": "candidate_notched_pcb",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "switch_1_conservative_envelope",
+      "b": "input_vendor_jack_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "switch_1_conservative_envelope",
+      "b": "output_vendor_jack_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "switch_1_conservative_envelope",
+      "b": "C230_maximum_body_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "switch_1_conservative_envelope",
+      "b": "C235_maximum_body_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "switch_2_conservative_envelope",
+      "b": "candidate_notched_pcb",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "switch_2_conservative_envelope",
+      "b": "input_vendor_jack_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "switch_2_conservative_envelope",
+      "b": "output_vendor_jack_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "switch_2_conservative_envelope",
+      "b": "C230_maximum_body_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "switch_2_conservative_envelope",
+      "b": "C235_maximum_body_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "candidate_notched_pcb",
+      "b": "input_vendor_jack_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "candidate_notched_pcb",
+      "b": "output_vendor_jack_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "candidate_notched_pcb",
+      "b": "C230_maximum_body_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "candidate_notched_pcb",
+      "b": "C235_maximum_body_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "input_vendor_jack_body",
+      "b": "output_vendor_jack_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "input_vendor_jack_body",
+      "b": "C230_maximum_body_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "input_vendor_jack_body",
+      "b": "C235_maximum_body_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "output_vendor_jack_body",
+      "b": "C230_maximum_body_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "output_vendor_jack_body",
+      "b": "C235_maximum_body_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "C230_maximum_body_envelope",
+      "b": "C235_maximum_body_envelope",
+      "intersection_mm3": 0.0
+    }
+  ],
+  "uncut_rectangular_comparison": [
+    {
+      "a": "casting",
+      "b": "uncut_rectangular_pcb",
+      "intersection_mm3": 56.67615
+    },
+    {
+      "a": "lid",
+      "b": "uncut_rectangular_pcb",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "reference_display",
+      "b": "uncut_rectangular_pcb",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "switch_1_conservative_envelope",
+      "b": "uncut_rectangular_pcb",
+      "intersection_mm3": 695.012991
+    },
+    {
+      "a": "switch_2_conservative_envelope",
+      "b": "uncut_rectangular_pcb",
+      "intersection_mm3": 695.012991
+    },
+    {
+      "a": "input_vendor_jack_body",
+      "b": "uncut_rectangular_pcb",
+      "intersection_mm3": 3.52
+    },
+    {
+      "a": "output_vendor_jack_body",
+      "b": "uncut_rectangular_pcb",
+      "intersection_mm3": 3.52
+    },
+    {
+      "a": "C230_maximum_body_envelope",
+      "b": "uncut_rectangular_pcb",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "C235_maximum_body_envelope",
+      "b": "uncut_rectangular_pcb",
+      "intersection_mm3": 0.0
+    }
+  ],
+  "candidate_pcb_area_mm2": 13114.554,
+  "limits": [
+    "Casting has nominal jack holes only: no screen aperture, switch or other connector holes.",
+    "Display and switches are envelopes, not complete qualified mechanical models.",
+    "Candidate outline is available for provisional electrical placement, not manufacturing approval.",
+    "Jack ferrules/nuts, contacts, assembly tolerances and electrical footprint orientation remain unqualified.",
+    "Capacitors are maximum body envelopes; reflow/service clearance is unqualified.",
+    "Other connectors, FPC bends, supports and assembly access are not modeled here."
+  ]
+}

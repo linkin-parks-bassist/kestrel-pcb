@@ -1,0 +1,603 @@
+{
+  "net": "/Bare GW2AR-18 support/CONFIG_CLK",
+  "anchors": {
+    "R505.2": [
+      70.325,
+      80.1
+    ],
+    "U502.1": [
+      72.4125,
+      80.095
+    ],
+    "R506.2": [
+      70.325,
+      82.7
+    ],
+    "U502.3": [
+      72.4125,
+      82.635
+    ],
+    "R507.2": [
+      82.175,
+      82.7
+    ],
+    "U502.7": [
+      79.5875,
+      81.365
+    ],
+    "U502.6": [
+      79.5875,
+      82.635
+    ],
+    "R504.1": [
+      82.175,
+      84.5
+    ],
+    "U501.62": [
+      92.95,
+      93.4
+    ],
+    "U502.2": [
+      72.4125,
+      81.365
+    ],
+    "U501.61": [
+      92.95,
+      93.8
+    ],
+    "U502.5": [
+      79.5875,
+      83.905
+    ],
+    "U501.60": [
+      92.95,
+      94.2
+    ],
+    "U501.59": [
+      92.95,
+      94.6
+    ]
+  },
+  "anchor_nets": {
+    "R505.2": "/Bare GW2AR-18 support/FLASH_CS",
+    "U502.1": "/Bare GW2AR-18 support/FLASH_CS",
+    "R506.2": "/Bare GW2AR-18 support/FLASH_WP",
+    "U502.3": "/Bare GW2AR-18 support/FLASH_WP",
+    "R507.2": "/Bare GW2AR-18 support/FLASH_HOLD",
+    "U502.7": "/Bare GW2AR-18 support/FLASH_HOLD",
+    "U502.6": "/Bare GW2AR-18 support/CONFIG_CLK",
+    "R504.1": "/Bare GW2AR-18 support/CONFIG_CLK",
+    "U501.62": "/Bare GW2AR-18 support/FLASH_DO",
+    "U502.2": "/Bare GW2AR-18 support/FLASH_DO",
+    "U501.61": "/Bare GW2AR-18 support/FLASH_DI",
+    "U502.5": "/Bare GW2AR-18 support/FLASH_DI",
+    "U501.60": "/Bare GW2AR-18 support/FLASH_CS",
+    "U501.59": "/Bare GW2AR-18 support/CONFIG_CLK"
+  },
+  "paths": [
+    {
+      "net": "/Bare GW2AR-18 support/FLASH_CS",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          70.325,
+          80.1
+        ],
+        [
+          72.4,
+          80.1
+        ],
+        [
+          72.4125,
+          80.095
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/FLASH_WP",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          70.325,
+          82.7
+        ],
+        [
+          70.35,
+          82.7
+        ],
+        [
+          70.4,
+          82.65
+        ],
+        [
+          72.4,
+          82.65
+        ],
+        [
+          72.4125,
+          82.635
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/FLASH_HOLD",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          82.175,
+          82.7
+        ],
+        [
+          82.2,
+          82.7
+        ],
+        [
+          80.85,
+          81.35
+        ],
+        [
+          79.6,
+          81.35
+        ],
+        [
+          79.5875,
+          81.365
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/CONFIG_CLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          79.5875,
+          82.635
+        ],
+        [
+          79.6,
+          82.65
+        ],
+        [
+          80.35,
+          82.65
+        ],
+        [
+          82.2,
+          84.5
+        ],
+        [
+          82.175,
+          84.5
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/FLASH_DO",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          92.95,
+          93.4
+        ],
+        [
+          93.825,
+          93.4
+        ],
+        [
+          93.825,
+          93.35
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/FLASH_DI",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          92.95,
+          93.8
+        ],
+        [
+          93.45,
+          93.8
+        ],
+        [
+          93.6,
+          93.95
+        ],
+        [
+          93.825,
+          93.95
+        ],
+        [
+          93.825,
+          94.35
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/FLASH_CS",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          92.95,
+          94.2
+        ],
+        [
+          92.4,
+          94.2
+        ],
+        [
+          92,
+          93.8
+        ],
+        [
+          92,
+          93.2
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/CONFIG_CLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          92.95,
+          94.6
+        ],
+        [
+          92.05,
+          94.6
+        ],
+        [
+          91.9,
+          94.75
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/FLASH_DO",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          93.825,
+          93.35
+        ],
+        [
+          93.825,
+          93.175
+        ],
+        [
+          92.0,
+          91.35
+        ],
+        [
+          83.2,
+          91.35
+        ],
+        [
+          81.875,
+          90.025
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/FLASH_DO",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          81.875,
+          90.025
+        ],
+        [
+          73.225,
+          81.375
+        ],
+        [
+          72.4,
+          81.375
+        ],
+        [
+          72.4125,
+          81.365
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/FLASH_DI",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          93.825,
+          94.35
+        ],
+        [
+          93.85,
+          94.35
+        ],
+        [
+          93.65,
+          94.15
+        ],
+        [
+          85.55,
+          94.15
+        ],
+        [
+          84.15,
+          92.75
+        ],
+        [
+          83.65,
+          92.75
+        ],
+        [
+          80.95,
+          90.05
+        ],
+        [
+          80.975,
+          90.025
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/FLASH_DI",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          80.975,
+          90.025
+        ],
+        [
+          80.975,
+          85.3
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/FLASH_DI",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          80.975,
+          85.3
+        ],
+        [
+          79.575,
+          83.9
+        ],
+        [
+          79.5875,
+          83.905
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/FLASH_CS",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          92.0,
+          93.2
+        ],
+        [
+          86.4,
+          93.2
+        ],
+        [
+          85.3,
+          92.1
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/FLASH_CS",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          85.3,
+          92.1
+        ],
+        [
+          84.65,
+          92.75
+        ],
+        [
+          82.95,
+          92.75
+        ],
+        [
+          73.7,
+          83.5
+        ],
+        [
+          73.7,
+          81.1
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/FLASH_CS",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          73.7,
+          81.1
+        ],
+        [
+          72.7,
+          80.1
+        ],
+        [
+          72.4,
+          80.1
+        ],
+        [
+          72.4125,
+          80.095
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/CONFIG_CLK",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          91.9,
+          94.75
+        ],
+        [
+          90.0,
+          96.65
+        ],
+        [
+          83.85,
+          96.65
+        ],
+        [
+          82.7,
+          95.5
+        ],
+        [
+          82.7,
+          95.1
+        ],
+        [
+          82.35,
+          94.75
+        ],
+        [
+          78.35,
+          94.75
+        ],
+        [
+          75.45,
+          91.85
+        ],
+        [
+          75.45,
+          86.5
+        ],
+        [
+          78.3,
+          83.65
+        ]
+      ]
+    },
+    {
+      "net": "/Bare GW2AR-18 support/CONFIG_CLK",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          78.3,
+          83.65
+        ],
+        [
+          79.3,
+          82.65
+        ],
+        [
+          79.6,
+          82.65
+        ],
+        [
+          79.5875,
+          82.635
+        ]
+      ]
+    }
+  ],
+  "via_positions": [
+    [
+      93.825,
+      93.35
+    ],
+    [
+      93.825,
+      94.35
+    ],
+    [
+      92,
+      93.2
+    ],
+    [
+      91.9,
+      94.75
+    ],
+    [
+      81.875,
+      90.025
+    ],
+    [
+      80.975,
+      90.025
+    ],
+    [
+      80.975,
+      85.3
+    ],
+    [
+      85.3,
+      92.1
+    ],
+    [
+      73.7,
+      81.1
+    ],
+    [
+      78.3,
+      83.65
+    ]
+  ],
+  "via_net_names": [
+    "/Bare GW2AR-18 support/FLASH_DO",
+    "/Bare GW2AR-18 support/FLASH_DI",
+    "/Bare GW2AR-18 support/FLASH_CS",
+    "/Bare GW2AR-18 support/CONFIG_CLK",
+    "/Bare GW2AR-18 support/FLASH_DO",
+    "/Bare GW2AR-18 support/FLASH_DI",
+    "/Bare GW2AR-18 support/FLASH_DI",
+    "/Bare GW2AR-18 support/FLASH_CS",
+    "/Bare GW2AR-18 support/FLASH_CS",
+    "/Bare GW2AR-18 support/CONFIG_CLK"
+  ],
+  "via_diameters_mm": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+  ],
+  "via_diameter_mm": 0.5,
+  "via_drill_mm": 0.3,
+  "status": "Provisional complete FPGA configuration flash copper; continuity/native DRC checked; boot/SI/return/assembly qualification incomplete",
+  "limits": [
+    "QFN CS/clock fan out inward and DI/DO outward; In1.Cu remains the filled ground plane.",
+    "Nominal outer via-to-land clearance reaches 0.2 mm; fabrication/stencil/solder tolerance and loaded timing are not established.",
+    "Preserve the coordinated FPGA I/O distribution detour; independent source-to-load continuity checks are required after replacement."
+  ]
+}

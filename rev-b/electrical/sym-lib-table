@@ -1,0 +1,53 @@
+(sym_lib_table
+	(version 7)
+	(lib
+		(name "KestrelAudio")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/KestrelAudio.kicad_sym")
+		(options "")
+		(descr "Datasheet-checked audio converter, protection and supervisor symbols")
+	)
+	(lib
+		(name "KestrelFPGA")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/KestrelFPGA.kicad_sym")
+		(options "")
+		(descr "Gowin QN88 SDRAM verified pin data; layout review pending")
+	)
+	(lib
+		(name "KestrelDisplay")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/KestrelDisplay.kicad_sym")
+		(options "")
+		(descr "Backlight primary DCK5 pin table")
+	)
+	(lib
+		(name "KestrelPower")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/KestrelPower.kicad_sym")
+		(options "")
+		(descr "Checked FPGA power switch pinout")
+	)
+	(lib
+		(name "KestrelMCU")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/KestrelMCU.kicad_sym")
+		(options "")
+		(descr "P4 v3 pin table; engineering lands; circuit pending")
+	)
+	(lib
+		(name "KestrelInput")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/KestrelInput.kicad_sym")
+		(options "")
+		(descr "Checked pedal input MOSFET")
+	)
+	(lib
+		(name "KestrelSPI")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/KestrelSPI.kicad_sym")
+		(options "")
+		(descr "SPI bridge PW16 primary pin map")
+	)
+)
+

@@ -1,0 +1,296 @@
+{
+  "status": "PASS poses/nets and 28 bounded proximity allocations; 12 bulk distances observed; routing/performance unqualified",
+  "placed_references": [
+    "R701",
+    "R702",
+    "R703",
+    "R704",
+    "R705",
+    "R706",
+    "R707",
+    "R708",
+    "R709",
+    "R710",
+    "R711",
+    "R712",
+    "R713",
+    "C729",
+    "C730",
+    "C731",
+    "C732",
+    "C701",
+    "C702",
+    "C710",
+    "C704",
+    "C705",
+    "C703",
+    "C711",
+    "C716",
+    "C717",
+    "C718",
+    "C719",
+    "C720",
+    "C721",
+    "C722",
+    "C723",
+    "C724",
+    "C725",
+    "C726",
+    "C727",
+    "C728",
+    "C706",
+    "C707",
+    "C708",
+    "C709",
+    "C712",
+    "C713",
+    "C714",
+    "C715"
+  ],
+  "local_allocations": {
+    "C701": {
+      "assigned_pin": "U701.9",
+      "pad_centre_distance_mm": 1.9087,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "C702": {
+      "assigned_pin": "U701.21",
+      "pad_centre_distance_mm": 1.8339,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "C704": {
+      "assigned_pin": "U701.85",
+      "pad_centre_distance_mm": 1.6202,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "C705": {
+      "assigned_pin": "U701.96",
+      "pad_centre_distance_mm": 2.2702,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "C703": {
+      "assigned_pin": "U701.62",
+      "pad_centre_distance_mm": 1.0203,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "C711": {
+      "assigned_pin": "U701.54",
+      "pad_centre_distance_mm": 1.8432,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "C716": {
+      "assigned_pin": "U701.67",
+      "pad_centre_distance_mm": 1.1252,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "C706": {
+      "assigned_pin": "U701.101",
+      "pad_centre_distance_mm": 1.8061,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "C707": {
+      "assigned_pin": "U701.102",
+      "pad_centre_distance_mm": 1.395,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "C708": {
+      "assigned_pin": "U701.75",
+      "pad_centre_distance_mm": 2.0929,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "C709": {
+      "assigned_pin": "U701.77",
+      "pad_centre_distance_mm": 2.1345,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "C712": {
+      "assigned_pin": "U701.76",
+      "pad_centre_distance_mm": 1.1979,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "C713": {
+      "assigned_pin": "U701.91",
+      "pad_centre_distance_mm": 1.2054,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "C714": {
+      "assigned_pin": "U701.30",
+      "pad_centre_distance_mm": 1.1904,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "C715": {
+      "assigned_pin": "U701.59",
+      "pad_centre_distance_mm": 1.0203,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "C710": {
+      "assigned_pin": "U701.26",
+      "pad_centre_distance_mm": 1.8202,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "C729": {
+      "assigned_pin": "U702.8",
+      "pad_centre_distance_mm": 2.2375,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "C730": {
+      "assigned_pin": "Y701.1",
+      "pad_centre_distance_mm": 2.4012,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "C731": {
+      "assigned_pin": "Y701.3",
+      "pad_centre_distance_mm": 1.775,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "C732": {
+      "assigned_pin": "U701.103",
+      "pad_centre_distance_mm": 2.4021,
+      "engineering_target_mm": 2.5,
+      "distance_qualified": false
+    },
+    "R708": {
+      "assigned_pin": "U701.100",
+      "pad_centre_distance_mm": 2.8745,
+      "engineering_target_mm": 3.0,
+      "distance_qualified": false
+    },
+    "R709": {
+      "assigned_pin": "U701.99",
+      "pad_centre_distance_mm": 2.4975,
+      "engineering_target_mm": 3.0,
+      "distance_qualified": false
+    },
+    "R701": {
+      "assigned_pin": "U701.27",
+      "pad_centre_distance_mm": 2.2817,
+      "engineering_target_mm": 8.0,
+      "distance_qualified": false
+    },
+    "R702": {
+      "assigned_pin": "U701.28",
+      "pad_centre_distance_mm": 2.7388,
+      "engineering_target_mm": 8.0,
+      "distance_qualified": false
+    },
+    "R703": {
+      "assigned_pin": "U701.29",
+      "pad_centre_distance_mm": 3.6662,
+      "engineering_target_mm": 8.0,
+      "distance_qualified": false
+    },
+    "R704": {
+      "assigned_pin": "U701.31",
+      "pad_centre_distance_mm": 4.4935,
+      "engineering_target_mm": 8.0,
+      "distance_qualified": false
+    },
+    "R705": {
+      "assigned_pin": "U701.32",
+      "pad_centre_distance_mm": 5.6988,
+      "engineering_target_mm": 8.0,
+      "distance_qualified": false
+    },
+    "R706": {
+      "assigned_pin": "U701.33",
+      "pad_centre_distance_mm": 6.9575,
+      "engineering_target_mm": 8.0,
+      "distance_qualified": false
+    },
+    "C717": {
+      "assigned_pin": "U701.9",
+      "pad_centre_distance_mm": 5.8039,
+      "engineering_target_mm": null,
+      "distance_qualified": false
+    },
+    "C718": {
+      "assigned_pin": "U701.102",
+      "pad_centre_distance_mm": 7.0995,
+      "engineering_target_mm": null,
+      "distance_qualified": false
+    },
+    "C719": {
+      "assigned_pin": "U701.75",
+      "pad_centre_distance_mm": 8.3406,
+      "engineering_target_mm": null,
+      "distance_qualified": false
+    },
+    "C720": {
+      "assigned_pin": "U701.77",
+      "pad_centre_distance_mm": 7.6786,
+      "engineering_target_mm": null,
+      "distance_qualified": false
+    },
+    "C721": {
+      "assigned_pin": "L601.2",
+      "pad_centre_distance_mm": 5.7801,
+      "engineering_target_mm": null,
+      "distance_qualified": false
+    },
+    "C722": {
+      "assigned_pin": "U701.30",
+      "pad_centre_distance_mm": 7.7793,
+      "engineering_target_mm": null,
+      "distance_qualified": false
+    },
+    "C723": {
+      "assigned_pin": "U701.59",
+      "pad_centre_distance_mm": 4.6889,
+      "engineering_target_mm": null,
+      "distance_qualified": false
+    },
+    "C724": {
+      "assigned_pin": "U701.67",
+      "pad_centre_distance_mm": 4.1552,
+      "engineering_target_mm": null,
+      "distance_qualified": false
+    },
+    "C725": {
+      "assigned_pin": "U701.71",
+      "pad_centre_distance_mm": 6.8232,
+      "engineering_target_mm": null,
+      "distance_qualified": false
+    },
+    "C726": {
+      "assigned_pin": "U701.72",
+      "pad_centre_distance_mm": 9.2245,
+      "engineering_target_mm": null,
+      "distance_qualified": false
+    },
+    "C727": {
+      "assigned_pin": "U701.73",
+      "pad_centre_distance_mm": 9.6815,
+      "engineering_target_mm": null,
+      "distance_qualified": false
+    },
+    "C728": {
+      "assigned_pin": "U701.74",
+      "pad_centre_distance_mm": 11.4007,
+      "engineering_target_mm": null,
+      "distance_qualified": false
+    }
+  },
+  "limits": [
+    "Bulk capacitor distances are observations without an acceptance bound; effective decoupling and routing remain unqualified.",
+    "Routes, ground returns, signal integrity, manufacturing and mechanical assembly remain unqualified."
+  ]
+}

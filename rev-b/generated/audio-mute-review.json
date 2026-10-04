@@ -1,0 +1,43 @@
+{
+  "status": "conditional engineering calculation; not hardware validation",
+  "connectivity_checked": true,
+  "trip_min_v": 4.553401051573427,
+  "trip_max_v": 4.761961408783783,
+  "release_upper_bound_v": 4.904820251047297,
+  "hold_up_s": 0.01100064126949975,
+  "required_mute_s": 0.0033250000000000003,
+  "remaining_margin_s": 0.007575641269499749,
+  "aged_room_temperature_min_f": 0.00112,
+  "aged_room_temperature_hold_s": 0.007700448888649823,
+  "aged_room_temperature_margin_s": 0.004275448888649822,
+  "extra_sensitivity_case": {
+    "conditional_only": true,
+    "reservoir_f": 0.001008,
+    "held_load_a": 0.07,
+    "diode_drop_v": 0.6,
+    "total_reservoir_pulse_impedance_ohm": 0.4,
+    "hold_s": 0.00468577514265735,
+    "margin_s": 0.0012607751426573497
+  },
+  "mr_default_low_v_without_fpga_drive": 0.09348319911135797,
+  "release_delay_s_range": [
+    0.012,
+    0.028
+  ],
+  "assumptions": {
+    "sample_rate_hz": 48000,
+    "reservoir_min_f": 0.0016,
+    "held_load_a": 0.065,
+    "diode_drop_v": 0.5,
+    "reservoir_esr_ohm": 0.1,
+    "ldo_input_min_v": 3.6,
+    "additional_detection_allowance_s": 0.0001,
+    "temperature_leakage_and_load_budget_not_yet_verified": true
+  },
+  "remaining_checks": [
+    "Verify selected capacitor pulse impedance, capacitance/leakage over temperature, reflow and life",
+    "Verify diode forward drop/leakage, LDO behavior, DAC load and startup inrush",
+    "Verify FPGA GPIO boot state, current/logic levels and AUDIO_ENABLE sequencing",
+    "Measure rail removal/brownout/shutdown, including supervisor timing and audio output"
+  ]
+}

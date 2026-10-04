@@ -1,0 +1,90 @@
+{
+  "status": "PASS bounded pose/net/proximity review; no routing or performance qualification",
+  "placed_references": [
+    "C501",
+    "C502",
+    "C503",
+    "C504",
+    "C505",
+    "C506",
+    "C507",
+    "C508",
+    "C509",
+    "C510",
+    "C511",
+    "C512",
+    "C513",
+    "C514",
+    "C515",
+    "C516",
+    "C517",
+    "C518",
+    "C519",
+    "C520",
+    "C521",
+    "C522",
+    "L501",
+    "L502"
+  ],
+  "supply_capacitors": {
+    "C501": {
+      "U501_pin": 1,
+      "power_pad_centre_distance_mm": 2.4255
+    },
+    "C502": {
+      "U501_pin": 3,
+      "power_pad_centre_distance_mm": 2.0151
+    },
+    "C503": {
+      "U501_pin": 12,
+      "power_pad_centre_distance_mm": 2.311
+    },
+    "C504": {
+      "U501_pin": 14,
+      "power_pad_centre_distance_mm": 1.975
+    },
+    "C505": {
+      "U501_pin": 22,
+      "power_pad_centre_distance_mm": 1.9851
+    },
+    "C506": {
+      "U501_pin": 23,
+      "power_pad_centre_distance_mm": 1.575
+    },
+    "C507": {
+      "U501_pin": 44,
+      "power_pad_centre_distance_mm": 1.575
+    },
+    "C508": {
+      "U501_pin": 45,
+      "power_pad_centre_distance_mm": 1.8195
+    },
+    "C509": {
+      "U501_pin": 50,
+      "power_pad_centre_distance_mm": 1.8195
+    },
+    "C510": {
+      "U501_pin": 58,
+      "power_pad_centre_distance_mm": 1.775
+    },
+    "C511": {
+      "U501_pin": 64,
+      "power_pad_centre_distance_mm": 1.7862
+    },
+    "C512": {
+      "U501_pin": 66,
+      "power_pad_centre_distance_mm": 2.0373
+    },
+    "C513": {
+      "U501_pin": 67,
+      "power_pad_centre_distance_mm": 1.675
+    },
+    "C514": {
+      "U501_pin": 78,
+      "power_pad_centre_distance_mm": 1.675
+    }
+  },
+  "limits": [
+    "Per-pin bypass and plane-ground continuity are checked separately by check_fpga_bypass_local.py; PLL and FPGA core/I/O pin/bulk continuity are checked separately by check_fpga_pll_local.py, check_fpga_core_distribution.py and check_fpga_io_distribution.py; remaining switched support supplies are checked by check_fpga_support_supply.py; SPI supply continuity is checked separately by check_spi_support_supply.py; local held-DAC buffer supply and audio signal continuity are checked separately by check_fpga_audio_local.py; Mute-control/sense-net and supervisor-supply continuity is checked by check_audio_mute_local.py; LDO/held-supply and sensed-rail source continuity is checked by check_analogue_power_local.py; DAC supply/pump and full held-rail continuity is checked by check_dac_support_local.py; ADC supply/bypass continuity is checked by check_adc_power_local.py; return impedance, effective decoupling, thermal/assembly and performance remain unqualified."
+  ]
+}

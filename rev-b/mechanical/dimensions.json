@@ -1,0 +1,117 @@
+{
+  "status": "provisional packaging study; not manufacturing dimensions",
+  "case": {
+    "width": 160.0,
+    "depth": 155.0,
+    "height": 52.0,
+    "wall": 3.0,
+    "corner_radius": 7.0
+  },
+  "pcb": {
+    "width": 136.0,
+    "depth": 132.0,
+    "thickness": 1.6,
+    "bottom_z": 24.0,
+    "hole_diameter": 3.2,
+    "mounts": [
+      [
+        -58,
+        -55
+      ],
+      [
+        58,
+        -55
+      ],
+      [
+        -58,
+        55
+      ],
+      [
+        58,
+        55
+      ]
+    ]
+  },
+  "lid_screws": {
+    "hole_diameter": 3.2,
+    "boss_diameter": 9.0,
+    "centres": [
+      [
+        -73,
+        -70.5
+      ],
+      [
+        73,
+        -70.5
+      ],
+      [
+        -73,
+        70.5
+      ],
+      [
+        73,
+        70.5
+      ]
+    ]
+  },
+  "display": {
+    "model": "DM-TFT50-404 engineering reference; procurement/contact fit pending",
+    "body_width": 120.7,
+    "body_depth": 75.9,
+    "body_thickness": 4.38,
+    "window_width": 111.0,
+    "window_depth": 68.0,
+    "centre": [
+      0,
+      26
+    ],
+    "top_z": 49.0,
+    "source": "https://cdn.shopify.com/s/files/1/0264/7629/files/DM-TFT50-404_Datasheet.pdf?v=1659335473",
+    "active_width": 108.0,
+    "active_depth": 64.8
+  },
+  "footswitches": {
+    "model": "PPA SWFS0013 momentary NO candidate; envelope and mounting datum unqualified",
+    "hole_diameter": 12.2,
+    "body_diameter": 24.0,
+    "body_depth": 23.0,
+    "centres": [
+      [
+        -45,
+        -51
+      ],
+      [
+        45,
+        -51
+      ]
+    ],
+    "source": "https://www.pedalpartsaustralia.com/index.php?main_page=product_info&products_id=1203",
+    "supplier_mounting_hole": 12.0,
+    "supplier_body_dimensions_text": "30mm long including lugs, 13.5mm wide, 13.5mm high; overall height33mm. Axis/datum unresolved; conservative study cylinder retained."
+  },
+  "audio_jacks": {
+    "model": "Neutrik NMJ4HCD2; conservative envelope, orientation/mounting still unverified",
+    "source": "https://www.neutrik.com/media/15472/download/st-nmj4hcd2.PDF?v=3",
+    "vendor_nominal_panel_hole": 11.4,
+    "vendor_body_width": 18.2,
+    "vendor_body_height": 15.67,
+    "hole_diameter": 12.2,
+    "axis_z": 16.0,
+    "y": -15.0,
+    "body_length": 30.0,
+    "body_width": 19.0,
+    "body_height": 16.0
+  },
+  "dc_jack": {
+    "model": "unselected centre-negative barrel jack",
+    "hole_diameter": 8.2,
+    "axis_z": 16.0
+  },
+  "usb": {
+    "model": "unselected USB-C receptacle",
+    "opening_width": 10.0,
+    "opening_height": 4.0,
+    "x": 25.0,
+    "axis_z": 27.0
+  }
+}

@@ -1,0 +1,2226 @@
+(kicad_sch
+	(version 20260101)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "6ef018a3-587f-5dc2-9842-04045f9758e0")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Regulator_Switching:TLV62569DBV"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -5.08 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TLV62569DBV"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 1.27 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv62569.pdf"
+				(at -6.35 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "High Efficiency Synchronous Buck Converter, Adjustable Output 0.6V-5.5V, 2A, SOT-23-5"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Step-Down Buck DC-DC Regulator Adjustable"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TLV62569DBV_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TLV62569DBV_1_1"
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:L"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "L_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Switching:TLV62569DBV")
+		(at 82.55 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "905c2bec-45ed-5e67-a014-e81f1206aa62")
+		(property "Reference" "U601"
+			(at 72.39 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TLV62569DBVR"
+			(at 72.39 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 83.82 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv62569.pdf"
+			(at 76.2 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "High Efficiency Synchronous Buck Converter, Adjustable Output 0.6V-5.5V, 2A, SOT-23-5"
+			(at 82.55 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "31dab4e7-cc80-5da6-8d43-97c34ff04131")
+		)
+		(pin "2"
+			(uuid "b779012f-a179-54ea-931f-e19e19f7d8f4")
+		)
+		(pin "3"
+			(uuid "05b7cf7b-7dfc-5662-a00b-c7b9d9ec2e8f")
+		)
+		(pin "4"
+			(uuid "aeb2e052-5b1a-5e6c-87d3-2ef220009ed3")
+		)
+		(pin "5"
+			(uuid "d304f580-d35c-5027-98da-96c45a5b50f7")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/8b062b49-0171-5339-a2cb-eaa8f8cfd6cb"
+					(reference "U601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 127 69.85 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d23147a5-ede6-5353-ad44-13c416b54fe6")
+		(property "Reference" "L601"
+			(at 123.19 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2uH"
+			(at 123.19 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_Sunlord_MWSA0402S"
+			(at 127 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.sunlordinc.com/uploads/files/20230303/MWSA-S%C2%A0series%C2%A0of%C2%A0SMD%C2%A0Power%C2%A0Inductor.pdf"
+			(at 127 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 127 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2bd5b112-ff8a-5c66-b394-e7274c747e5d")
+		)
+		(pin "2"
+			(uuid "258ee7cb-e8e0-5844-afeb-860519a2e748")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/8b062b49-0171-5339-a2cb-eaa8f8cfd6cb"
+					(reference "L601")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "2.2uH / shielded / Isat >=3.5A"
+			(at 127.0 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MWSA0402S-2R2MT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunlord"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C408335"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "CurrentReview" "20%-drop 4A; 30%-drop 5A; DCR max58mOhm; catalog at20C; not full-temperature/fault qualification"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 38.1 95.25 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9cde55ba-4d8d-5a88-bbfc-c7589d9559e6")
+		(property "Reference" "C601"
+			(at 41.91 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 41.91 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 39.065 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 38.1 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "34c404eb-7463-52aa-82cd-a550b59f5291")
+		)
+		(pin "2"
+			(uuid "cfa149fa-715b-5ff1-bcfb-3c504dd9c7c6")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/8b062b49-0171-5339-a2cb-eaa8f8cfd6cb"
+					(reference "C601")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "4.7uF / 16V X7R"
+			(at 38.1 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 57.15 95.25 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d9be8ef3-21b4-5d07-9a54-a25cf8bba858")
+		(property "Reference" "C602"
+			(at 60.96 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 60.96 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 58.115 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 57.15 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d77ccd54-7f02-561c-9f07-da361bcceb38")
+		)
+		(pin "2"
+			(uuid "e67d0e7d-a84b-5fb1-b90a-91de81136a59")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/8b062b49-0171-5339-a2cb-eaa8f8cfd6cb"
+					(reference "C602")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "100nF / 16V X7R"
+			(at 57.15 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 127 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "55545cc5-7c09-53a7-bf64-4a5634fb9891")
+		(property "Reference" "C603"
+			(at 130.81 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 130.81 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 127.965 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 127 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b5c0757a-d0ae-5ca4-9580-1b0601babc3a")
+		)
+		(pin "2"
+			(uuid "82202cfa-4d0e-5afe-8b5f-e25ce9cd0df3")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/8b062b49-0171-5339-a2cb-eaa8f8cfd6cb"
+					(reference "C603")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "22uF / 16V X7R"
+			(at 127.0 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 146.05 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d439524a-9d49-5bb7-9dad-43de3c9e7046")
+		(property "Reference" "C604"
+			(at 149.86 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 149.86 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 147.015 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 146.05 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8255a0d2-9e7b-5967-a84d-64ede7aa31b6")
+		)
+		(pin "2"
+			(uuid "09d0c590-2427-59f6-93f8-b35749ea347a")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/8b062b49-0171-5339-a2cb-eaa8f8cfd6cb"
+					(reference "C604")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "22uF / 16V X7R"
+			(at 146.05 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 184.15 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ca449e72-b9c7-566b-9ae6-324f2b23f1f4")
+		(property "Reference" "R601"
+			(at 187.96 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "499k"
+			(at 187.96 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 182.372 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 184.15 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b79643a4-8f63-5f4b-9531-685ba4c39ce9")
+		)
+		(pin "2"
+			(uuid "91ba24cc-49de-5e81-9976-f5295f05a27a")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/8b062b49-0171-5339-a2cb-eaa8f8cfd6cb"
+					(reference "R601")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "499k / 1%"
+			(at 184.15 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 184.15 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "839c057a-60ed-50a3-bef7-262c378787c8")
+		(property "Reference" "R602"
+			(at 187.96 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "499k"
+			(at 187.96 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 182.372 114.3 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 184.15 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "14bd8f80-1845-5064-8c3d-fe0271199682")
+		)
+		(pin "2"
+			(uuid "8101479b-c685-581a-aaee-ac0f419885cd")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/8b062b49-0171-5339-a2cb-eaa8f8cfd6cb"
+					(reference "R602")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "499k / 1%"
+			(at 184.15 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 209.55 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "84826ac5-06f9-5ac6-8afa-a61e274a7415")
+		(property "Reference" "C605"
+			(at 213.36 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22pF"
+			(at 213.36 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 210.515 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 209.55 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "83b6465c-db94-5023-a758-237a8acd4ebe")
+		)
+		(pin "2"
+			(uuid "461e309a-5929-5b0e-923a-7831c67b1fb0")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/8b062b49-0171-5339-a2cb-eaa8f8cfd6cb"
+					(reference "C605")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "22pF / 25V C0G"
+			(at 209.55 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 241.3 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e666cfd4-2eff-5c2a-9800-522998fd5048")
+		(property "Reference" "#FLG0601"
+			(at 241.3 109.855 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 241.3 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 241.3 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4ed5e903-a728-5922-b01b-12cfe9d1a2c3")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/8b062b49-0171-5339-a2cb-eaa8f8cfd6cb"
+					(reference "#FLG0601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(wire
+		(pts
+			(xy 74.93 69.85) (xy 69.85 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee158a65-d6d0-59b7-aa61-6503272fbaa2")
+	)
+	(hierarchical_label "MCU_EN_DCDC"
+		(shape input)
+		(at 69.85 69.85 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "4168c214-ef55-5815-b1b0-4243a1893c86")
+	)
+	(wire
+		(pts
+			(xy 82.55 77.47) (xy 82.55 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca693462-caa3-59ad-844d-ebc2739be048")
+	)
+	(hierarchical_label "GND"
+		(shape bidirectional)
+		(at 82.55 82.55 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "f7651a73-5a0c-5c90-9395-8ace34105e98")
+	)
+	(wire
+		(pts
+			(xy 90.17 67.31) (xy 95.25 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86054828-9917-59d0-88e7-61375046f1d4")
+	)
+	(label "MCU_HP_SW"
+		(at 95.25 67.31 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "aea77602-837d-59e6-89ca-3819d05889d7")
+	)
+	(wire
+		(pts
+			(xy 74.93 67.31) (xy 69.85 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfa895c7-f2cd-562a-a180-4e268b57b8a9")
+	)
+	(hierarchical_label "+3V3_D"
+		(shape input)
+		(at 69.85 67.31 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "54123da3-d8b9-596a-a7ad-6f60331f688d")
+	)
+	(wire
+		(pts
+			(xy 90.17 69.85) (xy 95.25 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc151038-da64-5c64-af79-de451729587f")
+	)
+	(hierarchical_label "MCU_FB_DCDC"
+		(shape bidirectional)
+		(at 95.25 69.85 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "409f5e81-f20e-5ed1-be11-a35edea1ba7c")
+	)
+	(wire
+		(pts
+			(xy 123.19 69.85) (xy 118.11 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "506e4b15-4743-5e24-b4a5-23fce10ade60")
+	)
+	(label "MCU_HP_SW"
+		(at 118.11 69.85 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "28d343cf-1970-5d54-913c-00d112a02215")
+	)
+	(wire
+		(pts
+			(xy 130.81 69.85) (xy 135.89 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2a4d317-ed74-5d38-8e84-ba7b64e5e708")
+	)
+	(hierarchical_label "ESP_VDD_HP"
+		(shape output)
+		(at 135.89 69.85 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "a56e356b-cde8-559d-bb71-897e0f9b99be")
+	)
+	(wire
+		(pts
+			(xy 38.1 91.44) (xy 38.1 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "966adc64-c9d5-5c15-8214-6c0ef3e0b97e")
+	)
+	(label "+3V3_D"
+		(at 38.1 86.36 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "9200101f-9fec-5f07-a87a-f3253107de68")
+	)
+	(wire
+		(pts
+			(xy 38.1 99.06) (xy 38.1 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36e8b3f5-e4e8-585f-bf47-f4b8de387e74")
+	)
+	(label "GND"
+		(at 38.1 104.14 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "c22d8fed-9258-56b4-b958-9cbe750436c3")
+	)
+	(wire
+		(pts
+			(xy 57.15 91.44) (xy 57.15 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb4e963a-1c1f-5d42-a7c7-e3f7f68d5794")
+	)
+	(label "+3V3_D"
+		(at 57.15 86.36 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "37a31883-c647-5256-bb7d-8297ea1f1519")
+	)
+	(wire
+		(pts
+			(xy 57.15 99.06) (xy 57.15 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92cf13be-f1d3-5378-a73b-74de9e422a16")
+	)
+	(label "GND"
+		(at 57.15 104.14 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "b1f7cfb1-c095-5297-a11b-147da9a95df7")
+	)
+	(wire
+		(pts
+			(xy 127.0 104.14) (xy 127.0 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47d241ed-00f2-51b4-8579-4d275e4b677f")
+	)
+	(label "ESP_VDD_HP"
+		(at 127.0 99.06 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "663911af-2b4e-5d07-be61-5289d2720aef")
+	)
+	(wire
+		(pts
+			(xy 127.0 111.76) (xy 127.0 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4a7d57c-eee2-56ee-87eb-05ac04fb0c8d")
+	)
+	(label "GND"
+		(at 127.0 116.84 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "35da3907-18d4-530c-8b0f-f0967879702c")
+	)
+	(wire
+		(pts
+			(xy 146.05 104.14) (xy 146.05 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "060eac68-14c9-55f7-bd58-da94758ac4a7")
+	)
+	(label "ESP_VDD_HP"
+		(at 146.05 99.06 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "6ae01511-8117-5646-a0eb-d0443e19f017")
+	)
+	(wire
+		(pts
+			(xy 146.05 111.76) (xy 146.05 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe003fc7-e7e9-5883-9f00-99f5461fc7b9")
+	)
+	(label "GND"
+		(at 146.05 116.84 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "bd963f43-d68e-5d97-9db8-b8412e2866b6")
+	)
+	(wire
+		(pts
+			(xy 184.15 78.74) (xy 184.15 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abca8997-7015-546d-86c5-964a453690f9")
+	)
+	(label "ESP_VDD_HP"
+		(at 184.15 73.66 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "47c4a450-8b6e-5596-8d4d-2c1d13f466ad")
+	)
+	(wire
+		(pts
+			(xy 184.15 86.36) (xy 184.15 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7f5cdfe-90e8-55da-bde9-3260998d82c5")
+	)
+	(label "MCU_FB_DCDC"
+		(at 184.15 91.44 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "bec0b6e3-5458-559e-a1a7-7c589ec5e2c8")
+	)
+	(wire
+		(pts
+			(xy 184.15 110.49) (xy 184.15 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d752ce61-af56-59f5-b341-3264945054d8")
+	)
+	(label "MCU_FB_DCDC"
+		(at 184.15 105.41 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "d7c55134-ef6b-575b-8c9a-bf7673265c03")
+	)
+	(wire
+		(pts
+			(xy 184.15 118.11) (xy 184.15 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e6191f6-1164-51af-9c0a-eeb2e17fb13a")
+	)
+	(label "GND"
+		(at 184.15 123.19 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "6d115128-aa62-5a9a-abaf-ebec6e28d694")
+	)
+	(wire
+		(pts
+			(xy 209.55 78.74) (xy 209.55 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d30a01bb-7ec0-5ab4-be2d-8d6c8de09dbd")
+	)
+	(label "ESP_VDD_HP"
+		(at 209.55 73.66 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "a8035d29-06bd-539d-a4e3-995b977090c0")
+	)
+	(wire
+		(pts
+			(xy 209.55 86.36) (xy 209.55 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "905da029-47c1-536d-9d6c-3a9024aa2e4d")
+	)
+	(label "MCU_FB_DCDC"
+		(at 209.55 91.44 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "1f76ef41-2da1-5a86-9b18-d7f867cda374")
+	)
+	(wire
+		(pts
+			(xy 241.3 107.95) (xy 241.3 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd9b09b0-5ffd-5de8-a6e4-45562e053301")
+	)
+	(label "ESP_VDD_HP"
+		(at 241.3 113.03 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a7a819a-a6a9-5b51-9f48-029cf76a39f0")
+	)
+	(text "ESP32-P4 V3 CONTROLLED HP CORE SUPPLY - ENGINEERING DRAFT"
+		(at 20 18 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "6add8e52-bedb-5736-9bd7-6cbaa1440f06")
+	)
+	(text "EN_DCDC and FB_DCDC connect to P4 pins 79 and 78. Not a fixed FPGA core supply."
+		(at 20 26 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "6c6b0b6c-9c90-5dbc-9755-2a7664256018")
+	)
+	(text "Populate both 499k resistors and 22pF for v3.x. P4 controls HP voltage and enable internally."
+		(at 20 145 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "e3c002e2-44f3-55e8-9946-e2290bcf5570")
+	)
+	(text "2.2uH + 2x22uF covers TI low-voltage LC recommendation; effective capacitance/load/loop validation pending."
+		(at 20 153 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "7c684fb3-dcdb-5e6d-a32b-77e0ac6d08f9")
+	)
+	(text "Place regulator beside P4. Verify 0.99-1.30V HP behavior, boot/sleep and source current in hardware."
+		(at 20 161 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "cf3eb28e-59c1-5dae-987d-9270770606d5")
+	)
+	(text "MCU controls/HP are connected. PWR_FLAG declares regulator source, not qualified voltage or operation."
+		(at 20 169 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "10bba59a-46a7-509d-a7d1-157bc999bb9d")
+	)
+)
+

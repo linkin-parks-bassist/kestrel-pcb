@@ -1,0 +1,610 @@
+{
+  "status": "Provisional input copper and feeds to both main buck VINs; source/load/fault/current/thermal unqualified",
+  "net": "/9V_PROTECTED",
+  "anchors": {
+    "J401.1": [
+      46.0,
+      58.0
+    ],
+    "J401.2": [
+      46.0,
+      52.0
+    ],
+    "J401.3": [
+      50.7,
+      55.0
+    ],
+    "F401.1": [
+      49.0625,
+      58.5
+    ],
+    "F401.2": [
+      53.3375,
+      58.5
+    ],
+    "Q401.1": [
+      36.525,
+      57.095
+    ],
+    "Q401.2": [
+      36.525,
+      58.365
+    ],
+    "Q401.3": [
+      36.525,
+      59.635
+    ],
+    "Q401.4": [
+      36.525,
+      60.905
+    ],
+    "Q401.5": [
+      41.475,
+      60.905
+    ],
+    "Q401.6": [
+      41.475,
+      59.635
+    ],
+    "Q401.7": [
+      41.475,
+      58.365
+    ],
+    "Q401.8": [
+      41.475,
+      57.095
+    ],
+    "R401.1": [
+      48.675,
+      65.5
+    ],
+    "R401.2": [
+      50.325,
+      65.5
+    ],
+    "D401.1": [
+      35.5,
+      54.0
+    ],
+    "D401.2": [
+      39.5,
+      54.0
+    ],
+    "C401.1": [
+      34.325,
+      64.5
+    ],
+    "C401.2": [
+      37.275,
+      64.5
+    ],
+    "C402.1": [
+      44.525,
+      61.5
+    ],
+    "C402.2": [
+      46.075,
+      61.5
+    ],
+    "TP401.1": [
+      52.0,
+      52.0
+    ],
+    "TP402.1": [
+      36.0,
+      69.8
+    ],
+    "TP403.1": [
+      49.0,
+      68.0
+    ],
+    "C101.1": [
+      56.3,
+      72.975
+    ],
+    "C101.2": [
+      56.3,
+      70.025
+    ],
+    "C107.1": [
+      79.3,
+      56.975
+    ],
+    "C107.2": [
+      79.3,
+      54.025
+    ],
+    "U101.3": [
+      54.1375,
+      77.05
+    ],
+    "U102.3": [
+      77.1375,
+      61.05
+    ]
+  },
+  "anchor_nets": {
+    "J401.1": "/GND",
+    "J401.2": "/Centre-negative 9 V input/9V_RAW",
+    "J401.3": "unconnected-(J401-Pad3)",
+    "F401.1": "/Centre-negative 9 V input/9V_RAW",
+    "F401.2": "/Centre-negative 9 V input/9V_FUSED",
+    "Q401.1": "/9V_PROTECTED",
+    "Q401.2": "/9V_PROTECTED",
+    "Q401.3": "/9V_PROTECTED",
+    "Q401.4": "/Centre-negative 9 V input/INPUT_GATE",
+    "Q401.5": "/Centre-negative 9 V input/9V_FUSED",
+    "Q401.6": "/Centre-negative 9 V input/9V_FUSED",
+    "Q401.7": "/Centre-negative 9 V input/9V_FUSED",
+    "Q401.8": "/Centre-negative 9 V input/9V_FUSED",
+    "R401.1": "/Centre-negative 9 V input/INPUT_GATE",
+    "R401.2": "/GND",
+    "D401.1": "/9V_PROTECTED",
+    "D401.2": "/GND",
+    "C401.1": "/9V_PROTECTED",
+    "C401.2": "/GND",
+    "C402.1": "/9V_PROTECTED",
+    "C402.2": "/GND",
+    "TP401.1": "/Centre-negative 9 V input/9V_RAW",
+    "TP402.1": "/9V_PROTECTED",
+    "TP403.1": "/GND",
+    "C101.1": "/9V_PROTECTED",
+    "C101.2": "/GND",
+    "C107.1": "/9V_PROTECTED",
+    "C107.2": "/GND",
+    "U101.3": "/9V_PROTECTED",
+    "U102.3": "/9V_PROTECTED"
+  },
+  "via_diameter_mm": 0.7,
+  "via_drill_mm": 0.3,
+  "via_positions": [
+    [
+      55,
+      58.5
+    ],
+    [
+      42.5,
+      60.905
+    ],
+    [
+      34.325,
+      66.8
+    ],
+    [
+      44.525,
+      63
+    ],
+    [
+      41.4,
+      54
+    ],
+    [
+      37.275,
+      66.3
+    ],
+    [
+      47.4,
+      61.5
+    ],
+    [
+      51.5,
+      65.5
+    ],
+    [
+      49,
+      66.8
+    ]
+  ],
+  "via_net_names": [
+    "/Centre-negative 9 V input/9V_FUSED",
+    "/Centre-negative 9 V input/9V_FUSED",
+    "/9V_PROTECTED",
+    "/9V_PROTECTED",
+    "/GND",
+    "/GND",
+    "/GND",
+    "/GND",
+    "/GND"
+  ],
+  "via_diameters_mm": [
+    0.9,
+    0.7,
+    0.9,
+    0.9,
+    0.7,
+    0.7,
+    0.7,
+    0.7,
+    0.7
+  ],
+  "paths": [
+    {
+      "net": "/Centre-negative 9 V input/9V_RAW",
+      "width_mm": 0.8,
+      "points": [
+        [
+          46.0,
+          52.0
+        ],
+        [
+          52.0,
+          52.0
+        ]
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "net": "/Centre-negative 9 V input/9V_RAW",
+      "width_mm": 0.6,
+      "points": [
+        [
+          46.0,
+          52.0
+        ],
+        [
+          48.5,
+          54.5
+        ],
+        [
+          48.5,
+          58.5
+        ],
+        [
+          49.0625,
+          58.5
+        ]
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "net": "/Centre-negative 9 V input/9V_FUSED",
+      "width_mm": 0.8,
+      "points": [
+        [
+          53.3375,
+          58.5
+        ],
+        [
+          55,
+          58.5
+        ]
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "net": "/Centre-negative 9 V input/9V_FUSED",
+      "width_mm": 0.8,
+      "points": [
+        [
+          55,
+          58.5
+        ],
+        [
+          55,
+          60.5
+        ],
+        [
+          43,
+          60.5
+        ],
+        [
+          42.5,
+          60.905
+        ]
+      ],
+      "layer": "B.Cu"
+    },
+    {
+      "net": "/Centre-negative 9 V input/9V_FUSED",
+      "width_mm": 0.6,
+      "points": [
+        [
+          42.5,
+          60.905
+        ],
+        [
+          41.475,
+          60.905
+        ],
+        [
+          41.475,
+          59.635
+        ],
+        [
+          41.475,
+          58.365
+        ],
+        [
+          41.475,
+          57.095
+        ]
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "net": "/9V_PROTECTED",
+      "width_mm": 0.6,
+      "points": [
+        [
+          36.525,
+          57.095
+        ],
+        [
+          36.525,
+          58.365
+        ],
+        [
+          36.525,
+          59.635
+        ]
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "net": "/9V_PROTECTED",
+      "width_mm": 0.8,
+      "points": [
+        [
+          35.5,
+          54.0
+        ],
+        [
+          36.525,
+          57.095
+        ]
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "net": "/9V_PROTECTED",
+      "width_mm": 0.8,
+      "points": [
+        [
+          34.325,
+          64.5
+        ],
+        [
+          34.325,
+          58
+        ],
+        [
+          36.525,
+          58.365
+        ]
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "net": "/9V_PROTECTED",
+      "width_mm": 0.8,
+      "points": [
+        [
+          34.325,
+          64.5
+        ],
+        [
+          34.325,
+          66.8
+        ]
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "net": "/9V_PROTECTED",
+      "width_mm": 0.6,
+      "points": [
+        [
+          44.525,
+          61.5
+        ],
+        [
+          44.525,
+          63
+        ]
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "net": "/9V_PROTECTED",
+      "width_mm": 1,
+      "points": [
+        [
+          34.325,
+          66.8
+        ],
+        [
+          33.1,
+          65.575
+        ],
+        [
+          33.1,
+          63
+        ],
+        [
+          44.525,
+          63
+        ]
+      ],
+      "layer": "B.Cu"
+    },
+    {
+      "net": "/9V_PROTECTED",
+      "width_mm": 0.5,
+      "points": [
+        [
+          34.325,
+          66.8
+        ],
+        [
+          34.325,
+          68.125
+        ],
+        [
+          36.0,
+          69.8
+        ]
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "net": "/Centre-negative 9 V input/INPUT_GATE",
+      "width_mm": 0.25,
+      "points": [
+        [
+          36.525,
+          60.905
+        ],
+        [
+          36.525,
+          62.1
+        ],
+        [
+          40.5,
+          62.1
+        ],
+        [
+          43.9,
+          65.5
+        ],
+        [
+          48.675,
+          65.5
+        ]
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "net": "/GND",
+      "width_mm": 0.6,
+      "points": [
+        [
+          39.5,
+          54.0
+        ],
+        [
+          41.4,
+          54
+        ]
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "net": "/GND",
+      "width_mm": 0.5,
+      "points": [
+        [
+          37.275,
+          64.5
+        ],
+        [
+          37.275,
+          66.3
+        ]
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "net": "/GND",
+      "width_mm": 0.35,
+      "points": [
+        [
+          46.075,
+          61.5
+        ],
+        [
+          47.4,
+          61.5
+        ]
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "net": "/GND",
+      "width_mm": 0.25,
+      "points": [
+        [
+          50.325,
+          65.5
+        ],
+        [
+          51.5,
+          65.5
+        ]
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "net": "/GND",
+      "width_mm": 0.35,
+      "points": [
+        [
+          49.0,
+          68.0
+        ],
+        [
+          49,
+          66.8
+        ]
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "net": "/9V_PROTECTED",
+      "width_mm": 1,
+      "layer": "B.Cu",
+      "points": [
+        [
+          44.525,
+          63
+        ],
+        [
+          56.5,
+          63
+        ],
+        [
+          58.05,
+          64.55
+        ],
+        [
+          58.05,
+          72.975
+        ]
+      ]
+    },
+    {
+      "net": "/9V_PROTECTED",
+      "width_mm": 1,
+      "layer": "B.Cu",
+      "points": [
+        [
+          58.05,
+          67
+        ],
+        [
+          60,
+          65.05
+        ],
+        [
+          60,
+          53
+        ],
+        [
+          63,
+          50
+        ],
+        [
+          78,
+          50
+        ],
+        [
+          81.05,
+          53.05
+        ],
+        [
+          81.05,
+          56.975
+        ]
+      ]
+    }
+  ]
+}

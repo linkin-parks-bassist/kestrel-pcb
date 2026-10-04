@@ -1,0 +1,151 @@
+{
+  "status": "provisional packaging study; not manufacturing dimensions",
+  "solids_valid": true,
+  "intersections": [
+    {
+      "a": "shell",
+      "b": "base",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "shell",
+      "b": "pcb",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "shell",
+      "b": "display_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "shell",
+      "b": "switch_1_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "shell",
+      "b": "switch_2_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "shell",
+      "b": "input_jack",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "shell",
+      "b": "output_jack",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "base",
+      "b": "pcb",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "base",
+      "b": "display_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "base",
+      "b": "switch_1_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "base",
+      "b": "switch_2_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "base",
+      "b": "input_jack",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "base",
+      "b": "output_jack",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "pcb",
+      "b": "display_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "pcb",
+      "b": "switch_1_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "pcb",
+      "b": "switch_2_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "pcb",
+      "b": "input_jack",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "pcb",
+      "b": "output_jack",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "display_envelope",
+      "b": "switch_1_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "display_envelope",
+      "b": "switch_2_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "display_envelope",
+      "b": "input_jack",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "display_envelope",
+      "b": "output_jack",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "switch_1_body",
+      "b": "switch_2_body",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "switch_1_body",
+      "b": "input_jack",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "switch_1_body",
+      "b": "output_jack",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "switch_2_body",
+      "b": "input_jack",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "switch_2_body",
+      "b": "output_jack",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "input_jack",
+      "b": "output_jack",
+      "intersection_mm3": 0.0
+    }
+  ],
+  "limits": [
+    "Display, switch and jack bodies are unverified envelopes.",
+    "PCB has no electrical components or copper.",
+    "Fasteners, display retention, FPC bend and cable paths are not yet validated."
+  ]
+}

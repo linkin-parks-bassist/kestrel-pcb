@@ -1,0 +1,17 @@
+{
+  "status": "PASS all six FPGA configuration flash nets have physical continuity",
+  "track_segments": 63,
+  "vias": 10,
+  "routed_planar_length_mm": {
+    "/Bare GW2AR-18 support/CONFIG_CLK": 35.09674603121264,
+    "/Bare GW2AR-18 support/FLASH_CS": 30.788173997462053,
+    "/Bare GW2AR-18 support/FLASH_DI": 22.79696759095977,
+    "/Bare GW2AR-18 support/FLASH_DO": 27.428727846596104,
+    "/Bare GW2AR-18 support/FLASH_WP": 2.1152363023084213,
+    "/Bare GW2AR-18 support/FLASH_HOLD": 3.2037139333934452
+  },
+  "limits": [
+    "Planar lengths cover owned configuration branches, exclude via depth and do not establish boot timing or return behavior.",
+    "Flash topology checked; JTAG/reset/oscillator continuity is checked separately by check_fpga_service_local.py; audio signal continuity is checked separately by check_fpga_audio_local.py; Mute-control/sense-net and supervisor-supply continuity is checked by check_audio_mute_local.py; LDO/held-supply and sensed-rail source continuity is checked by check_analogue_power_local.py; DAC supply/pump and full held-rail continuity is checked by check_dac_support_local.py; ADC supply/bypass continuity is checked by check_adc_power_local.py; boot, loaded timing, noise, return and assembly remain unqualified."
+  ]
+}

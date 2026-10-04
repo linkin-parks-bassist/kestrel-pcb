@@ -1,0 +1,269 @@
+{
+  "status": "PASS eight complete footswitch signal nets, source-to-load supply branch and ten plane-ground returns",
+  "track_segments": 118,
+  "vias": 37,
+  "via_in_pad_sites": [
+    {
+      "pad": "R1106.1",
+      "position": [
+        128.0,
+        130.325
+      ]
+    },
+    {
+      "pad": "R1106.2",
+      "position": [
+        128.0,
+        128.675
+      ]
+    },
+    {
+      "pad": "C1103.1",
+      "position": [
+        122.725,
+        127.5
+      ]
+    },
+    {
+      "pad": "C1103.2",
+      "position": [
+        124.275,
+        127.5
+      ]
+    },
+    {
+      "pad": "R1104.1",
+      "position": [
+        145.675,
+        127.5
+      ]
+    },
+    {
+      "pad": "R1104.2",
+      "position": [
+        147.325,
+        127.5
+      ]
+    },
+    {
+      "pad": "R1102.1",
+      "position": [
+        78.825,
+        125.6
+      ]
+    },
+    {
+      "pad": "R1102.2",
+      "position": [
+        77.175,
+        125.6
+      ]
+    },
+    {
+      "pad": "D1101.1",
+      "position": [
+        72.5,
+        134.05
+      ]
+    },
+    {
+      "pad": "R1101.1",
+      "position": [
+        71.5,
+        130.325
+      ]
+    },
+    {
+      "pad": "R1101.2",
+      "position": [
+        71.5,
+        128.675
+      ]
+    },
+    {
+      "pad": "U1101.2",
+      "position": [
+        76.9,
+        131.0
+      ]
+    },
+    {
+      "pad": "U1101.5",
+      "position": [
+        79.1,
+        130.35
+      ]
+    },
+    {
+      "pad": "C1101.1",
+      "position": [
+        74.725,
+        128.0
+      ]
+    },
+    {
+      "pad": "C1101.2",
+      "position": [
+        76.275,
+        128.0
+      ]
+    },
+    {
+      "pad": "D1102.1",
+      "position": [
+        150.0,
+        127.05
+      ]
+    },
+    {
+      "pad": "D1102.2",
+      "position": [
+        150.0,
+        124.95
+      ]
+    },
+    {
+      "pad": "U1102.4",
+      "position": [
+        123.1,
+        131.65
+      ]
+    },
+    {
+      "pad": "U1102.5",
+      "position": [
+        123.1,
+        130.35
+      ]
+    },
+    {
+      "pad": "R1103.1",
+      "position": [
+        81.0,
+        126.825
+      ]
+    },
+    {
+      "pad": "R1103.2",
+      "position": [
+        81.0,
+        125.175
+      ]
+    },
+    {
+      "pad": "C1102.1",
+      "position": [
+        81.775,
+        129.0
+      ]
+    },
+    {
+      "pad": "C1102.2",
+      "position": [
+        80.225,
+        129.0
+      ]
+    },
+    {
+      "pad": "R1105.1",
+      "position": [
+        124.825,
+        125.0
+      ]
+    },
+    {
+      "pad": "C1104.1",
+      "position": [
+        126.775,
+        133.0
+      ]
+    },
+    {
+      "pad": "C1104.2",
+      "position": [
+        125.225,
+        133.0
+      ]
+    }
+  ],
+  "routed_planar_length_mm": {
+    "/Two momentary footswitch inputs/FOOT_RAW_0": 6.70992324049175,
+    "/Two momentary footswitch inputs/FOOT_RC_0": 10.920330466364176,
+    "/Two momentary footswitch inputs/FOOT_BUF_0": 5.61200576850928,
+    "/MCU_FOOT0_N": 55.46359120657514,
+    "/Two momentary footswitch inputs/FOOT_RAW_1": 9.770584412271571,
+    "/Two momentary footswitch inputs/FOOT_RC_1": 32.48835136523794,
+    "/Two momentary footswitch inputs/FOOT_BUF_1": 5.484187309203678,
+    "/MCU_FOOT1_N": 47.53373383973496,
+    "/+3V3_D": 101.50374122379766
+  },
+  "complete_signal_nets": {
+    "/Two momentary footswitch inputs/FOOT_RAW_0": [
+      "D1101.1",
+      "J1101.1",
+      "R1101.1"
+    ],
+    "/Two momentary footswitch inputs/FOOT_RC_0": [
+      "C1101.1",
+      "R1101.2",
+      "R1102.2",
+      "U1101.2"
+    ],
+    "/Two momentary footswitch inputs/FOOT_BUF_0": [
+      "R1103.1",
+      "U1101.4"
+    ],
+    "/MCU_FOOT0_N": [
+      "R1103.2",
+      "U701.22"
+    ],
+    "/Two momentary footswitch inputs/FOOT_RAW_1": [
+      "D1102.1",
+      "J1102.1",
+      "R1104.1"
+    ],
+    "/Two momentary footswitch inputs/FOOT_RC_1": [
+      "C1103.1",
+      "R1104.2",
+      "R1105.2",
+      "U1102.2"
+    ],
+    "/Two momentary footswitch inputs/FOOT_BUF_1": [
+      "R1106.1",
+      "U1102.4"
+    ],
+    "/MCU_FOOT1_N": [
+      "R1106.2",
+      "U701.23"
+    ]
+  },
+  "supply_pad_subset": [
+    "C1102.1",
+    "C1104.1",
+    "L102.2",
+    "R1102.1",
+    "R1105.1",
+    "U1101.5",
+    "U1102.5"
+  ],
+  "source_via": [
+    65.45,
+    118.8
+  ],
+  "ground_anchors": [
+    "C1103.2",
+    "J1101.2",
+    "D1101.2",
+    "U1101.3",
+    "C1101.2",
+    "D1102.2",
+    "U1102.3",
+    "C1102.2",
+    "J1102.2",
+    "C1104.2"
+  ],
+  "limits": [
+    "Supply checks cover only the declared footswitch branch; other main loads remain unfinished.",
+    "Physical topology only; contact reliability/debounce, effective RC/bypass, noise/coupling/returns, ESD/transients, loaded timing, rail drop/current/thermal, firmware and via-in-pad fabrication/assembly remain unqualified."
+  ]
+}

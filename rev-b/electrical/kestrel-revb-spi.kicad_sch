@@ -1,0 +1,4086 @@
+(kicad_sch
+	(version 20260101)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "937b8342-0cc5-52c5-9657-303d9d5d0505")
+	(paper "A3")
+	(lib_symbols
+		(symbol "KestrelSPI:SN74AXC4T774PW"
+			(pin_names
+				(offset 0.508)
+			)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+				)
+			)
+			(property "Value" "SN74AXC4T774PW"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74axc4t774.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+				)
+			)
+			(symbol "SN74AXC4T774PW_1_1"
+				(rectangle
+					(start -12.7 21.59)
+					(end 12.7 -21.59)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -15.24 19.05 0)
+					(length 2.54)
+					(name "DIR1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 16.51 0)
+					(length 2.54)
+					(name "DIR2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 13.97 0)
+					(length 2.54)
+					(name "A1_CS"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 11.43 0)
+					(length 2.54)
+					(name "A2_CLK"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 8.89 0)
+					(length 2.54)
+					(name "A3_MOSI"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 6.35 0)
+					(length 2.54)
+					(name "A4_MISO"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 3.81 0)
+					(length 2.54)
+					(name "DIR3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 1.27 0)
+					(length 2.54)
+					(name "DIR4"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -1.27 0)
+					(length 2.54)
+					(name "OE_N"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -15.24 -3.81 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -6.35 0)
+					(length 2.54)
+					(name "B4_MISO"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -8.89 0)
+					(length 2.54)
+					(name "B3_MOSI"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -11.43 0)
+					(length 2.54)
+					(name "B2_CLK"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -13.97 0)
+					(length 2.54)
+					(name "B1_CS"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -15.24 -16.51 0)
+					(length 2.54)
+					(name "VCCB"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -15.24 -19.05 0)
+					(length 2.54)
+					(name "VCCA"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "KestrelAudio:TPS3808G01"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TPS3808G01"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+				(at -2.54 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps3808.pdf"
+				(at -2.54 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Low-Quiescent-Current, Programmable-Delay Supervisory Circuit, SOT-23-6"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "supply voltage supervisor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TPS3808G01_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TPS3808G01_1_1"
+				(pin open_collector line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "~{RESET}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "~{MR}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "CT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "SENSE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "74xGxx:SN74LVC1G00DCK"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -5.08 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SN74LVC1G00DCK"
+				(at 7.62 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:Texas_R-PDSO-G5_DCK-5"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74lvc1g00.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Single NAND Gate, Low-Voltage CMOS, SOT-353"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Single Gate NAND LVC CMOS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Texas?R?PDSO?G5?DCK*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SN74LVC1G00DCK_0_1"
+				(arc
+					(start 0 5.08)
+					(mid 5.0579 0)
+					(end 0 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -5.08) (xy -7.62 -5.08) (xy -7.62 5.08) (xy 0 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SN74LVC1G00DCK_1_1"
+				(pin input line
+					(at -15.24 2.54 0)
+					(length 7.62)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -2.54 0)
+					(length 7.62)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output inverted
+					(at 12.7 0 180)
+					(length 7.62)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(symbol
+		(lib_id "KestrelSPI:SN74AXC4T774PW")
+		(at 80.01 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ed14ec00-2ec1-5db5-a1a8-7571ea583554")
+		(property "Reference" "U801"
+			(at 67.01 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SN74AXC4T774PWR"
+			(at 67.01 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
+			(at 80.01 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74axc4t774.pdf"
+			(at 80.01 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 80.01 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7a71cfa0-ece6-5516-bd56-a00fbaaabf3b")
+		)
+		(pin "10"
+			(uuid "c777d33f-eed1-5cfd-a106-34b7908bb04f")
+		)
+		(pin "11"
+			(uuid "0e363f2d-7600-5567-a8cd-039eabff3ed6")
+		)
+		(pin "12"
+			(uuid "8bf51e7f-c94c-5c39-8e7b-4de5c25d50b1")
+		)
+		(pin "13"
+			(uuid "513bb3b7-fbeb-53af-9c2a-aff7213313bb")
+		)
+		(pin "14"
+			(uuid "7c039dd6-dcbd-5f95-b166-a78df6c52d7c")
+		)
+		(pin "15"
+			(uuid "97a555dd-b229-5f9f-bd37-81cee231a08a")
+		)
+		(pin "16"
+			(uuid "60ddfd01-f45e-54da-90d5-6a3d1ba25406")
+		)
+		(pin "2"
+			(uuid "e0470a5b-4269-5f6a-8241-e187e6a22bb0")
+		)
+		(pin "3"
+			(uuid "b76f3cb9-761d-5828-864e-4b16f27dc284")
+		)
+		(pin "4"
+			(uuid "be6f46f2-21e8-5c4a-b6a0-6268b30d0103")
+		)
+		(pin "5"
+			(uuid "a3265ec5-382a-5070-b547-13d8427b686e")
+		)
+		(pin "6"
+			(uuid "6c2a8473-c6ac-5d77-a4c2-68f4aea0ab98")
+		)
+		(pin "7"
+			(uuid "71f895dc-af9d-5358-ac8d-be239fdb372a")
+		)
+		(pin "8"
+			(uuid "49b75add-61a5-5d12-a51e-e96a4befde4f")
+		)
+		(pin "9"
+			(uuid "c48f29d9-1b1c-5f6b-ae66-4f519e336479")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4"
+					(reference "U801")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "KestrelAudio:TPS3808G01")
+		(at 209.55 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "abfeaeb1-5a21-55f2-a7e4-9a46de083162")
+		(property "Reference" "U802"
+			(at 196.55 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TPS3808G01DBVR"
+			(at 196.55 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 207.01 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps3808.pdf"
+			(at 207.01 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Low-Quiescent-Current, Programmable-Delay Supervisory Circuit, SOT-23-6"
+			(at 209.55 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0e6cea69-277e-5855-ad72-e4cdbf242251")
+		)
+		(pin "2"
+			(uuid "c27fbef1-eca4-5d7f-92b4-babbd7f0752e")
+		)
+		(pin "3"
+			(uuid "bb40771d-58c5-5af5-969a-e54cfc7acf7d")
+		)
+		(pin "4"
+			(uuid "5fdd536f-9df3-577d-a572-594530f502aa")
+		)
+		(pin "5"
+			(uuid "81ba3084-ca30-5c1d-93a1-1596c5ed2c64")
+		)
+		(pin "6"
+			(uuid "1a1af0d3-2cd0-55b0-8233-1a08edb02e13")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4"
+					(reference "U802")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xGxx:SN74LVC1G00DCK")
+		(at 325.12 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0503ca53-eb87-53c7-b5b6-bd766b4c57f1")
+		(property "Reference" "U803"
+			(at 312.12 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SN74LVC1G00DCKR"
+			(at 312.12 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:Texas_R-PDSO-G5_DCK-5"
+			(at 325.12 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74lvc1g00.pdf"
+			(at 325.12 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single NAND Gate, Low-Voltage CMOS, SOT-353"
+			(at 325.12 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e1193bbf-9c3f-5158-b625-66be1ac02ee6")
+		)
+		(pin "2"
+			(uuid "493e38f4-dd34-5eb3-a49e-252669f54674")
+		)
+		(pin "3"
+			(uuid "710df7cf-ce46-53b3-8c91-04a2f0790a2c")
+		)
+		(pin "4"
+			(uuid "49e7f336-f2fe-578e-b1cd-439b3a9e8c0d")
+		)
+		(pin "5"
+			(uuid "84829469-8151-5e4e-9f34-ea72255879f7")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4"
+					(reference "U803")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 39.37 115.57 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a714309e-9d08-59f2-ac40-f947118877e2")
+		(property "Reference" "R801"
+			(at 43.18 114.3 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33ohm"
+			(at 43.18 116.84 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 39.37 117.348 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 39.37 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "587a96c8-b02c-55d5-ac02-525559e11aa9")
+		)
+		(pin "2"
+			(uuid "b5e56179-f788-5cbe-b918-d375cf18be95")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4"
+					(reference "R801")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "33ohm / output damping / tune on PCB"
+			(at 39.37 115.57000000000001 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 124.46 115.57 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a4b32a12-9b6b-5c8e-9454-1ef727f22f59")
+		(property "Reference" "R802"
+			(at 128.27 114.3 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33ohm"
+			(at 128.27 116.84 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 124.46 117.348 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 124.46 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "05840155-0adb-5375-839a-bcf0508ee4a2")
+		)
+		(pin "2"
+			(uuid "881892a6-736a-518d-880e-20d8a76760f7")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4"
+					(reference "R802")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "33ohm / output damping / tune on PCB"
+			(at 124.46000000000001 115.57000000000001 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 209.55 115.57 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c7f9a9c1-3ed6-5430-b956-a8db4e21b79d")
+		(property "Reference" "R803"
+			(at 213.36 114.3 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33ohm"
+			(at 213.36 116.84 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 209.55 117.348 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 209.55 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2b08f094-f7d9-5387-8e6c-e8c42a719e84")
+		)
+		(pin "2"
+			(uuid "a7fd6bef-8d88-51d6-9506-8fd21cea38c9")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4"
+					(reference "R803")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "33ohm / output damping / tune on PCB"
+			(at 209.55 115.57000000000001 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 294.64 115.57 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "efbfe24d-8057-5af2-92f9-4accfdf72313")
+		(property "Reference" "R804"
+			(at 298.45 114.3 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33ohm"
+			(at 298.45 116.84 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 294.64 117.348 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 294.64 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 294.64 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4c5a46ed-990c-54cd-9e96-804111f917e5")
+		)
+		(pin "2"
+			(uuid "30d76840-151d-54a9-bac1-9f7412f35b68")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4"
+					(reference "R804")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "33ohm / output damping / tune on PCB"
+			(at 294.64 115.57000000000001 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 39.37 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ddfd8d5b-c4c5-5f18-9770-02ac7c06d2ce")
+		(property "Reference" "R805"
+			(at 43.18 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 43.18 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 37.592 149.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 39.37 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d6fbbdff-bca1-54a6-b670-50380d4add86")
+		)
+		(pin "2"
+			(uuid "83690b65-f64a-5b2a-890e-c18802e1061f")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4"
+					(reference "R805")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "4.7k / 1% / FPGA CS idle"
+			(at 39.37 149.86 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 110.49 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00e42609-43d1-56b9-9845-299f1986acc2")
+		(property "Reference" "R806"
+			(at 114.3 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 114.3 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 108.712 149.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 110.49 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9fa42d14-21e4-5bfd-890b-db8c9bdd7648")
+		)
+		(pin "2"
+			(uuid "b5f5a605-4149-500d-87d7-96a6c312a764")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4"
+					(reference "R806")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "4.7k / 1% / MCU CS idle"
+			(at 110.49 149.86 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 180.34 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3bef2451-889f-550d-a88d-58edf57cfcbb")
+		(property "Reference" "R807"
+			(at 184.15 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 184.15 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 178.562 149.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 180.34 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "57a06e73-7bd8-52f8-ab62-60ca5916f086")
+		)
+		(pin "2"
+			(uuid "e7c04116-b4f9-5fca-92ef-d10ffd60f6ce")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4"
+					(reference "R807")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "10k / 1% / OE default disabled"
+			(at 180.34 149.86 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 250.19 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "33b99a85-5081-5b24-8e44-508443e48727")
+		(property "Reference" "R808"
+			(at 254.0 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 254.0 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 248.412 149.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 250.19 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "acb49219-328f-5c94-8949-1c02170c978c")
+		)
+		(pin "2"
+			(uuid "afd453b1-228f-52de-9c36-b3abfbfddd47")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4"
+					(reference "R808")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "10k / 1% / firmware enable default off"
+			(at 250.19 149.86 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 320.04 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3100144b-a48c-5ff3-b571-07878105a52d")
+		(property "Reference" "R809"
+			(at 323.85 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 323.85 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 318.262 149.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 320.04 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 320.04 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b1b6c3d5-e157-5c56-8b9b-5ece3527a11f")
+		)
+		(pin "2"
+			(uuid "d441f384-081e-5965-a528-7f88762d4360")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4"
+					(reference "R809")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "10k / 1% / open drain release pullup"
+			(at 320.04 149.86 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 39.37 190.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5276ddfd-405d-50d6-a4f1-7f7e6567510b")
+		(property "Reference" "R810"
+			(at 43.18 189.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "63.4k"
+			(at 43.18 191.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 37.592 190.5 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 39.37 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1d39d886-65ab-59ca-94ee-41e249fb09d7")
+		)
+		(pin "2"
+			(uuid "8df09289-6fcf-568b-a5b7-4d383b0e1218")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4"
+					(reference "R810")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "63.4k / 0.1% / IO monitor high"
+			(at 39.37 190.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 110.49 190.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "abb74d85-3627-5591-9573-4d48d4005b95")
+		(property "Reference" "R811"
+			(at 114.3 189.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 114.3 191.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 108.712 190.5 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 110.49 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "10c44bc2-15c9-53fa-904a-dcbf49950ecf")
+		)
+		(pin "2"
+			(uuid "8aaf84de-20af-5dc4-bf8e-b97c90165407")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4"
+					(reference "R811")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "10k / 0.1% / IO monitor low"
+			(at 110.49 190.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 39.37 229.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fefc4b22-326c-532b-84de-42224a115eb5")
+		(property "Reference" "C801"
+			(at 43.18 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 43.18 231.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 40.335 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KO5NNN.do"
+			(at 39.37 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 39.37 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b6c99191-79d6-54bb-bfe6-93e9e8d62d1b")
+		)
+		(pin "2"
+			(uuid "1f35ce21-1048-5fbc-b567-7068bd527fb5")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4"
+					(reference "C801")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "100nF / 16V X7R / local bypass"
+			(at 39.37 229.87 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 110.49 229.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7fb34dc8-c9dd-5ead-8e59-aa62bde5c112")
+		(property "Reference" "C802"
+			(at 114.3 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 114.3 231.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 111.455 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KO5NNN.do"
+			(at 110.49 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 110.49 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6d82656c-3c0d-51ba-9de1-0c60036938da")
+		)
+		(pin "2"
+			(uuid "d650cc2d-cce1-5fb9-875e-b8213677a4f3")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4"
+					(reference "C802")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "100nF / 16V X7R / local bypass"
+			(at 110.49 229.87 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 180.34 229.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ec99b78e-6783-55c5-baca-e3d45b4b4b07")
+		(property "Reference" "C803"
+			(at 184.15 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 184.15 231.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 181.305 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 180.34 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1cc20049-492a-5145-9a1d-0ad9679b584e")
+		)
+		(pin "2"
+			(uuid "d49afbe6-60ba-56ac-9a81-f18ccc590758")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4"
+					(reference "C803")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "100nF / 16V X7R / local bypass"
+			(at 180.34 229.87 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 250.19 229.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "de724746-192a-54f8-821e-dbfd5c5a7b32")
+		(property "Reference" "C804"
+			(at 254.0 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 254.0 231.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 251.155 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 250.19 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "890d32fe-d5fc-52c8-8af9-16bafd26bd59")
+		)
+		(pin "2"
+			(uuid "740bcc90-9a47-5a18-bb23-112acb69763b")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4"
+					(reference "C804")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "100nF / 16V X7R / local bypass"
+			(at 250.19 229.87 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 180.34 190.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4372173c-a3bb-5175-9521-3370392d9d95")
+		(property "Reference" "C805"
+			(at 184.15 189.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1nF"
+			(at 184.15 191.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 181.305 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 180.34 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "93662a49-ebea-50cb-9d47-81666304f4d4")
+		)
+		(pin "2"
+			(uuid "26db892c-a3aa-5268-acb6-8fd6b600192a")
+		)
+		(instances
+			(project "kestrel-revb"
+				(path "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4"
+					(reference "C805")
+					(unit 1)
+				)
+			)
+		)
+		(property "Rating" "1nF / 25V C0G / SENSE filter"
+			(at 180.34 190.5 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(wire
+		(pts
+			(xy 64.77 45.72) (xy 59.69 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "518ec6f9-0fc1-589d-9dda-8ea79b61fd8c")
+	)
+	(hierarchical_label "+3V3_D"
+		(shape input)
+		(at 59.69 45.72 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "0e446b16-7773-52ec-b524-06b8bd6e5034")
+	)
+	(wire
+		(pts
+			(xy 64.77 48.26) (xy 59.69 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a10c4c7e-2686-5d7b-a576-1c28795afac6")
+	)
+	(label "+3V3_D"
+		(at 59.69 48.26 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "050b3b2d-1dd3-5d82-a5ff-2943f2baa1e4")
+	)
+	(wire
+		(pts
+			(xy 64.77 50.8) (xy 59.69 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "665e8a13-c70b-5377-9d65-4eb6b070fcc2")
+	)
+	(hierarchical_label "MCU_RAW_CS"
+		(shape input)
+		(at 59.69 50.8 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "bfe57de7-bbcc-5e4c-a3c4-ed1d36488184")
+	)
+	(wire
+		(pts
+			(xy 64.77 53.34) (xy 59.69 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f495153-08b3-5298-823e-433608b844b8")
+	)
+	(hierarchical_label "MCU_RAW_CLK"
+		(shape input)
+		(at 59.69 53.34 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "75ed3a1c-dd27-5270-832c-c9d211591666")
+	)
+	(wire
+		(pts
+			(xy 64.77 55.88) (xy 59.69 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d248225d-fdcc-57dc-ae6b-a95b9560fe64")
+	)
+	(hierarchical_label "MCU_RAW_MOSI"
+		(shape input)
+		(at 59.69 55.88 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "28f9e514-7e3e-535d-9e7a-e038d13429c4")
+	)
+	(wire
+		(pts
+			(xy 64.77 58.42) (xy 59.69 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29dcbe2f-8ae1-5ab9-bf6f-0f1f689236de")
+	)
+	(label "SPI_MISO_A"
+		(at 59.69 58.42 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "9d2a8714-0edd-5e48-a04d-c669c5325151")
+	)
+	(wire
+		(pts
+			(xy 64.77 60.96) (xy 59.69 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fc5285f-5ae8-5e21-a34a-1bb31f9e5d8e")
+	)
+	(label "+3V3_D"
+		(at 59.69 60.96 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "011d2131-7218-568f-a899-ee0134cf3aa4")
+	)
+	(wire
+		(pts
+			(xy 64.77 63.5) (xy 59.69 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "367d6264-6fd8-56a5-91f5-973e205545bc")
+	)
+	(hierarchical_label "GND"
+		(shape bidirectional)
+		(at 59.69 63.5 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "8372ae8d-81f9-5e9f-adef-45732ef0b75e")
+	)
+	(wire
+		(pts
+			(xy 64.77 66.04) (xy 59.69 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4d800f3-3fe3-5d59-8c3b-3df842862e14")
+	)
+	(label "SPI_OE_N"
+		(at 59.69 66.04 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "76f83572-5052-5e25-b4c4-e8e757decd7d")
+	)
+	(wire
+		(pts
+			(xy 64.77 68.58) (xy 59.69 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06b007fe-0789-5463-9be0-3738966ebeb4")
+	)
+	(label "GND"
+		(at 59.69 68.58 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "7dc8c15c-727f-5200-b8d7-10483cc2590c")
+	)
+	(wire
+		(pts
+			(xy 64.77 71.12) (xy 59.69 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7d536da-f8ed-595b-ac42-470c6a524a77")
+	)
+	(hierarchical_label "MCU_SPI_MISO"
+		(shape input)
+		(at 59.69 71.12 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "8116e470-aa05-509e-a5c8-71a1dedc39e6")
+	)
+	(wire
+		(pts
+			(xy 64.77 73.66) (xy 59.69 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "943194e2-8a50-5f50-a560-f828b4ba074e")
+	)
+	(label "SPI_MOSI_B"
+		(at 59.69 73.66 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "2be74248-f8a1-54f1-9e52-9854e2554de4")
+	)
+	(wire
+		(pts
+			(xy 64.77 76.2) (xy 59.69 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b2f9e52-d97e-5780-9b18-bd7468808190")
+	)
+	(label "SPI_CLK_B"
+		(at 59.69 76.2 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "16c77627-be6d-5274-aa87-dfdb6e349796")
+	)
+	(wire
+		(pts
+			(xy 64.77 78.74) (xy 59.69 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89d6619d-4766-5557-8286-3d92edf875e5")
+	)
+	(label "SPI_CS_B"
+		(at 59.69 78.74 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "27974cb0-d7dc-5ffe-bca5-a03ff6d83fca")
+	)
+	(wire
+		(pts
+			(xy 64.77 81.28) (xy 59.69 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c15f2edd-a40c-5a26-b4a8-2cb85c9092b5")
+	)
+	(hierarchical_label "+3V3_FPGA"
+		(shape input)
+		(at 59.69 81.28 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "0c7e5e3e-30eb-55d7-9126-f89407337fd1")
+	)
+	(wire
+		(pts
+			(xy 64.77 83.82) (xy 59.69 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "683721ac-0697-5845-b57b-1d9bc6314686")
+	)
+	(label "+3V3_D"
+		(at 59.69 83.82 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "06f86de2-ff1e-5e40-a4a1-c652395b139a")
+	)
+	(wire
+		(pts
+			(xy 219.71 64.77) (xy 224.79 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae8c03e5-fd96-58ed-a3e9-8e0592017154")
+	)
+	(label "SPI_RAIL_RELEASE"
+		(at 224.79 64.77 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "91289be5-cba0-5aff-8cf1-bc5d5402d57a")
+	)
+	(wire
+		(pts
+			(xy 209.55 72.39) (xy 209.55 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "508c1256-129c-5b4d-a0a0-61685261ad2e")
+	)
+	(label "GND"
+		(at 209.55 77.47 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "22abca3c-7a09-5cf9-b414-5850d7f3c1ac")
+	)
+	(wire
+		(pts
+			(xy 199.39 64.77) (xy 194.31 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1faacf9-2d81-5804-8724-60585d351cc7")
+	)
+	(hierarchical_label "MCU_RESET_N"
+		(shape input)
+		(at 194.31 64.77 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "408825cb-04ca-5113-a8cc-af83561399a3")
+	)
+	(no_connect
+		(at 199.39 67.31)
+		(uuid "c7652f8f-84bf-54d2-9513-2a3adb9e0032")
+	)
+	(wire
+		(pts
+			(xy 199.39 62.23) (xy 194.31 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6128864b-7a6a-5a8c-985c-331c04c7ba8e")
+	)
+	(label "SPI_SENSE"
+		(at 194.31 62.23 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "8c9028c0-fca3-539d-8b81-78db98a0972c")
+	)
+	(wire
+		(pts
+			(xy 209.55 57.15) (xy 209.55 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4622a34-6c64-5f9b-aa5f-23f318014e3e")
+	)
+	(label "+3V3_D"
+		(at 209.55 52.07 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "04c21e81-ccd1-5ab8-8692-c82c8c656c3c")
+	)
+	(wire
+		(pts
+			(xy 309.88 62.23) (xy 304.8 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21cb7d33-60c0-52d2-b5d6-77c545e7d3fc")
+	)
+	(hierarchical_label "MCU_SPI_ENABLE"
+		(shape input)
+		(at 304.8 62.23 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "e2ffa4ab-c186-5ddb-acee-309e92e766fe")
+	)
+	(wire
+		(pts
+			(xy 309.88 67.31) (xy 304.8 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4362e708-10a3-5691-9d06-5fb12c920753")
+	)
+	(label "SPI_RAIL_RELEASE"
+		(at 304.8 67.31 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "b2bc7b95-ff03-5167-a159-e482162913d1")
+	)
+	(wire
+		(pts
+			(xy 325.12 74.93) (xy 325.12 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24f87f85-30cf-558d-ac5c-48efb97c3353")
+	)
+	(label "GND"
+		(at 325.12 80.01 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "f2527922-0915-53c4-9295-601313e3d616")
+	)
+	(wire
+		(pts
+			(xy 337.82 64.77) (xy 342.9 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce438388-bdba-5a3a-92b6-9271fdb3d834")
+	)
+	(label "SPI_OE_N"
+		(at 342.9 64.77 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "b16db981-4ef2-59a5-b38e-aa592106300c")
+	)
+	(wire
+		(pts
+			(xy 325.12 54.61) (xy 325.12 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9252990b-b1e4-5f02-a471-c7c5fc7d7a80")
+	)
+	(label "+3V3_D"
+		(at 325.12 49.53 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d8dccce-088e-5c40-aa53-05487a5fc13a")
+	)
+	(wire
+		(pts
+			(xy 35.56 115.57) (xy 30.48 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05ca924d-5da0-59cd-aaba-5f21ebd1d947")
+	)
+	(label "SPI_CS_B"
+		(at 30.48 115.57 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "d9f9601e-84a8-576c-85fc-8239286cf096")
+	)
+	(wire
+		(pts
+			(xy 43.18 115.57) (xy 48.26 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79bf3438-3de7-515a-beba-ba38cdc5f6f9")
+	)
+	(hierarchical_label "MCU_SPI_CS"
+		(shape output)
+		(at 48.26 115.57 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "8b69dd1a-bd86-50ca-8496-1ee1b5979e35")
+	)
+	(wire
+		(pts
+			(xy 120.65 115.57) (xy 115.57 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a732c627-d28f-54f6-93cb-ac93e4febdd4")
+	)
+	(label "SPI_CLK_B"
+		(at 115.57 115.57 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "44451c03-d04f-5297-955f-d623eace58bb")
+	)
+	(wire
+		(pts
+			(xy 128.27 115.57) (xy 133.35 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9528fe74-b6c8-5570-b8c8-70e8e9e2b24e")
+	)
+	(hierarchical_label "MCU_SPI_CLK"
+		(shape output)
+		(at 133.35 115.57 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "67a9b10b-19e9-55f3-866e-7032ba2fd3a0")
+	)
+	(wire
+		(pts
+			(xy 205.74 115.57) (xy 200.66 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "643b8b9a-917d-5787-8138-85f7a42b6656")
+	)
+	(label "SPI_MOSI_B"
+		(at 200.66 115.57 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "8d2f68bb-44dc-5928-80d4-237357b782e6")
+	)
+	(wire
+		(pts
+			(xy 213.36 115.57) (xy 218.44 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3be92d54-27b3-5e27-9b77-c6abdd8a13a5")
+	)
+	(hierarchical_label "MCU_SPI_MOSI"
+		(shape output)
+		(at 218.44 115.57 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "af410c17-44fa-5d96-ac7d-3b25d9462ae4")
+	)
+	(wire
+		(pts
+			(xy 290.83 115.57) (xy 285.75 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28878e39-c149-5e70-8671-0bae6fca1e48")
+	)
+	(label "SPI_MISO_A"
+		(at 285.75 115.57 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "dfbf0f6a-fb6e-5ab6-be57-6373cff31385")
+	)
+	(wire
+		(pts
+			(xy 298.45 115.57) (xy 303.53 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b2c179d-bb3d-57ee-9a68-46a394a0cf59")
+	)
+	(hierarchical_label "MCU_RAW_MISO"
+		(shape output)
+		(at 303.53 115.57 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "fd350578-01ca-59d4-85f6-ee22a1380507")
+	)
+	(wire
+		(pts
+			(xy 39.37 146.05) (xy 39.37 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4ab82a4-a096-55db-bd64-6816182acae5")
+	)
+	(label "+3V3_FPGA"
+		(at 39.37 140.97 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "d4bfe28e-7fa5-5017-b8d3-109ba482eb4b")
+	)
+	(wire
+		(pts
+			(xy 39.37 153.67) (xy 39.37 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dccdec98-7502-5287-ab71-8572b324b5b2")
+	)
+	(label "MCU_SPI_CS"
+		(at 39.37 158.75 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "4f1e9957-7519-50bd-a921-8c7134b61ea2")
+	)
+	(wire
+		(pts
+			(xy 110.49 146.05) (xy 110.49 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b91629e-9ecf-5c5b-95a5-42823ad071d9")
+	)
+	(label "+3V3_D"
+		(at 110.49 140.97 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "99190d0e-ce12-5f36-a9d3-46924b37b628")
+	)
+	(wire
+		(pts
+			(xy 110.49 153.67) (xy 110.49 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4de34bee-e67b-52d0-9469-d51018b0d735")
+	)
+	(label "MCU_RAW_CS"
+		(at 110.49 158.75 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "34f2922e-510f-576c-bf7b-418e1564afbe")
+	)
+	(wire
+		(pts
+			(xy 180.34 146.05) (xy 180.34 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76b6ef05-734f-5cbf-b51a-3d122ade8172")
+	)
+	(label "+3V3_D"
+		(at 180.34 140.97 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "25e8220c-6ae2-5d0a-97cf-2818e8db7fed")
+	)
+	(wire
+		(pts
+			(xy 180.34 153.67) (xy 180.34 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2a652a2-c116-5941-8a8b-bebe3c1f93c3")
+	)
+	(label "SPI_OE_N"
+		(at 180.34 158.75 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "a97acc89-8008-5014-917b-d4f9e4076b98")
+	)
+	(wire
+		(pts
+			(xy 250.19 146.05) (xy 250.19 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d318a2fc-e211-53ba-b319-6daaffa8bdf6")
+	)
+	(label "MCU_SPI_ENABLE"
+		(at 250.19 140.97 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae3dd45c-9b8a-568c-b585-7e330b2ed6fb")
+	)
+	(wire
+		(pts
+			(xy 250.19 153.67) (xy 250.19 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37da8a9d-2828-5a38-b0ac-b44698ae921f")
+	)
+	(label "GND"
+		(at 250.19 158.75 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "ffd53567-e63f-5e3d-b6b1-56b2bd988676")
+	)
+	(wire
+		(pts
+			(xy 320.04 146.05) (xy 320.04 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da0c60c8-1e71-505f-bc40-8a63d2ba1e43")
+	)
+	(label "+3V3_D"
+		(at 320.04 140.97 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "a7197707-4205-5db3-9449-6d9f8b5eecc2")
+	)
+	(wire
+		(pts
+			(xy 320.04 153.67) (xy 320.04 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "208f3b57-1c37-588c-8462-5c50da31d638")
+	)
+	(label "SPI_RAIL_RELEASE"
+		(at 320.04 158.75 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "c2986aa6-7af1-58db-ab36-fd95b0af16bf")
+	)
+	(wire
+		(pts
+			(xy 39.37 186.69) (xy 39.37 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40857114-e524-5168-917c-aa57955a93d6")
+	)
+	(label "+3V3_FPGA"
+		(at 39.37 181.61 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "96a2d52b-bdf2-5272-925c-85ea6cd27f73")
+	)
+	(wire
+		(pts
+			(xy 39.37 194.31) (xy 39.37 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51c39330-87b0-54d2-a38a-f755abd5aa94")
+	)
+	(label "SPI_SENSE"
+		(at 39.37 199.39 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "5909bdf4-6cce-5a7e-a247-f61bb29cde30")
+	)
+	(wire
+		(pts
+			(xy 110.49 186.69) (xy 110.49 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "436d2bd2-4970-52bf-be4d-1a6bf0ba5907")
+	)
+	(label "SPI_SENSE"
+		(at 110.49 181.61 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "4483e3dc-73d5-5810-85bc-4783a8362ef7")
+	)
+	(wire
+		(pts
+			(xy 110.49 194.31) (xy 110.49 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90bd15d8-a4f2-5382-bba8-0e400f02570e")
+	)
+	(label "GND"
+		(at 110.49 199.39 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "a8948d84-f133-5415-bd7a-6cb8cca63b23")
+	)
+	(wire
+		(pts
+			(xy 39.37 226.06) (xy 39.37 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4557fd6e-c96f-59da-a8a7-8ba82a16c6b9")
+	)
+	(label "+3V3_D"
+		(at 39.37 220.98 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "1ad3cae5-63be-575f-9b6b-37668c93eb2e")
+	)
+	(wire
+		(pts
+			(xy 39.37 233.68) (xy 39.37 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "443c2e12-f076-5be2-8662-60995ed63777")
+	)
+	(label "GND"
+		(at 39.37 238.76 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "c527299a-d341-5134-9d68-c15b333db06a")
+	)
+	(wire
+		(pts
+			(xy 110.49 226.06) (xy 110.49 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecae4dc2-59d6-5af3-a2d0-1fbacd36d4b0")
+	)
+	(label "+3V3_FPGA"
+		(at 110.49 220.98 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "9efbe866-416b-5750-9b66-0c67c9e4d58c")
+	)
+	(wire
+		(pts
+			(xy 110.49 233.68) (xy 110.49 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49fbb301-310d-524e-a98c-f5c6495d2df8")
+	)
+	(label "GND"
+		(at 110.49 238.76 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "21682444-ed35-5e73-8b85-9da4134ad473")
+	)
+	(wire
+		(pts
+			(xy 180.34 226.06) (xy 180.34 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be5eec73-1c70-5ba8-98ec-a7abaa148ab0")
+	)
+	(label "+3V3_D"
+		(at 180.34 220.98 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "cf605dc6-4f0f-52a4-8446-81beea50e53f")
+	)
+	(wire
+		(pts
+			(xy 180.34 233.68) (xy 180.34 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3eb88bc4-df53-5bb0-a53e-4768c75102cf")
+	)
+	(label "GND"
+		(at 180.34 238.76 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "0584afa1-7e09-5456-99f2-0c07c58e5bbf")
+	)
+	(wire
+		(pts
+			(xy 250.19 226.06) (xy 250.19 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07bc9f36-3fe4-5492-9743-7a692ff5cf4f")
+	)
+	(label "+3V3_D"
+		(at 250.19 220.98 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "4164358d-dcfa-5fe8-9adf-44646053bedf")
+	)
+	(wire
+		(pts
+			(xy 250.19 233.68) (xy 250.19 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b905190-63ad-5c14-ba65-2319915c604e")
+	)
+	(label "GND"
+		(at 250.19 238.76 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "787d855e-481e-52c2-9912-2b06ec55773e")
+	)
+	(wire
+		(pts
+			(xy 180.34 186.69) (xy 180.34 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fde318d5-9100-56fc-a0d5-b54a4990da27")
+	)
+	(label "SPI_SENSE"
+		(at 180.34 181.61 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "e3a83244-878d-54e2-be85-44f795c7e786")
+	)
+	(wire
+		(pts
+			(xy 180.34 194.31) (xy 180.34 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd6d2e2c-3dfa-5774-914e-179238bffd02")
+	)
+	(label "GND"
+		(at 180.34 199.39 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "3d715c10-d0f9-5d9c-97ba-d5d1fa1e1213")
+	)
+	(text "SPI POWER-DOMAIN BRIDGE - ENGINEERING DRAFT"
+		(at 20 15 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "1d28fc8f-b764-5afd-b955-d79c334d58ef")
+	)
+	(text "GPIO7 enable defaults low. OE = NOT(enable AND rail release). MCU reset restarts supervisor delay."
+		(at 20 255 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "2e6ba4df-3775-5979-9eed-1dfbc189d332")
+	)
+	(text "63.4k/10k divider: nominal falling trip 2.9727V; CT open 12-28ms release. This is an isolation guard, not FPGA-valid proof."
+		(at 20 262 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "b3d86bd3-8fd5-598e-98a4-dc006a83877b")
+	)
+	(text "Firmware must set CS high / CLK low before enabling, await FPGA configuration, and disable before controlled shutdown."
+		(at 20 269 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "393100a6-499f-5330-a2ca-91165bdc6538")
+	)
+	(text "Ioff / VCC<100mV isolation; arbitrary ramps, 10MHz timing, pullup margins and Sydney sourcing remain to qualify."
+		(at 20 276 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "14a9bebd-1191-5456-bb65-917beb410c0b")
+	)
+)
+

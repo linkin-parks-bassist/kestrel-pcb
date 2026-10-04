@@ -1,0 +1,20 @@
+{
+  "status": "conditional engineering review; not hardware validation",
+  "connectivity_checked": true,
+  "digital_3v3_nominal_v": 3.294178298642534,
+  "digital_3v3_dc_corners_v": [
+    3.2060040448691582,
+    3.3826356079609017
+  ],
+  "vfb_limits_test_condition": "TI VIN=12 V; input/line/load/transients still to verify",
+  "digital_feedback_resistor_tolerance": 0.001,
+  "digital_output_nominal_cap_f": 6.6e-05,
+  "required_effective_cap_allocation_f": 4e-05,
+  "estimated_crossover_upper_hz": 39769.13260731817,
+  "remaining_checks": [
+    "Select inductor MPN/footprint and verify DC-bias/fault-current and thermal margins",
+    "Select ceramic capacitor MPNs and verify effective capacitance, ageing and temperature",
+    "Derive actual rail loads and validate ripple, transients, startup, noise and loop phase margin",
+    "Validate input protection and fixed FPGA core/IO circuit; qualify connected separate MCU HP rail and onboard backlight boost"
+  ]
+}

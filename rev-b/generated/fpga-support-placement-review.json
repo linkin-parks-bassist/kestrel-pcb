@@ -1,0 +1,89 @@
+{
+  "status": "PASS bounded pose/net/proximity review; routing/performance unqualified",
+  "placed_references": [
+    "R501",
+    "R502",
+    "R503",
+    "R504",
+    "R505",
+    "R506",
+    "R507",
+    "R508",
+    "R509",
+    "R510",
+    "R511",
+    "R512",
+    "R513",
+    "R514",
+    "R515",
+    "R516",
+    "R517",
+    "R518",
+    "R519",
+    "C523",
+    "C524",
+    "C525",
+    "C526",
+    "C527"
+  ],
+  "local_allocations": {
+    "C523": {
+      "assigned_pin": "U502.8",
+      "pad_centre_distance_mm": 2.0375,
+      "engineering_target_mm": 2.5
+    },
+    "C524": {
+      "assigned_pin": "Y501.1",
+      "pad_centre_distance_mm": 2.3593,
+      "engineering_target_mm": 2.5
+    },
+    "C525": {
+      "assigned_pin": "J501.6",
+      "pad_centre_distance_mm": 3.8998,
+      "engineering_target_mm": 5.0
+    },
+    "C526": {
+      "assigned_pin": "U503.5",
+      "pad_centre_distance_mm": 1.8875,
+      "engineering_target_mm": 2.5
+    },
+    "C527": {
+      "assigned_pin": "U504.5",
+      "pad_centre_distance_mm": 2.0814,
+      "engineering_target_mm": 2.5
+    },
+    "R512": {
+      "assigned_pin": "Y501.3",
+      "pad_centre_distance_mm": 2.6251,
+      "engineering_target_mm": 3.0
+    },
+    "R513": {
+      "assigned_pin": "U501.25",
+      "pad_centre_distance_mm": 2.3645,
+      "engineering_target_mm": 4.5
+    },
+    "R514": {
+      "assigned_pin": "U501.29",
+      "pad_centre_distance_mm": 3.4221,
+      "engineering_target_mm": 4.5
+    },
+    "R515": {
+      "assigned_pin": "U501.26",
+      "pad_centre_distance_mm": 3.0595,
+      "engineering_target_mm": 4.5
+    },
+    "R516": {
+      "assigned_pin": "U501.31",
+      "pad_centre_distance_mm": 4.1474,
+      "engineering_target_mm": 4.5
+    },
+    "R519": {
+      "assigned_pin": "U503.4",
+      "pad_centre_distance_mm": 1.9663,
+      "engineering_target_mm": 2.5
+    }
+  },
+  "limits": [
+    "Routes, ground returns, signal integrity, manufacturing and mechanical assembly remain unqualified."
+  ]
+}

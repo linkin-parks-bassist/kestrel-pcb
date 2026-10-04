@@ -1,0 +1,35 @@
+{
+  "status": "conditional engineering review; not hardware validation",
+  "connectivity_checked": true,
+  "core_nominal_v": 1.0086,
+  "core_dc_corners_v": [
+    0.987627944055944,
+    1.0296063783783782
+  ],
+  "core_vfb_test_condition": "VIN=5 V, TJ=25 C; line/load/temperature/ripple still to verify",
+  "sequencer_rising_threshold_v": [
+    0.9547847204192308,
+    0.9762360409012513
+  ],
+  "core_to_release_dc_margin_v": 0.01139190315469274,
+  "ct_nominal_delay_s": 0.01884,
+  "ct_external_charge_interval_corners_s": [
+    0.014635277777777777,
+    0.02465601923076923
+  ],
+  "ct_delay_caveat": "Component-limit calculation, not guaranteed total propagation-delay bounds",
+  "ct_charge_minimum_allocation_s": 0.01,
+  "gowin_power_guidance": "UG206-1.9.3E: 0.1\u201310 ms reference rail rise; core first above 10 ms; VCCX always >= VCCIO",
+  "io_enable_high_min_v": 1.5478253999999998,
+  "io_enable_below_por_allocated_max_v": 0.40650000000000003,
+  "io_switch_typical_rise_s": 0.000654,
+  "falling_hysteresis_v_typical": 0.005,
+  "falling_hysteresis_limits_unspecified": true,
+  "remaining_checks": [
+    "Select core inductor MPN/footprint, capacitor MPNs and verify bias/fault/thermal margins",
+    "Complete load budget; validate regulator loop/ripple/transients and sequencer ramps",
+    "Verify low-supply startup/shutdown, switch bias relationship, brownout and MCU/JTAG backfeed",
+    "Validate bare FPGA per-pin bypass, PLL isolation, switched configuration flash and oscillator",
+    "Check supervisor/layout/stencil and use hardware tests for sequence and operating margins"
+  ]
+}

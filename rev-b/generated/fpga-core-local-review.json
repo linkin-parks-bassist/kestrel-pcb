@@ -1,0 +1,8 @@
+{
+  "status": "PASS five local core net groups physically connected; all five ground returns reach filled plane",
+  "track_segments": 43,
+  "vias": 13,
+  "limits": [
+    "Sequencing local continuity is checked separately by check_fpga_sequence_local.py; main feed continuity is checked by check_fpga_main_feeds.py; Core output distribution is checked separately by check_fpga_core_distribution.py; FPGA I/O pin/bulk and assigned support continuity are checked separately by check_fpga_io_distribution.py; remaining switched support supplies are checked separately by check_fpga_support_supply.py; SPI supply continuity is checked separately by check_spi_support_supply.py; local held-DAC buffer supply continuity is checked separately by check_fpga_audio_local.py; DAC supply/pump and full held-rail continuity is checked by check_dac_support_local.py; ADC supply/bypass continuity is checked by check_adc_power_local.py; Analogue signal/bias, protected supply and ground continuity is checked by check_analogue_signal_local.py; effective capacitance, loop, current/thermal and assembly remain unqualified."
+  ]
+}

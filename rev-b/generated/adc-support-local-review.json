@@ -1,0 +1,147 @@
+{
+  "status": "PASS ADC reference and three mode nets; eleven ADC ground returns reach the filled plane",
+  "track_segments": 33,
+  "vias": 18,
+  "via_in_pad_sites": [
+    {
+      "pad": "C204.2",
+      "position": [
+        59.55,
+        113.8
+      ]
+    },
+    {
+      "pad": "C206.2",
+      "position": [
+        63.55,
+        118.8
+      ]
+    },
+    {
+      "pad": "C207.2",
+      "position": [
+        63.225,
+        113.2
+      ]
+    },
+    {
+      "pad": "C208.2",
+      "position": [
+        59.55,
+        116.8
+      ]
+    },
+    {
+      "pad": "C209.2",
+      "position": [
+        63.225,
+        108.0
+      ]
+    },
+    {
+      "pad": "R202.2",
+      "position": [
+        83.175,
+        122.0
+      ]
+    },
+    {
+      "pad": "R203.2",
+      "position": [
+        83.175,
+        116.5
+      ]
+    },
+    {
+      "pad": "R204.2",
+      "position": [
+        83.175,
+        119.0
+      ]
+    },
+    {
+      "pad": "C208.1",
+      "position": [
+        61.45,
+        116.8
+      ]
+    },
+    {
+      "pad": "C209.1",
+      "position": [
+        64.775,
+        108.0
+      ]
+    },
+    {
+      "pad": "R203.1",
+      "position": [
+        84.825,
+        116.5
+      ]
+    },
+    {
+      "pad": "R204.1",
+      "position": [
+        84.825,
+        119.0
+      ]
+    },
+    {
+      "pad": "U201.10",
+      "position": [
+        73,
+        112.65
+      ]
+    },
+    {
+      "pad": "U201.11",
+      "position": [
+        72.7,
+        112
+      ]
+    }
+  ],
+  "routed_planar_length_mm": {
+    "/Hardware ADC and DAC/ADC_VREF": 13.399986410097629,
+    "/Hardware ADC and DAC/ADC_MD0": 13.557222215136417,
+    "/Hardware ADC and DAC/ADC_MD1": 16.13846679918781,
+    "/Hardware ADC and DAC/ADC_FMT": 19.189076464628798
+  },
+  "complete_local_nets": {
+    "/Hardware ADC and DAC/ADC_VREF": [
+      "C208.1",
+      "C209.1",
+      "U201.1"
+    ],
+    "/Hardware ADC and DAC/ADC_MD0": [
+      "R203.1",
+      "U201.10"
+    ],
+    "/Hardware ADC and DAC/ADC_MD1": [
+      "R204.1",
+      "U201.11"
+    ],
+    "/Hardware ADC and DAC/ADC_FMT": [
+      "R202.1",
+      "U201.12"
+    ]
+  },
+  "ground_anchors": [
+    "U201.2",
+    "U201.5",
+    "C204.2",
+    "C205.2",
+    "C206.2",
+    "C207.2",
+    "C208.2",
+    "C209.2",
+    "R202.2",
+    "R203.2",
+    "R204.2"
+  ],
+  "limits": [
+    "ADC supply/bypass continuity is checked by check_adc_power_local.py; Analogue signal/bias, protected supply and ground continuity is checked by check_analogue_signal_local.py.",
+    "Physical topology only; effective reference bypassing, rail drop, coupling/noise, mode selection and audio performance and via-in-pad fabrication/assembly remain unqualified."
+  ]
+}

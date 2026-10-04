@@ -1,0 +1,8 @@
+{
+  "status": "PASS both local PLL filter groups reach their assigned FPGA pins; eight filter/bulk grounds reach filled plane",
+  "track_segments": 24,
+  "vias": 12,
+  "limits": [
+    "PLL bead input and core bulk continuity are checked separately by check_fpga_core_distribution.py; I/O pin/bulk and assigned support supply continuity are checked separately by check_fpga_io_distribution.py; flash/pullup continuity is checked separately by check_fpga_support_supply.py; SPI supply continuity is checked separately by check_spi_support_supply.py; local held-DAC buffer supply and audio signal continuity are checked separately by check_fpga_audio_local.py; Mute-control/sense-net and supervisor-supply continuity is checked by check_audio_mute_local.py; LDO/held-supply and sensed-rail source continuity is checked by check_analogue_power_local.py; DAC supply/pump and full held-rail continuity is checked by check_dac_support_local.py; ADC supply/bypass continuity is checked by check_adc_power_local.py; PLL ripple/noise, effective capacitance, current, thermal and assembly remain unqualified."
+  ]
+}

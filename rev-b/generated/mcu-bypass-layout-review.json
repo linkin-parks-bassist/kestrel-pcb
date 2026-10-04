@@ -1,0 +1,27 @@
+{
+  "status": "PASS sixteen physical local supply connections; incomplete supply and ground network",
+  "track_count": 43,
+  "minimum_adjacent_pad_gap_mm": 0.17,
+  "connected_bypasses": [
+    "C701",
+    "C702",
+    "C703",
+    "C704",
+    "C705",
+    "C706",
+    "C707",
+    "C708",
+    "C709",
+    "C710",
+    "C711",
+    "C712",
+    "C713",
+    "C714",
+    "C715",
+    "C716"
+  ],
+  "limits": [
+    "This supply checker does not verify bypass grounds; use check_mcu_bypass_ground.py. EP continuity and tenting are checked separately by check_mcu_exposed_ground.py; thermal/assembly qualification remains open.",
+    "Main/HP/LDO rail distribution, effective decoupling, current/thermal, stackup, assembly and operation remain unqualified."
+  ]
+}
