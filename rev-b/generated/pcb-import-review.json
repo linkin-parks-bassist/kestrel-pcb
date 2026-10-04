@@ -343,7 +343,9 @@
     "3731a08f-e561-5d88-a843-2480e16a765a",
     "e087391d-0f51-50cc-b63a-fb54da142113",
     "1f098f33-06d0-5610-a0cf-94d678fefaed",
-    "3d54ff76-de57-5664-ac0e-e491ffc1f174"
+    "3d54ff76-de57-5664-ac0e-e491ffc1f174",
+    "e527adf9-88e7-5001-8ecf-568a53fc90b5",
+    "3e5bc474-6568-5b50-9c1a-d9bc2c5b3f92"
   ],
   "provisional_hp_distribution_via_ids": [
     "744288b2-30b7-5f6a-9e93-e8ceaf77772b",
@@ -1178,8 +1180,7 @@
     "76ed4ffd-f6f9-5663-8c70-12245d436dce",
     "10c04bda-d73c-5354-80fa-f2155357ed7a",
     "8b11c4f8-c78f-52f3-9562-0ce378e5177c",
-    "e3063b7f-97a8-53e4-8b74-4a5cafce3ac3",
-    "52d42679-863b-5b69-9ed5-1455fc165b02"
+    "e3063b7f-97a8-53e4-8b74-4a5cafce3ac3"
   ],
   "provisional_spi_support_ground_via_ids": [
     "2a0bd0d8-3531-5f8b-a7fc-76b229d0aca3",
@@ -1462,7 +1463,9 @@
     "7fcb79c2-0379-5dc0-aab9-b4bd30a52f1d",
     "91f6ea5f-f467-5d45-876e-3b486cf2cd65",
     "e32985c7-fc0f-519d-85ed-a1977170d89a",
-    "96f0014b-f632-5065-a78a-d3d90ba39003"
+    "96f0014b-f632-5065-a78a-d3d90ba39003",
+    "a6cfd8db-7077-57d8-bee3-e118614963a8",
+    "ec2ef365-13ef-5234-9703-d2f2158ac1c6"
   ],
   "provisional_spi_mcu_endpoints_via_ids": [
     "b19308af-a6bc-5824-b204-d6bcf53cb6ca",

@@ -65,13 +65,13 @@ def main():
         from build_spi_support_ground import ident as ground_ident
         from build_spi_support_supply import ident as supply_ident
         from build_fpga_support_ground import ident as fpga_ground_ident
-        assert report['provisional_spi_support_ground_track_ids']==[ground_ident('track',i)for i in range(13)]
+        assert report['provisional_spi_support_ground_track_ids']==[ground_ident('track',i)for i in range(12)]
         assert report['provisional_spi_support_supply_track_ids']==[supply_ident('track',i)for i in range(51)]
         assert report['provisional_fpga_support_ground_track_ids']==[fpga_ground_ident('track',i)for i in range(22)]
         assert report['provisional_spi_control_local_track_ids']==[ident('track',i)for i in range(idx)]
     result={'status':'PASS five SPI control groups reach their required pads, including MCU enable/reset; supervisor CT remains open',
             'track_segments':idx,'vias':9,'physical_groups':counts,
-            'limits':['SPI data/clock/CS paths remain unfinished; firmware, loaded timing, noise/coupling, intermediate rails/backfeed and assembly remain unqualified.']}
+            'limits':['Firmware, loaded timing, noise/coupling, intermediate rails/backfeed and assembly remain unqualified.']}
     if not args.trial:(ROOT/'generated/spi-control-local-review.json').write_text(json.dumps(result,indent=2)+'\n')
     print(f'PASS: {idx} control segments, nine vias, five physical groups; CT open; qualification unfinished.')
 if __name__=='__main__':main()

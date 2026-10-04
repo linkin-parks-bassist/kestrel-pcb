@@ -1,10 +1,20 @@
 {
   "status": "PASS all 11 SPI support-sheet ground pads reach the filled plane, including translator direction pin and all five capacitor returns",
-  "track_segments": 13,
+  "via_in_pad_sites": [
+    {
+      "pad": "R811.2",
+      "position": [
+        114.825,
+        87.8
+      ],
+      "via_index": 10
+    }
+  ],
+  "track_segments": 12,
   "vias": 11,
   "new_ground_pad_returns": 11,
   "all_sheet_ground_pads": 11,
   "limits": [
-    "Supply/control continuity is checked separately by check_spi_support_supply.py and check_spi_control_local.py; SPI data/clock/CS routing remains unfinished; return impedance, effective decoupling, current/thermal and assembly remain unqualified."
+    "Supply/control continuity is checked separately by check_spi_support_supply.py and check_spi_control_local.py; return impedance, effective decoupling, current/thermal and via-in-pad fabrication/assembly remain unqualified."
   ]
 }

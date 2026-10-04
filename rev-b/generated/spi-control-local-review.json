@@ -10,6 +10,6 @@
     "/Power-domain SPI isolation/SPI_OE_N": 3
   },
   "limits": [
-    "SPI data/clock/CS paths remain unfinished; firmware, loaded timing, noise/coupling, intermediate rails/backfeed and assembly remain unqualified."
+    "Firmware, loaded timing, noise/coupling, intermediate rails/backfeed and assembly remain unqualified."
   ]
 }

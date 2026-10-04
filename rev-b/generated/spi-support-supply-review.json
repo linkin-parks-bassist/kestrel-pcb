@@ -7,6 +7,6 @@
     "/+3V3_FPGA": 4
   },
   "limits": [
-    "Control routing is checked separately by check_spi_control_local.py; SPI data/clock/CS routes remain unfinished; voltage drop, PDN/noise, effective bypass, intermediate-rail/backfeed, SI/timing and assembly remain unqualified."
+    "Control routing is checked separately by check_spi_control_local.py; voltage drop, PDN/noise, effective bypass, intermediate-rail/backfeed, SI/timing and assembly remain unqualified."
   ]
 }

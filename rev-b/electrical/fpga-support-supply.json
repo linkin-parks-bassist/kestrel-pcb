@@ -1,5 +1,5 @@
 {
-  "status": "Provisional complete FPGA-sheet switched supply routing; SPI data/clock/CS routing and electrical qualification unfinished",
+  "status": "Provisional complete FPGA-sheet switched supply routing; electrical qualification unfinished",
   "net": "/+3V3_FPGA",
   "anchors": {
     "C522.1": [

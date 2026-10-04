@@ -53,7 +53,7 @@ def main():
         assert (dx*dx+dy*dy)**.5>pcbnew.FromMM(.3)/2,guard
     result={'status':'PASS all 12 main and four switched SPI-sheet supply pads physically reach their proper sources',
             'track_segments':idx,'vias':11,'sheet_supply_pads':counts,
-            'limits':['Control routing is checked separately by check_spi_control_local.py; SPI data/clock/CS routes remain unfinished; voltage drop, PDN/noise, effective bypass, intermediate-rail/backfeed, SI/timing and assembly remain unqualified.']}
+            'limits':['Control routing is checked separately by check_spi_control_local.py; voltage drop, PDN/noise, effective bypass, intermediate-rail/backfeed, SI/timing and assembly remain unqualified.']}
     if not args.trial:(ROOT/'generated/spi-support-supply-review.json').write_text(json.dumps(result,indent=2)+'\n')
     print(f'PASS: {idx} supply segments, 11 vias, all 16 SPI-sheet supply pads reach their proper sources; qualification unfinished.')
 if __name__=='__main__':main()

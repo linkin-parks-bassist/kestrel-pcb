@@ -43,15 +43,31 @@ def main():
     assert all(p.m_Uuid.AsString()in seen for p in ground_pads)
     assert all(ident('via',i)in seen for i in range(11))
     assert len(d['ground_returns'])==11
+    sites=d.get('via_in_pad_anchors',[])
+    assert sites in [[],[{'pad':'R811.2','position':[114.825,87.8],'via_index':10}]],sites
+    vip={site['via_index']:site for site in sites}
     for guard in d['ground_returns']:
         p=next(p for p in fps[guard['ref']].Pads()if p.GetNumber()==guard['pad'] and (p.GetPosition()-vec(guard['xy'])).EuclideanNorm()<=2)
         assert p.GetNetname()=='/GND'
         i=guard['via_index'];box=p.GetBoundingBox();pos=vec(d['via_positions'][i])
         dx=max(box.GetLeft()-pos.x,0,pos.x-box.GetRight());dy=max(box.GetTop()-pos.y,0,pos.y-box.GetBottom())
-        assert (dx*dx+dy*dy)**.5>pcbnew.FromMM(.3)/2,(guard,dx,dy)
+        if i in vip:
+            assert guard['ref']+'.'+guard['pad']==vip[i]['pad'] and pos==p.GetPosition()==vec(vip[i]['position'])
+            assert p.GetAttribute()==pcbnew.PAD_ATTRIB_SMD
+            poly=p.GetEffectivePolygon(pcbnew.F_Cu);radius=pcbnew.FromMM(.3)//2
+            assert poly.Contains(pos) and not poly.CollideEdge(pos,None,radius)
+        else:assert (dx*dx+dy*dy)**.5>pcbnew.FromMM(.3)/2,(guard,dx,dy)
+    for i,xy in enumerate(d['via_positions']):
+        pos=vec(xy);radius=pcbnew.FromMM(.3)//2
+        for fp in b.GetFootprints():
+            for p in fp.Pads():
+                if p.GetAttribute()!=pcbnew.PAD_ATTRIB_SMD or not any(p.IsOnLayer(layer)for layer in [pcbnew.F_Cu,pcbnew.B_Cu]):continue
+                if i in vip and fp.GetReference()+'.'+p.GetNumber()==vip[i]['pad']:continue
+                box=p.GetBoundingBox();dx=max(box.GetLeft()-pos.x,0,pos.x-box.GetRight());dy=max(box.GetTop()-pos.y,0,pos.y-box.GetBottom())
+                assert dx*dx+dy*dy>radius*radius,(i,fp.GetReference(),p.GetNumber())
     result={'status':'PASS all 11 SPI support-sheet ground pads reach the filled plane, including translator direction pin and all five capacitor returns',
-            'track_segments':idx,'vias':11,'new_ground_pad_returns':11,'all_sheet_ground_pads':11,
-            'limits':['Supply/control continuity is checked separately by check_spi_support_supply.py and check_spi_control_local.py; SPI data/clock/CS routing remains unfinished; return impedance, effective decoupling, current/thermal and assembly remain unqualified.']}
+            'via_in_pad_sites':sites,'track_segments':idx,'vias':11,'new_ground_pad_returns':11,'all_sheet_ground_pads':11,
+            'limits':['Supply/control continuity is checked separately by check_spi_support_supply.py and check_spi_control_local.py; return impedance, effective decoupling, current/thermal and via-in-pad fabrication/assembly remain unqualified.']}
     if not args.trial:(ROOT/'generated/spi-support-ground-review.json').write_text(json.dumps(result,indent=2)+'\n')
     print(f'PASS: {idx} support ground segments, 11 vias, all 11 SPI-sheet ground pads reach the plane; qualification unfinished.')
 if __name__=='__main__':main()

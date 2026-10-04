@@ -15,7 +15,7 @@ ROOT=Path(__file__).resolve().parents[1]
 LAYERS=[pcbnew.F_Cu,pcbnew.In2_Cu,pcbnew.B_Cu]
 
 def main():
- p=argparse.ArgumentParser();p.add_argument('--start-via',help='Existing through-via UUID already physically connected to the start pad');p.add_argument('--layers',nargs='+',choices=['F.Cu','In2.Cu','B.Cu'],default=['F.Cu','In2.Cu','B.Cu'],help='Limit candidate routing layers');p.add_argument('--via-in-pad',action='append',default=[],metavar='REF.PAD',help='Permit a through-via drill inside a named endpoint SMD land');p.add_argument('--board',default=str(ROOT/'electrical/kestrel-revb.kicad_pcb'));p.add_argument('--start',required=True);p.add_argument('--end',required=True);p.add_argument('--bounds',nargs=4,type=float,required=True,metavar=('XMIN','YMIN','XMAX','YMAX'));p.add_argument('--output',type=Path,required=True);args=p.parse_args()
+ p=argparse.ArgumentParser();anchor=p.add_mutually_exclusive_group();anchor.add_argument('--start-via',help='Existing through-via UUID already physically connected to the start pad');anchor.add_argument('--start-track',help='Existing track UUID; route from its end after checking physical source-pad reach');p.add_argument('--layers',nargs='+',choices=['F.Cu','In2.Cu','B.Cu'],default=['F.Cu','In2.Cu','B.Cu'],help='Limit candidate routing layers');p.add_argument('--via-in-pad',action='append',default=[],metavar='REF.PAD',help='Permit a through-via drill inside a named endpoint SMD land');p.add_argument('--board',default=str(ROOT/'electrical/kestrel-revb.kicad_pcb'));p.add_argument('--start',required=True);p.add_argument('--end',required=True);p.add_argument('--bounds',nargs=4,type=float,required=True,metavar=('XMIN','YMIN','XMAX','YMAX'));p.add_argument('--output',type=Path,required=True);args=p.parse_args()
  b=pcbnew.LoadBoard(args.board);assert b.GetCopperLayerCount()==4 and len(b.Zones())==1 and b.Zones()[0].GetLayer()==pcbnew.In1_Cu and b.Zones()[0].GetNetname()=='/GND','Only current four-layer/single-ground-plane topology is modeled'
  pads={f.GetReference()+'.'+s.GetNumber():s for f in b.GetFootprints()for s in f.Pads()};start,end=[pads[x]for x in [args.start,args.end]];net=start.GetNetname();assert net and end.GetNetname()==net and all(any(pad.IsOnLayer(l) for l in LAYERS) for pad in (start,end))
  assert set(args.via_in_pad)<={args.start,args.end}, 'Only named endpoint lands can permit via-in-pad'
@@ -65,19 +65,24 @@ def main():
   if isinstance(t,pcbnew.PCB_VIA) and t.GetNetname()==net and t.TopLayer()==pcbnew.F_Cu and t.BottomLayer()==pcbnew.B_Cu:
    x,y=pos(t.GetPosition());ix,iy=round((x-xmin)/step),round((y-ymin)/step)
    if 0<=ix<len(xs) and 0<=iy<len(ys) and abs(xs[ix]-x)<1e-6 and abs(ys[iy]-y)<1e-6:existing_vias[ix,iy]=[round(x,5),round(y,5)]
- source_point=pos(start.GetPosition());source_via=None
+ source_point=pos(start.GetPosition());source_via=None;source_track=None
  for k,l in enumerate(LAYERS):
   if b.GetLayerName(l) not in args.layers:free[k][:]=False
- if args.start_via:
-  source_via=next(t for t in b.GetTracks()if t.m_Uuid.AsString()==args.start_via);assert isinstance(source_via,pcbnew.PCB_VIA) and source_via.GetNetname()==net and source_via.TopLayer()==pcbnew.F_Cu and source_via.BottomLayer()==pcbnew.B_Cu
+ if args.start_via or args.start_track:
+  anchor_id=args.start_via or args.start_track
+  source_anchor=next(t for t in b.GetTracks()if t.m_Uuid.AsString()==anchor_id);assert source_anchor.GetNetname()==net
+  if args.start_via:
+   source_via=source_anchor;assert isinstance(source_via,pcbnew.PCB_VIA) and source_via.TopLayer()==pcbnew.F_Cu and source_via.BottomLayer()==pcbnew.B_Cu
+  else:
+   source_track=source_anchor;assert not isinstance(source_track,pcbnew.PCB_VIA) and source_track.GetLayer() in LAYERS
   conn=b.GetConnectivity();conn.Build(b);pending=[start];seen=set()
   while pending:
    item=pending.pop();uid=item.m_Uuid.AsString()
    if uid not in seen:seen.add(uid);pending.extend(conn.GetConnectedItems(item))
-  assert args.start_via in seen, 'Start via is not physically connected to source pad'
-  source_point=pos(source_via.GetPosition());ix,iy=round((source_point[0]-xmin)/step),round((source_point[1]-ymin)/step)
-  assert (ix,iy) in existing_vias and tuple(existing_vias[ix,iy])==tuple(round(v,5) for v in source_point), 'Start via must align exactly to the reviewed grid'
-  starts=[(ix,iy,k) for k in range(3) if free[k][iy,ix]];assert starts, "Start via cannot reach an allowed layer"
+  assert anchor_id in seen, 'Start anchor is not physically connected to source pad'
+  source_point=pos(source_via.GetPosition() if source_via is not None else source_track.GetEnd());ix,iy=round((source_point[0]-xmin)/step),round((source_point[1]-ymin)/step)
+  assert 0<=ix<len(xs) and 0<=iy<len(ys) and abs(xs[ix]-source_point[0])<1e-6 and abs(ys[iy]-source_point[1])<1e-6, 'Start anchor must align exactly to the reviewed grid'
+  starts=[(ix,iy,k) for k in range(3) if free[k][iy,ix] and (source_via is not None or LAYERS[k]==source_track.GetLayer())];assert starts, "Start anchor cannot reach an allowed layer"
  else:starts=[node(start)]
  a=starts[0]
  z=node(end);assert free[a[2]][a[1],a[0]]and free[z[2]][z[1],z[0]],'Pad cannot reach grid'
@@ -126,6 +131,7 @@ def main():
  reused=[xy for xy in vias if tuple(xy) in map(tuple,existing_vias.values())]
  if source_via is not None and list(source_point) not in reused:reused.append(list(source_point))
  result['existing_via_positions']=reused;result['via_positions']=[xy for xy in vias if xy not in reused]
+ if source_track is not None:result['existing_start_track']={'uuid':source_track.m_Uuid.AsString(),'position':list(source_point),'layer':b.GetLayerName(source_track.GetLayer())}
  result['via_in_pad_anchors']=[{'pad':name,'position':xy} for name in args.via_in_pad for xy in result['via_positions'] if pads[name].GetEffectivePolygon(next(l for l in LAYERS if pads[name].IsOnLayer(l))).Contains(pcbnew.VECTOR2I(pcbnew.FromMM(xy[0]),pcbnew.FromMM(xy[1])))]
  args.output.write_text(json.dumps(result,indent=2)+'\n');print(f'Candidate: {len(paths)} paths, {len(result['via_positions'])} new vias, {len(reused)} reused vias; {len(dist)} search states; cost {dist[found]:.3f}')
 if __name__=='__main__':main()

@@ -1,0 +1,69 @@
+{
+  "status": "PASS guarded HP/MISO/ground revision; timing/touch routing unfinished",
+  "baseline_commit": "fe10a5b39caf925a3c1d00ebf086c4b6acb21547",
+  "saved_board_sha256": "d9ab775ac875b05810398540a1a2c6c7df1320830a34a818935166dabb698db7",
+  "unchanged_full_footprints": 351,
+  "unchanged_unrelated_copper_items": 2608,
+  "native_copper_counts": {
+    "F.Cu_segments": 1180,
+    "In2.Cu_segments": 437,
+    "B.Cu_segments": 482,
+    "through_vias": 629
+  },
+  "hp_distribution": {
+    "segments": 29,
+    "vias": 8,
+    "preserved_endpoint_continuity": true
+  },
+  "spi_mcu_endpoints": {
+    "segments": 56,
+    "vias": 4,
+    "complete_nets": 4,
+    "miso_planar_length_mm": 15.937058069535206
+  },
+  "spi_ground": {
+    "segments": 12,
+    "vias": 11,
+    "ground_pads_reach_plane": 11,
+    "via_in_pad": "R811.2",
+    "position_mm": [
+      114.825,
+      87.8
+    ],
+    "drill_mm": 0.3,
+    "diameter_mm": 0.5
+  },
+  "native_drc_violations": {
+    "drill_out_of_range": 6,
+    "silk_overlap": 199,
+    "silk_over_copper": 199,
+    "silk_edge_clearance": 9
+  },
+  "reported_unconnected_items": 107,
+  "checks": {
+    "affected_physical_checks": 15,
+    "rgb_source_nets": 16,
+    "rgb_output_nets": 16,
+    "imported_electrical_pads": 1160,
+    "repeat_build_added_items": 0,
+    "start_track_guard_cases": [
+      "connected exact-grid anchor accepted",
+      "foreign-net anchor rejected",
+      "disconnected same-net anchor rejected",
+      "off-grid anchor rejected"
+    ],
+    "replacement_guard": "modified previous width rejected without saving"
+  },
+  "preserved": [
+    "all footprint bodies and GPIO assignments",
+    "unrelated copper UUIDs/geometries",
+    "board setup, edges and layers",
+    "plane identity",
+    "matching manufacturing profile"
+  ],
+  "limits": [
+    "Nine timing/touch damping resistors and four power probes remain staged; no timing/touch remap, selection, placement or route accepted.",
+    "Reported unconnected items are capped and do not establish the global total.",
+    "Native topology checks do not qualify source damping, loaded timing, return current, PDN/current/thermal or via-in-pad fabrication/assembly."
+  ]
+}
