@@ -1,0 +1,82 @@
+{
+  "source_sha256": "036c4a8d87f217ec4c4210d9ab375a1933b7777803e1d6b6883fa96f954d8b9a",
+  "trial_sha256": "b2fd06bb8223c99b5d4373532e484beefefc0fff1e45b59002cb40d072d6539a",
+  "removed_uuids": [
+    "6065f052-7599-5df0-8a51-3d453789fe23",
+    "73602276-be25-5f3b-898f-df68f3dfe40e",
+    "b792dd7c-a9b9-59c7-af7f-925dc7fbb044",
+    "0bc26b99-5acc-500a-afe1-bbf2cd7429db"
+  ],
+  "revised_geometry": {
+    "e5c2d408-e9cb-5c18-b9f7-ac39f5c59c4c": [
+      [
+        116.8,
+        82.5
+      ],
+      [
+        119.875,
+        81.95
+      ]
+    ],
+    "30feee23-66ae-5fcb-889a-74090d84384b": [
+      [
+        120.95,
+        81.95
+      ],
+      [
+        120.95,
+        89
+      ]
+    ]
+  },
+  "added_uuids": [
+    "1873c120-ba5e-50d5-9115-809b4077d6ee",
+    "4eaadebd-801b-5d3f-b096-07cd01089393",
+    "60a38c6b-ef0e-5295-a718-384b104fadef",
+    "6d25fade-e9b1-5c70-8140-228b79115741",
+    "8d25cb60-92ac-5c59-9941-840ab0016d2a",
+    "a2bfa061-d686-5804-bb9f-6c64269c78a4",
+    "a4c8bc98-84bc-5ebd-a6cb-89609f62a60d",
+    "afc099be-f03a-5bb5-a050-5fef78ad6cef",
+    "c466c9a8-dc54-5d2e-a9e2-12b521e8bef4",
+    "dd7ba53f-9295-56c7-97ee-be410c52c5ea"
+  ],
+  "unchanged_copper_count": 2977,
+  "checked_pad_groups": 1095,
+  "cs_group": [
+    "R806.2",
+    "U701.4",
+    "U801.3"
+  ],
+  "reset_group": [
+    "C732.1",
+    "U701.103",
+    "U802.3"
+  ],
+  "native_critical": 0,
+  "native_residual_counts": {
+    "drill_out_of_range": 6,
+    "silk_overlap": 199,
+    "silk_over_copper": 199,
+    "silk_edge_clearance": 9
+  },
+  "new_via_smd_margins": {
+    "4eaadebd-801b-5d3f-b096-07cd01089393": {
+      "pad": "U701.19",
+      "distance_mm": 0.425,
+      "copper_mm": 0.175,
+      "hole_mm": 0.275
+    },
+    "dd7ba53f-9295-56c7-97ee-be410c52c5ea": {
+      "pad": "U701.4",
+      "distance_mm": 0.425,
+      "copper_mm": 0.175,
+      "hole_mm": 0.275
+    }
+  },
+  "limits": [
+    "Isolated reservation; neither preferred coordinated snapshot nor authoritative schematic/board is changed.",
+    "C701 remains at its old out-of-bound pose; supply/ground revision is still required.",
+    "Topology and native clearance do not qualify loaded SPI/reset timing, returns, PDN, manufacturing or assembly."
+  ]
+}

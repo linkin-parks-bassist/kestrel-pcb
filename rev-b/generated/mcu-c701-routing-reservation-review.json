@@ -113,5 +113,24 @@
       ]
     }
   ],
-  "next_geometry_scope": "Coordinate the complete reset/CS transfer geometry with HP, VSYNC and raw-clock reservations; none of these tested C701 proposals is a complete selected replacement."
+  "next_geometry_scope": "Use the checked reset/CS reservation to coordinate C701 supply with R3/PCLK/DE geometry; retain the complete preferred snapshot until the whole replacement is checked.",
+  "checked_reset_cs_reservation": "mcu-reset-cs-reservation-review.json",
+  "remaining_left_pose_constraints": {
+    "pose_mm": [
+      118.1,
+      84.8,
+      180
+    ],
+    "source_transition_mm": [
+      119.825,
+      84.425
+    ],
+    "native_result": "R3 underside diagonal clearance 0.1461 mm; proposed supply branch crosses that diagonal.",
+    "south_transition_mm": [
+      119.825,
+      85.85
+    ],
+    "south_native_result": "DE R1020.2 land/drill and output copper conflict.",
+    "r3_detour_result": "Two tested underside detours conflict with PCLK or exposed-pad ground vias; neither is selected."
+  }
 }
