@@ -1,86 +1,103 @@
 {
-  "status": "GROUPED FANOUT UNRESOLVED; no trial changes adopted",
-  "baseline_commit": "38e3865b3ba446c51f30eced9f9e3ace153bacde",
-  "authoritative_board_sha256": "d9ab775ac875b05810398540a1a2c6c7df1320830a34a818935166dabb698db7",
-  "trial_gpio_assignment": {
-    "PCLK": 51,
-    "HSYNC": 53,
-    "VSYNC": 11,
-    "DE": 12,
-    "DISP": 13,
-    "SCL": 15,
-    "SDA": 16,
-    "INT": 29,
-    "RESET": 31
+  "status": "Unadopted partial trial; authoritative schematic and PCB unchanged",
+  "baseline_sha256": "d9ab775ac875b05810398540a1a2c6c7df1320830a34a818935166dabb698db7",
+  "trial_sha256": "a8a4dce41271d424bb9d209c8fdf724bdb03ba6da10ea837e4a3ee8918b42928",
+  "manufacturing_profile_sha256": "d8cd8096a998bb6577948be69a5f9bcb244f0e77d4c978c0243dbf85f5cef905",
+  "complete_source_nets": [
+    "/MCU_LCD_DE",
+    "/MCU_LCD_DISP",
+    "/MCU_LCD_VSYNC",
+    "/MCU_TOUCH_SCL",
+    "/MCU_TOUCH_SDA",
+    "/MCU_LCD_HSYNC"
+  ],
+  "pending_source_nets": [
+    "/MCU_LCD_PCLK",
+    "/MCU_TOUCH_INT",
+    "/MCU_TOUCH_RST_N"
+  ],
+  "physical_source_groups": {
+    "/MCU_LCD_PCLK": [
+      "U701.94"
+    ],
+    "/MCU_LCD_HSYNC": [
+      "R1018.1",
+      "U701.97"
+    ],
+    "/MCU_LCD_VSYNC": [
+      "R1019.1",
+      "U701.12"
+    ],
+    "/MCU_LCD_DE": [
+      "R1020.1",
+      "U701.13"
+    ],
+    "/MCU_LCD_DISP": [
+      "R1021.1",
+      "U701.14"
+    ],
+    "/MCU_TOUCH_SCL": [
+      "R1022.1",
+      "U701.16"
+    ],
+    "/MCU_TOUCH_SDA": [
+      "R1023.1",
+      "U701.17"
+    ],
+    "/MCU_TOUCH_INT": [
+      "U701.18"
+    ],
+    "/MCU_TOUCH_RST_N": [
+      "U701.19"
+    ]
   },
-  "right_side_escape_components": {
-    "U701.61": {
-      "F_Cu_grid_nodes": 39,
-      "legal_conservative_through_via_sites": 0
+  "source_segments": 47,
+  "source_vias": 8,
+  "source_via_in_pad": [
+    "R1018.1",
+    "R1023.1"
+  ],
+  "native_critical_violations": 0,
+  "source_planar_length_mm": {
+    "/MCU_LCD_PCLK": 1.128402195226838,
+    "/MCU_LCD_HSYNC": 0.8742640687119274,
+    "/MCU_LCD_VSYNC": 17.159621202458748,
+    "/MCU_LCD_DE": 2.409768536510297,
+    "/MCU_LCD_DISP": 10.350059298430166,
+    "/MCU_TOUCH_SCL": 5.428172798364514,
+    "/MCU_TOUCH_SDA": 2.813908729652596,
+    "/MCU_TOUCH_INT": 2.0999999999999943,
+    "/MCU_TOUCH_RST_N": 1.0724873734152862
+  },
+  "bypass_source_allocations": {
+    "C701": {
+      "source_pad": "U701.9",
+      "distance_mm": 3.051479149527324,
+      "maintained_bound_mm": 2.5
     },
-    "U701.58": {
-      "F_Cu_grid_nodes": 38,
-      "legal_conservative_through_via_sites": 0
+    "C702": {
+      "source_pad": "U701.21",
+      "distance_mm": 2.6495707199469125,
+      "maintained_bound_mm": 2.5
     }
   },
-  "model": {
-    "grid_mm": 0.05,
-    "track_mm": 0.127,
-    "via_diameter_mm": 0.5,
-    "via_drill_mm": 0.3,
-    "default_clearance_mm": 0.2,
-    "search_margin_mm": 0.01,
-    "scope": "Reviewed right-row neighborhood with current power/bypass/RGB copper and provisional nine underside damping poses; conservative bounding boxes are not proof of physical impossibility."
+  "native_residual_counts": {
+    "drill_out_of_range": 6,
+    "silk_overlap": 199,
+    "silk_over_copper": 199,
+    "lib_footprint_issues": 5,
+    "silk_edge_clearance": 9,
+    "track_dangling": 1,
+    "via_dangling": 2
   },
-  "c703_geometry_trial": {
-    "position_mm": [
-      130.8,
-      87.35
-    ],
-    "displacement_mm": [
-      0.4,
-      0.15
-    ],
-    "side": "F.Cu",
-    "positive_route_points_mm": [
-      [
-        128.9,
-        87.225
-      ],
-      [
-        129.5,
-        87.225
-      ],
-      [
-        130.32,
-        87.35
-      ]
-    ],
-    "ground_route_points_mm": [
-      [
-        131.28,
-        87.35
-      ],
-      [
-        131.7,
-        87.2
-      ]
-    ],
-    "existing_ground_via_unchanged": true,
-    "native_copper_mask_hole_courtyard_edge_violations": 0,
-    "new_display_source_routes_completed": 0,
-    "adopted": false
-  },
-  "decision": "Reassess adjacent bypass and RGB source geometry as a coordinated group before proposing long timing/touch routes or adopting GPIO changes. A native-clear part move alone does not establish an escape.",
-  "unchanged_authoritative_state": [
-    "GPIO contract and generated netlist",
-    "nine staged 0603 timing/touch resistors",
-    "all saved PCB footprints and copper",
-    "manufacturing profile"
-  ],
+  "unconnected_report_entries": 101,
   "limits": [
-    "No complete timing/touch source or output topology established.",
-    "The isolated trial contains GPIO remaps, selected/provisional resistor poses and temporary custom-library notices; it is not the fabrication board.",
-    "Loaded timing/source damping, returns, effective bypass and fabrication/assembly remain unqualified."
+    "PCLK/HSYNC trial uses GPIO51/pad94 and GPIO53/pad97; no schematic remap is adopted.",
+    "Nine trial 0402 damping selections/poses, C701/C702 underside bypass, MISO detour and R5 output reroute are unadopted.",
+    "C701/C702 source-pad allocations exceed the maintained 2.5-mm bound; revise them before adoption.",
+    "All nine resistor output escapes and complete source group remain to be proved; native-clear partial input groups are insufficient.",
+    "Schematic/PCB matching, guarded replay, preservation and affected complete-group checks remain required before adoption.",
+    "Loaded timing/skew, long VSYNC/R5 detours, PDN/returns/coupling, via-in-pad processing and assembly remain unqualified.",
+    "Unconnected entries are capped native output, not the exact count of unfinished connections."
   ]
 }

@@ -15,11 +15,11 @@ ROOT=Path(__file__).resolve().parents[1]
 LAYERS=[pcbnew.F_Cu,pcbnew.In2_Cu,pcbnew.B_Cu]
 
 def main():
- p=argparse.ArgumentParser();anchor=p.add_mutually_exclusive_group();anchor.add_argument('--start-via',help='Existing through-via UUID already physically connected to the start pad');anchor.add_argument('--start-track',help='Existing track UUID; route from its end after checking physical source-pad reach');p.add_argument('--layers',nargs='+',choices=['F.Cu','In2.Cu','B.Cu'],default=['F.Cu','In2.Cu','B.Cu'],help='Limit candidate routing layers');p.add_argument('--via-in-pad',action='append',default=[],metavar='REF.PAD',help='Permit a through-via drill inside a named endpoint SMD land');p.add_argument('--board',default=str(ROOT/'electrical/kestrel-revb.kicad_pcb'));p.add_argument('--start',required=True);p.add_argument('--end',required=True);p.add_argument('--bounds',nargs=4,type=float,required=True,metavar=('XMIN','YMIN','XMAX','YMAX'));p.add_argument('--output',type=Path,required=True);args=p.parse_args()
+ p=argparse.ArgumentParser();anchor=p.add_mutually_exclusive_group();anchor.add_argument('--start-via',help='Existing through-via UUID already physically connected to the start pad');anchor.add_argument('--start-track',help='Existing track UUID; route from its end after checking physical source-pad reach');p.add_argument('--layers',nargs='+',choices=['F.Cu','In2.Cu','B.Cu'],default=['F.Cu','In2.Cu','B.Cu'],help='Limit candidate routing layers');p.add_argument('--via-in-pad',action='append',default=[],metavar='REF.PAD',help='Permit a through-via drill inside a named endpoint SMD land');p.add_argument('--board',default=str(ROOT/'electrical/kestrel-revb.kicad_pcb'));p.add_argument('--start',required=True);p.add_argument('--end',required=True);p.add_argument('--bounds',nargs=4,type=float,required=True,metavar=('XMIN','YMIN','XMAX','YMAX'));p.add_argument('--output',type=Path,required=True);p.add_argument('--grid-step',type=float,choices=[.025,.05],default=.05,help='Search grid in mm; finer sampling preserves copper width, clearances and via sizes');args=p.parse_args()
  b=pcbnew.LoadBoard(args.board);assert b.GetCopperLayerCount()==4 and len(b.Zones())==1 and b.Zones()[0].GetLayer()==pcbnew.In1_Cu and b.Zones()[0].GetNetname()=='/GND','Only current four-layer/single-ground-plane topology is modeled'
  pads={f.GetReference()+'.'+s.GetNumber():s for f in b.GetFootprints()for s in f.Pads()};start,end=[pads[x]for x in [args.start,args.end]];net=start.GetNetname();assert net and end.GetNetname()==net and all(any(pad.IsOnLayer(l) for l in LAYERS) for pad in (start,end))
  assert set(args.via_in_pad)<={args.start,args.end}, 'Only named endpoint lands can permit via-in-pad'
- xmin,ymin,xmax,ymax=args.bounds;step=.05;width=.127;clearance=.2;via_diameter=.5;drill=.3;margin=.01
+ xmin,ymin,xmax,ymax=args.bounds;step=args.grid_step;width=.127;clearance=.2;via_diameter=.5;drill=.3;margin=.01
  xs=np.arange(xmin,xmax+step/2,step);ys=np.arange(ymin,ymax+step/2,step);xx,yy=np.meshgrid(xs,ys);obstacles=[[]for _ in LAYERS];via_obstacles=[];lands=[]
  def pos(v):return(pcbnew.ToMM(v.x),pcbnew.ToMM(v.y))
  for f in b.GetFootprints():
@@ -90,7 +90,7 @@ def main():
  def h(n):
   # Exact obstacle-free eight-way grid distance is a tighter admissible bound.
   dx,dy=abs(n[0]-z[0]),abs(n[1]-z[1]);return (max(dx,dy)+(math.sqrt(2)-1)*min(dx,dy))*step+(0 if n[2]==z[2]else 3)
- # Search .05-mm steps; raster proposals need exact native DRC. Turn cost 0.02mm.
+ # Raster proposals need exact native DRC. Turn cost 0.02mm.
  roots={(*a,8) for a in starts};dist={n:0 for n in roots};prev={};heap=[(h(n),0,n)for n in roots];heapq.heapify(heap);found=None
  while heap:
   _,cost,n=heapq.heappop(heap)
@@ -127,7 +127,7 @@ def main():
   if n[2]!=layer:finish();vias.append(xy(n));layer=n[2];points=[xy(n)]
   else:points.append(xy(n))
  points.append(pos(end.GetPosition()));finish()
- result=dict(start_pad_position=pos(start.GetPosition()),end_pad_position=pos(end.GetPosition()),status='Candidate only: native DRC, geometry/endpoint and SI/return-path review required',net=net,start=args.start,end=args.end,bounds=args.bounds,paths=paths,via_positions=vias,via_diameter_mm=via_diameter,via_drill_mm=drill,limits=['Conservative pad bounding boxes; pad/footprint local clearance when present, otherwise .2mm, plus .01mm search margin. Outside-land new vias keep .2mm annulus clearance from every pad land, including their own net; explicit endpoint via-in-pad permits only native-contained drills with other-pad/copper clearance; existing same-net through-vias can be reused at their exact aligned coordinates.','No board-edge/keepout/custom-rule/return-current/impedance model; reviewed bounds and native DRC required.'])
+ result=dict(grid_step_mm=step,start_pad_position=pos(start.GetPosition()),end_pad_position=pos(end.GetPosition()),status='Candidate only: native DRC, geometry/endpoint and SI/return-path review required',net=net,start=args.start,end=args.end,bounds=args.bounds,paths=paths,via_positions=vias,via_diameter_mm=via_diameter,via_drill_mm=drill,limits=['Conservative pad bounding boxes; pad/footprint local clearance when present, otherwise .2mm, plus .01mm search margin. Outside-land new vias keep .2mm annulus clearance from every pad land, including their own net; explicit endpoint via-in-pad permits only native-contained drills with other-pad/copper clearance; existing same-net through-vias can be reused at their exact aligned coordinates.','No board-edge/keepout/custom-rule/return-current/impedance model; reviewed bounds and native DRC required.'])
  reused=[xy for xy in vias if tuple(xy) in map(tuple,existing_vias.values())]
  if source_via is not None and list(source_point) not in reused:reused.append(list(source_point))
  result['existing_via_positions']=reused;result['via_positions']=[xy for xy in vias if xy not in reused]
