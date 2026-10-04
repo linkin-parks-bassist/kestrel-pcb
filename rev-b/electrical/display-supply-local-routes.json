@@ -1109,6 +1109,6 @@
     ]
   },
   "limits": [
-    "Only physical local regulator topology; main supply/FPC distribution and electrical/fabrication/assembly qualification remain unfinished."
+    "Only physical local regulator topology; main-source continuity is checked separately by check_display_feeds.py; FPC distribution and electrical/fabrication/assembly qualification remain unfinished."
   ]
 }

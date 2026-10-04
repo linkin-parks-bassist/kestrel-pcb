@@ -143,7 +143,7 @@
     "U902.3"
   ],
   "limits": [
-    "Main 5 V source, MCU PWM and FPC LED distribution remain unfinished.",
+    "Source/PWM/FPC LED continuity is checked separately by check_display_feeds.py; operation remains unqualified.",
     "Physical topology only; effective bypassing/switching/Kelvin sense, rail drop, coupling/noise, backlight regulation/startup/fault/PWM operation and via-in-pad fabrication/assembly remain unqualified."
   ]
 }

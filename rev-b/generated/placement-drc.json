@@ -1,7 +1,7 @@
 {
     "$schema": "https://schemas.kicad.org/drc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-10-04T11:58:33",
+    "date": "2026-10-04T12:17:16",
     "ignored_checks": [
         {
             "description": "Footprint has no courtyard defined",
@@ -151,12 +151,12 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Track [/+3V3_D] on F.Cu, length 0.8950 mm",
+                    "description": "Pad 1 [/+3V3_D] of C702 on F.Cu",
                     "pos": {
-                        "x": 118.175,
+                        "x": 117.28,
                         "y": 88.4
                     },
-                    "uuid": "fe19e67d-7a83-58ff-b16e-48673dd5fc05"
+                    "uuid": "bc0320b8-b2d0-425e-8aa2-196c0e1ee88a"
                 },
                 {
                     "description": "Track [/+3V3_D] on F.Cu, length 0.5450 mm",
@@ -197,20 +197,20 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Track [/+3V3_D] on F.Cu, length 0.6718 mm",
+                    "description": "Track [/+3V3_D] on F.Cu, length 0.3500 mm",
                     "pos": {
                         "x": 122.425,
-                        "y": 80.75
+                        "y": 81.1
                     },
-                    "uuid": "dc7b79ab-6f20-59a0-975f-3203d059d0b7"
+                    "uuid": "1da60b13-ddd3-5cc5-9d00-4a4171568c94"
                 },
                 {
-                    "description": "Track [/+3V3_D] on F.Cu, length 0.8950 mm",
+                    "description": "Track [/+3V3_D] on F.Cu, length 0.5765 mm",
                     "pos": {
-                        "x": 120.325,
+                        "x": 121.22,
                         "y": 80.6065
                     },
-                    "uuid": "a0202f3c-321c-5ee5-a690-d58ce1950e52"
+                    "uuid": "958fe673-96f8-5ac9-aeae-567b169948b1"
                 }
             ],
             "severity": "error",
@@ -289,20 +289,20 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Track [/+3V3_D] on F.Cu, length 0.5000 mm",
+                    "description": "Pad 77 [/+3V3_D] of U701 on F.Cu",
                     "pos": {
                         "x": 128.9,
                         "y": 81.975
                     },
-                    "uuid": "8df64e5b-64ec-5321-8aca-a80b285c0607"
+                    "uuid": "a7738abf-81ba-4ae6-82d4-bbcaeee15f91"
                 },
                 {
-                    "description": "Track [/+3V3_D] on F.Cu, length 0.5000 mm",
+                    "description": "Pad 75 [/+3V3_D] of U701 on F.Cu",
                     "pos": {
                         "x": 128.9,
                         "y": 82.675
                     },
-                    "uuid": "4c0dd0e9-7bc5-54fb-aff2-cce558142f8d"
+                    "uuid": "bb0a89a1-4ccd-41eb-bfeb-87ba6c0c4f67"
                 }
             ],
             "severity": "error",
@@ -312,20 +312,20 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Track [/+3V3_D] on F.Cu, length 0.5000 mm",
+                    "description": "Pad 77 [/+3V3_D] of U701 on F.Cu",
                     "pos": {
                         "x": 128.9,
                         "y": 81.975
                     },
-                    "uuid": "8df64e5b-64ec-5321-8aca-a80b285c0607"
+                    "uuid": "a7738abf-81ba-4ae6-82d4-bbcaeee15f91"
                 },
                 {
-                    "description": "Track [/+3V3_D] on F.Cu, length 0.7000 mm",
+                    "description": "Pad 85 [/+3V3_D] of U701 on F.Cu",
                     "pos": {
                         "x": 126.275,
                         "y": 81.1
                     },
-                    "uuid": "dc6f1530-1638-58f0-b56d-beae2e2d9b01"
+                    "uuid": "a3bba4f6-fb11-4135-8c27-b3148486d964"
                 }
             ],
             "severity": "error",
@@ -1485,29 +1485,6 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Pad 2 [/BL_LED_A] of J1001 on F.Cu",
-                    "pos": {
-                        "x": 107.75,
-                        "y": 53.15
-                    },
-                    "uuid": "cec587d8-35d7-4eb3-8777-2d67645e2661"
-                },
-                {
-                    "description": "Pad 1 [/BL_LED_A] of TP901 on F.Cu",
-                    "pos": {
-                        "x": 66.8,
-                        "y": 58.2
-                    },
-                    "uuid": "e0cdcd13-336d-4161-a5ef-33af608199be"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
                     "description": "Pad 86 [/MCU_LCD_G2] of U701 on F.Cu",
                     "pos": {
                         "x": 125.925,
@@ -1692,74 +1669,13 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Track [/+5V_DIG] on In2.Cu, length 12.7000 mm",
+                    "description": "Track [/+5V_DIG] on B.Cu, length 9.4000 mm",
                     "pos": {
-                        "x": 64.7,
-                        "y": 68.0
+                        "x": 121.0,
+                        "y": 126.6
                     },
-                    "uuid": "379cee7a-755c-5509-b88f-567f4082c4bf"
+                    "uuid": "59900f93-3842-58b6-95e0-e6b7f30aa5cd"
                 },
-                {
-                    "description": "Track [/+5V_DIG] on F.Cu, length 1.0250 mm",
-                    "pos": {
-                        "x": 53.1,
-                        "y": 67.325
-                    },
-                    "uuid": "ca5535cd-62b9-58b8-b4ea-a939c13f36a5"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "Track [/+5V_DIG] on In2.Cu, length 10.0000 mm",
-                    "pos": {
-                        "x": 64.7,
-                        "y": 78.0
-                    },
-                    "uuid": "06d2bb80-87d0-5dc5-bdf1-cc2111360440"
-                },
-                {
-                    "description": "Pad 4 [/+5V_DIG] of U903 on F.Cu",
-                    "pos": {
-                        "x": 97.8875,
-                        "y": 62.65
-                    },
-                    "uuid": "f1be0459-ae0a-47e5-a2e5-c9cd57b76798"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "Pad 6 [/+5V_DIG] of U904 on F.Cu",
-                    "pos": {
-                        "x": 146.8875,
-                        "y": 66.35
-                    },
-                    "uuid": "03752897-39ec-4a23-afeb-d822f244a491"
-                },
-                {
-                    "description": "Track [/+5V_DIG] on In2.Cu, length 2.9852 mm",
-                    "pos": {
-                        "x": 98.5875,
-                        "y": 63.35
-                    },
-                    "uuid": "4b5b5395-75ac-54cd-b427-4bad9a42e6df"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
                 {
                     "description": "Pad 1 [/+5V_DIG] of TP103 on F.Cu",
                     "pos": {
@@ -1767,14 +1683,6 @@
                         "y": 297.0
                     },
                     "uuid": "e05b5cde-1b44-47ba-9332-fb25c3def909"
-                },
-                {
-                    "description": "Track [/+5V_DIG] on B.Cu, length 9.4000 mm",
-                    "pos": {
-                        "x": 121.0,
-                        "y": 126.6
-                    },
-                    "uuid": "59900f93-3842-58b6-95e0-e6b7f30aa5cd"
                 }
             ],
             "severity": "error",
@@ -1830,12 +1738,12 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Track [/Bare ESP32-P4 support/MCU_FLASH_VDD] on F.Cu, length 0.0450 mm",
+                    "description": "Pad 1 [/Bare ESP32-P4 support/MCU_FLASH_VDD] of C714 on F.Cu",
                     "pos": {
                         "x": 120.22,
-                        "y": 91.955
+                        "y": 92.0
                     },
-                    "uuid": "238f0d9c-8798-5c8d-aafe-7933da342217"
+                    "uuid": "f160bb3d-b52c-4ef0-bd5e-cf1a9b0cee4c"
                 },
                 {
                     "description": "Pad 1 [/Bare ESP32-P4 support/MCU_FLASH_VDD] of C722 on F.Cu",
@@ -1861,12 +1769,12 @@
                     "uuid": "d6002c4c-86cf-44c6-bfd7-d638eecad75c"
                 },
                 {
-                    "description": "Track [/Bare ESP32-P4 support/MCU_FLASH_VDD] on F.Cu, length 0.6000 mm",
+                    "description": "Pad 30 [/Bare ESP32-P4 support/MCU_FLASH_VDD] of U701 on F.Cu",
                     "pos": {
                         "x": 120.675,
                         "y": 90.9
                     },
-                    "uuid": "cba757aa-e811-50ea-b391-4ea0ffe62fe1"
+                    "uuid": "cc738b95-96d5-4c9b-a6c1-179d1dd2c1cf"
                 }
             ],
             "severity": "error",
@@ -2198,12 +2106,12 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Track [/Bare ESP32-P4 support/MCU_PSRAM_VDD] on F.Cu, length 0.5000 mm",
+                    "description": "Pad 67 [/Bare ESP32-P4 support/MCU_PSRAM_VDD] of U701 on F.Cu",
                     "pos": {
                         "x": 128.9,
                         "y": 85.475
                     },
-                    "uuid": "9b09c77d-4d4c-5ac9-8866-8a27af71330b"
+                    "uuid": "d4f97b98-2f1a-4985-aa4e-8ae52a0956ba"
                 },
                 {
                     "description": "Track [/Bare ESP32-P4 support/MCU_PSRAM_VDD] on F.Cu, length 0.6000 mm",
@@ -2635,29 +2543,6 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Pad 8 [/MCU_BL_PWM] of U701 on F.Cu",
-                    "pos": {
-                        "x": 119.1,
-                        "y": 84.075
-                    },
-                    "uuid": "f9753681-23f2-463d-919f-c0f17f46c107"
-                },
-                {
-                    "description": "Track [/MCU_BL_PWM] on F.Cu, length 1.0000 mm",
-                    "pos": {
-                        "x": 50.9,
-                        "y": 69.0
-                    },
-                    "uuid": "c676cdfa-e3d0-5cea-ab26-555ee4a0528e"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
                     "description": "Pad 4 [/RGB565 and capacitive touch/TOUCH_SCL] of J1002 on F.Cu",
                     "pos": {
                         "x": 150.75,
@@ -2796,29 +2681,6 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Pad 1 [/BL_LED_K] of J1001 on F.Cu",
-                    "pos": {
-                        "x": 107.25,
-                        "y": 53.15
-                    },
-                    "uuid": "20d2ea25-5929-4836-967e-f75b3d534a8f"
-                },
-                {
-                    "description": "Track [/BL_LED_K] on In2.Cu, length 4.8083 mm",
-                    "pos": {
-                        "x": 61.1,
-                        "y": 56.9
-                    },
-                    "uuid": "c7eab1de-99f2-57b0-9c4c-97fa4d69b460"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
                     "description": "Pad 65 [/Bare ESP32-P4 support/MCU_JTAG_SEL] of U701 on F.Cu",
                     "pos": {
                         "x": 128.9,
@@ -2896,12 +2758,12 @@
                     "uuid": "e4d47853-6e00-4bd2-ada3-c02028b6c1e4"
                 },
                 {
-                    "description": "Track [/MCU_RESET_N] on In2.Cu, length 7.0500 mm",
+                    "description": "Track [/MCU_RESET_N] on In2.Cu, length 2.3153 mm",
                     "pos": {
                         "x": 119.875,
-                        "y": 81.95
+                        "y": 89.0
                     },
-                    "uuid": "30feee23-66ae-5fcb-889a-74090d84384b"
+                    "uuid": "41f07852-37c4-5398-88e6-ddc12b72b2e5"
                 }
             ],
             "severity": "error",

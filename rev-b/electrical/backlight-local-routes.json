@@ -1000,7 +1000,7 @@
     "/Backlight and display supplies/BL_CTRL_BUFFER"
   ],
   "limits": [
-    "Local boost/PWM topology only; main 5 V source, MCU PWM and FPC LED distribution remain unfinished.",
+    "Local boost/PWM topology only; source/PWM/FPC LED continuity is checked separately by check_display_feeds.py; operation remains unqualified.",
     "Switching/sense/bypass/return impedance, EMI/audio noise, actual loads/thermal, stability/startup/fault and fabrication/assembly remain unqualified."
   ]
 }

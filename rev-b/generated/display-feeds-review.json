@@ -1,0 +1,60 @@
+{
+  "status": "PASS main 5 V feeds, MCU PWM and FPC LED groups",
+  "track_segments": 41,
+  "vias": 10,
+  "via_in_pad_sites": [
+    {
+      "position": [
+        66.5,
+        63.6
+      ],
+      "pad": "C903.1"
+    }
+  ],
+  "routed_planar_length_mm": {
+    "/MCU_BL_PWM": 75.87725851315761,
+    "/BL_LED_A": 51.41579002700189,
+    "/BL_LED_K": 55.755727274552896,
+    "/+5V_DIG": 125.31183617507294
+  },
+  "physically_connected_local_groups": {
+    "/MCU_BL_PWM:complete-load-group": [
+      "R902.1",
+      "U701.8",
+      "U902.2"
+    ],
+    "/BL_LED_A:complete-load-group": [
+      "C903.1",
+      "D901.1",
+      "J1001.2",
+      "R904.1",
+      "TP901.1"
+    ],
+    "/BL_LED_K:complete-load-group": [
+      "J1001.1",
+      "R901.1",
+      "TP902.1",
+      "U901.3"
+    ],
+    "/+5V_DIG:display-load-subset": [
+      "C901.1",
+      "C902.1",
+      "C904.1",
+      "C905.1",
+      "C908.1",
+      "L101.2",
+      "L901.1",
+      "U901.5",
+      "U902.5",
+      "U903.4",
+      "U903.6",
+      "U904.4",
+      "U904.6"
+    ]
+  },
+  "ground_anchors": [],
+  "limits": [
+    "LCD/touch FPC supply and connector support remain unfinished.",
+    "Physical topology only; effective bypassing/switching/Kelvin sense, rail drop, coupling/noise, backlight regulation/startup/fault/PWM operation and via-in-pad fabrication/assembly remain unqualified."
+  ]
+}
