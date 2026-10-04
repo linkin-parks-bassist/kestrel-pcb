@@ -215,8 +215,19 @@ def main():
         expected = xml_names if signal in v['complete_timing_outputs'] else {seed}
         assert connected(seed)==expected, (signal,connected(seed),expected)
         timing_output_groups[signal] = sorted(expected)
-    result=dict(variant=a.variant,baseline_sha256=d['baseline_trial_sha256'],trial_sha256=hashlib.sha256(a.output.read_bytes()).hexdigest(),native_critical_violations=0,native_residual_counts=dict(Counter(r['type'] for r in drc['violations'])),preserved_copper_items=len(remaining),removed_copper_items=len(det),added_copper_items=len(added),physical_rgb_groups=groups,physical_timing_source_groups=source_groups,physical_timing_output_groups=timing_output_groups,limits=d['limits'])
-    result['route_planar_length_mm'] = {r['proposal']['net']:sum(math.dist(x,y) for path in r['proposal']['paths'] for x,y in zip(path['points'],path['points'][1:])) for r in v['routes']}
+    support_groups = {}
+    for seed in v.get('complete_support_groups', []):
+        net = pads[seed].GetNetname()
+        xml_names = {n.attrib['ref']+'.'+n.attrib['pin'] for e in xml.findall('.//nets/net') if e.attrib['name']==net for n in e.findall('node')}
+        assert seed in xml_names and all(pads[n].GetNetname()==net for n in xml_names)
+        assert connected(seed)==xml_names, (net,connected(seed),xml_names)
+        support_groups[net] = sorted(xml_names)
+    result=dict(variant=a.variant,baseline_sha256=d['baseline_trial_sha256'],trial_sha256=hashlib.sha256(a.output.read_bytes()).hexdigest(),native_critical_violations=0,native_residual_counts=dict(Counter(r['type'] for r in drc['violations'])),preserved_copper_items=len(remaining),removed_copper_items=len(det),added_copper_items=len(added),physical_rgb_groups=groups,physical_timing_source_groups=source_groups,physical_timing_output_groups=timing_output_groups,physical_support_groups=support_groups,limits=d['limits'])
+    lengths = Counter()
+    for route in v['routes']:
+        q = route['proposal']
+        lengths[q['net']] += sum(math.dist(x,y) for path in q['paths'] for x,y in zip(path['points'],path['points'][1:]))
+    result['route_planar_length_mm'] = dict(lengths)
     result['manufacturing_profile_sha256'] = profile_sha
     result['new_via_smd_margins'] = via_margins
     result['new_via_in_pad_anchors'] = named_via_in_pad

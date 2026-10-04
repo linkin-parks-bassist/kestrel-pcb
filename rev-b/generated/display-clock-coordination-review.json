@@ -1,900 +1,779 @@
 {
-  "paired_rgb": {
-    "variant": "paired_rgb",
-    "baseline_sha256": "603ba3bf19fc05499781dda95da4a748c3c0afc90077a53db912f2fbfaec6164",
-    "trial_sha256": "44cec42252d8c223e0d78db527b01d142b8fea0cee9f47ae458e9addc3a2ffc2",
-    "native_critical_violations": 0,
-    "native_residual_counts": {
-      "drill_out_of_range": 6,
-      "silk_overlap": 199,
-      "silk_over_copper": 199,
-      "silk_edge_clearance": 9,
-      "track_dangling": 1,
-      "via_dangling": 1
-    },
-    "preserved_copper_items": 2779,
-    "removed_copper_items": 17,
-    "added_copper_items": 19,
-    "physical_rgb_groups": {
-      "source:/MCU_LCD_B3": [
-        "R1001.1",
-        "U701.80"
-      ],
-      "source:/MCU_LCD_B4": [
-        "R1002.1",
-        "U701.81"
-      ],
-      "source:/MCU_LCD_B5": [
-        "R1003.1",
-        "U701.82"
-      ],
-      "source:/MCU_LCD_B6": [
-        "R1004.1",
-        "U701.83"
-      ],
-      "source:/MCU_LCD_B7": [
-        "R1005.1",
-        "U701.84"
-      ],
-      "source:/MCU_LCD_G2": [
-        "R1006.1",
-        "U701.86"
-      ],
-      "source:/MCU_LCD_G3": [
-        "R1007.1",
-        "U701.87"
-      ],
-      "source:/MCU_LCD_G4": [
-        "R1008.1",
-        "U701.88"
-      ],
-      "source:/MCU_LCD_G5": [
-        "R1009.1",
-        "U701.89"
-      ],
-      "source:/MCU_LCD_R3": [
-        "R1012.1",
-        "U701.55"
-      ],
-      "source:/MCU_LCD_G7": [
-        "R1011.1",
-        "U701.92"
-      ],
-      "source:/MCU_LCD_G6": [
-        "R1010.1",
-        "U701.63"
-      ],
-      "source:/MCU_LCD_R5": [
-        "R1014.1",
-        "U701.57"
-      ],
-      "source:/MCU_LCD_R7": [
-        "R1016.1",
-        "U701.60"
-      ],
-      "source:/MCU_LCD_R4": [
-        "R1013.1",
-        "U701.56"
-      ],
-      "source:/MCU_LCD_R6": [
-        "R1015.1",
-        "U701.64"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B3": [
-        "J1001.24",
-        "R1001.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B4": [
-        "J1001.25",
-        "R1002.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B5": [
-        "J1001.26",
-        "R1003.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B6": [
-        "J1001.27",
-        "R1004.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B7": [
-        "J1001.28",
-        "R1005.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G2": [
-        "J1001.15",
-        "R1006.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G4": [
-        "J1001.17",
-        "R1008.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G6": [
-        "J1001.19",
-        "R1010.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G7": [
-        "J1001.20",
-        "R1011.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R3": [
-        "J1001.8",
-        "R1012.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R6": [
-        "J1001.11",
-        "R1015.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R4": [
-        "J1001.9",
-        "R1013.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R5": [
-        "J1001.10",
-        "R1014.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R7": [
-        "J1001.12",
-        "R1016.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G3": [
-        "J1001.16",
-        "R1007.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G5": [
-        "J1001.18",
-        "R1009.2"
-      ]
-    },
-    "physical_timing_source_groups": {
-      "/MCU_LCD_PCLK": [
-        "R1017.1",
-        "U701.94"
-      ],
-      "/MCU_LCD_HSYNC": [
-        "R1018.1",
-        "U701.97"
-      ],
-      "/MCU_LCD_VSYNC": [
-        "R1019.1",
-        "U701.12"
-      ],
-      "/MCU_LCD_DE": [
-        "R1020.1",
-        "U701.13"
-      ],
-      "/MCU_LCD_DISP": [
-        "R1021.1",
-        "U701.14"
-      ],
-      "/MCU_TOUCH_SCL": [
-        "R1022.1",
-        "U701.16"
-      ],
-      "/MCU_TOUCH_SDA": [
-        "R1023.1",
-        "U701.17"
-      ],
-      "/MCU_TOUCH_INT": [
-        "U701.18"
-      ],
-      "/MCU_TOUCH_RST_N": [
-        "U701.19"
-      ]
-    },
-    "physical_timing_output_groups": {
-      "PCLK": [
-        "R1017.2"
-      ],
-      "HSYNC": [
-        "R1018.2"
-      ],
-      "VSYNC": [
-        "R1019.2"
-      ],
-      "DE": [
-        "R1020.2"
-      ],
-      "DISP": [
-        "R1021.2"
-      ],
-      "SCL": [
-        "R1022.2"
-      ],
-      "SDA": [
-        "R1023.2"
-      ],
-      "INT": [
-        "R1024.2"
-      ],
-      "RST_N": [
-        "R1025.2"
-      ]
-    },
-    "limits": [
-      "Unadopted trials only; authoritative schematic/PCB and published seven-source baseline remain unchanged.",
-      "The preferred variant requires all 32 RGB halves, eight timing/touch source groups and PCLK/HSYNC/SCL/DE/DISP/SDA/reset outputs physically complete; INT source and two other timing/touch outputs remain unfinished.",
-      "PCLK/HSYNC GPIO remaps, resistor selections/poses, C701/C702 underside bypass, MISO/R5 detours and revised G7 damping/output remain unadopted.",
-      "C701/C702 source-pad allocations still exceed the maintained 2.5-mm bounds; revise before adoption.",
-      "Long G6/G7 output detours, loaded timing/skew, source damping, effective returns/coupling/PDN and via-in-pad fabrication/assembly remain unqualified.",
-      "No copper/drill profile relaxation: U701 local copper clearance .127mm, Default .2mm, project hole clearance .25mm, tracks .127mm, through vias .5/.3mm."
-    ],
-    "route_planar_length_mm": {
-      "/RGB565 and capacitive touch/LCD_G6": 41.155180361560916,
-      "/MCU_LCD_G7": 9.785251936104181
-    },
-    "manufacturing_profile_sha256": "d8cd8096a998bb6577948be69a5f9bcb244f0e77d4c978c0243dbf85f5cef905",
-    "new_via_smd_margins": {
-      "b769d752-cc5c-5548-a405-d4df53737884": {
-        "position_mm": [
-          117.1,
-          78.4
-        ],
-        "nearest_smd_land": {
-          "pad": "Y701.1",
-          "distance_to_land_mm": 0.626498,
-          "annulus_clearance_mm": 0.376498,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 0.476498,
-          "required_hole_clearance_mm": 0.25
-        }
-      }
-    },
-    "new_via_in_pad_anchors": {}
+  "variant": "dual_clock_rgb",
+  "baseline_sha256": "603ba3bf19fc05499781dda95da4a748c3c0afc90077a53db912f2fbfaec6164",
+  "trial_sha256": "1f2da33e70e8225d3cc1b0a96c79a4a23eb08b3a14ca2c5ef146e7d72683f7b0",
+  "native_critical_violations": 0,
+  "native_residual_counts": {
+    "drill_out_of_range": 6,
+    "silk_overlap": 199,
+    "silk_over_copper": 199,
+    "silk_edge_clearance": 9
   },
-  "dual_clock_rgb": {
-    "variant": "dual_clock_rgb",
-    "baseline_sha256": "603ba3bf19fc05499781dda95da4a748c3c0afc90077a53db912f2fbfaec6164",
-    "trial_sha256": "c13f44746565cdc1d721b93c32316f8be26d2f3ba95ccb7269a2c5fcb4f6ca56",
-    "native_critical_violations": 0,
-    "native_residual_counts": {
-      "drill_out_of_range": 6,
-      "silk_overlap": 199,
-      "silk_over_copper": 199,
-      "silk_edge_clearance": 9,
-      "track_dangling": 1
-    },
-    "preserved_copper_items": 2752,
-    "removed_copper_items": 44,
-    "added_copper_items": 175,
-    "physical_rgb_groups": {
-      "source:/MCU_LCD_B3": [
-        "R1001.1",
-        "U701.80"
-      ],
-      "source:/MCU_LCD_B4": [
-        "R1002.1",
-        "U701.81"
-      ],
-      "source:/MCU_LCD_B5": [
-        "R1003.1",
-        "U701.82"
-      ],
-      "source:/MCU_LCD_B6": [
-        "R1004.1",
-        "U701.83"
-      ],
-      "source:/MCU_LCD_B7": [
-        "R1005.1",
-        "U701.84"
-      ],
-      "source:/MCU_LCD_G2": [
-        "R1006.1",
-        "U701.86"
-      ],
-      "source:/MCU_LCD_G3": [
-        "R1007.1",
-        "U701.87"
-      ],
-      "source:/MCU_LCD_G4": [
-        "R1008.1",
-        "U701.88"
-      ],
-      "source:/MCU_LCD_G5": [
-        "R1009.1",
-        "U701.89"
-      ],
-      "source:/MCU_LCD_R3": [
-        "R1012.1",
-        "U701.55"
-      ],
-      "source:/MCU_LCD_G7": [
-        "R1011.1",
-        "U701.92"
-      ],
-      "source:/MCU_LCD_G6": [
-        "R1010.1",
-        "U701.63"
-      ],
-      "source:/MCU_LCD_R5": [
-        "R1014.1",
-        "U701.57"
-      ],
-      "source:/MCU_LCD_R7": [
-        "R1016.1",
-        "U701.60"
-      ],
-      "source:/MCU_LCD_R4": [
-        "R1013.1",
-        "U701.56"
-      ],
-      "source:/MCU_LCD_R6": [
-        "R1015.1",
-        "U701.64"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B3": [
-        "J1001.24",
-        "R1001.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B4": [
-        "J1001.25",
-        "R1002.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B5": [
-        "J1001.26",
-        "R1003.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B6": [
-        "J1001.27",
-        "R1004.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B7": [
-        "J1001.28",
-        "R1005.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G2": [
-        "J1001.15",
-        "R1006.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G4": [
-        "J1001.17",
-        "R1008.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G6": [
-        "J1001.19",
-        "R1010.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G7": [
-        "J1001.20",
-        "R1011.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R3": [
-        "J1001.8",
-        "R1012.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R6": [
-        "J1001.11",
-        "R1015.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R4": [
-        "J1001.9",
-        "R1013.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R5": [
-        "J1001.10",
-        "R1014.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R7": [
-        "J1001.12",
-        "R1016.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G3": [
-        "J1001.16",
-        "R1007.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G5": [
-        "J1001.18",
-        "R1009.2"
-      ]
-    },
-    "physical_timing_source_groups": {
-      "/MCU_LCD_PCLK": [
-        "R1017.1",
-        "U701.94"
-      ],
-      "/MCU_LCD_HSYNC": [
-        "R1018.1",
-        "U701.97"
-      ],
-      "/MCU_LCD_VSYNC": [
-        "R1019.1",
-        "U701.12"
-      ],
-      "/MCU_LCD_DE": [
-        "R1020.1",
-        "U701.13"
-      ],
-      "/MCU_LCD_DISP": [
-        "R1021.1",
-        "U701.14"
-      ],
-      "/MCU_TOUCH_SCL": [
-        "R1022.1",
-        "U701.16"
-      ],
-      "/MCU_TOUCH_SDA": [
-        "R1023.1",
-        "U701.17"
-      ],
-      "/MCU_TOUCH_INT": [
-        "U701.18"
-      ],
-      "/MCU_TOUCH_RST_N": [
-        "R1025.1",
-        "U701.19"
-      ]
-    },
-    "physical_timing_output_groups": {
-      "PCLK": [
-        "J1001.30",
-        "R1017.2"
-      ],
-      "HSYNC": [
-        "J1001.32",
-        "R1018.2"
-      ],
-      "VSYNC": [
-        "R1019.2"
-      ],
-      "DE": [
-        "J1001.34",
-        "R1020.2"
-      ],
-      "DISP": [
-        "J1001.31",
-        "R1021.2",
-        "R1028.1"
-      ],
-      "SCL": [
-        "J1002.4",
-        "R1022.2",
-        "R1026.2"
-      ],
-      "SDA": [
-        "J1002.5",
-        "R1023.2",
-        "R1027.2"
-      ],
-      "INT": [
-        "R1024.2"
-      ],
-      "RST_N": [
-        "J1002.7",
-        "R1025.2",
-        "R1029.1"
-      ]
-    },
-    "limits": [
-      "Unadopted trials only; authoritative schematic/PCB and published seven-source baseline remain unchanged.",
-      "The preferred variant requires all 32 RGB halves, eight timing/touch source groups and PCLK/HSYNC/SCL/DE/DISP/SDA/reset outputs physically complete; INT source and two other timing/touch outputs remain unfinished.",
-      "PCLK/HSYNC GPIO remaps, resistor selections/poses, C701/C702 underside bypass, MISO/R5 detours and revised G7 damping/output remain unadopted.",
-      "C701/C702 source-pad allocations still exceed the maintained 2.5-mm bounds; revise before adoption.",
-      "Long G6/G7 output detours, loaded timing/skew, source damping, effective returns/coupling/PDN and via-in-pad fabrication/assembly remain unqualified.",
-      "No copper/drill profile relaxation: U701 local copper clearance .127mm, Default .2mm, project hole clearance .25mm, tracks .127mm, through vias .5/.3mm."
+  "preserved_copper_items": 2752,
+  "removed_copper_items": 44,
+  "added_copper_items": 208,
+  "physical_rgb_groups": {
+    "source:/MCU_LCD_B3": [
+      "R1001.1",
+      "U701.80"
     ],
-    "route_planar_length_mm": {
-      "/RGB565 and capacitive touch/LCD_PCLK": 41.49264427649429,
-      "/RGB565 and capacitive touch/LCD_HSYNC": 32.515941546018375,
-      "/RGB565 and capacitive touch/LCD_G7": 67.04640866588035,
-      "/RGB565 and capacitive touch/LCD_G6": 68.63960312803931,
-      "/RGB565 and capacitive touch/TOUCH_SCL": 52.200616844190954,
-      "/RGB565 and capacitive touch/LCD_DE": 62.33274887854694,
-      "/RGB565 and capacitive touch/LCD_DISP": 62.068787847868,
-      "/MCU_LCD_VSYNC": 0.8281727983645242,
-      "/RGB565 and capacitive touch/TOUCH_SDA": 60.83327448791966,
-      "/MCU_TOUCH_RST_N": 15.769976541518083,
-      "/RGB565 and capacitive touch/TOUCH_RST_N": 61.086302269140205
-    },
-    "manufacturing_profile_sha256": "d8cd8096a998bb6577948be69a5f9bcb244f0e77d4c978c0243dbf85f5cef905",
-    "new_via_smd_margins": {
-      "28295aa4-4996-5132-a151-82cc2f486c14": {
-        "position_mm": [
-          152.2,
-          73.8
-        ],
-        "nearest_smd_land": {
-          "pad": "TP904.1",
-          "distance_to_land_mm": 5.470832,
-          "annulus_clearance_mm": 5.220832,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 5.320831999999999,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "50515c4f-4c21-58da-ab1c-b7ab10cedb54": {
-        "position_mm": [
-          125.7,
-          69.15
-        ],
-        "nearest_smd_land": {
-          "pad": "C719.2",
-          "distance_to_land_mm": 3.2,
-          "annulus_clearance_mm": 2.95,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 3.0500000000000003,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "e1dc9ec9-ff03-585c-a9c8-fc3805840e08": {
-        "position_mm": [
-          114.7,
-          80.15
-        ],
-        "nearest_smd_land": {
-          "pad": "R710.2",
-          "distance_to_land_mm": 0.575,
-          "annulus_clearance_mm": 0.32499999999999996,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 0.42499999999999993,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "e547410e-7709-5ad1-ab62-79acb7c6b2d6": {
-        "position_mm": [
-          129.6,
-          62.9
-        ],
-        "nearest_smd_land": {
-          "pad": "C605.1",
-          "distance_to_land_mm": 0.645174,
-          "annulus_clearance_mm": 0.395174,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 0.495174,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "e5a63bf8-b11a-5b32-ab1e-e012d1b32d67": {
-        "position_mm": [
-          141.45,
-          62.9
-        ],
-        "nearest_smd_land": {
-          "pad": "C909.1",
-          "distance_to_land_mm": 1.375,
-          "annulus_clearance_mm": 1.125,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 1.225,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "363492e7-0200-528b-b0aa-8588d23d4cb0": {
-        "position_mm": [
-          128.175,
-          86.1
-        ],
-        "nearest_smd_land": {
-          "pad": "U701.65",
-          "distance_to_land_mm": 0.425,
-          "annulus_clearance_mm": 0.175,
-          "required_copper_clearance_mm": 0.127,
-          "hole_clearance_mm": 0.275,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "62694303-d9a5-5c0f-aaf0-852c44f295f9": {
-        "position_mm": [
-          118.775,
-          49.925
-        ],
-        "nearest_smd_land": {
-          "pad": "C1002.1",
-          "distance_to_land_mm": 1.25,
-          "annulus_clearance_mm": 1.0,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 1.1,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "c773a7d9-faae-5882-aac0-4f1b31ed6012": {
-        "position_mm": [
-          130.925,
-          93.075
-        ],
-        "nearest_smd_land": {
-          "pad": "C711.1",
-          "distance_to_land_mm": 1.558348,
-          "annulus_clearance_mm": 1.308348,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 1.4083480000000002,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "2655c93e-6de6-593b-8bbd-3a3e4a0f893f": {
-        "position_mm": [
-          126.675,
-          63.425
-        ],
-        "nearest_smd_land": {
-          "pad": "C605.1",
-          "distance_to_land_mm": 3.299999,
-          "annulus_clearance_mm": 3.049999,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 3.149999,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "62e5f4f9-e7c0-5ec9-954a-9996590f410d": {
-        "position_mm": [
-          127.35,
-          90.175
-        ],
-        "nearest_smd_land": {
-          "pad": "U701.49",
-          "distance_to_land_mm": 0.425,
-          "annulus_clearance_mm": 0.175,
-          "required_copper_clearance_mm": 0.127,
-          "hole_clearance_mm": 0.275,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "0e057f61-8b8c-51b4-8841-b0691413385a": {
-        "position_mm": [
-          126.15,
-          62.9
-        ],
-        "nearest_smd_land": {
-          "pad": "C605.1",
-          "distance_to_land_mm": 3.86086,
-          "annulus_clearance_mm": 3.61086,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 3.7108600000000003,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "b9e49f48-8dcb-515c-ab64-5e9f542cfb6a": {
-        "position_mm": [
-          119.45,
-          74.5
-        ],
-        "nearest_smd_land": {
-          "pad": "C731.1",
-          "distance_to_land_mm": 0.465027,
-          "annulus_clearance_mm": 0.21502700000000002,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 0.31502700000000006,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "e83a31a8-8128-5527-93ac-a461c537d80d": {
-        "position_mm": [
-          122.65,
-          52.0
-        ],
-        "nearest_smd_land": {
-          "pad": "J1001.32",
-          "distance_to_land_mm": 0.5,
-          "annulus_clearance_mm": 0.25,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 0.35,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "e95c0abb-c4c1-5228-98d6-613fef47c0ef": {
-        "position_mm": [
-          129.8,
-          57.95
-        ],
-        "nearest_smd_land": {
-          "pad": "J1001.MP",
-          "distance_to_land_mm": 0.514782,
-          "annulus_clearance_mm": 0.26478199999999996,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 0.36478199999999994,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "77ca7910-7429-5d43-a82e-28c6384bba27": {
-        "position_mm": [
-          118.9,
-          64.5
-        ],
-        "nearest_smd_land": {
-          "pad": "C731.2",
-          "distance_to_land_mm": 7.33357,
-          "annulus_clearance_mm": 7.08357,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 7.18357,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "adec57ea-5cde-5ee6-8c77-a2f6ef42038a": {
-        "position_mm": [
-          122.3,
-          60.85
-        ],
-        "nearest_smd_land": {
-          "pad": "J1001.MP",
-          "distance_to_land_mm": 6.397265,
-          "annulus_clearance_mm": 6.147265,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 6.247265,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "c1c386bd-bf3d-5a36-99bd-338400934a5c": {
-        "position_mm": [
-          118.9,
-          73.0
-        ],
-        "nearest_smd_land": {
-          "pad": "C731.1",
-          "distance_to_land_mm": 0.980434,
-          "annulus_clearance_mm": 0.730434,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 0.830434,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "f06768be-daf6-5ed5-a2e1-fc9c56ca9a97": {
-        "position_mm": [
-          122.3,
-          55.4
-        ],
-        "nearest_smd_land": {
-          "pad": "J1001.31",
-          "distance_to_land_mm": 1.6,
-          "annulus_clearance_mm": 1.35,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 1.4500000000000002,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "1ed1fc6c-fb08-509e-ba59-5dc4c24ccc24": {
-        "position_mm": [
-          127.05,
-          92.3
-        ],
-        "nearest_smd_land": {
-          "pad": "R705.1",
-          "distance_to_land_mm": 0.475,
-          "annulus_clearance_mm": 0.22499999999999998,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 0.32499999999999996,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "7f8e834b-d916-5e42-98dc-8c9a0d3d58a1": {
-        "position_mm": [
-          125.3,
-          55.2
-        ],
-        "nearest_smd_land": {
-          "pad": "J1001.37",
-          "distance_to_land_mm": 1.4,
-          "annulus_clearance_mm": 1.15,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 1.25,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "c9efa866-bf43-5f06-bc08-377c6d62e760": {
-        "position_mm": [
-          133.199999,
-          91.55
-        ],
-        "nearest_smd_land": {
-          "pad": "C723.1",
-          "distance_to_land_mm": 0.5,
-          "annulus_clearance_mm": 0.25,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 0.35,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "25c84664-ad6c-5ddc-b32f-d7e5e7a4866f": {
-        "position_mm": [
-          125.75,
-          69.9
-        ],
-        "nearest_smd_land": {
-          "pad": "C719.2",
-          "distance_to_land_mm": 2.45,
-          "annulus_clearance_mm": 2.2,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 2.3000000000000003,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "38058257-ee9c-5319-87d2-2f1d53f0c541": {
-        "position_mm": [
-          144.95,
-          64.2
-        ],
-        "nearest_smd_land": {
-          "pad": "C909.2",
-          "distance_to_land_mm": 1.002809,
-          "annulus_clearance_mm": 0.7528090000000001,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 0.852809,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "6f9cda27-6b6e-516a-a5f2-7f3c0b46b05a": {
-        "position_mm": [
-          115.7,
-          79.9
-        ],
-        "nearest_smd_land": {
-          "pad": "C732.2",
-          "distance_to_land_mm": 0.825,
-          "annulus_clearance_mm": 0.575,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 0.6749999999999999,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "fe6c55d1-d59e-5e69-bb2a-a643145ed9d0": {
-        "position_mm": [
-          127.9,
-          63.85
-        ],
-        "nearest_smd_land": {
-          "pad": "C605.1",
-          "distance_to_land_mm": 2.074999,
-          "annulus_clearance_mm": 1.824999,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 1.9249990000000001,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "1357effe-49c2-5bde-916b-a029154cfc2f": {
-        "position_mm": [
-          117.7,
-          93.5
-        ],
-        "nearest_smd_land": {
-          "pad": "R1025.2",
-          "distance_to_land_mm": 0.74,
-          "annulus_clearance_mm": 0.49,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 0.59,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "6efa3801-b534-5856-9062-7c8be902abd7": {
-        "position_mm": [
-          114.4,
-          96.275
-        ],
-        "nearest_smd_land": {
-          "pad": "R806.1",
-          "distance_to_land_mm": 1.375909,
-          "annulus_clearance_mm": 1.125909,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 1.2259090000000001,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "7c2230ff-a4e9-558b-bc4d-8167d8c4d053": {
-        "position_mm": [
-          115.625,
-          92.425
-        ],
-        "nearest_smd_land": {
-          "pad": "C710.2",
-          "distance_to_land_mm": 1.764497,
-          "annulus_clearance_mm": 1.514497,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 1.614497,
-          "required_hole_clearance_mm": 0.25
-        }
-      },
-      "a96e1473-d552-54f7-b5dc-7ec92fdf1a5f": {
-        "position_mm": [
-          114.4,
-          93.05
-        ],
-        "nearest_smd_land": {
-          "pad": "R804.2",
-          "distance_to_land_mm": 2.427061,
-          "annulus_clearance_mm": 2.177061,
-          "required_copper_clearance_mm": 0.2,
-          "hole_clearance_mm": 2.2770610000000002,
-          "required_hole_clearance_mm": 0.25
-        }
+    "source:/MCU_LCD_B4": [
+      "R1002.1",
+      "U701.81"
+    ],
+    "source:/MCU_LCD_B5": [
+      "R1003.1",
+      "U701.82"
+    ],
+    "source:/MCU_LCD_B6": [
+      "R1004.1",
+      "U701.83"
+    ],
+    "source:/MCU_LCD_B7": [
+      "R1005.1",
+      "U701.84"
+    ],
+    "source:/MCU_LCD_G2": [
+      "R1006.1",
+      "U701.86"
+    ],
+    "source:/MCU_LCD_G3": [
+      "R1007.1",
+      "U701.87"
+    ],
+    "source:/MCU_LCD_G4": [
+      "R1008.1",
+      "U701.88"
+    ],
+    "source:/MCU_LCD_G5": [
+      "R1009.1",
+      "U701.89"
+    ],
+    "source:/MCU_LCD_R3": [
+      "R1012.1",
+      "U701.55"
+    ],
+    "source:/MCU_LCD_G7": [
+      "R1011.1",
+      "U701.92"
+    ],
+    "source:/MCU_LCD_G6": [
+      "R1010.1",
+      "U701.63"
+    ],
+    "source:/MCU_LCD_R5": [
+      "R1014.1",
+      "U701.57"
+    ],
+    "source:/MCU_LCD_R7": [
+      "R1016.1",
+      "U701.60"
+    ],
+    "source:/MCU_LCD_R4": [
+      "R1013.1",
+      "U701.56"
+    ],
+    "source:/MCU_LCD_R6": [
+      "R1015.1",
+      "U701.64"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_B3": [
+      "J1001.24",
+      "R1001.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_B4": [
+      "J1001.25",
+      "R1002.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_B5": [
+      "J1001.26",
+      "R1003.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_B6": [
+      "J1001.27",
+      "R1004.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_B7": [
+      "J1001.28",
+      "R1005.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_G2": [
+      "J1001.15",
+      "R1006.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_G4": [
+      "J1001.17",
+      "R1008.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_G6": [
+      "J1001.19",
+      "R1010.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_G7": [
+      "J1001.20",
+      "R1011.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_R3": [
+      "J1001.8",
+      "R1012.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_R6": [
+      "J1001.11",
+      "R1015.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_R4": [
+      "J1001.9",
+      "R1013.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_R5": [
+      "J1001.10",
+      "R1014.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_R7": [
+      "J1001.12",
+      "R1016.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_G3": [
+      "J1001.16",
+      "R1007.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_G5": [
+      "J1001.18",
+      "R1009.2"
+    ]
+  },
+  "physical_timing_source_groups": {
+    "/MCU_LCD_PCLK": [
+      "R1017.1",
+      "U701.94"
+    ],
+    "/MCU_LCD_HSYNC": [
+      "R1018.1",
+      "U701.97"
+    ],
+    "/MCU_LCD_VSYNC": [
+      "R1019.1",
+      "U701.12"
+    ],
+    "/MCU_LCD_DE": [
+      "R1020.1",
+      "U701.13"
+    ],
+    "/MCU_LCD_DISP": [
+      "R1021.1",
+      "U701.14"
+    ],
+    "/MCU_TOUCH_SCL": [
+      "R1022.1",
+      "U701.16"
+    ],
+    "/MCU_TOUCH_SDA": [
+      "R1023.1",
+      "U701.17"
+    ],
+    "/MCU_TOUCH_INT": [
+      "R1024.1",
+      "U701.18"
+    ],
+    "/MCU_TOUCH_RST_N": [
+      "R1025.1",
+      "U701.19"
+    ]
+  },
+  "physical_timing_output_groups": {
+    "PCLK": [
+      "J1001.30",
+      "R1017.2"
+    ],
+    "HSYNC": [
+      "J1001.32",
+      "R1018.2"
+    ],
+    "VSYNC": [
+      "R1019.2"
+    ],
+    "DE": [
+      "J1001.34",
+      "R1020.2"
+    ],
+    "DISP": [
+      "J1001.31",
+      "R1021.2",
+      "R1028.1"
+    ],
+    "SCL": [
+      "J1002.4",
+      "R1022.2",
+      "R1026.2"
+    ],
+    "SDA": [
+      "J1002.5",
+      "R1023.2",
+      "R1027.2"
+    ],
+    "INT": [
+      "J1002.6",
+      "R1024.2",
+      "R1030.1"
+    ],
+    "RST_N": [
+      "J1002.7",
+      "R1025.2",
+      "R1029.1"
+    ]
+  },
+  "physical_support_groups": {
+    "/MCU_RAW_MISO": [
+      "R804.2",
+      "U701.15"
+    ]
+  },
+  "limits": [
+    "Unadopted trials only; authoritative schematic/PCB and published seven-source baseline remain unchanged.",
+    "The preferred variant requires all 32 RGB halves, nine timing/touch source groups and PCLK/HSYNC/SCL/DE/DISP/SDA/reset/INT outputs physically complete; VSYNC output remains unfinished.",
+    "PCLK/HSYNC GPIO remaps, resistor selections/poses, C701/C702 underside bypass, MISO/R5 detours and revised G7 damping/output remain unadopted.",
+    "C701/C702 source-pad allocations still exceed the maintained 2.5-mm bounds; revise before adoption.",
+    "Long G6/G7 output detours, loaded timing/skew, source damping, effective returns/coupling/PDN and via-in-pad fabrication/assembly remain unqualified.",
+    "No copper/drill profile relaxation: U701 local copper clearance .127mm, Default .2mm, project hole clearance .25mm, tracks .127mm, through vias .5/.3mm."
+  ],
+  "route_planar_length_mm": {
+    "/RGB565 and capacitive touch/LCD_PCLK": 41.49264427649429,
+    "/RGB565 and capacitive touch/LCD_HSYNC": 32.515941546018375,
+    "/RGB565 and capacitive touch/LCD_G7": 67.04640866588035,
+    "/RGB565 and capacitive touch/LCD_G6": 68.63960312803931,
+    "/RGB565 and capacitive touch/TOUCH_SCL": 52.200616844190954,
+    "/RGB565 and capacitive touch/LCD_DE": 62.33274887854694,
+    "/RGB565 and capacitive touch/LCD_DISP": 62.068787847868,
+    "/MCU_LCD_VSYNC": 0.8281727983645242,
+    "/RGB565 and capacitive touch/TOUCH_SDA": 60.83327448791966,
+    "/MCU_TOUCH_RST_N": 15.769976541518083,
+    "/RGB565 and capacitive touch/TOUCH_RST_N": 61.086302269140205,
+    "/MCU_TOUCH_INT": 22.27297256769668,
+    "/RGB565 and capacitive touch/TOUCH_INT": 58.71559159102157
+  },
+  "manufacturing_profile_sha256": "d8cd8096a998bb6577948be69a5f9bcb244f0e77d4c978c0243dbf85f5cef905",
+  "new_via_smd_margins": {
+    "28295aa4-4996-5132-a151-82cc2f486c14": {
+      "position_mm": [
+        152.2,
+        73.8
+      ],
+      "nearest_smd_land": {
+        "pad": "TP904.1",
+        "distance_to_land_mm": 5.470832,
+        "annulus_clearance_mm": 5.220832,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 5.320831999999999,
+        "required_hole_clearance_mm": 0.25
       }
     },
-    "new_via_in_pad_anchors": {
-      "1357effe-49c2-5bde-916b-a029154cfc2f": "R1025.1"
+    "25bb6659-466d-501c-9f5b-d5a1054b656c": {
+      "position_mm": [
+        118.85,
+        94.3
+      ],
+      "nearest_smd_land": {
+        "pad": "R701.2",
+        "distance_to_land_mm": 0.491172,
+        "annulus_clearance_mm": 0.241172,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 0.34117200000000003,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "a7bbbc61-308a-5255-9a5b-d043fe047fc2": {
+      "position_mm": [
+        151.65,
+        72.1
+      ],
+      "nearest_smd_land": {
+        "pad": "TP904.1",
+        "distance_to_land_mm": 4.293309,
+        "annulus_clearance_mm": 4.043309,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 4.1433089999999995,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "50515c4f-4c21-58da-ab1c-b7ab10cedb54": {
+      "position_mm": [
+        125.7,
+        69.15
+      ],
+      "nearest_smd_land": {
+        "pad": "C719.2",
+        "distance_to_land_mm": 3.2,
+        "annulus_clearance_mm": 2.95,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 3.0500000000000003,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "e1dc9ec9-ff03-585c-a9c8-fc3805840e08": {
+      "position_mm": [
+        114.7,
+        80.15
+      ],
+      "nearest_smd_land": {
+        "pad": "R710.2",
+        "distance_to_land_mm": 0.575,
+        "annulus_clearance_mm": 0.32499999999999996,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 0.42499999999999993,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "e547410e-7709-5ad1-ab62-79acb7c6b2d6": {
+      "position_mm": [
+        129.6,
+        62.9
+      ],
+      "nearest_smd_land": {
+        "pad": "C605.1",
+        "distance_to_land_mm": 0.645174,
+        "annulus_clearance_mm": 0.395174,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 0.495174,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "e5a63bf8-b11a-5b32-ab1e-e012d1b32d67": {
+      "position_mm": [
+        141.45,
+        62.9
+      ],
+      "nearest_smd_land": {
+        "pad": "C909.1",
+        "distance_to_land_mm": 1.375,
+        "annulus_clearance_mm": 1.125,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 1.225,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "363492e7-0200-528b-b0aa-8588d23d4cb0": {
+      "position_mm": [
+        128.175,
+        86.1
+      ],
+      "nearest_smd_land": {
+        "pad": "U701.65",
+        "distance_to_land_mm": 0.425,
+        "annulus_clearance_mm": 0.175,
+        "required_copper_clearance_mm": 0.127,
+        "hole_clearance_mm": 0.275,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "62694303-d9a5-5c0f-aaf0-852c44f295f9": {
+      "position_mm": [
+        118.775,
+        49.925
+      ],
+      "nearest_smd_land": {
+        "pad": "C1002.1",
+        "distance_to_land_mm": 1.25,
+        "annulus_clearance_mm": 1.0,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 1.1,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "c773a7d9-faae-5882-aac0-4f1b31ed6012": {
+      "position_mm": [
+        130.925,
+        93.075
+      ],
+      "nearest_smd_land": {
+        "pad": "C711.1",
+        "distance_to_land_mm": 1.558348,
+        "annulus_clearance_mm": 1.308348,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 1.4083480000000002,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "2655c93e-6de6-593b-8bbd-3a3e4a0f893f": {
+      "position_mm": [
+        126.675,
+        63.425
+      ],
+      "nearest_smd_land": {
+        "pad": "C605.1",
+        "distance_to_land_mm": 3.299999,
+        "annulus_clearance_mm": 3.049999,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 3.149999,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "62e5f4f9-e7c0-5ec9-954a-9996590f410d": {
+      "position_mm": [
+        127.35,
+        90.175
+      ],
+      "nearest_smd_land": {
+        "pad": "U701.49",
+        "distance_to_land_mm": 0.425,
+        "annulus_clearance_mm": 0.175,
+        "required_copper_clearance_mm": 0.127,
+        "hole_clearance_mm": 0.275,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "0e057f61-8b8c-51b4-8841-b0691413385a": {
+      "position_mm": [
+        126.15,
+        62.9
+      ],
+      "nearest_smd_land": {
+        "pad": "C605.1",
+        "distance_to_land_mm": 3.86086,
+        "annulus_clearance_mm": 3.61086,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 3.7108600000000003,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "b9e49f48-8dcb-515c-ab64-5e9f542cfb6a": {
+      "position_mm": [
+        119.45,
+        74.5
+      ],
+      "nearest_smd_land": {
+        "pad": "C731.1",
+        "distance_to_land_mm": 0.465027,
+        "annulus_clearance_mm": 0.21502700000000002,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 0.31502700000000006,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "e83a31a8-8128-5527-93ac-a461c537d80d": {
+      "position_mm": [
+        122.65,
+        52.0
+      ],
+      "nearest_smd_land": {
+        "pad": "J1001.32",
+        "distance_to_land_mm": 0.5,
+        "annulus_clearance_mm": 0.25,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 0.35,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "e95c0abb-c4c1-5228-98d6-613fef47c0ef": {
+      "position_mm": [
+        129.8,
+        57.95
+      ],
+      "nearest_smd_land": {
+        "pad": "J1001.MP",
+        "distance_to_land_mm": 0.514782,
+        "annulus_clearance_mm": 0.26478199999999996,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 0.36478199999999994,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "77ca7910-7429-5d43-a82e-28c6384bba27": {
+      "position_mm": [
+        118.9,
+        64.5
+      ],
+      "nearest_smd_land": {
+        "pad": "C731.2",
+        "distance_to_land_mm": 7.33357,
+        "annulus_clearance_mm": 7.08357,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 7.18357,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "adec57ea-5cde-5ee6-8c77-a2f6ef42038a": {
+      "position_mm": [
+        122.3,
+        60.85
+      ],
+      "nearest_smd_land": {
+        "pad": "J1001.MP",
+        "distance_to_land_mm": 6.397265,
+        "annulus_clearance_mm": 6.147265,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 6.247265,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "c1c386bd-bf3d-5a36-99bd-338400934a5c": {
+      "position_mm": [
+        118.9,
+        73.0
+      ],
+      "nearest_smd_land": {
+        "pad": "C731.1",
+        "distance_to_land_mm": 0.980434,
+        "annulus_clearance_mm": 0.730434,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 0.830434,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "f06768be-daf6-5ed5-a2e1-fc9c56ca9a97": {
+      "position_mm": [
+        122.3,
+        55.4
+      ],
+      "nearest_smd_land": {
+        "pad": "J1001.31",
+        "distance_to_land_mm": 1.6,
+        "annulus_clearance_mm": 1.35,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 1.4500000000000002,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "1ed1fc6c-fb08-509e-ba59-5dc4c24ccc24": {
+      "position_mm": [
+        127.05,
+        92.3
+      ],
+      "nearest_smd_land": {
+        "pad": "R705.1",
+        "distance_to_land_mm": 0.475,
+        "annulus_clearance_mm": 0.22499999999999998,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 0.32499999999999996,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "7f8e834b-d916-5e42-98dc-8c9a0d3d58a1": {
+      "position_mm": [
+        125.3,
+        55.2
+      ],
+      "nearest_smd_land": {
+        "pad": "J1001.37",
+        "distance_to_land_mm": 1.4,
+        "annulus_clearance_mm": 1.15,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 1.25,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "c9efa866-bf43-5f06-bc08-377c6d62e760": {
+      "position_mm": [
+        133.199999,
+        91.55
+      ],
+      "nearest_smd_land": {
+        "pad": "C723.1",
+        "distance_to_land_mm": 0.5,
+        "annulus_clearance_mm": 0.25,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 0.35,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "25c84664-ad6c-5ddc-b32f-d7e5e7a4866f": {
+      "position_mm": [
+        125.75,
+        69.9
+      ],
+      "nearest_smd_land": {
+        "pad": "C719.2",
+        "distance_to_land_mm": 2.45,
+        "annulus_clearance_mm": 2.2,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 2.3000000000000003,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "38058257-ee9c-5319-87d2-2f1d53f0c541": {
+      "position_mm": [
+        144.95,
+        64.2
+      ],
+      "nearest_smd_land": {
+        "pad": "C909.2",
+        "distance_to_land_mm": 1.002809,
+        "annulus_clearance_mm": 0.7528090000000001,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 0.852809,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "6f9cda27-6b6e-516a-a5f2-7f3c0b46b05a": {
+      "position_mm": [
+        115.7,
+        79.9
+      ],
+      "nearest_smd_land": {
+        "pad": "C732.2",
+        "distance_to_land_mm": 0.825,
+        "annulus_clearance_mm": 0.575,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 0.6749999999999999,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "fe6c55d1-d59e-5e69-bb2a-a643145ed9d0": {
+      "position_mm": [
+        127.9,
+        63.85
+      ],
+      "nearest_smd_land": {
+        "pad": "C605.1",
+        "distance_to_land_mm": 2.074999,
+        "annulus_clearance_mm": 1.824999,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 1.9249990000000001,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "0a55bc9b-6f43-502a-a957-2965a59796ab": {
+      "position_mm": [
+        114.9,
+        89.05
+      ],
+      "nearest_smd_land": {
+        "pad": "C702.2",
+        "distance_to_land_mm": 0.466905,
+        "annulus_clearance_mm": 0.21690500000000001,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 0.316905,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "2578c5e1-e620-5596-8f07-756659e09518": {
+      "position_mm": [
+        115.6,
+        96.35
+      ],
+      "nearest_smd_land": {
+        "pad": "R1025.2",
+        "distance_to_land_mm": 2.373457,
+        "annulus_clearance_mm": 2.123457,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 2.2234570000000002,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "43361e8e-cdf6-5d44-b36a-5c0312ba4c97": {
+      "position_mm": [
+        111.35,
+        92.25
+      ],
+      "nearest_smd_land": {
+        "pad": "R804.2",
+        "distance_to_land_mm": 1.3,
+        "annulus_clearance_mm": 1.05,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 1.1500000000000001,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "58225a6d-00a3-5b83-a648-8761b7de4ead": {
+      "position_mm": [
+        118.2,
+        92.75
+      ],
+      "nearest_smd_land": {
+        "pad": "R1024.1",
+        "distance_to_land_mm": 0.466154,
+        "annulus_clearance_mm": 0.216154,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 0.31615400000000005,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "59c007a8-c841-5518-b6ce-e1122d69bd72": {
+      "position_mm": [
+        113.6,
+        90.0
+      ],
+      "nearest_smd_land": {
+        "pad": "R810.2",
+        "distance_to_land_mm": 0.807001,
+        "annulus_clearance_mm": 0.557001,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 0.657001,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "982ea97a-e0d0-559d-b2c1-275f2165dc77": {
+      "position_mm": [
+        111.35,
+        96.7
+      ],
+      "nearest_smd_land": {
+        "pad": "R806.2",
+        "distance_to_land_mm": 0.475,
+        "annulus_clearance_mm": 0.22499999999999998,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 0.32499999999999996,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "1357effe-49c2-5bde-916b-a029154cfc2f": {
+      "position_mm": [
+        117.7,
+        93.5
+      ],
+      "nearest_smd_land": {
+        "pad": "R1025.2",
+        "distance_to_land_mm": 0.74,
+        "annulus_clearance_mm": 0.49,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 0.59,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "6efa3801-b534-5856-9062-7c8be902abd7": {
+      "position_mm": [
+        114.4,
+        96.275
+      ],
+      "nearest_smd_land": {
+        "pad": "R806.1",
+        "distance_to_land_mm": 1.375909,
+        "annulus_clearance_mm": 1.125909,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 1.2259090000000001,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "7c2230ff-a4e9-558b-bc4d-8167d8c4d053": {
+      "position_mm": [
+        115.625,
+        92.425
+      ],
+      "nearest_smd_land": {
+        "pad": "C710.2",
+        "distance_to_land_mm": 1.764497,
+        "annulus_clearance_mm": 1.514497,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 1.614497,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "a96e1473-d552-54f7-b5dc-7ec92fdf1a5f": {
+      "position_mm": [
+        114.4,
+        93.05
+      ],
+      "nearest_smd_land": {
+        "pad": "R804.2",
+        "distance_to_land_mm": 2.427061,
+        "annulus_clearance_mm": 2.177061,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 2.2770610000000002,
+        "required_hole_clearance_mm": 0.25
+      }
     }
+  },
+  "new_via_in_pad_anchors": {
+    "1357effe-49c2-5bde-916b-a029154cfc2f": "R1025.1",
+    "25bb6659-466d-501c-9f5b-d5a1054b656c": "R1024.2"
   }
 }

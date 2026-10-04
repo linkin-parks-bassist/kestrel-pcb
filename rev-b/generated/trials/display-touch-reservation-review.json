@@ -1,5 +1,5 @@
 {
-  "status": "Rejected bounded source reservations; no GPIO remap or resistor pose adopted",
+  "status": "Pinned bounded source/pose searches; preferred original-pin INT source and output complete, VSYNC output pending",
   "poses": {
     "R1024": [
       132.6,
@@ -415,5 +415,411 @@
       "result": "No route within bounds"
     },
     "status": "Unselected source-only reservation; preferred retains the shorter saved VSYNC source and existing resistor bank poses"
+  },
+  "original_int_source": {
+    "status": "Complete in preferred unadopted trial, original pin/pose and MISO copper retained",
+    "baseline_trial_sha256": "c13f44746565cdc1d721b93c32316f8be26d2f3ba95ccb7269a2c5fcb4f6ca56",
+    "trial_sha256": "1f2da33e70e8225d3cc1b0a96c79a4a23eb08b3a14ca2c5ef146e7d72683f7b0",
+    "routes": [
+      {
+        "namespace": "trial-timing-output/int-seed",
+        "proposal": {
+          "net": "/MCU_TOUCH_INT",
+          "start": "U701.18",
+          "end": "R1024.1",
+          "paths": [
+            {
+              "net": "/MCU_TOUCH_INT",
+              "layer": "F.Cu",
+              "width_mm": 0.127,
+              "points": [
+                [
+                  117,
+                  87.575
+                ],
+                [
+                  117,
+                  87.75
+                ]
+              ]
+            }
+          ],
+          "via_positions": [],
+          "via_diameter_mm": 0.5,
+          "via_drill_mm": 0.3,
+          "limits": [
+            "Original MCU source seed preserved; short front-side extension joins INT source route without an unused through via."
+          ]
+        }
+      },
+      {
+        "namespace": "trial-timing-output/int-source",
+        "proposal": {
+          "grid_step_mm": 0.05,
+          "via_pad_hole_clearance_mm": 0.25,
+          "via_hole_to_hole_clearance_mm": 0.25,
+          "start_pad_position": [
+            119.1,
+            87.575
+          ],
+          "end_pad_position": [
+            118.9,
+            93.29
+          ],
+          "status": "Candidate simplified to original front-side source seed; original MISO preserved; guarded native and physical checks required",
+          "net": "/MCU_TOUCH_INT",
+          "start": "U701.18",
+          "end": "R1024.1",
+          "bounds": [
+            110.45,
+            77.05,
+            130.45,
+            97.05
+          ],
+          "paths": [
+            {
+              "net": "/MCU_TOUCH_INT",
+              "layer": "F.Cu",
+              "width_mm": 0.127,
+              "points": [
+                [
+                  117.0,
+                  87.75
+                ],
+                [
+                  115.7,
+                  89.05
+                ],
+                [
+                  114.9,
+                  89.05
+                ]
+              ]
+            },
+            {
+              "net": "/MCU_TOUCH_INT",
+              "layer": "B.Cu",
+              "width_mm": 0.127,
+              "points": [
+                [
+                  114.9,
+                  89.05
+                ],
+                [
+                  113.95,
+                  90.0
+                ],
+                [
+                  113.6,
+                  90.0
+                ]
+              ]
+            },
+            {
+              "net": "/MCU_TOUCH_INT",
+              "layer": "F.Cu",
+              "width_mm": 0.127,
+              "points": [
+                [
+                  113.6,
+                  90.0
+                ],
+                [
+                  111.35,
+                  92.25
+                ]
+              ]
+            },
+            {
+              "net": "/MCU_TOUCH_INT",
+              "layer": "In2.Cu",
+              "width_mm": 0.127,
+              "points": [
+                [
+                  111.35,
+                  92.25
+                ],
+                [
+                  111.35,
+                  96.7
+                ]
+              ]
+            },
+            {
+              "net": "/MCU_TOUCH_INT",
+              "layer": "F.Cu",
+              "width_mm": 0.127,
+              "points": [
+                [
+                  111.35,
+                  96.7
+                ],
+                [
+                  111.45,
+                  96.8
+                ],
+                [
+                  115.15,
+                  96.8
+                ],
+                [
+                  115.6,
+                  96.35
+                ]
+              ]
+            },
+            {
+              "net": "/MCU_TOUCH_INT",
+              "layer": "In2.Cu",
+              "width_mm": 0.127,
+              "points": [
+                [
+                  115.6,
+                  96.35
+                ],
+                [
+                  118.25,
+                  93.7
+                ],
+                [
+                  118.25,
+                  92.8
+                ],
+                [
+                  118.2,
+                  92.75
+                ]
+              ]
+            },
+            {
+              "net": "/MCU_TOUCH_INT",
+              "layer": "B.Cu",
+              "width_mm": 0.127,
+              "points": [
+                [
+                  118.2,
+                  92.75
+                ],
+                [
+                  118.35,
+                  92.75
+                ],
+                [
+                  118.9,
+                  93.3
+                ],
+                [
+                  118.9,
+                  93.29
+                ]
+              ]
+            }
+          ],
+          "via_positions": [
+            [
+              114.9,
+              89.05
+            ],
+            [
+              113.6,
+              90.0
+            ],
+            [
+              111.35,
+              92.25
+            ],
+            [
+              111.35,
+              96.7
+            ],
+            [
+              115.6,
+              96.35
+            ],
+            [
+              118.2,
+              92.75
+            ]
+          ],
+          "via_diameter_mm": 0.5,
+          "via_drill_mm": 0.3,
+          "limits": [
+            "Conservative pad bounding boxes; pad/footprint local clearance when present, otherwise .2mm, plus .01mm search margin. Outside-land new vias use pad/footprint local copper clearance (otherwise .2mm) and the project hole-clearance floor against every pad land, including their own net. New holes independently respect project hole-to-hole spacing against every existing via and drilled pad, including same-net vias (noncircular pad drills use a conservative circumscribed circle); explicit endpoint via-in-pad permits only native-contained drills with other-pad/copper clearance; existing same-net through-vias can be reused at their exact aligned coordinates.",
+            "No board-edge/keepout/custom-rule/return-current/impedance model; reviewed bounds and native DRC required."
+          ],
+          "existing_via_positions": [],
+          "via_in_pad_anchors": []
+        }
+      }
+    ],
+    "native_critical_violations": 0,
+    "physical_group": [
+      "R1024.1",
+      "U701.18"
+    ],
+    "preserved_miso_group": [
+      "R804.2",
+      "U701.15"
+    ],
+    "new_owned_planar_length_mm": 22.27297256769668,
+    "new_segments": 16,
+    "new_outside_land_vias": 6,
+    "all_nine_sources_complete": true,
+    "all_32_rgb_halves_complete": true,
+    "seven_complete_outputs_preserved": true,
+    "limits": [
+      "No INT GPIO remap, resistor movement, MISO replacement or initial unused INT via is required by the simplified accepted route.",
+      "Long INT source, source/return behavior and fabrication/assembly remain unqualified."
+    ],
+    "output_search_without_via_in_pad": {
+      "baseline_trial_sha256": "4abfbdc07afc28331de9ede22ae2b30c5ab96273e4c3888137fcfab95af0e663",
+      "start": "R1024.2",
+      "end": "J1002.6",
+      "via_in_pad": [],
+      "grid_step_mm": 0.05,
+      "bounds_mm": [
+        105,
+        45,
+        160,
+        98
+      ],
+      "result": "No route within bounds"
+    },
+    "complete_output": {
+      "route": {
+        "grid_step_mm": 0.05,
+        "via_pad_hole_clearance_mm": 0.25,
+        "via_hole_to_hole_clearance_mm": 0.25,
+        "start_pad_position": [
+          118.9,
+          94.31
+        ],
+        "end_pad_position": [
+          151.75,
+          56.15
+        ],
+        "status": "Candidate only: native DRC, geometry/endpoint and SI/return-path review required",
+        "net": "/RGB565 and capacitive touch/TOUCH_INT",
+        "start": "R1024.2",
+        "end": "J1002.6",
+        "bounds": [
+          105.0,
+          45.0,
+          160.0,
+          98.0
+        ],
+        "paths": [
+          {
+            "net": "/RGB565 and capacitive touch/TOUCH_INT",
+            "layer": "B.Cu",
+            "width_mm": 0.127,
+            "points": [
+              [
+                118.9,
+                94.31
+              ],
+              [
+                118.9,
+                94.3
+              ],
+              [
+                118.85,
+                94.3
+              ]
+            ]
+          },
+          {
+            "net": "/RGB565 and capacitive touch/TOUCH_INT",
+            "layer": "In2.Cu",
+            "width_mm": 0.127,
+            "points": [
+              [
+                118.85,
+                94.3
+              ],
+              [
+                118.95,
+                94.4
+              ],
+              [
+                130.35,
+                94.4
+              ],
+              [
+                132.65,
+                92.1
+              ],
+              [
+                132.65,
+                91.1
+              ],
+              [
+                151.65,
+                72.1
+              ]
+            ]
+          },
+          {
+            "net": "/RGB565 and capacitive touch/TOUCH_INT",
+            "layer": "F.Cu",
+            "width_mm": 0.127,
+            "points": [
+              [
+                151.65,
+                72.1
+              ],
+              [
+                151.75,
+                72.0
+              ],
+              [
+                151.75,
+                56.15
+              ]
+            ]
+          }
+        ],
+        "via_positions": [
+          [
+            118.85,
+            94.3
+          ],
+          [
+            151.65,
+            72.1
+          ]
+        ],
+        "via_diameter_mm": 0.5,
+        "via_drill_mm": 0.3,
+        "limits": [
+          "Conservative pad bounding boxes; pad/footprint local clearance when present, otherwise .2mm, plus .01mm search margin. Outside-land new vias use pad/footprint local copper clearance (otherwise .2mm) and the project hole-clearance floor against every pad land, including their own net. New holes independently respect project hole-to-hole spacing against every existing via and drilled pad, including same-net vias (noncircular pad drills use a conservative circumscribed circle); explicit endpoint via-in-pad permits only native-contained drills with other-pad/copper clearance; existing same-net through-vias can be reused at their exact aligned coordinates.",
+          "No board-edge/keepout/custom-rule/return-current/impedance model; reviewed bounds and native DRC required."
+        ],
+        "existing_via_positions": [],
+        "via_in_pad_anchors": [
+          {
+            "pad": "R1024.2",
+            "position": [
+              118.85,
+              94.3
+            ]
+          }
+        ]
+      },
+      "physical_group": [
+        "J1002.6",
+        "R1024.2",
+        "R1030.1"
+      ],
+      "new_owned_planar_length_mm": 58.71559159102157,
+      "new_segments": 9,
+      "new_vias": 2,
+      "native_critical_violations": 0,
+      "named_via_in_pad": "R1024.2",
+      "eight_outputs_complete": true,
+      "limits": [
+        "Loaded timing/returns/coupling and via-in-pad fabrication/assembly remain unqualified."
+      ]
+    }
   }
 }
