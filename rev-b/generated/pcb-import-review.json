@@ -1,5 +1,5 @@
 {
-  "status": "partial-placement-local-supply-ground-and-buck-copper-engineering-draft",
+  "status": "partial-placement-and-local-routes-engineering-draft",
   "board": "electrical/kestrel-revb.kicad_pcb",
   "imported_count": 347,
   "net_count": 296,
@@ -2918,5 +2918,23 @@
     "8c79625b-0fe3-537a-9242-4cf876148d83",
     "36e3f25f-dd07-566f-8783-00a75a0c74be",
     "4515126a-0ea9-5bf2-87af-63b787c47980"
+  ],
+  "provisional_display_rgb_damping_references": [
+    "R1001",
+    "R1002",
+    "R1003",
+    "R1004",
+    "R1005",
+    "R1006",
+    "R1007",
+    "R1008",
+    "R1009",
+    "R1010",
+    "R1011",
+    "R1012",
+    "R1013",
+    "R1014",
+    "R1015",
+    "R1016"
   ]
 }

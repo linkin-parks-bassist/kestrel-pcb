@@ -1,0 +1,89 @@
+{
+  "layer": "B.Cu",
+  "poses": {
+    "R1001": [
+      30.7,
+      21.0,
+      90
+    ],
+    "R1002": [
+      30.3,
+      24.1,
+      90
+    ],
+    "R1003": [
+      28.5,
+      22.2,
+      90
+    ],
+    "R1004": [
+      28.4,
+      25.2,
+      90
+    ],
+    "R1005": [
+      26.6,
+      20.5,
+      90
+    ],
+    "R1006": [
+      26.6,
+      24.1,
+      90
+    ],
+    "R1007": [
+      25.1,
+      22.5,
+      90
+    ],
+    "R1008": [
+      25.1,
+      25.5,
+      90
+    ],
+    "R1009": [
+      23.5,
+      19.6,
+      90
+    ],
+    "R1010": [
+      23.6,
+      24.6,
+      90
+    ],
+    "R1011": [
+      21.9,
+      22.3,
+      90
+    ],
+    "R1012": [
+      22.0,
+      25.3,
+      90
+    ],
+    "R1013": [
+      20.4,
+      22.4,
+      90
+    ],
+    "R1014": [
+      20.4,
+      25.4,
+      90
+    ],
+    "R1015": [
+      18.9,
+      21.0,
+      90
+    ],
+    "R1016": [
+      18.9,
+      24.1,
+      90
+    ]
+  },
+  "limits": [
+    "Sixteen provisional RGB source damping poses; source/FPC connections and loaded timing are unfinished.",
+    "Underside passive assembly, access and enclosure clearance require qualification; no via sites are established by placement."
+  ]
+}

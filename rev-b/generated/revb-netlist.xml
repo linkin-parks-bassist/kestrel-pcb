@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/home/david/Projects/kestrel/kestrel_pcb/rev-b/electrical/kestrel-revb.kicad_sch</source>
-    <date>2026-10-04T10:52:43</date>
+    <date>2026-10-04T12:35:36</date>
     <tool>Eeschema 10.0.6-10.0.6~ubuntu24.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -4247,12 +4247,14 @@
       <description>Resistor</description>
       <fields>
         <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4274,12 +4276,14 @@
       <description>Resistor</description>
       <fields>
         <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4301,12 +4305,14 @@
       <description>Resistor</description>
       <fields>
         <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4328,12 +4334,14 @@
       <description>Resistor</description>
       <fields>
         <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4355,12 +4363,14 @@
       <description>Resistor</description>
       <fields>
         <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4382,12 +4392,14 @@
       <description>Resistor</description>
       <fields>
         <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4409,12 +4421,14 @@
       <description>Resistor</description>
       <fields>
         <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4436,12 +4450,14 @@
       <description>Resistor</description>
       <fields>
         <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4463,12 +4479,14 @@
       <description>Resistor</description>
       <fields>
         <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4490,12 +4508,14 @@
       <description>Resistor</description>
       <fields>
         <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4517,12 +4537,14 @@
       <description>Resistor</description>
       <fields>
         <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4544,12 +4566,14 @@
       <description>Resistor</description>
       <fields>
         <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4571,12 +4595,14 @@
       <description>Resistor</description>
       <fields>
         <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4598,12 +4624,14 @@
       <description>Resistor</description>
       <fields>
         <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4625,12 +4653,14 @@
       <description>Resistor</description>
       <fields>
         <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4652,12 +4682,14 @@
       <description>Resistor</description>
       <fields>
         <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>

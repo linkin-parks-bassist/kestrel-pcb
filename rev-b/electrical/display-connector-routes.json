@@ -1208,7 +1208,7 @@
     }
   },
   "limits": [
-    "LCD/touch supply and connector-local defaults only; MCU RGB/touch endpoints and 25 source damping parts remain unfinished.",
+    "LCD/touch supply and connector-local defaults only; MCU RGB/touch routing and nine timing/touch damping placements remain unfinished; sixteen RGB damping parts have provisional underside poses.",
     "Physical topology only; effective bypass/returns, PDN/noise, rail drop/load/current/thermal, startup/backfeed, loaded RGB/I2C timing and flex/fabrication/assembly remain unqualified."
   ]
 }

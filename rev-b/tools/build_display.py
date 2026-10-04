@@ -106,6 +106,8 @@ def build():
                 child(e,'effects')[1:]=node('(effects (font (size 0.8 0.8)) (justify left))')[1:]
         if ref.startswith(('R','C','L')):
             inst.append(node(f'(property "Rating" "{val}" (at {x*GRID} {y*GRID} 0) (effects (font (size 1 1)) (hide yes)))'))
+        if ref.startswith('R') and 1001 <= int(ref[1:]) <= 1016:
+            inst.append(node(f'(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending" (at {x*GRID} {y*GRID} 0) (effects (font (size 1 1)) (hide yes)))'))
         if ref.startswith('J'):
             inst.append(node(f'(property "Qualification" "Bottom-contact footprint provisional; verify flex exposed side, numbering, 0.3mm tail thickness and bends with sample before placement/fabrication" (at {x*GRID} {y*GRID} 0) (effects (font (size 1 1)) (hide yes)))'))
     notes=[(20,15,'RGB565 / CAPACITIVE TOUCH - DM-TFT50-404 REFERENCE - ENGINEERING DRAFT'),

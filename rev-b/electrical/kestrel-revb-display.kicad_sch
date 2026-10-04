@@ -2294,6 +2294,15 @@
 				(hide yes)
 			)
 		)
+		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
+			(at 35.56 185.42000000000002 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -2376,6 +2385,15 @@
 			)
 		)
 		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+			(at 124.46000000000001 185.42000000000002 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 124.46000000000001 185.42000000000002 0)
 			(effects
 				(font
@@ -2474,6 +2492,15 @@
 				(hide yes)
 			)
 		)
+		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
+			(at 214.63 185.42000000000002 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -2556,6 +2583,15 @@
 			)
 		)
 		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+			(at 304.8 185.42000000000002 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 304.8 185.42000000000002 0)
 			(effects
 				(font
@@ -2654,6 +2690,15 @@
 				(hide yes)
 			)
 		)
+		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
+			(at 394.97 185.42000000000002 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -2736,6 +2781,15 @@
 			)
 		)
 		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+			(at 485.14 185.42000000000002 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 485.14 185.42000000000002 0)
 			(effects
 				(font
@@ -2834,6 +2888,15 @@
 				(hide yes)
 			)
 		)
+		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
+			(at 35.56 224.79 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -2916,6 +2979,15 @@
 			)
 		)
 		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+			(at 124.46000000000001 224.79 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 124.46000000000001 224.79 0)
 			(effects
 				(font
@@ -3014,6 +3086,15 @@
 				(hide yes)
 			)
 		)
+		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
+			(at 214.63 224.79 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -3096,6 +3177,15 @@
 			)
 		)
 		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+			(at 304.8 224.79 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 304.8 224.79 0)
 			(effects
 				(font
@@ -3194,6 +3284,15 @@
 				(hide yes)
 			)
 		)
+		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
+			(at 394.97 224.79 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -3276,6 +3375,15 @@
 			)
 		)
 		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+			(at 485.14 224.79 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 485.14 224.79 0)
 			(effects
 				(font
@@ -3374,6 +3482,15 @@
 				(hide yes)
 			)
 		)
+		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
+			(at 35.56 265.43 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -3456,6 +3573,15 @@
 			)
 		)
 		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+			(at 124.46000000000001 265.43 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 124.46000000000001 265.43 0)
 			(effects
 				(font
@@ -3554,6 +3680,15 @@
 				(hide yes)
 			)
 		)
+		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
+			(at 214.63 265.43 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -3636,6 +3771,15 @@
 			)
 		)
 		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+			(at 304.8 265.43 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 304.8 265.43 0)
 			(effects
 				(font

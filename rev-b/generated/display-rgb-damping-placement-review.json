@@ -1,0 +1,153 @@
+{
+  "status": "PASS sixteen underside RGB damping poses, exact XML pad nets, independent MCU pad mapping and bounded source proximity",
+  "placed_electrical_parts": 334,
+  "staged_electrical_parts": 13,
+  "allocations": {
+    "R1001": {
+      "pad_nets": {
+        "1": "/MCU_LCD_B3",
+        "2": "/RGB565 and capacitive touch/LCD_B3"
+      },
+      "mcu_source_pad": "80",
+      "source_pad_distance_mm": 2.963316
+    },
+    "R1002": {
+      "pad_nets": {
+        "1": "/MCU_LCD_B4",
+        "2": "/RGB565 and capacitive touch/LCD_B4"
+      },
+      "mcu_source_pad": "81",
+      "source_pad_distance_mm": 5.102083
+    },
+    "R1003": {
+      "pad_nets": {
+        "1": "/MCU_LCD_B5",
+        "2": "/RGB565 and capacitive touch/LCD_B5"
+      },
+      "mcu_source_pad": "82",
+      "source_pad_distance_mm": 2.739754
+    },
+    "R1004": {
+      "pad_nets": {
+        "1": "/MCU_LCD_B6",
+        "2": "/RGB565 and capacitive touch/LCD_B6"
+      },
+      "mcu_source_pad": "83",
+      "source_pad_distance_mm": 5.657407
+    },
+    "R1005": {
+      "pad_nets": {
+        "1": "/MCU_LCD_B7",
+        "2": "/RGB565 and capacitive touch/LCD_B7"
+      },
+      "mcu_source_pad": "84",
+      "source_pad_distance_mm": 0.775403
+    },
+    "R1006": {
+      "pad_nets": {
+        "1": "/MCU_LCD_G2",
+        "2": "/RGB565 and capacitive touch/LCD_G2"
+      },
+      "mcu_source_pad": "86",
+      "source_pad_distance_mm": 4.426765
+    },
+    "R1007": {
+      "pad_nets": {
+        "1": "/MCU_LCD_G3",
+        "2": "/RGB565 and capacitive touch/LCD_G3"
+      },
+      "mcu_source_pad": "87",
+      "source_pad_distance_mm": 2.81536
+    },
+    "R1008": {
+      "pad_nets": {
+        "1": "/MCU_LCD_G4",
+        "2": "/RGB565 and capacitive touch/LCD_G4"
+      },
+      "mcu_source_pad": "88",
+      "source_pad_distance_mm": 5.776353
+    },
+    "R1009": {
+      "pad_nets": {
+        "1": "/MCU_LCD_G5",
+        "2": "/RGB565 and capacitive touch/LCD_G5"
+      },
+      "mcu_source_pad": "89",
+      "source_pad_distance_mm": 1.38067
+    },
+    "R1010": {
+      "pad_nets": {
+        "1": "/MCU_LCD_G6",
+        "2": "/RGB565 and capacitive touch/LCD_G6"
+      },
+      "mcu_source_pad": "90",
+      "source_pad_distance_mm": 4.96198
+    },
+    "R1011": {
+      "pad_nets": {
+        "1": "/MCU_LCD_G7",
+        "2": "/RGB565 and capacitive touch/LCD_G7"
+      },
+      "mcu_source_pad": "92",
+      "source_pad_distance_mm": 3.215004
+    },
+    "R1012": {
+      "pad_nets": {
+        "1": "/MCU_LCD_R3",
+        "2": "/RGB565 and capacitive touch/LCD_R3"
+      },
+      "mcu_source_pad": "93",
+      "source_pad_distance_mm": 5.766823
+    },
+    "R1013": {
+      "pad_nets": {
+        "1": "/MCU_LCD_R4",
+        "2": "/RGB565 and capacitive touch/LCD_R4"
+      },
+      "mcu_source_pad": "94",
+      "source_pad_distance_mm": 3.81854
+    },
+    "R1014": {
+      "pad_nets": {
+        "1": "/MCU_LCD_R5",
+        "2": "/RGB565 and capacitive touch/LCD_R5"
+      },
+      "mcu_source_pad": "95",
+      "source_pad_distance_mm": 6.151931
+    },
+    "R1015": {
+      "pad_nets": {
+        "1": "/MCU_LCD_R6",
+        "2": "/RGB565 and capacitive touch/LCD_R6"
+      },
+      "mcu_source_pad": "97",
+      "source_pad_distance_mm": 3.42144
+    },
+    "R1016": {
+      "pad_nets": {
+        "1": "/MCU_LCD_R7",
+        "2": "/RGB565 and capacitive touch/LCD_R7"
+      },
+      "mcu_source_pad": "98",
+      "source_pad_distance_mm": 5.207807
+    }
+  },
+  "limits": [
+    "6.5 mm straight-line pad-centre allocation is an engineering placement bound, not routed source-stub length or loaded SI/timing qualification.",
+    "Source/FPC routes remain unfinished; placement establishes no legal via sites.",
+    "Dual-side passive assembly, solder access, enclosure clearance, exact parts, source damping, return paths and loaded RGB timings remain unqualified."
+  ],
+  "preservation": {
+    "prior_copper_items": 2398,
+    "unrelated_footprint_poses_and_pads": "unchanged",
+    "target_footprint_and_pad_ids_nets_sizes_hierarchy": "preserved; assembly side deliberately B.Cu",
+    "net_names_and_complete_xml_membership": "unchanged",
+    "zone_identity": "unchanged"
+  },
+  "native_drc": {
+    "violations": 413,
+    "reported_unconnected_items": 139,
+    "copper_mask_hole_courtyard_edge_gate": "PASS",
+    "limits": "Existing silkscreen/drill-profile issues and unfinished connectivity remain; capped report is not exact global connection count."
+  }
+}

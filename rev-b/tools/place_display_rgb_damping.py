@@ -1,0 +1,58 @@
+#!/usr/bin/env python3
+"""Apply provisional underside RGB source damping placement using system KiCad Python.
+
+Preserves unrelated parts and rejects targets moved manually. This establishes
+poses, not short routed loops, electrical performance or assembly clearance.
+"""
+import argparse
+import json
+from pathlib import Path
+import pcbnew
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def main():
+    p=argparse.ArgumentParser();p.add_argument('--trial-output',type=Path);args=p.parse_args()
+    data_file='display-rgb-damping-placement.json';report_key='provisional_display_rgb_damping_references'
+    data = json.loads((ROOT/'electrical'/data_file).read_text())
+    path = ROOT/'electrical/kestrel-revb.kicad_pcb'
+    board = pcbnew.LoadBoard(str(path))
+    fps = {fp.GetReference(): fp for fp in board.GetFootprints()}
+    conn = board.GetConnectivity(); conn.Build(board)
+    for ref, (x, y, angle) in data['poses'].items():
+        fp = fps[ref]
+        target = pcbnew.VECTOR2I(pcbnew.FromMM(100+x), pcbnew.FromMM(100-y))
+        delta = (fp.GetOrientationDegrees()-angle+180) % 360 - 180
+        if pcbnew.ToMM(fp.GetPosition().x) < 190 and (fp.GetPosition() != target or abs(delta) > .001):
+            raise ValueError(f'Refusing to reset manually changed {ref}')
+        assert fp.GetLayer() == (pcbnew.F_Cu if pcbnew.ToMM(fp.GetPosition().x) >= 190 else pcbnew.B_Cu), ref
+        if pcbnew.ToMM(fp.GetPosition().x) >= 190:
+            assert all(all(item.m_Uuid.AsString() == pad.m_Uuid.AsString() for item in conn.GetConnectedItems(pad)) for pad in fp.Pads()), f'{ref} staged but already routed'
+    for ref, (x, y, angle) in data['poses'].items():
+        if fps[ref].GetLayer() == pcbnew.F_Cu:
+            fps[ref].Flip(fps[ref].GetPosition(), False)
+        fps[ref].SetField('AssemblySide', 'B.Cu / source damping passives; assembly qualification pending')
+        fps[ref].GetField('AssemblySide').SetVisible(False)
+        fps[ref].SetPosition(pcbnew.VECTOR2I(pcbnew.FromMM(100+x), pcbnew.FromMM(100-y)))
+        fps[ref].SetOrientationDegrees(angle)
+    assert pcbnew.ZONE_FILLER(board).Fill(board.Zones())
+    pcbnew.SaveBoard(str(args.trial_output or path), board)
+    if args.trial_output:
+        print(f'Trial placed {len(data["poses"])} underside RGB damping parts');return
+    report_path = ROOT/'generated/pcb-import-review.json'
+    report = json.loads(report_path.read_text())
+    report[report_key] = list(data['poses'])
+    report['status'] = ('partial-placement-and-local-routes-engineering-draft' if len(list(board.GetTracks()))
+                        else 'provisional-device-and-support-placement-unrouted-engineering-draft')
+    report['limits'] = [
+        'Mechanical boundary is the provisional notched 1590XX candidate.',
+        'Jack/reservoir anchors, major devices and parts listed in placement groups are provisionally placed; other passives remain staged.',
+        'Bypass/PLL/configuration/clock/audio routes, power loops, full routing, FPC/connector fit and assembly are unqualified.',
+    ]
+    report_path.write_text(json.dumps(report, indent=2)+'\n')
+    print(f'Placed {len(data["poses"])} provisional parts from {data_file}; unrelated placement and nets preserved.')
+
+
+if __name__ == '__main__':
+    main()

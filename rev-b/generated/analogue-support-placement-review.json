@@ -20,8 +20,8 @@
     "R213",
     "R214"
   ],
-  "placed_electrical_parts": 318,
-  "staged_electrical_parts": 29,
+  "placed_electrical_parts": 334,
+  "staged_electrical_parts": 13,
   "pad_nets": {
     "C221": {
       "1": "/Hardware ADC and DAC/AUDIO_IN",

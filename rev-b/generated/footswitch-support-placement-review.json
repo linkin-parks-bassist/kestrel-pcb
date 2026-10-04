@@ -15,8 +15,8 @@
     "R1105",
     "R1106"
   ],
-  "placed_electrical_parts": 318,
-  "staged_electrical_parts": 29,
+  "placed_electrical_parts": 334,
+  "staged_electrical_parts": 13,
   "prior_copper_preserved": true,
   "unrelated_poses_and_pad_geometry_preserved": true,
   "all_pad_uuids_nets_and_hierarchy_preserved": true,

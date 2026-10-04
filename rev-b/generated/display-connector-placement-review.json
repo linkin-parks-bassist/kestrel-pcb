@@ -1,6 +1,6 @@
 {
-  "placed_electrical_parts": 318,
-  "staged_electrical_parts": 29,
+  "placed_electrical_parts": 334,
+  "staged_electrical_parts": 13,
   "status": "PASS nine connector support poses, exact XML pad nets and four provisional bypass proximity bounds",
   "pad_nets": {
     "C1001": {
