@@ -13,11 +13,11 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--trial-output',type=Path);p.add_argument('--replace-from',type=Path,help='Previous manifest for explicitly guarded unrouted pose revision');args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--board',type=Path,help='Input board; use --trial-output for trial revisions, otherwise saves the authoritative board');p.add_argument('--trial-output',type=Path);p.add_argument('--replace-from',type=Path,help='Previous manifest for explicitly guarded unrouted pose revision');args=p.parse_args()
     data_file='display-rgb-damping-placement.json';report_key='provisional_display_rgb_damping_references'
     data = json.loads((ROOT/'electrical'/data_file).read_text())
     path = ROOT/'electrical/kestrel-revb.kicad_pcb'
-    board = pcbnew.LoadBoard(str(path))
+    board = pcbnew.LoadBoard(str(args.board or path))
     fps = {fp.GetReference(): fp for fp in board.GetFootprints()}
     conn = board.GetConnectivity(); conn.Build(board)
     previous=json.loads(args.replace_from.read_text()) if args.replace_from else data

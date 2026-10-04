@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/home/david/Projects/kestrel/kestrel_pcb/rev-b/electrical/kestrel-revb.kicad_sch</source>
-    <date>2026-10-04T13:30:27</date>
+    <date>2026-10-04T15:08:39</date>
     <tool>Eeschema 10.0.6-10.0.6~ubuntu24.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -9536,7 +9536,7 @@
       <property name="Sheetname" value="Bare ESP32-P4 support"/>
       <property name="Sheetfile" value="kestrel-revb-mcu.kicad_sch"/>
       <sheetpath names="/Bare ESP32-P4 support/" tstamps="/9e0e9646-7e11-5104-b685-21456547dc89/"/>
-      <tstamps>5b393e04-0644-505b-a483-8247d20f30f1 36695308-57a8-550e-b480-97668682def7 5f7ff9c2-2635-55cb-98ca-8f6af4845486 92b309fd-100a-573e-b0f6-65c59868464e 2c1e62ec-340d-5f77-ada2-4b54bc142d29</tstamps>
+      <tstamps>5b393e04-0644-505b-a483-8247d20f30f1 36695308-57a8-550e-b480-97668682def7 92b309fd-100a-573e-b0f6-65c59868464e 5f7ff9c2-2635-55cb-98ca-8f6af4845486 2c1e62ec-340d-5f77-ada2-4b54bc142d29</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -12513,7 +12513,7 @@
     </net>
     <net code="131" name="/MCU_LCD_R4" class="Default">
       <node ref="R1013" pin="1" pintype="passive"/>
-      <node ref="U701" pin="94" pinfunction="GPIO51_94" pintype="bidirectional"/>
+      <node ref="U701" pin="56" pinfunction="GPIO27_56" pintype="bidirectional"/>
     </net>
     <net code="132" name="/MCU_LCD_R5" class="Default">
       <node ref="R1014" pin="1" pintype="passive"/>
@@ -12521,7 +12521,7 @@
     </net>
     <net code="133" name="/MCU_LCD_R6" class="Default">
       <node ref="R1015" pin="1" pintype="passive"/>
-      <node ref="U701" pin="97" pinfunction="GPIO53_97" pintype="bidirectional"/>
+      <node ref="U701" pin="64" pinfunction="GPIO33_64" pintype="bidirectional"/>
     </net>
     <net code="134" name="/MCU_LCD_R7" class="Default">
       <node ref="R1016" pin="1" pintype="passive"/>
@@ -13085,29 +13085,29 @@
     <net code="284" name="unconnected-(U701C-GPIO23-Pad25)" class="Default">
       <node ref="U701" pin="25" pinfunction="GPIO23_25" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="285" name="unconnected-(U701C-GPIO27-Pad56)" class="Default">
-      <node ref="U701" pin="56" pinfunction="GPIO27_56" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="286" name="unconnected-(U701C-GPIO29-Pad58)" class="Default">
+    <net code="285" name="unconnected-(U701C-GPIO29-Pad58)" class="Default">
       <node ref="U701" pin="58" pinfunction="GPIO29_58" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="287" name="unconnected-(U701C-GPIO31-Pad61)" class="Default">
+    <net code="286" name="unconnected-(U701C-GPIO31-Pad61)" class="Default">
       <node ref="U701" pin="61" pinfunction="GPIO31_61" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="288" name="unconnected-(U701D-GPIO33-Pad64)" class="Default">
-      <node ref="U701" pin="64" pinfunction="GPIO33_64" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="289" name="unconnected-(U701D-GPIO48-Pad90)" class="Default">
+    <net code="287" name="unconnected-(U701D-GPIO48-Pad90)" class="Default">
       <node ref="U701" pin="90" pinfunction="GPIO48_90" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="290" name="unconnected-(U701E-GPIO0-Pad104)" class="Default">
+    <net code="288" name="unconnected-(U701E-GPIO0-Pad104)" class="Default">
       <node ref="U701" pin="104" pinfunction="GPIO0_104" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="291" name="unconnected-(U701E-GPIO50-Pad93)" class="Default">
+    <net code="289" name="unconnected-(U701E-GPIO50-Pad93)" class="Default">
       <node ref="U701" pin="93" pinfunction="GPIO50_93" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="292" name="unconnected-(U701E-GPIO52-Pad95)" class="Default">
+    <net code="290" name="unconnected-(U701E-GPIO51-Pad94)" class="Default">
+      <node ref="U701" pin="94" pinfunction="GPIO51_94" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="291" name="unconnected-(U701E-GPIO52-Pad95)" class="Default">
       <node ref="U701" pin="95" pinfunction="GPIO52_95" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="292" name="unconnected-(U701E-GPIO53-Pad97)" class="Default">
+      <node ref="U701" pin="97" pinfunction="GPIO53_97" pintype="bidirectional+no_connect"/>
     </net>
     <net code="293" name="unconnected-(U701E-GPIO54-Pad98)" class="Default">
       <node ref="U701" pin="98" pinfunction="GPIO54_98" pintype="bidirectional+no_connect"/>

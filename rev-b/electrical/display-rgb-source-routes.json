@@ -25,14 +25,6 @@
       123.825,
       81.1
     ],
-    "U701.94": [
-      123.125,
-      81.1
-    ],
-    "U701.97": [
-      122.075,
-      81.1
-    ],
     "U701.80": [
       128.025,
       81.1
@@ -106,12 +98,12 @@
       91.61
     ],
     "R1013.1": [
-      122.625,
-      81.85
+      131.2,
+      90.51
     ],
     "R1015.1": [
-      121.675,
-      81.85
+      130.75,
+      88.51
     ],
     "U701.63": [
       128.9,
@@ -128,6 +120,14 @@
     "R1016.1": [
       130.1,
       86.41
+    ],
+    "U701.56": [
+      128.9,
+      89.325
+    ],
+    "U701.64": [
+      128.9,
+      86.525
     ]
   },
   "anchor_nets": {
@@ -137,8 +137,6 @@
     "U701.87": "/MCU_LCD_G3",
     "U701.89": "/MCU_LCD_G5",
     "U701.92": "/MCU_LCD_G7",
-    "U701.94": "/MCU_LCD_R4",
-    "U701.97": "/MCU_LCD_R6",
     "U701.80": "/MCU_LCD_B3",
     "R1001.1": "/MCU_LCD_B3",
     "R1002.1": "/MCU_LCD_B4",
@@ -162,7 +160,9 @@
     "U701.63": "/MCU_LCD_G6",
     "R1010.1": "/MCU_LCD_G6",
     "R1014.1": "/MCU_LCD_R5",
-    "R1016.1": "/MCU_LCD_R7"
+    "R1016.1": "/MCU_LCD_R7",
+    "U701.56": "/MCU_LCD_R4",
+    "U701.64": "/MCU_LCD_R6"
   },
   "existing_via_anchors": {},
   "paths": [
@@ -300,52 +300,6 @@
         ],
         [
           123.725,
-          81.85
-        ]
-      ]
-    },
-    {
-      "net": "/MCU_LCD_R4",
-      "layer": "F.Cu",
-      "width_mm": 0.127,
-      "points": [
-        [
-          123.125,
-          81.1
-        ],
-        [
-          123.125,
-          81.5
-        ],
-        [
-          122.825,
-          81.8
-        ],
-        [
-          122.525,
-          81.85
-        ]
-      ]
-    },
-    {
-      "net": "/MCU_LCD_R6",
-      "layer": "F.Cu",
-      "width_mm": 0.127,
-      "points": [
-        [
-          122.075,
-          81.1
-        ],
-        [
-          122.075,
-          81.5
-        ],
-        [
-          121.775,
-          81.8
-        ],
-        [
-          121.775,
           81.85
         ]
       ]
@@ -862,6 +816,110 @@
           86.41
         ]
       ]
+    },
+    {
+      "net": "/MCU_LCD_R4",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          128.9,
+          89.325
+        ],
+        [
+          129.5,
+          89.325
+        ],
+        [
+          129.8,
+          89.025
+        ],
+        [
+          130.5,
+          89.025
+        ],
+        [
+          131.2,
+          89.725
+        ],
+        [
+          131.2,
+          90.525
+        ]
+      ]
+    },
+    {
+      "net": "/MCU_LCD_R4",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          131.2,
+          90.525
+        ],
+        [
+          131.199999,
+          90.51
+        ]
+      ]
+    },
+    {
+      "net": "/MCU_LCD_R6",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          128.9,
+          86.525
+        ],
+        [
+          128.95,
+          86.475
+        ],
+        [
+          131.45,
+          86.475
+        ]
+      ]
+    },
+    {
+      "net": "/MCU_LCD_R6",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          131.45,
+          86.475
+        ],
+        [
+          131.8,
+          86.475
+        ],
+        [
+          132.3,
+          86.975
+        ],
+        [
+          132.3,
+          88.525
+        ],
+        [
+          131.95,
+          88.875
+        ],
+        [
+          131.1,
+          88.875
+        ],
+        [
+          130.75,
+          88.525
+        ],
+        [
+          130.75,
+          88.51
+        ]
+      ]
     }
   ],
   "via_positions": [
@@ -887,14 +945,6 @@
     ],
     [
       123.725,
-      81.85
-    ],
-    [
-      122.525,
-      81.85
-    ],
-    [
-      121.775,
       81.85
     ],
     [
@@ -936,6 +986,14 @@
     [
       128.15,
       86.875
+    ],
+    [
+      131.2,
+      90.525
+    ],
+    [
+      131.45,
+      86.475
     ]
   ],
   "via_net_names": [
@@ -945,8 +1003,6 @@
     "/MCU_LCD_G3",
     "/MCU_LCD_G5",
     "/MCU_LCD_G7",
-    "/MCU_LCD_R4",
-    "/MCU_LCD_R6",
     "/MCU_LCD_B3",
     "/MCU_LCD_B4",
     "/MCU_LCD_B5",
@@ -956,7 +1012,9 @@
     "/MCU_LCD_R3",
     "/MCU_LCD_R5",
     "/MCU_LCD_R7",
-    "/MCU_LCD_G6"
+    "/MCU_LCD_G6",
+    "/MCU_LCD_R4",
+    "/MCU_LCD_R6"
   ],
   "via_diameters_mm": [
     0.5,
@@ -1021,14 +1079,6 @@
       "U701.55",
       "R1012.1"
     ],
-    "/MCU_LCD_R4:complete": [
-      "U701.94",
-      "R1013.1"
-    ],
-    "/MCU_LCD_R6:complete": [
-      "U701.97",
-      "R1015.1"
-    ],
     "/MCU_LCD_G7:complete": [
       "U701.92",
       "R1011.1"
@@ -1044,6 +1094,14 @@
     "/MCU_LCD_R7:complete": [
       "U701.60",
       "R1016.1"
+    ],
+    "/MCU_LCD_R4:complete": [
+      "U701.56",
+      "R1013.1"
+    ],
+    "/MCU_LCD_R6:complete": [
+      "U701.64",
+      "R1015.1"
     ]
   },
   "complete_nets": [
@@ -1057,30 +1115,16 @@
     "/MCU_LCD_G4",
     "/MCU_LCD_G5",
     "/MCU_LCD_R3",
-    "/MCU_LCD_R4",
-    "/MCU_LCD_R6",
     "/MCU_LCD_G7",
     "/MCU_LCD_G6",
     "/MCU_LCD_R5",
-    "/MCU_LCD_R7"
+    "/MCU_LCD_R7",
+    "/MCU_LCD_R4",
+    "/MCU_LCD_R6"
   ],
   "limits": [
-    "RGB source connections only; resistor-to-FPC outputs and timing/touch routing remain unfinished.",
+    "RGB source connections only; resistor-to-FPC output topology is checked separately by check_display_rgb_output.py. Timing/touch routing remains unfinished.",
     "Geometry and native continuity do not qualify source damping, routed source length, loaded RGB timings, stackup/returns/coupling or fabrication/assembly."
-  ],
-  "seeded_pins": [
-    81,
-    83,
-    84,
-    87,
-    89,
-    92,
-    94,
-    97,
-    55,
-    57,
-    60,
-    63
   ],
   "via_in_pad_anchors": [
     {
@@ -1121,30 +1165,9 @@
     {
       "pad": "R1013.1",
       "position": [
-        122.525,
-        81.85
-      ]
-    },
-    {
-      "pad": "R1015.1",
-      "position": [
-        121.775,
-        81.85
+        131.2,
+        90.525
       ]
     }
-  ],
-  "seed_via_indices": {
-    "81": 0,
-    "83": 1,
-    "84": 2,
-    "87": 3,
-    "89": 4,
-    "92": 5,
-    "94": 6,
-    "97": 7,
-    "55": 14,
-    "57": 15,
-    "60": 16,
-    "63": 17
-  }
+  ]
 }

@@ -10317,9 +10317,26 @@
 		)
 		(uuid "eb0f9042-f584-559c-931b-2421553c2f02")
 	)
-	(no_connect
-		(at 252.73 71.12)
-		(uuid "21a3f53e-6f67-55a7-aa7a-a693c733d1c0")
+	(wire
+		(pts
+			(xy 252.73 71.12) (xy 247.65 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58824ccf-0feb-5938-8475-2aa31213ec1c")
+	)
+	(hierarchical_label "MCU_LCD_R4"
+		(shape output)
+		(at 247.65 71.12 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "3348ebe9-b967-598b-ad06-b4eef5a041be")
 	)
 	(wire
 		(pts
@@ -10392,9 +10409,26 @@
 		)
 		(uuid "d97449eb-74c2-5b46-bf15-a2516a0cc8b4")
 	)
-	(no_connect
-		(at 353.06 45.72)
-		(uuid "50112b0f-fb9b-5438-93c6-6b57f9a7502d")
+	(wire
+		(pts
+			(xy 353.06 45.72) (xy 347.98 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ca1189e-65b1-5e93-8553-5e7c5a0ef1c3")
+	)
+	(hierarchical_label "MCU_LCD_R6"
+		(shape output)
+		(at 347.98 45.72 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "7b4ab301-31a7-535c-80a0-77e79e78eb19")
 	)
 	(wire
 		(pts
@@ -10714,51 +10748,17 @@
 		(at 453.39 59.69)
 		(uuid "e67b5c9b-582a-5de8-bfb7-1038205dca88")
 	)
-	(wire
-		(pts
-			(xy 453.39 62.23) (xy 448.31 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5011393b-3048-5412-8512-a41405b0c085")
-	)
-	(hierarchical_label "MCU_LCD_R4"
-		(shape output)
-		(at 448.31 62.23 0)
-		(effects
-			(font
-				(size 0.8 0.8)
-			)
-			(justify right bottom)
-		)
-		(uuid "f113a12a-903d-55da-8ca6-5ced5786d6dc")
+	(no_connect
+		(at 453.39 62.23)
+		(uuid "6fe197dc-278b-5b94-a49f-ceb39f831b6c")
 	)
 	(no_connect
 		(at 453.39 64.77)
 		(uuid "5a280cd4-204f-5947-b84c-fcce119b9c65")
 	)
-	(wire
-		(pts
-			(xy 453.39 67.31) (xy 448.31 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69d70129-fce9-5509-85e5-882aad396839")
-	)
-	(hierarchical_label "MCU_LCD_R6"
-		(shape output)
-		(at 448.31 67.31 0)
-		(effects
-			(font
-				(size 0.8 0.8)
-			)
-			(justify right bottom)
-		)
-		(uuid "7b9c845e-fb2e-5231-89df-e74fa1506338")
+	(no_connect
+		(at 453.39 67.31)
+		(uuid "df3e67e2-b259-55bc-97f1-7b96f92768a4")
 	)
 	(no_connect
 		(at 453.39 69.85)

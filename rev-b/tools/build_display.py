@@ -8,7 +8,7 @@ import math
 import sys
 import uuid
 from pathlib import Path
-from display_pins import RGB_SIGNALS, TIMING_SIGNALS, TOUCH_SIGNALS, DISPLAY_PORTS
+from display_pins import RGB_SIGNALS, TIMING_SIGNALS, TOUCH_SIGNALS, DISPLAY_PORTS, GPIO_SIGNALS
 
 ROOT = Path(__file__).resolve().parents[1]
 GRID = 1.27
@@ -110,8 +110,10 @@ def build():
             inst.append(node(f'(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending" (at {x*GRID} {y*GRID} 0) (effects (font (size 1 1)) (hide yes)))'))
         if ref.startswith('J'):
             inst.append(node(f'(property "Qualification" "Bottom-contact footprint provisional; verify flex exposed side, numbering, 0.3mm tail thickness and bends with sample before placement/fabrication" (at {x*GRID} {y*GRID} 0) (effects (font (size 1 1)) (hide yes)))'))
+    gpio_by_signal={signal:gpio for gpio,signal in GPIO_SIGNALS.items()}
+    rgb_note='RGB565: '+ '; '.join('GPIO'+'/'.join(str(gpio_by_signal[f'LCD_{color}{bit}'])for bit in range(first,8))+f' -> {color}{first}..7'for color,first in [('B',3),('G',2),('R',3)])+'. Low panel data bits grounded.'
     notes=[(20,15,'RGB565 / CAPACITIVE TOUCH - DM-TFT50-404 REFERENCE - ENGINEERING DRAFT'),
-           (20,375,'RGB565: GPIO39..43 -> B3..7; GPIO44/45/46/47/32/49 -> G2..7; GPIO26/51/28/53/30 -> R3..7. Low panel data bits grounded.'),
+           (20,375,rgb_note),
            (20,382,'GPIO9 PCLK / 10 HSYNC / 11 VSYNC / 12 DE / 13 DISP. GPIO15 SCL / 16 SDA / 17 INT / 18 RESET.'),
            (20,389,'LCD power 3.456V; GT911 VDD/VDDIO 3.2V. 4.7k I2C pullups to TOUCH_VDD. INT is bidirectional during reset/address selection.'),
            (20,396,'FPC contact side/numbering/thickness, exact parts, loaded signal timing, reset/address sequence and power-off/backfeed pending.'),

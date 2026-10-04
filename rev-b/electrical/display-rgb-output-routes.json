@@ -1,0 +1,1792 @@
+{
+  "net": "/RGB565 and capacitive touch/LCD_B3",
+  "paths": [
+    {
+      "net": "/RGB565 and capacitive touch/LCD_B3",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          118.75,
+          53.15
+        ],
+        [
+          118.75,
+          52.2
+        ],
+        [
+          118.75,
+          51.85
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_B4",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          119.25,
+          53.15
+        ],
+        [
+          119.25,
+          52.2
+        ],
+        [
+          119.3,
+          52.15
+        ],
+        [
+          119.3,
+          51.3
+        ],
+        [
+          119.15,
+          51.15
+        ],
+        [
+          119.15,
+          50.9
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_B5",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          119.75,
+          53.15
+        ],
+        [
+          119.75,
+          52.2
+        ],
+        [
+          119.7,
+          52.15
+        ],
+        [
+          119.7,
+          50.45
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_B6",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          120.25,
+          53.15
+        ],
+        [
+          120.25,
+          52.2
+        ],
+        [
+          120.25,
+          51.85
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_B7",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          120.75,
+          53.15
+        ],
+        [
+          120.75,
+          52.2
+        ],
+        [
+          120.8,
+          52.15
+        ],
+        [
+          120.8,
+          50.9
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_G2",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          114.25,
+          53.15
+        ],
+        [
+          114.25,
+          52.2
+        ],
+        [
+          114.25,
+          51.85
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_G3",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          114.75,
+          53.15
+        ],
+        [
+          114.75,
+          52.2
+        ],
+        [
+          114.8,
+          52.15
+        ],
+        [
+          114.8,
+          50.9
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_G4",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          115.25,
+          53.15
+        ],
+        [
+          115.25,
+          52.2
+        ],
+        [
+          115.2,
+          52.15
+        ],
+        [
+          115.2,
+          51.3
+        ],
+        [
+          115.35,
+          51.15
+        ],
+        [
+          115.35,
+          49.95
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_G5",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          115.75,
+          53.15
+        ],
+        [
+          115.75,
+          52.2
+        ],
+        [
+          115.75,
+          51.85
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_G6",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          116.25,
+          53.15
+        ],
+        [
+          116.25,
+          52.2
+        ],
+        [
+          116.3,
+          52.15
+        ],
+        [
+          116.3,
+          50.9
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_G7",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          116.75,
+          53.15
+        ],
+        [
+          116.75,
+          52.2
+        ],
+        [
+          116.7,
+          52.15
+        ],
+        [
+          116.7,
+          51.3
+        ],
+        [
+          116.85,
+          51.15
+        ],
+        [
+          116.85,
+          49.95
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_R3",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          110.75,
+          53.15
+        ],
+        [
+          110.75,
+          52.2
+        ],
+        [
+          110.7,
+          52.15
+        ],
+        [
+          110.7,
+          50.7
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_R4",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          111.25,
+          53.15
+        ],
+        [
+          111.25,
+          52.2
+        ],
+        [
+          111.25,
+          51.85
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_R5",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          111.75,
+          53.15
+        ],
+        [
+          111.75,
+          52.2
+        ],
+        [
+          111.8,
+          52.15
+        ],
+        [
+          111.8,
+          50.9
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_R6",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          112.25,
+          53.15
+        ],
+        [
+          112.25,
+          52.2
+        ],
+        [
+          112.2,
+          52.15
+        ],
+        [
+          112.2,
+          51.3
+        ],
+        [
+          112.35,
+          51.15
+        ],
+        [
+          112.35,
+          49.95
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_R7",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          112.75,
+          53.15
+        ],
+        [
+          112.75,
+          52.2
+        ],
+        [
+          112.75,
+          51.85
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_B3",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          118.75,
+          51.85
+        ],
+        [
+          118.75,
+          59.7
+        ],
+        [
+          124.45,
+          65.4
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_B3",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          124.45,
+          65.4
+        ],
+        [
+          130.9,
+          71.85
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_B3",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          130.9,
+          71.85
+        ],
+        [
+          130.9,
+          78.3
+        ],
+        [
+          130.7,
+          78.5
+        ],
+        [
+          130.699999,
+          78.49
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_B4",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          119.15,
+          50.9
+        ],
+        [
+          119.35,
+          51.1
+        ],
+        [
+          119.35,
+          59.55
+        ],
+        [
+          126.9,
+          67.1
+        ],
+        [
+          126.9,
+          68.85
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_B4",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          126.9,
+          68.85
+        ],
+        [
+          130.3,
+          72.25
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_B4",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          130.3,
+          72.25
+        ],
+        [
+          130.3,
+          75.39
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_B5",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          119.7,
+          50.45
+        ],
+        [
+          119.7,
+          57.2
+        ],
+        [
+          127.9,
+          65.4
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_B5",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          127.9,
+          65.4
+        ],
+        [
+          127.9,
+          76.8
+        ],
+        [
+          128.4,
+          77.3
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_B5",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          128.4,
+          77.3
+        ],
+        [
+          128.5,
+          77.4
+        ],
+        [
+          128.5,
+          77.39
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_B6",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          120.25,
+          51.85
+        ],
+        [
+          120.25,
+          54.4
+        ],
+        [
+          122.7,
+          56.85
+        ],
+        [
+          124.7,
+          56.85
+        ],
+        [
+          131.15,
+          63.3
+        ],
+        [
+          131.15,
+          67.15
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_B6",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          131.15,
+          67.15
+        ],
+        [
+          128.4,
+          69.9
+        ],
+        [
+          128.4,
+          75.44
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_B7",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          120.8,
+          50.9
+        ],
+        [
+          122.85,
+          52.95
+        ],
+        [
+          122.85,
+          59.6
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_B7",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          122.85,
+          59.6
+        ],
+        [
+          122.85,
+          67.75
+        ],
+        [
+          127.3,
+          72.2
+        ],
+        [
+          127.3,
+          76.75
+        ],
+        [
+          126.9,
+          77.15
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_B7",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          126.9,
+          77.15
+        ],
+        [
+          126.9,
+          79.25
+        ],
+        [
+          126.85,
+          79.3
+        ],
+        [
+          126.85,
+          79.305
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_G2",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          114.25,
+          51.85
+        ],
+        [
+          114.25,
+          62.15
+        ],
+        [
+          126.6,
+          74.5
+        ],
+        [
+          126.6,
+          75.39
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_G4",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          115.35,
+          49.95
+        ],
+        [
+          115.35,
+          51.5
+        ],
+        [
+          115.2,
+          51.65
+        ],
+        [
+          115.2,
+          64.1
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_G4",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          115.2,
+          64.1
+        ],
+        [
+          125.1,
+          74.0
+        ],
+        [
+          125.1,
+          73.99
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_G6",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          116.3,
+          50.9
+        ],
+        [
+          116.3,
+          73.6
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_G6",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          116.3,
+          73.6
+        ],
+        [
+          120.7,
+          78.0
+        ],
+        [
+          120.7,
+          82.4
+        ],
+        [
+          121.3,
+          83.0
+        ],
+        [
+          126.65,
+          83.0
+        ],
+        [
+          129.0,
+          85.35
+        ],
+        [
+          129.0,
+          85.89
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_G7",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          116.85,
+          49.95
+        ],
+        [
+          116.8,
+          50.0
+        ],
+        [
+          116.8,
+          67.4
+        ],
+        [
+          121.9,
+          72.5
+        ],
+        [
+          121.9,
+          77.2
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_G7",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          121.9,
+          77.2
+        ],
+        [
+          121.9,
+          77.19
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_R3",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          110.7,
+          50.7
+        ],
+        [
+          110.7,
+          73.3
+        ],
+        [
+          116.25,
+          78.85
+        ],
+        [
+          116.25,
+          82.7
+        ],
+        [
+          116.75,
+          83.2
+        ],
+        [
+          117.95,
+          83.2
+        ],
+        [
+          121.35,
+          86.6
+        ],
+        [
+          123.05,
+          86.6
+        ],
+        [
+          123.4,
+          86.95
+        ],
+        [
+          123.4,
+          87.45
+        ],
+        [
+          123.75,
+          87.8
+        ],
+        [
+          124.25,
+          87.8
+        ],
+        [
+          124.6,
+          88.15
+        ],
+        [
+          124.6,
+          88.65
+        ],
+        [
+          128.15,
+          92.2
+        ],
+        [
+          129.1,
+          92.2
+        ],
+        [
+          129.3,
+          92.0
+        ],
+        [
+          129.3,
+          91.2
+        ],
+        [
+          128.7,
+          90.6
+        ],
+        [
+          128.699999,
+          90.59
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_R6",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          112.35,
+          49.95
+        ],
+        [
+          113.1,
+          49.95
+        ],
+        [
+          114.8,
+          51.65
+        ],
+        [
+          114.8,
+          57.5
+        ],
+        [
+          126.9,
+          69.6
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_R6",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          126.9,
+          69.6
+        ],
+        [
+          132.05,
+          74.75
+        ],
+        [
+          132.7,
+          74.75
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_R6",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          132.7,
+          74.75
+        ],
+        [
+          132.3,
+          75.15
+        ],
+        [
+          132.3,
+          81.4
+        ],
+        [
+          130.75,
+          82.95
+        ],
+        [
+          130.75,
+          87.49
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_R4",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          111.25,
+          51.85
+        ],
+        [
+          113.5,
+          54.1
+        ],
+        [
+          114.65,
+          54.1
+        ],
+        [
+          121.6,
+          61.05
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_R4",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          121.6,
+          61.05
+        ],
+        [
+          126.9,
+          66.35
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_R4",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          126.9,
+          66.35
+        ],
+        [
+          126.9,
+          66.65
+        ],
+        [
+          133.65,
+          73.4
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_R4",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          133.65,
+          73.4
+        ],
+        [
+          133.65,
+          87.7
+        ],
+        [
+          131.85,
+          89.5
+        ],
+        [
+          131.2,
+          89.5
+        ],
+        [
+          131.199999,
+          89.49
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_R5",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          111.8,
+          50.9
+        ],
+        [
+          111.8,
+          74.1
+        ],
+        [
+          115.05,
+          77.35
+        ],
+        [
+          115.05,
+          78.8
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_R5",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          115.05,
+          78.8
+        ],
+        [
+          115.05,
+          83.1
+        ],
+        [
+          124.7,
+          92.75
+        ],
+        [
+          130.5,
+          92.75
+        ],
+        [
+          130.9,
+          92.35
+        ],
+        [
+          130.9,
+          91.2
+        ],
+        [
+          129.6,
+          89.9
+        ],
+        [
+          129.6,
+          88.7
+        ],
+        [
+          129.0,
+          88.1
+        ],
+        [
+          129.0,
+          88.09
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_R7",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          112.75,
+          51.85
+        ],
+        [
+          112.75,
+          63.65
+        ],
+        [
+          125.55,
+          76.45
+        ],
+        [
+          125.8,
+          76.45
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_R7",
+      "layer": "In2.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          125.8,
+          76.45
+        ],
+        [
+          125.2,
+          77.05
+        ],
+        [
+          125.2,
+          81.0
+        ],
+        [
+          124.6,
+          81.6
+        ],
+        [
+          124.6,
+          82.1
+        ],
+        [
+          125.05,
+          82.55
+        ],
+        [
+          128.7,
+          82.55
+        ],
+        [
+          129.95,
+          81.3
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_R7",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          129.95,
+          81.3
+        ],
+        [
+          129.95,
+          85.25
+        ],
+        [
+          130.1,
+          85.4
+        ],
+        [
+          130.1,
+          85.39
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_G3",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          114.8,
+          50.9
+        ],
+        [
+          114.8,
+          63.75
+        ],
+        [
+          114.65,
+          63.9
+        ],
+        [
+          114.65,
+          66.55
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_G3",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          114.65,
+          66.55
+        ],
+        [
+          125.1,
+          77.0
+        ],
+        [
+          125.1,
+          76.99
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_G5",
+      "layer": "F.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          115.75,
+          51.85
+        ],
+        [
+          115.75,
+          69.1
+        ]
+      ]
+    },
+    {
+      "net": "/RGB565 and capacitive touch/LCD_G5",
+      "layer": "B.Cu",
+      "width_mm": 0.127,
+      "points": [
+        [
+          115.75,
+          69.1
+        ],
+        [
+          123.5,
+          76.85
+        ],
+        [
+          123.5,
+          77.4
+        ],
+        [
+          123.25,
+          77.65
+        ],
+        [
+          123.25,
+          79.55
+        ],
+        [
+          123.6,
+          79.9
+        ],
+        [
+          123.6,
+          79.89
+        ]
+      ]
+    }
+  ],
+  "via_positions": [
+    [
+      118.75,
+      51.85
+    ],
+    [
+      119.15,
+      50.9
+    ],
+    [
+      119.7,
+      50.45
+    ],
+    [
+      120.8,
+      50.9
+    ],
+    [
+      114.25,
+      51.85
+    ],
+    [
+      110.7,
+      50.7
+    ],
+    [
+      111.25,
+      51.85
+    ],
+    [
+      112.35,
+      49.95
+    ],
+    [
+      112.75,
+      51.85
+    ],
+    [
+      124.45,
+      65.4
+    ],
+    [
+      130.9,
+      71.85
+    ],
+    [
+      126.9,
+      68.85
+    ],
+    [
+      130.3,
+      72.25
+    ],
+    [
+      127.9,
+      65.4
+    ],
+    [
+      128.4,
+      77.3
+    ],
+    [
+      131.15,
+      67.15
+    ],
+    [
+      122.85,
+      59.6
+    ],
+    [
+      126.9,
+      77.15
+    ],
+    [
+      115.2,
+      64.1
+    ],
+    [
+      116.3,
+      73.6
+    ],
+    [
+      121.9,
+      77.2
+    ],
+    [
+      126.9,
+      69.6
+    ],
+    [
+      132.7,
+      74.75
+    ],
+    [
+      121.6,
+      61.05
+    ],
+    [
+      126.9,
+      66.35
+    ],
+    [
+      133.65,
+      73.4
+    ],
+    [
+      115.05,
+      78.8
+    ],
+    [
+      125.8,
+      76.45
+    ],
+    [
+      129.95,
+      81.3
+    ],
+    [
+      114.65,
+      66.55
+    ],
+    [
+      115.75,
+      69.1
+    ]
+  ],
+  "via_net_names": [
+    "/RGB565 and capacitive touch/LCD_B3",
+    "/RGB565 and capacitive touch/LCD_B4",
+    "/RGB565 and capacitive touch/LCD_B5",
+    "/RGB565 and capacitive touch/LCD_B7",
+    "/RGB565 and capacitive touch/LCD_G2",
+    "/RGB565 and capacitive touch/LCD_R3",
+    "/RGB565 and capacitive touch/LCD_R4",
+    "/RGB565 and capacitive touch/LCD_R6",
+    "/RGB565 and capacitive touch/LCD_R7",
+    "/RGB565 and capacitive touch/LCD_B3",
+    "/RGB565 and capacitive touch/LCD_B3",
+    "/RGB565 and capacitive touch/LCD_B4",
+    "/RGB565 and capacitive touch/LCD_B4",
+    "/RGB565 and capacitive touch/LCD_B5",
+    "/RGB565 and capacitive touch/LCD_B5",
+    "/RGB565 and capacitive touch/LCD_B6",
+    "/RGB565 and capacitive touch/LCD_B7",
+    "/RGB565 and capacitive touch/LCD_B7",
+    "/RGB565 and capacitive touch/LCD_G4",
+    "/RGB565 and capacitive touch/LCD_G6",
+    "/RGB565 and capacitive touch/LCD_G7",
+    "/RGB565 and capacitive touch/LCD_R6",
+    "/RGB565 and capacitive touch/LCD_R6",
+    "/RGB565 and capacitive touch/LCD_R4",
+    "/RGB565 and capacitive touch/LCD_R4",
+    "/RGB565 and capacitive touch/LCD_R4",
+    "/RGB565 and capacitive touch/LCD_R5",
+    "/RGB565 and capacitive touch/LCD_R7",
+    "/RGB565 and capacitive touch/LCD_R7",
+    "/RGB565 and capacitive touch/LCD_G3",
+    "/RGB565 and capacitive touch/LCD_G5"
+  ],
+  "via_diameters_mm": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+  ],
+  "via_diameter_mm": 0.5,
+  "via_drill_mm": 0.3,
+  "via_in_pad_anchors": [
+    {
+      "pad": "R1003.2",
+      "position": [
+        128.4,
+        77.3
+      ]
+    },
+    {
+      "pad": "R1011.2",
+      "position": [
+        121.9,
+        77.2
+      ]
+    }
+  ],
+  "anchors": {
+    "J1001.24": [
+      118.75,
+      53.15
+    ],
+    "R1001.2": [
+      130.699999,
+      78.49
+    ],
+    "J1001.25": [
+      119.25,
+      53.15
+    ],
+    "R1002.2": [
+      130.3,
+      75.39
+    ],
+    "J1001.26": [
+      119.75,
+      53.15
+    ],
+    "R1003.2": [
+      128.5,
+      77.39
+    ],
+    "J1001.27": [
+      120.25,
+      53.15
+    ],
+    "R1004.2": [
+      128.4,
+      75.44
+    ],
+    "J1001.28": [
+      120.75,
+      53.15
+    ],
+    "R1005.2": [
+      126.85,
+      79.305
+    ],
+    "J1001.15": [
+      114.25,
+      53.15
+    ],
+    "R1006.2": [
+      126.6,
+      75.39
+    ],
+    "J1001.16": [
+      114.75,
+      53.15
+    ],
+    "R1007.2": [
+      125.1,
+      76.99
+    ],
+    "J1001.17": [
+      115.25,
+      53.15
+    ],
+    "R1008.2": [
+      125.1,
+      73.99
+    ],
+    "J1001.18": [
+      115.75,
+      53.15
+    ],
+    "R1009.2": [
+      123.6,
+      79.89
+    ],
+    "J1001.19": [
+      116.25,
+      53.15
+    ],
+    "R1010.2": [
+      129.0,
+      85.89
+    ],
+    "J1001.20": [
+      116.75,
+      53.15
+    ],
+    "R1011.2": [
+      121.9,
+      77.19
+    ],
+    "J1001.8": [
+      110.75,
+      53.15
+    ],
+    "R1012.2": [
+      128.699999,
+      90.59
+    ],
+    "J1001.9": [
+      111.25,
+      53.15
+    ],
+    "R1013.2": [
+      131.2,
+      89.49
+    ],
+    "J1001.10": [
+      111.75,
+      53.15
+    ],
+    "R1014.2": [
+      129.0,
+      88.09
+    ],
+    "J1001.11": [
+      112.25,
+      53.15
+    ],
+    "R1015.2": [
+      130.75,
+      87.49
+    ],
+    "J1001.12": [
+      112.75,
+      53.15
+    ],
+    "R1016.2": [
+      130.1,
+      85.39
+    ]
+  },
+  "anchor_nets": {
+    "J1001.24": "/RGB565 and capacitive touch/LCD_B3",
+    "R1001.2": "/RGB565 and capacitive touch/LCD_B3",
+    "J1001.25": "/RGB565 and capacitive touch/LCD_B4",
+    "R1002.2": "/RGB565 and capacitive touch/LCD_B4",
+    "J1001.26": "/RGB565 and capacitive touch/LCD_B5",
+    "R1003.2": "/RGB565 and capacitive touch/LCD_B5",
+    "J1001.27": "/RGB565 and capacitive touch/LCD_B6",
+    "R1004.2": "/RGB565 and capacitive touch/LCD_B6",
+    "J1001.28": "/RGB565 and capacitive touch/LCD_B7",
+    "R1005.2": "/RGB565 and capacitive touch/LCD_B7",
+    "J1001.15": "/RGB565 and capacitive touch/LCD_G2",
+    "R1006.2": "/RGB565 and capacitive touch/LCD_G2",
+    "J1001.16": "/RGB565 and capacitive touch/LCD_G3",
+    "R1007.2": "/RGB565 and capacitive touch/LCD_G3",
+    "J1001.17": "/RGB565 and capacitive touch/LCD_G4",
+    "R1008.2": "/RGB565 and capacitive touch/LCD_G4",
+    "J1001.18": "/RGB565 and capacitive touch/LCD_G5",
+    "R1009.2": "/RGB565 and capacitive touch/LCD_G5",
+    "J1001.19": "/RGB565 and capacitive touch/LCD_G6",
+    "R1010.2": "/RGB565 and capacitive touch/LCD_G6",
+    "J1001.20": "/RGB565 and capacitive touch/LCD_G7",
+    "R1011.2": "/RGB565 and capacitive touch/LCD_G7",
+    "J1001.8": "/RGB565 and capacitive touch/LCD_R3",
+    "R1012.2": "/RGB565 and capacitive touch/LCD_R3",
+    "J1001.9": "/RGB565 and capacitive touch/LCD_R4",
+    "R1013.2": "/RGB565 and capacitive touch/LCD_R4",
+    "J1001.10": "/RGB565 and capacitive touch/LCD_R5",
+    "R1014.2": "/RGB565 and capacitive touch/LCD_R5",
+    "J1001.11": "/RGB565 and capacitive touch/LCD_R6",
+    "R1015.2": "/RGB565 and capacitive touch/LCD_R6",
+    "J1001.12": "/RGB565 and capacitive touch/LCD_R7",
+    "R1016.2": "/RGB565 and capacitive touch/LCD_R7"
+  },
+  "existing_via_anchors": {},
+  "expected_groups": {
+    "/RGB565 and capacitive touch/LCD_B3:complete": [
+      "J1001.24",
+      "R1001.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_B4:complete": [
+      "J1001.25",
+      "R1002.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_B5:complete": [
+      "J1001.26",
+      "R1003.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_B6:complete": [
+      "J1001.27",
+      "R1004.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_B7:complete": [
+      "J1001.28",
+      "R1005.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_G2:complete": [
+      "J1001.15",
+      "R1006.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_G4:complete": [
+      "J1001.17",
+      "R1008.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_G6:complete": [
+      "J1001.19",
+      "R1010.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_G7:complete": [
+      "J1001.20",
+      "R1011.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_R3:complete": [
+      "J1001.8",
+      "R1012.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_R6:complete": [
+      "J1001.11",
+      "R1015.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_R4:complete": [
+      "J1001.9",
+      "R1013.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_R5:complete": [
+      "J1001.10",
+      "R1014.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_R7:complete": [
+      "J1001.12",
+      "R1016.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_G3:complete": [
+      "J1001.16",
+      "R1007.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_G5:complete": [
+      "J1001.18",
+      "R1009.2"
+    ]
+  },
+  "complete_nets": [
+    "/RGB565 and capacitive touch/LCD_B3",
+    "/RGB565 and capacitive touch/LCD_B4",
+    "/RGB565 and capacitive touch/LCD_B5",
+    "/RGB565 and capacitive touch/LCD_B6",
+    "/RGB565 and capacitive touch/LCD_B7",
+    "/RGB565 and capacitive touch/LCD_G2",
+    "/RGB565 and capacitive touch/LCD_G4",
+    "/RGB565 and capacitive touch/LCD_G6",
+    "/RGB565 and capacitive touch/LCD_G7",
+    "/RGB565 and capacitive touch/LCD_R3",
+    "/RGB565 and capacitive touch/LCD_R6",
+    "/RGB565 and capacitive touch/LCD_R4",
+    "/RGB565 and capacitive touch/LCD_R5",
+    "/RGB565 and capacitive touch/LCD_R7",
+    "/RGB565 and capacitive touch/LCD_G3",
+    "/RGB565 and capacitive touch/LCD_G5"
+  ],
+  "limits": [
+    "Engineering topology only; RGB timing, damping, skew, coupling, return paths and via-in-pad/flex/fabrication/assembly remain unqualified."
+  ],
+  "seeded_connector_via_indices": {
+    "24": 0,
+    "25": 1,
+    "26": 2,
+    "28": 3,
+    "15": 4,
+    "8": 5,
+    "9": 6,
+    "11": 7,
+    "12": 8
+  }
+}

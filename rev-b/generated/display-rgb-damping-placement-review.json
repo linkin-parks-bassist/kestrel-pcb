@@ -104,8 +104,8 @@
         "1": "/MCU_LCD_R4",
         "2": "/RGB565 and capacitive touch/LCD_R4"
       },
-      "mcu_source_pad": "94",
-      "source_pad_distance_mm": 0.901388
+      "mcu_source_pad": "56",
+      "source_pad_distance_mm": 2.587319
     },
     "R1014": {
       "pad_nets": {
@@ -120,8 +120,8 @@
         "1": "/MCU_LCD_R6",
         "2": "/RGB565 and capacitive touch/LCD_R6"
       },
-      "mcu_source_pad": "97",
-      "source_pad_distance_mm": 0.85
+      "mcu_source_pad": "64",
+      "source_pad_distance_mm": 2.713434
     },
     "R1016": {
       "pad_nets": {
@@ -134,49 +134,64 @@
   },
   "limits": [
     "6.5 mm straight-line pad-centre allocation is an engineering placement bound, not routed source-stub length or loaded SI/timing qualification.",
-    "Placement alone establishes no legal via sites; the separate source checker owns routed topology.",
+    "Placement alone establishes no legal via sites; the separate source/output checkers own routed topology.",
     "Dual-side passive assembly, solder access, enclosure clearance, pulse derating, source damping, return paths and loaded RGB timings remain unqualified."
   ],
-  "preserved_prior_copper_items": 2398,
-  "preserved_unrelated_footprints_and_pad_nets_except_declared_mcu_remap": true,
-  "preserved_rgb_resistor_uuids_pad_uuids_nets_hierarchy_and_b_side": true,
-  "preserved_zone_identity": true,
-  "mcu_source_remap": {
-    "/MCU_LCD_G6": {
-      "before_pad": "90",
-      "current_pad": "63"
+  "preservation": {
+    "prior_non_rgb_source_copper_uuid_geometry_items": 2398,
+    "unchanged_other_source_copper_geometry_items": 99,
+    "unchanged_whole_footprint_bodies": 348,
+    "translated_rgb_footprints": {
+      "R1013": {
+        "delta_mm": [
+          8.575,
+          8.66
+        ],
+        "position_mm": [
+          131.2,
+          90
+        ]
+      },
+      "R1015": {
+        "delta_mm": [
+          9.075,
+          6.66
+        ],
+        "position_mm": [
+          130.75,
+          88
+        ]
+      }
     },
-    "/MCU_LCD_R3": {
-      "before_pad": "93",
-      "current_pad": "55"
+    "changed_u701_pad_nets": {
+      "56": "/MCU_LCD_R4",
+      "64": "/MCU_LCD_R6",
+      "94": "unconnected-(U701E-GPIO51-Pad94)",
+      "97": "unconnected-(U701E-GPIO53-Pad97)"
     },
-    "/MCU_LCD_R5": {
-      "before_pad": "95",
-      "current_pad": "57"
-    },
-    "/MCU_LCD_R7": {
-      "before_pad": "98",
-      "current_pad": "60"
-    }
+    "other_source_net_geometry_preserved": true,
+    "net_table_only_two_nc_names_replaced": true,
+    "zone_identity_setup_edges_preserved": true,
+    "rgb_source_builder_repeat_added_items": 0,
+    "rgb_output_builder_repeat_added_items": 0
   },
-  "net_membership_review": "PASS exactly four RGB source pad substitutions and four NC name substitutions; other 288 net memberships unchanged",
   "native_drc": {
-    "violations": 413,
-    "reported_unconnected": 123,
-    "types": {
+    "violations": {
+      "drill_out_of_range": 6,
       "silk_overlap": 199,
       "silk_over_copper": 199,
-      "silk_edge_clearance": 9,
-      "drill_out_of_range": 6
+      "silk_edge_clearance": 9
     },
-    "copper_mask_hole_courtyard_edge_dangling_clear": true
+    "reported_unconnected_items": 107,
+    "unconnected_report_is_capped": true,
+    "copper_mask_hole_courtyard_edge_dangling_violations": 0
   },
-  "source_routing_review": "display-rgb-source-review.json",
-  "current_copper_counts": {
-    "F.Cu": 1104,
-    "via": 598,
-    "B.Cu": 386,
-    "In2.Cu": 417
+  "whole_board_copper": {
+    "F.Cu": 1181,
+    "vias": 629,
+    "B.Cu": 482,
+    "In2.Cu": 433
   },
-  "repeat_build_added_copper_items": 0
+  "checked_rgb_source_report": "display-rgb-source-review.json",
+  "checked_rgb_output_report": "display-rgb-output-review.json"
 }

@@ -1,6 +1,6 @@
 {
-  "status": "PASS sixteen complete RGB MCU-to-source-damping nets; output routing unfinished",
-  "track_segments": 89,
+  "status": "PASS sixteen complete RGB MCU-to-source-damping nets; output topology checked separately",
+  "track_segments": 98,
   "vias": 18,
   "via_in_pad_sites": [
     {
@@ -41,15 +41,8 @@
     {
       "pad": "R1013.1",
       "position": [
-        122.525,
-        81.85
-      ]
-    },
-    {
-      "pad": "R1015.1",
-      "position": [
-        121.775,
-        81.85
+        131.2,
+        90.525
       ]
     }
   ],
@@ -64,12 +57,12 @@
     "/MCU_LCD_G4": 6.209768536510292,
     "/MCU_LCD_G5": 2.9520093264811673,
     "/MCU_LCD_R3": 2.9842381084693588,
-    "/MCU_LCD_R4": 1.1284021952268395,
-    "/MCU_LCD_R6": 0.8742640687119286,
     "/MCU_LCD_G7": 8.16037820195128,
     "/MCU_LCD_G6": 1.6357103852289714,
     "/MCU_LCD_R5": 1.7057103852289714,
-    "/MCU_LCD_R7": 3.5706346257174575
+    "/MCU_LCD_R7": 3.5706346257174575,
+    "/MCU_LCD_R4": 3.5292128552998996,
+    "/MCU_LCD_R6": 7.03276695297041
   },
   "physically_connected_local_groups": {
     "/MCU_LCD_B3:complete": [
@@ -112,14 +105,6 @@
       "R1012.1",
       "U701.55"
     ],
-    "/MCU_LCD_R4:complete": [
-      "R1013.1",
-      "U701.94"
-    ],
-    "/MCU_LCD_R6:complete": [
-      "R1015.1",
-      "U701.97"
-    ],
     "/MCU_LCD_G7:complete": [
       "R1011.1",
       "U701.92"
@@ -135,10 +120,18 @@
     "/MCU_LCD_R7:complete": [
       "R1016.1",
       "U701.60"
+    ],
+    "/MCU_LCD_R4:complete": [
+      "R1013.1",
+      "U701.56"
+    ],
+    "/MCU_LCD_R6:complete": [
+      "R1015.1",
+      "U701.64"
     ]
   },
   "limits": [
-    "RGB source connections only; resistor-to-FPC outputs and timing/touch routing remain unfinished.",
+    "RGB source connections only; resistor-to-FPC output topology is checked separately by check_display_rgb_output.py. Timing/touch routing remains unfinished.",
     "Geometry and native continuity do not qualify source damping, routed source length, loaded RGB timings, stackup/returns/coupling or fabrication/assembly."
   ]
 }

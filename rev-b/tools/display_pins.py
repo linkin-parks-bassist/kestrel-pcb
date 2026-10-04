@@ -6,7 +6,7 @@ RGB_SIGNALS = ([f'LCD_B{i}' for i in range(3,8)] +
 TIMING_SIGNALS = ['LCD_PCLK','LCD_HSYNC','LCD_VSYNC','LCD_DE','LCD_DISP']
 TOUCH_SIGNALS = ['TOUCH_SCL','TOUCH_SDA','TOUCH_INT','TOUCH_RST_N']
 # Alternate top-row data pads are trapped behind bypass copper; use free right GPIOs.
-GPIO_SIGNALS = dict(zip([39,40,41,42,43,44,45,46,47,32,49,26,51,28,53,30], RGB_SIGNALS))
+GPIO_SIGNALS = dict(zip([39,40,41,42,43,44,45,46,47,32,49,26,27,28,33,30], RGB_SIGNALS))
 GPIO_SIGNALS.update(dict(zip(range(9,14), TIMING_SIGNALS)))
 GPIO_SIGNALS.update(dict(zip(range(15,19), TOUCH_SIGNALS)))
 MCU_PORTS = [('MCU_'+n, 'bidirectional' if n in ('TOUCH_SCL','TOUCH_SDA','TOUCH_INT') else 'output')

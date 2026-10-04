@@ -8126,7 +8126,7 @@
 		)
 		(uuid "ada892a1-de18-545d-b426-c3add86d8fb3")
 	)
-	(text "RGB565: GPIO39..43 -> B3..7; GPIO44/45/46/47/32/49 -> G2..7; GPIO26/51/28/53/30 -> R3..7. Low panel data bits grounded."
+	(text "RGB565: GPIO39/40/41/42/43 -> B3..7; GPIO44/45/46/47/32/49 -> G2..7; GPIO26/27/28/33/30 -> R3..7. Low panel data bits grounded."
 		(at 20 375 0)
 		(effects
 			(font
@@ -8134,7 +8134,7 @@
 			)
 			(justify left)
 		)
-		(uuid "5df55ce6-066c-56eb-959f-6afe2e1f0d9d")
+		(uuid "28a1361e-ffd5-5a38-93fe-e4d6a9ac51a2")
 	)
 	(text "GPIO9 PCLK / 10 HSYNC / 11 VSYNC / 12 DE / 13 DISP. GPIO15 SCL / 16 SDA / 17 INT / 18 RESET."
 		(at 20 382 0)

@@ -1,0 +1,91 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-04T15:08:41",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/8e561a41-e54b-5aad-ad97-4817937535b7",
+            "violations": []
+        },
+        {
+            "path": "/Centre-negative 9 V input/",
+            "uuid_path": "/8e561a41-e54b-5aad-ad97-4817937535b7/5db298c9-20bf-5f31-bcff-5991ca6b033e",
+            "violations": []
+        },
+        {
+            "path": "/FPGA core and I/O sequencing/",
+            "uuid_path": "/8e561a41-e54b-5aad-ad97-4817937535b7/6812370b-be17-52e1-96b1-e16be3fac3e0",
+            "violations": []
+        },
+        {
+            "path": "/P4 controlled HP regulator/",
+            "uuid_path": "/8e561a41-e54b-5aad-ad97-4817937535b7/8b062b49-0171-5339-a2cb-eaa8f8cfd6cb",
+            "violations": []
+        },
+        {
+            "path": "/Onboard 5 V and 3.3 V bucks/",
+            "uuid_path": "/8e561a41-e54b-5aad-ad97-4817937535b7/d296acdf-b54c-504d-9252-ea6eba5fcc2b",
+            "violations": []
+        },
+        {
+            "path": "/Hardware ADC and DAC/",
+            "uuid_path": "/8e561a41-e54b-5aad-ad97-4817937535b7/b7cc1393-5690-5821-b322-99ad8ca0433a",
+            "violations": []
+        },
+        {
+            "path": "/RGB565 and capacitive touch/",
+            "uuid_path": "/8e561a41-e54b-5aad-ad97-4817937535b7/266df24d-5871-5e15-ad19-c96664ba9c26",
+            "violations": []
+        },
+        {
+            "path": "/Bare GW2AR-18 support/",
+            "uuid_path": "/8e561a41-e54b-5aad-ad97-4817937535b7/bde24fbf-039d-592b-9def-3a33fee000d9",
+            "violations": []
+        },
+        {
+            "path": "/Backlight and display supplies/",
+            "uuid_path": "/8e561a41-e54b-5aad-ad97-4817937535b7/f7fb3e4e-5099-573e-ba36-abf7ba359f78",
+            "violations": []
+        },
+        {
+            "path": "/Two momentary footswitch inputs/",
+            "uuid_path": "/8e561a41-e54b-5aad-ad97-4817937535b7/f3d2777d-8409-5f35-aad1-de6e4fc90745",
+            "violations": []
+        },
+        {
+            "path": "/Bare ESP32-P4 support/",
+            "uuid_path": "/8e561a41-e54b-5aad-ad97-4817937535b7/9e0e9646-7e11-5104-b685-21456547dc89",
+            "violations": []
+        },
+        {
+            "path": "/Power-domain SPI isolation/",
+            "uuid_path": "/8e561a41-e54b-5aad-ad97-4817937535b7/e30931ca-9274-582c-ad53-77515cc6c5e4",
+            "violations": []
+        }
+    ],
+    "source": "kestrel-revb.kicad_sch"
+}

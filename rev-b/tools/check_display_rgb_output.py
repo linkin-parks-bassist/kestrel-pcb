@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Verify sixteen complete MCU-to-RGB-damping nets and physical separation from outputs."""
+"""Verify accepted RGB resistor-to-FPC nets and physical separation from MCU inputs."""
 import argparse
 import json
 import pcbnew
-from build_display_rgb_source import ROOT,ident,vec
+from build_display_rgb_output import ROOT,ident,vec
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--board');parser.add_argument('--trial',action='store_true');args=parser.parse_args()
-    b=pcbnew.LoadBoard(args.board or str(ROOT/'electrical/kestrel-revb.kicad_pcb'));d=json.loads((ROOT/'electrical/display-rgb-source-routes.json').read_text())
+    b=pcbnew.LoadBoard(args.board or str(ROOT/'electrical/kestrel-revb.kicad_pcb'));d=json.loads((ROOT/'electrical/display-rgb-output-routes.json').read_text())
     fps={f.GetReference():f for f in b.GetFootprints()};pads={r:{p.GetNumber():p for p in f.Pads()}for r,f in fps.items()};tracks={t.m_Uuid.AsString():t for t in b.GetTracks()}
     for name,xy in d['anchors'].items():
         ref,num=name.split('.');p=next(p for p in fps[ref].Pads()if p.GetNumber()==num and (p.GetPosition()-vec(xy)).EuclideanNorm()<=2);assert p.GetNetname()==d.get('anchor_nets',{}).get(name,d['net']) and (p.GetPosition()-vec(xy)).EuclideanNorm()<=2,name
@@ -23,7 +23,7 @@ def main():
         assert v.TopLayer()==pcbnew.F_Cu and v.BottomLayer()==pcbnew.B_Cu
         assert all(v.IsOnLayer(layer) and v.GetWidth(layer)==pcbnew.FromMM(d['via_diameters_mm'][i])for layer in [pcbnew.F_Cu,pcbnew.In1_Cu,pcbnew.In2_Cu,pcbnew.B_Cu])
     # Permit only named, guarded via-in-pad sites; reject all other SMT intersections.
-    assert all(site['pad'] in {f'R{i}.1' for i in range(1001,1017)} for site in d.get('via_in_pad_anchors',[])), 'Only guarded underside source lands permit via-in-pad'
+    assert all(site['pad'] in {f'R{i}.2' for i in range(1001,1017)} for site in d.get('via_in_pad_anchors',[])), 'Only guarded underside output lands permit via-in-pad'
     vip={tuple(site['position']):site['pad'] for site in d.get('via_in_pad_anchors',[])}
     assert len(vip)==len(d.get('via_in_pad_anchors',[]))
     assert set(vip)<=set(map(tuple,d['via_positions']))
@@ -75,7 +75,7 @@ def main():
 
         lengths[net]=sum(pcbnew.ToMM(tracks[ident('track',i)].GetLength())for i in range(idx)if tracks[ident('track',i)].GetNetname()==net)
     assert all(ident('via',i) in all_seen for i in range(len(d['via_positions'])))
-    assert all(ident('track',i) in all_seen for i in range(idx)), 'Dangling owned RGB source copper'
+    assert all(ident('track',i) in all_seen for i in range(idx)), 'Dangling owned RGB output copper'
     import xml.etree.ElementTree as ET
     xml=ET.parse(ROOT/'generated/revb-netlist.xml')
     for key,names in expected.items():
@@ -83,23 +83,40 @@ def main():
         xml_names={node.attrib['ref']+'.'+node.attrib['pin']for n in xml.findall('.//nets/net')if n.attrib['name']==net for node in n.findall('node')}
         assert names<=xml_names,(net,xml_names,names)
         if net in d['complete_nets']:assert names==xml_names,(net,xml_names,names)
-    source_pins=[80,81,82,83,84,86,87,88,89,63,92,55,56,57,64,60]
-    independent={}
-    for i,pin in enumerate(source_pins):
-        ref=f'R{1001+i}';net=pads['U701'][str(pin)].GetNetname()
-        names={f'U701.{pin}',ref+'.1'};assert pads[ref]['1'].GetNetname()==net and pads[ref]['2'].GetNetname()!=net
-        seen,actual=connected(pads['U701'][str(pin)]);assert names<=actual and pads[ref]['2'].m_Uuid.AsString() not in seen,ref
+    panel_pins=[24,25,26,27,28,15,16,17,18,19,20,8,9,10,11,12]
+    independent={};all_endpoints={}
+    for i,pin in enumerate(panel_pins):
+        ref=f'R{1001+i}';net=pads['J1001'][str(pin)].GetNetname()
+        names={f'J1001.{pin}',ref+'.2'};assert pads[ref]['2'].GetNetname()==net and pads[ref]['1'].GetNetname()!=net
         xml_names={node.attrib['ref']+'.'+node.attrib['pin']for n in xml.findall('.//nets/net')if n.attrib['name']==net for node in n.findall('node')}
-        assert xml_names==names,(net,xml_names,names);independent[net]=names
-    assert set(d['complete_nets'])==set(independent) and {key.rsplit(':',1)[0]:names for key,names in expected.items()}==independent
+        assert xml_names==names,(net,xml_names,names)
+        all_endpoints[net]=names
+        if net in d['complete_nets']:
+            seen,actual=connected(pads[ref]['2']);assert names<=actual and pads[ref]['1'].m_Uuid.AsString() not in seen,ref
+            independent[net]=names
+    assert set(d['complete_nets'])==set(independent)
+    for key,names in expected.items():
+        net=key.rsplit(':',1)[0];assert net in all_endpoints
+        assert (names==all_endpoints[net] if net in independent else len(names)==1 and names<=all_endpoints[net]),(net,names)
+    assert {key.rsplit(':',1)[0] for key in expected if key.rsplit(':',1)[0] in independent}==set(independent)
+    for name,i in d.get('seeded_resistor_via_indices',{}).items():
+        ref,num=name.split('.');assert ref in {f'R{1001+j}' for j in range(16)} and num=='2' and 0<=i<len(d['via_positions'])
+        v=tracks[ident('via',i)];assert v.GetNetname()==pads[ref][num].GetNetname();seen,_=connected(pads[ref][num]);assert v.m_Uuid.AsString() in seen
+    for pin,i in d.get('seeded_connector_via_indices',{}).items():
+        assert int(pin) in panel_pins and 0<=i<len(d['via_positions'])
+        v=tracks[ident('via',i)];assert v.GetNetname()==pads['J1001'][pin].GetNetname()
+        seen,_=connected(pads['J1001'][pin]);assert v.m_Uuid.AsString() in seen
     if not args.trial:
         report=json.loads((ROOT/'generated/pcb-import-review.json').read_text())
-        assert report['provisional_display_rgb_source_track_ids']==[ident('track',i)for i in range(idx)]
-        assert report['provisional_display_rgb_source_via_ids']==[ident('via',i)for i in range(len(d['via_positions']))]
-    result={'status':'PASS sixteen complete RGB MCU-to-source-damping nets; output topology checked separately',
+        assert report['provisional_display_rgb_output_track_ids']==[ident('track',i)for i in range(idx)]
+        assert report['provisional_display_rgb_output_via_ids']==[ident('via',i)for i in range(len(d['via_positions']))]
+    remaining=[pads['J1001'][str(pin)].GetNetname() for pin in panel_pins if pads['J1001'][str(pin)].GetNetname() not in independent]
+    if not args.trial:assert not remaining, 'Accepted RGB output batch requires all sixteen complete nets'
+    zone=next(z for z in b.Zones() if z.GetLayer()==pcbnew.In1_Cu and z.GetNetname()=='/GND');assert zone.HasFilledPolysForLayer(pcbnew.In1_Cu)
+    result={'remaining_rgb_output_nets':remaining,'status':f'PASS {len(independent)} complete RGB resistor-to-FPC nets',
             'track_segments':idx,'vias':len(d['via_positions']),'via_in_pad_sites':d.get('via_in_pad_anchors',[]),'routed_planar_length_mm':lengths,'physically_connected_local_groups':{net:sorted(names)for net,names in expected.items()},
             'limits':d['limits']}
-    if not args.trial:(ROOT/'generated/display-rgb-source-review.json').write_text(json.dumps(result,indent=2)+'\n')
-    print(f'PASS: {idx} RGB-source segments, {len(d["via_positions"])} vias; sixteen complete source connections; electrical qualification unfinished.')
+    if not args.trial:(ROOT/'generated/display-rgb-output-review.json').write_text(json.dumps(result,indent=2)+'\n')
+    print(f'PASS: {idx} RGB-output segments, {len(d["via_positions"])} vias; {len(independent)} complete output connections; electrical qualification unfinished.')
     print(lengths)
 if __name__=='__main__':main()

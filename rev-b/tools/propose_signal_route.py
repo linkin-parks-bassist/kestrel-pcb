@@ -77,13 +77,16 @@ def main():
   assert args.start_via in seen, 'Start via is not physically connected to source pad'
   source_point=pos(source_via.GetPosition());ix,iy=round((source_point[0]-xmin)/step),round((source_point[1]-ymin)/step)
   assert (ix,iy) in existing_vias and tuple(existing_vias[ix,iy])==tuple(round(v,5) for v in source_point), 'Start via must align exactly to the reviewed grid'
-  a=(ix,iy,next(k for k in [2,1,0]if b.GetLayerName(LAYERS[k]) in args.layers and free[k][iy,ix]))
- else:a=node(start)
+  starts=[(ix,iy,k) for k in range(3) if free[k][iy,ix]];assert starts, "Start via cannot reach an allowed layer"
+ else:starts=[node(start)]
+ a=starts[0]
  z=node(end);assert free[a[2]][a[1],a[0]]and free[z[2]][z[1],z[0]],'Pad cannot reach grid'
  moves=[(1,0),(1,1),(0,1),(-1,1),(-1,0),(-1,-1),(0,-1),(1,-1)]
- def h(n):return math.hypot(n[0]-z[0],n[1]-z[1])*step+(0 if n[2]==z[2]else 3)
+ def h(n):
+  # Exact obstacle-free eight-way grid distance is a tighter admissible bound.
+  dx,dy=abs(n[0]-z[0]),abs(n[1]-z[1]);return (max(dx,dy)+(math.sqrt(2)-1)*min(dx,dy))*step+(0 if n[2]==z[2]else 3)
  # Search .05-mm steps; raster proposals need exact native DRC. Turn cost 0.02mm.
- init=(*a,8);dist={init:0};prev={};heap=[(h(a),0,init)];found=None
+ roots={(*a,8) for a in starts};dist={n:0 for n in roots};prev={};heap=[(h(n),0,n)for n in roots];heapq.heapify(heap);found=None
  while heap:
   _,cost,n=heapq.heappop(heap)
   if cost!=dist.get(n):continue
@@ -102,8 +105,8 @@ def main():
    if nc<dist.get(m,float('inf')):dist[m]=nc;prev[m]=n;heapq.heappush(heap,(nc+h(m),nc,m))
  assert found,'No route within bounds; reassess placement rather than expanding without review'
  chain=[found]
- while chain[-1]!=init:chain.append(prev[chain[-1]])
- chain.reverse();paths=[];vias=[];layer=a[2];points=[source_point]
+ while chain[-1] not in roots:chain.append(prev[chain[-1]])
+ chain.reverse();paths=[];vias=[];layer=chain[0][2];points=[source_point]
  def xy(n):return[round(float(xs[n[0]]),5),round(float(ys[n[1]]),5)]
  def finish():
   # Keep bends and layer endpoints; merging only collinear consecutive segments.

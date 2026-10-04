@@ -62,8 +62,8 @@
       90
     ],
     "R1013": [
-      22.625,
-      18.66,
+      31.2,
+      10,
       90
     ],
     "R1014": [
@@ -72,8 +72,8 @@
       90
     ],
     "R1015": [
-      21.675,
-      18.66,
+      30.75,
+      12,
       90
     ],
     "R1016": [
@@ -83,7 +83,7 @@
     ]
   },
   "limits": [
-    "Sixteen provisional 0402 RGB source damping poses; loaded timing and FPC output routing remain unfinished.",
+    "Sixteen provisional 0402 RGB source damping poses; source/output topology is checked separately, while loaded timing and assembly remain unqualified.",
     "Underside assembly, via-in-pad process, access and enclosure clearance require qualification."
   ]
 }

@@ -1,0 +1,109 @@
+{
+  "remaining_rgb_output_nets": [],
+  "status": "PASS 16 complete RGB resistor-to-FPC nets",
+  "track_segments": 180,
+  "vias": 31,
+  "via_in_pad_sites": [
+    {
+      "pad": "R1003.2",
+      "position": [
+        128.4,
+        77.3
+      ]
+    },
+    {
+      "pad": "R1011.2",
+      "position": [
+        121.9,
+        77.2
+      ]
+    }
+  ],
+  "routed_planar_length_mm": {
+    "/RGB565 and capacitive touch/LCD_B3": 33.07553820246539,
+    "/RGB565 and capacitive touch/LCD_B4": 31.44132422582787,
+    "/RGB565 and capacitive touch/LCD_B5": 33.325790027001894,
+    "/RGB565 and capacitive touch/LCD_B6": 31.71558800164656,
+    "/RGB565 and capacitive touch/LCD_B7": 33.55449493661167,
+    "/RGB565 and capacitive touch/LCD_G2": 29.955537495307727,
+    "/RGB565 and capacitive touch/LCD_G4": 31.505688721431024,
+    "/RGB565 and capacitive touch/LCD_G6": 45.6551803615609,
+    "/RGB565 and capacitive touch/LCD_G7": 32.676042558696054,
+    "/RGB565 and capacitive touch/LCD_R3": 56.08178278651619,
+    "/RGB565 and capacitive touch/LCD_R6": 50.87990445896597,
+    "/RGB565 and capacitive touch/LCD_R4": 50.3076239056431,
+    "/RGB565 and capacitive touch/LCD_R5": 60.8767568261897,
+    "/RGB565 and capacitive touch/LCD_R7": 47.82528467072152,
+    "/RGB565 and capacitive touch/LCD_G3": 32.771374439273465,
+    "/RGB565 and capacitive touch/LCD_G5": 32.81868324581534
+  },
+  "physically_connected_local_groups": {
+    "/RGB565 and capacitive touch/LCD_B3:complete": [
+      "J1001.24",
+      "R1001.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_B4:complete": [
+      "J1001.25",
+      "R1002.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_B5:complete": [
+      "J1001.26",
+      "R1003.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_B6:complete": [
+      "J1001.27",
+      "R1004.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_B7:complete": [
+      "J1001.28",
+      "R1005.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_G2:complete": [
+      "J1001.15",
+      "R1006.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_G4:complete": [
+      "J1001.17",
+      "R1008.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_G6:complete": [
+      "J1001.19",
+      "R1010.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_G7:complete": [
+      "J1001.20",
+      "R1011.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_R3:complete": [
+      "J1001.8",
+      "R1012.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_R6:complete": [
+      "J1001.11",
+      "R1015.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_R4:complete": [
+      "J1001.9",
+      "R1013.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_R5:complete": [
+      "J1001.10",
+      "R1014.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_R7:complete": [
+      "J1001.12",
+      "R1016.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_G3:complete": [
+      "J1001.16",
+      "R1007.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_G5:complete": [
+      "J1001.18",
+      "R1009.2"
+    ]
+  },
+  "limits": [
+    "Engineering topology only; RGB timing, damping, skew, coupling, return paths and via-in-pad/flex/fabrication/assembly remain unqualified."
+  ]
+}
