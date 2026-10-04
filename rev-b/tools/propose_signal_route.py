@@ -20,17 +20,19 @@ def main():
  pads={f.GetReference()+'.'+s.GetNumber():s for f in b.GetFootprints()for s in f.Pads()};start,end=[pads[x]for x in [args.start,args.end]];net=start.GetNetname();assert net and end.GetNetname()==net and all(any(pad.IsOnLayer(l) for l in LAYERS) for pad in (start,end))
  assert set(args.via_in_pad)<={args.start,args.end}, 'Only named endpoint lands can permit via-in-pad'
  xmin,ymin,xmax,ymax=args.bounds;step=args.grid_step;width=.127;clearance=.2;via_diameter=.5;drill=.3;margin=.01
- xs=np.arange(xmin,xmax+step/2,step);ys=np.arange(ymin,ymax+step/2,step);xx,yy=np.meshgrid(xs,ys);obstacles=[[]for _ in LAYERS];via_obstacles=[];lands=[]
+ xs=np.arange(xmin,xmax+step/2,step);ys=np.arange(ymin,ymax+step/2,step);xx,yy=np.meshgrid(xs,ys);obstacles=[[]for _ in LAYERS];via_obstacles=[];pad_exclusions={};hole_clearance=pcbnew.ToMM(b.GetDesignSettings().m_HoleClearance)
  def pos(v):return(pcbnew.ToMM(v.x),pcbnew.ToMM(v.y))
  for f in b.GetFootprints():
   for pad in f.Pads():
-   q=pad.GetBoundingBox();g=box(*(pcbnew.ToMM(v)for v in [q.GetLeft(),q.GetTop(),q.GetRight(),q.GetBottom()]));lands.append(g)
+   q=pad.GetBoundingBox();g=box(*(pcbnew.ToMM(v)for v in [q.GetLeft(),q.GetTop(),q.GetRight(),q.GetBottom()]));own=pad.GetLocalClearance();own=f.GetLocalClearance()if own is None else own
+   pad_clearance=pcbnew.ToMM(own)if own is not None else clearance
+   # Outside-land vias respect local copper rules and the independent hole floor.
+   pad_exclusions[pad.m_Uuid.AsString()]=g.buffer(max(pad_clearance+via_diameter/2,hole_clearance+drill/2)+margin)
    if pad.GetNetname()==net:continue
    for k,l in enumerate(LAYERS):
     if pad.IsOnLayer(l):
      own=pad.GetLocalClearance();own=f.GetLocalClearance()if own is None else own
      obstacles[k].append(g.buffer(pcbnew.ToMM(own)if own is not None else clearance))
-   if any(pad.IsOnLayer(l)for l in LAYERS):via_obstacles.append(g)
  for t in b.GetTracks():
   if t.GetNetname()==net:continue
   if isinstance(t,pcbnew.PCB_VIA):g=Point(pos(t.GetPosition())).buffer(pcbnew.ToMM(t.GetWidth(pcbnew.F_Cu))/2);via_obstacles.append(g)
@@ -40,14 +42,14 @@ def main():
  # In1 is reserved for the GND plane. The proposed through via creates native antipads.
  # Board edges/keepouts/custom rules are not modeled: bounds must be reviewed, then DRC.
  free=[~contains_xy(unary_union(gs).buffer(width/2+margin),xx,yy)for gs in obstacles]
- vf=~contains_xy(unary_union(via_obstacles).buffer(clearance+via_diameter/2+margin).union(unary_union(lands).buffer(clearance+via_diameter/2+margin)),xx,yy)
+ vf=~contains_xy(unary_union(via_obstacles).buffer(clearance+via_diameter/2+margin).union(unary_union(list(pad_exclusions.values()))),xx,yy)
  # Named endpoint lands permit only native-contained drill circles. All other
  # pad lands and foreign-net copper still constrain every through-via layer.
  for name in args.via_in_pad:
   pad=pads[name];assert pad.GetAttribute()==pcbnew.PAD_ATTRIB_SMD,name
   q=pad.GetBoundingBox();bounds=[pcbnew.ToMM(v)for v in [q.GetLeft(),q.GetTop(),q.GetRight(),q.GetBottom()]]
-  others=[g for f in b.GetFootprints()for other in f.Pads()if other.m_Uuid.AsString()!=pad.m_Uuid.AsString()for q in [other.GetBoundingBox()]for g in [box(*(pcbnew.ToMM(v)for v in [q.GetLeft(),q.GetTop(),q.GetRight(),q.GetBottom()]))]]
-  possible=~contains_xy(unary_union(via_obstacles+others).buffer(clearance+via_diameter/2+margin),xx,yy)
+  others=[g for uid,g in pad_exclusions.items()if uid!=pad.m_Uuid.AsString()]
+  possible=~contains_xy(unary_union(via_obstacles).buffer(clearance+via_diameter/2+margin).union(unary_union(others)),xx,yy)
   side=next(l for l in LAYERS if pad.IsOnLayer(l));poly=pad.GetEffectivePolygon(side)
   for iy in np.flatnonzero((ys>=bounds[1])&(ys<=bounds[3])):
    for ix in np.flatnonzero((xs>=bounds[0])&(xs<=bounds[2])):
@@ -127,7 +129,7 @@ def main():
   if n[2]!=layer:finish();vias.append(xy(n));layer=n[2];points=[xy(n)]
   else:points.append(xy(n))
  points.append(pos(end.GetPosition()));finish()
- result=dict(grid_step_mm=step,start_pad_position=pos(start.GetPosition()),end_pad_position=pos(end.GetPosition()),status='Candidate only: native DRC, geometry/endpoint and SI/return-path review required',net=net,start=args.start,end=args.end,bounds=args.bounds,paths=paths,via_positions=vias,via_diameter_mm=via_diameter,via_drill_mm=drill,limits=['Conservative pad bounding boxes; pad/footprint local clearance when present, otherwise .2mm, plus .01mm search margin. Outside-land new vias keep .2mm annulus clearance from every pad land, including their own net; explicit endpoint via-in-pad permits only native-contained drills with other-pad/copper clearance; existing same-net through-vias can be reused at their exact aligned coordinates.','No board-edge/keepout/custom-rule/return-current/impedance model; reviewed bounds and native DRC required.'])
+ result=dict(grid_step_mm=step,via_pad_hole_clearance_mm=hole_clearance,start_pad_position=pos(start.GetPosition()),end_pad_position=pos(end.GetPosition()),status='Candidate only: native DRC, geometry/endpoint and SI/return-path review required',net=net,start=args.start,end=args.end,bounds=args.bounds,paths=paths,via_positions=vias,via_diameter_mm=via_diameter,via_drill_mm=drill,limits=['Conservative pad bounding boxes; pad/footprint local clearance when present, otherwise .2mm, plus .01mm search margin. Outside-land new vias use pad/footprint local copper clearance (otherwise .2mm) and the project hole-clearance floor against every pad land, including their own net; explicit endpoint via-in-pad permits only native-contained drills with other-pad/copper clearance; existing same-net through-vias can be reused at their exact aligned coordinates.','No board-edge/keepout/custom-rule/return-current/impedance model; reviewed bounds and native DRC required.'])
  reused=[xy for xy in vias if tuple(xy) in map(tuple,existing_vias.values())]
  if source_via is not None and list(source_point) not in reused:reused.append(list(source_point))
  result['existing_via_positions']=reused;result['via_positions']=[xy for xy in vias if xy not in reused]

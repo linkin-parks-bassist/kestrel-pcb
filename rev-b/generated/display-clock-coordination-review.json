@@ -190,21 +190,39 @@
       ]
     },
     "limits": [
-      "Unadopted coordination experiments only; the published seven-source trial and authoritative schematic/PCB remain unchanged.",
-      "Paired RGB replacement retains all 32 complete RGB halves, but its outward clock pocket has no modeled legal via site.",
-      "Individual inward PCLK/HSYNC outputs pass native DRC, but temporarily leave G7 source and G6 output disconnected; sequential second-clock searches fail.",
-      "Staggered HSYNC passes alone; PCLK remains unrouted. Restore both RGB halves and prove all output/source groups before adopting any coordinated changes.",
-      "Width/clearance/via/drill rules are unchanged. Loaded timing/skew, return/coupling, bypass bounds and fabrication/assembly remain unqualified."
+      "Unadopted trials only; authoritative schematic/PCB and published seven-source baseline remain unchanged.",
+      "The dual-clock variant requires all 32 RGB halves, seven timing/touch source groups and both PCLK/HSYNC outputs physically complete; INT/reset sources and seven other timing/touch outputs remain unfinished.",
+      "PCLK/HSYNC GPIO remaps, resistor selections/poses, C701/C702 underside bypass, MISO/R5 detours and revised G7 damping/output remain unadopted.",
+      "C701/C702 source-pad allocations still exceed the maintained 2.5-mm bounds; revise before adoption.",
+      "Long G6/G7 output detours, loaded timing/skew, source damping, effective returns/coupling/PDN and via-in-pad fabrication/assembly remain unqualified.",
+      "No copper/drill profile relaxation: U701 local copper clearance .127mm, Default .2mm, project hole clearance .25mm, tracks .127mm, through vias .5/.3mm."
     ],
     "route_planar_length_mm": {
       "/RGB565 and capacitive touch/LCD_G6": 41.155180361560916,
       "/MCU_LCD_G7": 9.785251936104181
+    },
+    "manufacturing_profile_sha256": "d8cd8096a998bb6577948be69a5f9bcb244f0e77d4c978c0243dbf85f5cef905",
+    "new_via_smd_margins": {
+      "b769d752-cc5c-5548-a405-d4df53737884": {
+        "position_mm": [
+          117.1,
+          78.4
+        ],
+        "nearest_smd_land": {
+          "pad": "Y701.1",
+          "distance_to_land_mm": 0.626498,
+          "annulus_clearance_mm": 0.376498,
+          "required_copper_clearance_mm": 0.2,
+          "hole_clearance_mm": 0.476498,
+          "required_hole_clearance_mm": 0.25
+        }
+      }
     }
   },
-  "pclk_inward": {
-    "variant": "pclk_inward",
+  "dual_clock_rgb": {
+    "variant": "dual_clock_rgb",
     "baseline_sha256": "603ba3bf19fc05499781dda95da4a748c3c0afc90077a53db912f2fbfaec6164",
-    "trial_sha256": "51ff3f69e4d45b9f92c1b2a20d16f226c777852481be8089a0a967cc58e0586d",
+    "trial_sha256": "8892f35fc0cadb9cc7924f5ed9cc586e2997b157f24351f30ed74d30323b0c79",
     "native_critical_violations": 0,
     "native_residual_counts": {
       "drill_out_of_range": 6,
@@ -212,11 +230,11 @@
       "silk_over_copper": 199,
       "silk_edge_clearance": 9,
       "track_dangling": 1,
-      "via_dangling": 2
+      "via_dangling": 1
     },
-    "preserved_copper_items": 2779,
-    "removed_copper_items": 17,
-    "added_copper_items": 19,
+    "preserved_copper_items": 2768,
+    "removed_copper_items": 28,
+    "added_copper_items": 81,
     "physical_rgb_groups": {
       "source:/MCU_LCD_B3": [
         "R1001.1",
@@ -259,6 +277,7 @@
         "U701.55"
       ],
       "source:/MCU_LCD_G7": [
+        "R1011.1",
         "U701.92"
       ],
       "source:/MCU_LCD_G6": [
@@ -310,6 +329,7 @@
         "R1008.2"
       ],
       "output:/RGB565 and capacitive touch/LCD_G6": [
+        "J1001.19",
         "R1010.2"
       ],
       "output:/RGB565 and capacitive touch/LCD_G7": [
@@ -387,418 +407,194 @@
         "R1017.2"
       ],
       "HSYNC": [
-        "R1018.2"
-      ]
-    },
-    "limits": [
-      "Unadopted coordination experiments only; the published seven-source trial and authoritative schematic/PCB remain unchanged.",
-      "Paired RGB replacement retains all 32 complete RGB halves, but its outward clock pocket has no modeled legal via site.",
-      "Individual inward PCLK/HSYNC outputs pass native DRC, but temporarily leave G7 source and G6 output disconnected; sequential second-clock searches fail.",
-      "Staggered HSYNC passes alone; PCLK remains unrouted. Restore both RGB halves and prove all output/source groups before adopting any coordinated changes.",
-      "Width/clearance/via/drill rules are unchanged. Loaded timing/skew, return/coupling, bypass bounds and fabrication/assembly remain unqualified."
-    ],
-    "route_planar_length_mm": {
-      "/RGB565 and capacitive touch/LCD_PCLK": 41.199751057680835
-    }
-  },
-  "hsync_inward": {
-    "variant": "hsync_inward",
-    "baseline_sha256": "603ba3bf19fc05499781dda95da4a748c3c0afc90077a53db912f2fbfaec6164",
-    "trial_sha256": "c251d4b348c2e8c3aa18f31117797419464c8f785de7db3c811e2d49d2a9bea3",
-    "native_critical_violations": 0,
-    "native_residual_counts": {
-      "drill_out_of_range": 6,
-      "silk_overlap": 199,
-      "silk_over_copper": 199,
-      "silk_edge_clearance": 9,
-      "track_dangling": 1,
-      "via_dangling": 2
-    },
-    "preserved_copper_items": 2779,
-    "removed_copper_items": 17,
-    "added_copper_items": 12,
-    "physical_rgb_groups": {
-      "source:/MCU_LCD_B3": [
-        "R1001.1",
-        "U701.80"
-      ],
-      "source:/MCU_LCD_B4": [
-        "R1002.1",
-        "U701.81"
-      ],
-      "source:/MCU_LCD_B5": [
-        "R1003.1",
-        "U701.82"
-      ],
-      "source:/MCU_LCD_B6": [
-        "R1004.1",
-        "U701.83"
-      ],
-      "source:/MCU_LCD_B7": [
-        "R1005.1",
-        "U701.84"
-      ],
-      "source:/MCU_LCD_G2": [
-        "R1006.1",
-        "U701.86"
-      ],
-      "source:/MCU_LCD_G3": [
-        "R1007.1",
-        "U701.87"
-      ],
-      "source:/MCU_LCD_G4": [
-        "R1008.1",
-        "U701.88"
-      ],
-      "source:/MCU_LCD_G5": [
-        "R1009.1",
-        "U701.89"
-      ],
-      "source:/MCU_LCD_R3": [
-        "R1012.1",
-        "U701.55"
-      ],
-      "source:/MCU_LCD_G7": [
-        "U701.92"
-      ],
-      "source:/MCU_LCD_G6": [
-        "R1010.1",
-        "U701.63"
-      ],
-      "source:/MCU_LCD_R5": [
-        "R1014.1",
-        "U701.57"
-      ],
-      "source:/MCU_LCD_R7": [
-        "R1016.1",
-        "U701.60"
-      ],
-      "source:/MCU_LCD_R4": [
-        "R1013.1",
-        "U701.56"
-      ],
-      "source:/MCU_LCD_R6": [
-        "R1015.1",
-        "U701.64"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B3": [
-        "J1001.24",
-        "R1001.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B4": [
-        "J1001.25",
-        "R1002.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B5": [
-        "J1001.26",
-        "R1003.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B6": [
-        "J1001.27",
-        "R1004.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B7": [
-        "J1001.28",
-        "R1005.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G2": [
-        "J1001.15",
-        "R1006.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G4": [
-        "J1001.17",
-        "R1008.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G6": [
-        "R1010.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G7": [
-        "J1001.20",
-        "R1011.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R3": [
-        "J1001.8",
-        "R1012.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R6": [
-        "J1001.11",
-        "R1015.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R4": [
-        "J1001.9",
-        "R1013.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R5": [
-        "J1001.10",
-        "R1014.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R7": [
-        "J1001.12",
-        "R1016.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G3": [
-        "J1001.16",
-        "R1007.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G5": [
-        "J1001.18",
-        "R1009.2"
-      ]
-    },
-    "physical_timing_source_groups": {
-      "/MCU_LCD_PCLK": [
-        "R1017.1",
-        "U701.94"
-      ],
-      "/MCU_LCD_HSYNC": [
-        "R1018.1",
-        "U701.97"
-      ],
-      "/MCU_LCD_VSYNC": [
-        "R1019.1",
-        "U701.12"
-      ],
-      "/MCU_LCD_DE": [
-        "R1020.1",
-        "U701.13"
-      ],
-      "/MCU_LCD_DISP": [
-        "R1021.1",
-        "U701.14"
-      ],
-      "/MCU_TOUCH_SCL": [
-        "R1022.1",
-        "U701.16"
-      ],
-      "/MCU_TOUCH_SDA": [
-        "R1023.1",
-        "U701.17"
-      ],
-      "/MCU_TOUCH_INT": [
-        "U701.18"
-      ],
-      "/MCU_TOUCH_RST_N": [
-        "U701.19"
-      ]
-    },
-    "physical_clock_output_groups": {
-      "PCLK": [
-        "R1017.2"
-      ],
-      "HSYNC": [
         "J1001.32",
         "R1018.2"
       ]
     },
     "limits": [
-      "Unadopted coordination experiments only; the published seven-source trial and authoritative schematic/PCB remain unchanged.",
-      "Paired RGB replacement retains all 32 complete RGB halves, but its outward clock pocket has no modeled legal via site.",
-      "Individual inward PCLK/HSYNC outputs pass native DRC, but temporarily leave G7 source and G6 output disconnected; sequential second-clock searches fail.",
-      "Staggered HSYNC passes alone; PCLK remains unrouted. Restore both RGB halves and prove all output/source groups before adopting any coordinated changes.",
-      "Width/clearance/via/drill rules are unchanged. Loaded timing/skew, return/coupling, bypass bounds and fabrication/assembly remain unqualified."
+      "Unadopted trials only; authoritative schematic/PCB and published seven-source baseline remain unchanged.",
+      "The dual-clock variant requires all 32 RGB halves, seven timing/touch source groups and both PCLK/HSYNC outputs physically complete; INT/reset sources and seven other timing/touch outputs remain unfinished.",
+      "PCLK/HSYNC GPIO remaps, resistor selections/poses, C701/C702 underside bypass, MISO/R5 detours and revised G7 damping/output remain unadopted.",
+      "C701/C702 source-pad allocations still exceed the maintained 2.5-mm bounds; revise before adoption.",
+      "Long G6/G7 output detours, loaded timing/skew, source damping, effective returns/coupling/PDN and via-in-pad fabrication/assembly remain unqualified.",
+      "No copper/drill profile relaxation: U701 local copper clearance .127mm, Default .2mm, project hole clearance .25mm, tracks .127mm, through vias .5/.3mm."
     ],
     "route_planar_length_mm": {
-      "/RGB565 and capacitive touch/LCD_HSYNC": 34.835537495307726
-    }
-  },
-  "hsync_staggered": {
-    "variant": "hsync_staggered",
-    "baseline_sha256": "603ba3bf19fc05499781dda95da4a748c3c0afc90077a53db912f2fbfaec6164",
-    "trial_sha256": "46b07a13be67879349cd31c449879f03db685eccd0e299ab90ee4bf0287112c2",
-    "native_critical_violations": 0,
-    "native_residual_counts": {
-      "drill_out_of_range": 6,
-      "silk_overlap": 199,
-      "silk_over_copper": 199,
-      "silk_edge_clearance": 9,
-      "track_dangling": 1,
-      "via_dangling": 2
+      "/RGB565 and capacitive touch/LCD_PCLK": 41.49264427649429,
+      "/RGB565 and capacitive touch/LCD_HSYNC": 32.515941546018375,
+      "/RGB565 and capacitive touch/LCD_G7": 67.04640866588035,
+      "/RGB565 and capacitive touch/LCD_G6": 68.63960312803931
     },
-    "preserved_copper_items": 2779,
-    "removed_copper_items": 17,
-    "added_copper_items": 11,
-    "physical_rgb_groups": {
-      "source:/MCU_LCD_B3": [
-        "R1001.1",
-        "U701.80"
-      ],
-      "source:/MCU_LCD_B4": [
-        "R1002.1",
-        "U701.81"
-      ],
-      "source:/MCU_LCD_B5": [
-        "R1003.1",
-        "U701.82"
-      ],
-      "source:/MCU_LCD_B6": [
-        "R1004.1",
-        "U701.83"
-      ],
-      "source:/MCU_LCD_B7": [
-        "R1005.1",
-        "U701.84"
-      ],
-      "source:/MCU_LCD_G2": [
-        "R1006.1",
-        "U701.86"
-      ],
-      "source:/MCU_LCD_G3": [
-        "R1007.1",
-        "U701.87"
-      ],
-      "source:/MCU_LCD_G4": [
-        "R1008.1",
-        "U701.88"
-      ],
-      "source:/MCU_LCD_G5": [
-        "R1009.1",
-        "U701.89"
-      ],
-      "source:/MCU_LCD_R3": [
-        "R1012.1",
-        "U701.55"
-      ],
-      "source:/MCU_LCD_G7": [
-        "U701.92"
-      ],
-      "source:/MCU_LCD_G6": [
-        "R1010.1",
-        "U701.63"
-      ],
-      "source:/MCU_LCD_R5": [
-        "R1014.1",
-        "U701.57"
-      ],
-      "source:/MCU_LCD_R7": [
-        "R1016.1",
-        "U701.60"
-      ],
-      "source:/MCU_LCD_R4": [
-        "R1013.1",
-        "U701.56"
-      ],
-      "source:/MCU_LCD_R6": [
-        "R1015.1",
-        "U701.64"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B3": [
-        "J1001.24",
-        "R1001.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B4": [
-        "J1001.25",
-        "R1002.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B5": [
-        "J1001.26",
-        "R1003.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B6": [
-        "J1001.27",
-        "R1004.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_B7": [
-        "J1001.28",
-        "R1005.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G2": [
-        "J1001.15",
-        "R1006.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G4": [
-        "J1001.17",
-        "R1008.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G6": [
-        "R1010.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G7": [
-        "J1001.20",
-        "R1011.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R3": [
-        "J1001.8",
-        "R1012.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R6": [
-        "J1001.11",
-        "R1015.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R4": [
-        "J1001.9",
-        "R1013.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R5": [
-        "J1001.10",
-        "R1014.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_R7": [
-        "J1001.12",
-        "R1016.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G3": [
-        "J1001.16",
-        "R1007.2"
-      ],
-      "output:/RGB565 and capacitive touch/LCD_G5": [
-        "J1001.18",
-        "R1009.2"
-      ]
-    },
-    "physical_timing_source_groups": {
-      "/MCU_LCD_PCLK": [
-        "R1017.1",
-        "U701.94"
-      ],
-      "/MCU_LCD_HSYNC": [
-        "R1018.1",
-        "U701.97"
-      ],
-      "/MCU_LCD_VSYNC": [
-        "R1019.1",
-        "U701.12"
-      ],
-      "/MCU_LCD_DE": [
-        "R1020.1",
-        "U701.13"
-      ],
-      "/MCU_LCD_DISP": [
-        "R1021.1",
-        "U701.14"
-      ],
-      "/MCU_TOUCH_SCL": [
-        "R1022.1",
-        "U701.16"
-      ],
-      "/MCU_TOUCH_SDA": [
-        "R1023.1",
-        "U701.17"
-      ],
-      "/MCU_TOUCH_INT": [
-        "U701.18"
-      ],
-      "/MCU_TOUCH_RST_N": [
-        "U701.19"
-      ]
-    },
-    "physical_clock_output_groups": {
-      "PCLK": [
-        "R1017.2"
-      ],
-      "HSYNC": [
-        "J1001.32",
-        "R1018.2"
-      ]
-    },
-    "limits": [
-      "Unadopted coordination experiments only; the published seven-source trial and authoritative schematic/PCB remain unchanged.",
-      "Paired RGB replacement retains all 32 complete RGB halves, but its outward clock pocket has no modeled legal via site.",
-      "Individual inward PCLK/HSYNC outputs pass native DRC, but temporarily leave G7 source and G6 output disconnected; sequential second-clock searches fail.",
-      "Staggered HSYNC passes alone; PCLK remains unrouted. Restore both RGB halves and prove all output/source groups before adopting any coordinated changes.",
-      "Width/clearance/via/drill rules are unchanged. Loaded timing/skew, return/coupling, bypass bounds and fabrication/assembly remain unqualified."
-    ],
-    "route_planar_length_mm": {
-      "/RGB565 and capacitive touch/LCD_HSYNC": 33.44203461105328
+    "manufacturing_profile_sha256": "d8cd8096a998bb6577948be69a5f9bcb244f0e77d4c978c0243dbf85f5cef905",
+    "new_via_smd_margins": {
+      "363492e7-0200-528b-b0aa-8588d23d4cb0": {
+        "position_mm": [
+          128.175,
+          86.1
+        ],
+        "nearest_smd_land": {
+          "pad": "U701.65",
+          "distance_to_land_mm": 0.425,
+          "annulus_clearance_mm": 0.175,
+          "required_copper_clearance_mm": 0.127,
+          "hole_clearance_mm": 0.275,
+          "required_hole_clearance_mm": 0.25
+        }
+      },
+      "62694303-d9a5-5c0f-aaf0-852c44f295f9": {
+        "position_mm": [
+          118.775,
+          49.925
+        ],
+        "nearest_smd_land": {
+          "pad": "C1002.1",
+          "distance_to_land_mm": 1.25,
+          "annulus_clearance_mm": 1.0,
+          "required_copper_clearance_mm": 0.2,
+          "hole_clearance_mm": 1.1,
+          "required_hole_clearance_mm": 0.25
+        }
+      },
+      "c773a7d9-faae-5882-aac0-4f1b31ed6012": {
+        "position_mm": [
+          130.925,
+          93.075
+        ],
+        "nearest_smd_land": {
+          "pad": "C711.1",
+          "distance_to_land_mm": 1.558348,
+          "annulus_clearance_mm": 1.308348,
+          "required_copper_clearance_mm": 0.2,
+          "hole_clearance_mm": 1.4083480000000002,
+          "required_hole_clearance_mm": 0.25
+        }
+      },
+      "2655c93e-6de6-593b-8bbd-3a3e4a0f893f": {
+        "position_mm": [
+          126.675,
+          63.425
+        ],
+        "nearest_smd_land": {
+          "pad": "C605.1",
+          "distance_to_land_mm": 3.299999,
+          "annulus_clearance_mm": 3.049999,
+          "required_copper_clearance_mm": 0.2,
+          "hole_clearance_mm": 3.149999,
+          "required_hole_clearance_mm": 0.25
+        }
+      },
+      "62e5f4f9-e7c0-5ec9-954a-9996590f410d": {
+        "position_mm": [
+          127.35,
+          90.175
+        ],
+        "nearest_smd_land": {
+          "pad": "U701.49",
+          "distance_to_land_mm": 0.425,
+          "annulus_clearance_mm": 0.175,
+          "required_copper_clearance_mm": 0.127,
+          "hole_clearance_mm": 0.275,
+          "required_hole_clearance_mm": 0.25
+        }
+      },
+      "0e057f61-8b8c-51b4-8841-b0691413385a": {
+        "position_mm": [
+          126.15,
+          62.9
+        ],
+        "nearest_smd_land": {
+          "pad": "C605.1",
+          "distance_to_land_mm": 3.86086,
+          "annulus_clearance_mm": 3.61086,
+          "required_copper_clearance_mm": 0.2,
+          "hole_clearance_mm": 3.7108600000000003,
+          "required_hole_clearance_mm": 0.25
+        }
+      },
+      "b9e49f48-8dcb-515c-ab64-5e9f542cfb6a": {
+        "position_mm": [
+          119.45,
+          74.5
+        ],
+        "nearest_smd_land": {
+          "pad": "C731.1",
+          "distance_to_land_mm": 0.465027,
+          "annulus_clearance_mm": 0.21502700000000002,
+          "required_copper_clearance_mm": 0.2,
+          "hole_clearance_mm": 0.31502700000000006,
+          "required_hole_clearance_mm": 0.25
+        }
+      },
+      "e83a31a8-8128-5527-93ac-a461c537d80d": {
+        "position_mm": [
+          122.65,
+          52.0
+        ],
+        "nearest_smd_land": {
+          "pad": "J1001.32",
+          "distance_to_land_mm": 0.5,
+          "annulus_clearance_mm": 0.25,
+          "required_copper_clearance_mm": 0.2,
+          "hole_clearance_mm": 0.35,
+          "required_hole_clearance_mm": 0.25
+        }
+      },
+      "77ca7910-7429-5d43-a82e-28c6384bba27": {
+        "position_mm": [
+          118.9,
+          64.5
+        ],
+        "nearest_smd_land": {
+          "pad": "C731.2",
+          "distance_to_land_mm": 7.33357,
+          "annulus_clearance_mm": 7.08357,
+          "required_copper_clearance_mm": 0.2,
+          "hole_clearance_mm": 7.18357,
+          "required_hole_clearance_mm": 0.25
+        }
+      },
+      "adec57ea-5cde-5ee6-8c77-a2f6ef42038a": {
+        "position_mm": [
+          122.3,
+          60.85
+        ],
+        "nearest_smd_land": {
+          "pad": "J1001.MP",
+          "distance_to_land_mm": 6.397265,
+          "annulus_clearance_mm": 6.147265,
+          "required_copper_clearance_mm": 0.2,
+          "hole_clearance_mm": 6.247265,
+          "required_hole_clearance_mm": 0.25
+        }
+      },
+      "c1c386bd-bf3d-5a36-99bd-338400934a5c": {
+        "position_mm": [
+          118.9,
+          73.0
+        ],
+        "nearest_smd_land": {
+          "pad": "C731.1",
+          "distance_to_land_mm": 0.980434,
+          "annulus_clearance_mm": 0.730434,
+          "required_copper_clearance_mm": 0.2,
+          "hole_clearance_mm": 0.830434,
+          "required_hole_clearance_mm": 0.25
+        }
+      },
+      "f06768be-daf6-5ed5-a2e1-fc9c56ca9a97": {
+        "position_mm": [
+          122.3,
+          55.4
+        ],
+        "nearest_smd_land": {
+          "pad": "J1001.31",
+          "distance_to_land_mm": 1.6,
+          "annulus_clearance_mm": 1.35,
+          "required_copper_clearance_mm": 0.2,
+          "hole_clearance_mm": 1.4500000000000002,
+          "required_hole_clearance_mm": 0.25
+        }
+      }
     }
   }
 }

@@ -438,7 +438,7 @@
       "pending_rgb_groups": [],
       "complete_clock_outputs": []
     },
-    "pclk_inward": {
+    "dual_clock_rgb": {
       "routes": [
         {
           "namespace": "trial-timing-output/pclk",
@@ -489,16 +489,16 @@
                     84.2
                   ],
                   [
-                    121.35,
+                    120.85,
                     84.2
                   ],
                   [
-                    121.0,
+                    120.5,
                     83.85
                   ],
                   [
-                    121.0,
-                    76.05
+                    120.5,
+                    75.55
                   ],
                   [
                     119.45,
@@ -595,30 +595,7 @@
             "existing_via_positions": [],
             "via_in_pad_anchors": []
           }
-        }
-      ],
-      "poses": {
-        "R1017": [
-          122.65,
-          82.32,
-          270
-        ],
-        "R1018": [
-          121.7,
-          82.32,
-          270
-        ]
-      },
-      "pending_rgb_groups": [
-        "source:/MCU_LCD_G7",
-        "output:/RGB565 and capacitive touch/LCD_G6"
-      ],
-      "complete_clock_outputs": [
-        "PCLK"
-      ]
-    },
-    "hsync_inward": {
-      "routes": [
+        },
         {
           "namespace": "trial-timing-output/hsync",
           "proposal": {
@@ -656,16 +633,16 @@
                     82.85
                   ],
                   [
-                    120.5,
-                    81.65
+                    121.0,
+                    82.15
                   ],
                   [
-                    120.5,
-                    75.55
+                    121.0,
+                    75.1
                   ],
                   [
-                    119.45,
-                    74.5
+                    118.9,
+                    73.0
                   ]
                 ]
               },
@@ -675,31 +652,12 @@
                 "width_mm": 0.127,
                 "points": [
                   [
-                    119.45,
-                    74.5
+                    118.9,
+                    73.0
                   ],
                   [
-                    119.45,
-                    69.6
-                  ],
-                  [
-                    126.15,
-                    62.9
-                  ]
-                ]
-              },
-              {
-                "net": "/RGB565 and capacitive touch/LCD_HSYNC",
-                "layer": "B.Cu",
-                "width_mm": 0.127,
-                "points": [
-                  [
-                    126.15,
-                    62.9
-                  ],
-                  [
-                    126.15,
-                    57.25
+                    118.9,
+                    64.5
                   ]
                 ]
               },
@@ -709,12 +667,50 @@
                 "width_mm": 0.127,
                 "points": [
                   [
-                    126.15,
-                    57.25
+                    118.9,
+                    64.5
                   ],
                   [
-                    122.75,
-                    53.85
+                    122.3,
+                    61.1
+                  ],
+                  [
+                    122.3,
+                    60.85
+                  ]
+                ]
+              },
+              {
+                "net": "/RGB565 and capacitive touch/LCD_HSYNC",
+                "layer": "In2.Cu",
+                "width_mm": 0.127,
+                "points": [
+                  [
+                    122.3,
+                    60.85
+                  ],
+                  [
+                    122.3,
+                    55.4
+                  ]
+                ]
+              },
+              {
+                "net": "/RGB565 and capacitive touch/LCD_HSYNC",
+                "layer": "F.Cu",
+                "width_mm": 0.127,
+                "points": [
+                  [
+                    122.3,
+                    55.4
+                  ],
+                  [
+                    122.8,
+                    54.9
+                  ],
+                  [
+                    122.8,
+                    53.2
                   ],
                   [
                     122.75,
@@ -725,16 +721,20 @@
             ],
             "via_positions": [
               [
-                119.45,
-                74.5
+                118.9,
+                73.0
               ],
               [
-                126.15,
-                62.9
+                118.9,
+                64.5
               ],
               [
-                126.15,
-                57.25
+                122.3,
+                60.85
+              ],
+              [
+                122.3,
+                55.4
               ]
             ],
             "via_diameter_mm": 0.5,
@@ -746,6 +746,506 @@
             "existing_via_positions": [],
             "via_in_pad_anchors": []
           }
+        },
+        {
+          "namespace": "trial-clock-space/g7-output",
+          "proposal": {
+            "grid_step_mm": 0.025,
+            "start_pad_position": [
+              123.775,
+              82.83
+            ],
+            "end_pad_position": [
+              116.75,
+              53.15
+            ],
+            "status": "Candidate only: native DRC, geometry/endpoint and SI/return-path review required",
+            "net": "/RGB565 and capacitive touch/LCD_G7",
+            "start": "R1011.2",
+            "end": "J1001.20",
+            "bounds": [
+              105.0,
+              45.0,
+              140.0,
+              95.0
+            ],
+            "paths": [
+              {
+                "net": "/RGB565 and capacitive touch/LCD_G7",
+                "layer": "B.Cu",
+                "width_mm": 0.127,
+                "points": [
+                  [
+                    123.775,
+                    82.83
+                  ],
+                  [
+                    123.775,
+                    82.825
+                  ],
+                  [
+                    124.05,
+                    82.825
+                  ],
+                  [
+                    124.575,
+                    83.35
+                  ],
+                  [
+                    124.575,
+                    87.4
+                  ],
+                  [
+                    125.0,
+                    87.825
+                  ],
+                  [
+                    125.45,
+                    87.825
+                  ],
+                  [
+                    125.825,
+                    88.2
+                  ],
+                  [
+                    125.825,
+                    88.65
+                  ],
+                  [
+                    127.35,
+                    90.175
+                  ]
+                ]
+              },
+              {
+                "net": "/RGB565 and capacitive touch/LCD_G7",
+                "layer": "In2.Cu",
+                "width_mm": 0.127,
+                "points": [
+                  [
+                    127.35,
+                    90.175
+                  ],
+                  [
+                    129.9,
+                    92.725
+                  ],
+                  [
+                    130.525,
+                    92.725
+                  ],
+                  [
+                    139.275,
+                    83.975
+                  ],
+                  [
+                    139.275,
+                    76.875
+                  ],
+                  [
+                    134.3,
+                    71.9
+                  ],
+                  [
+                    134.2,
+                    71.9
+                  ],
+                  [
+                    132.975,
+                    70.675
+                  ],
+                  [
+                    132.975,
+                    69.725
+                  ],
+                  [
+                    126.675,
+                    63.425
+                  ]
+                ]
+              },
+              {
+                "net": "/RGB565 and capacitive touch/LCD_G7",
+                "layer": "F.Cu",
+                "width_mm": 0.127,
+                "points": [
+                  [
+                    126.675,
+                    63.425
+                  ],
+                  [
+                    126.675,
+                    62.675
+                  ],
+                  [
+                    123.075,
+                    59.075
+                  ],
+                  [
+                    121.425,
+                    59.075
+                  ],
+                  [
+                    116.75,
+                    54.4
+                  ],
+                  [
+                    116.75,
+                    53.15
+                  ]
+                ]
+              }
+            ],
+            "via_positions": [
+              [
+                127.35,
+                90.175
+              ],
+              [
+                126.675,
+                63.425
+              ]
+            ],
+            "via_diameter_mm": 0.5,
+            "via_drill_mm": 0.3,
+            "limits": [
+              "Conservative pad bounding boxes; pad/footprint local clearance when present, otherwise .2mm, plus .01mm search margin. Outside-land new vias use pad/footprint local copper clearance (otherwise .2mm) and the project hole-clearance floor against every pad land, including their own net; explicit endpoint via-in-pad permits only native-contained drills with other-pad/copper clearance; existing same-net through-vias can be reused at their exact aligned coordinates.",
+              "No board-edge/keepout/custom-rule/return-current/impedance model; reviewed bounds and native DRC required."
+            ],
+            "existing_via_positions": [],
+            "via_in_pad_anchors": [],
+            "via_pad_hole_clearance_mm": 0.25
+          }
+        },
+        {
+          "namespace": "trial-clock-space/g6-dual-output",
+          "proposal": {
+            "grid_step_mm": 0.025,
+            "via_pad_hole_clearance_mm": 0.25,
+            "start_pad_position": [
+              129.0,
+              85.89
+            ],
+            "end_pad_position": [
+              116.25,
+              53.15
+            ],
+            "status": "Candidate only: native DRC, geometry/endpoint and SI/return-path review required",
+            "net": "/RGB565 and capacitive touch/LCD_G6",
+            "start": "R1010.2",
+            "end": "J1001.19",
+            "bounds": [
+              105.0,
+              45.0,
+              140.0,
+              95.0
+            ],
+            "paths": [
+              {
+                "net": "/RGB565 and capacitive touch/LCD_G6",
+                "layer": "B.Cu",
+                "width_mm": 0.127,
+                "points": [
+                  [
+                    129.0,
+                    85.89
+                  ],
+                  [
+                    129.0,
+                    85.9
+                  ],
+                  [
+                    128.375,
+                    85.9
+                  ],
+                  [
+                    128.175,
+                    86.1
+                  ]
+                ]
+              },
+              {
+                "net": "/RGB565 and capacitive touch/LCD_G6",
+                "layer": "In2.Cu",
+                "width_mm": 0.127,
+                "points": [
+                  [
+                    128.175,
+                    86.1
+                  ],
+                  [
+                    126.975,
+                    87.3
+                  ],
+                  [
+                    126.975,
+                    89.8
+                  ],
+                  [
+                    126.825,
+                    89.95
+                  ],
+                  [
+                    126.825,
+                    90.4
+                  ],
+                  [
+                    129.5,
+                    93.075
+                  ],
+                  [
+                    130.925,
+                    93.075
+                  ]
+                ]
+              },
+              {
+                "net": "/RGB565 and capacitive touch/LCD_G6",
+                "layer": "B.Cu",
+                "width_mm": 0.127,
+                "points": [
+                  [
+                    130.925,
+                    93.075
+                  ],
+                  [
+                    135.4,
+                    88.6
+                  ],
+                  [
+                    135.4,
+                    66.05
+                  ],
+                  [
+                    124.225,
+                    54.875
+                  ],
+                  [
+                    124.225,
+                    52.825
+                  ],
+                  [
+                    121.45,
+                    50.05
+                  ],
+                  [
+                    120.05,
+                    50.05
+                  ],
+                  [
+                    119.925,
+                    49.925
+                  ],
+                  [
+                    118.775,
+                    49.925
+                  ]
+                ]
+              },
+              {
+                "net": "/RGB565 and capacitive touch/LCD_G6",
+                "layer": "F.Cu",
+                "width_mm": 0.127,
+                "points": [
+                  [
+                    118.775,
+                    49.925
+                  ],
+                  [
+                    116.25,
+                    52.45
+                  ],
+                  [
+                    116.25,
+                    53.15
+                  ]
+                ]
+              }
+            ],
+            "via_positions": [
+              [
+                128.175,
+                86.1
+              ],
+              [
+                130.925,
+                93.075
+              ],
+              [
+                118.775,
+                49.925
+              ]
+            ],
+            "via_diameter_mm": 0.5,
+            "via_drill_mm": 0.3,
+            "limits": [
+              "Conservative pad bounding boxes; pad/footprint local clearance when present, otherwise .2mm, plus .01mm search margin. Outside-land new vias use pad/footprint local copper clearance (otherwise .2mm) and the project hole-clearance floor against every pad land, including their own net; explicit endpoint via-in-pad permits only native-contained drills with other-pad/copper clearance; existing same-net through-vias can be reused at their exact aligned coordinates.",
+              "No board-edge/keepout/custom-rule/return-current/impedance model; reviewed bounds and native DRC required."
+            ],
+            "existing_via_positions": [],
+            "via_in_pad_anchors": []
+          }
+        }
+      ],
+      "extra_removed": [
+        {
+          "uuid": "5fdc30eb-bf7b-5dad-b8c2-36a3dbfeb445",
+          "net": "/RGB565 and capacitive touch/LCD_G7",
+          "start": [
+            116.75,
+            53.15
+          ],
+          "end": [
+            116.75,
+            52.2
+          ],
+          "layer": "F.Cu",
+          "width_mm": 0.127
+        },
+        {
+          "uuid": "abeaa305-f37a-59d3-903d-51984bb30e8b",
+          "net": "/RGB565 and capacitive touch/LCD_G7",
+          "start": [
+            116.75,
+            52.2
+          ],
+          "end": [
+            116.7,
+            52.15
+          ],
+          "layer": "F.Cu",
+          "width_mm": 0.127
+        },
+        {
+          "uuid": "08f1d4a4-ee5c-5403-8fab-af783ee8fb74",
+          "net": "/RGB565 and capacitive touch/LCD_G7",
+          "start": [
+            116.7,
+            52.15
+          ],
+          "end": [
+            116.7,
+            51.3
+          ],
+          "layer": "F.Cu",
+          "width_mm": 0.127
+        },
+        {
+          "uuid": "312d4845-1563-54d8-a485-30272c7aceed",
+          "net": "/RGB565 and capacitive touch/LCD_G7",
+          "start": [
+            116.7,
+            51.3
+          ],
+          "end": [
+            116.85,
+            51.15
+          ],
+          "layer": "F.Cu",
+          "width_mm": 0.127
+        },
+        {
+          "uuid": "57d7436f-3ffc-5d6a-a06e-16a672b0e2b4",
+          "net": "/RGB565 and capacitive touch/LCD_G7",
+          "start": [
+            116.85,
+            51.15
+          ],
+          "end": [
+            116.85,
+            49.95
+          ],
+          "layer": "F.Cu",
+          "width_mm": 0.127
+        },
+        {
+          "uuid": "2cd139e6-27c5-550e-a74c-10118e63b1f3",
+          "net": "/RGB565 and capacitive touch/LCD_G7",
+          "start": [
+            116.85,
+            49.95
+          ],
+          "end": [
+            116.8,
+            50.0
+          ],
+          "layer": "F.Cu",
+          "width_mm": 0.127
+        },
+        {
+          "uuid": "1a5397c2-776a-5c64-b386-76606775f04a",
+          "net": "/RGB565 and capacitive touch/LCD_G7",
+          "start": [
+            116.8,
+            50.0
+          ],
+          "end": [
+            116.8,
+            67.4
+          ],
+          "layer": "F.Cu",
+          "width_mm": 0.127
+        },
+        {
+          "uuid": "cbfae1c6-c799-5c51-8b1f-6bac714a23be",
+          "net": "/RGB565 and capacitive touch/LCD_G7",
+          "start": [
+            116.8,
+            67.4
+          ],
+          "end": [
+            121.9,
+            72.5
+          ],
+          "layer": "F.Cu",
+          "width_mm": 0.127
+        },
+        {
+          "uuid": "588d1e10-51a3-5543-8584-fa7795fd21be",
+          "net": "/RGB565 and capacitive touch/LCD_G7",
+          "start": [
+            121.9,
+            72.5
+          ],
+          "end": [
+            121.9,
+            77.2
+          ],
+          "layer": "F.Cu",
+          "width_mm": 0.127
+        },
+        {
+          "uuid": "dbe73f4f-fe71-5f9d-8821-13631efd895b",
+          "net": "/RGB565 and capacitive touch/LCD_G7",
+          "start": [
+            121.9,
+            77.2
+          ],
+          "end": [
+            121.9,
+            77.19
+          ],
+          "layer": "B.Cu",
+          "width_mm": 0.127
+        },
+        {
+          "uuid": "8b35b481-e408-5e81-b964-e2c473dee795",
+          "net": "/RGB565 and capacitive touch/LCD_G7",
+          "start": [
+            121.9,
+            77.2
+          ],
+          "end": [
+            121.9,
+            77.2
+          ],
+          "layer": "F.Cu",
+          "diameter_mm": 0.5,
+          "drill_mm": 0.3,
+          "span": [
+            0,
+            2
+          ]
         }
       ],
       "poses": {
@@ -758,169 +1258,29 @@
           121.7,
           82.32,
           270
-        ]
-      },
-      "pending_rgb_groups": [
-        "source:/MCU_LCD_G7",
-        "output:/RGB565 and capacitive touch/LCD_G6"
-      ],
-      "complete_clock_outputs": [
-        "HSYNC"
-      ]
-    },
-    "hsync_staggered": {
-      "routes": [
-        {
-          "namespace": "trial-timing-output/hsync",
-          "proposal": {
-            "grid_step_mm": 0.05,
-            "start_pad_position": [
-              120.73,
-              81.85
-            ],
-            "end_pad_position": [
-              122.75,
-              53.15
-            ],
-            "status": "Candidate only: native DRC, geometry/endpoint and SI/return-path review required",
-            "net": "/RGB565 and capacitive touch/LCD_HSYNC",
-            "start": "R1018.2",
-            "end": "J1001.32",
-            "bounds": [
-              105.0,
-              45.0,
-              135.0,
-              95.0
-            ],
-            "paths": [
-              {
-                "net": "/RGB565 and capacitive touch/LCD_HSYNC",
-                "layer": "B.Cu",
-                "width_mm": 0.127,
-                "points": [
-                  [
-                    120.73,
-                    81.85
-                  ],
-                  [
-                    120.75,
-                    81.85
-                  ],
-                  [
-                    120.75,
-                    75.8
-                  ],
-                  [
-                    119.45,
-                    74.5
-                  ]
-                ]
-              },
-              {
-                "net": "/RGB565 and capacitive touch/LCD_HSYNC",
-                "layer": "In2.Cu",
-                "width_mm": 0.127,
-                "points": [
-                  [
-                    119.45,
-                    74.5
-                  ],
-                  [
-                    119.45,
-                    69.6
-                  ],
-                  [
-                    126.15,
-                    62.9
-                  ]
-                ]
-              },
-              {
-                "net": "/RGB565 and capacitive touch/LCD_HSYNC",
-                "layer": "B.Cu",
-                "width_mm": 0.127,
-                "points": [
-                  [
-                    126.15,
-                    62.9
-                  ],
-                  [
-                    126.15,
-                    57.25
-                  ]
-                ]
-              },
-              {
-                "net": "/RGB565 and capacitive touch/LCD_HSYNC",
-                "layer": "F.Cu",
-                "width_mm": 0.127,
-                "points": [
-                  [
-                    126.15,
-                    57.25
-                  ],
-                  [
-                    122.75,
-                    53.85
-                  ],
-                  [
-                    122.75,
-                    53.15
-                  ]
-                ]
-              }
-            ],
-            "via_positions": [
-              [
-                119.45,
-                74.5
-              ],
-              [
-                126.15,
-                62.9
-              ],
-              [
-                126.15,
-                57.25
-              ]
-            ],
-            "via_diameter_mm": 0.5,
-            "via_drill_mm": 0.3,
-            "limits": [
-              "Conservative pad bounding boxes; pad/footprint local clearance when present, otherwise .2mm, plus .01mm search margin. Outside-land new vias keep .2mm annulus clearance from every pad land, including their own net; explicit endpoint via-in-pad permits only native-contained drills with other-pad/copper clearance; existing same-net through-vias can be reused at their exact aligned coordinates.",
-              "No board-edge/keepout/custom-rule/return-current/impedance model; reviewed bounds and native DRC required."
-            ],
-            "existing_via_positions": [],
-            "via_in_pad_anchors": []
-          }
-        }
-      ],
-      "poses": {
-        "R1017": [
-          122.65,
+        ],
+        "R1011": [
+          123.775,
           82.32,
           270
-        ],
-        "R1018": [
-          121.24,
-          81.85,
-          180
         ]
       },
-      "pending_rgb_groups": [
-        "source:/MCU_LCD_G7",
-        "output:/RGB565 and capacitive touch/LCD_G6"
+      "additional_source_via_in_pad": [
+        "R1011.1"
       ],
+      "pending_rgb_groups": [],
       "complete_clock_outputs": [
+        "PCLK",
         "HSYNC"
       ]
     }
   },
   "limits": [
-    "Unadopted coordination experiments only; the published seven-source trial and authoritative schematic/PCB remain unchanged.",
-    "Paired RGB replacement retains all 32 complete RGB halves, but its outward clock pocket has no modeled legal via site.",
-    "Individual inward PCLK/HSYNC outputs pass native DRC, but temporarily leave G7 source and G6 output disconnected; sequential second-clock searches fail.",
-    "Staggered HSYNC passes alone; PCLK remains unrouted. Restore both RGB halves and prove all output/source groups before adopting any coordinated changes.",
-    "Width/clearance/via/drill rules are unchanged. Loaded timing/skew, return/coupling, bypass bounds and fabrication/assembly remain unqualified."
+    "Unadopted trials only; authoritative schematic/PCB and published seven-source baseline remain unchanged.",
+    "The dual-clock variant requires all 32 RGB halves, seven timing/touch source groups and both PCLK/HSYNC outputs physically complete; INT/reset sources and seven other timing/touch outputs remain unfinished.",
+    "PCLK/HSYNC GPIO remaps, resistor selections/poses, C701/C702 underside bypass, MISO/R5 detours and revised G7 damping/output remain unadopted.",
+    "C701/C702 source-pad allocations still exceed the maintained 2.5-mm bounds; revise before adoption.",
+    "Long G6/G7 output detours, loaded timing/skew, source damping, effective returns/coupling/PDN and via-in-pad fabrication/assembly remain unqualified.",
+    "No copper/drill profile relaxation: U701 local copper clearance .127mm, Default .2mm, project hole clearance .25mm, tracks .127mm, through vias .5/.3mm."
   ]
 }
