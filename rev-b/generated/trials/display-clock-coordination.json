@@ -1530,14 +1530,31 @@
         {
           "namespace": "trial-vsync-source",
           "proposal": {
+            "grid_step_mm": 0.025,
+            "via_pad_hole_clearance_mm": 0.25,
+            "via_hole_to_hole_clearance_mm": 0.25,
+            "start_pad_position": [
+              119.1,
+              85.475
+            ],
+            "end_pad_position": [
+              119.05,
+              79.69
+            ],
+            "status": "Candidate only: native DRC, geometry/endpoint and SI/return-path review required",
             "net": "/MCU_LCD_VSYNC",
-            "via_diameter_mm": 0.5,
-            "via_drill_mm": 0.3,
-            "via_positions": [],
+            "start": "U701.12",
+            "end": "R1019.1",
+            "bounds": [
+              105.0,
+              76.0,
+              125.0,
+              90.0
+            ],
             "paths": [
               {
                 "net": "/MCU_LCD_VSYNC",
-                "layer": "B.Cu",
+                "layer": "In2.Cu",
                 "width_mm": 0.127,
                 "points": [
                   [
@@ -1545,16 +1562,78 @@
                     85.275
                   ],
                   [
-                    117.475,
-                    84.7
+                    118.025,
+                    84.15
                   ],
                   [
-                    117.49,
-                    84.7
+                    118.025,
+                    80.1
+                  ],
+                  [
+                    117.825,
+                    79.9
+                  ]
+                ]
+              },
+              {
+                "net": "/MCU_LCD_VSYNC",
+                "layer": "B.Cu",
+                "width_mm": 0.127,
+                "points": [
+                  [
+                    117.825,
+                    79.9
+                  ],
+                  [
+                    117.825,
+                    80.475
+                  ],
+                  [
+                    118.625,
+                    81.275
+                  ],
+                  [
+                    119.475,
+                    81.275
+                  ],
+                  [
+                    119.65,
+                    81.1
+                  ],
+                  [
+                    119.65,
+                    80.3
+                  ],
+                  [
+                    119.05,
+                    79.7
+                  ],
+                  [
+                    119.05,
+                    79.69
                   ]
                 ]
               }
-            ]
+            ],
+            "via_positions": [
+              [
+                117.825,
+                79.9
+              ]
+            ],
+            "via_diameter_mm": 0.5,
+            "via_drill_mm": 0.3,
+            "limits": [
+              "Conservative pad bounding boxes; pad/footprint local clearance when present, otherwise .2mm, plus .01mm search margin. Outside-land new vias use pad/footprint local copper clearance (otherwise .2mm) and the project hole-clearance floor against every pad land, including their own net. New holes independently respect project hole-to-hole spacing against every existing via and drilled pad, including same-net vias (noncircular pad drills use a conservative circumscribed circle); explicit endpoint via-in-pad permits only native-contained drills with other-pad/copper clearance; existing same-net through-vias can be reused at their exact aligned coordinates.",
+              "No board-edge/keepout/custom-rule/return-current/impedance model; reviewed bounds and native DRC required."
+            ],
+            "existing_via_positions": [
+              [
+                116.9,
+                85.275
+              ]
+            ],
+            "via_in_pad_anchors": []
           }
         },
         {
@@ -2348,6 +2427,144 @@
               }
             ]
           }
+        },
+        {
+          "namespace": "trial-timing-output/vsync",
+          "proposal": {
+            "grid_step_mm": 0.05,
+            "via_pad_hole_clearance_mm": 0.25,
+            "via_hole_to_hole_clearance_mm": 0.25,
+            "start_pad_position": [
+              119.05,
+              80.71
+            ],
+            "end_pad_position": [
+              123.25,
+              53.15
+            ],
+            "status": "Candidate only: native DRC, geometry/endpoint and SI/return-path review required",
+            "net": "/RGB565 and capacitive touch/LCD_VSYNC",
+            "start": "R1019.2",
+            "end": "J1001.33",
+            "bounds": [
+              105.0,
+              45.0,
+              160.0,
+              98.0
+            ],
+            "paths": [
+              {
+                "net": "/RGB565 and capacitive touch/LCD_VSYNC",
+                "layer": "B.Cu",
+                "width_mm": 0.127,
+                "points": [
+                  [
+                    119.05,
+                    80.71
+                  ],
+                  [
+                    119.05,
+                    80.7
+                  ],
+                  [
+                    118.35,
+                    80.0
+                  ],
+                  [
+                    118.35,
+                    72.45
+                  ]
+                ]
+              },
+              {
+                "net": "/RGB565 and capacitive touch/LCD_VSYNC",
+                "layer": "F.Cu",
+                "width_mm": 0.127,
+                "points": [
+                  [
+                    118.35,
+                    72.45
+                  ],
+                  [
+                    118.35,
+                    61.45
+                  ],
+                  [
+                    120.7,
+                    59.1
+                  ]
+                ]
+              },
+              {
+                "net": "/RGB565 and capacitive touch/LCD_VSYNC",
+                "layer": "In2.Cu",
+                "width_mm": 0.127,
+                "points": [
+                  [
+                    120.7,
+                    59.1
+                  ],
+                  [
+                    120.7,
+                    54.45
+                  ],
+                  [
+                    122.6,
+                    52.55
+                  ],
+                  [
+                    123.1,
+                    52.55
+                  ],
+                  [
+                    123.9,
+                    51.75
+                  ]
+                ]
+              },
+              {
+                "net": "/RGB565 and capacitive touch/LCD_VSYNC",
+                "layer": "F.Cu",
+                "width_mm": 0.127,
+                "points": [
+                  [
+                    123.9,
+                    51.75
+                  ],
+                  [
+                    123.25,
+                    52.4
+                  ],
+                  [
+                    123.25,
+                    53.15
+                  ]
+                ]
+              }
+            ],
+            "via_positions": [
+              [
+                118.35,
+                72.45
+              ],
+              [
+                120.7,
+                59.1
+              ],
+              [
+                123.9,
+                51.75
+              ]
+            ],
+            "via_diameter_mm": 0.5,
+            "via_drill_mm": 0.3,
+            "limits": [
+              "Conservative pad bounding boxes; pad/footprint local clearance when present, otherwise .2mm, plus .01mm search margin. Outside-land new vias use pad/footprint local copper clearance (otherwise .2mm) and the project hole-clearance floor against every pad land, including their own net. New holes independently respect project hole-to-hole spacing against every existing via and drilled pad, including same-net vias (noncircular pad drills use a conservative circumscribed circle); explicit endpoint via-in-pad permits only native-contained drills with other-pad/copper clearance; existing same-net through-vias can be reused at their exact aligned coordinates.",
+              "No board-edge/keepout/custom-rule/return-current/impedance model; reviewed bounds and native DRC required."
+            ],
+            "existing_via_positions": [],
+            "via_in_pad_anchors": []
+          }
         }
       ],
       "extra_removed": [
@@ -2752,9 +2969,9 @@
           270
         ],
         "R1019": [
-          118.05,
-          84.7,
-          0
+          119.05,
+          80.2,
+          270
         ],
         "R1023": [
           116.425,
@@ -2774,7 +2991,8 @@
         "DISP",
         "SDA",
         "RST_N",
-        "INT"
+        "INT",
+        "VSYNC"
       ],
       "custom_courtyard_poses": [
         "R1019",
@@ -2791,7 +3009,7 @@
   },
   "limits": [
     "Unadopted trials only; authoritative schematic/PCB and published seven-source baseline remain unchanged.",
-    "The preferred variant requires all 32 RGB halves, nine timing/touch source groups and PCLK/HSYNC/SCL/DE/DISP/SDA/reset/INT outputs physically complete; VSYNC output remains unfinished.",
+    "The preferred variant requires all 32 RGB halves, nine timing/touch source groups and all nine timing/touch outputs physically complete; placement, timing/return and fabrication/assembly qualification remain unfinished.",
     "PCLK/HSYNC GPIO remaps, resistor selections/poses, C701/C702 underside bypass, MISO/R5 detours and revised G7 damping/output remain unadopted.",
     "C701/C702 source-pad allocations still exceed the maintained 2.5-mm bounds; revise before adoption.",
     "Long G6/G7 output detours, loaded timing/skew, source damping, effective returns/coupling/PDN and via-in-pad fabrication/assembly remain unqualified.",

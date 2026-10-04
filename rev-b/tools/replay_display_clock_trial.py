@@ -47,6 +47,10 @@ def main():
     before = {u:geometry(t) for u,t in tracks.items()}
     det = []
     v = d['variants'][a.variant]
+    if a.variant == 'dual_clock_rgb':
+        assert not v['pending_rgb_groups'], 'Preferred trial must preserve every RGB half'
+        assert set(v['additional_complete_source_nets']) == {'/MCU_TOUCH_INT','/MCU_TOUCH_RST_N'}
+        assert set(v['complete_timing_outputs']) == {'PCLK','HSYNC','VSYNC','DE','DISP','SCL','SDA','INT','RST_N'}
     removals = d['removed'] + v.get('extra_removed', [])
     assert len({g['uuid'] for g in removals}) == len(removals)
     for g in removals:

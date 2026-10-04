@@ -1,7 +1,7 @@
 {
   "variant": "dual_clock_rgb",
   "baseline_sha256": "603ba3bf19fc05499781dda95da4a748c3c0afc90077a53db912f2fbfaec6164",
-  "trial_sha256": "1f2da33e70e8225d3cc1b0a96c79a4a23eb08b3a14ca2c5ef146e7d72683f7b0",
+  "trial_sha256": "4a72f777138290088b1522021b78bb90ad5720ab4d39dae6ac0aedf0f7dfe333",
   "native_critical_violations": 0,
   "native_residual_counts": {
     "drill_out_of_range": 6,
@@ -11,7 +11,7 @@
   },
   "preserved_copper_items": 2752,
   "removed_copper_items": 44,
-  "added_copper_items": 208,
+  "added_copper_items": 231,
   "physical_rgb_groups": {
     "source:/MCU_LCD_B3": [
       "R1001.1",
@@ -190,6 +190,7 @@
       "R1018.2"
     ],
     "VSYNC": [
+      "J1001.33",
       "R1019.2"
     ],
     "DE": [
@@ -230,7 +231,7 @@
   },
   "limits": [
     "Unadopted trials only; authoritative schematic/PCB and published seven-source baseline remain unchanged.",
-    "The preferred variant requires all 32 RGB halves, nine timing/touch source groups and PCLK/HSYNC/SCL/DE/DISP/SDA/reset/INT outputs physically complete; VSYNC output remains unfinished.",
+    "The preferred variant requires all 32 RGB halves, nine timing/touch source groups and all nine timing/touch outputs physically complete; placement, timing/return and fabrication/assembly qualification remain unfinished.",
     "PCLK/HSYNC GPIO remaps, resistor selections/poses, C701/C702 underside bypass, MISO/R5 detours and revised G7 damping/output remain unadopted.",
     "C701/C702 source-pad allocations still exceed the maintained 2.5-mm bounds; revise before adoption.",
     "Long G6/G7 output detours, loaded timing/skew, source damping, effective returns/coupling/PDN and via-in-pad fabrication/assembly remain unqualified.",
@@ -244,12 +245,13 @@
     "/RGB565 and capacitive touch/TOUCH_SCL": 52.200616844190954,
     "/RGB565 and capacitive touch/LCD_DE": 62.33274887854694,
     "/RGB565 and capacitive touch/LCD_DISP": 62.068787847868,
-    "/MCU_LCD_VSYNC": 0.8281727983645242,
+    "/MCU_LCD_VSYNC": 10.38621933088199,
     "/RGB565 and capacitive touch/TOUCH_SDA": 60.83327448791966,
     "/MCU_TOUCH_RST_N": 15.769976541518083,
     "/RGB565 and capacitive touch/TOUCH_RST_N": 61.086302269140205,
     "/MCU_TOUCH_INT": 22.27297256769668,
-    "/RGB565 and capacitive touch/TOUCH_INT": 58.71559159102157
+    "/RGB565 and capacitive touch/TOUCH_INT": 58.71559159102157,
+    "/RGB565 and capacitive touch/LCD_VSYNC": 33.51096679918781
   },
   "manufacturing_profile_sha256": "d8cd8096a998bb6577948be69a5f9bcb244f0e77d4c978c0243dbf85f5cef905",
   "new_via_smd_margins": {
@@ -533,6 +535,48 @@
         "required_hole_clearance_mm": 0.25
       }
     },
+    "2440de84-e70c-5f11-ad4e-f880fefa2dcf": {
+      "position_mm": [
+        118.35,
+        72.45
+      ],
+      "nearest_smd_land": {
+        "pad": "C731.2",
+        "distance_to_land_mm": 1.475,
+        "annulus_clearance_mm": 1.225,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 1.3250000000000002,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "af1f8dc3-d16f-535a-b671-01b9c62a8e83": {
+      "position_mm": [
+        120.7,
+        59.1
+      ],
+      "nearest_smd_land": {
+        "pad": "J1001.28",
+        "distance_to_land_mm": 5.3,
+        "annulus_clearance_mm": 5.05,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 5.1499999999999995,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "b2fbcf7e-86de-535d-b57f-718f6f0f5a6c": {
+      "position_mm": [
+        123.9,
+        51.75
+      ],
+      "nearest_smd_land": {
+        "pad": "J1001.34",
+        "distance_to_land_mm": 0.75,
+        "annulus_clearance_mm": 0.5,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 0.6,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
     "1ed1fc6c-fb08-509e-ba59-5dc4c24ccc24": {
       "position_mm": [
         127.05,
@@ -628,6 +672,20 @@
         "annulus_clearance_mm": 1.824999,
         "required_copper_clearance_mm": 0.2,
         "hole_clearance_mm": 1.9249990000000001,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
+    "952a78cd-29cd-5cf8-8468-a48f5dcbf893": {
+      "position_mm": [
+        117.825,
+        79.9
+      ],
+      "nearest_smd_land": {
+        "pad": "R708.2",
+        "distance_to_land_mm": 0.53,
+        "annulus_clearance_mm": 0.28,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 0.38,
         "required_hole_clearance_mm": 0.25
       }
     },
