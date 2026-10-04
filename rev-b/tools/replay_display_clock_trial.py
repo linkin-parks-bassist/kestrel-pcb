@@ -128,10 +128,26 @@ def main():
     for kind,index in [('track',19),('via',7)]:
         pending_uuid = str(uuid.uuid5(uuid.NAMESPACE_URL,f'kestrel/rev-b/display-timing-source-routes/{kind}/{index}'))
         actual = {it['uuid'] for r in drc['violations'] if r['type']==kind+'_dangling' for it in r['items']}
-        assert actual == {pending_uuid}, (kind,actual)
+        expected = set() if ('/MCU_TOUCH_RST_N' if kind == 'via' else '/MCU_TOUCH_INT') in v.get('additional_complete_source_nets', []) else {pending_uuid}
+        assert actual == expected, (kind,actual)
     b = pcbnew.LoadBoard(str(a.output)); conn = b.GetConnectivity(); conn.Build(b)
     pads = {f.GetReference()+'.'+p.GetNumber():p for f in b.GetFootprints() for p in f.Pads()}
     via_margins = {}
+    named_via_in_pad = {}
+    for route in v['routes']:
+        q = route['proposal']
+        for anchor in q.get('via_in_pad_anchors', []):
+            name,xy = anchor['pad'],anchor['position']
+            assert name in [q['start'],q['end']] and xy in q['via_positions']
+            pad = pads[name]
+            assert pad.GetAttribute() == pcbnew.PAD_ATTRIB_SMD and pad.GetNetname() == q['net']
+            candidates = [t for t in b.GetTracks() if isinstance(t,pcbnew.PCB_VIA) and t.m_Uuid.AsString() in added and pos(t.GetPosition()) == xy and t.GetNetname() == q['net']]
+            assert len(candidates) == 1
+            via = candidates[0]; side = next(layer for layer in [pcbnew.F_Cu,pcbnew.B_Cu] if pad.IsOnLayer(layer))
+            poly = pad.GetEffectivePolygon(side)
+            assert poly.Contains(via.GetPosition()) and not poly.CollideEdge(via.GetPosition(),None,pcbnew.FromMM(.15)), name
+            assert via.m_Uuid.AsString() not in named_via_in_pad
+            named_via_in_pad[via.m_Uuid.AsString()] = name
     for via in b.GetTracks():
         if not isinstance(via,pcbnew.PCB_VIA) or via.m_Uuid.AsString() not in added:
             continue
@@ -139,6 +155,8 @@ def main():
         for f in b.GetFootprints():
             for pad in f.Pads():
                 if pad.GetAttribute()!=pcbnew.PAD_ATTRIB_SMD:
+                    continue
+                if named_via_in_pad.get(via.m_Uuid.AsString()) == f.GetReference()+'.'+pad.GetNumber():
                     continue
                 q = pad.GetBoundingBox(); center = via.GetPosition()
                 distance = pcbnew.ToMM(round(math.hypot(max(q.GetLeft()-center.x,center.x-q.GetRight(),0),max(q.GetTop()-center.y,center.y-q.GetBottom(),0))))
@@ -179,11 +197,12 @@ def main():
         assert len(candidates)==1
         via = candidates[0]; poly = pad.GetEffectivePolygon(pcbnew.B_Cu)
         assert poly.Contains(via.GetPosition()) and not poly.CollideEdge(via.GetPosition(),None,pcbnew.FromMM(.15)), name
+    assert set(v.get('additional_complete_source_nets', [])) <= {'/MCU_TOUCH_INT','/MCU_TOUCH_RST_N'}
     source_groups = {}
     for pin,ref in zip([94,97,12,13,14,16,17,18,19],range(1017,1026)):
         name=f'U701.{pin}'; net=pads[name].GetNetname(); target=f'R{ref}.1'
         assert net==timing['anchor_nets'][name] and pads[target].GetNetname()==net
-        expected={name,target} if net in timing['complete_nets'] else {name}
+        expected={name,target} if net in timing['complete_nets'] + v.get('additional_complete_source_nets', []) else {name}
         assert connected(name)==expected, net
         source_groups[net]=sorted(expected)
     timing_output_groups = {}
@@ -200,6 +219,7 @@ def main():
     result['route_planar_length_mm'] = {r['proposal']['net']:sum(math.dist(x,y) for path in r['proposal']['paths'] for x,y in zip(path['points'],path['points'][1:])) for r in v['routes']}
     result['manufacturing_profile_sha256'] = profile_sha
     result['new_via_smd_margins'] = via_margins
+    result['new_via_in_pad_anchors'] = named_via_in_pad
     if a.verify_snapshot:
         assert hashlib.sha256(a.verify_snapshot.read_bytes()).hexdigest() == result['trial_sha256'], 'Saved trial differs from guarded replay'
     a.report.write_text(json.dumps(result,indent=2)+'\n')

@@ -166,7 +166,8 @@
     "Clear resistor placement alone does not establish routability.",
     "No route means only the stated grid, endpoint poses, unchanged copper and reviewed bounds; it is not proof of geometric impossibility or invalid GPIO function.",
     "Reset sources on the alternative remapped GPIOs were not searched; no such remap is selected.",
-    "The coordinated bypass revision remains unadopted: native-clear bypass/placement and preserved complete groups do not establish the proposed INT escape."
+    "The coordinated bypass revision remains unadopted: native-clear bypass/placement and preserved complete groups do not establish the proposed INT escape.",
+    "The isolated VSYNC source-only alternative is not selected: complete source and native-clear placement do not establish output routability. Rejected manual flipped/near/lower variants conflict with C732, MCU-reset/SPI copper or C701 ground/MISO geometry and are excluded from the saved preferred snapshot."
   ],
   "other_preferred_trial_searches": [
     {
@@ -231,6 +232,188 @@
       ],
       "grid_step_mm": 0.05,
       "result": "No route within bounds"
+    },
+    {
+      "baseline_trial_sha256": "0c8dba07064540009fa8ce5bdbb6763eff64debc927d57bfd818670d77ff036f",
+      "start": "R1019.2",
+      "end": "J1001.33",
+      "via_in_pad": [
+        "R1019.2"
+      ],
+      "bounds_mm": [
+        110,
+        45,
+        140,
+        95
+      ],
+      "grid_step_mm": 0.025,
+      "result": "No route within bounds"
+    },
+    {
+      "baseline_trial_sha256": "dddadc2a13eaa49d2f01f1d752e424f14ba4ff9da551b6bd0a2c371a75fdff00",
+      "start": "U701.18",
+      "start_track": "cccd04bd-dd91-5bae-bd76-0ff8403f9bc8",
+      "end": "R1024.1",
+      "via_in_pad": [
+        "R1024.1"
+      ],
+      "bounds_mm": [
+        112,
+        85,
+        123,
+        96
+      ],
+      "grid_step_mm": 0.025,
+      "result": "No route within bounds"
     }
-  ]
+  ],
+  "vsync_source_only_alternative": {
+    "baseline_trial_sha256": "0c8dba07064540009fa8ce5bdbb6763eff64debc927d57bfd818670d77ff036f",
+    "trial_sha256": "1f9b8476dc410a7b52a17f93758a7aa515e147f197905f91b0b8f0aefa9305cd",
+    "pose": [
+      115.4,
+      81.2,
+      90
+    ],
+    "side": "B.Cu",
+    "source_proposal": {
+      "grid_step_mm": 0.025,
+      "via_pad_hole_clearance_mm": 0.25,
+      "via_hole_to_hole_clearance_mm": 0.25,
+      "start_pad_position": [
+        119.1,
+        85.475
+      ],
+      "end_pad_position": [
+        115.4,
+        81.71
+      ],
+      "status": "Candidate only: native DRC, geometry/endpoint and SI/return-path review required",
+      "net": "/MCU_LCD_VSYNC",
+      "start": "U701.12",
+      "end": "R1019.1",
+      "bounds": [
+        105.0,
+        78.0,
+        120.0,
+        90.0
+      ],
+      "paths": [
+        {
+          "net": "/MCU_LCD_VSYNC",
+          "layer": "In2.Cu",
+          "width_mm": 0.127,
+          "points": [
+            [
+              116.9,
+              85.275
+            ],
+            [
+              118.025,
+              84.15
+            ],
+            [
+              118.025,
+              81.2
+            ],
+            [
+              116.775,
+              79.95
+            ]
+          ]
+        },
+        {
+          "net": "/MCU_LCD_VSYNC",
+          "layer": "F.Cu",
+          "width_mm": 0.127,
+          "points": [
+            [
+              116.775,
+              79.95
+            ],
+            [
+              116.275,
+              80.45
+            ],
+            [
+              115.45,
+              80.45
+            ],
+            [
+              115.225,
+              80.675
+            ],
+            [
+              115.225,
+              82.825
+            ]
+          ]
+        },
+        {
+          "net": "/MCU_LCD_VSYNC",
+          "layer": "B.Cu",
+          "width_mm": 0.127,
+          "points": [
+            [
+              115.225,
+              82.825
+            ],
+            [
+              115.225,
+              81.875
+            ],
+            [
+              115.4,
+              81.7
+            ],
+            [
+              115.4,
+              81.71
+            ]
+          ]
+        }
+      ],
+      "via_positions": [
+        [
+          116.775,
+          79.95
+        ],
+        [
+          115.225,
+          82.825
+        ]
+      ],
+      "via_diameter_mm": 0.5,
+      "via_drill_mm": 0.3,
+      "limits": [
+        "Conservative pad bounding boxes; pad/footprint local clearance when present, otherwise .2mm, plus .01mm search margin. Outside-land new vias use pad/footprint local copper clearance (otherwise .2mm) and the project hole-clearance floor against every pad land, including their own net. New holes independently respect project hole-to-hole spacing against every existing via and drilled pad, including same-net vias (noncircular pad drills use a conservative circumscribed circle); explicit endpoint via-in-pad permits only native-contained drills with other-pad/copper clearance; existing same-net through-vias can be reused at their exact aligned coordinates.",
+        "No board-edge/keepout/custom-rule/return-current/impedance model; reviewed bounds and native DRC required."
+      ],
+      "existing_via_positions": [
+        [
+          116.9,
+          85.275
+        ]
+      ],
+      "via_in_pad_anchors": []
+    },
+    "native_critical_violations": 0,
+    "preserved_rgb_halves": 32,
+    "output_search": {
+      "start": "R1019.2",
+      "end": "J1001.33",
+      "via_in_pad": [
+        "R1019.2"
+      ],
+      "bounds_mm": [
+        110,
+        45,
+        140,
+        95
+      ],
+      "grid_step_mm": 0.05,
+      "result": "No route within bounds"
+    },
+    "status": "Unselected source-only reservation; preferred retains the shorter saved VSYNC source and existing resistor bank poses"
+  }
 }
