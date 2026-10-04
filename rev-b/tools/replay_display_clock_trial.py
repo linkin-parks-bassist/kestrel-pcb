@@ -51,6 +51,8 @@ def main():
         assert not v['pending_rgb_groups'], 'Preferred trial must preserve every RGB half'
         assert set(v['additional_complete_source_nets']) == {'/MCU_TOUCH_INT','/MCU_TOUCH_RST_N'}
         assert set(v['complete_timing_outputs']) == {'PCLK','HSYNC','VSYNC','DE','DISP','SCL','SDA','INT','RST_N'}
+        assert set(v['bypass_poses']) == {'C702'}
+        assert {c['before']['uuid'] for c in v['revised_copper']} == {'1048cd70-4694-5f99-afe5-f9746aa9d8df','1bdc06ad-453f-5cea-9245-5e94632beb00'}
     removals = d['removed'] + v.get('extra_removed', [])
     assert len({g['uuid'] for g in removals}) == len(removals)
     for g in removals:
@@ -69,6 +71,24 @@ def main():
         assert original[ref] == (vec(old_xy[ref]),0 if ref in ['R1019','R1023'] else 90)
         fps[ref].SetOrientationDegrees(angle)
         fps[ref].SetPosition(vec([x,y]))
+    revised = {}
+    for ref, change in v.get('bypass_poses', {}).items():
+        assert ref == 'C702' and original[ref] == (vec(change['before'][:2]), change['before'][2])
+        assert fps[ref].GetLayer() == pcbnew.B_Cu
+        fps[ref].SetPosition(vec(change['after'][:2])); fps[ref].SetOrientationDegrees(change['after'][2])
+    for change in v.get('revised_copper', []):
+        old,new = change['before'],change['after']; uid = old['uuid']
+        assert uid == new['uuid'] and geometry(tracks[uid]) == old
+        assert old['net'] == new['net'] and old['layer'] == new['layer']
+        t = tracks[uid]
+        if isinstance(t, pcbnew.PCB_VIA):
+            assert new['diameter_mm'] == .5 and new['drill_mm'] == .3 and new['span'] == old['span']
+            t.SetPosition(vec(new['start'])); t.SetWidth(pcbnew.FromMM(new['diameter_mm']))
+        else:
+            assert new['width_mm'] == old['width_mm']
+            t.SetStart(vec(new['start'])); t.SetEnd(vec(new['end']))
+        assert geometry(t) == new
+        revised[uid] = new
     # Only stock-name/courtyard edits are permitted for the coordinated pair.
     stock = Path('/usr/share/kicad/footprints/Resistor_SMD.pretty/R_0402_1005Metric.kicad_mod').read_text()
     expected_lib = stock.replace('"R_0402_1005Metric"', '"R_0402_1005Metric_Courtyard0p10"').replace('(start -0.93 -0.47)', '(start -0.88 -0.42)').replace('(end 0.93 0.47)', '(end 0.88 0.42)')
@@ -112,8 +132,9 @@ def main():
             assert t.m_Uuid.AsString() not in before
             b.Add(t); added.add(t.m_Uuid.AsString())
     remaining = {u:g for u,g in before.items() if u not in {r['uuid'] for r in removals}}
-    assert {t.m_Uuid.AsString():geometry(t) for t in b.GetTracks() if t.m_Uuid.AsString() not in added} == remaining
-    assert all((f.GetPosition(),f.GetOrientationDegrees()) == original[r] for r,f in fps.items() if r not in v['poses'])
+    expected_remaining = dict(remaining); expected_remaining.update(revised)
+    assert {t.m_Uuid.AsString():geometry(t) for t in b.GetTracks() if t.m_Uuid.AsString() not in added} == expected_remaining
+    assert all((f.GetPosition(),f.GetOrientationDegrees()) == original[r] for r,f in fps.items() if r not in v['poses'] and r not in v.get('bypass_poses', {}))
     assert all(pad_signature(f) == original_pads[r] for r,f in fps.items()), 'Pad identities/nets/lands changed'
     assert all(sorted((field.GetName(),field.GetText()) for field in f.GetFields()) == original_fields[r] for r,f in fps.items()), 'Part fields changed'
     assert pcbnew.ZONE_FILLER(b).Fill(b.Zones())
@@ -152,8 +173,15 @@ def main():
             assert poly.Contains(via.GetPosition()) and not poly.CollideEdge(via.GetPosition(),None,pcbnew.FromMM(.15)), name
             assert via.m_Uuid.AsString() not in named_via_in_pad
             named_via_in_pad[via.m_Uuid.AsString()] = name
+    for uid in revised:
+        via = next(t for t in b.GetTracks() if t.m_Uuid.AsString() == uid)
+        if not isinstance(via,pcbnew.PCB_VIA): continue
+        pad = pads['C702.2']; poly = pad.GetEffectivePolygon(pcbnew.B_Cu)
+        assert via.GetNetname() == pad.GetNetname() and poly.Contains(via.GetPosition())
+        assert not poly.CollideEdge(via.GetPosition(),None,pcbnew.FromMM(.15))
+        named_via_in_pad[uid] = 'C702.2'
     for via in b.GetTracks():
-        if not isinstance(via,pcbnew.PCB_VIA) or via.m_Uuid.AsString() not in added:
+        if not isinstance(via,pcbnew.PCB_VIA) or via.m_Uuid.AsString() not in added | set(revised):
             continue
         nearest = None
         for f in b.GetFootprints():
@@ -226,11 +254,19 @@ def main():
         assert seed in xml_names and all(pads[n].GetNetname()==net for n in xml_names)
         assert connected(seed)==xml_names, (net,connected(seed),xml_names)
         support_groups[net] = sorted(xml_names)
-    result=dict(variant=a.variant,baseline_sha256=d['baseline_trial_sha256'],trial_sha256=hashlib.sha256(a.output.read_bytes()).hexdigest(),native_critical_violations=0,native_residual_counts=dict(Counter(r['type'] for r in drc['violations'])),preserved_copper_items=len(remaining),removed_copper_items=len(det),added_copper_items=len(added),physical_rgb_groups=groups,physical_timing_source_groups=source_groups,physical_timing_output_groups=timing_output_groups,physical_support_groups=support_groups,limits=d['limits'])
+    result=dict(variant=a.variant,baseline_sha256=d['baseline_trial_sha256'],trial_sha256=hashlib.sha256(a.output.read_bytes()).hexdigest(),native_critical_violations=0,native_residual_counts=dict(Counter(r['type'] for r in drc['violations'])),preserved_copper_items=len(remaining)-len(revised),revised_copper_items=len(revised),removed_copper_items=len(det),added_copper_items=len(added),physical_rgb_groups=groups,physical_timing_source_groups=source_groups,physical_timing_output_groups=timing_output_groups,physical_support_groups=support_groups,limits=d['limits'])
     lengths = Counter()
     for route in v['routes']:
         q = route['proposal']
         lengths[q['net']] += sum(math.dist(x,y) for path in q['paths'] for x,y in zip(path['points'],path['points'][1:]))
+    allocations = {}
+    for ref,pin in [('C701','9'),('C702','21')]:
+        dist = math.dist(pos(pads[ref+'.1'].GetPosition()),pos(pads['U701.'+pin].GetPosition()))
+        allocations[ref] = dict(source_pad='U701.'+pin,distance_mm=dist,maintained_bound_mm=2.5,within_bound=dist <= 2.5)
+        if ref in v.get('bypass_poses', {}):
+            assert dist <= 2.5 and 'U701.'+pin in connected(ref+'.1')
+            assert any(isinstance(it,pcbnew.ZONE) for it in conn.GetConnectedItems(pads[ref+'.2'])), 'Revised ground does not reach plane'
+    result['bypass_source_allocations'] = allocations
     result['route_planar_length_mm'] = dict(lengths)
     result['manufacturing_profile_sha256'] = profile_sha
     result['new_via_smd_margins'] = via_margins

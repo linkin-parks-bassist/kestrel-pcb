@@ -1,7 +1,7 @@
 {
   "variant": "dual_clock_rgb",
   "baseline_sha256": "603ba3bf19fc05499781dda95da4a748c3c0afc90077a53db912f2fbfaec6164",
-  "trial_sha256": "4a72f777138290088b1522021b78bb90ad5720ab4d39dae6ac0aedf0f7dfe333",
+  "trial_sha256": "036c4a8d87f217ec4c4210d9ab375a1933b7777803e1d6b6883fa96f954d8b9a",
   "native_critical_violations": 0,
   "native_residual_counts": {
     "drill_out_of_range": 6,
@@ -9,7 +9,8 @@
     "silk_over_copper": 199,
     "silk_edge_clearance": 9
   },
-  "preserved_copper_items": 2752,
+  "preserved_copper_items": 2750,
+  "revised_copper_items": 2,
   "removed_copper_items": 44,
   "added_copper_items": 231,
   "physical_rgb_groups": {
@@ -233,10 +234,24 @@
     "Unadopted trials only; authoritative schematic/PCB and published seven-source baseline remain unchanged.",
     "The preferred variant requires all 32 RGB halves, nine timing/touch source groups and all nine timing/touch outputs physically complete; placement, timing/return and fabrication/assembly qualification remain unfinished.",
     "PCLK/HSYNC GPIO remaps, resistor selections/poses, C701/C702 underside bypass, MISO/R5 detours and revised G7 damping/output remain unadopted.",
-    "C701/C702 source-pad allocations still exceed the maintained 2.5-mm bounds; revise before adoption.",
+    "C702 now meets the maintained 2.5-mm pad-centre bound; C701 remains outside that bound and must be revised before adoption.",
     "Long G6/G7 output detours, loaded timing/skew, source damping, effective returns/coupling/PDN and via-in-pad fabrication/assembly remain unqualified.",
     "No copper/drill profile relaxation: U701 local copper clearance .127mm, Default .2mm, project hole clearance .25mm, tracks .127mm, through vias .5/.3mm."
   ],
+  "bypass_source_allocations": {
+    "C701": {
+      "source_pad": "U701.9",
+      "distance_mm": 3.0514791495273212,
+      "maintained_bound_mm": 2.5,
+      "within_bound": false
+    },
+    "C702": {
+      "source_pad": "U701.21",
+      "distance_mm": 2.450352015527562,
+      "maintained_bound_mm": 2.5,
+      "within_bound": true
+    }
+  },
   "route_planar_length_mm": {
     "/RGB565 and capacitive touch/LCD_PCLK": 41.49264427649429,
     "/RGB565 and capacitive touch/LCD_HSYNC": 32.515941546018375,
@@ -255,6 +270,20 @@
   },
   "manufacturing_profile_sha256": "d8cd8096a998bb6577948be69a5f9bcb244f0e77d4c978c0243dbf85f5cef905",
   "new_via_smd_margins": {
+    "1048cd70-4694-5f99-afe5-f9746aa9d8df": {
+      "position_mm": [
+        115.68,
+        88.3
+      ],
+      "nearest_smd_land": {
+        "pad": "R811.2",
+        "distance_to_land_mm": 0.455686,
+        "annulus_clearance_mm": 0.20568599999999998,
+        "required_copper_clearance_mm": 0.2,
+        "hole_clearance_mm": 0.305686,
+        "required_hole_clearance_mm": 0.25
+      }
+    },
     "28295aa4-4996-5132-a151-82cc2f486c14": {
       "position_mm": [
         152.2,
@@ -696,10 +725,10 @@
       ],
       "nearest_smd_land": {
         "pad": "C702.2",
-        "distance_to_land_mm": 0.466905,
-        "annulus_clearance_mm": 0.21690500000000001,
+        "distance_to_land_mm": 0.621289,
+        "annulus_clearance_mm": 0.371289,
         "required_copper_clearance_mm": 0.2,
-        "hole_clearance_mm": 0.316905,
+        "hole_clearance_mm": 0.47128899999999996,
         "required_hole_clearance_mm": 0.25
       }
     },
@@ -832,6 +861,7 @@
   },
   "new_via_in_pad_anchors": {
     "1357effe-49c2-5bde-916b-a029154cfc2f": "R1025.1",
-    "25bb6659-466d-501c-9f5b-d5a1054b656c": "R1024.2"
+    "25bb6659-466d-501c-9f5b-d5a1054b656c": "R1024.2",
+    "1048cd70-4694-5f99-afe5-f9746aa9d8df": "C702.2"
   }
 }

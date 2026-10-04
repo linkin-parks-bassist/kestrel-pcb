@@ -3004,6 +3004,92 @@
       ],
       "complete_support_groups": [
         "U701.15"
+      ],
+      "bypass_poses": {
+        "C702": {
+          "before": [
+            115.98,
+            88.4,
+            180
+          ],
+          "after": [
+            116.18,
+            88.4,
+            180
+          ]
+        }
+      },
+      "revised_copper": [
+        {
+          "before": {
+            "uuid": "1048cd70-4694-5f99-afe5-f9746aa9d8df",
+            "net": "/GND",
+            "start": [
+              115.5,
+              88.4
+            ],
+            "end": [
+              115.5,
+              88.4
+            ],
+            "layer": "F.Cu",
+            "diameter_mm": 0.6,
+            "drill_mm": 0.3,
+            "span": [
+              0,
+              2
+            ]
+          },
+          "after": {
+            "uuid": "1048cd70-4694-5f99-afe5-f9746aa9d8df",
+            "net": "/GND",
+            "start": [
+              115.68,
+              88.3
+            ],
+            "end": [
+              115.68,
+              88.3
+            ],
+            "layer": "F.Cu",
+            "diameter_mm": 0.5,
+            "drill_mm": 0.3,
+            "span": [
+              0,
+              2
+            ]
+          }
+        },
+        {
+          "before": {
+            "uuid": "1bdc06ad-453f-5cea-9245-5e94632beb00",
+            "net": "/+3V3_D",
+            "start": [
+              116.5,
+              88.44
+            ],
+            "end": [
+              116.46,
+              88.4
+            ],
+            "layer": "B.Cu",
+            "width_mm": 0.127
+          },
+          "after": {
+            "uuid": "1bdc06ad-453f-5cea-9245-5e94632beb00",
+            "net": "/+3V3_D",
+            "start": [
+              116.5,
+              88.44
+            ],
+            "end": [
+              116.66,
+              88.4
+            ],
+            "layer": "B.Cu",
+            "width_mm": 0.127
+          }
+        }
       ]
     }
   },
@@ -3011,7 +3097,7 @@
     "Unadopted trials only; authoritative schematic/PCB and published seven-source baseline remain unchanged.",
     "The preferred variant requires all 32 RGB halves, nine timing/touch source groups and all nine timing/touch outputs physically complete; placement, timing/return and fabrication/assembly qualification remain unfinished.",
     "PCLK/HSYNC GPIO remaps, resistor selections/poses, C701/C702 underside bypass, MISO/R5 detours and revised G7 damping/output remain unadopted.",
-    "C701/C702 source-pad allocations still exceed the maintained 2.5-mm bounds; revise before adoption.",
+    "C702 now meets the maintained 2.5-mm pad-centre bound; C701 remains outside that bound and must be revised before adoption.",
     "Long G6/G7 output detours, loaded timing/skew, source damping, effective returns/coupling/PDN and via-in-pad fabrication/assembly remain unqualified.",
     "No copper/drill profile relaxation: U701 local copper clearance .127mm, Default .2mm, project hole clearance .25mm, tracks .127mm, through vias .5/.3mm."
   ]
