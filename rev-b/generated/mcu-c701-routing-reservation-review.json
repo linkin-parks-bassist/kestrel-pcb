@@ -1,0 +1,117 @@
+{
+  "source_sha256": "036c4a8d87f217ec4c4210d9ab375a1933b7777803e1d6b6883fa96f954d8b9a",
+  "qualification": "Bounded search and native rejection evidence; no selected C701 placement or copper.",
+  "routing_reservations": [
+    {
+      "pose_mm": [
+        118.1,
+        84.8,
+        180
+      ],
+      "source_search": {
+        "start": "U701.9",
+        "start_via": "f5a991a8-2915-5566-b913-21b32833d461",
+        "end": "C701.1",
+        "bounds_mm": [
+          113,
+          80.02,
+          122,
+          88.02
+        ],
+        "grid_mm": 0.025,
+        "outcome": "no route in checked region"
+      },
+      "ground_search": {
+        "start": "R811.2",
+        "end": "C701.2",
+        "bounds_mm": [
+          113,
+          80,
+          123,
+          88
+        ],
+        "grid_mm": 0.025,
+        "outcome": "candidate; two paths, one new via, one reused via; supply unresolved"
+      }
+    },
+    {
+      "pose_mm": [
+        118.1,
+        84.8,
+        0
+      ],
+      "source_search": {
+        "start": "U701.9",
+        "start_via": "f5a991a8-2915-5566-b913-21b32833d461",
+        "end": "C701.1",
+        "bounds_mm": [
+          113,
+          80.02,
+          122,
+          88.02
+        ],
+        "grid_mm": 0.025,
+        "outcome": "candidate; one path, no new vias, one reused via"
+      },
+      "ground_search": {
+        "start": "R811.2",
+        "end": "C701.2",
+        "bounds_mm": [
+          113,
+          80,
+          123,
+          88
+        ],
+        "grid_mm": 0.025,
+        "outcome": "no route in checked region"
+      }
+    }
+  ],
+  "native_rejected_transition_examples": [
+    {
+      "position_mm": [
+        118.525,
+        84.675
+      ],
+      "net": "/+3V3_D",
+      "reasons": [
+        "short to ESP_VDD_HP inner trunk",
+        "0.1454 mm copper clearance to front VSYNC seed instead of 0.2 mm",
+        "0.1284 mm hole clearance to U701.10 instead of 0.25 mm"
+      ]
+    },
+    {
+      "position_mm": [
+        119.825,
+        83.2
+      ],
+      "net": "/+3V3_D",
+      "reasons": [
+        "short to MCU_RESET_N inner trunk; moving only that trunk does not revise its bottom transfer or source via"
+      ]
+    },
+    {
+      "position_mm": [
+        117.8,
+        82.625
+      ],
+      "net": "/MCU_RAW_CS",
+      "reasons": [
+        "short to bottom MCU_RESET_N transfer and inner VSYNC source",
+        "0.1890 mm clearance to front MCU_RAW_CLK instead of 0.2 mm"
+      ]
+    },
+    {
+      "position_mm": [
+        119.825,
+        82.475
+      ],
+      "net": "/GND",
+      "reasons": [
+        "only 0.0274 mm copper clearance to existing MCU_RESET_N source via",
+        "only 0.2274 mm hole-to-hole clearance instead of 0.25 mm"
+      ]
+    }
+  ],
+  "next_geometry_scope": "Coordinate the complete reset/CS transfer geometry with HP, VSYNC and raw-clock reservations; none of these tested C701 proposals is a complete selected replacement."
+}

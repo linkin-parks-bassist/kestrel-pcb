@@ -1,0 +1,141 @@
+{
+  "source_sha256": "036c4a8d87f217ec4c4210d9ab375a1933b7777803e1d6b6883fa96f954d8b9a",
+  "reference": "C701",
+  "source_pad": "U701.9",
+  "bound_mm": 2.5,
+  "bounds_mm": [
+    116,
+    81.5,
+    121.5,
+    86.7
+  ],
+  "step_mm": 0.1,
+  "orientations_deg": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "excluded_ground_via": [
+    "1f0bf071-ef25-5601-982c-3345f628d269"
+  ],
+  "candidate_poses": [
+    {
+      "distance_mm": 0.6411,
+      "position_mm": [
+        118.1,
+        84.8
+      ],
+      "orientation_deg": 180
+    },
+    {
+      "distance_mm": 0.7804,
+      "position_mm": [
+        119.8,
+        83.6
+      ],
+      "orientation_deg": 90
+    },
+    {
+      "distance_mm": 0.8367,
+      "position_mm": [
+        119.9,
+        83.7
+      ],
+      "orientation_deg": 90
+    },
+    {
+      "distance_mm": 0.8712,
+      "position_mm": [
+        119.9,
+        83.6
+      ],
+      "orientation_deg": 90
+    },
+    {
+      "distance_mm": 1.2382,
+      "position_mm": [
+        119.4,
+        83.2
+      ],
+      "orientation_deg": 0
+    },
+    {
+      "distance_mm": 1.3372,
+      "position_mm": [
+        119.4,
+        83.1
+      ],
+      "orientation_deg": 0
+    },
+    {
+      "distance_mm": 1.3543,
+      "position_mm": [
+        119.3,
+        83.1
+      ],
+      "orientation_deg": 0
+    },
+    {
+      "distance_mm": 1.4464,
+      "position_mm": [
+        119.9,
+        83.7
+      ],
+      "orientation_deg": 270
+    },
+    {
+      "distance_mm": 1.4522,
+      "position_mm": [
+        119.4,
+        83.2
+      ],
+      "orientation_deg": 180
+    },
+    {
+      "distance_mm": 1.4809,
+      "position_mm": [
+        119.8,
+        83.6
+      ],
+      "orientation_deg": 270
+    },
+    {
+      "distance_mm": 1.4893,
+      "position_mm": [
+        119.3,
+        83.1
+      ],
+      "orientation_deg": 180
+    },
+    {
+      "distance_mm": 1.5268,
+      "position_mm": [
+        118.1,
+        84.8
+      ],
+      "orientation_deg": 0
+    },
+    {
+      "distance_mm": 1.5307,
+      "position_mm": [
+        119.9,
+        83.6
+      ],
+      "orientation_deg": 270
+    },
+    {
+      "distance_mm": 1.5375,
+      "position_mm": [
+        119.4,
+        83.1
+      ],
+      "orientation_deg": 180
+    }
+  ],
+  "limits": [
+    "Prospective C701 move removes only its original ground via; other geometry is retained for the pose screen.",
+    "Conservative pad/track/via and courtyard bounding model; sampled survivors are candidates, not native-clear or routed placements.",
+    "Supply and ground continuity, manufacturing profile/native DRC, whole completed-group preservation, PDN/return behavior and assembly must be checked after coordinated routing."
+  ]
+}
