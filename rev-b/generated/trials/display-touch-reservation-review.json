@@ -201,6 +201,36 @@
       ],
       "grid_step_mm": 0.025,
       "result": "No route within bounds"
+    },
+    {
+      "baseline_trial_sha256": "0c8dba07064540009fa8ce5bdbb6763eff64debc927d57bfd818670d77ff036f",
+      "start": "R1019.2",
+      "end": "J1001.33",
+      "via_in_pad": [],
+      "bounds_mm": [
+        110,
+        45,
+        140,
+        95
+      ],
+      "grid_step_mm": 0.05,
+      "result": "No route within bounds"
+    },
+    {
+      "baseline_trial_sha256": "0c8dba07064540009fa8ce5bdbb6763eff64debc927d57bfd818670d77ff036f",
+      "start": "R1019.2",
+      "end": "J1001.33",
+      "via_in_pad": [
+        "R1019.2"
+      ],
+      "bounds_mm": [
+        110,
+        45,
+        140,
+        95
+      ],
+      "grid_step_mm": 0.05,
+      "result": "No route within bounds"
     }
   ]
 }

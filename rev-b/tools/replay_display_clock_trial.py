@@ -55,12 +55,33 @@ def main():
         b.Remove(t)
         det.append(t)
     fps = {f.GetReference():f for f in b.GetFootprints()}
+    def pad_signature(f):
+        return sorted((p.m_Uuid.AsString(),p.GetNumber(),p.GetNetname(),p.GetSize().x,p.GetSize().y,p.GetShape(),p.GetRoundRectRadiusRatio(),p.GetDrillSize().x,p.GetDrillSize().y,p.GetLayerSet().FmtBin()) for p in f.Pads())
+    original_pads = {r:pad_signature(f) for r,f in fps.items()}
+    original_fields = {r:sorted((field.GetName(),field.GetText()) for field in f.GetFields()) for r,f in fps.items()}
     original = {r:(f.GetPosition(),f.GetOrientationDegrees()) for r,f in fps.items()}
     for ref, (x,y,angle) in v['poses'].items():
-        old_xy = {'R1017':[122.65,81.3], 'R1018':[121.7,81.34], 'R1011':[121.9,77.7]}
-        assert original[ref] == (vec(old_xy[ref]),90)
+        old_xy = {'R1017':[122.65,81.3], 'R1018':[121.7,81.34], 'R1011':[121.9,77.7], 'R1019':[118.5,89], 'R1023':[116.81,87.4]}
+        assert original[ref] == (vec(old_xy[ref]),0 if ref in ['R1019','R1023'] else 90)
         fps[ref].SetOrientationDegrees(angle)
         fps[ref].SetPosition(vec([x,y]))
+    # Only stock-name/courtyard edits are permitted for the coordinated pair.
+    stock = Path('/usr/share/kicad/footprints/Resistor_SMD.pretty/R_0402_1005Metric.kicad_mod').read_text()
+    expected_lib = stock.replace('"R_0402_1005Metric"', '"R_0402_1005Metric_Courtyard0p10"').replace('(start -0.93 -0.47)', '(start -0.88 -0.42)').replace('(end 0.93 0.47)', '(end 0.88 0.42)')
+    assert (baseline.parent/'KestrelTiming.pretty/R_0402_1005Metric_Courtyard0p10.kicad_mod').read_text() == expected_lib
+    for ref in v.get('custom_courtyard_poses', []):
+        f = fps[ref]
+        assert f.GetFPID().GetLibNickname() == 'Resistor_SMD' and f.GetFPID().GetLibItemName() == 'R_0402_1005Metric'
+        assert f.GetLayer() == pcbnew.B_Cu and f.GetValue() == '33ohm'
+        assert f.GetField('MPN').GetText() == 'RC0402FR-0733RL' and f.GetField('LCSC').GetText() == 'C138002'
+        for pad in f.Pads():
+            assert pad.GetSize() == vec([.54,.64]) and pad.GetShape() == pcbnew.PAD_SHAPE_ROUNDRECT and pad.GetRoundRectRadiusRatio() == .25
+        xy = pos(f.GetPosition()); half = [.88,.42] if f.GetOrientationDegrees() == 0 else [.42,.88]
+        courtyard = [g for g in f.GraphicalItems() if g.GetLayer() == pcbnew.B_CrtYd]
+        assert len(courtyard) == 1 and courtyard[0].GetShape() == pcbnew.SHAPE_T_RECT
+        courtyard[0].SetStart(vec([xy[i]-half[i] for i in range(2)]))
+        courtyard[0].SetEnd(vec([xy[i]+half[i] for i in range(2)]))
+        f.SetFPID(pcbnew.LIB_ID('KestrelTiming','R_0402_1005Metric_Courtyard0p10'))
     added = set()
     for route in v['routes']:
         q = route['proposal']
@@ -89,6 +110,8 @@ def main():
     remaining = {u:g for u,g in before.items() if u not in {r['uuid'] for r in removals}}
     assert {t.m_Uuid.AsString():geometry(t) for t in b.GetTracks() if t.m_Uuid.AsString() not in added} == remaining
     assert all((f.GetPosition(),f.GetOrientationDegrees()) == original[r] for r,f in fps.items() if r not in v['poses'])
+    assert all(pad_signature(f) == original_pads[r] for r,f in fps.items()), 'Pad identities/nets/lands changed'
+    assert all(sorted((field.GetName(),field.GetText()) for field in f.GetFields()) == original_fields[r] for r,f in fps.items()), 'Part fields changed'
     assert pcbnew.ZONE_FILLER(b).Fill(b.Zones())
     a.output.parent.mkdir(parents=True)
     pcbnew.SaveBoard(str(a.output),b)
