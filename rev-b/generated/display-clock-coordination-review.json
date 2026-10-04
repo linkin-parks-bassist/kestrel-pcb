@@ -1,0 +1,804 @@
+{
+  "paired_rgb": {
+    "variant": "paired_rgb",
+    "baseline_sha256": "603ba3bf19fc05499781dda95da4a748c3c0afc90077a53db912f2fbfaec6164",
+    "trial_sha256": "44cec42252d8c223e0d78db527b01d142b8fea0cee9f47ae458e9addc3a2ffc2",
+    "native_critical_violations": 0,
+    "native_residual_counts": {
+      "drill_out_of_range": 6,
+      "silk_overlap": 199,
+      "silk_over_copper": 199,
+      "silk_edge_clearance": 9,
+      "track_dangling": 1,
+      "via_dangling": 1
+    },
+    "preserved_copper_items": 2779,
+    "removed_copper_items": 17,
+    "added_copper_items": 19,
+    "physical_rgb_groups": {
+      "source:/MCU_LCD_B3": [
+        "R1001.1",
+        "U701.80"
+      ],
+      "source:/MCU_LCD_B4": [
+        "R1002.1",
+        "U701.81"
+      ],
+      "source:/MCU_LCD_B5": [
+        "R1003.1",
+        "U701.82"
+      ],
+      "source:/MCU_LCD_B6": [
+        "R1004.1",
+        "U701.83"
+      ],
+      "source:/MCU_LCD_B7": [
+        "R1005.1",
+        "U701.84"
+      ],
+      "source:/MCU_LCD_G2": [
+        "R1006.1",
+        "U701.86"
+      ],
+      "source:/MCU_LCD_G3": [
+        "R1007.1",
+        "U701.87"
+      ],
+      "source:/MCU_LCD_G4": [
+        "R1008.1",
+        "U701.88"
+      ],
+      "source:/MCU_LCD_G5": [
+        "R1009.1",
+        "U701.89"
+      ],
+      "source:/MCU_LCD_R3": [
+        "R1012.1",
+        "U701.55"
+      ],
+      "source:/MCU_LCD_G7": [
+        "R1011.1",
+        "U701.92"
+      ],
+      "source:/MCU_LCD_G6": [
+        "R1010.1",
+        "U701.63"
+      ],
+      "source:/MCU_LCD_R5": [
+        "R1014.1",
+        "U701.57"
+      ],
+      "source:/MCU_LCD_R7": [
+        "R1016.1",
+        "U701.60"
+      ],
+      "source:/MCU_LCD_R4": [
+        "R1013.1",
+        "U701.56"
+      ],
+      "source:/MCU_LCD_R6": [
+        "R1015.1",
+        "U701.64"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B3": [
+        "J1001.24",
+        "R1001.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B4": [
+        "J1001.25",
+        "R1002.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B5": [
+        "J1001.26",
+        "R1003.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B6": [
+        "J1001.27",
+        "R1004.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B7": [
+        "J1001.28",
+        "R1005.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G2": [
+        "J1001.15",
+        "R1006.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G4": [
+        "J1001.17",
+        "R1008.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G6": [
+        "J1001.19",
+        "R1010.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G7": [
+        "J1001.20",
+        "R1011.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R3": [
+        "J1001.8",
+        "R1012.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R6": [
+        "J1001.11",
+        "R1015.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R4": [
+        "J1001.9",
+        "R1013.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R5": [
+        "J1001.10",
+        "R1014.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R7": [
+        "J1001.12",
+        "R1016.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G3": [
+        "J1001.16",
+        "R1007.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G5": [
+        "J1001.18",
+        "R1009.2"
+      ]
+    },
+    "physical_timing_source_groups": {
+      "/MCU_LCD_PCLK": [
+        "R1017.1",
+        "U701.94"
+      ],
+      "/MCU_LCD_HSYNC": [
+        "R1018.1",
+        "U701.97"
+      ],
+      "/MCU_LCD_VSYNC": [
+        "R1019.1",
+        "U701.12"
+      ],
+      "/MCU_LCD_DE": [
+        "R1020.1",
+        "U701.13"
+      ],
+      "/MCU_LCD_DISP": [
+        "R1021.1",
+        "U701.14"
+      ],
+      "/MCU_TOUCH_SCL": [
+        "R1022.1",
+        "U701.16"
+      ],
+      "/MCU_TOUCH_SDA": [
+        "R1023.1",
+        "U701.17"
+      ],
+      "/MCU_TOUCH_INT": [
+        "U701.18"
+      ],
+      "/MCU_TOUCH_RST_N": [
+        "U701.19"
+      ]
+    },
+    "physical_clock_output_groups": {
+      "PCLK": [
+        "R1017.2"
+      ],
+      "HSYNC": [
+        "R1018.2"
+      ]
+    },
+    "limits": [
+      "Unadopted coordination experiments only; the published seven-source trial and authoritative schematic/PCB remain unchanged.",
+      "Paired RGB replacement retains all 32 complete RGB halves, but its outward clock pocket has no modeled legal via site.",
+      "Individual inward PCLK/HSYNC outputs pass native DRC, but temporarily leave G7 source and G6 output disconnected; sequential second-clock searches fail.",
+      "Staggered HSYNC passes alone; PCLK remains unrouted. Restore both RGB halves and prove all output/source groups before adopting any coordinated changes.",
+      "Width/clearance/via/drill rules are unchanged. Loaded timing/skew, return/coupling, bypass bounds and fabrication/assembly remain unqualified."
+    ],
+    "route_planar_length_mm": {
+      "/RGB565 and capacitive touch/LCD_G6": 41.155180361560916,
+      "/MCU_LCD_G7": 9.785251936104181
+    }
+  },
+  "pclk_inward": {
+    "variant": "pclk_inward",
+    "baseline_sha256": "603ba3bf19fc05499781dda95da4a748c3c0afc90077a53db912f2fbfaec6164",
+    "trial_sha256": "51ff3f69e4d45b9f92c1b2a20d16f226c777852481be8089a0a967cc58e0586d",
+    "native_critical_violations": 0,
+    "native_residual_counts": {
+      "drill_out_of_range": 6,
+      "silk_overlap": 199,
+      "silk_over_copper": 199,
+      "silk_edge_clearance": 9,
+      "track_dangling": 1,
+      "via_dangling": 2
+    },
+    "preserved_copper_items": 2779,
+    "removed_copper_items": 17,
+    "added_copper_items": 19,
+    "physical_rgb_groups": {
+      "source:/MCU_LCD_B3": [
+        "R1001.1",
+        "U701.80"
+      ],
+      "source:/MCU_LCD_B4": [
+        "R1002.1",
+        "U701.81"
+      ],
+      "source:/MCU_LCD_B5": [
+        "R1003.1",
+        "U701.82"
+      ],
+      "source:/MCU_LCD_B6": [
+        "R1004.1",
+        "U701.83"
+      ],
+      "source:/MCU_LCD_B7": [
+        "R1005.1",
+        "U701.84"
+      ],
+      "source:/MCU_LCD_G2": [
+        "R1006.1",
+        "U701.86"
+      ],
+      "source:/MCU_LCD_G3": [
+        "R1007.1",
+        "U701.87"
+      ],
+      "source:/MCU_LCD_G4": [
+        "R1008.1",
+        "U701.88"
+      ],
+      "source:/MCU_LCD_G5": [
+        "R1009.1",
+        "U701.89"
+      ],
+      "source:/MCU_LCD_R3": [
+        "R1012.1",
+        "U701.55"
+      ],
+      "source:/MCU_LCD_G7": [
+        "U701.92"
+      ],
+      "source:/MCU_LCD_G6": [
+        "R1010.1",
+        "U701.63"
+      ],
+      "source:/MCU_LCD_R5": [
+        "R1014.1",
+        "U701.57"
+      ],
+      "source:/MCU_LCD_R7": [
+        "R1016.1",
+        "U701.60"
+      ],
+      "source:/MCU_LCD_R4": [
+        "R1013.1",
+        "U701.56"
+      ],
+      "source:/MCU_LCD_R6": [
+        "R1015.1",
+        "U701.64"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B3": [
+        "J1001.24",
+        "R1001.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B4": [
+        "J1001.25",
+        "R1002.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B5": [
+        "J1001.26",
+        "R1003.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B6": [
+        "J1001.27",
+        "R1004.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B7": [
+        "J1001.28",
+        "R1005.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G2": [
+        "J1001.15",
+        "R1006.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G4": [
+        "J1001.17",
+        "R1008.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G6": [
+        "R1010.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G7": [
+        "J1001.20",
+        "R1011.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R3": [
+        "J1001.8",
+        "R1012.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R6": [
+        "J1001.11",
+        "R1015.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R4": [
+        "J1001.9",
+        "R1013.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R5": [
+        "J1001.10",
+        "R1014.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R7": [
+        "J1001.12",
+        "R1016.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G3": [
+        "J1001.16",
+        "R1007.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G5": [
+        "J1001.18",
+        "R1009.2"
+      ]
+    },
+    "physical_timing_source_groups": {
+      "/MCU_LCD_PCLK": [
+        "R1017.1",
+        "U701.94"
+      ],
+      "/MCU_LCD_HSYNC": [
+        "R1018.1",
+        "U701.97"
+      ],
+      "/MCU_LCD_VSYNC": [
+        "R1019.1",
+        "U701.12"
+      ],
+      "/MCU_LCD_DE": [
+        "R1020.1",
+        "U701.13"
+      ],
+      "/MCU_LCD_DISP": [
+        "R1021.1",
+        "U701.14"
+      ],
+      "/MCU_TOUCH_SCL": [
+        "R1022.1",
+        "U701.16"
+      ],
+      "/MCU_TOUCH_SDA": [
+        "R1023.1",
+        "U701.17"
+      ],
+      "/MCU_TOUCH_INT": [
+        "U701.18"
+      ],
+      "/MCU_TOUCH_RST_N": [
+        "U701.19"
+      ]
+    },
+    "physical_clock_output_groups": {
+      "PCLK": [
+        "J1001.30",
+        "R1017.2"
+      ],
+      "HSYNC": [
+        "R1018.2"
+      ]
+    },
+    "limits": [
+      "Unadopted coordination experiments only; the published seven-source trial and authoritative schematic/PCB remain unchanged.",
+      "Paired RGB replacement retains all 32 complete RGB halves, but its outward clock pocket has no modeled legal via site.",
+      "Individual inward PCLK/HSYNC outputs pass native DRC, but temporarily leave G7 source and G6 output disconnected; sequential second-clock searches fail.",
+      "Staggered HSYNC passes alone; PCLK remains unrouted. Restore both RGB halves and prove all output/source groups before adopting any coordinated changes.",
+      "Width/clearance/via/drill rules are unchanged. Loaded timing/skew, return/coupling, bypass bounds and fabrication/assembly remain unqualified."
+    ],
+    "route_planar_length_mm": {
+      "/RGB565 and capacitive touch/LCD_PCLK": 41.199751057680835
+    }
+  },
+  "hsync_inward": {
+    "variant": "hsync_inward",
+    "baseline_sha256": "603ba3bf19fc05499781dda95da4a748c3c0afc90077a53db912f2fbfaec6164",
+    "trial_sha256": "c251d4b348c2e8c3aa18f31117797419464c8f785de7db3c811e2d49d2a9bea3",
+    "native_critical_violations": 0,
+    "native_residual_counts": {
+      "drill_out_of_range": 6,
+      "silk_overlap": 199,
+      "silk_over_copper": 199,
+      "silk_edge_clearance": 9,
+      "track_dangling": 1,
+      "via_dangling": 2
+    },
+    "preserved_copper_items": 2779,
+    "removed_copper_items": 17,
+    "added_copper_items": 12,
+    "physical_rgb_groups": {
+      "source:/MCU_LCD_B3": [
+        "R1001.1",
+        "U701.80"
+      ],
+      "source:/MCU_LCD_B4": [
+        "R1002.1",
+        "U701.81"
+      ],
+      "source:/MCU_LCD_B5": [
+        "R1003.1",
+        "U701.82"
+      ],
+      "source:/MCU_LCD_B6": [
+        "R1004.1",
+        "U701.83"
+      ],
+      "source:/MCU_LCD_B7": [
+        "R1005.1",
+        "U701.84"
+      ],
+      "source:/MCU_LCD_G2": [
+        "R1006.1",
+        "U701.86"
+      ],
+      "source:/MCU_LCD_G3": [
+        "R1007.1",
+        "U701.87"
+      ],
+      "source:/MCU_LCD_G4": [
+        "R1008.1",
+        "U701.88"
+      ],
+      "source:/MCU_LCD_G5": [
+        "R1009.1",
+        "U701.89"
+      ],
+      "source:/MCU_LCD_R3": [
+        "R1012.1",
+        "U701.55"
+      ],
+      "source:/MCU_LCD_G7": [
+        "U701.92"
+      ],
+      "source:/MCU_LCD_G6": [
+        "R1010.1",
+        "U701.63"
+      ],
+      "source:/MCU_LCD_R5": [
+        "R1014.1",
+        "U701.57"
+      ],
+      "source:/MCU_LCD_R7": [
+        "R1016.1",
+        "U701.60"
+      ],
+      "source:/MCU_LCD_R4": [
+        "R1013.1",
+        "U701.56"
+      ],
+      "source:/MCU_LCD_R6": [
+        "R1015.1",
+        "U701.64"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B3": [
+        "J1001.24",
+        "R1001.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B4": [
+        "J1001.25",
+        "R1002.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B5": [
+        "J1001.26",
+        "R1003.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B6": [
+        "J1001.27",
+        "R1004.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B7": [
+        "J1001.28",
+        "R1005.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G2": [
+        "J1001.15",
+        "R1006.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G4": [
+        "J1001.17",
+        "R1008.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G6": [
+        "R1010.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G7": [
+        "J1001.20",
+        "R1011.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R3": [
+        "J1001.8",
+        "R1012.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R6": [
+        "J1001.11",
+        "R1015.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R4": [
+        "J1001.9",
+        "R1013.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R5": [
+        "J1001.10",
+        "R1014.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R7": [
+        "J1001.12",
+        "R1016.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G3": [
+        "J1001.16",
+        "R1007.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G5": [
+        "J1001.18",
+        "R1009.2"
+      ]
+    },
+    "physical_timing_source_groups": {
+      "/MCU_LCD_PCLK": [
+        "R1017.1",
+        "U701.94"
+      ],
+      "/MCU_LCD_HSYNC": [
+        "R1018.1",
+        "U701.97"
+      ],
+      "/MCU_LCD_VSYNC": [
+        "R1019.1",
+        "U701.12"
+      ],
+      "/MCU_LCD_DE": [
+        "R1020.1",
+        "U701.13"
+      ],
+      "/MCU_LCD_DISP": [
+        "R1021.1",
+        "U701.14"
+      ],
+      "/MCU_TOUCH_SCL": [
+        "R1022.1",
+        "U701.16"
+      ],
+      "/MCU_TOUCH_SDA": [
+        "R1023.1",
+        "U701.17"
+      ],
+      "/MCU_TOUCH_INT": [
+        "U701.18"
+      ],
+      "/MCU_TOUCH_RST_N": [
+        "U701.19"
+      ]
+    },
+    "physical_clock_output_groups": {
+      "PCLK": [
+        "R1017.2"
+      ],
+      "HSYNC": [
+        "J1001.32",
+        "R1018.2"
+      ]
+    },
+    "limits": [
+      "Unadopted coordination experiments only; the published seven-source trial and authoritative schematic/PCB remain unchanged.",
+      "Paired RGB replacement retains all 32 complete RGB halves, but its outward clock pocket has no modeled legal via site.",
+      "Individual inward PCLK/HSYNC outputs pass native DRC, but temporarily leave G7 source and G6 output disconnected; sequential second-clock searches fail.",
+      "Staggered HSYNC passes alone; PCLK remains unrouted. Restore both RGB halves and prove all output/source groups before adopting any coordinated changes.",
+      "Width/clearance/via/drill rules are unchanged. Loaded timing/skew, return/coupling, bypass bounds and fabrication/assembly remain unqualified."
+    ],
+    "route_planar_length_mm": {
+      "/RGB565 and capacitive touch/LCD_HSYNC": 34.835537495307726
+    }
+  },
+  "hsync_staggered": {
+    "variant": "hsync_staggered",
+    "baseline_sha256": "603ba3bf19fc05499781dda95da4a748c3c0afc90077a53db912f2fbfaec6164",
+    "trial_sha256": "46b07a13be67879349cd31c449879f03db685eccd0e299ab90ee4bf0287112c2",
+    "native_critical_violations": 0,
+    "native_residual_counts": {
+      "drill_out_of_range": 6,
+      "silk_overlap": 199,
+      "silk_over_copper": 199,
+      "silk_edge_clearance": 9,
+      "track_dangling": 1,
+      "via_dangling": 2
+    },
+    "preserved_copper_items": 2779,
+    "removed_copper_items": 17,
+    "added_copper_items": 11,
+    "physical_rgb_groups": {
+      "source:/MCU_LCD_B3": [
+        "R1001.1",
+        "U701.80"
+      ],
+      "source:/MCU_LCD_B4": [
+        "R1002.1",
+        "U701.81"
+      ],
+      "source:/MCU_LCD_B5": [
+        "R1003.1",
+        "U701.82"
+      ],
+      "source:/MCU_LCD_B6": [
+        "R1004.1",
+        "U701.83"
+      ],
+      "source:/MCU_LCD_B7": [
+        "R1005.1",
+        "U701.84"
+      ],
+      "source:/MCU_LCD_G2": [
+        "R1006.1",
+        "U701.86"
+      ],
+      "source:/MCU_LCD_G3": [
+        "R1007.1",
+        "U701.87"
+      ],
+      "source:/MCU_LCD_G4": [
+        "R1008.1",
+        "U701.88"
+      ],
+      "source:/MCU_LCD_G5": [
+        "R1009.1",
+        "U701.89"
+      ],
+      "source:/MCU_LCD_R3": [
+        "R1012.1",
+        "U701.55"
+      ],
+      "source:/MCU_LCD_G7": [
+        "U701.92"
+      ],
+      "source:/MCU_LCD_G6": [
+        "R1010.1",
+        "U701.63"
+      ],
+      "source:/MCU_LCD_R5": [
+        "R1014.1",
+        "U701.57"
+      ],
+      "source:/MCU_LCD_R7": [
+        "R1016.1",
+        "U701.60"
+      ],
+      "source:/MCU_LCD_R4": [
+        "R1013.1",
+        "U701.56"
+      ],
+      "source:/MCU_LCD_R6": [
+        "R1015.1",
+        "U701.64"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B3": [
+        "J1001.24",
+        "R1001.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B4": [
+        "J1001.25",
+        "R1002.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B5": [
+        "J1001.26",
+        "R1003.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B6": [
+        "J1001.27",
+        "R1004.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_B7": [
+        "J1001.28",
+        "R1005.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G2": [
+        "J1001.15",
+        "R1006.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G4": [
+        "J1001.17",
+        "R1008.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G6": [
+        "R1010.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G7": [
+        "J1001.20",
+        "R1011.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R3": [
+        "J1001.8",
+        "R1012.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R6": [
+        "J1001.11",
+        "R1015.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R4": [
+        "J1001.9",
+        "R1013.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R5": [
+        "J1001.10",
+        "R1014.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_R7": [
+        "J1001.12",
+        "R1016.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G3": [
+        "J1001.16",
+        "R1007.2"
+      ],
+      "output:/RGB565 and capacitive touch/LCD_G5": [
+        "J1001.18",
+        "R1009.2"
+      ]
+    },
+    "physical_timing_source_groups": {
+      "/MCU_LCD_PCLK": [
+        "R1017.1",
+        "U701.94"
+      ],
+      "/MCU_LCD_HSYNC": [
+        "R1018.1",
+        "U701.97"
+      ],
+      "/MCU_LCD_VSYNC": [
+        "R1019.1",
+        "U701.12"
+      ],
+      "/MCU_LCD_DE": [
+        "R1020.1",
+        "U701.13"
+      ],
+      "/MCU_LCD_DISP": [
+        "R1021.1",
+        "U701.14"
+      ],
+      "/MCU_TOUCH_SCL": [
+        "R1022.1",
+        "U701.16"
+      ],
+      "/MCU_TOUCH_SDA": [
+        "R1023.1",
+        "U701.17"
+      ],
+      "/MCU_TOUCH_INT": [
+        "U701.18"
+      ],
+      "/MCU_TOUCH_RST_N": [
+        "U701.19"
+      ]
+    },
+    "physical_clock_output_groups": {
+      "PCLK": [
+        "R1017.2"
+      ],
+      "HSYNC": [
+        "J1001.32",
+        "R1018.2"
+      ]
+    },
+    "limits": [
+      "Unadopted coordination experiments only; the published seven-source trial and authoritative schematic/PCB remain unchanged.",
+      "Paired RGB replacement retains all 32 complete RGB halves, but its outward clock pocket has no modeled legal via site.",
+      "Individual inward PCLK/HSYNC outputs pass native DRC, but temporarily leave G7 source and G6 output disconnected; sequential second-clock searches fail.",
+      "Staggered HSYNC passes alone; PCLK remains unrouted. Restore both RGB halves and prove all output/source groups before adopting any coordinated changes.",
+      "Width/clearance/via/drill rules are unchanged. Loaded timing/skew, return/coupling, bypass bounds and fabrication/assembly remain unqualified."
+    ],
+    "route_planar_length_mm": {
+      "/RGB565 and capacitive touch/LCD_HSYNC": 33.44203461105328
+    }
+  }
+}
