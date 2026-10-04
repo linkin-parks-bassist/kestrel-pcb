@@ -1,0 +1,86 @@
+{
+  "status": "GROUPED FANOUT UNRESOLVED; no trial changes adopted",
+  "baseline_commit": "38e3865b3ba446c51f30eced9f9e3ace153bacde",
+  "authoritative_board_sha256": "d9ab775ac875b05810398540a1a2c6c7df1320830a34a818935166dabb698db7",
+  "trial_gpio_assignment": {
+    "PCLK": 51,
+    "HSYNC": 53,
+    "VSYNC": 11,
+    "DE": 12,
+    "DISP": 13,
+    "SCL": 15,
+    "SDA": 16,
+    "INT": 29,
+    "RESET": 31
+  },
+  "right_side_escape_components": {
+    "U701.61": {
+      "F_Cu_grid_nodes": 39,
+      "legal_conservative_through_via_sites": 0
+    },
+    "U701.58": {
+      "F_Cu_grid_nodes": 38,
+      "legal_conservative_through_via_sites": 0
+    }
+  },
+  "model": {
+    "grid_mm": 0.05,
+    "track_mm": 0.127,
+    "via_diameter_mm": 0.5,
+    "via_drill_mm": 0.3,
+    "default_clearance_mm": 0.2,
+    "search_margin_mm": 0.01,
+    "scope": "Reviewed right-row neighborhood with current power/bypass/RGB copper and provisional nine underside damping poses; conservative bounding boxes are not proof of physical impossibility."
+  },
+  "c703_geometry_trial": {
+    "position_mm": [
+      130.8,
+      87.35
+    ],
+    "displacement_mm": [
+      0.4,
+      0.15
+    ],
+    "side": "F.Cu",
+    "positive_route_points_mm": [
+      [
+        128.9,
+        87.225
+      ],
+      [
+        129.5,
+        87.225
+      ],
+      [
+        130.32,
+        87.35
+      ]
+    ],
+    "ground_route_points_mm": [
+      [
+        131.28,
+        87.35
+      ],
+      [
+        131.7,
+        87.2
+      ]
+    ],
+    "existing_ground_via_unchanged": true,
+    "native_copper_mask_hole_courtyard_edge_violations": 0,
+    "new_display_source_routes_completed": 0,
+    "adopted": false
+  },
+  "decision": "Reassess adjacent bypass and RGB source geometry as a coordinated group before proposing long timing/touch routes or adopting GPIO changes. A native-clear part move alone does not establish an escape.",
+  "unchanged_authoritative_state": [
+    "GPIO contract and generated netlist",
+    "nine staged 0603 timing/touch resistors",
+    "all saved PCB footprints and copper",
+    "manufacturing profile"
+  ],
+  "limits": [
+    "No complete timing/touch source or output topology established.",
+    "The isolated trial contains GPIO remaps, selected/provisional resistor poses and temporary custom-library notices; it is not the fabrication board.",
+    "Loaded timing/source damping, returns, effective bypass and fabrication/assembly remain unqualified."
+  ]
+}
