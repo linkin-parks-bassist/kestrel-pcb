@@ -1,0 +1,32 @@
+(fp_lib_table
+	(version 7)
+	(lib
+		(name "KestrelAudio")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/../../electrical/KestrelAudio.pretty")
+		(options "")
+		(descr "Manufacturer land patterns for Rev-B audio")
+	)
+	(lib
+		(name "KestrelFPGA")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/../../electrical/KestrelFPGA.pretty")
+		(options "")
+		(descr "Gowin QN88 SDRAM verified pin data; layout review pending")
+	)
+	(lib
+		(name "KestrelPower")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/../../electrical/KestrelPower.pretty")
+		(options "")
+		(descr "TI power switch lands")
+	)
+	(lib
+		(name "KestrelMCU")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/../../electrical/KestrelMCU.pretty")
+		(options "")
+		(descr "P4 engineering lands; stencil review pending")
+	)
+(lib (name "KestrelTiming") (type "KiCad") (uri "${KIPRJMOD}/KestrelTiming.pretty") (options "") (descr "Unadopted 0402 timing trial, 0.1-mm courtyard margin"))
+)

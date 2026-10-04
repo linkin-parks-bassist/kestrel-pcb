@@ -9,6 +9,7 @@ from pathlib import Path
 import subprocess
 import tempfile
 import uuid
+import xml.etree.ElementTree as ET
 
 import pcbnew
 
@@ -16,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PINS = [94, 97, 12, 13, 14, 16, 17, 18, 19]
 NETS = ['/MCU_LCD_' + n for n in ['PCLK', 'HSYNC', 'VSYNC', 'DE', 'DISP']]
 NETS += ['/MCU_TOUCH_' + n for n in ['SCL', 'SDA', 'INT', 'RST_N']]
+CUSTOM = 'KestrelTiming:R_0402_1005Metric_Courtyard0p10'
 
 def ident(kind, index):
     return str(uuid.uuid5(uuid.NAMESPACE_URL,
@@ -66,9 +68,59 @@ def main():
     for i in range(1017, 1026):
         f = fps[f'R{i}']
         fid = f.GetFPID()
-        assert f'{fid.GetLibNickname()}:{fid.GetLibItemName()}' == 'Resistor_SMD:R_0402_1005Metric'
+        expected_fid = CUSTOM if i in [1017, 1018] else 'Resistor_SMD:R_0402_1005Metric'
+        assert f'{fid.GetLibNickname()}:{fid.GetLibItemName()}' == expected_fid
         assert f.GetLayer() == pcbnew.B_Cu and f.GetValue() == '33ohm'
         assert f.GetField('MPN').GetText() == 'RC0402FR-0733RL' and f.GetField('LCSC').GetText() == 'C138002'
+    # The local library changes only the name and courtyard, preserving stock lands,
+    # mask, paste, body and model. Native library comparison checks embedded copies.
+    stock = Path('/usr/share/kicad/footprints/Resistor_SMD.pretty/R_0402_1005Metric.kicad_mod').read_text()
+    expected_lib = stock.replace('"R_0402_1005Metric"', '"R_0402_1005Metric_Courtyard0p10"')
+    expected_lib = expected_lib.replace('(start -0.93 -0.47)', '(start -0.88 -0.42)').replace('(end 0.93 0.47)', '(end 0.88 0.42)')
+    local_lib = args.board.parent/'KestrelTiming.pretty/R_0402_1005Metric_Courtyard0p10.kicad_mod'
+    assert local_lib.read_text() == expected_lib, 'Unexpected custom footprint change'
+    for ref, xy in [('R1017', [122.65, 81.3]), ('R1018', [121.7, 81.34]), ('R1009', [123.6, 80.4])]:
+        f = fps[ref]
+        fid = f.GetFPID()
+        assert f'{fid.GetLibNickname()}:{fid.GetLibItemName()}' == CUSTOM
+        assert f.GetPosition() == vec(xy) and f.GetOrientationDegrees() == 90 and f.GetLayer() == pcbnew.B_Cu
+        assert f.GetField('MPN').GetText() == 'RC0402FR-0733RL'
+        for p in f.Pads():
+            assert p.GetSize() == vec([.54, .64]) and p.GetShape() == pcbnew.PAD_SHAPE_ROUNDRECT
+            assert p.GetRoundRectRadiusRatio() == .25
+        assert (pads[ref+'.1'].GetPosition()-pads[ref+'.2'].GetPosition()).EuclideanNorm() == pcbnew.FromMM(1.02)
+    # Compare all 32 complete RGB halves against independently exported membership.
+    xml = ET.parse(ROOT/'generated/revb-netlist.xml')
+    rgb_groups = {}
+    for half in ['source', 'output']:
+        rgb = json.loads((ROOT/f'electrical/display-rgb-{half}-routes.json').read_text())
+        for key, names in rgb['expected_groups'].items():
+            net = key.rsplit(':', 1)[0]
+            xml_names = {n.attrib['ref']+'.'+n.attrib['pin'] for e in xml.findall('.//nets/net') if e.attrib['name'] == net for n in e.findall('node')}
+            assert set(names) == xml_names and all(pads[n].GetNetname() == net for n in names)
+            pending, seen, actual = [pads[names[0]]], set(), set()
+            while pending:
+                it = pending.pop()
+                uid = it.m_Uuid.AsString()
+                if uid in seen:
+                    continue
+                seen.add(uid)
+                if isinstance(it, pcbnew.PAD):
+                    actual.add(it.GetParentFootprint().GetReference()+'.'+it.GetNumber())
+                pending.extend(conn.GetConnectedItems(it))
+            assert actual == xml_names, (half, net, actual, xml_names)
+            rgb_groups[half+':'+net] = sorted(actual)
+    assert len(rgb_groups) == 32
+    spacing = {}
+    for a, c in [('R1017', 'R1018'), ('R1017', 'R1009')]:
+        def extents(ref):
+            boxes = [p.GetBoundingBox() for p in fps[ref].Pads()]
+            return min(q.GetLeft() for q in boxes), min(q.GetTop() for q in boxes), max(q.GetRight() for q in boxes), max(q.GetBottom() for q in boxes)
+        a0, a1, a2, a3 = extents(a)
+        c0, c1, c2, c3 = extents(c)
+        gap = pcbnew.ToMM(round(math.hypot(max(a0-c2, c0-a2, 0), max(a1-c3, c1-a3, 0))))
+        assert gap >= .31 and gap > .15
+        spacing[a+':'+c] = gap
     assert pads['U701.10'].GetNetname() == 'unconnected-(U701B-GPIO9-Pad10)'
     assert pads['U701.11'].GetNetname() == 'unconnected-(U701B-GPIO10-Pad11)'
     index = 0
@@ -108,7 +160,7 @@ def main():
     counts = Counter(v['type'] for v in drc['violations'])
     assert counts['drill_out_of_range'] == 6, 'Unexpected manufacturing-profile drill residual'
     library_items = {it['description'] for v in drc['violations'] if v['type'] == 'lib_footprint_issues' for it in v['items']}
-    assert library_items == {'Footprint '+ref for ref in ['U303', 'U501', 'U701', 'C230', 'C235']}
+    assert not library_items, library_items
     for kind, seeds in [('track', d['seed_track_indices']), ('via', d['seed_via_indices'])]:
         expected = {ident(kind, i) for start, i in seeds.items() if d['anchor_nets'][start] not in d['complete_nets']}
         actual = {it['uuid'] for v in drc['violations'] if v['type'] == kind+'_dangling' for it in v['items']}
@@ -124,13 +176,22 @@ def main():
                   complete_source_nets=d['complete_nets'], pending_source_nets=[n for n in NETS if n not in d['complete_nets']],
                   physical_source_groups=groups, source_segments=index, source_vias=len(d['via_positions']),
                   source_via_in_pad=sorted(vip), native_critical_violations=0,
+                  physical_rgb_groups=rgb_groups,
+                  custom_courtyard_land_spacing_mm=spacing,
+                  courtyard_drawn_margin_mm=.1,
+                  assembly_spacing_reference=dict(recommended_0402_to_0402_mm=.15,
+                      maximum_yageo_body_mm=[1.05, .55], stock_land_span_mm=[1.56, .64],
+                      sources=['https://jlcpcb.com/help/article/minimum-spacing-for-smd-components',
+                               'https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL']),
                   source_planar_length_mm=lengths, bypass_source_allocations=allocations,
                   native_residual_counts=dict(counts),
                   unconnected_report_entries=len(drc['unconnected_items']),
                   limits=['PCLK/HSYNC trial uses GPIO51/pad94 and GPIO53/pad97; no schematic remap is adopted.',
                           'Nine trial 0402 damping selections/poses, C701/C702 underside bypass, MISO detour and R5 output reroute are unadopted.',
                           'C701/C702 source-pad allocations exceed the maintained 2.5-mm bound; revise them before adoption.',
-                          'All nine resistor output escapes and complete source group remain to be proved; native-clear partial input groups are insufficient.',
+                          'Touch INT/reset source connections and all nine resistor output escapes remain to be proved; partial input groups are insufficient.',
+                          'Clock output transitions remain blocked by nearby RGB routes; coordinated G6/G7 changes are unadopted.',
+                          'Three trial 0402 courtyards use 0.1-mm drawn margin with unchanged stock lands; spacing guidance is not assembler qualification.',
                           'Schematic/PCB matching, guarded replay, preservation and affected complete-group checks remain required before adoption.',
                           'Loaded timing/skew, long VSYNC/R5 detours, PDN/returns/coupling, via-in-pad processing and assembly remain unqualified.',
                           'Unconnected entries are capped native output, not the exact count of unfinished connections.'])

@@ -59881,16 +59881,16 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "KestrelTiming:R_0402_1005Metric_Courtyard0p10"
 		(layer "B.Cu")
 		(uuid "0e5529a4-b3d1-4e98-ae72-78f332f5d8ab")
-		(at 118.9 81.2 90)
+		(at 122.65 81.3 90)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R1017"
 			(at 0 1.17 270)
 			(layer "B.SilkS")
-			(uuid "703446e7-ccb7-4a0a-a006-0e9c061d07d7")
+			(uuid "4b39f43e-bc64-4540-98d2-59ec228ca065")
 			(effects
 				(font
 					(size 1 1)
@@ -59902,7 +59902,7 @@
 		(property "Value" "33ohm"
 			(at 0 -1.17 270)
 			(layer "B.Fab")
-			(uuid "52c3c403-13a0-4426-ba71-fec6a790abd1")
+			(uuid "d2f59b47-54fa-48e0-bb77-e93ff7908c1d")
 			(effects
 				(font
 					(size 1 1)
@@ -59915,7 +59915,7 @@
 			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "7e667d23-d03c-40ae-8b9c-62cb7e8b5f2b")
+			(uuid "fefe9fb1-4455-4bb1-bbdc-06ecb4a3b888")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -59927,7 +59927,7 @@
 			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "64b098ec-a0da-48cb-bc0e-f24c9e020226")
+			(uuid "11126f1d-d040-4589-a1b0-b291f84ec8bd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -59939,7 +59939,7 @@
 			(at 0 0 270)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "01d36268-490d-43b4-9d22-49c640ea4b39")
+			(uuid "0e16482b-559d-4a87-9e61-21838c0888f3")
 			(effects
 				(font
 					(size 1 1)
@@ -59952,11 +59952,10 @@
 			(at 0 0 270)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "f7cbe8ed-e85f-47c9-9561-6ca0adbdfdca")
+			(uuid "c4e93642-1aee-44b4-9a8e-59c024699b07")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -59965,11 +59964,10 @@
 			(at 0 0 270)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "c81dfdf5-eb9a-44ec-a50c-4f23d071a4e2")
+			(uuid "07b835f9-fa89-4357-9839-012d564356ee")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -59978,11 +59976,10 @@
 			(at 0 0 270)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "53b88224-ce3c-46a5-b344-ea05bc4f1fd3")
+			(uuid "59029a63-f147-4e93-84ae-837425cbe04b")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -59991,24 +59988,22 @@
 			(at 0 0 270)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "8a34e180-bc6d-4ed6-a5b8-b4381cd87ebd")
+			(uuid "e53ecbf4-ba35-468a-9b40-b1729b3d1e45")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 				(justify mirror)
 			)
 		)
 		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
-			(at 0 0 0)
+			(at 0 0 270)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "090002e8-b73d-42d0-9922-7684caa296f9")
+			(uuid "19a92d8c-65d6-43d0-8376-f4db18241c52")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -60024,7 +60019,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "49142837-89b4-4aeb-bd31-967e37e0aa1a")
+			(uuid "882c639b-e094-4dd9-b878-6c1bdeb48dbd")
 		)
 		(fp_line
 			(start -0.153641 0.38)
@@ -60034,18 +60029,18 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "28531137-ce02-469d-99a7-c1bcfce426bb")
+			(uuid "496c48f1-6043-4fb1-889d-41b2014efee8")
 		)
 		(fp_rect
-			(start -0.93 0.47)
-			(end 0.93 -0.47)
+			(start -0.88 0.42)
+			(end 0.88 -0.42)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(fill no)
 			(layer "B.CrtYd")
-			(uuid "780154ad-75c3-4359-878f-9d67c0635c3b")
+			(uuid "fb8766f0-4ce8-4451-8a15-68b4f6fe9cb5")
 		)
 		(fp_rect
 			(start -0.525 0.27)
@@ -60056,12 +60051,12 @@
 			)
 			(fill no)
 			(layer "B.Fab")
-			(uuid "6b4d04f6-2fb0-4da7-a3e4-d53aa6a2db56")
+			(uuid "14fba41c-2bd9-46d3-8e94-1a448342ab16")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 270)
 			(layer "B.Fab")
-			(uuid "2a1c2884-0460-4585-ba26-6518bdf69f71")
+			(uuid "d936df3b-f8e4-4404-86a5-ec5825ac23bc")
 			(effects
 				(font
 					(size 0.26 0.26)
@@ -64781,16 +64776,16 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "KestrelTiming:R_0402_1005Metric_Courtyard0p10"
 		(layer "B.Cu")
 		(uuid "b990d371-9c7e-4eec-9284-83efb01065ff")
-		(at 121.725 81.34 90)
+		(at 121.7 81.34 90)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R1018"
 			(at 0 1.17 270)
 			(layer "B.SilkS")
-			(uuid "c218535d-a3d5-4891-a3e3-138f53a00149")
+			(uuid "b2128937-0a7f-443b-88de-9696379ae2db")
 			(effects
 				(font
 					(size 1 1)
@@ -64802,7 +64797,7 @@
 		(property "Value" "33ohm"
 			(at 0 -1.17 270)
 			(layer "B.Fab")
-			(uuid "e8fce255-d885-48de-8555-6b7b520b6081")
+			(uuid "6a3d86d7-b193-4f17-9c84-7e5a153469bc")
 			(effects
 				(font
 					(size 1 1)
@@ -64815,7 +64810,7 @@
 			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "14af390c-1e69-4770-8e23-68f614b7576f")
+			(uuid "8c2fc0c3-eec7-446a-a0f2-931dfc7038cd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -64827,7 +64822,7 @@
 			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "2f04bb41-53fe-44fc-b9be-da62773c7c75")
+			(uuid "377db114-da87-4924-9095-84183e7ecac2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -64839,7 +64834,7 @@
 			(at 0 0 270)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "317c54ad-0766-4a8c-b436-772adaa16af2")
+			(uuid "648c385f-677d-42c2-8207-370c5e698e65")
 			(effects
 				(font
 					(size 1 1)
@@ -64852,11 +64847,10 @@
 			(at 0 0 270)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "5682eaba-7e18-481a-aa98-544074237e91")
+			(uuid "00ba150e-0149-4580-ba73-fe21dd6c858c")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -64865,11 +64859,10 @@
 			(at 0 0 270)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "f7190bdb-88ee-4f40-9ec2-d43240ed51a4")
+			(uuid "57f8d76b-2449-4b8a-a4f9-39a321eccf46")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -64878,11 +64871,10 @@
 			(at 0 0 270)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "74cbf6b2-3515-4e8d-8aac-9ed0c8695d95")
+			(uuid "3159713b-4439-413c-b528-2d87bcdb89fd")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -64891,24 +64883,22 @@
 			(at 0 0 270)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "ded2234e-27a7-44c8-b994-87ac3417ef20")
+			(uuid "b43c1754-7c97-484e-825c-254f82ae08e3")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 				(justify mirror)
 			)
 		)
 		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
-			(at 0 0 0)
+			(at 0 0 270)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "2faa11ae-3b2a-4903-aa23-47c8c355f716")
+			(uuid "8d952016-13b0-4634-b600-66668344525b")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -64924,7 +64914,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "4a6b8a83-82d0-42fd-9be5-579f26736ba0")
+			(uuid "fab9c284-553f-42e6-986f-ac9f2747a163")
 		)
 		(fp_line
 			(start -0.153641 0.38)
@@ -64934,18 +64924,18 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "5679cb1f-2782-420b-98ae-70eea75dc87f")
+			(uuid "008de6cc-ea3b-4a71-972b-b41b527f40d2")
 		)
 		(fp_rect
-			(start -0.93 0.47)
-			(end 0.93 -0.47)
+			(start -0.88 0.42)
+			(end 0.88 -0.42)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(fill no)
 			(layer "B.CrtYd")
-			(uuid "28e6e47c-3cfa-4c38-8caf-c7f43deeceb4")
+			(uuid "cc35f666-6b5b-4daa-85b2-721ccce78627")
 		)
 		(fp_rect
 			(start -0.525 0.27)
@@ -64956,12 +64946,12 @@
 			)
 			(fill no)
 			(layer "B.Fab")
-			(uuid "78d57389-ed5d-4fc3-b8dd-ec38656a24c2")
+			(uuid "cde6d311-ecce-405c-a955-ce1eda52918e")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 270)
 			(layer "B.Fab")
-			(uuid "577930b5-93bc-4e5e-8771-e407cc6b0687")
+			(uuid "0ace4a59-5b47-426e-addf-352f6919cb5a")
 			(effects
 				(font
 					(size 0.26 0.26)
@@ -65217,7 +65207,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "KestrelTiming:R_0402_1005Metric_Courtyard0p10"
 		(layer "B.Cu")
 		(uuid "d92ae642-18bc-46b9-9e48-273c2b87a66b")
 		(at 123.6 80.4 90)
@@ -65226,7 +65216,7 @@
 		(property "Reference" "R1009"
 			(at 0 1.17 270)
 			(layer "B.SilkS")
-			(uuid "3f5efa01-0497-4c75-a3ab-ee9f3093a763")
+			(uuid "b9ff0635-552b-4e67-8fd4-383c050086c3")
 			(effects
 				(font
 					(size 1 1)
@@ -65238,7 +65228,7 @@
 		(property "Value" "33ohm"
 			(at 0 -1.17 270)
 			(layer "B.Fab")
-			(uuid "e610aae4-7fc5-49bd-974e-23648020ed78")
+			(uuid "cd95e358-f577-4072-b3b2-db3fdd183a7d")
 			(effects
 				(font
 					(size 1 1)
@@ -65251,7 +65241,7 @@
 			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "b0fb07fb-8606-4324-91b4-0d6150c3430d")
+			(uuid "1e19b118-261b-45dc-b196-ea66feac1d99")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65263,7 +65253,7 @@
 			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "42bf7236-c489-4ea1-8916-02b17b031ecc")
+			(uuid "e547a58b-bf9d-4f86-8f73-369664c08e86")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65275,7 +65265,7 @@
 			(at 0 0 270)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "63dbc931-8e66-4169-ae7c-2b56118bdf67")
+			(uuid "105a4677-648a-4fd8-b1b1-2cd6def1181d")
 			(effects
 				(font
 					(size 1 1)
@@ -65288,59 +65278,54 @@
 			(at 0 0 270)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "3bee0a7d-55bd-439e-aca5-7597a94be450")
+			(uuid "4e2dcd83-a785-4fed-9495-642822c64c7f")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 0 0 0)
+			(at 0 0 270)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "dc0d7837-be1b-42bf-b1a9-e06c705b8305")
+			(uuid "964e9b2e-2be5-4823-99d9-f69f49401098")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
 		(property "MPN" "RC0402FR-0733RL"
-			(at 0 0 0)
+			(at 0 0 270)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "c886fa72-b692-4203-b6ff-49e2a1146c96")
+			(uuid "efc51cbc-1691-4e1f-920a-f02b4b7ecec6")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
 		(property "LCSC" "C138002"
-			(at 0 0 0)
+			(at 0 0 270)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "f7aacd23-f5f3-4162-bf14-e1838c8d8e9b")
+			(uuid "f843dbe4-b091-45c0-90e1-b9f69037f507")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
 		(property "Rating" "33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"
-			(at 0 0 0)
+			(at 0 0 270)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "739bfb90-9c93-4d6f-9445-8969017fb4f4")
+			(uuid "70ea4254-0a7d-410b-a917-652d408461ce")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -65355,7 +65340,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "c677c006-6917-421e-932a-b0f1e59c341b")
+			(uuid "4035817b-b87d-4cf0-88e3-ca28a022ff0c")
 		)
 		(fp_line
 			(start -0.153641 0.38)
@@ -65365,18 +65350,18 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "34d55cbe-2ace-4f37-9be5-288910f91c37")
+			(uuid "55d4f2e8-aa07-4b34-a2a8-8ceccfa20995")
 		)
 		(fp_rect
-			(start -0.93 0.47)
-			(end 0.93 -0.47)
+			(start -0.88 0.42)
+			(end 0.88 -0.42)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(fill no)
 			(layer "B.CrtYd")
-			(uuid "8f477b0a-33f3-4255-917c-25f0026e2949")
+			(uuid "e2691114-c4b1-4f55-b69e-c0796ed75d04")
 		)
 		(fp_rect
 			(start -0.525 0.27)
@@ -65387,12 +65372,12 @@
 			)
 			(fill no)
 			(layer "B.Fab")
-			(uuid "1360457d-5688-4481-97de-a5dff759391f")
+			(uuid "41b011cb-8a9a-4a93-a5bf-6942b6eedbb2")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 270)
 			(layer "B.Fab")
-			(uuid "2d7973c1-c232-47fa-937c-6fbc0a633cf3")
+			(uuid "9d1a8771-3ea9-4db7-a198-3c504a655f9a")
 			(effects
 				(font
 					(size 0.26 0.26)

@@ -1,7 +1,7 @@
 {
   "status": "Unadopted partial trial; authoritative schematic and PCB unchanged",
   "baseline_sha256": "d9ab775ac875b05810398540a1a2c6c7df1320830a34a818935166dabb698db7",
-  "trial_sha256": "a8a4dce41271d424bb9d209c8fdf724bdb03ba6da10ea837e4a3ee8918b42928",
+  "trial_sha256": "603ba3bf19fc05499781dda95da4a748c3c0afc90077a53db912f2fbfaec6164",
   "manufacturing_profile_sha256": "d8cd8096a998bb6577948be69a5f9bcb244f0e77d4c978c0243dbf85f5cef905",
   "complete_source_nets": [
     "/MCU_LCD_DE",
@@ -9,15 +9,16 @@
     "/MCU_LCD_VSYNC",
     "/MCU_TOUCH_SCL",
     "/MCU_TOUCH_SDA",
-    "/MCU_LCD_HSYNC"
+    "/MCU_LCD_HSYNC",
+    "/MCU_LCD_PCLK"
   ],
   "pending_source_nets": [
-    "/MCU_LCD_PCLK",
     "/MCU_TOUCH_INT",
     "/MCU_TOUCH_RST_N"
   ],
   "physical_source_groups": {
     "/MCU_LCD_PCLK": [
+      "R1017.1",
       "U701.94"
     ],
     "/MCU_LCD_HSYNC": [
@@ -54,10 +55,161 @@
   "source_segments": 47,
   "source_vias": 8,
   "source_via_in_pad": [
+    "R1017.1",
     "R1018.1",
     "R1023.1"
   ],
   "native_critical_violations": 0,
+  "physical_rgb_groups": {
+    "source:/MCU_LCD_B3": [
+      "R1001.1",
+      "U701.80"
+    ],
+    "source:/MCU_LCD_B4": [
+      "R1002.1",
+      "U701.81"
+    ],
+    "source:/MCU_LCD_B5": [
+      "R1003.1",
+      "U701.82"
+    ],
+    "source:/MCU_LCD_B6": [
+      "R1004.1",
+      "U701.83"
+    ],
+    "source:/MCU_LCD_B7": [
+      "R1005.1",
+      "U701.84"
+    ],
+    "source:/MCU_LCD_G2": [
+      "R1006.1",
+      "U701.86"
+    ],
+    "source:/MCU_LCD_G3": [
+      "R1007.1",
+      "U701.87"
+    ],
+    "source:/MCU_LCD_G4": [
+      "R1008.1",
+      "U701.88"
+    ],
+    "source:/MCU_LCD_G5": [
+      "R1009.1",
+      "U701.89"
+    ],
+    "source:/MCU_LCD_R3": [
+      "R1012.1",
+      "U701.55"
+    ],
+    "source:/MCU_LCD_G7": [
+      "R1011.1",
+      "U701.92"
+    ],
+    "source:/MCU_LCD_G6": [
+      "R1010.1",
+      "U701.63"
+    ],
+    "source:/MCU_LCD_R5": [
+      "R1014.1",
+      "U701.57"
+    ],
+    "source:/MCU_LCD_R7": [
+      "R1016.1",
+      "U701.60"
+    ],
+    "source:/MCU_LCD_R4": [
+      "R1013.1",
+      "U701.56"
+    ],
+    "source:/MCU_LCD_R6": [
+      "R1015.1",
+      "U701.64"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_B3": [
+      "J1001.24",
+      "R1001.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_B4": [
+      "J1001.25",
+      "R1002.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_B5": [
+      "J1001.26",
+      "R1003.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_B6": [
+      "J1001.27",
+      "R1004.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_B7": [
+      "J1001.28",
+      "R1005.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_G2": [
+      "J1001.15",
+      "R1006.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_G4": [
+      "J1001.17",
+      "R1008.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_G6": [
+      "J1001.19",
+      "R1010.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_G7": [
+      "J1001.20",
+      "R1011.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_R3": [
+      "J1001.8",
+      "R1012.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_R6": [
+      "J1001.11",
+      "R1015.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_R4": [
+      "J1001.9",
+      "R1013.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_R5": [
+      "J1001.10",
+      "R1014.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_R7": [
+      "J1001.12",
+      "R1016.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_G3": [
+      "J1001.16",
+      "R1007.2"
+    ],
+    "output:/RGB565 and capacitive touch/LCD_G5": [
+      "J1001.18",
+      "R1009.2"
+    ]
+  },
+  "custom_courtyard_land_spacing_mm": {
+    "R1017:R1018": 0.31,
+    "R1017:R1009": 0.31
+  },
+  "courtyard_drawn_margin_mm": 0.1,
+  "assembly_spacing_reference": {
+    "recommended_0402_to_0402_mm": 0.15,
+    "maximum_yageo_body_mm": [
+      1.05,
+      0.55
+    ],
+    "stock_land_span_mm": [
+      1.56,
+      0.64
+    ],
+    "sources": [
+      "https://jlcpcb.com/help/article/minimum-spacing-for-smd-components",
+      "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL"
+    ]
+  },
   "source_planar_length_mm": {
     "/MCU_LCD_PCLK": 1.128402195226838,
     "/MCU_LCD_HSYNC": 0.8742640687119274,
@@ -85,17 +237,18 @@
     "drill_out_of_range": 6,
     "silk_overlap": 199,
     "silk_over_copper": 199,
-    "lib_footprint_issues": 5,
     "silk_edge_clearance": 9,
     "track_dangling": 1,
-    "via_dangling": 2
+    "via_dangling": 1
   },
-  "unconnected_report_entries": 101,
+  "unconnected_report_entries": 100,
   "limits": [
     "PCLK/HSYNC trial uses GPIO51/pad94 and GPIO53/pad97; no schematic remap is adopted.",
     "Nine trial 0402 damping selections/poses, C701/C702 underside bypass, MISO detour and R5 output reroute are unadopted.",
     "C701/C702 source-pad allocations exceed the maintained 2.5-mm bound; revise them before adoption.",
-    "All nine resistor output escapes and complete source group remain to be proved; native-clear partial input groups are insufficient.",
+    "Touch INT/reset source connections and all nine resistor output escapes remain to be proved; partial input groups are insufficient.",
+    "Clock output transitions remain blocked by nearby RGB routes; coordinated G6/G7 changes are unadopted.",
+    "Three trial 0402 courtyards use 0.1-mm drawn margin with unchanged stock lands; spacing guidance is not assembler qualification.",
     "Schematic/PCB matching, guarded replay, preservation and affected complete-group checks remain required before adoption.",
     "Loaded timing/skew, long VSYNC/R5 detours, PDN/returns/coupling, via-in-pad processing and assembly remain unqualified.",
     "Unconnected entries are capped native output, not the exact count of unfinished connections."

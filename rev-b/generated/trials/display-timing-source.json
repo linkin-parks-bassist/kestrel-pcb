@@ -6,15 +6,15 @@
       81.1
     ],
     "R1017.1": [
-      118.9,
-      81.71
+      122.65,
+      81.81
     ],
     "U701.97": [
       122.075,
       81.1
     ],
     "R1018.1": [
-      121.725,
+      121.7,
       81.85
     ],
     "U701.12": [
@@ -486,7 +486,8 @@
   "via_drill_mm": 0.3,
   "via_in_pad_anchors": [
     "R1023.1",
-    "R1018.1"
+    "R1018.1",
+    "R1017.1"
   ],
   "expected_groups": {
     "/MCU_LCD_DE:complete": [
@@ -512,6 +513,10 @@
     "/MCU_LCD_HSYNC:complete": [
       "U701.97",
       "R1018.1"
+    ],
+    "/MCU_LCD_PCLK:complete": [
+      "U701.94",
+      "R1017.1"
     ]
   },
   "complete_nets": [
@@ -520,7 +525,8 @@
     "/MCU_LCD_VSYNC",
     "/MCU_TOUCH_SCL",
     "/MCU_TOUCH_SDA",
-    "/MCU_LCD_HSYNC"
+    "/MCU_LCD_HSYNC",
+    "/MCU_LCD_PCLK"
   ],
   "limits": [
     "Provisional topology only; source damping, loaded display/I2C timing, returns/coupling and via-in-pad fabrication/assembly remain unqualified."
