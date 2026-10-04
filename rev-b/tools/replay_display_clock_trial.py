@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Replay one isolated clock/RGB coordination experiment and check its bounded groups."""
+"""Replay one isolated timing/touch/RGB coordination experiment and check its bounded groups."""
 import argparse
 from collections import Counter
 import hashlib
@@ -163,19 +163,24 @@ def main():
         expected={name,target} if net in timing['complete_nets'] else {name}
         assert connected(name)==expected, net
         source_groups[net]=sorted(expected)
-    clock_groups={}
-    for signal,ref,pin in [('PCLK',1017,30),('HSYNC',1018,32)]:
-        seed=f'R{ref}.2'; expected={seed,f'J1001.{pin}'} if signal in v['complete_clock_outputs'] else {seed}
-        assert connected(seed)==expected, signal
-        clock_groups[signal]=sorted(expected)
-    result=dict(variant=a.variant,baseline_sha256=d['baseline_trial_sha256'],trial_sha256=hashlib.sha256(a.output.read_bytes()).hexdigest(),native_critical_violations=0,native_residual_counts=dict(Counter(r['type'] for r in drc['violations'])),preserved_copper_items=len(remaining),removed_copper_items=len(det),added_copper_items=len(added),physical_rgb_groups=groups,physical_timing_source_groups=source_groups,physical_clock_output_groups=clock_groups,limits=d['limits'])
+    timing_output_groups = {}
+    signals = ['PCLK','HSYNC','VSYNC','DE','DISP','SCL','SDA','INT','RST_N']
+    assert set(v['complete_timing_outputs']) <= set(signals)
+    for signal,ref in zip(signals,range(1017,1026)):
+        seed = f'R{ref}.2'; net = pads[seed].GetNetname()
+        xml_names = {n.attrib['ref']+'.'+n.attrib['pin'] for e in xml.findall('.//nets/net') if e.attrib['name']==net for n in e.findall('node')}
+        assert seed in xml_names and all(pads[n].GetNetname()==net for n in xml_names)
+        expected = xml_names if signal in v['complete_timing_outputs'] else {seed}
+        assert connected(seed)==expected, (signal,connected(seed),expected)
+        timing_output_groups[signal] = sorted(expected)
+    result=dict(variant=a.variant,baseline_sha256=d['baseline_trial_sha256'],trial_sha256=hashlib.sha256(a.output.read_bytes()).hexdigest(),native_critical_violations=0,native_residual_counts=dict(Counter(r['type'] for r in drc['violations'])),preserved_copper_items=len(remaining),removed_copper_items=len(det),added_copper_items=len(added),physical_rgb_groups=groups,physical_timing_source_groups=source_groups,physical_timing_output_groups=timing_output_groups,limits=d['limits'])
     result['route_planar_length_mm'] = {r['proposal']['net']:sum(math.dist(x,y) for path in r['proposal']['paths'] for x,y in zip(path['points'],path['points'][1:])) for r in v['routes']}
     result['manufacturing_profile_sha256'] = profile_sha
     result['new_via_smd_margins'] = via_margins
     if a.verify_snapshot:
         assert hashlib.sha256(a.verify_snapshot.read_bytes()).hexdigest() == result['trial_sha256'], 'Saved trial differs from guarded replay'
     a.report.write_text(json.dumps(result,indent=2)+'\n')
-    print(a.variant, 'native-clear; pending RGB halves:',v['pending_rgb_groups'],'complete clock outputs:',v['complete_clock_outputs'])
+    print(a.variant, 'native-clear; pending RGB halves:',v['pending_rgb_groups'],'complete timing/touch outputs:',v['complete_timing_outputs'])
 
 if __name__=='__main__':
     main()
