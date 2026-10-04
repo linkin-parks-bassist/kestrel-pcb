@@ -1,0 +1,75 @@
+{
+  "baseline_trial_sha256": "dcd07bc015ae40a1e62f0e867fc56369890dcb6fa3fb4ff0896ae960c5cb1641",
+  "status": "Rejected bounded source reservations; no GPIO remap or resistor pose adopted",
+  "poses": {
+    "R1024": [
+      132.6,
+      85.7,
+      90
+    ],
+    "R1025": [
+      134.3,
+      88.1,
+      90
+    ]
+  },
+  "side": "B.Cu",
+  "removed_source_copper_nets": [
+    "/MCU_TOUCH_INT",
+    "/MCU_TOUCH_RST_N"
+  ],
+  "removed_source_copper_items": 4,
+  "experiments": [
+    {
+      "trial_sha256": "9330c4c23511961351490aa995890eadbc668481998a560e6188584f7f390cd5",
+      "pin_remaps": {
+        "18": 61,
+        "19": 58
+      },
+      "native_critical_violations": 0,
+      "search": {
+        "start": "U701.61",
+        "end": "R1024.1",
+        "via_in_pad": [
+          "R1024.1"
+        ],
+        "bounds_mm": [
+          125,
+          82,
+          136,
+          92
+        ],
+        "grid_step_mm": 0.025,
+        "result": "No route within bounds"
+      }
+    },
+    {
+      "trial_sha256": "02a41c8aa6c92dc7073f2d923f9ea1cfac42d4b7746de33e1c4d8158e69cdf98",
+      "pin_remaps": {
+        "18": 90,
+        "19": 93
+      },
+      "native_critical_violations": 0,
+      "search": {
+        "start": "U701.90",
+        "end": "R1024.1",
+        "via_in_pad": [
+          "R1024.1"
+        ],
+        "bounds_mm": [
+          120,
+          75,
+          136,
+          92
+        ],
+        "grid_step_mm": 0.025,
+        "result": "No route within bounds"
+      }
+    }
+  ],
+  "limits": [
+    "Clear resistor placement alone does not establish routability.",
+    "No route means only the stated grid, endpoint poses, unchanged copper and reviewed bounds; it is not proof of geometric impossibility or invalid GPIO function.",
+    "Reset source search was not performed; neither remap is selected."
+  ]
+}

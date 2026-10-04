@@ -212,7 +212,7 @@
     },
     "limits": [
       "Unadopted trials only; authoritative schematic/PCB and published seven-source baseline remain unchanged.",
-      "The preferred variant requires all 32 RGB halves, seven timing/touch source groups and PCLK/HSYNC/SCL outputs physically complete; INT/reset sources and six other timing/touch outputs remain unfinished.",
+      "The preferred variant requires all 32 RGB halves, seven timing/touch source groups and PCLK/HSYNC/SCL/DE outputs physically complete; INT/reset sources and five other timing/touch outputs remain unfinished.",
       "PCLK/HSYNC GPIO remaps, resistor selections/poses, C701/C702 underside bypass, MISO/R5 detours and revised G7 damping/output remain unadopted.",
       "C701/C702 source-pad allocations still exceed the maintained 2.5-mm bounds; revise before adoption.",
       "Long G6/G7 output detours, loaded timing/skew, source damping, effective returns/coupling/PDN and via-in-pad fabrication/assembly remain unqualified.",
@@ -243,7 +243,7 @@
   "dual_clock_rgb": {
     "variant": "dual_clock_rgb",
     "baseline_sha256": "603ba3bf19fc05499781dda95da4a748c3c0afc90077a53db912f2fbfaec6164",
-    "trial_sha256": "dcd07bc015ae40a1e62f0e867fc56369890dcb6fa3fb4ff0896ae960c5cb1641",
+    "trial_sha256": "c04fd7ddefe280bda8e1c83749b8c9aa489d1c4ed178fe8721beb41e04f08992",
     "native_critical_violations": 0,
     "native_residual_counts": {
       "drill_out_of_range": 6,
@@ -255,7 +255,7 @@
     },
     "preserved_copper_items": 2768,
     "removed_copper_items": 28,
-    "added_copper_items": 96,
+    "added_copper_items": 118,
     "physical_rgb_groups": {
       "source:/MCU_LCD_B3": [
         "R1001.1",
@@ -435,6 +435,7 @@
         "R1019.2"
       ],
       "DE": [
+        "J1001.34",
         "R1020.2"
       ],
       "DISP": [
@@ -457,7 +458,7 @@
     },
     "limits": [
       "Unadopted trials only; authoritative schematic/PCB and published seven-source baseline remain unchanged.",
-      "The preferred variant requires all 32 RGB halves, seven timing/touch source groups and PCLK/HSYNC/SCL outputs physically complete; INT/reset sources and six other timing/touch outputs remain unfinished.",
+      "The preferred variant requires all 32 RGB halves, seven timing/touch source groups and PCLK/HSYNC/SCL/DE outputs physically complete; INT/reset sources and five other timing/touch outputs remain unfinished.",
       "PCLK/HSYNC GPIO remaps, resistor selections/poses, C701/C702 underside bypass, MISO/R5 detours and revised G7 damping/output remain unadopted.",
       "C701/C702 source-pad allocations still exceed the maintained 2.5-mm bounds; revise before adoption.",
       "Long G6/G7 output detours, loaded timing/skew, source damping, effective returns/coupling/PDN and via-in-pad fabrication/assembly remain unqualified.",
@@ -468,7 +469,8 @@
       "/RGB565 and capacitive touch/LCD_HSYNC": 32.515941546018375,
       "/RGB565 and capacitive touch/LCD_G7": 67.04640866588035,
       "/RGB565 and capacitive touch/LCD_G6": 68.63960312803931,
-      "/RGB565 and capacitive touch/TOUCH_SCL": 52.200616844190954
+      "/RGB565 and capacitive touch/TOUCH_SCL": 52.200616844190954,
+      "/RGB565 and capacitive touch/LCD_DE": 62.33274887854694
     },
     "manufacturing_profile_sha256": "d8cd8096a998bb6577948be69a5f9bcb244f0e77d4c978c0243dbf85f5cef905",
     "new_via_smd_margins": {
@@ -693,6 +695,48 @@
           "annulus_clearance_mm": 1.35,
           "required_copper_clearance_mm": 0.2,
           "hole_clearance_mm": 1.4500000000000002,
+          "required_hole_clearance_mm": 0.25
+        }
+      },
+      "1ed1fc6c-fb08-509e-ba59-5dc4c24ccc24": {
+        "position_mm": [
+          127.05,
+          92.3
+        ],
+        "nearest_smd_land": {
+          "pad": "R705.1",
+          "distance_to_land_mm": 0.475,
+          "annulus_clearance_mm": 0.22499999999999998,
+          "required_copper_clearance_mm": 0.2,
+          "hole_clearance_mm": 0.32499999999999996,
+          "required_hole_clearance_mm": 0.25
+        }
+      },
+      "7f8e834b-d916-5e42-98dc-8c9a0d3d58a1": {
+        "position_mm": [
+          125.3,
+          55.2
+        ],
+        "nearest_smd_land": {
+          "pad": "J1001.37",
+          "distance_to_land_mm": 1.4,
+          "annulus_clearance_mm": 1.15,
+          "required_copper_clearance_mm": 0.2,
+          "hole_clearance_mm": 1.25,
+          "required_hole_clearance_mm": 0.25
+        }
+      },
+      "c9efa866-bf43-5f06-bc08-377c6d62e760": {
+        "position_mm": [
+          133.199999,
+          91.55
+        ],
+        "nearest_smd_land": {
+          "pad": "C723.1",
+          "distance_to_land_mm": 0.5,
+          "annulus_clearance_mm": 0.25,
+          "required_copper_clearance_mm": 0.2,
+          "hole_clearance_mm": 0.35,
           "required_hole_clearance_mm": 0.25
         }
       }
