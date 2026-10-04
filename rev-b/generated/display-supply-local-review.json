@@ -204,7 +204,7 @@
     "U904.5"
   ],
   "limits": [
-    "Main 5 V source continuity is checked separately by check_display_feeds.py; LCD/touch FPC supply distribution remains unfinished.",
+    "Main 5 V source continuity is checked separately by check_display_feeds.py; LCD/touch FPC supply continuity is checked separately by check_display_connector.py; MCU display/touch endpoints remain unfinished.",
     "Physical topology only; effective reference bypassing, rail drop, coupling/noise, regulator operation and via-in-pad fabrication/assembly remain unqualified."
   ]
 }

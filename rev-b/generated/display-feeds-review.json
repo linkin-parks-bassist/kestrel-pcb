@@ -54,7 +54,7 @@
   },
   "ground_anchors": [],
   "limits": [
-    "LCD/touch FPC supply and connector support remain unfinished.",
+    "LCD/touch FPC supply/default/ground continuity is checked separately by check_display_connector.py; MCU display/touch endpoints remain unfinished.",
     "Physical topology only; effective bypassing/switching/Kelvin sense, rail drop, coupling/noise, backlight regulation/startup/fault/PWM operation and via-in-pad fabrication/assembly remain unqualified."
   ]
 }

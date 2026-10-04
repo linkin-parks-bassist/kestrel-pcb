@@ -90,7 +90,7 @@ def main():
         assert report['provisional_display_supply_local_via_ids']==[ident('via',i)for i in range(len(d['via_positions']))]
     result={'status':'PASS LCD/touch local regulator groups and all regulator/passive ground returns reach the filled plane',
             'track_segments':idx,'vias':len(d['via_positions']),'via_in_pad_sites':d.get('via_in_pad_anchors',[]),'routed_planar_length_mm':lengths,'physically_connected_local_groups':{net:sorted(names)for net,names in expected.items()},'ground_anchors':d['ground_anchors'],
-            'limits':['Main 5 V source continuity is checked separately by check_display_feeds.py; LCD/touch FPC supply distribution remains unfinished.','Physical topology only; effective reference bypassing, rail drop, coupling/noise, regulator operation and via-in-pad fabrication/assembly remain unqualified.']}
+            'limits':['Main 5 V source continuity is checked separately by check_display_feeds.py; LCD/touch FPC supply continuity is checked separately by check_display_connector.py; MCU display/touch endpoints remain unfinished.','Physical topology only; effective reference bypassing, rail drop, coupling/noise, regulator operation and via-in-pad fabrication/assembly remain unqualified.']}
     if not args.trial:(ROOT/'generated/display-supply-local-review.json').write_text(json.dumps(result,indent=2)+'\n')
     print(f'PASS: {idx} LCD/touch-support segments, {len(d["via_positions"])} vias; LCD/touch local regulator groups and plane-ground returns; qualification unfinished.')
     print(lengths)

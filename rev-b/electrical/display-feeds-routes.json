@@ -626,7 +626,7 @@
     }
   },
   "limits": [
-    "Physical source-to-load and signal topology only; LCD/touch FPC supply and connector support remain unfinished.",
+    "Physical source-to-load and signal topology only; LCD/touch FPC supply/default/ground continuity is checked separately by check_display_connector.py; MCU display/touch endpoints remain unfinished.",
     "Source/transition bottlenecks, rail drop/PDN, actual load/thermal, switching/Kelvin/EMI/noise, PWM timing and fabrication/assembly remain unqualified."
   ]
 }

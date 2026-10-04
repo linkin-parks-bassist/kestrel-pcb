@@ -1,0 +1,52 @@
+{
+  "poses": {
+    "C1001": [
+      10,
+      50.5,
+      0
+    ],
+    "C1002": [
+      21.25,
+      50.5,
+      0
+    ],
+    "C1003": [
+      49.75,
+      48,
+      90
+    ],
+    "C1004": [
+      51.8,
+      48,
+      90
+    ],
+    "R1026": [
+      46.5,
+      48,
+      0
+    ],
+    "R1027": [
+      46.5,
+      46,
+      0
+    ],
+    "R1028": [
+      29,
+      50,
+      90
+    ],
+    "R1029": [
+      56,
+      48,
+      90
+    ],
+    "R1030": [
+      54,
+      48,
+      90
+    ]
+  },
+  "limits": [
+    "Provisional connector bypass poses only; actual flex contact/body/assembly fit, effective bypass loops and loaded rail/noise behavior remain unqualified."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "placed_electrical_parts": 318,
+  "staged_electrical_parts": 29,
+  "status": "PASS nine connector support poses, exact XML pad nets and four provisional bypass proximity bounds",
+  "pad_nets": {
+    "C1001": {
+      "1": "/LCD_VDD",
+      "2": "/GND"
+    },
+    "C1002": {
+      "1": "/LCD_VDD",
+      "2": "/GND"
+    },
+    "C1003": {
+      "1": "/TOUCH_VDD",
+      "2": "/GND"
+    },
+    "C1004": {
+      "1": "/TOUCH_VDD",
+      "2": "/GND"
+    },
+    "R1026": {
+      "1": "/TOUCH_VDD",
+      "2": "/RGB565 and capacitive touch/TOUCH_SCL"
+    },
+    "R1027": {
+      "1": "/TOUCH_VDD",
+      "2": "/RGB565 and capacitive touch/TOUCH_SDA"
+    },
+    "R1028": {
+      "1": "/RGB565 and capacitive touch/LCD_DISP",
+      "2": "/GND"
+    },
+    "R1029": {
+      "1": "/RGB565 and capacitive touch/TOUCH_RST_N",
+      "2": "/GND"
+    },
+    "R1030": {
+      "1": "/RGB565 and capacitive touch/TOUCH_INT",
+      "2": "/GND"
+    }
+  },
+  "bypass_pad_distance_mm": {
+    "C1001.1\u2192J1001.4": 3.680778,
+    "C1002.2\u2192J1001.29": 3.73137,
+    "C1003.1\u2192J1002.2": 3.375,
+    "C1004.1\u2192J1002.3": 3.71391
+  },
+  "limits": [
+    "4 mm pad-centre allocation is an engineering target, not effective bypass/PDN or assembled flex/body-fit qualification.",
+    "C1002 is a distributed LCD-rail bypass near connector ground29; distance to the single LCD supply contact4 is not a near-pin check.",
+    "Loaded rail/noise, RGB/I2C timing, power-off/backfeed and manufacturing/assembly remain unqualified."
+  ]
+}

@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Verify display source/PWM/LED feeds; operation unqualified."""
+"""Verify complete LCD/touch rails, connector-local defaults and display-sheet ground returns."""
 import argparse
 import json
 import pcbnew
-from build_display_feeds import ROOT,ident,vec
+from build_display_connector import ROOT,ident,vec
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--board');parser.add_argument('--trial',action='store_true');args=parser.parse_args()
-    b=pcbnew.LoadBoard(args.board or str(ROOT/'electrical/kestrel-revb.kicad_pcb'));d=json.loads((ROOT/'electrical/display-feeds-routes.json').read_text())
+    b=pcbnew.LoadBoard(args.board or str(ROOT/'electrical/kestrel-revb.kicad_pcb'));d=json.loads((ROOT/'electrical/display-connector-routes.json').read_text())
     fps={f.GetReference():f for f in b.GetFootprints()};pads={r:{p.GetNumber():p for p in f.Pads()}for r,f in fps.items()};tracks={t.m_Uuid.AsString():t for t in b.GetTracks()}
     for name,xy in d['anchors'].items():
         ref,num=name.split('.');p=next(p for p in fps[ref].Pads()if p.GetNumber()==num and (p.GetPosition()-vec(xy)).EuclideanNorm()<=2);assert p.GetNetname()==d.get('anchor_nets',{}).get(name,d['net']) and (p.GetPosition()-vec(xy)).EuclideanNorm()<=2,name
@@ -52,8 +52,6 @@ def main():
         v=tracks[uid];assert isinstance(v,pcbnew.PCB_VIA)
         assert v.GetPosition()==vec(g['position']) and v.GetNetname()==g['net']
         assert v.GetWidth(pcbnew.F_Cu)==pcbnew.FromMM(g['diameter_mm']) and v.GetDrillValue()==pcbnew.FromMM(g['drill_mm'])
-    # LED current takes a separate branch from the R901 sense land.
-    assert any(r['net']=='/BL_LED_K' and r['points']==[[58.9125,65.25],[59.5125,65.85],[62.25,65.85],[62.8,65.3]] for r in d['paths'])
     conn=b.GetConnectivity();conn.Build(b)
     def connected(seed):
         pending=[seed];seen=set();names=set()
@@ -81,8 +79,9 @@ def main():
     assert set(d['ground_anchors'])<=ground_names,set(d['ground_anchors'])-ground_names
     assert all(ident('via',i)in ground_seen for i,n in enumerate(d['via_net_names'])if n=='/GND')
     assert all(ident('via',i)in all_seen|ground_seen for i in range(len(d['via_positions'])))
-    source_seen,source_names=connected(pads['L101']['2'])
-    assert all(uid in source_seen for uid,g in d['existing_via_anchors'].items() if g['net']=='/+5V_DIG')
+    for name in ['C906.1','C909.1']:
+        ref,num=name.split('.');seen,names=connected(pads[ref][num])
+        assert all(uid in seen for uid,g in d['existing_via_anchors'].items()if g['net']==pads[ref][num].GetNetname())
     import xml.etree.ElementTree as ET
     xml=ET.parse(ROOT/'generated/revb-netlist.xml')
     for key,names in expected.items():
@@ -90,14 +89,17 @@ def main():
         xml_names={node.attrib['ref']+'.'+node.attrib['pin']for n in xml.findall('.//nets/net')if n.attrib['name']==net for node in n.findall('node')}
         assert names<=xml_names,(net,xml_names,names)
         if net in d['complete_nets']:assert names==xml_names,(net,xml_names,names)
+    display_refs={f'C{i}' for i in range(1001,1005)}|{f'R{i}' for i in range(1001,1031)}|{'J1001','J1002'}
+    xml_ground={node.attrib['ref']+'.'+node.attrib['pin'] for n in xml.findall('.//nets/net') if n.attrib['name']=='/GND' for node in n.findall('node') if node.attrib['ref'] in display_refs}
+    assert xml_ground==set(d['ground_anchors']),(xml_ground,set(d['ground_anchors']))
     if not args.trial:
         report=json.loads((ROOT/'generated/pcb-import-review.json').read_text())
-        assert report['provisional_display_feeds_track_ids']==[ident('track',i)for i in range(idx)]
-        assert report['provisional_display_feeds_via_ids']==[ident('via',i)for i in range(len(d['via_positions']))]
-    result={'status':'PASS main 5 V feeds, MCU PWM and FPC LED groups',
+        assert report['provisional_display_connector_track_ids']==[ident('track',i)for i in range(idx)]
+        assert report['provisional_display_connector_via_ids']==[ident('via',i)for i in range(len(d['via_positions']))]
+    result={'status':'PASS LCD/touch supply and connector-local defaults',
             'track_segments':idx,'vias':len(d['via_positions']),'via_in_pad_sites':d.get('via_in_pad_anchors',[]),'routed_planar_length_mm':lengths,'physically_connected_local_groups':{net:sorted(names)for net,names in expected.items()},'ground_anchors':d['ground_anchors'],
-            'limits':['LCD/touch FPC supply/default/ground continuity is checked separately by check_display_connector.py; MCU display/touch endpoints remain unfinished.','Physical topology only; effective bypassing/switching/Kelvin sense, rail drop, coupling/noise, backlight regulation/startup/fault/PWM operation and via-in-pad fabrication/assembly remain unqualified.']}
-    if not args.trial:(ROOT/'generated/display-feeds-review.json').write_text(json.dumps(result,indent=2)+'\n')
-    print(f'PASS: {idx} display-feed segments, {len(d["via_positions"])} vias; main 5 V feeds, MCU PWM and FPC LED groups; qualification unfinished.')
+            'limits':d['limits']}
+    if not args.trial:(ROOT/'generated/display-connector-review.json').write_text(json.dumps(result,indent=2)+'\n')
+    print(f'PASS: {idx} display-connector segments, {len(d["via_positions"])} vias; LCD/touch supply and connector-local defaults; qualification unfinished.')
     print(lengths)
 if __name__=='__main__':main()

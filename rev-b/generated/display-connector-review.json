@@ -1,0 +1,213 @@
+{
+  "status": "PASS LCD/touch supply and connector-local defaults",
+  "track_segments": 56,
+  "vias": 31,
+  "via_in_pad_sites": [
+    {
+      "position": [
+        109.225,
+        49.5
+      ],
+      "pad": "C1001.1"
+    },
+    {
+      "position": [
+        120.475,
+        49.5
+      ],
+      "pad": "C1002.1"
+    },
+    {
+      "position": [
+        149.75,
+        52.775
+      ],
+      "pad": "C1003.1"
+    },
+    {
+      "position": [
+        151.8,
+        52.775
+      ],
+      "pad": "C1004.1"
+    },
+    {
+      "position": [
+        145.675,
+        52.0
+      ],
+      "pad": "R1026.1"
+    },
+    {
+      "position": [
+        145.675,
+        54.0
+      ],
+      "pad": "R1027.1"
+    },
+    {
+      "position": [
+        147.325,
+        52.0
+      ],
+      "pad": "R1026.2"
+    },
+    {
+      "position": [
+        147.325,
+        54.0
+      ],
+      "pad": "R1027.2"
+    },
+    {
+      "position": [
+        129.0,
+        50.825
+      ],
+      "pad": "R1028.1"
+    },
+    {
+      "position": [
+        156.0,
+        52.825
+      ],
+      "pad": "R1029.1"
+    },
+    {
+      "position": [
+        154.0,
+        52.825
+      ],
+      "pad": "R1030.1"
+    },
+    {
+      "position": [
+        110.775,
+        49.5
+      ],
+      "pad": "C1001.2"
+    },
+    {
+      "position": [
+        122.025,
+        49.5
+      ],
+      "pad": "C1002.2"
+    },
+    {
+      "position": [
+        149.75,
+        51.225
+      ],
+      "pad": "C1003.2"
+    },
+    {
+      "position": [
+        151.8,
+        51.225
+      ],
+      "pad": "C1004.2"
+    },
+    {
+      "position": [
+        129.0,
+        49.175
+      ],
+      "pad": "R1028.2"
+    },
+    {
+      "position": [
+        156.0,
+        51.175
+      ],
+      "pad": "R1029.2"
+    },
+    {
+      "position": [
+        154.0,
+        51.175
+      ],
+      "pad": "R1030.2"
+    }
+  ],
+  "routed_planar_length_mm": {
+    "/LCD_VDD": 36.61805012189244,
+    "/TOUCH_VDD": 25.21604255869606,
+    "/RGB565 and capacitive touch/TOUCH_SCL": 5.960208746676879,
+    "/RGB565 and capacitive touch/TOUCH_SDA": 5.355699065082149,
+    "/RGB565 and capacitive touch/LCD_DISP": 9.258422842305,
+    "/RGB565 and capacitive touch/TOUCH_RST_N": 5.375724156487208,
+    "/RGB565 and capacitive touch/TOUCH_INT": 4.525393393628892
+  },
+  "physically_connected_local_groups": {
+    "/LCD_VDD:complete-net": [
+      "C1001.1",
+      "C1002.1",
+      "C906.1",
+      "C907.1",
+      "J1001.4",
+      "R906.1",
+      "TP903.1",
+      "U903.1"
+    ],
+    "/TOUCH_VDD:complete-net": [
+      "C1003.1",
+      "C1004.1",
+      "C909.1",
+      "C910.1",
+      "J1002.2",
+      "J1002.3",
+      "R1026.1",
+      "R1027.1",
+      "R908.1",
+      "TP904.1",
+      "U904.1"
+    ],
+    "/RGB565 and capacitive touch/TOUCH_SCL:connector-local-subset": [
+      "J1002.4",
+      "R1026.2"
+    ],
+    "/RGB565 and capacitive touch/TOUCH_SDA:connector-local-subset": [
+      "J1002.5",
+      "R1027.2"
+    ],
+    "/RGB565 and capacitive touch/LCD_DISP:connector-local-subset": [
+      "J1001.31",
+      "R1028.1"
+    ],
+    "/RGB565 and capacitive touch/TOUCH_RST_N:connector-local-subset": [
+      "J1002.7",
+      "R1029.1"
+    ],
+    "/RGB565 and capacitive touch/TOUCH_INT:connector-local-subset": [
+      "J1002.6",
+      "R1030.1"
+    ]
+  },
+  "ground_anchors": [
+    "J1001.3",
+    "J1001.5",
+    "J1001.6",
+    "J1001.7",
+    "J1001.13",
+    "J1001.14",
+    "J1001.21",
+    "J1001.22",
+    "J1001.23",
+    "J1001.29",
+    "J1001.36",
+    "J1002.1",
+    "J1002.8",
+    "C1001.2",
+    "C1002.2",
+    "C1003.2",
+    "C1004.2",
+    "R1028.2",
+    "R1029.2",
+    "R1030.2"
+  ],
+  "limits": [
+    "LCD/touch supply and connector-local defaults only; MCU RGB/touch endpoints and 25 source damping parts remain unfinished.",
+    "Physical topology only; effective bypass/returns, PDN/noise, rail drop/load/current/thermal, startup/backfeed, loaded RGB/I2C timing and flex/fabrication/assembly remain unqualified."
+  ]
+}
