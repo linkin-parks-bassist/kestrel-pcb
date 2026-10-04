@@ -151,7 +151,7 @@
     "/TOUCH_VDD": 19.425582905658434,
     "/Backlight and display supplies/TOUCH_FB": 9.121781683045937
   },
-  "complete_local_nets": {
+  "physically_connected_local_groups": {
     "/LCD_VDD:U903": [
       "C906.1",
       "C907.1",

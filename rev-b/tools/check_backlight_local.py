@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Verify LCD/touch local supply/feedback physical groups and every scoped ground copper shape; operation unqualified."""
+"""Verify backlight local nets and all scoped ground returns; operation unqualified."""
 import argparse
 import json
 import pcbnew
-from build_display_supply_local import ROOT,ident,vec
+from build_backlight_local import ROOT,ident,vec
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--board');parser.add_argument('--trial',action='store_true');args=parser.parse_args()
-    b=pcbnew.LoadBoard(args.board or str(ROOT/'electrical/kestrel-revb.kicad_pcb'));d=json.loads((ROOT/'electrical/display-supply-local-routes.json').read_text())
+    b=pcbnew.LoadBoard(args.board or str(ROOT/'electrical/kestrel-revb.kicad_pcb'));d=json.loads((ROOT/'electrical/backlight-local-routes.json').read_text())
     fps={f.GetReference():f for f in b.GetFootprints()};pads={r:{p.GetNumber():p for p in f.Pads()}for r,f in fps.items()};tracks={t.m_Uuid.AsString():t for t in b.GetTracks()}
     for name,xy in d['anchors'].items():
         ref,num=name.split('.');p=next(p for p in fps[ref].Pads()if p.GetNumber()==num and (p.GetPosition()-vec(xy)).EuclideanNorm()<=2);assert p.GetNetname()==d.get('anchor_nets',{}).get(name,d['net']) and (p.GetPosition()-vec(xy)).EuclideanNorm()<=2,name
@@ -74,7 +74,7 @@ def main():
     ground_seen,ground_names=connected(zone)
     assert set(d['ground_anchors'])<=ground_names,set(d['ground_anchors'])-ground_names
     assert all(ident('via',i)in ground_seen for i,n in enumerate(d['via_net_names'])if n=='/GND')
-    ground_pads=[p for ref in ['U903','U904','C905','C906','C908','C909','R907','R909']for p in fps[ref].Pads()if p.GetNetname()=='/GND' and p.IsOnLayer(pcbnew.F_Cu)]
+    ground_pads=[p for ref in ['U901','U902','C901','C902','C903','C904','R901','R902','R904','R905']for p in fps[ref].Pads()if p.GetNetname()=='/GND' and p.IsOnLayer(pcbnew.F_Cu)]
     assert all(p.m_Uuid.AsString()in ground_seen for p in ground_pads)
     assert all(ident('via',i)in all_seen|ground_seen for i in range(len(d['via_positions'])))
     import xml.etree.ElementTree as ET
@@ -83,15 +83,15 @@ def main():
         net=key.rsplit(':',1)[0]
         xml_names={node.attrib['ref']+'.'+node.attrib['pin']for n in xml.findall('.//nets/net')if n.attrib['name']==net for node in n.findall('node')}
         assert names<=xml_names,(net,xml_names,names)
-        if net.endswith('_FB'):assert names==xml_names,(net,xml_names,names)
+        if net in d['complete_nets']:assert names==xml_names,(net,xml_names,names)
     if not args.trial:
         report=json.loads((ROOT/'generated/pcb-import-review.json').read_text())
-        assert report['provisional_display_supply_local_track_ids']==[ident('track',i)for i in range(idx)]
-        assert report['provisional_display_supply_local_via_ids']==[ident('via',i)for i in range(len(d['via_positions']))]
-    result={'status':'PASS LCD/touch local regulator groups and all regulator/passive ground returns reach the filled plane',
+        assert report['provisional_backlight_local_track_ids']==[ident('track',i)for i in range(idx)]
+        assert report['provisional_backlight_local_via_ids']==[ident('via',i)for i in range(len(d['via_positions']))]
+    result={'status':'PASS backlight local boost/PWM groups and all regulator/passive ground returns reach the filled plane',
             'track_segments':idx,'vias':len(d['via_positions']),'via_in_pad_sites':d.get('via_in_pad_anchors',[]),'routed_planar_length_mm':lengths,'physically_connected_local_groups':{net:sorted(names)for net,names in expected.items()},'ground_anchors':d['ground_anchors'],
-            'limits':['Main 5 V source and FPC supply distribution remain unfinished.','Physical topology only; effective reference bypassing, rail drop, coupling/noise, regulator operation and via-in-pad fabrication/assembly remain unqualified.']}
-    if not args.trial:(ROOT/'generated/display-supply-local-review.json').write_text(json.dumps(result,indent=2)+'\n')
-    print(f'PASS: {idx} LCD/touch-support segments, {len(d["via_positions"])} vias; LCD/touch local regulator groups and plane-ground returns; qualification unfinished.')
+            'limits':['Main 5 V source, MCU PWM and FPC LED distribution remain unfinished.','Physical topology only; effective bypassing/switching/Kelvin sense, rail drop, coupling/noise, backlight regulation/startup/fault/PWM operation and via-in-pad fabrication/assembly remain unqualified.']}
+    if not args.trial:(ROOT/'generated/backlight-local-review.json').write_text(json.dumps(result,indent=2)+'\n')
+    print(f'PASS: {idx} backlight-local segments, {len(d["via_positions"])} vias; backlight local boost/PWM groups and plane-ground returns; qualification unfinished.')
     print(lengths)
 if __name__=='__main__':main()

@@ -1,0 +1,1006 @@
+{
+  "net": "/GND",
+  "anchors": {
+    "U901.1": [
+      56.1,
+      62.95
+    ],
+    "L901.2": [
+      59.0,
+      58.725
+    ],
+    "D901.2": [
+      58.5,
+      62.5
+    ],
+    "D901.1": [
+      62.5,
+      62.5
+    ],
+    "C903.1": [
+      66.5,
+      63.975
+    ],
+    "R904.1": [
+      64.0,
+      58.9625
+    ],
+    "TP901.1": [
+      66.8,
+      58.2
+    ],
+    "U901.3": [
+      56.1,
+      61.65
+    ],
+    "R901.1": [
+      58.9125,
+      65.25
+    ],
+    "TP902.1": [
+      64.5,
+      53.5
+    ],
+    "U901.4": [
+      53.9,
+      61.65
+    ],
+    "R903.2": [
+      54.7,
+      64.375
+    ],
+    "R905.1": [
+      50.325,
+      62.9
+    ],
+    "U902.4": [
+      53.1,
+      69.65
+    ],
+    "R903.1": [
+      54.7,
+      66.025
+    ],
+    "U902.2": [
+      50.9,
+      69.0
+    ],
+    "R902.1": [
+      46.575,
+      70.0
+    ],
+    "U901.5": [
+      53.9,
+      62.95
+    ],
+    "L901.1": [
+      59.0,
+      52.675
+    ],
+    "C901.1": [
+      59.0,
+      50.45
+    ],
+    "C902.1": [
+      52.3,
+      63.675
+    ],
+    "U902.5": [
+      53.1,
+      68.35
+    ],
+    "C904.1": [
+      52.5,
+      66.725
+    ],
+    "C901.2": [
+      59.0,
+      48.55
+    ],
+    "C902.2": [
+      52.3,
+      62.125
+    ],
+    "C903.2": [
+      66.5,
+      61.025
+    ],
+    "C904.2": [
+      52.5,
+      65.175
+    ],
+    "R901.2": [
+      57.0875,
+      65.25
+    ],
+    "R902.2": [
+      48.225,
+      70.0
+    ],
+    "R904.2": [
+      64.0,
+      56.0375
+    ],
+    "R905.2": [
+      48.675,
+      62.9
+    ],
+    "U901.2": [
+      56.1,
+      62.3
+    ],
+    "U902.1": [
+      50.9,
+      68.35
+    ],
+    "U902.3": [
+      50.9,
+      69.65
+    ]
+  },
+  "anchor_nets": {
+    "U901.1": "/Backlight and display supplies/BL_SW",
+    "L901.2": "/Backlight and display supplies/BL_SW",
+    "D901.2": "/Backlight and display supplies/BL_SW",
+    "D901.1": "/BL_LED_A",
+    "C903.1": "/BL_LED_A",
+    "R904.1": "/BL_LED_A",
+    "TP901.1": "/BL_LED_A",
+    "U901.3": "/BL_LED_K",
+    "R901.1": "/BL_LED_K",
+    "TP902.1": "/BL_LED_K",
+    "U901.4": "/Backlight and display supplies/BL_CTRL",
+    "R903.2": "/Backlight and display supplies/BL_CTRL",
+    "R905.1": "/Backlight and display supplies/BL_CTRL",
+    "U902.4": "/Backlight and display supplies/BL_CTRL_BUFFER",
+    "R903.1": "/Backlight and display supplies/BL_CTRL_BUFFER",
+    "U902.2": "/MCU_BL_PWM",
+    "R902.1": "/MCU_BL_PWM",
+    "U901.5": "/+5V_DIG",
+    "L901.1": "/+5V_DIG",
+    "C901.1": "/+5V_DIG",
+    "C902.1": "/+5V_DIG",
+    "U902.5": "/+5V_DIG",
+    "C904.1": "/+5V_DIG",
+    "C901.2": "/GND",
+    "C902.2": "/GND",
+    "C903.2": "/GND",
+    "C904.2": "/GND",
+    "R901.2": "/GND",
+    "R902.2": "/GND",
+    "R904.2": "/GND",
+    "R905.2": "/GND",
+    "U901.2": "/GND",
+    "U902.1": "/GND",
+    "U902.3": "/GND"
+  },
+  "paths": [
+    {
+      "net": "/Backlight and display supplies/BL_SW",
+      "layer": "F.Cu",
+      "width_mm": 0.8,
+      "points": [
+        [
+          59.0,
+          58.725
+        ],
+        [
+          59,
+          60.75
+        ],
+        [
+          58.5,
+          61.25
+        ],
+        [
+          58.5,
+          62.5
+        ]
+      ]
+    },
+    {
+      "net": "/Backlight and display supplies/BL_SW",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          56.1,
+          62.95
+        ],
+        [
+          56.6,
+          62.95
+        ]
+      ]
+    },
+    {
+      "net": "/Backlight and display supplies/BL_SW",
+      "layer": "F.Cu",
+      "width_mm": 0.508,
+      "points": [
+        [
+          56.6,
+          62.95
+        ],
+        [
+          58.05,
+          62.95
+        ],
+        [
+          58.5,
+          62.5
+        ]
+      ]
+    },
+    {
+      "net": "/BL_LED_A",
+      "layer": "F.Cu",
+      "width_mm": 0.508,
+      "points": [
+        [
+          62.5,
+          62.5
+        ],
+        [
+          64,
+          62.5
+        ],
+        [
+          65.475,
+          63.975
+        ],
+        [
+          66.5,
+          63.975
+        ]
+      ]
+    },
+    {
+      "net": "/BL_LED_A",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          62.5,
+          62.5
+        ],
+        [
+          62.5,
+          60.4625
+        ],
+        [
+          64.0,
+          58.9625
+        ]
+      ]
+    },
+    {
+      "net": "/BL_LED_A",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          64.0,
+          58.9625
+        ],
+        [
+          66.0375,
+          58.9625
+        ],
+        [
+          66.8,
+          58.2
+        ]
+      ]
+    },
+    {
+      "net": "/BL_LED_K",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          56.1,
+          61.65
+        ],
+        [
+          55.9,
+          60.7
+        ]
+      ]
+    },
+    {
+      "net": "/Backlight and display supplies/BL_CTRL",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          53.9,
+          61.65
+        ],
+        [
+          53.15,
+          61.5
+        ]
+      ]
+    },
+    {
+      "net": "/Backlight and display supplies/BL_CTRL_BUFFER",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          53.1,
+          69.65
+        ],
+        [
+          53.8,
+          69.65
+        ]
+      ]
+    },
+    {
+      "net": "/MCU_BL_PWM",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          50.9,
+          69
+        ],
+        [
+          49.9,
+          69
+        ],
+        [
+          49.3,
+          69.6
+        ],
+        [
+          49.3,
+          69.9
+        ]
+      ]
+    },
+    {
+      "net": "/+5V_DIG",
+      "layer": "F.Cu",
+      "width_mm": 0.8,
+      "points": [
+        [
+          59.0,
+          50.45
+        ],
+        [
+          59.0,
+          52.675
+        ]
+      ]
+    },
+    {
+      "net": "/+5V_DIG",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          52.3,
+          63.675
+        ],
+        [
+          53.175,
+          63.675
+        ],
+        [
+          53.9,
+          62.95
+        ]
+      ]
+    },
+    {
+      "net": "/+5V_DIG",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          52.5,
+          66.725
+        ],
+        [
+          53.1,
+          67.325
+        ],
+        [
+          53.1,
+          68.35
+        ]
+      ]
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          56.1,
+          62.3
+        ],
+        [
+          55.25,
+          62.3
+        ],
+        [
+          55.05,
+          62.1
+        ],
+        [
+          55.05,
+          61.7
+        ]
+      ]
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          50.9,
+          68.35
+        ],
+        [
+          50.2,
+          68.1
+        ]
+      ]
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          50.9,
+          69.65
+        ],
+        [
+          50.2,
+          69.9
+        ]
+      ]
+    },
+    {
+      "net": "/+5V_DIG",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          52.3,
+          63.675
+        ],
+        [
+          53.1,
+          64.2
+        ]
+      ]
+    },
+    {
+      "net": "/BL_LED_K",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          58.9125,
+          65.25
+        ],
+        [
+          61.1,
+          64.2
+        ]
+      ]
+    },
+    {
+      "net": "/Backlight and display supplies/BL_CTRL",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          50.325,
+          62.9
+        ],
+        [
+          50.8,
+          61.85
+        ]
+      ]
+    },
+    {
+      "net": "/BL_LED_K",
+      "layer": "In2.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          55.9,
+          60.7
+        ],
+        [
+          59.4,
+          64.2
+        ],
+        [
+          61.1,
+          64.2
+        ]
+      ]
+    },
+    {
+      "net": "/BL_LED_K",
+      "layer": "In2.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          61.1,
+          64.2
+        ],
+        [
+          61.1,
+          56.9
+        ],
+        [
+          64.5,
+          53.5
+        ]
+      ]
+    },
+    {
+      "net": "/Backlight and display supplies/BL_CTRL",
+      "layer": "In2.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          53.15,
+          61.5
+        ],
+        [
+          54.7,
+          63.05
+        ],
+        [
+          54.7,
+          64.375
+        ]
+      ]
+    },
+    {
+      "net": "/Backlight and display supplies/BL_CTRL",
+      "layer": "In2.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          53.15,
+          61.5
+        ],
+        [
+          53.15,
+          60.9
+        ],
+        [
+          50.8,
+          60.9
+        ],
+        [
+          50.8,
+          61.85
+        ]
+      ]
+    },
+    {
+      "net": "/Backlight and display supplies/BL_CTRL_BUFFER",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          54.7,
+          66.025
+        ],
+        [
+          54.7,
+          68.75
+        ],
+        [
+          53.8,
+          69.65
+        ]
+      ]
+    },
+    {
+      "net": "/MCU_BL_PWM",
+      "layer": "In2.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          46.575,
+          70.0
+        ],
+        [
+          46.6,
+          70.0
+        ],
+        [
+          47.2,
+          69.4
+        ],
+        [
+          48.8,
+          69.4
+        ],
+        [
+          49.3,
+          69.9
+        ]
+      ]
+    },
+    {
+      "net": "/+5V_DIG",
+      "layer": "In2.Cu",
+      "width_mm": 0.508,
+      "points": [
+        [
+          59.0,
+          50.45
+        ],
+        [
+          50.05,
+          59.4
+        ],
+        [
+          50.05,
+          62.15
+        ],
+        [
+          52.1,
+          64.2
+        ],
+        [
+          53.1,
+          64.2
+        ]
+      ]
+    },
+    {
+      "net": "/+5V_DIG",
+      "layer": "In2.Cu",
+      "width_mm": 0.508,
+      "points": [
+        [
+          53.1,
+          64.2
+        ],
+        [
+          53.25,
+          64.35
+        ],
+        [
+          53.25,
+          65.95
+        ],
+        [
+          52.5,
+          66.7
+        ],
+        [
+          52.5,
+          66.725
+        ]
+      ]
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          52.3,
+          62.125
+        ],
+        [
+          51.5,
+          61.8
+        ]
+      ]
+    },
+    {
+      "net": "/GND",
+      "layer": "F.Cu",
+      "width_mm": 0.254,
+      "points": [
+        [
+          48.675,
+          62.9
+        ],
+        [
+          48,
+          61.8
+        ]
+      ]
+    }
+  ],
+  "via_positions": [
+    [
+      55.9,
+      60.7
+    ],
+    [
+      61.1,
+      64.2
+    ],
+    [
+      64.5,
+      53.5
+    ],
+    [
+      54.7,
+      64.375
+    ],
+    [
+      50.8,
+      61.85
+    ],
+    [
+      53.15,
+      61.5
+    ],
+    [
+      46.575,
+      70.0
+    ],
+    [
+      49.3,
+      69.9
+    ],
+    [
+      59.0,
+      50.45
+    ],
+    [
+      53.1,
+      64.2
+    ],
+    [
+      52.5,
+      66.725
+    ],
+    [
+      59.0,
+      48.55
+    ],
+    [
+      51.5,
+      61.8
+    ],
+    [
+      66.5,
+      61.025
+    ],
+    [
+      52.5,
+      65.175
+    ],
+    [
+      57.0875,
+      65.25
+    ],
+    [
+      48.225,
+      70.0
+    ],
+    [
+      64.0,
+      56.0375
+    ],
+    [
+      48,
+      61.8
+    ],
+    [
+      55.05,
+      61.7
+    ],
+    [
+      50.2,
+      68.1
+    ],
+    [
+      50.2,
+      69.9
+    ]
+  ],
+  "via_net_names": [
+    "/BL_LED_K",
+    "/BL_LED_K",
+    "/BL_LED_K",
+    "/Backlight and display supplies/BL_CTRL",
+    "/Backlight and display supplies/BL_CTRL",
+    "/Backlight and display supplies/BL_CTRL",
+    "/MCU_BL_PWM",
+    "/MCU_BL_PWM",
+    "/+5V_DIG",
+    "/+5V_DIG",
+    "/+5V_DIG",
+    "/GND",
+    "/GND",
+    "/GND",
+    "/GND",
+    "/GND",
+    "/GND",
+    "/GND",
+    "/GND",
+    "/GND",
+    "/GND",
+    "/GND"
+  ],
+  "via_diameters_mm": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+  ],
+  "via_diameter_mm": 0.5,
+  "via_drill_mm": 0.3,
+  "via_in_pad_anchors": [
+    {
+      "pad": "TP902.1",
+      "position": [
+        64.5,
+        53.5
+      ]
+    },
+    {
+      "pad": "R903.2",
+      "position": [
+        54.7,
+        64.375
+      ]
+    },
+    {
+      "pad": "R902.1",
+      "position": [
+        46.575,
+        70.0
+      ]
+    },
+    {
+      "pad": "C901.1",
+      "position": [
+        59.0,
+        50.45
+      ]
+    },
+    {
+      "pad": "C904.1",
+      "position": [
+        52.5,
+        66.725
+      ]
+    },
+    {
+      "pad": "C901.2",
+      "position": [
+        59.0,
+        48.55
+      ]
+    },
+    {
+      "pad": "C903.2",
+      "position": [
+        66.5,
+        61.025
+      ]
+    },
+    {
+      "pad": "C904.2",
+      "position": [
+        52.5,
+        65.175
+      ]
+    },
+    {
+      "pad": "R901.2",
+      "position": [
+        57.0875,
+        65.25
+      ]
+    },
+    {
+      "pad": "R902.2",
+      "position": [
+        48.225,
+        70.0
+      ]
+    },
+    {
+      "pad": "R904.2",
+      "position": [
+        64.0,
+        56.0375
+      ]
+    }
+  ],
+  "ground_anchors": [
+    "C901.2",
+    "C902.2",
+    "C903.2",
+    "C904.2",
+    "R901.2",
+    "R902.2",
+    "R904.2",
+    "R905.2",
+    "U901.2",
+    "U902.1",
+    "U902.3"
+  ],
+  "expected_groups": {
+    "/Backlight and display supplies/BL_SW:local": [
+      "U901.1",
+      "L901.2",
+      "D901.2"
+    ],
+    "/BL_LED_A:local": [
+      "D901.1",
+      "C903.1",
+      "R904.1",
+      "TP901.1"
+    ],
+    "/BL_LED_K:local": [
+      "U901.3",
+      "R901.1",
+      "TP902.1"
+    ],
+    "/Backlight and display supplies/BL_CTRL:local": [
+      "U901.4",
+      "R903.2",
+      "R905.1"
+    ],
+    "/Backlight and display supplies/BL_CTRL_BUFFER:local": [
+      "U902.4",
+      "R903.1"
+    ],
+    "/MCU_BL_PWM:local": [
+      "U902.2",
+      "R902.1"
+    ],
+    "/+5V_DIG:local": [
+      "U901.5",
+      "L901.1",
+      "C901.1",
+      "C902.1",
+      "U902.5",
+      "C904.1"
+    ]
+  },
+  "complete_nets": [
+    "/Backlight and display supplies/BL_SW",
+    "/Backlight and display supplies/BL_CTRL",
+    "/Backlight and display supplies/BL_CTRL_BUFFER"
+  ],
+  "limits": [
+    "Local boost/PWM topology only; main 5 V source, MCU PWM and FPC LED distribution remain unfinished.",
+    "Switching/sense/bypass/return impedance, EMI/audio noise, actual loads/thermal, stability/startup/fault and fabrication/assembly remain unqualified."
+  ]
+}

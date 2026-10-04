@@ -1,0 +1,149 @@
+{
+  "status": "PASS backlight local boost/PWM groups and all regulator/passive ground returns reach the filled plane",
+  "track_segments": 57,
+  "vias": 22,
+  "via_in_pad_sites": [
+    {
+      "pad": "TP902.1",
+      "position": [
+        64.5,
+        53.5
+      ]
+    },
+    {
+      "pad": "R903.2",
+      "position": [
+        54.7,
+        64.375
+      ]
+    },
+    {
+      "pad": "R902.1",
+      "position": [
+        46.575,
+        70.0
+      ]
+    },
+    {
+      "pad": "C901.1",
+      "position": [
+        59.0,
+        50.45
+      ]
+    },
+    {
+      "pad": "C904.1",
+      "position": [
+        52.5,
+        66.725
+      ]
+    },
+    {
+      "pad": "C901.2",
+      "position": [
+        59.0,
+        48.55
+      ]
+    },
+    {
+      "pad": "C903.2",
+      "position": [
+        66.5,
+        61.025
+      ]
+    },
+    {
+      "pad": "C904.2",
+      "position": [
+        52.5,
+        65.175
+      ]
+    },
+    {
+      "pad": "R901.2",
+      "position": [
+        57.0875,
+        65.25
+      ]
+    },
+    {
+      "pad": "R902.2",
+      "position": [
+        48.225,
+        70.0
+      ]
+    },
+    {
+      "pad": "R904.2",
+      "position": [
+        64.0,
+        56.0375
+      ]
+    }
+  ],
+  "routed_planar_length_mm": {
+    "/Backlight and display supplies/BL_SW": 6.56850288425444,
+    "/BL_LED_A": 11.885623189369795,
+    "/BL_LED_K": 22.155347281497594,
+    "/Backlight and display supplies/BL_CTRL": 9.334327005878826,
+    "/Backlight and display supplies/BL_CTRL_BUFFER": 4.6977922061357855,
+    "/MCU_BL_PWM": 5.329163056034262,
+    "/+5V_DIG": 29.15985732283589
+  },
+  "physically_connected_local_groups": {
+    "/Backlight and display supplies/BL_SW:local": [
+      "D901.2",
+      "L901.2",
+      "U901.1"
+    ],
+    "/BL_LED_A:local": [
+      "C903.1",
+      "D901.1",
+      "R904.1",
+      "TP901.1"
+    ],
+    "/BL_LED_K:local": [
+      "R901.1",
+      "TP902.1",
+      "U901.3"
+    ],
+    "/Backlight and display supplies/BL_CTRL:local": [
+      "R903.2",
+      "R905.1",
+      "U901.4"
+    ],
+    "/Backlight and display supplies/BL_CTRL_BUFFER:local": [
+      "R903.1",
+      "U902.4"
+    ],
+    "/MCU_BL_PWM:local": [
+      "R902.1",
+      "U902.2"
+    ],
+    "/+5V_DIG:local": [
+      "C901.1",
+      "C902.1",
+      "C904.1",
+      "L901.1",
+      "U901.5",
+      "U902.5"
+    ]
+  },
+  "ground_anchors": [
+    "C901.2",
+    "C902.2",
+    "C903.2",
+    "C904.2",
+    "R901.2",
+    "R902.2",
+    "R904.2",
+    "R905.2",
+    "U901.2",
+    "U902.1",
+    "U902.3"
+  ],
+  "limits": [
+    "Main 5 V source, MCU PWM and FPC LED distribution remain unfinished.",
+    "Physical topology only; effective bypassing/switching/Kelvin sense, rail drop, coupling/noise, backlight regulation/startup/fault/PWM operation and via-in-pad fabrication/assembly remain unqualified."
+  ]
+}
