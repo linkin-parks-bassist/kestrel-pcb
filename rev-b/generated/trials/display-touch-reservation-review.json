@@ -1,5 +1,4 @@
 {
-  "baseline_trial_sha256": "dcd07bc015ae40a1e62f0e867fc56369890dcb6fa3fb4ff0896ae960c5cb1641",
   "status": "Rejected bounded source reservations; no GPIO remap or resistor pose adopted",
   "poses": {
     "R1024": [
@@ -41,7 +40,8 @@
         ],
         "grid_step_mm": 0.025,
         "result": "No route within bounds"
-      }
+      },
+      "baseline_trial_sha256": "dcd07bc015ae40a1e62f0e867fc56369890dcb6fa3fb4ff0896ae960c5cb1641"
     },
     {
       "trial_sha256": "02a41c8aa6c92dc7073f2d923f9ea1cfac42d4b7746de33e1c4d8158e69cdf98",
@@ -64,12 +64,143 @@
         ],
         "grid_step_mm": 0.025,
         "result": "No route within bounds"
+      },
+      "baseline_trial_sha256": "dcd07bc015ae40a1e62f0e867fc56369890dcb6fa3fb4ff0896ae960c5cb1641"
+    },
+    {
+      "baseline_trial_sha256": "c04fd7ddefe280bda8e1c83749b8c9aa489d1c4ed178fe8721beb41e04f08992",
+      "trial_sha256": "7c9d98b6853432c79fdea009c29e8e6bf030213e5ee70aa6b4c0d4ce7ead6d22",
+      "pin_remaps": {
+        "18": 61,
+        "19": 58
+      },
+      "native_critical_violations": 0,
+      "coordinated_bypass": {
+        "C703_pose": [
+          131.3,
+          87.425,
+          0
+        ],
+        "side": "F.Cu",
+        "C703_C715_courtyard_margin_mm": 0.1,
+        "courtyard_only_footprint_change": "Stock C_0402_1005Metric name/courtyard edits only; unchanged lands, mask, paste, body, models and part fields",
+        "positive_branch_replaced_track_uuid": "6fd1a569-76df-58cb-ab62-11c56955d97b",
+        "positive_branch_replacement_end": [
+          129.75,
+          86.975
+        ],
+        "positive_branch_added_points": [
+          [
+            129.75,
+            86.975
+          ],
+          [
+            130.82,
+            86.975
+          ],
+          [
+            130.82,
+            87.425
+          ]
+        ],
+        "removed_ground_track_uuid": "c0dbbbee-da1e-525c-977f-b725ab71cead",
+        "ground_via_uuid": "4201b7c4-c4a8-564a-80cb-1d5e5bcf92dd",
+        "ground_via_position": [
+          131.78,
+          87.425
+        ],
+        "ground_via_diameter_mm": 0.5,
+        "ground_via_drill_mm": 0.3,
+        "named_via_in_pad": "C703.2",
+        "physical_local_source_group": [
+          "U701.62",
+          "C703.1"
+        ],
+        "physical_ground_reaches_ep": true,
+        "native_drill_containment": true,
+        "positive_pad_allocation_mm": 1.9303885619221726,
+        "complete_rgb_halves": 32,
+        "complete_timing_outputs": [
+          "PCLK",
+          "HSYNC",
+          "DE",
+          "SCL"
+        ]
+      },
+      "search": {
+        "start": "U701.61",
+        "end": "R1024.1",
+        "via_in_pad": [
+          "R1024.1"
+        ],
+        "bounds_mm": [
+          125,
+          82,
+          136,
+          92
+        ],
+        "grid_step_mm": 0.025,
+        "result": "No route within bounds"
+      },
+      "rejected_manual_transition": {
+        "via_position": [
+          130.025,
+          87.525
+        ],
+        "native_clearance_failures": [
+          {
+            "foreign_item": "MCU_LCD_R7 B.Cu track 2ce05749-cddd-5560-8581-e95f65708b07",
+            "actual_mm": 0.1284,
+            "required_mm": 0.2
+          },
+          {
+            "foreign_item": "R1015.2 LCD_R6 B.Cu land",
+            "actual_mm": 0.155,
+            "required_mm": 0.2
+          }
+        ]
       }
     }
   ],
   "limits": [
     "Clear resistor placement alone does not establish routability.",
     "No route means only the stated grid, endpoint poses, unchanged copper and reviewed bounds; it is not proof of geometric impossibility or invalid GPIO function.",
-    "Reset source search was not performed; neither remap is selected."
+    "Reset sources on the alternative remapped GPIOs were not searched; no such remap is selected.",
+    "The coordinated bypass revision remains unadopted: native-clear bypass/placement and preserved complete groups do not establish the proposed INT escape."
+  ],
+  "other_preferred_trial_searches": [
+    {
+      "baseline_trial_sha256": "c04fd7ddefe280bda8e1c83749b8c9aa489d1c4ed178fe8721beb41e04f08992",
+      "start": "R1019.2",
+      "end": "J1001.33",
+      "via_in_pad": [
+        "R1019.2"
+      ],
+      "bounds_mm": [
+        110,
+        45,
+        140,
+        95
+      ],
+      "grid_step_mm": 0.05,
+      "result": "No route within bounds"
+    },
+    {
+      "baseline_trial_sha256": "c04fd7ddefe280bda8e1c83749b8c9aa489d1c4ed178fe8721beb41e04f08992",
+      "start": "U701.19",
+      "start_via": "a97c84db-414e-53cb-81c9-43bb1f0dca62",
+      "end": "R1025.1",
+      "via_in_pad": [
+        "R1025.1"
+      ],
+      "bounds_mm": [
+        112,
+        85,
+        123,
+        97
+      ],
+      "grid_step_mm": 0.025,
+      "result": "No route within bounds"
+    }
   ]
 }

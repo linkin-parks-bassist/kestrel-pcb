@@ -212,7 +212,7 @@
     },
     "limits": [
       "Unadopted trials only; authoritative schematic/PCB and published seven-source baseline remain unchanged.",
-      "The preferred variant requires all 32 RGB halves, seven timing/touch source groups and PCLK/HSYNC/SCL/DE outputs physically complete; INT/reset sources and five other timing/touch outputs remain unfinished.",
+      "The preferred variant requires all 32 RGB halves, seven timing/touch source groups and PCLK/HSYNC/SCL/DE/DISP outputs physically complete; INT/reset sources and four other timing/touch outputs remain unfinished.",
       "PCLK/HSYNC GPIO remaps, resistor selections/poses, C701/C702 underside bypass, MISO/R5 detours and revised G7 damping/output remain unadopted.",
       "C701/C702 source-pad allocations still exceed the maintained 2.5-mm bounds; revise before adoption.",
       "Long G6/G7 output detours, loaded timing/skew, source damping, effective returns/coupling/PDN and via-in-pad fabrication/assembly remain unqualified.",
@@ -243,7 +243,7 @@
   "dual_clock_rgb": {
     "variant": "dual_clock_rgb",
     "baseline_sha256": "603ba3bf19fc05499781dda95da4a748c3c0afc90077a53db912f2fbfaec6164",
-    "trial_sha256": "c04fd7ddefe280bda8e1c83749b8c9aa489d1c4ed178fe8721beb41e04f08992",
+    "trial_sha256": "d727fe8bb6b6ab80983c0435e17bb7ef5b29d6e786219a9028d6311e59da152f",
     "native_critical_violations": 0,
     "native_residual_counts": {
       "drill_out_of_range": 6,
@@ -255,7 +255,7 @@
     },
     "preserved_copper_items": 2768,
     "removed_copper_items": 28,
-    "added_copper_items": 118,
+    "added_copper_items": 128,
     "physical_rgb_groups": {
       "source:/MCU_LCD_B3": [
         "R1001.1",
@@ -439,7 +439,9 @@
         "R1020.2"
       ],
       "DISP": [
-        "R1021.2"
+        "J1001.31",
+        "R1021.2",
+        "R1028.1"
       ],
       "SCL": [
         "J1002.4",
@@ -458,7 +460,7 @@
     },
     "limits": [
       "Unadopted trials only; authoritative schematic/PCB and published seven-source baseline remain unchanged.",
-      "The preferred variant requires all 32 RGB halves, seven timing/touch source groups and PCLK/HSYNC/SCL/DE outputs physically complete; INT/reset sources and five other timing/touch outputs remain unfinished.",
+      "The preferred variant requires all 32 RGB halves, seven timing/touch source groups and PCLK/HSYNC/SCL/DE/DISP outputs physically complete; INT/reset sources and four other timing/touch outputs remain unfinished.",
       "PCLK/HSYNC GPIO remaps, resistor selections/poses, C701/C702 underside bypass, MISO/R5 detours and revised G7 damping/output remain unadopted.",
       "C701/C702 source-pad allocations still exceed the maintained 2.5-mm bounds; revise before adoption.",
       "Long G6/G7 output detours, loaded timing/skew, source damping, effective returns/coupling/PDN and via-in-pad fabrication/assembly remain unqualified.",
@@ -470,7 +472,8 @@
       "/RGB565 and capacitive touch/LCD_G7": 67.04640866588035,
       "/RGB565 and capacitive touch/LCD_G6": 68.63960312803931,
       "/RGB565 and capacitive touch/TOUCH_SCL": 52.200616844190954,
-      "/RGB565 and capacitive touch/LCD_DE": 62.33274887854694
+      "/RGB565 and capacitive touch/LCD_DE": 62.33274887854694,
+      "/RGB565 and capacitive touch/LCD_DISP": 62.068787847868
     },
     "manufacturing_profile_sha256": "d8cd8096a998bb6577948be69a5f9bcb244f0e77d4c978c0243dbf85f5cef905",
     "new_via_smd_margins": {
@@ -639,6 +642,20 @@
           "annulus_clearance_mm": 0.25,
           "required_copper_clearance_mm": 0.2,
           "hole_clearance_mm": 0.35,
+          "required_hole_clearance_mm": 0.25
+        }
+      },
+      "e95c0abb-c4c1-5228-98d6-613fef47c0ef": {
+        "position_mm": [
+          129.8,
+          57.95
+        ],
+        "nearest_smd_land": {
+          "pad": "J1001.MP",
+          "distance_to_land_mm": 0.514782,
+          "annulus_clearance_mm": 0.26478199999999996,
+          "required_copper_clearance_mm": 0.2,
+          "hole_clearance_mm": 0.36478199999999994,
           "required_hole_clearance_mm": 0.25
         }
       },
