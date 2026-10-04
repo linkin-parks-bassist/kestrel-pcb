@@ -13,14 +13,18 @@ def review():
     # Independent expected QFN pad / panel pin map from Espressif Table 2-1 and
     # DM-TFT50-404 section 3.1. Do not import generator's GPIO contract here.
     data=[(80,24),(81,25),(82,26),(83,27),(84,28),
-          (86,15),(87,16),(88,17),(89,18),(90,19),(92,20),
-          (93,8),(94,9),(95,10),(97,11),(98,12)]
+          (86,15),(87,16),(88,17),(89,18),(63,19),(92,20),
+          (55,8),(94,9),(57,10),(97,11),(60,12)]
     timing=[(10,30),(11,32),(12,33),(13,34),(14,31)]
     for i,(mcu,panel) in enumerate(data+timing):
         ref=f'R{1001+i}'
         same(('U701',str(mcu)),(ref,'1'));same((ref,'2'),('J1001',str(panel)))
         assert nets[ref,'1']!=nets[ref,'2']
         assert parts[ref].findtext('value')=='33ohm'
+        if i < 16:
+            assert parts[ref].findtext('footprint')=='Resistor_SMD:R_0402_1005Metric',ref
+            fields={f.get('name'):f.text for f in parts[ref].findall('fields/field')}
+            assert fields['Manufacturer']=='YAGEO' and fields['MPN']=='RC0402FR-0733RL' and fields['LCSC']=='C138002',ref
     for i,(mcu,panel) in enumerate(((16,4),(17,5),(18,6),(19,7)),22):
         ref=f'R{1000+i}'
         same(('U701',str(mcu)),(ref,'1'));same((ref,'2'),('J1002',str(panel)))

@@ -15,10 +15,10 @@ output=args.output_dir or ROOT/'generated';output.mkdir(parents=True,exist_ok=Tr
 with tempfile.TemporaryDirectory(prefix='kestrel-display-view-') as temp:
     native=Path(temp)/'native.svg'
     subprocess.run(['kicad-cli','pcb','export','svg','--mode-single','--layers','F.Cu,In2.Cu,B.Cu,B.Fab,Edge.Cuts','--exclude-drawing-sheet','--page-size-mode','2','-o',str(native),args.board or str(ROOT/'electrical/kestrel-revb.kicad_pcb')],check=True)
-    for name,(x,y,w,h,scale) in {'pcb-display-rgb-damping':(116,72,18,12,70)}.items():
+    for name,(x,y,w,h,scale) in {'pcb-display-rgb-damping':(116,72,18,12,70),'pcb-display-rgb-right':(126.5,84,7.5,9.5,100)}.items():
         tree=ET.parse(native);r=tree.getroot();r.set('viewBox',f'{x-32} {y-47} {w} {h}');r.set('width',str(w*scale));r.set('height',str(h*scale))
         out=output/f'{name}.svg';tree.write(out)
-        surface=cairo.ImageSurface(cairo.FORMAT_ARGB32,w*scale,h*scale);ctx=cairo.Context(surface);ctx.set_source_rgb(1,1,1);ctx.paint()
+        surface=cairo.ImageSurface(cairo.FORMAT_ARGB32,round(w*scale),round(h*scale));ctx=cairo.Context(surface);ctx.set_source_rgb(1,1,1);ctx.paint()
         handle=Rsvg.Handle.new_from_file(str(out));rect=Rsvg.Rectangle();rect.x=0;rect.y=0;rect.width=w*scale;rect.height=h*scale
         handle.render_document(ctx,rect);surface.write_to_png(str(out.with_suffix('.png')))
         print('Refreshed',name)

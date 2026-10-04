@@ -1,7 +1,7 @@
 {
     "$schema": "https://schemas.kicad.org/drc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-10-04T12:37:22",
+    "date": "2026-10-04T13:34:55",
     "ignored_checks": [
         {
             "description": "Footprint has no courtyard defined",
@@ -36,12 +36,12 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Track [/+3V3_D] on B.Cu, length 0.4000 mm",
+                    "description": "Track [/+3V3_D] on B.Cu, length 7.2000 mm",
                     "pos": {
                         "x": 113.0,
-                        "y": 82.9
+                        "y": 83.3
                     },
-                    "uuid": "9c2e3535-4fe7-5c93-b21f-80325bc540ca"
+                    "uuid": "1554a85b-0aef-5735-b2a6-3c83744c3592"
                 },
                 {
                     "description": "Pad 1 [/+3V3_D] of C717 on F.Cu",
@@ -82,12 +82,12 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Track [/+3V3_D] on B.Cu, length 13.1000 mm",
+                    "description": "Track [/+3V3_D] on B.Cu, length 1.5000 mm",
                     "pos": {
-                        "x": 100.5,
+                        "x": 113.6,
                         "y": 81.4
                     },
-                    "uuid": "78447de6-ce09-5bbb-9912-d337d5003e32"
+                    "uuid": "1e92d164-97a1-5208-badb-6832107eb16d"
                 },
                 {
                     "description": "Pad 1 [/+3V3_D] of R710 on F.Cu",
@@ -151,12 +151,12 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Track [/+3V3_D] on F.Cu, length 0.6718 mm",
+                    "description": "Track [/+3V3_D] on F.Cu, length 0.3500 mm",
                     "pos": {
                         "x": 122.425,
-                        "y": 80.75
+                        "y": 81.1
                     },
-                    "uuid": "dc7b79ab-6f20-59a0-975f-3203d059d0b7"
+                    "uuid": "1da60b13-ddd3-5cc5-9d00-4a4171568c94"
                 },
                 {
                     "description": "Track [/+3V3_D] on F.Cu, length 0.8950 mm",
@@ -220,12 +220,12 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Track [/+3V3_D] on F.Cu, length 0.7000 mm",
+                    "description": "Track [/+3V3_D] on F.Cu, length 0.9203 mm",
                     "pos": {
                         "x": 126.275,
-                        "y": 81.1
+                        "y": 80.4
                     },
-                    "uuid": "dc6f1530-1638-58f0-b56d-beae2e2d9b01"
+                    "uuid": "326a625b-e115-5edd-b77d-5206926854ec"
                 },
                 {
                     "description": "Track [/+3V3_D] on F.Cu, length 0.6718 mm",
@@ -366,12 +366,12 @@
                     "uuid": "504f05a1-e6f7-4e02-8a1b-80f3834a93fa"
                 },
                 {
-                    "description": "Pad 4 [/+3V3_D] of U601 on F.Cu",
+                    "description": "Track [/+3V3_D] on F.Cu, length 1.3435 mm",
                     "pos": {
-                        "x": 135.45,
-                        "y": 67.8625
+                        "x": 134.5,
+                        "y": 66.912499
                     },
-                    "uuid": "e1c795d6-3d74-4476-978e-21df23f0f9d1"
+                    "uuid": "cdebab2e-b7be-5fda-8317-286d0132afef"
                 }
             ],
             "severity": "error",
@@ -1094,12 +1094,12 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Pad 7 [/RGB565 and capacitive touch/TOUCH_RST_N] of J1002 on F.Cu",
+                    "description": "Track [/RGB565 and capacitive touch/TOUCH_RST_N] on F.Cu, length 0.8500 mm",
                     "pos": {
                         "x": 152.25,
                         "y": 56.15
                     },
-                    "uuid": "e5021cdc-6631-4d25-8117-8c7a8bbd7834"
+                    "uuid": "28417b7a-ebda-566b-99e7-760637cca0c5"
                 },
                 {
                     "description": "Pad 2 [/RGB565 and capacitive touch/TOUCH_RST_N] of R1025 on F.Cu",
@@ -1117,12 +1117,12 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Track [/Bare ESP32-P4 support/MCU_FLASH_VDD] on F.Cu, length 0.0450 mm",
+                    "description": "Pad 1 [/Bare ESP32-P4 support/MCU_FLASH_VDD] of C714 on F.Cu",
                     "pos": {
                         "x": 120.22,
-                        "y": 91.955
+                        "y": 92.0
                     },
-                    "uuid": "238f0d9c-8798-5c8d-aafe-7933da342217"
+                    "uuid": "f160bb3d-b52c-4ef0-bd5e-cf1a9b0cee4c"
                 },
                 {
                     "description": "Pad 1 [/Bare ESP32-P4 support/MCU_FLASH_VDD] of C722 on F.Cu",
@@ -1301,12 +1301,12 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Pad 6 [/RGB565 and capacitive touch/TOUCH_INT] of J1002 on F.Cu",
+                    "description": "Track [/RGB565 and capacitive touch/TOUCH_INT] on F.Cu, length 1.0500 mm",
                     "pos": {
                         "x": 151.75,
                         "y": 56.15
                     },
-                    "uuid": "e636a686-abf1-4f2a-a749-dc3c024b2386"
+                    "uuid": "409aaf0c-6b1f-547e-9162-ef16f7ec9c43"
                 },
                 {
                     "description": "Pad 2 [/RGB565 and capacitive touch/TOUCH_INT] of R1024 on F.Cu",
@@ -1600,12 +1600,12 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Pad 4 [/RGB565 and capacitive touch/TOUCH_SCL] of J1002 on F.Cu",
+                    "description": "Track [/RGB565 and capacitive touch/TOUCH_SCL] on F.Cu, length 1.0500 mm",
                     "pos": {
                         "x": 150.75,
                         "y": 56.15
                     },
-                    "uuid": "ddd907d6-884e-42a0-b1d0-557683e0d99e"
+                    "uuid": "dfe8d122-19c9-5569-9330-d2e4c4bbece1"
                 },
                 {
                     "description": "Pad 2 [/RGB565 and capacitive touch/TOUCH_SCL] of R1022 on F.Cu",
@@ -1794,8 +1794,8 @@
                 {
                     "description": "Pad 2 [/RGB565 and capacitive touch/LCD_R3] of R1012 on B.Cu",
                     "pos": {
-                        "x": 122.0,
-                        "y": 73.875
+                        "x": 128.699999,
+                        "y": 90.59
                     },
                     "uuid": "930c1db0-d8e5-4ae3-9b1d-10f3a1474eaa"
                 }
@@ -1817,8 +1817,8 @@
                 {
                     "description": "Pad 2 [/RGB565 and capacitive touch/LCD_R4] of R1013 on B.Cu",
                     "pos": {
-                        "x": 120.4,
-                        "y": 76.775
+                        "x": 122.625,
+                        "y": 80.83
                     },
                     "uuid": "06f37dbb-ee3a-48a5-94f5-16f75f498987"
                 }
@@ -1840,8 +1840,8 @@
                 {
                     "description": "Pad 2 [/RGB565 and capacitive touch/LCD_R5] of R1014 on B.Cu",
                     "pos": {
-                        "x": 120.4,
-                        "y": 73.775
+                        "x": 129.0,
+                        "y": 88.09
                     },
                     "uuid": "5c1d1b53-3398-4ba9-a01d-bdf4310f8eba"
                 }
@@ -1863,8 +1863,8 @@
                 {
                     "description": "Pad 2 [/RGB565 and capacitive touch/LCD_R6] of R1015 on B.Cu",
                     "pos": {
-                        "x": 118.9,
-                        "y": 78.175
+                        "x": 121.675,
+                        "y": 80.83
                     },
                     "uuid": "dcaa2b22-412c-4da0-a77d-abac8133578e"
                 }
@@ -1886,8 +1886,8 @@
                 {
                     "description": "Pad 2 [/RGB565 and capacitive touch/LCD_R7] of R1016 on B.Cu",
                     "pos": {
-                        "x": 118.9,
-                        "y": 75.075
+                        "x": 130.1,
+                        "y": 85.39
                     },
                     "uuid": "9d8690de-31bb-4f19-be65-1a0c29888c7f"
                 }
@@ -1910,7 +1910,7 @@
                     "description": "Pad 2 [/RGB565 and capacitive touch/LCD_G2] of R1006 on B.Cu",
                     "pos": {
                         "x": 126.6,
-                        "y": 75.075
+                        "y": 75.39
                     },
                     "uuid": "1cbc2095-c94f-4d74-9663-a40e032b1129"
                 }
@@ -1933,7 +1933,7 @@
                     "description": "Pad 2 [/RGB565 and capacitive touch/LCD_G3] of R1007 on B.Cu",
                     "pos": {
                         "x": 125.1,
-                        "y": 76.675
+                        "y": 76.99
                     },
                     "uuid": "7ee82a76-a331-42e3-938c-c0eaf52aafc2"
                 }
@@ -1956,7 +1956,7 @@
                     "description": "Pad 2 [/RGB565 and capacitive touch/LCD_G4] of R1008 on B.Cu",
                     "pos": {
                         "x": 125.1,
-                        "y": 73.675
+                        "y": 73.99
                     },
                     "uuid": "2acb18f5-7af9-473f-ab19-f9645a767bb5"
                 }
@@ -1978,8 +1978,8 @@
                 {
                     "description": "Pad 2 [/RGB565 and capacitive touch/LCD_G5] of R1009 on B.Cu",
                     "pos": {
-                        "x": 123.5,
-                        "y": 79.575
+                        "x": 123.6,
+                        "y": 79.89
                     },
                     "uuid": "c91ae2ff-8610-4e1e-b7cc-6625b78ae196"
                 }
@@ -2001,8 +2001,8 @@
                 {
                     "description": "Pad 2 [/RGB565 and capacitive touch/LCD_G6] of R1010 on B.Cu",
                     "pos": {
-                        "x": 123.6,
-                        "y": 74.575
+                        "x": 129.0,
+                        "y": 85.89
                     },
                     "uuid": "1e2f352a-8141-4c2a-975d-e4f1a56844a8"
                 }
@@ -2025,7 +2025,7 @@
                     "description": "Pad 2 [/RGB565 and capacitive touch/LCD_G7] of R1011 on B.Cu",
                     "pos": {
                         "x": 121.9,
-                        "y": 76.875
+                        "y": 77.19
                     },
                     "uuid": "c292824e-59e4-49b3-b34a-da7efc3572ce"
                 }
@@ -2048,7 +2048,7 @@
                     "description": "Pad 2 [/RGB565 and capacitive touch/LCD_B3] of R1001 on B.Cu",
                     "pos": {
                         "x": 130.699999,
-                        "y": 78.175
+                        "y": 78.49
                     },
                     "uuid": "11f17c04-93fb-4816-9365-c8027e1c6dc0"
                 }
@@ -2071,7 +2071,7 @@
                     "description": "Pad 2 [/RGB565 and capacitive touch/LCD_B4] of R1002 on B.Cu",
                     "pos": {
                         "x": 130.3,
-                        "y": 75.075
+                        "y": 75.39
                     },
                     "uuid": "b79e51b1-5843-44e1-bdda-467f15ff1d3f"
                 }
@@ -2094,7 +2094,7 @@
                     "description": "Pad 2 [/RGB565 and capacitive touch/LCD_B5] of R1003 on B.Cu",
                     "pos": {
                         "x": 128.5,
-                        "y": 76.975
+                        "y": 77.39
                     },
                     "uuid": "7b9a5357-fdcf-4dc7-9d97-1e1726dcf2bc"
                 }
@@ -2117,7 +2117,7 @@
                     "description": "Pad 2 [/RGB565 and capacitive touch/LCD_B6] of R1004 on B.Cu",
                     "pos": {
                         "x": 128.4,
-                        "y": 73.975
+                        "y": 75.44
                     },
                     "uuid": "a18b342a-130c-40b1-842c-ff246b226cb1"
                 }
@@ -2139,8 +2139,8 @@
                 {
                     "description": "Pad 2 [/RGB565 and capacitive touch/LCD_B7] of R1005 on B.Cu",
                     "pos": {
-                        "x": 126.6,
-                        "y": 78.675
+                        "x": 126.85,
+                        "y": 79.305
                     },
                     "uuid": "08d97498-f092-47e7-8ae1-53fb8043dcd3"
                 }
@@ -2833,374 +2833,6 @@
                         "y": 90.15
                     },
                     "uuid": "fc46eb9a-de0e-44cf-a3b4-32c633fd75c5"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "Pad 80 [/MCU_LCD_B3] of U701 on F.Cu",
-                    "pos": {
-                        "x": 128.025,
-                        "y": 81.1
-                    },
-                    "uuid": "10d227e0-ea4d-4d05-bc13-a20ef602c7c6"
-                },
-                {
-                    "description": "Pad 1 [/MCU_LCD_B3] of R1001 on B.Cu",
-                    "pos": {
-                        "x": 130.699999,
-                        "y": 79.825
-                    },
-                    "uuid": "33f8e427-47f6-43eb-8a4d-fb3ccaa237c3"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "Pad 81 [/MCU_LCD_B4] of U701 on F.Cu",
-                    "pos": {
-                        "x": 127.675,
-                        "y": 81.1
-                    },
-                    "uuid": "a57c4623-48de-4aad-8443-8552d8b9edb7"
-                },
-                {
-                    "description": "Pad 1 [/MCU_LCD_B4] of R1002 on B.Cu",
-                    "pos": {
-                        "x": 130.3,
-                        "y": 76.725
-                    },
-                    "uuid": "03650381-6774-415e-8f64-e0c57b791ce1"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "Pad 82 [/MCU_LCD_B5] of U701 on F.Cu",
-                    "pos": {
-                        "x": 127.325,
-                        "y": 81.1
-                    },
-                    "uuid": "b20a99b4-89f8-4b75-99cb-7cf4bc08596d"
-                },
-                {
-                    "description": "Pad 1 [/MCU_LCD_B5] of R1003 on B.Cu",
-                    "pos": {
-                        "x": 128.5,
-                        "y": 78.625
-                    },
-                    "uuid": "3ae6ca3a-c5fb-40bf-b6d2-1eee00f9e4fc"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "Pad 83 [/MCU_LCD_B6] of U701 on F.Cu",
-                    "pos": {
-                        "x": 126.975,
-                        "y": 81.1
-                    },
-                    "uuid": "67cdb087-4bed-4b8b-ae78-56df2b067252"
-                },
-                {
-                    "description": "Pad 1 [/MCU_LCD_B6] of R1004 on B.Cu",
-                    "pos": {
-                        "x": 128.4,
-                        "y": 75.625
-                    },
-                    "uuid": "972f67e2-75f6-4320-b539-45e013d97b2b"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "Pad 1 [/MCU_LCD_B7] of R1005 on B.Cu",
-                    "pos": {
-                        "x": 126.6,
-                        "y": 80.325
-                    },
-                    "uuid": "364a6c60-33b2-4793-afe1-adc6afab4c7b"
-                },
-                {
-                    "description": "Pad 84 [/MCU_LCD_B7] of U701 on F.Cu",
-                    "pos": {
-                        "x": 126.625,
-                        "y": 81.1
-                    },
-                    "uuid": "0626b27d-3176-4708-b610-c91aa6d4eafb"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "Pad 86 [/MCU_LCD_G2] of U701 on F.Cu",
-                    "pos": {
-                        "x": 125.925,
-                        "y": 81.1
-                    },
-                    "uuid": "5cd95c45-98a9-4ef7-afba-9a33e6c69d22"
-                },
-                {
-                    "description": "Pad 1 [/MCU_LCD_G2] of R1006 on B.Cu",
-                    "pos": {
-                        "x": 126.6,
-                        "y": 76.725
-                    },
-                    "uuid": "7dea2530-319a-4bdf-a8b5-fc7cf7e4b6f4"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "Pad 1 [/MCU_LCD_G3] of R1007 on B.Cu",
-                    "pos": {
-                        "x": 125.1,
-                        "y": 78.325
-                    },
-                    "uuid": "e0182245-8a60-4485-9373-cf1c2a8480bd"
-                },
-                {
-                    "description": "Pad 87 [/MCU_LCD_G3] of U701 on F.Cu",
-                    "pos": {
-                        "x": 125.575,
-                        "y": 81.1
-                    },
-                    "uuid": "167db655-6729-46e5-9860-29547b811ae3"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "Pad 1 [/MCU_LCD_G4] of R1008 on B.Cu",
-                    "pos": {
-                        "x": 125.1,
-                        "y": 75.325
-                    },
-                    "uuid": "c9c2f8f2-1ff5-40c5-9cc7-2a88a641602f"
-                },
-                {
-                    "description": "Pad 88 [/MCU_LCD_G4] of U701 on F.Cu",
-                    "pos": {
-                        "x": 125.225,
-                        "y": 81.1
-                    },
-                    "uuid": "47d349ed-e456-45ed-b4be-b842fb6d8805"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "Pad 1 [/MCU_LCD_G5] of R1009 on B.Cu",
-                    "pos": {
-                        "x": 123.5,
-                        "y": 81.225
-                    },
-                    "uuid": "1b648d7e-5c57-42ec-879c-244354a7efcf"
-                },
-                {
-                    "description": "Pad 89 [/MCU_LCD_G5] of U701 on F.Cu",
-                    "pos": {
-                        "x": 124.875,
-                        "y": 81.1
-                    },
-                    "uuid": "9fb8fbf6-81ce-4e09-89b2-5b02cc4ef9d3"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "Pad 1 [/MCU_LCD_G6] of R1010 on B.Cu",
-                    "pos": {
-                        "x": 123.6,
-                        "y": 76.225
-                    },
-                    "uuid": "1f3b6e84-df2c-41ac-9a5b-123f94ac0117"
-                },
-                {
-                    "description": "Pad 90 [/MCU_LCD_G6] of U701 on F.Cu",
-                    "pos": {
-                        "x": 124.525,
-                        "y": 81.1
-                    },
-                    "uuid": "283541d4-2c7b-4db8-b11f-d306a015d937"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "Pad 1 [/MCU_LCD_G7] of R1011 on B.Cu",
-                    "pos": {
-                        "x": 121.9,
-                        "y": 78.525
-                    },
-                    "uuid": "23d5b926-610a-4742-9777-afba5eff4bdf"
-                },
-                {
-                    "description": "Pad 92 [/MCU_LCD_G7] of U701 on F.Cu",
-                    "pos": {
-                        "x": 123.825,
-                        "y": 81.1
-                    },
-                    "uuid": "1c49a1a0-4e56-4e77-b9e6-34964f493de7"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "Pad 1 [/MCU_LCD_R3] of R1012 on B.Cu",
-                    "pos": {
-                        "x": 122.0,
-                        "y": 75.525
-                    },
-                    "uuid": "62632130-e1d7-4066-9a70-0c0841883fa4"
-                },
-                {
-                    "description": "Pad 93 [/MCU_LCD_R3] of U701 on F.Cu",
-                    "pos": {
-                        "x": 123.475,
-                        "y": 81.1
-                    },
-                    "uuid": "54869b2d-fb20-47de-81f4-c0a6374c88eb"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "Pad 1 [/MCU_LCD_R4] of R1013 on B.Cu",
-                    "pos": {
-                        "x": 120.4,
-                        "y": 78.425
-                    },
-                    "uuid": "c2943e3d-3505-4ffb-82e2-3530993621ec"
-                },
-                {
-                    "description": "Pad 94 [/MCU_LCD_R4] of U701 on F.Cu",
-                    "pos": {
-                        "x": 123.125,
-                        "y": 81.1
-                    },
-                    "uuid": "0d5c8dec-bb17-4ff1-b335-63dcbff7fbf0"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "Pad 1 [/MCU_LCD_R5] of R1014 on B.Cu",
-                    "pos": {
-                        "x": 120.4,
-                        "y": 75.425
-                    },
-                    "uuid": "53ee58db-5c7c-4ea9-9fdb-45338557d59e"
-                },
-                {
-                    "description": "Pad 95 [/MCU_LCD_R5] of U701 on F.Cu",
-                    "pos": {
-                        "x": 122.775,
-                        "y": 81.1
-                    },
-                    "uuid": "a303a32b-ee80-4760-b616-84ebbce12206"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "Pad 1 [/MCU_LCD_R6] of R1015 on B.Cu",
-                    "pos": {
-                        "x": 118.9,
-                        "y": 79.825
-                    },
-                    "uuid": "4fe9ba8c-2c2d-4e91-b903-596d30c78144"
-                },
-                {
-                    "description": "Pad 97 [/MCU_LCD_R6] of U701 on F.Cu",
-                    "pos": {
-                        "x": 122.075,
-                        "y": 81.1
-                    },
-                    "uuid": "e912c05d-a860-436b-beb7-92eaff065555"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "Pad 1 [/MCU_LCD_R7] of R1016 on B.Cu",
-                    "pos": {
-                        "x": 118.9,
-                        "y": 76.725
-                    },
-                    "uuid": "05e1f64c-f7c4-41e2-8085-681bd2ee4784"
-                },
-                {
-                    "description": "Pad 98 [/MCU_LCD_R7] of U701 on F.Cu",
-                    "pos": {
-                        "x": 121.725,
-                        "y": 81.1
-                    },
-                    "uuid": "60da28d2-d71a-43a0-ad7f-78692c723d70"
                 }
             ],
             "severity": "error",
@@ -11061,7 +10693,7 @@
                     "uuid": "d1d67483-ee0a-4d1c-beb6-11b05577f71d"
                 },
                 {
-                    "description": "Pad 55 [unconnected-(U701C-GPIO26-Pad55)] of U701 on F.Cu",
+                    "description": "Pad 55 [/MCU_LCD_R3] of U701 on F.Cu",
                     "pos": {
                         "x": 128.9,
                         "y": 89.675
@@ -11544,7 +11176,7 @@
                     "uuid": "80c58a23-36d4-458d-8007-c0c3d4e7b5d7"
                 },
                 {
-                    "description": "Pad 63 [unconnected-(U701C-GPIO32-Pad63)] of U701 on F.Cu",
+                    "description": "Pad 63 [/MCU_LCD_G6] of U701 on F.Cu",
                     "pos": {
                         "x": 128.9,
                         "y": 86.875

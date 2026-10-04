@@ -1,0 +1,144 @@
+{
+  "status": "PASS sixteen complete RGB MCU-to-source-damping nets; output routing unfinished",
+  "track_segments": 89,
+  "vias": 18,
+  "via_in_pad_sites": [
+    {
+      "pad": "R1005.1",
+      "position": [
+        126.875,
+        80.325
+      ]
+    },
+    {
+      "pad": "R1002.1",
+      "position": [
+        130.325,
+        76.4
+      ]
+    },
+    {
+      "pad": "R1003.1",
+      "position": [
+        128.525,
+        78.4
+      ]
+    },
+    {
+      "pad": "R1004.1",
+      "position": [
+        128.425,
+        76.45
+      ]
+    },
+    {
+      "pad": "R1008.1",
+      "position": [
+        125.075,
+        75.05
+      ]
+    },
+    {
+      "pad": "R1013.1",
+      "position": [
+        122.525,
+        81.85
+      ]
+    },
+    {
+      "pad": "R1015.1",
+      "position": [
+        121.775,
+        81.85
+      ]
+    }
+  ],
+  "routed_planar_length_mm": {
+    "/MCU_LCD_B3": 6.337584431766755,
+    "/MCU_LCD_B4": 7.5731182661673815,
+    "/MCU_LCD_B5": 3.2239820988833867,
+    "/MCU_LCD_B6": 7.026063626900518,
+    "/MCU_LCD_B7": 0.8785533905932738,
+    "/MCU_LCD_G2": 5.182560742646078,
+    "/MCU_LCD_G3": 5.020428708290114,
+    "/MCU_LCD_G4": 6.209768536510292,
+    "/MCU_LCD_G5": 2.9520093264811673,
+    "/MCU_LCD_R3": 2.9842381084693588,
+    "/MCU_LCD_R4": 1.1284021952268395,
+    "/MCU_LCD_R6": 0.8742640687119286,
+    "/MCU_LCD_G7": 8.16037820195128,
+    "/MCU_LCD_G6": 1.6357103852289714,
+    "/MCU_LCD_R5": 1.7057103852289714,
+    "/MCU_LCD_R7": 3.5706346257174575
+  },
+  "physically_connected_local_groups": {
+    "/MCU_LCD_B3:complete": [
+      "R1001.1",
+      "U701.80"
+    ],
+    "/MCU_LCD_B4:complete": [
+      "R1002.1",
+      "U701.81"
+    ],
+    "/MCU_LCD_B5:complete": [
+      "R1003.1",
+      "U701.82"
+    ],
+    "/MCU_LCD_B6:complete": [
+      "R1004.1",
+      "U701.83"
+    ],
+    "/MCU_LCD_B7:complete": [
+      "R1005.1",
+      "U701.84"
+    ],
+    "/MCU_LCD_G2:complete": [
+      "R1006.1",
+      "U701.86"
+    ],
+    "/MCU_LCD_G3:complete": [
+      "R1007.1",
+      "U701.87"
+    ],
+    "/MCU_LCD_G4:complete": [
+      "R1008.1",
+      "U701.88"
+    ],
+    "/MCU_LCD_G5:complete": [
+      "R1009.1",
+      "U701.89"
+    ],
+    "/MCU_LCD_R3:complete": [
+      "R1012.1",
+      "U701.55"
+    ],
+    "/MCU_LCD_R4:complete": [
+      "R1013.1",
+      "U701.94"
+    ],
+    "/MCU_LCD_R6:complete": [
+      "R1015.1",
+      "U701.97"
+    ],
+    "/MCU_LCD_G7:complete": [
+      "R1011.1",
+      "U701.92"
+    ],
+    "/MCU_LCD_G6:complete": [
+      "R1010.1",
+      "U701.63"
+    ],
+    "/MCU_LCD_R5:complete": [
+      "R1014.1",
+      "U701.57"
+    ],
+    "/MCU_LCD_R7:complete": [
+      "R1016.1",
+      "U701.60"
+    ]
+  },
+  "limits": [
+    "RGB source connections only; resistor-to-FPC outputs and timing/touch routing remain unfinished.",
+    "Geometry and native continuity do not qualify source damping, routed source length, loaded RGB timings, stackup/returns/coupling or fabrication/assembly."
+  ]
+}

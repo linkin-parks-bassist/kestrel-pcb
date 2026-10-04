@@ -13,17 +13,24 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--trial-output',type=Path);args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--trial-output',type=Path);p.add_argument('--replace-from',type=Path,help='Previous manifest for explicitly guarded unrouted pose revision');args=p.parse_args()
     data_file='display-rgb-damping-placement.json';report_key='provisional_display_rgb_damping_references'
     data = json.loads((ROOT/'electrical'/data_file).read_text())
     path = ROOT/'electrical/kestrel-revb.kicad_pcb'
     board = pcbnew.LoadBoard(str(path))
     fps = {fp.GetReference(): fp for fp in board.GetFootprints()}
     conn = board.GetConnectivity(); conn.Build(board)
+    previous=json.loads(args.replace_from.read_text()) if args.replace_from else data
+    assert previous['layer']==data['layer'] and set(previous['poses'])==set(data['poses'])
+    if args.replace_from:
+        for ref in data['poses']:
+            assert all(all(item.m_Uuid.AsString()==pad.m_Uuid.AsString() for item in conn.GetConnectedItems(pad)) for pad in fps[ref].Pads()), f'{ref} already routed'
+
     for ref, (x, y, angle) in data['poses'].items():
         fp = fps[ref]
-        target = pcbnew.VECTOR2I(pcbnew.FromMM(100+x), pcbnew.FromMM(100-y))
-        delta = (fp.GetOrientationDegrees()-angle+180) % 360 - 180
+        old_x,old_y,old_angle=previous['poses'][ref]
+        target = pcbnew.VECTOR2I(pcbnew.FromMM(100+old_x), pcbnew.FromMM(100-old_y))
+        delta = (fp.GetOrientationDegrees()-old_angle+180) % 360 - 180
         if pcbnew.ToMM(fp.GetPosition().x) < 190 and (fp.GetPosition() != target or abs(delta) > .001):
             raise ValueError(f'Refusing to reset manually changed {ref}')
         assert fp.GetLayer() == (pcbnew.F_Cu if pcbnew.ToMM(fp.GetPosition().x) >= 190 else pcbnew.B_Cu), ref

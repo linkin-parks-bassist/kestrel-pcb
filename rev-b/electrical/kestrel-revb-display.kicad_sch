@@ -2238,7 +2238,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 35.56 187.198 90)
 			(hide yes)
 			(show_name no)
@@ -2249,7 +2249,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL"
 			(at 35.56 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -2285,7 +2285,7 @@
 				)
 			)
 		)
-		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+		(property "Rating" "33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"
 			(at 35.56 185.42000000000002 0)
 			(effects
 				(font
@@ -2296,6 +2296,33 @@
 		)
 		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 35.56 185.42000000000002 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402FR-0733RL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C138002"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2337,7 +2364,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 124.46 187.198 90)
 			(hide yes)
 			(show_name no)
@@ -2348,7 +2375,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL"
 			(at 124.46 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -2384,7 +2411,7 @@
 				)
 			)
 		)
-		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+		(property "Rating" "33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"
 			(at 124.46000000000001 185.42000000000002 0)
 			(effects
 				(font
@@ -2395,6 +2422,33 @@
 		)
 		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 124.46000000000001 185.42000000000002 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402FR-0733RL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C138002"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2436,7 +2490,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 214.63 187.198 90)
 			(hide yes)
 			(show_name no)
@@ -2447,7 +2501,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL"
 			(at 214.63 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -2483,7 +2537,7 @@
 				)
 			)
 		)
-		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+		(property "Rating" "33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"
 			(at 214.63 185.42000000000002 0)
 			(effects
 				(font
@@ -2494,6 +2548,33 @@
 		)
 		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 214.63 185.42000000000002 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402FR-0733RL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C138002"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2535,7 +2616,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 304.8 187.198 90)
 			(hide yes)
 			(show_name no)
@@ -2546,7 +2627,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL"
 			(at 304.8 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -2582,7 +2663,7 @@
 				)
 			)
 		)
-		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+		(property "Rating" "33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"
 			(at 304.8 185.42000000000002 0)
 			(effects
 				(font
@@ -2593,6 +2674,33 @@
 		)
 		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 304.8 185.42000000000002 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402FR-0733RL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C138002"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2634,7 +2742,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 394.97 187.198 90)
 			(hide yes)
 			(show_name no)
@@ -2645,7 +2753,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL"
 			(at 394.97 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -2681,7 +2789,7 @@
 				)
 			)
 		)
-		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+		(property "Rating" "33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"
 			(at 394.97 185.42000000000002 0)
 			(effects
 				(font
@@ -2692,6 +2800,33 @@
 		)
 		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 394.97 185.42000000000002 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402FR-0733RL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C138002"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2733,7 +2868,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 485.14 187.198 90)
 			(hide yes)
 			(show_name no)
@@ -2744,7 +2879,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL"
 			(at 485.14 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -2780,7 +2915,7 @@
 				)
 			)
 		)
-		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+		(property "Rating" "33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"
 			(at 485.14 185.42000000000002 0)
 			(effects
 				(font
@@ -2791,6 +2926,33 @@
 		)
 		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 485.14 185.42000000000002 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402FR-0733RL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C138002"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2832,7 +2994,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 35.56 226.568 90)
 			(hide yes)
 			(show_name no)
@@ -2843,7 +3005,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL"
 			(at 35.56 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -2879,7 +3041,7 @@
 				)
 			)
 		)
-		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+		(property "Rating" "33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"
 			(at 35.56 224.79 0)
 			(effects
 				(font
@@ -2890,6 +3052,33 @@
 		)
 		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 35.56 224.79 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402FR-0733RL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C138002"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2931,7 +3120,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 124.46 226.568 90)
 			(hide yes)
 			(show_name no)
@@ -2942,7 +3131,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL"
 			(at 124.46 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -2978,7 +3167,7 @@
 				)
 			)
 		)
-		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+		(property "Rating" "33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"
 			(at 124.46000000000001 224.79 0)
 			(effects
 				(font
@@ -2989,6 +3178,33 @@
 		)
 		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 124.46000000000001 224.79 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402FR-0733RL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C138002"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3030,7 +3246,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 214.63 226.568 90)
 			(hide yes)
 			(show_name no)
@@ -3041,7 +3257,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL"
 			(at 214.63 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -3077,7 +3293,7 @@
 				)
 			)
 		)
-		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+		(property "Rating" "33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"
 			(at 214.63 224.79 0)
 			(effects
 				(font
@@ -3088,6 +3304,33 @@
 		)
 		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 214.63 224.79 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402FR-0733RL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C138002"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3129,7 +3372,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 304.8 226.568 90)
 			(hide yes)
 			(show_name no)
@@ -3140,7 +3383,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL"
 			(at 304.8 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -3176,7 +3419,7 @@
 				)
 			)
 		)
-		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+		(property "Rating" "33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"
 			(at 304.8 224.79 0)
 			(effects
 				(font
@@ -3187,6 +3430,33 @@
 		)
 		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 304.8 224.79 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402FR-0733RL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C138002"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3228,7 +3498,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 394.97 226.568 90)
 			(hide yes)
 			(show_name no)
@@ -3239,7 +3509,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL"
 			(at 394.97 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -3275,7 +3545,7 @@
 				)
 			)
 		)
-		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+		(property "Rating" "33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"
 			(at 394.97 224.79 0)
 			(effects
 				(font
@@ -3286,6 +3556,33 @@
 		)
 		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 394.97 224.79 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402FR-0733RL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C138002"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3327,7 +3624,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 485.14 226.568 90)
 			(hide yes)
 			(show_name no)
@@ -3338,7 +3635,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL"
 			(at 485.14 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -3374,7 +3671,7 @@
 				)
 			)
 		)
-		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+		(property "Rating" "33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"
 			(at 485.14 224.79 0)
 			(effects
 				(font
@@ -3385,6 +3682,33 @@
 		)
 		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 485.14 224.79 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402FR-0733RL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C138002"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3426,7 +3750,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 35.56 267.208 90)
 			(hide yes)
 			(show_name no)
@@ -3437,7 +3761,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL"
 			(at 35.56 265.43 0)
 			(hide yes)
 			(show_name no)
@@ -3473,7 +3797,7 @@
 				)
 			)
 		)
-		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+		(property "Rating" "33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"
 			(at 35.56 265.43 0)
 			(effects
 				(font
@@ -3484,6 +3808,33 @@
 		)
 		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 35.56 265.43 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402FR-0733RL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C138002"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3525,7 +3876,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 124.46 267.208 90)
 			(hide yes)
 			(show_name no)
@@ -3536,7 +3887,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL"
 			(at 124.46 265.43 0)
 			(hide yes)
 			(show_name no)
@@ -3572,7 +3923,7 @@
 				)
 			)
 		)
-		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+		(property "Rating" "33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"
 			(at 124.46000000000001 265.43 0)
 			(effects
 				(font
@@ -3583,6 +3934,33 @@
 		)
 		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 124.46000000000001 265.43 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402FR-0733RL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C138002"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3624,7 +4002,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 214.63 267.208 90)
 			(hide yes)
 			(show_name no)
@@ -3635,7 +4013,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL"
 			(at 214.63 265.43 0)
 			(hide yes)
 			(show_name no)
@@ -3671,7 +4049,7 @@
 				)
 			)
 		)
-		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+		(property "Rating" "33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"
 			(at 214.63 265.43 0)
 			(effects
 				(font
@@ -3682,6 +4060,33 @@
 		)
 		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 214.63 265.43 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402FR-0733RL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C138002"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3723,7 +4128,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 304.8 267.208 90)
 			(hide yes)
 			(show_name no)
@@ -3734,7 +4139,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL"
 			(at 304.8 265.43 0)
 			(hide yes)
 			(show_name no)
@@ -3770,7 +4175,7 @@
 				)
 			)
 		)
-		(property "Rating" "33ohm / 1% / GPIO source damping starting value"
+		(property "Rating" "33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"
 			(at 304.8 265.43 0)
 			(effects
 				(font
@@ -3781,6 +4186,33 @@
 		)
 		(property "AssemblySide" "B.Cu / source damping passives; assembly qualification pending"
 			(at 304.8 265.43 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402FR-0733RL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C138002"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7694,7 +8126,7 @@
 		)
 		(uuid "ada892a1-de18-545d-b426-c3add86d8fb3")
 	)
-	(text "RGB565: GPIO39..43 -> B3..7; 44..49 -> G2..7; 50..54 -> R3..7. Low panel data bits grounded."
+	(text "RGB565: GPIO39..43 -> B3..7; GPIO44/45/46/47/32/49 -> G2..7; GPIO26/51/28/53/30 -> R3..7. Low panel data bits grounded."
 		(at 20 375 0)
 		(effects
 			(font
@@ -7702,7 +8134,7 @@
 			)
 			(justify left)
 		)
-		(uuid "b421273a-0403-52c5-8ed4-22efb0f9a6dd")
+		(uuid "5df55ce6-066c-56eb-959f-6afe2e1f0d9d")
 	)
 	(text "GPIO9 PCLK / 10 HSYNC / 11 VSYNC / 12 DE / 13 DISP. GPIO15 SCL / 16 SDA / 17 INT / 18 RESET."
 		(at 20 382 0)

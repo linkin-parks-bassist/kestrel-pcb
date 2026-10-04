@@ -9,7 +9,7 @@
         "2": "/RGB565 and capacitive touch/LCD_B3"
       },
       "mcu_source_pad": "80",
-      "source_pad_distance_mm": 2.963316
+      "source_pad_distance_mm": 3.111868
     },
     "R1002": {
       "pad_nets": {
@@ -17,7 +17,7 @@
         "2": "/RGB565 and capacitive touch/LCD_B4"
       },
       "mcu_source_pad": "81",
-      "source_pad_distance_mm": 5.102083
+      "source_pad_distance_mm": 5.374637
     },
     "R1003": {
       "pad_nets": {
@@ -25,7 +25,7 @@
         "2": "/RGB565 and capacitive touch/LCD_B5"
       },
       "mcu_source_pad": "82",
-      "source_pad_distance_mm": 2.739754
+      "source_pad_distance_mm": 2.935426
     },
     "R1004": {
       "pad_nets": {
@@ -33,7 +33,7 @@
         "2": "/RGB565 and capacitive touch/LCD_B6"
       },
       "mcu_source_pad": "83",
-      "source_pad_distance_mm": 5.657407
+      "source_pad_distance_mm": 4.853888
     },
     "R1005": {
       "pad_nets": {
@@ -41,7 +41,7 @@
         "2": "/RGB565 and capacitive touch/LCD_B7"
       },
       "mcu_source_pad": "84",
-      "source_pad_distance_mm": 0.775403
+      "source_pad_distance_mm": 0.807001
     },
     "R1006": {
       "pad_nets": {
@@ -49,7 +49,7 @@
         "2": "/RGB565 and capacitive touch/LCD_G2"
       },
       "mcu_source_pad": "86",
-      "source_pad_distance_mm": 4.426765
+      "source_pad_distance_mm": 4.738325
     },
     "R1007": {
       "pad_nets": {
@@ -57,7 +57,7 @@
         "2": "/RGB565 and capacitive touch/LCD_G3"
       },
       "mcu_source_pad": "87",
-      "source_pad_distance_mm": 2.81536
+      "source_pad_distance_mm": 3.126296
     },
     "R1008": {
       "pad_nets": {
@@ -65,7 +65,7 @@
         "2": "/RGB565 and capacitive touch/LCD_G4"
       },
       "mcu_source_pad": "88",
-      "source_pad_distance_mm": 5.776353
+      "source_pad_distance_mm": 6.091283
     },
     "R1009": {
       "pad_nets": {
@@ -73,15 +73,15 @@
         "2": "/RGB565 and capacitive touch/LCD_G5"
       },
       "mcu_source_pad": "89",
-      "source_pad_distance_mm": 1.38067
+      "source_pad_distance_mm": 1.289079
     },
     "R1010": {
       "pad_nets": {
         "1": "/MCU_LCD_G6",
         "2": "/RGB565 and capacitive touch/LCD_G6"
       },
-      "mcu_source_pad": "90",
-      "source_pad_distance_mm": 4.96198
+      "mcu_source_pad": "63",
+      "source_pad_distance_mm": 0.105948
     },
     "R1011": {
       "pad_nets": {
@@ -89,15 +89,15 @@
         "2": "/RGB565 and capacitive touch/LCD_G7"
       },
       "mcu_source_pad": "92",
-      "source_pad_distance_mm": 3.215004
+      "source_pad_distance_mm": 3.472424
     },
     "R1012": {
       "pad_nets": {
         "1": "/MCU_LCD_R3",
         "2": "/RGB565 and capacitive touch/LCD_R3"
       },
-      "mcu_source_pad": "93",
-      "source_pad_distance_mm": 5.766823
+      "mcu_source_pad": "55",
+      "source_pad_distance_mm": 1.945309
     },
     "R1013": {
       "pad_nets": {
@@ -105,15 +105,15 @@
         "2": "/RGB565 and capacitive touch/LCD_R4"
       },
       "mcu_source_pad": "94",
-      "source_pad_distance_mm": 3.81854
+      "source_pad_distance_mm": 0.901388
     },
     "R1014": {
       "pad_nets": {
         "1": "/MCU_LCD_R5",
         "2": "/RGB565 and capacitive touch/LCD_R5"
       },
-      "mcu_source_pad": "95",
-      "source_pad_distance_mm": 6.151931
+      "mcu_source_pad": "57",
+      "source_pad_distance_mm": 0.168003
     },
     "R1015": {
       "pad_nets": {
@@ -121,33 +121,62 @@
         "2": "/RGB565 and capacitive touch/LCD_R6"
       },
       "mcu_source_pad": "97",
-      "source_pad_distance_mm": 3.42144
+      "source_pad_distance_mm": 0.85
     },
     "R1016": {
       "pad_nets": {
         "1": "/MCU_LCD_R7",
         "2": "/RGB565 and capacitive touch/LCD_R7"
       },
-      "mcu_source_pad": "98",
-      "source_pad_distance_mm": 5.207807
+      "mcu_source_pad": "60",
+      "source_pad_distance_mm": 1.932673
     }
   },
   "limits": [
     "6.5 mm straight-line pad-centre allocation is an engineering placement bound, not routed source-stub length or loaded SI/timing qualification.",
-    "Source/FPC routes remain unfinished; placement establishes no legal via sites.",
-    "Dual-side passive assembly, solder access, enclosure clearance, exact parts, source damping, return paths and loaded RGB timings remain unqualified."
+    "Placement alone establishes no legal via sites; the separate source checker owns routed topology.",
+    "Dual-side passive assembly, solder access, enclosure clearance, pulse derating, source damping, return paths and loaded RGB timings remain unqualified."
   ],
-  "preservation": {
-    "prior_copper_items": 2398,
-    "unrelated_footprint_poses_and_pads": "unchanged",
-    "target_footprint_and_pad_ids_nets_sizes_hierarchy": "preserved; assembly side deliberately B.Cu",
-    "net_names_and_complete_xml_membership": "unchanged",
-    "zone_identity": "unchanged"
+  "preserved_prior_copper_items": 2398,
+  "preserved_unrelated_footprints_and_pad_nets_except_declared_mcu_remap": true,
+  "preserved_rgb_resistor_uuids_pad_uuids_nets_hierarchy_and_b_side": true,
+  "preserved_zone_identity": true,
+  "mcu_source_remap": {
+    "/MCU_LCD_G6": {
+      "before_pad": "90",
+      "current_pad": "63"
+    },
+    "/MCU_LCD_R3": {
+      "before_pad": "93",
+      "current_pad": "55"
+    },
+    "/MCU_LCD_R5": {
+      "before_pad": "95",
+      "current_pad": "57"
+    },
+    "/MCU_LCD_R7": {
+      "before_pad": "98",
+      "current_pad": "60"
+    }
   },
+  "net_membership_review": "PASS exactly four RGB source pad substitutions and four NC name substitutions; other 288 net memberships unchanged",
   "native_drc": {
     "violations": 413,
-    "reported_unconnected_items": 139,
-    "copper_mask_hole_courtyard_edge_gate": "PASS",
-    "limits": "Existing silkscreen/drill-profile issues and unfinished connectivity remain; capped report is not exact global connection count."
-  }
+    "reported_unconnected": 123,
+    "types": {
+      "silk_overlap": 199,
+      "silk_over_copper": 199,
+      "silk_edge_clearance": 9,
+      "drill_out_of_range": 6
+    },
+    "copper_mask_hole_courtyard_edge_dangling_clear": true
+  },
+  "source_routing_review": "display-rgb-source-review.json",
+  "current_copper_counts": {
+    "F.Cu": 1104,
+    "via": 598,
+    "B.Cu": 386,
+    "In2.Cu": 417
+  },
+  "repeat_build_added_copper_items": 0
 }

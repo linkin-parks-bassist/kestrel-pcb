@@ -13,17 +13,17 @@
     ],
     "R1003": [
       28.5,
-      22.2,
+      22.1,
       90
     ],
     "R1004": [
       28.4,
-      25.2,
+      24.05,
       90
     ],
     "R1005": [
-      26.6,
-      20.5,
+      26.85,
+      20.185,
       90
     ],
     "R1006": [
@@ -42,13 +42,13 @@
       90
     ],
     "R1009": [
-      23.5,
+      23.6,
       19.6,
       90
     ],
     "R1010": [
-      23.6,
-      24.6,
+      29.0,
+      13.6,
       90
     ],
     "R1011": [
@@ -57,33 +57,33 @@
       90
     ],
     "R1012": [
-      22.0,
-      25.3,
+      28.7,
+      8.9,
       90
     ],
     "R1013": [
-      20.4,
-      22.4,
+      22.625,
+      18.66,
       90
     ],
     "R1014": [
-      20.4,
-      25.4,
+      29.0,
+      11.4,
       90
     ],
     "R1015": [
-      18.9,
-      21.0,
+      21.675,
+      18.66,
       90
     ],
     "R1016": [
-      18.9,
-      24.1,
+      30.1,
+      14.1,
       90
     ]
   },
   "limits": [
-    "Sixteen provisional RGB source damping poses; source/FPC connections and loaded timing are unfinished.",
-    "Underside passive assembly, access and enclosure clearance require qualification; no via sites are established by placement."
+    "Sixteen provisional 0402 RGB source damping poses; loaded timing and FPC output routing remain unfinished.",
+    "Underside assembly, via-in-pad process, access and enclosure clearance require qualification."
   ]
 }

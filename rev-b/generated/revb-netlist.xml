@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/home/david/Projects/kestrel/kestrel_pcb/rev-b/electrical/kestrel-revb.kicad_sch</source>
-    <date>2026-10-04T12:35:36</date>
+    <date>2026-10-04T13:30:27</date>
     <tool>Eeschema 10.0.6-10.0.6~ubuntu24.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -4243,18 +4243,25 @@
     </comp>
     <comp ref="R1001">
       <value>33ohm</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="Rating">33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value</field>
         <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC0402FR-0733RL</field>
+        <field name="LCSC">C138002</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="Rating" value="33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"/>
       <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC0402FR-0733RL"/>
+      <property name="LCSC" value="C138002"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4272,18 +4279,25 @@
     </comp>
     <comp ref="R1002">
       <value>33ohm</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="Rating">33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value</field>
         <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC0402FR-0733RL</field>
+        <field name="LCSC">C138002</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="Rating" value="33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"/>
       <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC0402FR-0733RL"/>
+      <property name="LCSC" value="C138002"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4301,18 +4315,25 @@
     </comp>
     <comp ref="R1003">
       <value>33ohm</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="Rating">33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value</field>
         <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC0402FR-0733RL</field>
+        <field name="LCSC">C138002</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="Rating" value="33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"/>
       <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC0402FR-0733RL"/>
+      <property name="LCSC" value="C138002"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4330,18 +4351,25 @@
     </comp>
     <comp ref="R1004">
       <value>33ohm</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="Rating">33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value</field>
         <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC0402FR-0733RL</field>
+        <field name="LCSC">C138002</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="Rating" value="33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"/>
       <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC0402FR-0733RL"/>
+      <property name="LCSC" value="C138002"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4359,18 +4387,25 @@
     </comp>
     <comp ref="R1005">
       <value>33ohm</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="Rating">33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value</field>
         <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC0402FR-0733RL</field>
+        <field name="LCSC">C138002</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="Rating" value="33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"/>
       <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC0402FR-0733RL"/>
+      <property name="LCSC" value="C138002"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4388,18 +4423,25 @@
     </comp>
     <comp ref="R1006">
       <value>33ohm</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="Rating">33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value</field>
         <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC0402FR-0733RL</field>
+        <field name="LCSC">C138002</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="Rating" value="33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"/>
       <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC0402FR-0733RL"/>
+      <property name="LCSC" value="C138002"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4417,18 +4459,25 @@
     </comp>
     <comp ref="R1007">
       <value>33ohm</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="Rating">33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value</field>
         <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC0402FR-0733RL</field>
+        <field name="LCSC">C138002</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="Rating" value="33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"/>
       <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC0402FR-0733RL"/>
+      <property name="LCSC" value="C138002"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4446,18 +4495,25 @@
     </comp>
     <comp ref="R1008">
       <value>33ohm</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="Rating">33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value</field>
         <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC0402FR-0733RL</field>
+        <field name="LCSC">C138002</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="Rating" value="33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"/>
       <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC0402FR-0733RL"/>
+      <property name="LCSC" value="C138002"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4475,18 +4531,25 @@
     </comp>
     <comp ref="R1009">
       <value>33ohm</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="Rating">33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value</field>
         <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC0402FR-0733RL</field>
+        <field name="LCSC">C138002</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="Rating" value="33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"/>
       <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC0402FR-0733RL"/>
+      <property name="LCSC" value="C138002"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4504,18 +4567,25 @@
     </comp>
     <comp ref="R1010">
       <value>33ohm</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="Rating">33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value</field>
         <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC0402FR-0733RL</field>
+        <field name="LCSC">C138002</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="Rating" value="33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"/>
       <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC0402FR-0733RL"/>
+      <property name="LCSC" value="C138002"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4533,18 +4603,25 @@
     </comp>
     <comp ref="R1011">
       <value>33ohm</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="Rating">33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value</field>
         <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC0402FR-0733RL</field>
+        <field name="LCSC">C138002</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="Rating" value="33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"/>
       <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC0402FR-0733RL"/>
+      <property name="LCSC" value="C138002"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4562,18 +4639,25 @@
     </comp>
     <comp ref="R1012">
       <value>33ohm</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="Rating">33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value</field>
         <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC0402FR-0733RL</field>
+        <field name="LCSC">C138002</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="Rating" value="33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"/>
       <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC0402FR-0733RL"/>
+      <property name="LCSC" value="C138002"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4591,18 +4675,25 @@
     </comp>
     <comp ref="R1013">
       <value>33ohm</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="Rating">33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value</field>
         <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC0402FR-0733RL</field>
+        <field name="LCSC">C138002</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="Rating" value="33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"/>
       <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC0402FR-0733RL"/>
+      <property name="LCSC" value="C138002"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4620,18 +4711,25 @@
     </comp>
     <comp ref="R1014">
       <value>33ohm</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="Rating">33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value</field>
         <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC0402FR-0733RL</field>
+        <field name="LCSC">C138002</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="Rating" value="33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"/>
       <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC0402FR-0733RL"/>
+      <property name="LCSC" value="C138002"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4649,18 +4747,25 @@
     </comp>
     <comp ref="R1015">
       <value>33ohm</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="Rating">33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value</field>
         <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC0402FR-0733RL</field>
+        <field name="LCSC">C138002</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="Rating" value="33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"/>
       <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC0402FR-0733RL"/>
+      <property name="LCSC" value="C138002"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4678,18 +4783,25 @@
     </comp>
     <comp ref="R1016">
       <value>33ohm</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Rating">33ohm / 1% / GPIO source damping starting value</field>
+        <field name="Rating">33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value</field>
         <field name="AssemblySide">B.Cu / source damping passives; assembly qualification pending</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC0402FR-0733RL</field>
+        <field name="LCSC">C138002</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0733RL</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Rating" value="33ohm / 1% / GPIO source damping starting value"/>
+      <property name="Rating" value="33ohm / 1% / 0.063W at 70C / 50V limiting voltage / GPIO source damping starting value"/>
       <property name="AssemblySide" value="B.Cu / source damping passives; assembly qualification pending"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC0402FR-0733RL"/>
+      <property name="LCSC" value="C138002"/>
       <property name="Sheetname" value="RGB565 and capacitive touch"/>
       <property name="Sheetfile" value="kestrel-revb-display.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -9424,7 +9536,7 @@
       <property name="Sheetname" value="Bare ESP32-P4 support"/>
       <property name="Sheetfile" value="kestrel-revb-mcu.kicad_sch"/>
       <sheetpath names="/Bare ESP32-P4 support/" tstamps="/9e0e9646-7e11-5104-b685-21456547dc89/"/>
-      <tstamps>5b393e04-0644-505b-a483-8247d20f30f1 92b309fd-100a-573e-b0f6-65c59868464e 36695308-57a8-550e-b480-97668682def7 5f7ff9c2-2635-55cb-98ca-8f6af4845486 2c1e62ec-340d-5f77-ada2-4b54bc142d29</tstamps>
+      <tstamps>5b393e04-0644-505b-a483-8247d20f30f1 36695308-57a8-550e-b480-97668682def7 5f7ff9c2-2635-55cb-98ca-8f6af4845486 92b309fd-100a-573e-b0f6-65c59868464e 2c1e62ec-340d-5f77-ada2-4b54bc142d29</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -12381,7 +12493,7 @@
     </net>
     <net code="126" name="/MCU_LCD_G6" class="Default">
       <node ref="R1010" pin="1" pintype="passive"/>
-      <node ref="U701" pin="90" pinfunction="GPIO48_90" pintype="bidirectional"/>
+      <node ref="U701" pin="63" pinfunction="GPIO32_63" pintype="bidirectional"/>
     </net>
     <net code="127" name="/MCU_LCD_G7" class="Default">
       <node ref="R1011" pin="1" pintype="passive"/>
@@ -12397,7 +12509,7 @@
     </net>
     <net code="130" name="/MCU_LCD_R3" class="Default">
       <node ref="R1012" pin="1" pintype="passive"/>
-      <node ref="U701" pin="93" pinfunction="GPIO50_93" pintype="bidirectional"/>
+      <node ref="U701" pin="55" pinfunction="GPIO26_55" pintype="bidirectional"/>
     </net>
     <net code="131" name="/MCU_LCD_R4" class="Default">
       <node ref="R1013" pin="1" pintype="passive"/>
@@ -12405,7 +12517,7 @@
     </net>
     <net code="132" name="/MCU_LCD_R5" class="Default">
       <node ref="R1014" pin="1" pintype="passive"/>
-      <node ref="U701" pin="95" pinfunction="GPIO52_95" pintype="bidirectional"/>
+      <node ref="U701" pin="57" pinfunction="GPIO28_57" pintype="bidirectional"/>
     </net>
     <net code="133" name="/MCU_LCD_R6" class="Default">
       <node ref="R1015" pin="1" pintype="passive"/>
@@ -12413,7 +12525,7 @@
     </net>
     <net code="134" name="/MCU_LCD_R7" class="Default">
       <node ref="R1016" pin="1" pintype="passive"/>
-      <node ref="U701" pin="98" pinfunction="GPIO54_98" pintype="bidirectional"/>
+      <node ref="U701" pin="60" pinfunction="GPIO30_60" pintype="bidirectional"/>
     </net>
     <net code="135" name="/MCU_LCD_VSYNC" class="Default">
       <node ref="R1019" pin="1" pintype="passive"/>
@@ -12973,32 +13085,32 @@
     <net code="284" name="unconnected-(U701C-GPIO23-Pad25)" class="Default">
       <node ref="U701" pin="25" pinfunction="GPIO23_25" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="285" name="unconnected-(U701C-GPIO26-Pad55)" class="Default">
-      <node ref="U701" pin="55" pinfunction="GPIO26_55" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="286" name="unconnected-(U701C-GPIO27-Pad56)" class="Default">
+    <net code="285" name="unconnected-(U701C-GPIO27-Pad56)" class="Default">
       <node ref="U701" pin="56" pinfunction="GPIO27_56" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="287" name="unconnected-(U701C-GPIO28-Pad57)" class="Default">
-      <node ref="U701" pin="57" pinfunction="GPIO28_57" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="288" name="unconnected-(U701C-GPIO29-Pad58)" class="Default">
+    <net code="286" name="unconnected-(U701C-GPIO29-Pad58)" class="Default">
       <node ref="U701" pin="58" pinfunction="GPIO29_58" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="289" name="unconnected-(U701C-GPIO30-Pad60)" class="Default">
-      <node ref="U701" pin="60" pinfunction="GPIO30_60" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="290" name="unconnected-(U701C-GPIO31-Pad61)" class="Default">
+    <net code="287" name="unconnected-(U701C-GPIO31-Pad61)" class="Default">
       <node ref="U701" pin="61" pinfunction="GPIO31_61" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="291" name="unconnected-(U701C-GPIO32-Pad63)" class="Default">
-      <node ref="U701" pin="63" pinfunction="GPIO32_63" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="292" name="unconnected-(U701D-GPIO33-Pad64)" class="Default">
+    <net code="288" name="unconnected-(U701D-GPIO33-Pad64)" class="Default">
       <node ref="U701" pin="64" pinfunction="GPIO33_64" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="293" name="unconnected-(U701E-GPIO0-Pad104)" class="Default">
+    <net code="289" name="unconnected-(U701D-GPIO48-Pad90)" class="Default">
+      <node ref="U701" pin="90" pinfunction="GPIO48_90" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="290" name="unconnected-(U701E-GPIO0-Pad104)" class="Default">
       <node ref="U701" pin="104" pinfunction="GPIO0_104" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="291" name="unconnected-(U701E-GPIO50-Pad93)" class="Default">
+      <node ref="U701" pin="93" pinfunction="GPIO50_93" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="292" name="unconnected-(U701E-GPIO52-Pad95)" class="Default">
+      <node ref="U701" pin="95" pinfunction="GPIO52_95" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="293" name="unconnected-(U701E-GPIO54-Pad98)" class="Default">
+      <node ref="U701" pin="98" pinfunction="GPIO54_98" pintype="bidirectional+no_connect"/>
     </net>
     <net code="294" name="unconnected-(U802-CT-Pad4)" class="Default">
       <node ref="U802" pin="4" pinfunction="CT_4" pintype="input+no_connect"/>

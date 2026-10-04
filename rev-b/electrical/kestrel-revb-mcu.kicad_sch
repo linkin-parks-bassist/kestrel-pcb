@@ -10296,33 +10296,101 @@
 		)
 		(uuid "f3479482-0ec0-55bd-aee7-5170728747e9")
 	)
-	(no_connect
-		(at 252.73 68.58)
-		(uuid "d000d677-08a6-5abc-a842-e02dbe9d8b45")
+	(wire
+		(pts
+			(xy 252.73 68.58) (xy 247.65 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08ebc685-ac78-5782-97fe-b3a3bcb64a64")
+	)
+	(hierarchical_label "MCU_LCD_R3"
+		(shape output)
+		(at 247.65 68.58 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "eb0f9042-f584-559c-931b-2421553c2f02")
 	)
 	(no_connect
 		(at 252.73 71.12)
 		(uuid "21a3f53e-6f67-55a7-aa7a-a693c733d1c0")
 	)
-	(no_connect
-		(at 252.73 73.66)
-		(uuid "bf228d1a-57a0-5f18-b63e-57560b30c853")
+	(wire
+		(pts
+			(xy 252.73 73.66) (xy 247.65 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2b93e29-6971-5dc0-a5b1-c49947cd6a58")
+	)
+	(hierarchical_label "MCU_LCD_R5"
+		(shape output)
+		(at 247.65 73.66 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "76682ca3-bb59-5d9c-b086-52d94d0b0bba")
 	)
 	(no_connect
 		(at 252.73 76.2)
 		(uuid "89b570cc-e357-5f95-9dc0-534807b9a82f")
 	)
-	(no_connect
-		(at 252.73 78.74)
-		(uuid "27099135-9d31-5524-8b8c-66cde8e43d07")
+	(wire
+		(pts
+			(xy 252.73 78.74) (xy 247.65 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f547103-00c8-55cd-8a49-f4cf94595eb7")
+	)
+	(hierarchical_label "MCU_LCD_R7"
+		(shape output)
+		(at 247.65 78.74 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "00f13aca-c017-5f71-8029-1c0df682a827")
 	)
 	(no_connect
 		(at 252.73 81.28)
 		(uuid "baae8ddc-7aef-5179-9147-49116031ae02")
 	)
-	(no_connect
-		(at 252.73 83.82)
-		(uuid "cd190285-c4fa-5590-aadb-bde6385547e6")
+	(wire
+		(pts
+			(xy 252.73 83.82) (xy 247.65 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "342167aa-81b0-5d3a-af36-efc0d31fc67f")
+	)
+	(hierarchical_label "MCU_LCD_G6"
+		(shape output)
+		(at 247.65 83.82 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right bottom)
+		)
+		(uuid "d97449eb-74c2-5b46-bf15-a2516a0cc8b4")
 	)
 	(no_connect
 		(at 353.06 45.72)
@@ -10617,26 +10685,9 @@
 		)
 		(uuid "d7dcbe78-6ba1-5963-bca1-0fb8b12a4b9e")
 	)
-	(wire
-		(pts
-			(xy 353.06 83.82) (xy 347.98 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0967eda-caa4-5b8c-8966-d9b822550dde")
-	)
-	(hierarchical_label "MCU_LCD_G6"
-		(shape output)
-		(at 347.98 83.82 0)
-		(effects
-			(font
-				(size 0.8 0.8)
-			)
-			(justify right bottom)
-		)
-		(uuid "bcbf47dc-c245-56d1-9f18-1f157787b3d3")
+	(no_connect
+		(at 353.06 83.82)
+		(uuid "3aa64045-4a8c-527d-b60f-a43578e6c2a6")
 	)
 	(wire
 		(pts
@@ -10659,26 +10710,9 @@
 		)
 		(uuid "0f6f8d7a-0ef2-5052-abc8-6f17adc19b10")
 	)
-	(wire
-		(pts
-			(xy 453.39 59.69) (xy 448.31 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "491465a3-4ca9-51d4-a920-555aaf1097ca")
-	)
-	(hierarchical_label "MCU_LCD_R3"
-		(shape output)
-		(at 448.31 59.69 0)
-		(effects
-			(font
-				(size 0.8 0.8)
-			)
-			(justify right bottom)
-		)
-		(uuid "cf80ab28-00a9-5df7-99f1-526793eb9618")
+	(no_connect
+		(at 453.39 59.69)
+		(uuid "e67b5c9b-582a-5de8-bfb7-1038205dca88")
 	)
 	(wire
 		(pts
@@ -10701,26 +10735,9 @@
 		)
 		(uuid "f113a12a-903d-55da-8ca6-5ced5786d6dc")
 	)
-	(wire
-		(pts
-			(xy 453.39 64.77) (xy 448.31 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9fb6b043-1ab6-5338-a8d1-fc14f575b495")
-	)
-	(hierarchical_label "MCU_LCD_R5"
-		(shape output)
-		(at 448.31 64.77 0)
-		(effects
-			(font
-				(size 0.8 0.8)
-			)
-			(justify right bottom)
-		)
-		(uuid "44a48da0-d2cf-57b7-8174-fb1367bc597e")
+	(no_connect
+		(at 453.39 64.77)
+		(uuid "5a280cd4-204f-5947-b84c-fcce119b9c65")
 	)
 	(wire
 		(pts
@@ -10743,26 +10760,9 @@
 		)
 		(uuid "7b9c845e-fb2e-5231-89df-e74fa1506338")
 	)
-	(wire
-		(pts
-			(xy 453.39 69.85) (xy 448.31 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ebeeb028-5314-50ee-9052-905b80a31256")
-	)
-	(hierarchical_label "MCU_LCD_R7"
-		(shape output)
-		(at 448.31 69.85 0)
-		(effects
-			(font
-				(size 0.8 0.8)
-			)
-			(justify right bottom)
-		)
-		(uuid "ccb67f75-fd89-59bf-b495-996e3889c252")
+	(no_connect
+		(at 453.39 69.85)
+		(uuid "b0371895-0137-520d-a62d-d762a3731d44")
 	)
 	(no_connect
 		(at 453.39 72.39)

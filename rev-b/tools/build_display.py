@@ -111,11 +111,13 @@ def build():
         if ref.startswith('J'):
             inst.append(node(f'(property "Qualification" "Bottom-contact footprint provisional; verify flex exposed side, numbering, 0.3mm tail thickness and bends with sample before placement/fabrication" (at {x*GRID} {y*GRID} 0) (effects (font (size 1 1)) (hide yes)))'))
     notes=[(20,15,'RGB565 / CAPACITIVE TOUCH - DM-TFT50-404 REFERENCE - ENGINEERING DRAFT'),
-           (20,375,'RGB565: GPIO39..43 -> B3..7; 44..49 -> G2..7; 50..54 -> R3..7. Low panel data bits grounded.'),
+           (20,375,'RGB565: GPIO39..43 -> B3..7; GPIO44/45/46/47/32/49 -> G2..7; GPIO26/51/28/53/30 -> R3..7. Low panel data bits grounded.'),
            (20,382,'GPIO9 PCLK / 10 HSYNC / 11 VSYNC / 12 DE / 13 DISP. GPIO15 SCL / 16 SDA / 17 INT / 18 RESET.'),
            (20,389,'LCD power 3.456V; GT911 VDD/VDDIO 3.2V. 4.7k I2C pullups to TOUCH_VDD. INT is bidirectional during reset/address selection.'),
            (20,396,'FPC contact side/numbering/thickness, exact parts, loaded signal timing, reset/address sequence and power-off/backfeed pending.'),
            (20,403,'R1001..R1025 are source-damping starting values; place appropriately near drivers. No external hot-plug or EMC rating established.')]
     for x,y,text in notes:tree.append(node(f'(text "{text}" (at {x} {y} 0) (effects (font (size 1 1)) (justify left)) (uuid "{uid(text)}"))'))
+    from display_rgb_damping import annotate
+    annotate(tree)
     path.write_text(dumps(tree)+'\n');print(path)
 if __name__=='__main__':build()
